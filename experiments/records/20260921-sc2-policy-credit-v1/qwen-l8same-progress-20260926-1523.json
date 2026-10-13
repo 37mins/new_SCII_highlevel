@@ -1,0 +1,206 @@
+{
+  "checked_at_beijing": "2026-09-26T15:23:29.122715+08:00",
+  "checked_at": 1790407409.0868752,
+  "node": "sc2-a100-197",
+  "root": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2",
+  "runtime_sha": "eef0f049bb09b7a51188ae67a6c35436a3bf055f",
+  "controller_sha": "db60d075879750cabf30a38c555d1c3aaaf104c1",
+  "queue": {
+    "phase": "running-unverified",
+    "completed": [
+      "qwen-same/short"
+    ],
+    "retained_games": 24,
+    "retained_updates": 2,
+    "new_games": 768,
+    "new_updates": 94,
+    "deadline": 1790530922.7417548,
+    "part": "qwen-same/long"
+  },
+  "host": {
+    "version": "host-guardian-v1",
+    "phase": "running-unverified",
+    "completed": [],
+    "deadline": 1790530922.7417548,
+    "learning_validated": false,
+    "started_at": 1790390273.874901,
+    "stage": "train96",
+    "container_id": "91d0dbd99c166ea114df62af0e3d07ec3aa94cf3f59f5d4a86ea43d6ff4d986b"
+  },
+  "container": {
+    "id": "91d0dbd99c166ea114df62af0e3d07ec3aa94cf3f59f5d4a86ea43d6ff4d986b",
+    "owner": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/long",
+    "state": {
+      "Dead": false,
+      "Error": "",
+      "ExitCode": 0,
+      "FinishedAt": "0001-01-01T00:00:00Z",
+      "OOMKilled": false,
+      "Paused": false,
+      "Pid": 3308209,
+      "Restarting": false,
+      "Running": true,
+      "StartedAt": "2026-09-26T02:37:54.320353345Z",
+      "Status": "running"
+    }
+  },
+  "guardian": {
+    "empty_terminal_slot": true
+  },
+  "storage": {
+    "roots": [
+      "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r1",
+      "/var/jfsCache/sc2-qwen-l8same96-197-source-20260926-r1",
+      "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2",
+      "/var/jfsCache/sc2-qwen-l8same96-197-source-20260926-r2"
+    ],
+    "checked_at": 1790407396.669231,
+    "status": "measured",
+    "bytes": 500438367201,
+    "limit": 1099511627776,
+    "returncode": 0,
+    "stderr": {
+      "tail": "",
+      "characters": 0,
+      "truncated": false
+    },
+    "quiescence": {
+      "version": "host-guardian-v1",
+      "container_id": "91d0dbd99c166ea114df62af0e3d07ec3aa94cf3f59f5d4a86ea43d6ff4d986b",
+      "owner_root": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/long",
+      "guardian_pid": 3308148,
+      "paused_verified": true,
+      "cleanup": "verified-unpaused",
+      "paused_at": 1790407396.5432339,
+      "mode": "paused",
+      "resumed_at": 1790407396.6690898
+    }
+  },
+  "failures": [],
+  "recent_returned_metrics": [
+    {
+      "step": 76,
+      "episode/success_rate": 0,
+      "episode/valid_action_ratio": 1,
+      "actor/grad_norm": 0.5063547844236548,
+      "timing_s/update_actor": 35.74899516720325,
+      "timing_s/step": 323.0496181603521,
+      "policy_credit/invalid_advantage_max": 0,
+      "actor/entropy_loss": 0.06987080723047256,
+      "actor/ppo_kl": 0.007421604394039605
+    },
+    {
+      "step": 77,
+      "episode/success_rate": 0.25,
+      "episode/valid_action_ratio": 1,
+      "actor/grad_norm": 11.845837939869273,
+      "timing_s/update_actor": 36.22153911925852,
+      "timing_s/step": 333.91017901711166,
+      "policy_credit/invalid_advantage_max": 0,
+      "actor/entropy_loss": 0.07494504004716873,
+      "actor/ppo_kl": 0.010585816800740262
+    }
+  ],
+  "summary": {
+    "last_returned_step": 77,
+    "target": 96,
+    "advanced_since_1249": 38,
+    "currently_dispatched_step": 78,
+    "retained_prefix_games": 16,
+    "retained_prefix_wins": 8,
+    "suffix_games": 600,
+    "suffix_wins": 340,
+    "training_games_total": 616,
+    "training_wins_total": 348,
+    "last8_training_wins": 26,
+    "last8_training_games": 64,
+    "recent_positive_finite_gradient_and_update_time": true,
+    "recent_valid_ratio": 1,
+    "recent_invalid_advantage_max": 0,
+    "recent_mean_step_seconds": 328.4798985887319,
+    "seed_validation": "all suffix resets2..76 same_uniform101 matched private Random(0)",
+    "natural_complete_batches": true,
+    "training_win_rate": 0.564935064935065,
+    "last8_training_win_rate": 0.40625,
+    "metric_rows_checked_this_query": 2,
+    "checkpoint_required_26_files_revalidated": false
+  },
+  "checkpoint_filename_inventory": [
+    {
+      "step": 16,
+      "file_count": 35,
+      "all_nonempty": true
+    },
+    {
+      "step": 24,
+      "file_count": 35,
+      "all_nonempty": true
+    },
+    {
+      "step": 32,
+      "file_count": 35,
+      "all_nonempty": true
+    },
+    {
+      "step": 40,
+      "file_count": 35,
+      "all_nonempty": true
+    },
+    {
+      "step": 48,
+      "file_count": 35,
+      "all_nonempty": true
+    },
+    {
+      "step": 56,
+      "file_count": 35,
+      "all_nonempty": true
+    },
+    {
+      "step": 64,
+      "file_count": 35,
+      "all_nonempty": true
+    },
+    {
+      "step": 72,
+      "file_count": 35,
+      "all_nonempty": true
+    },
+    {
+      "step": 8,
+      "file_count": 35,
+      "all_nonempty": true
+    }
+  ],
+  "console_read": {
+    "start_byte": 29938636,
+    "end_byte": 32035788,
+    "mtime_age_seconds": 5.250845193862915
+  },
+  "completion_files": {
+    "train96": {
+      "result.json": false,
+      ".done": false,
+      "acceptance.json": false
+    },
+    "eval96": {
+      "result.json": false,
+      ".done": false,
+      "acceptance.json": false
+    }
+  },
+  "limits": "Read-only small records, bounded 2MiB log, filename-only CP inventory and exact container inspection. No new GPU diagnostics or remote writes; not full final acceptance, not proof of learning.",
+  "storage_age_seconds": 12.417644262313843,
+  "storage_gib": 466.06954857800156,
+  "eta": {
+    "date_beijing": "2026-09-26",
+    "finish_window_beijing": [
+      "17:00",
+      "18:00"
+    ],
+    "includes": "remaining training/checkpoint writes/acceptance and eight-game eval96",
+    "basis": "39->77 across ~154.4 minutes is ~4.06min/update inclusive. Last2 returned steps76..77 average328.48sec (~5.47min), so remaining19 are roughly77..104min before final work. Approximate17:00..18:00, not a guarantee.",
+    "hard_deadline_epoch": 1790530922.7417548,
+    "hard_deadline_is_not_eta": true
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "checked_at": 1790045462.1461217,
+  "pre_verified": true,
+  "files": {
+    "acceptance-pre.json": {
+      "sha256": "a18209743b2b45dba4cbf654b5fce1f49abdf9367fc9edca6c4b29640ac0e127",
+      "value": {
+        "result": {
+          "status": "completed",
+          "ended_at": "2026-09-22T02:47:34.036806+00:00",
+          "mode": "evaluation",
+          "process_exit_code": 0,
+          "training_updates": 0,
+          "metrics": {
+            "val/text/test_score": 26.553,
+            "val/text/tool_call_count/mean": 0,
+            "val/success_rate": 1,
+            "val/sc2_attack_ct": 0,
+            "val/sc2_action_valid": 1,
+            "val/sc2_semantic_action_valid": 1,
+            "val/sc2_semantic_action_evaluable": 1,
+            "val/sc2_projection_action_valid": 1,
+            "val/sc2_executor_action_valid": 1,
+            "val/sc2/episode_count": 8,
+            "val/sc2/no_policy_episode_count": 0,
+            "val/sc2/policy_decision_count": 49
+          },
+          "metrics_finite": true,
+          "response_record_count": 72,
+          "evaluable_action_count": 49,
+          "valid_evaluable_action_count": 49,
+          "replays": {
+            "sc2-logs/game-7140/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-21_19-43-55/replay.SC2Replay": "86592a1b0a05e324d81cdb98438048a181e3e9c6ea9612a6b168f99556b1382b",
+            "sc2-logs/game-7141/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-21_19-43-55/replay.SC2Replay": "dd4fb8e8ec496a683280271c8bda8e893a7847818cef31de8af0605b2470b343",
+            "sc2-logs/game-7142/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-21_19-43-55/replay.SC2Replay": "7a72c25981fc3c76b674edce12991ef5541fa0434c0824ecd66358b53f3f42e1",
+            "sc2-logs/game-7144/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-21_19-43-55/replay.SC2Replay": "47bafc4414c003475864485dc0025a07ec17d84847d20187f52d21ab475e99e5",
+            "sc2-logs/game-7145/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-21_19-43-55/replay.SC2Replay": "c1b48d4e804499d8e76b9e79d57bdc57702a2a6c5bac267a10ed39ea3a7373d7",
+            "sc2-logs/game-7146/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-21_19-43-55/replay.SC2Replay": "ca61a3761ac59cf36a278ea7d85b38dd75fac90f9c6c0865a19690145d2a080a",
+            "sc2-logs/game-7143/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-21_19-43-55/replay.SC2Replay": "33ac22a6cf88c7ff80fedcdf0379f8a6aeb67533c02cf05989a738b3c04c1296",
+            "sc2-logs/game-7147/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-21_19-43-55/replay.SC2Replay": "cff7d29a20a86f1185039f7f7424db6da84a4c8b17202e4cfc3d7547165b918c"
+          },
+          "console_sha256": "691f6f5835d2d19a5da890ba22246e30a71cfdc4d63d189d7763b148bfdbd5c5",
+          "episode_outcomes": {
+            "trajectories": 8,
+            "natural_games": 8,
+            "wins": 8,
+            "defeats": 0,
+            "ties": 0,
+            "truncated": 0,
+            "natural_win_rate": 1,
+            "outcomes": [
+              {
+                "reset_index": 0,
+                "env_index": 0,
+                "decision_count": 4,
+                "step_index": 3,
+                "policy_decision_count": 4,
+                "terminated": true,
+                "truncated": false,
+                "game_result": "Victory",
+                "termination_reason": "game_result",
+                "outcome_reward": 20
+              },
+              {
+                "reset_index": 0,
+                "env_index": 4,
+                "decision_count": 4,
+                "step_index": 3,
+                "policy_decision_count": 4,
+                "terminated": true,
+                "truncated": false,
+                "game_result": "Victory",
+                "termination_reason": "game_result",
+                "outcome_reward": 20
+              },
+              {
+                "reset_index": 0,
+                "env_index": 6,
+                "decision_count": 4,
+                "step_index": 3,
+                "policy_decision_count": 4,
+                "terminated": true,
+                "truncated": false,
+                "game_result": "Victory",
+                "termination_reason": "game_result",
+                "outcome_reward": 20
+              },
+              {
+                "reset_index": 0,
+                "env_index": 2,
+                "decision_count": 5,
+                "step_index": 4,
+                "policy_decision_count": 5,
+                "terminated": true,
+                "truncated": false,
+                "game_result": "Victory",
+                "termination_reason": "game_result",
+                "outcome_reward": 20
+              },
+              {
+                "reset_index": 0,
+                "env_index": 7,
+                "decision_count": 7,
+                "step_index": 6,
+                "policy_decision_count": 7,
+                "terminated": true,
+                "truncated": false,
+                "game_result": "Victory",
+                "termination_reason": "game_result",
+                "outcome_reward": 20
+              },
+              {
+                "reset_index": 0,
+                "env_index": 1,
+                "decision_count": 8,
+                "step_index": 7,
+                "policy_decision_count": 8,
+                "terminated": true,
+                "truncated": false,
+                "game_result": "Victory",
+                "termination_reason": "game_result",
+                "outcome_reward": 20
+              },
+              {
+                "reset_index": 0,
+                "env_index": 5,
+                "decision_count": 8,
+                "step_index": 7,
+                "policy_decision_count": 8,
+                "terminated": true,
+                "truncated": false,
+                "game_result": "Victory",
+                "termination_reason": "game_result",
+                "outcome_reward": 20
+              },
+              {
+                "reset_index": 0,
+                "env_index": 3,
+                "decision_count": 9,
+                "step_index": 8,
+                "policy_decision_count": 9,
+                "terminated": true,
+                "truncated": false,
+                "game_result": "Victory",
+                "termination_reason": "game_result",
+                "outcome_reward": 20
+              }
+            ]
+          },
+          "natural_match_completed": true,
+          "termination_evidence": "game_result"
+        },
+        "evidence": {
+          "consumed_answers": 49,
+          "valid_consumed_answers": 49,
+          "parsed_plans": 49,
+          "validated_queue_entries": 769,
+          "validated_locally_queued_commands": 374,
+          "execution_scope": "local Depot/Marine commands, not production completion or causal wins"
+        },
+        "checked_at": 1790045263.3785403
+      }
+    },
+    "runs/pre/result.json": {
+      "sha256": "2edcf34663ab3c32f6e5dea0a6040739c237c2801620b5a15da645fc6064bf1f",
+      "equals_acceptance_result": true
+    },
+    "runs/pre/.done": {
+      "sha256": "2edcf34663ab3c32f6e5dea0a6040739c237c2801620b5a15da645fc6064bf1f",
+      "equals_acceptance_result": true
+    },
+    "state.json": {
+      "sha256": "6a1acb2d5fac877b6fe581b5d7ffeca78c8d0b18ece1557bfc471f804f14595d",
+      "value": {
+        "phase": "running-unverified",
+        "completed": [
+          "pre"
+        ],
+        "deadline": 1790052132.2731953,
+        "stage": "train2",
+        "run": "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l6-random/runs/train2"
+      }
+    }
+  },
+  "notification": "First l6-random pre completion notified in launch turn; no completed PPO claimed."
+}

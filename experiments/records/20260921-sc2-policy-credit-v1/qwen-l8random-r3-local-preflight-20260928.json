@@ -1,0 +1,37 @@
+{
+  "status": "approved-local-verified-not-yet-deployed",
+  "run_id": "sc2-qwen-l8random96-197-20260928-r3",
+  "approval": "User explicitly approved controlled r3; unchanged1112games/96PPO/22h176GPUh/288GiB; retain r1/r2, wait for L10 full terminal acceptance, no automatic retry or CP192",
+  "train_root": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3",
+  "primary_root": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3",
+  "source_parent": "/var/jfsCache/sc2-qwen-l8random96-197-source-20260928-r3",
+  "accounting": {"generations": ["r1", "r2", "r3"], "exact_roots": 9, "train_selection_gib": 256, "selection_gib_within_train": 8, "primary_gib": 32, "suite_gib": 288},
+  "baseline_fix_commit": "c16dccac3290728df6e5787e9b900e84478f5fc4",
+  "baseline_config_real_file": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r1/qwen-same/short/cpu/train2/resolved_config.json",
+  "baseline_config_sha256": "77cd457af0cfc64f0ebe0aab690e33af5af7958e336b13cb396766bd0ac7efa6",
+  "local_tests": {
+    "command": "PYTHONPATH=/private/tmp/sc2-qwen-native-testdeps-20260924:tests:. PYTHONDONTWRITEBYTECODE=1 /Users/yangjinyue/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -B -m unittest test_qwen_l8random197 test_qwen_l8random_retention test_qwen_l9l10_same197 test_qwen_l9l10_continue197 test_qwen_l8_common64_197 test_sc2_policy_resume test_sc2_checkpoint_resume -q",
+    "tests": 134, "passed": 130, "skips": 4, "failures": 0,
+    "skip_reason": "local Torch unavailable; actual host/model zero-skip tests still required",
+    "diff_check_passed": true
+  },
+  "readonly_server": {
+    "checked_at": "2026-09-28T09:29:54+08:00",
+    "alias": "sc2-a100-197",
+    "gpus": 8, "memory_mib_all": 0, "utilization_percent_all": 0, "compute_processes": 0,
+    "nvme_free_bytes": 802096992256,
+    "mem_available_kib": 796597856,
+    "new_three_roots_absent": true,
+    "baseline_config_sha_matches": true,
+    "l10_queue_phase": "completed", "l10_queue_exit_code": 0,
+    "l10_train96_container": "5c6dad7a7beff07053574400d6bd5a090fbc92db1f77a0ff70abc0b1f723befd",
+    "l10_train96_owner": "/var/jfsCache/sc2-qwen-l10same96-197-20260927-r3/qwen-same/long",
+    "l10_train96_state": "exited", "l10_train96_exit_code": 0, "l10_oom": false,
+    "l10_five_stage_small_terminal_gate": true,
+    "gate_checked_at_epoch": 1790559176.1762207,
+    "gate_method": "frozen r2 predecessor_complete(): queue/arm/part/host/guardian, five exact containers, accepted result/done and clean SHA/fixed clocks; no large weights or full logs",
+    "additional_summary_note": "After the gate returned true, an optional status formatter encountered a missing training_updates key on a train result; no experiment action or state change. Gate result unaffected.",
+    "server_writes": false
+  },
+  "current_action_limits": {"no_old_deletion": true, "no_interruption": true, "no_automatic_retry": true, "no_cp192": true, "r3_gpu_dispatched": false}
+}

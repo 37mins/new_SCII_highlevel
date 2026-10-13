@@ -1,0 +1,3501 @@
+{
+  "checked_at": "2026-09-28T19:36:25.075126+08:00",
+  "runtime_sha": "ad81511b270f782420208ac8a6f305a141e8042b",
+  "queue": {
+    "phase": "completed",
+    "completed": [
+      "qwen-random/short",
+      "qwen-random/long",
+      "selection32",
+      "paired64"
+    ],
+    "new_games": 1112,
+    "new_updates": 96,
+    "part": "paired64",
+    "deadline": 1790639115.4663188,
+    "component_deadline": 1790617515.4663188,
+    "exit_code": 0,
+    "learning_validated": false,
+    "finished_at": 1790594429.5263364
+  },
+  "groups": {
+    "selection": {
+      "state": {
+        "version": "host-guardian-v1",
+        "phase": "completed",
+        "completed": [
+          "b00-cp2",
+          "b01-cp2",
+          "b02-cp2",
+          "b03-cp2",
+          "b00-cp32",
+          "b01-cp32",
+          "b02-cp32",
+          "b03-cp32",
+          "b00-cp64",
+          "b01-cp64",
+          "b02-cp64",
+          "b03-cp64",
+          "b00-cp96",
+          "b01-cp96",
+          "b02-cp96",
+          "b03-cp96"
+        ],
+        "deadline": 1790595216.5217776,
+        "learning_validated": false,
+        "started_at": 1790580849.7361894,
+        "stage": "b03-cp96",
+        "container_id": "c07c57e03075eaef25e48c56ec2bcb7e99fd8b7d897a93330904b0ad31c7adc2",
+        "exit_code": 0,
+        "finished_at": 1790585823.2483969
+      },
+      "seeds": [
+        1676024359,
+        3311359371,
+        1803677045,
+        815351849,
+        1041855993,
+        1414892806,
+        1208799724,
+        3570661004,
+        1987344794,
+        766069959,
+        1101924832,
+        695227373,
+        3425665911,
+        3829899699,
+        1620930396,
+        1292716698,
+        1926059137,
+        3984229549,
+        2604737463,
+        515375665,
+        2592848477,
+        1342102133,
+        3206101674,
+        242255854,
+        224364611,
+        2434082538,
+        3912059029,
+        920478274,
+        2851824023,
+        3927879658,
+        1918684695,
+        1027136304
+      ],
+      "all_seed_rng_paired": true,
+      "arms": {
+        "cp2": {
+          "wins": 22,
+          "games": 32,
+          "consumed": 178,
+          "outcomes": [
+            {
+              "seed": 1676024359,
+              "outcome": "Victory",
+              "decisions": 5
+            },
+            {
+              "seed": 3311359371,
+              "outcome": "Defeat",
+              "decisions": 6
+            },
+            {
+              "seed": 1803677045,
+              "outcome": "Victory",
+              "decisions": 5
+            },
+            {
+              "seed": 815351849,
+              "outcome": "Defeat",
+              "decisions": 5
+            },
+            {
+              "seed": 1041855993,
+              "outcome": "Victory",
+              "decisions": 5
+            },
+            {
+              "seed": 1414892806,
+              "outcome": "Victory",
+              "decisions": 5
+            },
+            {
+              "seed": 1208799724,
+              "outcome": "Victory",
+              "decisions": 5
+            },
+            {
+              "seed": 3570661004,
+              "outcome": "Victory",
+              "decisions": 5
+            },
+            {
+              "seed": 1987344794,
+              "outcome": "Defeat",
+              "decisions": 8
+            },
+            {
+              "seed": 766069959,
+              "outcome": "Defeat",
+              "decisions": 6
+            },
+            {
+              "seed": 1101924832,
+              "outcome": "Victory",
+              "decisions": 8
+            },
+            {
+              "seed": 695227373,
+              "outcome": "Defeat",
+              "decisions": 7
+            },
+            {
+              "seed": 3425665911,
+              "outcome": "Victory",
+              "decisions": 7
+            },
+            {
+              "seed": 3829899699,
+              "outcome": "Defeat",
+              "decisions": 5
+            },
+            {
+              "seed": 1620930396,
+              "outcome": "Defeat",
+              "decisions": 5
+            },
+            {
+              "seed": 1292716698,
+              "outcome": "Victory",
+              "decisions": 5
+            },
+            {
+              "seed": 1926059137,
+              "outcome": "Victory",
+              "decisions": 5
+            },
+            {
+              "seed": 3984229549,
+              "outcome": "Victory",
+              "decisions": 5
+            },
+            {
+              "seed": 2604737463,
+              "outcome": "Victory",
+              "decisions": 5
+            },
+            {
+              "seed": 515375665,
+              "outcome": "Victory",
+              "decisions": 8
+            },
+            {
+              "seed": 2592848477,
+              "outcome": "Victory",
+              "decisions": 5
+            },
+            {
+              "seed": 1342102133,
+              "outcome": "Victory",
+              "decisions": 5
+            },
+            {
+              "seed": 3206101674,
+              "outcome": "Victory",
+              "decisions": 5
+            },
+            {
+              "seed": 242255854,
+              "outcome": "Victory",
+              "decisions": 8
+            },
+            {
+              "seed": 224364611,
+              "outcome": "Victory",
+              "decisions": 5
+            },
+            {
+              "seed": 2434082538,
+              "outcome": "Victory",
+              "decisions": 5
+            },
+            {
+              "seed": 3912059029,
+              "outcome": "Defeat",
+              "decisions": 5
+            },
+            {
+              "seed": 920478274,
+              "outcome": "Victory",
+              "decisions": 5
+            },
+            {
+              "seed": 2851824023,
+              "outcome": "Defeat",
+              "decisions": 5
+            },
+            {
+              "seed": 3927879658,
+              "outcome": "Defeat",
+              "decisions": 5
+            },
+            {
+              "seed": 1918684695,
+              "outcome": "Victory",
+              "decisions": 5
+            },
+            {
+              "seed": 1027136304,
+              "outcome": "Victory",
+              "decisions": 5
+            }
+          ],
+          "stages": [
+            {
+              "stage": "b00-cp2",
+              "checkpoint": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/short/runs/train2/checkpoints/global_step_2",
+              "loaded_step": 2,
+              "load_returned": true,
+              "consumed": 41,
+              "test_score": 7.389624834060669,
+              "container_id": "60619cd3c9cccab6077f8f33435426a05b90fa558662818698cc5fa8ec5a7ea4"
+            },
+            {
+              "stage": "b01-cp2",
+              "checkpoint": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/short/runs/train2/checkpoints/global_step_2",
+              "loaded_step": 2,
+              "load_returned": true,
+              "consumed": 51,
+              "test_score": -22.48762536048889,
+              "container_id": "2710b2a9928b21a7f1a7f60275d9939c1af671ad5490fba7948c17c0f3d92884"
+            },
+            {
+              "stage": "b02-cp2",
+              "checkpoint": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/short/runs/train2/checkpoints/global_step_2",
+              "loaded_step": 2,
+              "load_returned": true,
+              "consumed": 46,
+              "test_score": 27.353124856948853,
+              "container_id": "34bd3b60a132c711f16f6b665d098a8fa89ad38c611523c61e528f6e41a642c5"
+            },
+            {
+              "stage": "b03-cp2",
+              "checkpoint": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/short/runs/train2/checkpoints/global_step_2",
+              "loaded_step": 2,
+              "load_returned": true,
+              "consumed": 40,
+              "test_score": -3.5227503776550293,
+              "container_id": "a13a3ea476689fb3c0ced8091781bb4e1da02d98c050aa9cffae20a09022d831"
+            }
+          ]
+        },
+        "cp32": {
+          "wins": 22,
+          "games": 32,
+          "consumed": 130,
+          "outcomes": [
+            {
+              "seed": 1676024359,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 3311359371,
+              "outcome": "Defeat",
+              "decisions": 5
+            },
+            {
+              "seed": 1803677045,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 815351849,
+              "outcome": "Defeat",
+              "decisions": 4
+            },
+            {
+              "seed": 1041855993,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 1414892806,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 1208799724,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 3570661004,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 1987344794,
+              "outcome": "Defeat",
+              "decisions": 5
+            },
+            {
+              "seed": 766069959,
+              "outcome": "Defeat",
+              "decisions": 4
+            },
+            {
+              "seed": 1101924832,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 695227373,
+              "outcome": "Defeat",
+              "decisions": 4
+            },
+            {
+              "seed": 3425665911,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 3829899699,
+              "outcome": "Defeat",
+              "decisions": 4
+            },
+            {
+              "seed": 1620930396,
+              "outcome": "Defeat",
+              "decisions": 4
+            },
+            {
+              "seed": 1292716698,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 1926059137,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 3984229549,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 2604737463,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 515375665,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 2592848477,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 1342102133,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 3206101674,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 242255854,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 224364611,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 2434082538,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 3912059029,
+              "outcome": "Defeat",
+              "decisions": 4
+            },
+            {
+              "seed": 920478274,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 2851824023,
+              "outcome": "Defeat",
+              "decisions": 4
+            },
+            {
+              "seed": 3927879658,
+              "outcome": "Defeat",
+              "decisions": 4
+            },
+            {
+              "seed": 1918684695,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 1027136304,
+              "outcome": "Victory",
+              "decisions": 4
+            }
+          ],
+          "stages": [
+            {
+              "stage": "b00-cp32",
+              "checkpoint": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/long/runs/train96/checkpoints/global_step_32",
+              "loaded_step": 32,
+              "load_returned": true,
+              "consumed": 33,
+              "test_score": 7.589625120162964,
+              "container_id": "7f5e2b733dd8176780cac755a5f0a7b7fddd3354172d448e50d224cb75a24215"
+            },
+            {
+              "stage": "b01-cp32",
+              "checkpoint": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/long/runs/train96/checkpoints/global_step_32",
+              "loaded_step": 32,
+              "load_returned": true,
+              "consumed": 33,
+              "test_score": -22.713500261306763,
+              "container_id": "5ee473b60c6432bb9fa0397a8a0c4a307381456fb33cc492a0cf36b87e1464af"
+            },
+            {
+              "stage": "b02-cp32",
+              "checkpoint": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/long/runs/train96/checkpoints/global_step_32",
+              "loaded_step": 32,
+              "load_returned": true,
+              "consumed": 32,
+              "test_score": 27.353124856948853,
+              "container_id": "19420518c7c083019c58efb9d61af8e912ccec682444cb0a746794a5e6bb2aa1"
+            },
+            {
+              "stage": "b03-cp32",
+              "checkpoint": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/long/runs/train96/checkpoints/global_step_32",
+              "loaded_step": 32,
+              "load_returned": true,
+              "consumed": 32,
+              "test_score": -3.5227503776550293,
+              "container_id": "3b8e5e8183ed684af472c771d11b660c3dc007b92bba882712996f74b1a4799e"
+            }
+          ]
+        },
+        "cp64": {
+          "wins": 22,
+          "games": 32,
+          "consumed": 132,
+          "outcomes": [
+            {
+              "seed": 1676024359,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 3311359371,
+              "outcome": "Defeat",
+              "decisions": 6
+            },
+            {
+              "seed": 1803677045,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 815351849,
+              "outcome": "Defeat",
+              "decisions": 4
+            },
+            {
+              "seed": 1041855993,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 1414892806,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 1208799724,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 3570661004,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 1987344794,
+              "outcome": "Defeat",
+              "decisions": 6
+            },
+            {
+              "seed": 766069959,
+              "outcome": "Defeat",
+              "decisions": 4
+            },
+            {
+              "seed": 1101924832,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 695227373,
+              "outcome": "Defeat",
+              "decisions": 4
+            },
+            {
+              "seed": 3425665911,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 3829899699,
+              "outcome": "Defeat",
+              "decisions": 4
+            },
+            {
+              "seed": 1620930396,
+              "outcome": "Defeat",
+              "decisions": 4
+            },
+            {
+              "seed": 1292716698,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 1926059137,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 3984229549,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 2604737463,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 515375665,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 2592848477,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 1342102133,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 3206101674,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 242255854,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 224364611,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 2434082538,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 3912059029,
+              "outcome": "Defeat",
+              "decisions": 4
+            },
+            {
+              "seed": 920478274,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 2851824023,
+              "outcome": "Defeat",
+              "decisions": 4
+            },
+            {
+              "seed": 3927879658,
+              "outcome": "Defeat",
+              "decisions": 4
+            },
+            {
+              "seed": 1918684695,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 1027136304,
+              "outcome": "Victory",
+              "decisions": 4
+            }
+          ],
+          "stages": [
+            {
+              "stage": "b00-cp64",
+              "checkpoint": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/long/runs/train96/checkpoints/global_step_64",
+              "loaded_step": 64,
+              "load_returned": true,
+              "consumed": 34,
+              "test_score": 7.224125146865845,
+              "container_id": "7419246cc37b77818ebb053f78c893d6c786d5320c9d7565345f1c4c7f6d115c"
+            },
+            {
+              "stage": "b01-cp64",
+              "checkpoint": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/long/runs/train96/checkpoints/global_step_64",
+              "loaded_step": 64,
+              "load_returned": true,
+              "consumed": 34,
+              "test_score": -22.738374948501587,
+              "container_id": "a068fb8bff65b7b8902427009f08745ebf06ed72bfe62d5fb7c56f430a92e3fd"
+            },
+            {
+              "stage": "b02-cp64",
+              "checkpoint": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/long/runs/train96/checkpoints/global_step_64",
+              "loaded_step": 64,
+              "load_returned": true,
+              "consumed": 32,
+              "test_score": 27.353124856948853,
+              "container_id": "bb89921f33f45e23ec4b342cfe65b85ebe9cadec0ed69a853d4575a72db4f1ae"
+            },
+            {
+              "stage": "b03-cp64",
+              "checkpoint": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/long/runs/train96/checkpoints/global_step_64",
+              "loaded_step": 64,
+              "load_returned": true,
+              "consumed": 32,
+              "test_score": -3.5227503776550293,
+              "container_id": "c4b100d93750cfcd943d83a3f48fab838fd400f97ea92d535fc6e5b5fb8e53b8"
+            }
+          ]
+        },
+        "cp96": {
+          "wins": 22,
+          "games": 32,
+          "consumed": 130,
+          "outcomes": [
+            {
+              "seed": 1676024359,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 3311359371,
+              "outcome": "Defeat",
+              "decisions": 5
+            },
+            {
+              "seed": 1803677045,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 815351849,
+              "outcome": "Defeat",
+              "decisions": 4
+            },
+            {
+              "seed": 1041855993,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 1414892806,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 1208799724,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 3570661004,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 1987344794,
+              "outcome": "Defeat",
+              "decisions": 5
+            },
+            {
+              "seed": 766069959,
+              "outcome": "Defeat",
+              "decisions": 4
+            },
+            {
+              "seed": 1101924832,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 695227373,
+              "outcome": "Defeat",
+              "decisions": 4
+            },
+            {
+              "seed": 3425665911,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 3829899699,
+              "outcome": "Defeat",
+              "decisions": 4
+            },
+            {
+              "seed": 1620930396,
+              "outcome": "Defeat",
+              "decisions": 4
+            },
+            {
+              "seed": 1292716698,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 1926059137,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 3984229549,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 2604737463,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 515375665,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 2592848477,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 1342102133,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 3206101674,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 242255854,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 224364611,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 2434082538,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 3912059029,
+              "outcome": "Defeat",
+              "decisions": 4
+            },
+            {
+              "seed": 920478274,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 2851824023,
+              "outcome": "Defeat",
+              "decisions": 4
+            },
+            {
+              "seed": 3927879658,
+              "outcome": "Defeat",
+              "decisions": 4
+            },
+            {
+              "seed": 1918684695,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 1027136304,
+              "outcome": "Victory",
+              "decisions": 4
+            }
+          ],
+          "stages": [
+            {
+              "stage": "b00-cp96",
+              "checkpoint": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/long/runs/train96/checkpoints/global_step_96",
+              "loaded_step": 96,
+              "load_returned": true,
+              "consumed": 33,
+              "test_score": 7.589625120162964,
+              "container_id": "8e53b86cb992aaf2e97bbfaf152d2faff5439b77fcef6946003c50e4db4143c9"
+            },
+            {
+              "stage": "b01-cp96",
+              "checkpoint": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/long/runs/train96/checkpoints/global_step_96",
+              "loaded_step": 96,
+              "load_returned": true,
+              "consumed": 33,
+              "test_score": -22.713500261306763,
+              "container_id": "5a3b8a10244eef7666f33675e2bece63f54fa17bd409abe449445f2455d12918"
+            },
+            {
+              "stage": "b02-cp96",
+              "checkpoint": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/long/runs/train96/checkpoints/global_step_96",
+              "loaded_step": 96,
+              "load_returned": true,
+              "consumed": 32,
+              "test_score": 27.353124856948853,
+              "container_id": "1e63d1735fad132c40985a9ad38aea3ea67f38f021e2a152f825d4c6444fcc35"
+            },
+            {
+              "stage": "b03-cp96",
+              "checkpoint": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/long/runs/train96/checkpoints/global_step_96",
+              "loaded_step": 96,
+              "load_returned": true,
+              "consumed": 32,
+              "test_score": -3.5227503776550293,
+              "container_id": "c07c57e03075eaef25e48c56ec2bcb7e99fd8b7d897a93330904b0ad31c7adc2"
+            }
+          ]
+        }
+      }
+    },
+    "primary": {
+      "state": {
+        "version": "host-guardian-v1",
+        "phase": "completed",
+        "completed": [
+          "b00-original",
+          "b00-same96",
+          "b00-random96",
+          "b01-same96",
+          "b01-random96",
+          "b01-original",
+          "b02-random96",
+          "b02-original",
+          "b02-same96",
+          "b03-original",
+          "b03-same96",
+          "b03-random96",
+          "b04-same96",
+          "b04-random96",
+          "b04-original",
+          "b05-random96",
+          "b05-original",
+          "b05-same96",
+          "b06-original",
+          "b06-same96",
+          "b06-random96",
+          "b07-same96",
+          "b07-random96",
+          "b07-original"
+        ],
+        "deadline": 1790607428.465348,
+        "learning_validated": false,
+        "started_at": 1790585862.0270648,
+        "stage": "b07-original",
+        "container_id": "fae7eafe794aa4a301b7f5230116bcbfd93266ae159f14def7f7100e139b6a63",
+        "exit_code": 0,
+        "finished_at": 1790594429.5257733
+      },
+      "seeds": [
+        208764042,
+        4033831095,
+        4273283954,
+        3286156970,
+        4222622236,
+        2828046710,
+        3821897171,
+        2801178166,
+        4159820916,
+        2397134230,
+        2295537531,
+        1085176974,
+        888413657,
+        1864623588,
+        1821246725,
+        4288245617,
+        1928083807,
+        1606439848,
+        1750180001,
+        2157129030,
+        3845869480,
+        2583316505,
+        1044797244,
+        499463978,
+        1185563293,
+        3466613764,
+        3939152471,
+        3446644127,
+        3079316308,
+        2907693452,
+        3583644975,
+        963713801,
+        2410879157,
+        2855928203,
+        2339311949,
+        2425639993,
+        1084325355,
+        4154416030,
+        3145046334,
+        2615958828,
+        2949091419,
+        3347882770,
+        49608851,
+        2923560418,
+        2207328776,
+        3771748923,
+        2500500153,
+        631587272,
+        2564915539,
+        564610756,
+        512751299,
+        1177360828,
+        667732584,
+        3070107292,
+        2889412589,
+        1274792528,
+        1974511954,
+        4088181271,
+        890353330,
+        556409708,
+        3673009292,
+        602393243,
+        777611869,
+        3056685215
+      ],
+      "all_seed_rng_paired": true,
+      "arms": {
+        "original": {
+          "wins": 43,
+          "games": 64,
+          "consumed": 383,
+          "outcomes": [
+            {
+              "seed": 208764042,
+              "outcome": "Victory",
+              "decisions": 7
+            },
+            {
+              "seed": 4033831095,
+              "outcome": "Victory",
+              "decisions": 6
+            },
+            {
+              "seed": 4273283954,
+              "outcome": "Defeat",
+              "decisions": 8
+            },
+            {
+              "seed": 3286156970,
+              "outcome": "Defeat",
+              "decisions": 5
+            },
+            {
+              "seed": 4222622236,
+              "outcome": "Victory",
+              "decisions": 8
+            },
+            {
+              "seed": 2828046710,
+              "outcome": "Defeat",
+              "decisions": 7
+            },
+            {
+              "seed": 3821897171,
+              "outcome": "Victory",
+              "decisions": 6
+            },
+            {
+              "seed": 2801178166,
+              "outcome": "Victory",
+              "decisions": 5
+            },
+            {
+              "seed": 4159820916,
+              "outcome": "Victory",
+              "decisions": 5
+            },
+            {
+              "seed": 2397134230,
+              "outcome": "Defeat",
+              "decisions": 6
+            },
+            {
+              "seed": 2295537531,
+              "outcome": "Defeat",
+              "decisions": 6
+            },
+            {
+              "seed": 1085176974,
+              "outcome": "Victory",
+              "decisions": 9
+            },
+            {
+              "seed": 888413657,
+              "outcome": "Victory",
+              "decisions": 5
+            },
+            {
+              "seed": 1864623588,
+              "outcome": "Victory",
+              "decisions": 8
+            },
+            {
+              "seed": 1821246725,
+              "outcome": "Victory",
+              "decisions": 3
+            },
+            {
+              "seed": 4288245617,
+              "outcome": "Defeat",
+              "decisions": 7
+            },
+            {
+              "seed": 1928083807,
+              "outcome": "Defeat",
+              "decisions": 8
+            },
+            {
+              "seed": 1606439848,
+              "outcome": "Defeat",
+              "decisions": 6
+            },
+            {
+              "seed": 1750180001,
+              "outcome": "Victory",
+              "decisions": 6
+            },
+            {
+              "seed": 2157129030,
+              "outcome": "Defeat",
+              "decisions": 5
+            },
+            {
+              "seed": 3845869480,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 2583316505,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 1044797244,
+              "outcome": "Defeat",
+              "decisions": 9
+            },
+            {
+              "seed": 499463978,
+              "outcome": "Defeat",
+              "decisions": 5
+            },
+            {
+              "seed": 1185563293,
+              "outcome": "Victory",
+              "decisions": 5
+            },
+            {
+              "seed": 3466613764,
+              "outcome": "Defeat",
+              "decisions": 6
+            },
+            {
+              "seed": 3939152471,
+              "outcome": "Victory",
+              "decisions": 3
+            },
+            {
+              "seed": 3446644127,
+              "outcome": "Defeat",
+              "decisions": 8
+            },
+            {
+              "seed": 3079316308,
+              "outcome": "Victory",
+              "decisions": 7
+            },
+            {
+              "seed": 2907693452,
+              "outcome": "Victory",
+              "decisions": 9
+            },
+            {
+              "seed": 3583644975,
+              "outcome": "Victory",
+              "decisions": 8
+            },
+            {
+              "seed": 963713801,
+              "outcome": "Victory",
+              "decisions": 9
+            },
+            {
+              "seed": 2410879157,
+              "outcome": "Victory",
+              "decisions": 7
+            },
+            {
+              "seed": 2855928203,
+              "outcome": "Victory",
+              "decisions": 8
+            },
+            {
+              "seed": 2339311949,
+              "outcome": "Victory",
+              "decisions": 6
+            },
+            {
+              "seed": 2425639993,
+              "outcome": "Victory",
+              "decisions": 3
+            },
+            {
+              "seed": 1084325355,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 4154416030,
+              "outcome": "Victory",
+              "decisions": 5
+            },
+            {
+              "seed": 3145046334,
+              "outcome": "Defeat",
+              "decisions": 4
+            },
+            {
+              "seed": 2615958828,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 2949091419,
+              "outcome": "Victory",
+              "decisions": 5
+            },
+            {
+              "seed": 3347882770,
+              "outcome": "Victory",
+              "decisions": 7
+            },
+            {
+              "seed": 49608851,
+              "outcome": "Victory",
+              "decisions": 5
+            },
+            {
+              "seed": 2923560418,
+              "outcome": "Defeat",
+              "decisions": 5
+            },
+            {
+              "seed": 2207328776,
+              "outcome": "Victory",
+              "decisions": 3
+            },
+            {
+              "seed": 3771748923,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 2500500153,
+              "outcome": "Victory",
+              "decisions": 8
+            },
+            {
+              "seed": 631587272,
+              "outcome": "Victory",
+              "decisions": 5
+            },
+            {
+              "seed": 2564915539,
+              "outcome": "Victory",
+              "decisions": 7
+            },
+            {
+              "seed": 564610756,
+              "outcome": "Defeat",
+              "decisions": 8
+            },
+            {
+              "seed": 512751299,
+              "outcome": "Victory",
+              "decisions": 3
+            },
+            {
+              "seed": 1177360828,
+              "outcome": "Victory",
+              "decisions": 6
+            },
+            {
+              "seed": 667732584,
+              "outcome": "Defeat",
+              "decisions": 6
+            },
+            {
+              "seed": 3070107292,
+              "outcome": "Victory",
+              "decisions": 5
+            },
+            {
+              "seed": 2889412589,
+              "outcome": "Victory",
+              "decisions": 8
+            },
+            {
+              "seed": 1274792528,
+              "outcome": "Defeat",
+              "decisions": 5
+            },
+            {
+              "seed": 1974511954,
+              "outcome": "Victory",
+              "decisions": 8
+            },
+            {
+              "seed": 4088181271,
+              "outcome": "Defeat",
+              "decisions": 8
+            },
+            {
+              "seed": 890353330,
+              "outcome": "Victory",
+              "decisions": 8
+            },
+            {
+              "seed": 556409708,
+              "outcome": "Defeat",
+              "decisions": 5
+            },
+            {
+              "seed": 3673009292,
+              "outcome": "Defeat",
+              "decisions": 5
+            },
+            {
+              "seed": 602393243,
+              "outcome": "Victory",
+              "decisions": 5
+            },
+            {
+              "seed": 777611869,
+              "outcome": "Victory",
+              "decisions": 6
+            },
+            {
+              "seed": 3056685215,
+              "outcome": "Victory",
+              "decisions": 4
+            }
+          ],
+          "stages": [
+            {
+              "stage": "b00-original",
+              "checkpoint": null,
+              "loaded_step": 0,
+              "load_returned": false,
+              "consumed": 52,
+              "test_score": -3.0118749141693115,
+              "container_id": "ebb8e7fc8eeab8b816e8aa4027191657de3d3d7ec31612b83eae72bdaffb5e9b"
+            },
+            {
+              "stage": "b01-original",
+              "checkpoint": null,
+              "loaded_step": 0,
+              "load_returned": false,
+              "consumed": 49,
+              "test_score": -2.259624719619751,
+              "container_id": "0de9488f9977ccf437ffdbdf2bd94ed78b863577be3d5541c20739ce37137e90"
+            },
+            {
+              "stage": "b02-original",
+              "checkpoint": null,
+              "loaded_step": 0,
+              "load_returned": false,
+              "consumed": 47,
+              "test_score": -23.20937490463257,
+              "container_id": "c09f07e25547e8c16589a83496cf26ca0f20302d7cb62f34e7fb4079e5b11748"
+            },
+            {
+              "stage": "b03-original",
+              "checkpoint": null,
+              "loaded_step": 0,
+              "load_returned": false,
+              "consumed": 55,
+              "test_score": 7.068625211715698,
+              "container_id": "46e095159f7b1798daa6b409450ee2d24c303572a319a64b1f07fbded1e17d0e"
+            },
+            {
+              "stage": "b04-original",
+              "checkpoint": null,
+              "loaded_step": 0,
+              "load_returned": false,
+              "consumed": 41,
+              "test_score": 16.740625143051147,
+              "container_id": "45d5d250c9c0951fb5b3ff5e316cf2c49445674da08e229dc4e797cff0034b0d"
+            },
+            {
+              "stage": "b05-original",
+              "checkpoint": null,
+              "loaded_step": 0,
+              "load_returned": false,
+              "consumed": 42,
+              "test_score": 17.209375143051147,
+              "container_id": "1dadce14fccf7ae067a07378181947656785cb8c13dcb5cbe64b0839360d34fc"
+            },
+            {
+              "stage": "b06-original",
+              "checkpoint": null,
+              "loaded_step": 0,
+              "load_returned": false,
+              "consumed": 48,
+              "test_score": -2.9946248531341553,
+              "container_id": "5ce3f96e8776612de2984af563bf075563947c879548c08fad8ba01c5c77778f"
+            },
+            {
+              "stage": "b07-original",
+              "checkpoint": null,
+              "loaded_step": 0,
+              "load_returned": false,
+              "consumed": 49,
+              "test_score": -3.254625082015991,
+              "container_id": "fae7eafe794aa4a301b7f5230116bcbfd93266ae159f14def7f7100e139b6a63"
+            }
+          ]
+        },
+        "same96": {
+          "wins": 35,
+          "games": 64,
+          "consumed": 506,
+          "outcomes": [
+            {
+              "seed": 208764042,
+              "outcome": "Victory",
+              "decisions": 7
+            },
+            {
+              "seed": 4033831095,
+              "outcome": "Defeat",
+              "decisions": 10
+            },
+            {
+              "seed": 4273283954,
+              "outcome": "Defeat",
+              "decisions": 8
+            },
+            {
+              "seed": 3286156970,
+              "outcome": "Defeat",
+              "decisions": 7
+            },
+            {
+              "seed": 4222622236,
+              "outcome": "Defeat",
+              "decisions": 8
+            },
+            {
+              "seed": 2828046710,
+              "outcome": "Defeat",
+              "decisions": 9
+            },
+            {
+              "seed": 3821897171,
+              "outcome": "Defeat",
+              "decisions": 8
+            },
+            {
+              "seed": 2801178166,
+              "outcome": "Victory",
+              "decisions": 7
+            },
+            {
+              "seed": 4159820916,
+              "outcome": "Victory",
+              "decisions": 8
+            },
+            {
+              "seed": 2397134230,
+              "outcome": "Defeat",
+              "decisions": 6
+            },
+            {
+              "seed": 2295537531,
+              "outcome": "Defeat",
+              "decisions": 9
+            },
+            {
+              "seed": 1085176974,
+              "outcome": "Victory",
+              "decisions": 8
+            },
+            {
+              "seed": 888413657,
+              "outcome": "Victory",
+              "decisions": 8
+            },
+            {
+              "seed": 1864623588,
+              "outcome": "Victory",
+              "decisions": 8
+            },
+            {
+              "seed": 1821246725,
+              "outcome": "Victory",
+              "decisions": 8
+            },
+            {
+              "seed": 4288245617,
+              "outcome": "Defeat",
+              "decisions": 9
+            },
+            {
+              "seed": 1928083807,
+              "outcome": "Victory",
+              "decisions": 8
+            },
+            {
+              "seed": 1606439848,
+              "outcome": "Defeat",
+              "decisions": 9
+            },
+            {
+              "seed": 1750180001,
+              "outcome": "Victory",
+              "decisions": 7
+            },
+            {
+              "seed": 2157129030,
+              "outcome": "Defeat",
+              "decisions": 8
+            },
+            {
+              "seed": 3845869480,
+              "outcome": "Victory",
+              "decisions": 8
+            },
+            {
+              "seed": 2583316505,
+              "outcome": "Victory",
+              "decisions": 8
+            },
+            {
+              "seed": 1044797244,
+              "outcome": "Victory",
+              "decisions": 7
+            },
+            {
+              "seed": 499463978,
+              "outcome": "Defeat",
+              "decisions": 9
+            },
+            {
+              "seed": 1185563293,
+              "outcome": "Victory",
+              "decisions": 8
+            },
+            {
+              "seed": 3466613764,
+              "outcome": "Defeat",
+              "decisions": 8
+            },
+            {
+              "seed": 3939152471,
+              "outcome": "Victory",
+              "decisions": 7
+            },
+            {
+              "seed": 3446644127,
+              "outcome": "Defeat",
+              "decisions": 8
+            },
+            {
+              "seed": 3079316308,
+              "outcome": "Victory",
+              "decisions": 8
+            },
+            {
+              "seed": 2907693452,
+              "outcome": "Defeat",
+              "decisions": 9
+            },
+            {
+              "seed": 3583644975,
+              "outcome": "Defeat",
+              "decisions": 8
+            },
+            {
+              "seed": 963713801,
+              "outcome": "Victory",
+              "decisions": 7
+            },
+            {
+              "seed": 2410879157,
+              "outcome": "Victory",
+              "decisions": 7
+            },
+            {
+              "seed": 2855928203,
+              "outcome": "Victory",
+              "decisions": 9
+            },
+            {
+              "seed": 2339311949,
+              "outcome": "Victory",
+              "decisions": 8
+            },
+            {
+              "seed": 2425639993,
+              "outcome": "Defeat",
+              "decisions": 9
+            },
+            {
+              "seed": 1084325355,
+              "outcome": "Defeat",
+              "decisions": 9
+            },
+            {
+              "seed": 4154416030,
+              "outcome": "Victory",
+              "decisions": 7
+            },
+            {
+              "seed": 3145046334,
+              "outcome": "Defeat",
+              "decisions": 8
+            },
+            {
+              "seed": 2615958828,
+              "outcome": "Victory",
+              "decisions": 7
+            },
+            {
+              "seed": 2949091419,
+              "outcome": "Victory",
+              "decisions": 8
+            },
+            {
+              "seed": 3347882770,
+              "outcome": "Victory",
+              "decisions": 7
+            },
+            {
+              "seed": 49608851,
+              "outcome": "Victory",
+              "decisions": 8
+            },
+            {
+              "seed": 2923560418,
+              "outcome": "Defeat",
+              "decisions": 9
+            },
+            {
+              "seed": 2207328776,
+              "outcome": "Victory",
+              "decisions": 8
+            },
+            {
+              "seed": 3771748923,
+              "outcome": "Victory",
+              "decisions": 7
+            },
+            {
+              "seed": 2500500153,
+              "outcome": "Victory",
+              "decisions": 8
+            },
+            {
+              "seed": 631587272,
+              "outcome": "Defeat",
+              "decisions": 8
+            },
+            {
+              "seed": 2564915539,
+              "outcome": "Victory",
+              "decisions": 8
+            },
+            {
+              "seed": 564610756,
+              "outcome": "Defeat",
+              "decisions": 9
+            },
+            {
+              "seed": 512751299,
+              "outcome": "Victory",
+              "decisions": 7
+            },
+            {
+              "seed": 1177360828,
+              "outcome": "Defeat",
+              "decisions": 8
+            },
+            {
+              "seed": 667732584,
+              "outcome": "Defeat",
+              "decisions": 8
+            },
+            {
+              "seed": 3070107292,
+              "outcome": "Victory",
+              "decisions": 7
+            },
+            {
+              "seed": 2889412589,
+              "outcome": "Victory",
+              "decisions": 7
+            },
+            {
+              "seed": 1274792528,
+              "outcome": "Defeat",
+              "decisions": 8
+            },
+            {
+              "seed": 1974511954,
+              "outcome": "Victory",
+              "decisions": 8
+            },
+            {
+              "seed": 4088181271,
+              "outcome": "Defeat",
+              "decisions": 7
+            },
+            {
+              "seed": 890353330,
+              "outcome": "Victory",
+              "decisions": 8
+            },
+            {
+              "seed": 556409708,
+              "outcome": "Defeat",
+              "decisions": 8
+            },
+            {
+              "seed": 3673009292,
+              "outcome": "Defeat",
+              "decisions": 8
+            },
+            {
+              "seed": 602393243,
+              "outcome": "Victory",
+              "decisions": 7
+            },
+            {
+              "seed": 777611869,
+              "outcome": "Defeat",
+              "decisions": 8
+            },
+            {
+              "seed": 3056685215,
+              "outcome": "Victory",
+              "decisions": 8
+            }
+          ],
+          "stages": [
+            {
+              "stage": "b00-same96",
+              "checkpoint": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/long/runs/train96/checkpoints/global_step_96",
+              "loaded_step": 96,
+              "load_returned": true,
+              "consumed": 64,
+              "test_score": -31.633000135421753,
+              "container_id": "bfbb486d514141e7470fb9865d73f3ae9060724adbc27eac44de36ab8916c7e0"
+            },
+            {
+              "stage": "b01-same96",
+              "checkpoint": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/long/runs/train96/checkpoints/global_step_96",
+              "loaded_step": 96,
+              "load_returned": true,
+              "consumed": 64,
+              "test_score": -1.6157495975494385,
+              "container_id": "3cc6f76bd1c12c43c81df1d1dde0fd7b8e9b6fbdc17dad24bd7b2acb541fafc7"
+            },
+            {
+              "stage": "b02-same96",
+              "checkpoint": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/long/runs/train96/checkpoints/global_step_96",
+              "loaded_step": 96,
+              "load_returned": true,
+              "consumed": 64,
+              "test_score": -1.90012526512146,
+              "container_id": "f10a54bf6d0e7d5232e882c5923cf5f55c77a74347b5bb471b145b47cddd8bf2"
+            },
+            {
+              "stage": "b03-same96",
+              "checkpoint": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/long/runs/train96/checkpoints/global_step_96",
+              "loaded_step": 96,
+              "load_returned": true,
+              "consumed": 63,
+              "test_score": -11.771874904632568,
+              "container_id": "c1ca4c5e128e2015071ef48885d6ae5058700644a9a69f1041683df07ccf1be8"
+            },
+            {
+              "stage": "b04-same96",
+              "checkpoint": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/long/runs/train96/checkpoints/global_step_96",
+              "loaded_step": 96,
+              "load_returned": true,
+              "consumed": 64,
+              "test_score": -1.3634998798370361,
+              "container_id": "1da85a166de41736041d3517ad50fddac97cc63449c1f052d0c09598dc0a92be"
+            },
+            {
+              "stage": "b05-same96",
+              "checkpoint": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/long/runs/train96/checkpoints/global_step_96",
+              "loaded_step": 96,
+              "load_returned": true,
+              "consumed": 63,
+              "test_score": 8.834374904632568,
+              "container_id": "2c76184316b67bed69369246de70c1a6237751b1dca311b626a3e571a02bb0aa"
+            },
+            {
+              "stage": "b06-same96",
+              "checkpoint": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/long/runs/train96/checkpoints/global_step_96",
+              "loaded_step": 96,
+              "load_returned": true,
+              "consumed": 62,
+              "test_score": -11.995624780654907,
+              "container_id": "b4c83fbdbfd9334f34f5d32b7c046d52437249067728f6dc26c057dffba94075"
+            },
+            {
+              "stage": "b07-same96",
+              "checkpoint": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/long/runs/train96/checkpoints/global_step_96",
+              "loaded_step": 96,
+              "load_returned": true,
+              "consumed": 62,
+              "test_score": -11.729125022888184,
+              "container_id": "c7fe0b667b86465b2d85b8fde4d6428bfa36eeb9deff76f1c9f2b21eba7c9a6a"
+            }
+          ]
+        },
+        "random96": {
+          "wins": 45,
+          "games": 64,
+          "consumed": 266,
+          "outcomes": [
+            {
+              "seed": 208764042,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 4033831095,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 4273283954,
+              "outcome": "Defeat",
+              "decisions": 4
+            },
+            {
+              "seed": 3286156970,
+              "outcome": "Defeat",
+              "decisions": 4
+            },
+            {
+              "seed": 4222622236,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 2828046710,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 3821897171,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 2801178166,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 4159820916,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 2397134230,
+              "outcome": "Defeat",
+              "decisions": 4
+            },
+            {
+              "seed": 2295537531,
+              "outcome": "Defeat",
+              "decisions": 6
+            },
+            {
+              "seed": 1085176974,
+              "outcome": "Victory",
+              "decisions": 5
+            },
+            {
+              "seed": 888413657,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 1864623588,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 1821246725,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 4288245617,
+              "outcome": "Defeat",
+              "decisions": 5
+            },
+            {
+              "seed": 1928083807,
+              "outcome": "Defeat",
+              "decisions": 4
+            },
+            {
+              "seed": 1606439848,
+              "outcome": "Defeat",
+              "decisions": 4
+            },
+            {
+              "seed": 1750180001,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 2157129030,
+              "outcome": "Defeat",
+              "decisions": 4
+            },
+            {
+              "seed": 3845869480,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 2583316505,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 1044797244,
+              "outcome": "Victory",
+              "decisions": 5
+            },
+            {
+              "seed": 499463978,
+              "outcome": "Defeat",
+              "decisions": 4
+            },
+            {
+              "seed": 1185563293,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 3466613764,
+              "outcome": "Defeat",
+              "decisions": 4
+            },
+            {
+              "seed": 3939152471,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 3446644127,
+              "outcome": "Defeat",
+              "decisions": 5
+            },
+            {
+              "seed": 3079316308,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 2907693452,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 3583644975,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 963713801,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 2410879157,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 2855928203,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 2339311949,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 2425639993,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 1084325355,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 4154416030,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 3145046334,
+              "outcome": "Defeat",
+              "decisions": 4
+            },
+            {
+              "seed": 2615958828,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 2949091419,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 3347882770,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 49608851,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 2923560418,
+              "outcome": "Defeat",
+              "decisions": 6
+            },
+            {
+              "seed": 2207328776,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 3771748923,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 2500500153,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 631587272,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 2564915539,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 564610756,
+              "outcome": "Defeat",
+              "decisions": 5
+            },
+            {
+              "seed": 512751299,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 1177360828,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 667732584,
+              "outcome": "Defeat",
+              "decisions": 4
+            },
+            {
+              "seed": 3070107292,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 2889412589,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 1274792528,
+              "outcome": "Defeat",
+              "decisions": 4
+            },
+            {
+              "seed": 1974511954,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 4088181271,
+              "outcome": "Defeat",
+              "decisions": 4
+            },
+            {
+              "seed": 890353330,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 556409708,
+              "outcome": "Defeat",
+              "decisions": 4
+            },
+            {
+              "seed": 3673009292,
+              "outcome": "Defeat",
+              "decisions": 5
+            },
+            {
+              "seed": 602393243,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 777611869,
+              "outcome": "Victory",
+              "decisions": 4
+            },
+            {
+              "seed": 3056685215,
+              "outcome": "Victory",
+              "decisions": 4
+            }
+          ],
+          "stages": [
+            {
+              "stage": "b00-random96",
+              "checkpoint": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/long/runs/train96/checkpoints/global_step_96",
+              "loaded_step": 96,
+              "load_returned": true,
+              "consumed": 32,
+              "test_score": 6.908624887466431,
+              "container_id": "10d2138a9d6e653c15bb55373bda63fe27389a7b4ec5f8f7c0b0ed435c55c713"
+            },
+            {
+              "stage": "b01-random96",
+              "checkpoint": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/long/runs/train96/checkpoints/global_step_96",
+              "loaded_step": 96,
+              "load_returned": true,
+              "consumed": 36,
+              "test_score": -2.522250175476074,
+              "container_id": "db01022898a713110957e78541b0704ab3558da450a1a190f677daccc602938c"
+            },
+            {
+              "stage": "b02-random96",
+              "checkpoint": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/long/runs/train96/checkpoints/global_step_96",
+              "loaded_step": 96,
+              "load_returned": true,
+              "consumed": 33,
+              "test_score": -12.939125061035156,
+              "container_id": "6a2c071e3274e1d008c5ebfd0b284001951f7228db284e96798f4698f18721f4"
+            },
+            {
+              "stage": "b03-random96",
+              "checkpoint": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/long/runs/train96/checkpoints/global_step_96",
+              "loaded_step": 96,
+              "load_returned": true,
+              "consumed": 33,
+              "test_score": 6.950000047683716,
+              "container_id": "bf6a30d4cd783af41e6b6690ac4301bfb098e8df73fd48ae37ef33dbfd3cefb5"
+            },
+            {
+              "stage": "b04-random96",
+              "checkpoint": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/long/runs/train96/checkpoints/global_step_96",
+              "loaded_step": 96,
+              "load_returned": true,
+              "consumed": 32,
+              "test_score": 16.871124982833862,
+              "container_id": "4079bb3e96296ea30dcd53dc466fd0b15b0cbaca01d5ad2643420688b6fa613c"
+            },
+            {
+              "stage": "b05-random96",
+              "checkpoint": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/long/runs/train96/checkpoints/global_step_96",
+              "loaded_step": 96,
+              "load_returned": true,
+              "consumed": 34,
+              "test_score": 16.99049973487854,
+              "container_id": "82b4903d50cc61c1b9fd23709b2a79eacac6ddc2937d88ed85bb21a167e6fbc4"
+            },
+            {
+              "stage": "b06-random96",
+              "checkpoint": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/long/runs/train96/checkpoints/global_step_96",
+              "loaded_step": 96,
+              "load_returned": true,
+              "consumed": 33,
+              "test_score": -3.1444997787475586,
+              "container_id": "083ec840edd5c2a6223e39df2788fde15f66eb712a5dbad5e18863cab3505d6a"
+            },
+            {
+              "stage": "b07-random96",
+              "checkpoint": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/long/runs/train96/checkpoints/global_step_96",
+              "loaded_step": 96,
+              "load_returned": true,
+              "consumed": 33,
+              "test_score": -3.079000234603882,
+              "container_id": "1a6adde31d2d2ac3a074d8a2925f6ab857f7f8dfe68017fde60367ba7c33dddc"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "selection_pairwise": [
+    {
+      "first": "cp2",
+      "second": "cp32",
+      "win_discordances": 0,
+      "outcome_discordances": 0,
+      "decision_count_differences": 32
+    },
+    {
+      "first": "cp2",
+      "second": "cp64",
+      "win_discordances": 0,
+      "outcome_discordances": 0,
+      "decision_count_differences": 31
+    },
+    {
+      "first": "cp2",
+      "second": "cp96",
+      "win_discordances": 0,
+      "outcome_discordances": 0,
+      "decision_count_differences": 32
+    },
+    {
+      "first": "cp32",
+      "second": "cp64",
+      "win_discordances": 0,
+      "outcome_discordances": 0,
+      "decision_count_differences": 2
+    },
+    {
+      "first": "cp32",
+      "second": "cp96",
+      "win_discordances": 0,
+      "outcome_discordances": 0,
+      "decision_count_differences": 0
+    },
+    {
+      "first": "cp64",
+      "second": "cp96",
+      "win_discordances": 0,
+      "outcome_discordances": 0,
+      "decision_count_differences": 2
+    }
+  ],
+  "exact_containers_exited0": 40,
+  "source_files": [
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-source-20260928-r3/code/experiments/records/20260921-sc2-policy-credit-v1/qwen_l8random_plan.py",
+      "bytes": 5566,
+      "sha256": "073b0c2c3a3751a451a62ab14154da530eb36066db1bd528b7c76b61b36d59b5"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/queue-state.json",
+      "bytes": 359,
+      "sha256": "bef6e5fe45091c541ba4196c349e0416b35d1a52bce85703b2555276a6f19f65"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/state.json",
+      "bytes": 597,
+      "sha256": "ed2cfaea6d75c76f69aea5d783b964993d22dd9fb2b7ae9a4ca47191e3d5ecaf"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/host-supervision/state.json",
+      "bytes": 597,
+      "sha256": "ed2cfaea6d75c76f69aea5d783b964993d22dd9fb2b7ae9a4ca47191e3d5ecaf"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b00-cp2/result.json",
+      "bytes": 5219,
+      "sha256": "846480e46b635b54c33284439bc6520465c599d9f7b0731154e9336c354bf111"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/acceptance-b00-cp2.json",
+      "bytes": 7903,
+      "sha256": "8c64513cd149a3fce7354257b313f31414f3b8cd1291791241601a501b0b7e05"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b00-cp2/.done",
+      "bytes": 5219,
+      "sha256": "846480e46b635b54c33284439bc6520465c599d9f7b0731154e9336c354bf111"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b00-cp2/manifest.json",
+      "bytes": 3025,
+      "sha256": "9f9416742c8b09dc725255b06bf4093ef7ed5cbb274d7d92a43b3728bc60603b"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b00-cp2/checkpoint_evaluation.json",
+      "bytes": 581,
+      "sha256": "74cc5151c17e4175ceebf70e371aa4d6190f06e4786d118dbe9b09190f0026ed"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/host-supervision/b00-cp2-guardian.json",
+      "bytes": 18529,
+      "sha256": "924f7edee8e12042a6d67b1e1d1344532852948c4edcfb4770a640e0c70dbadc"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b01-cp2/result.json",
+      "bytes": 5221,
+      "sha256": "7feb1c278c01a8ada8110c60a03afe300667f22d51f8e1faa72dad3d6962f85c"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/acceptance-b01-cp2.json",
+      "bytes": 7904,
+      "sha256": "7214eb655c3803738d2ca5fc39131dd90dc1e22a08e1a475cc92439e6ec2e5d0"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b01-cp2/.done",
+      "bytes": 5221,
+      "sha256": "7feb1c278c01a8ada8110c60a03afe300667f22d51f8e1faa72dad3d6962f85c"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b01-cp2/manifest.json",
+      "bytes": 3025,
+      "sha256": "ec6e0802a7c1f0c8ee0457ca9d72d230b89b1ae7a21c61e2c64b3dda26ec5be6"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b01-cp2/checkpoint_evaluation.json",
+      "bytes": 580,
+      "sha256": "ee4b571520170886c2e72f94ad818534b7486d6b4601f94c2a49778bd12b2c61"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/host-supervision/b01-cp2-guardian.json",
+      "bytes": 19776,
+      "sha256": "ff9d231bf26d10f3077593e6364d9948a66e32024eeb2c83fda5dea56ba356b5"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b02-cp2/result.json",
+      "bytes": 5216,
+      "sha256": "658724a7f1f76686033cc511f106d08e7cb81ffd7c5da2ed599e4059597d44bd"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/acceptance-b02-cp2.json",
+      "bytes": 7899,
+      "sha256": "fbde3a24f9bba11ca2ce13ef24a4a88d29b7b030a35a3629364a9d24bbe35783"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b02-cp2/.done",
+      "bytes": 5216,
+      "sha256": "658724a7f1f76686033cc511f106d08e7cb81ffd7c5da2ed599e4059597d44bd"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b02-cp2/manifest.json",
+      "bytes": 3025,
+      "sha256": "093bfc2879721f556c1fad6d53fbb861fa2299439f04b5e66c4a60fcf2d6b9ab"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b02-cp2/checkpoint_evaluation.json",
+      "bytes": 580,
+      "sha256": "00a4ed00cc0bdaab59caa3476fe89ed72ab84171beddbaae1d47b4e414a1e8a5"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/host-supervision/b02-cp2-guardian.json",
+      "bytes": 12255,
+      "sha256": "6ea75902f38f02b1e5c16ca74c0fe14d75b3ed2af49fa3508eb481621b3a7429"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b03-cp2/result.json",
+      "bytes": 5221,
+      "sha256": "b7bb3fa70537877e50f39dbb26afd8ba23b7d4c24b25b7d960e39b4e5d5c1219"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/acceptance-b03-cp2.json",
+      "bytes": 7903,
+      "sha256": "5f7fa69edc494c2a1a9965a3ad0cd3d06cad9fd60c01c68f30bef80d5134dd72"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b03-cp2/.done",
+      "bytes": 5221,
+      "sha256": "b7bb3fa70537877e50f39dbb26afd8ba23b7d4c24b25b7d960e39b4e5d5c1219"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b03-cp2/manifest.json",
+      "bytes": 3025,
+      "sha256": "60d0f2d4b1e8691d552420f9425e510bcdeadbc145b9c4415cc572c47267cff9"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b03-cp2/checkpoint_evaluation.json",
+      "bytes": 580,
+      "sha256": "970f7df721a85ecec4836ed3f5c2dc0ef4d3c0d28986911855b4feab30d521f8"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/host-supervision/b03-cp2-guardian.json",
+      "bytes": 11626,
+      "sha256": "560100defb9fcb9b022607647408ee055e5b04a1c4c193588f286bf263a605ee"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b00-cp32/result.json",
+      "bytes": 5219,
+      "sha256": "3595e599a485379222680acac01e7c782e8905b0a8c4d2bf2c596a570b0b0188"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/acceptance-b00-cp32.json",
+      "bytes": 7996,
+      "sha256": "bc7dfe702c47844a65dabf31af6265f3979832d92382c3afd08f7ea250c6de87"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b00-cp32/.done",
+      "bytes": 5219,
+      "sha256": "3595e599a485379222680acac01e7c782e8905b0a8c4d2bf2c596a570b0b0188"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b00-cp32/manifest.json",
+      "bytes": 3026,
+      "sha256": "cc4205d952a6a1191e08c9598bb6ab1f6eb77707fed040b654cb873ef2a67574"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b00-cp32/checkpoint_evaluation.json",
+      "bytes": 583,
+      "sha256": "b5b2d4007a5f924dd7d9ff83e7189f8dfb2663a05de87d6835242b0bf30c4fd7"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/host-supervision/b00-cp32-guardian.json",
+      "bytes": 12247,
+      "sha256": "ce74f5d87d4f5971d03829c46747aff2186cc6ff73fa263c2d2560f26122be6f"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b01-cp32/result.json",
+      "bytes": 5223,
+      "sha256": "869e1ce13651a095026e89411f7b9c6659d6a9e6fb7e6e5aad457561deb12e67"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/acceptance-b01-cp32.json",
+      "bytes": 7999,
+      "sha256": "6557c684fb128a8bf0b7377b33316a9e3991e34add15ddd2c284733b2b4475f6"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b01-cp32/.done",
+      "bytes": 5223,
+      "sha256": "869e1ce13651a095026e89411f7b9c6659d6a9e6fb7e6e5aad457561deb12e67"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b01-cp32/manifest.json",
+      "bytes": 3026,
+      "sha256": "307febadcfdd03eb8c7f800657862ea8cb0bd3754e7e57ebd19392a831ab3634"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b01-cp32/checkpoint_evaluation.json",
+      "bytes": 582,
+      "sha256": "341c2738afc6c85830e1377f704fe994663120f5bceacf43daba16d90424686d"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/host-supervision/b01-cp32-guardian.json",
+      "bytes": 13008,
+      "sha256": "a9ee9c8727289f688c5766dd1f0519b007192ce150507b66a44274308b5aae51"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b02-cp32/result.json",
+      "bytes": 5216,
+      "sha256": "c4c752d4d5afd160d7fbd28ea961ac5dc005e96a2f66b61deeb1cc82609692e8"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/acceptance-b02-cp32.json",
+      "bytes": 7992,
+      "sha256": "922c7ee5654820b04c5522ff6e8f1eb1bce93ac23d05eb95140be102d224ec88"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b02-cp32/.done",
+      "bytes": 5216,
+      "sha256": "c4c752d4d5afd160d7fbd28ea961ac5dc005e96a2f66b61deeb1cc82609692e8"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b02-cp32/manifest.json",
+      "bytes": 3026,
+      "sha256": "b8f3fbf65fdc9849c6c57cb213d42f7a430423ddbec60b027dc8c0f6dbf98f96"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b02-cp32/checkpoint_evaluation.json",
+      "bytes": 582,
+      "sha256": "8f6b4c75aaa486af2236babc33c9d1eb1c4368602b7ae2b8c6973c294b7652f4"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/host-supervision/b02-cp32-guardian.json",
+      "bytes": 10368,
+      "sha256": "78c2b2672647536e230f29a7cc214fc7a5960accdeedbca5be75ed52a23a0315"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b03-cp32/result.json",
+      "bytes": 5221,
+      "sha256": "d1100f1ec408f7724854bc63cdb8154cbd867f64c4678f571f3c01a7ec92c1a1"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/acceptance-b03-cp32.json",
+      "bytes": 7997,
+      "sha256": "3c43a1558cc86da7f9b27bc8e5b6309c45ead499519ae6b2783d9df517a1cfc0"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b03-cp32/.done",
+      "bytes": 5221,
+      "sha256": "d1100f1ec408f7724854bc63cdb8154cbd867f64c4678f571f3c01a7ec92c1a1"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b03-cp32/manifest.json",
+      "bytes": 3026,
+      "sha256": "213a5f332a526be289ed683e3249d0562e1139a9deb545d88340e83ce1b96e8e"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b03-cp32/checkpoint_evaluation.json",
+      "bytes": 582,
+      "sha256": "28b0dd3c4191be0a0dc0c040109da3f2cda42878db021567bcd6b42dbe679943"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/host-supervision/b03-cp32-guardian.json",
+      "bytes": 11001,
+      "sha256": "252a652d98786e0e7d4f18ff7de79795554cdaa8fbcc5f2050411c8df65e416a"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b00-cp64/result.json",
+      "bytes": 5219,
+      "sha256": "25a70df462fd3f5ea0e58f983cca38badb7b3eb22cf8002199a85f9b801c7799"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/acceptance-b00-cp64.json",
+      "bytes": 8088,
+      "sha256": "490af801bb2915e9ad697396f20578ce81d3a9819222eaa0c72df6cee8bab565"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b00-cp64/.done",
+      "bytes": 5219,
+      "sha256": "25a70df462fd3f5ea0e58f983cca38badb7b3eb22cf8002199a85f9b801c7799"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b00-cp64/manifest.json",
+      "bytes": 3026,
+      "sha256": "bff618592c420127a732871ddfcdb4a63b43431ddd4efe9d63d005d2e2ee5b6b"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b00-cp64/checkpoint_evaluation.json",
+      "bytes": 583,
+      "sha256": "d2135e20e6bd0bedc48194179f199f2e04a9fa4a1a1c99df0291a5771145aa3c"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/host-supervision/b00-cp64-guardian.json",
+      "bytes": 12266,
+      "sha256": "53fe2dbfc02cea46057c6178fb106377406351ec21992cc8ce1054763a8a4578"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b01-cp64/result.json",
+      "bytes": 5223,
+      "sha256": "4f10864c846cf68af26a73ab669e06c430dab9e69f299d8184f06875acaff3af"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/acceptance-b01-cp64.json",
+      "bytes": 8091,
+      "sha256": "321d588088688ceffa023ced3a5773bdb27a212b8ad1e93eefbbc748d572b0b3"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b01-cp64/.done",
+      "bytes": 5223,
+      "sha256": "4f10864c846cf68af26a73ab669e06c430dab9e69f299d8184f06875acaff3af"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b01-cp64/manifest.json",
+      "bytes": 3026,
+      "sha256": "0a49e74ddf4fd7ef2b4fabb0ff1d59163d819808ffb462df27a8336d54d66b24"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b01-cp64/checkpoint_evaluation.json",
+      "bytes": 582,
+      "sha256": "a16b9a231e30b841f5da7bc9c07f2ec5d96f7c1bc71443dfb228f495e95910b3"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/host-supervision/b01-cp64-guardian.json",
+      "bytes": 12880,
+      "sha256": "9dcbfffcfea1bb1eef57850c242024404302bd44d8c292b5f4d373a32e778293"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b02-cp64/result.json",
+      "bytes": 5216,
+      "sha256": "cd7acc24d633004f2c452d69e192e66354f09e3548b975420e428b5af4454582"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/acceptance-b02-cp64.json",
+      "bytes": 8084,
+      "sha256": "146420ba4eec80a7d42ae30dc78aefdec2035f30bc5d821adff91f5f3189a3e9"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b02-cp64/.done",
+      "bytes": 5216,
+      "sha256": "cd7acc24d633004f2c452d69e192e66354f09e3548b975420e428b5af4454582"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b02-cp64/manifest.json",
+      "bytes": 3026,
+      "sha256": "56748e5efbf7a3f1881ca257f2bf3f66974a9aff47d924cad97d7d380665f9dc"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b02-cp64/checkpoint_evaluation.json",
+      "bytes": 582,
+      "sha256": "377a811958d4399325d090134e532cbe50cf2f1b7ff2a4388655ffb6eb5fc863"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/host-supervision/b02-cp64-guardian.json",
+      "bytes": 10999,
+      "sha256": "4c92c9e12a48acaf21996313356cea41a0e4760f9efeafb6f9787f794a218b62"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b03-cp64/result.json",
+      "bytes": 5221,
+      "sha256": "5c140ec4d97b808a08348556efc98827a8718b47c33f8590941189b499f954f1"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/acceptance-b03-cp64.json",
+      "bytes": 8089,
+      "sha256": "44c29119bd910bf0d59f8f8cf5fcdbf1d231028f55e9336b3a8b18e19f1bddaa"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b03-cp64/.done",
+      "bytes": 5221,
+      "sha256": "5c140ec4d97b808a08348556efc98827a8718b47c33f8590941189b499f954f1"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b03-cp64/manifest.json",
+      "bytes": 3026,
+      "sha256": "3f52d86c9fcd073cb0f4f963dfbbf8ccac471bfbf81c7b26682505d33467cf22"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b03-cp64/checkpoint_evaluation.json",
+      "bytes": 582,
+      "sha256": "152fa80b904f5aa95648b21bb0043f06c182000100a107f341c5fe65c574cfa4"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/host-supervision/b03-cp64-guardian.json",
+      "bytes": 11632,
+      "sha256": "e82dd98414a105b49e416b5d7c3234a063e13304963b0f6918987a97d30b3300"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b00-cp96/result.json",
+      "bytes": 5219,
+      "sha256": "67e2976ee9ac59b1344ba113a56bf4633e75323bdaf4c4d8ef09f9f5edc03df7"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/acceptance-b00-cp96.json",
+      "bytes": 8180,
+      "sha256": "29aa65ddadfb01d9a94644ccd90e6f7f8911bb6717f2297c3c1a49b60613f482"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b00-cp96/.done",
+      "bytes": 5219,
+      "sha256": "67e2976ee9ac59b1344ba113a56bf4633e75323bdaf4c4d8ef09f9f5edc03df7"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b00-cp96/manifest.json",
+      "bytes": 3026,
+      "sha256": "1d2d7da26e8a44896837e60e5c93d1f6d18e9632fbf7b8227191005c84a79221"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b00-cp96/checkpoint_evaluation.json",
+      "bytes": 583,
+      "sha256": "d0a727376b92dbd42e9a5f723892dfbd59bd0a1190cc3d1ebddb6085ca235fc1"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/host-supervision/b00-cp96-guardian.json",
+      "bytes": 17841,
+      "sha256": "ea8608c130e85b82e59b32dcdbdb830dd4dae87c52c47dba8bc9abc714b8ad74"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b01-cp96/result.json",
+      "bytes": 5223,
+      "sha256": "b3932ec5d7aa5c6e4207d51b572555f927661fdbd2a10a77ecaea840a50dd2cb"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/acceptance-b01-cp96.json",
+      "bytes": 8182,
+      "sha256": "c5a1e4347f96cf7c56910d59f1ba0a96e6eb3a9d2393f0f215cf749c0c16d197"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b01-cp96/.done",
+      "bytes": 5223,
+      "sha256": "b3932ec5d7aa5c6e4207d51b572555f927661fdbd2a10a77ecaea840a50dd2cb"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b01-cp96/manifest.json",
+      "bytes": 3026,
+      "sha256": "50cd6646833e42de9756fe3192489582a72e7487866bab46f67aa6aa4f707828"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b01-cp96/checkpoint_evaluation.json",
+      "bytes": 582,
+      "sha256": "873ce5e32ac32ceec6f06d8d8cc420f453f49c040f4da9fa558a007aa2d8c59d"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/host-supervision/b01-cp96-guardian.json",
+      "bytes": 15512,
+      "sha256": "a2beeaeb50f4f2e70330a87e2b272fca7eda4cbe1167194b2361210e7f7d479a"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b02-cp96/result.json",
+      "bytes": 5216,
+      "sha256": "ee18ee5c5c0ced24eed8a4d06ac01c6a8899c1bb50f99885dd1f682de79e3ab6"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/acceptance-b02-cp96.json",
+      "bytes": 8175,
+      "sha256": "a6d88ec07b161492ca6e7fbd68628102613ba03f082e074d924affd37be03fec"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b02-cp96/.done",
+      "bytes": 5216,
+      "sha256": "ee18ee5c5c0ced24eed8a4d06ac01c6a8899c1bb50f99885dd1f682de79e3ab6"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b02-cp96/manifest.json",
+      "bytes": 3026,
+      "sha256": "99749be99c468cddab80696579fbd078854f976c10826cf98397d5a5b61c3092"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b02-cp96/checkpoint_evaluation.json",
+      "bytes": 582,
+      "sha256": "9180fbfd94cdee0575e6688b34d91755a62d1079c8d06e14bdc8396a61a061dc"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/host-supervision/b02-cp96-guardian.json",
+      "bytes": 10382,
+      "sha256": "11b53667beb8c56b87f04b8133f552a0c3729005cd64d16de3ab168e7c6da39d"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b03-cp96/result.json",
+      "bytes": 5221,
+      "sha256": "48032a82dbd4b28569bf09124cb9b94c9f77e5bb6937071c5d8fa5be886efcae"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/acceptance-b03-cp96.json",
+      "bytes": 8181,
+      "sha256": "374db192078126f505b829bc5957acdac9b3e1d2244f03cc9b7838d21c656b23"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b03-cp96/.done",
+      "bytes": 5221,
+      "sha256": "48032a82dbd4b28569bf09124cb9b94c9f77e5bb6937071c5d8fa5be886efcae"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b03-cp96/manifest.json",
+      "bytes": 3026,
+      "sha256": "3291b32e8e9f04e0dfeb1dffeca90ae02961b798cecb63ee1919a1b48debae36"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b03-cp96/checkpoint_evaluation.json",
+      "bytes": 582,
+      "sha256": "25747b22b0421514e3ca868c201b3a375e0a7ccd5d732e9b2877a455db907a6b"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/host-supervision/b03-cp96-guardian.json",
+      "bytes": 11636,
+      "sha256": "b5f19ec88a344daf5e4f65c2f51b1f400d144b93ddc9da2c15fc163522262673"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/state.json",
+      "bytes": 812,
+      "sha256": "b78c8b141699359a19ea5ecb84d97b70d48413f656de9c08fd98936ed8f6c166"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/host-supervision/state.json",
+      "bytes": 812,
+      "sha256": "b78c8b141699359a19ea5ecb84d97b70d48413f656de9c08fd98936ed8f6c166"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b00-original/result.json",
+      "bytes": 5223,
+      "sha256": "bbc8bfa726bc51c2db60f4ced54505d080ba1504db1fc2aaa567f827fb59d36b"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/acceptance-b00-original.json",
+      "bytes": 7905,
+      "sha256": "3b7ab41e0dd0d8d7155ce094ccb60ba1c9a38b4e6be811fa040aaeb060910ea3"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b00-original/.done",
+      "bytes": 5223,
+      "sha256": "bbc8bfa726bc51c2db60f4ced54505d080ba1504db1fc2aaa567f827fb59d36b"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b00-original/manifest.json",
+      "bytes": 2922,
+      "sha256": "dad1e910d7a3ac84c7872b3ee7e34123a1c6e23f1e9aa6c37628bfcddc0f10b6"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b00-original/checkpoint_evaluation.json",
+      "bytes": 480,
+      "sha256": "b33f10e045db0189c8560259d8decc22a5235c899eb321196078647b3e8cb849"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/host-supervision/b00-original-guardian.json",
+      "bytes": 16020,
+      "sha256": "d04eb5e1b5dd226399d07f51a1b23872715aa8eef46dd7b029d2ae0fe64001e8"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b01-original/result.json",
+      "bytes": 5220,
+      "sha256": "cc03260664a3dafa5ec8e8800e9685106bf22a8eddf6a2913e3e4fdb2bb7a15d"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/acceptance-b01-original.json",
+      "bytes": 8091,
+      "sha256": "7a5c608bd03de998f595dc48ee5f542cc0547cb9aa060297c3627019111e418b"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b01-original/.done",
+      "bytes": 5220,
+      "sha256": "cc03260664a3dafa5ec8e8800e9685106bf22a8eddf6a2913e3e4fdb2bb7a15d"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b01-original/manifest.json",
+      "bytes": 2922,
+      "sha256": "688e2267eaeac2abd651bc166788a70f1fbc7a79cbd32c150215018854e68d34"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b01-original/checkpoint_evaluation.json",
+      "bytes": 480,
+      "sha256": "d48deb130e93f695f8dc6cb460d68d7f8b57061122cac679234358ae914be0ed"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/host-supervision/b01-original-guardian.json",
+      "bytes": 19775,
+      "sha256": "ebc8a3e24225923ef539c81e58b7b9ba82629ac996a593203eea11f9862f4a2f"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b02-original/result.json",
+      "bytes": 5222,
+      "sha256": "da0eb38fec89b3bb2c89537455590d1a3d6b1beb53f6ff8f1eb56a7a0e15f39e"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/acceptance-b02-original.json",
+      "bytes": 8001,
+      "sha256": "cf82cba1e1b23329c093273b13d5cf9e9c7cbf0574960a60ae4cfabd253127f9"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b02-original/.done",
+      "bytes": 5222,
+      "sha256": "da0eb38fec89b3bb2c89537455590d1a3d6b1beb53f6ff8f1eb56a7a0e15f39e"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b02-original/manifest.json",
+      "bytes": 2922,
+      "sha256": "94eac7ba4dc44b9c2ab5abc97dfd54c0b2fa4e80a5bd34f8266912e01ed0f852"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b02-original/checkpoint_evaluation.json",
+      "bytes": 480,
+      "sha256": "410dd8599f63a0e8f072db9372d0617f12d20426d87011041930c13e90b13080"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/host-supervision/b02-original-guardian.json",
+      "bytes": 18529,
+      "sha256": "5210055c1183c054f0bda66f4a1125582a641aaa0ace0b674b3e75aae7a3e554"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b03-original/result.json",
+      "bytes": 5219,
+      "sha256": "59558bea697a5fdb4af4da7b4b71face34db4ef4e8a7c3a760e148a398acf9aa"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/acceptance-b03-original.json",
+      "bytes": 7903,
+      "sha256": "8a55f825263f6667375d2c1ff183d98e0f66db1b8bcb2ff718b232e77ec59743"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b03-original/.done",
+      "bytes": 5219,
+      "sha256": "59558bea697a5fdb4af4da7b4b71face34db4ef4e8a7c3a760e148a398acf9aa"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b03-original/manifest.json",
+      "bytes": 2922,
+      "sha256": "3d43b7adb9230a9889babfa113ea95bd3a29484c2d0d7ca5c96c648681dc21cf"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b03-original/checkpoint_evaluation.json",
+      "bytes": 480,
+      "sha256": "08c2f32fcaa2b412a6f0457d0a632cefba9e5b31c8a89b68080414a9d38d5d45"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/host-supervision/b03-original-guardian.json",
+      "bytes": 16639,
+      "sha256": "ed9cc028860a110fa9cfee9abe0b13c37140d5633fd62bf7705d17bd996faa88"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b04-original/result.json",
+      "bytes": 5222,
+      "sha256": "b770dda3fd76f139ac0102f953280b76a9a75f05a9675936429aa0ed81310590"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/acceptance-b04-original.json",
+      "bytes": 8095,
+      "sha256": "78c805d5e2bdaa1300d01c0ac98757e10ff04171636049585c17b8e9443011d0"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b04-original/.done",
+      "bytes": 5222,
+      "sha256": "b770dda3fd76f139ac0102f953280b76a9a75f05a9675936429aa0ed81310590"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b04-original/manifest.json",
+      "bytes": 2922,
+      "sha256": "477cd4d582d242ed6bfac60a7cd7d926bea0d8fe045e3a01fc850334415aec04"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b04-original/checkpoint_evaluation.json",
+      "bytes": 481,
+      "sha256": "b7304587315990bd247d85b50dd4f0266e253ba0a72d51b1ef63f84aee4f80ab"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/host-supervision/b04-original-guardian.json",
+      "bytes": 16634,
+      "sha256": "3bce1cd6186e00fda304aac7480749769d29b433af8138fccb7978ce1c8bae03"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b05-original/result.json",
+      "bytes": 5220,
+      "sha256": "027d589d9c20a25f2e975f3024733cd08971f37d35ab4cbd1e8a1d5c7d227a64"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/acceptance-b05-original.json",
+      "bytes": 7998,
+      "sha256": "7e124ddb70dd1ee039ae21d0a3c348c43f72867959a31245819c8f7ae5b25962"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b05-original/.done",
+      "bytes": 5220,
+      "sha256": "027d589d9c20a25f2e975f3024733cd08971f37d35ab4cbd1e8a1d5c7d227a64"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b05-original/manifest.json",
+      "bytes": 2922,
+      "sha256": "00fc58117b1d599b907888da117da38e7faad96d4b2702f008da8b6db9a92dfd"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b05-original/checkpoint_evaluation.json",
+      "bytes": 478,
+      "sha256": "807a030413fd06056495c7a2089089a257226f4531a108e8ba7b58d50c54afd2"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/host-supervision/b05-original-guardian.json",
+      "bytes": 16024,
+      "sha256": "e396ea8dbcc6691d45d1ae22b54971cf4d0b302b4a589f838c4c5311b98b1af3"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b06-original/result.json",
+      "bytes": 5223,
+      "sha256": "64d19cd6e95a72b2f99f53b44430f893112b2ffbec19d99741bdcb146316dd34"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/acceptance-b06-original.json",
+      "bytes": 7905,
+      "sha256": "1dffd4bf0154030f4d8b309bb3b1969669a298f92a3fd6786ebc75fac1cae744"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b06-original/.done",
+      "bytes": 5223,
+      "sha256": "64d19cd6e95a72b2f99f53b44430f893112b2ffbec19d99741bdcb146316dd34"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b06-original/manifest.json",
+      "bytes": 2922,
+      "sha256": "71e980cae99b10eb824681358663c6e07b406c6689ba8f15ff5942f4cc05c765"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b06-original/checkpoint_evaluation.json",
+      "bytes": 478,
+      "sha256": "7abe48db78fe138b99f19227a85370e5ab55a971e2e337a337eb5e3b067b49ef"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/host-supervision/b06-original-guardian.json",
+      "bytes": 16658,
+      "sha256": "0fd868f503f54f63a7f72f57151a2fcb43c6bbcf21585e95d062bc3c65bf63d5"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b07-original/result.json",
+      "bytes": 5220,
+      "sha256": "88e8bdc21afaf37ad18757affeb46aebac02ea8e26dfa5a3524c8eedcc9f69e7"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/acceptance-b07-original.json",
+      "bytes": 8089,
+      "sha256": "b03585565b684fa67531425da8f4844f6acd896b6fd814558cebd8c777e57865"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b07-original/.done",
+      "bytes": 5220,
+      "sha256": "88e8bdc21afaf37ad18757affeb46aebac02ea8e26dfa5a3524c8eedcc9f69e7"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b07-original/manifest.json",
+      "bytes": 2922,
+      "sha256": "fd7aaca2a58403a3c4f197b1fc8045af4988dff275f34f5c9c74c5846d4c2398"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b07-original/checkpoint_evaluation.json",
+      "bytes": 477,
+      "sha256": "4d18cc24c79e1128d6a7980c8d7078337684e51846602af3828ca88f3e1f4a3a"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/host-supervision/b07-original-guardian.json",
+      "bytes": 16927,
+      "sha256": "ebc0dc2a10c5c16f81ee82417979bc607077038a180f2e6cdcd43531519e0d35"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b00-same96/result.json",
+      "bytes": 5221,
+      "sha256": "ca925106c05629bada1b9d79cc7a86f774eb481125fb03b43cd62bb852d9a778"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/acceptance-b00-same96.json",
+      "bytes": 8000,
+      "sha256": "044853b89d18420d6e1ecd10fea4d68cd095e8dda1d6803f57b178fcd2abdeea"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b00-same96/.done",
+      "bytes": 5221,
+      "sha256": "ca925106c05629bada1b9d79cc7a86f774eb481125fb03b43cd62bb852d9a778"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b00-same96/manifest.json",
+      "bytes": 3022,
+      "sha256": "e185193d90eb58e45eaa4f0bf90a5adb01f348a3dcac3021282df65d8d87e92c"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b00-same96/checkpoint_evaluation.json",
+      "bytes": 579,
+      "sha256": "a6ea7be26fd653a2587a310fe790d1fc536dff3dc5cbc159d24d686c5e1e62d7"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/host-supervision/b00-same96-guardian.json",
+      "bytes": 16645,
+      "sha256": "91aeada1497156942a5e38412a24f5ca065a84d52e61aa36665ecaf804676bd7"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b01-same96/result.json",
+      "bytes": 5223,
+      "sha256": "7fbf28252763e48a4d7cdf8a955fc5143aa8462cfa5ae95f116de8d2a3978ffc"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/acceptance-b01-same96.json",
+      "bytes": 7907,
+      "sha256": "fcab61ae3f70145a8136ca6bd137fcaea470ba7a601c1b6a539bf92d5fd5d903"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b01-same96/.done",
+      "bytes": 5223,
+      "sha256": "7fbf28252763e48a4d7cdf8a955fc5143aa8462cfa5ae95f116de8d2a3978ffc"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b01-same96/manifest.json",
+      "bytes": 3022,
+      "sha256": "383f4d7a53340850b915a64e326b914161c58f33449eeae93ee08e7da33561a8"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b01-same96/checkpoint_evaluation.json",
+      "bytes": 579,
+      "sha256": "4263655d5904259d431e3770c9a2290acdcc9591d97b0e5c52475c1f6e1be8bb"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/host-supervision/b01-same96-guardian.json",
+      "bytes": 16642,
+      "sha256": "36acda2d56917786b3b80688c34cc8e646d6f034b21cd921982136715922c515"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b02-same96/result.json",
+      "bytes": 5219,
+      "sha256": "214f421119468bc3ddfb02d227590bfd31ed66e014a469e4bf2188ce3b6198ce"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/acceptance-b02-same96.json",
+      "bytes": 8093,
+      "sha256": "24a17c2be76a1e5478226d2a846f96576359a6e495490691ae5ff845391676ac"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b02-same96/.done",
+      "bytes": 5219,
+      "sha256": "214f421119468bc3ddfb02d227590bfd31ed66e014a469e4bf2188ce3b6198ce"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b02-same96/manifest.json",
+      "bytes": 3022,
+      "sha256": "4857328e6f8eecd0aa66af2539d0dfae3122e31db4b3e0c293e2c09a724fa7dd"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b02-same96/checkpoint_evaluation.json",
+      "bytes": 579,
+      "sha256": "dbaf60f13574a452ba6f96440faaa0cbe3b1f1c8e1f5449e93dcb5680df0e704"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/host-supervision/b02-same96-guardian.json",
+      "bytes": 14133,
+      "sha256": "873dc296994be0831722205491e684d407d5c9bb315da95305c4f142d4d2ee19"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b03-same96/result.json",
+      "bytes": 5217,
+      "sha256": "f06d4917ccb9fc84d12139141fe09a5c6c3fa4bf4d051ad2654bd18f8568b1ea"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/acceptance-b03-same96.json",
+      "bytes": 7995,
+      "sha256": "1ac5275d4f9b4c8c80e0dfd3d6b06eafc7afe48a82073f8743440b7087728ccc"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b03-same96/.done",
+      "bytes": 5217,
+      "sha256": "f06d4917ccb9fc84d12139141fe09a5c6c3fa4bf4d051ad2654bd18f8568b1ea"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b03-same96/manifest.json",
+      "bytes": 3022,
+      "sha256": "f7946082e8f05921ef50763b0029d70c0cebc6ad9f52d0f43efb1e50306798fb"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b03-same96/checkpoint_evaluation.json",
+      "bytes": 579,
+      "sha256": "57d9726e634bfafb69a80ee11fbe49baeab3ea3ade0291e0237441d8a0c9c8f0"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/host-supervision/b03-same96-guardian.json",
+      "bytes": 17911,
+      "sha256": "d4bc4532220240a27dff2fbc53d62bea7caf55dd563155a6e208144408677f1c"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b04-same96/result.json",
+      "bytes": 5221,
+      "sha256": "a723e055971a56b54fc9089a62818ddeb2f4ad2f1a63b7fb3beddbf38c0f463c"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/acceptance-b04-same96.json",
+      "bytes": 7906,
+      "sha256": "5f5f7529f630884e5ec74d7aa7d1ec98fcfa2f6fa25cc93c0b2a09f3715e23a2"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b04-same96/.done",
+      "bytes": 5221,
+      "sha256": "a723e055971a56b54fc9089a62818ddeb2f4ad2f1a63b7fb3beddbf38c0f463c"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b04-same96/manifest.json",
+      "bytes": 3022,
+      "sha256": "cdfa4e4161d797b91f167ad8d539f92689f3ea3511a8f0fcd082d70ce0da8b59"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b04-same96/checkpoint_evaluation.json",
+      "bytes": 580,
+      "sha256": "2eea0e5396d414d88a6e9626b0e327ffd3913df2b1374bcd4632f84245dbb35a"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/host-supervision/b04-same96-guardian.json",
+      "bytes": 15389,
+      "sha256": "67593b90ef1739c6214ffe06c84db60655e04d493c704c80e50f6bcb211b7f5e"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b05-same96/result.json",
+      "bytes": 5217,
+      "sha256": "31ad9ad2cdb4080f6f6da5bd902085938afc745b66613adb2d3f49fdf572d29d"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/acceptance-b05-same96.json",
+      "bytes": 8089,
+      "sha256": "d2a9ecfd116644893748c4b8d8d6fdec099513e29bd0563942eb44b78252ee0b"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b05-same96/.done",
+      "bytes": 5217,
+      "sha256": "31ad9ad2cdb4080f6f6da5bd902085938afc745b66613adb2d3f49fdf572d29d"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b05-same96/manifest.json",
+      "bytes": 3022,
+      "sha256": "4cdaaf11870fd9e60f013158e6adc28f4ebe9c24a02141a2687fc67fa054c224"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b05-same96/checkpoint_evaluation.json",
+      "bytes": 577,
+      "sha256": "0baa7db58b0b44034b1ad298e0a56906a42e5428e87a811eabd493cff009d7f9"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/host-supervision/b05-same96-guardian.json",
+      "bytes": 15394,
+      "sha256": "8864536ec6ac39fd6e61daacee6c4702ee9b0155d2a338c83e49f219cdc65b89"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b06-same96/result.json",
+      "bytes": 5217,
+      "sha256": "463e24925584ac6870526d85ff3c25a6166d03977d567fb07eac71d389e8dd84"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/acceptance-b06-same96.json",
+      "bytes": 7995,
+      "sha256": "b8b47231a3c826a32e0b40b6e97497d66b49577c93f705e1f4993751b6724d91"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b06-same96/.done",
+      "bytes": 5217,
+      "sha256": "463e24925584ac6870526d85ff3c25a6166d03977d567fb07eac71d389e8dd84"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b06-same96/manifest.json",
+      "bytes": 3022,
+      "sha256": "7b290d64975d40d8b8236cb58a0f402f6507c2242a613119dfc57a6f93d53383"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b06-same96/checkpoint_evaluation.json",
+      "bytes": 577,
+      "sha256": "9d20e4ef93a69f0a7c0bc45235c4f40d93f0599f64174493c55042e97ef5bfdb"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/host-supervision/b06-same96-guardian.json",
+      "bytes": 14143,
+      "sha256": "3a8cef84404533d5347428f8b8c9d1e5d3eac3b98986d032104fa51214cf01a3"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b07-same96/result.json",
+      "bytes": 5217,
+      "sha256": "a1367c241ee825bdd37ce3fedfe94cc10b9dac4d41e184b1ea4a144af218bff9"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/acceptance-b07-same96.json",
+      "bytes": 7896,
+      "sha256": "5aa0fd4376b870fd0517cd38ae555cc4c9ddafc3da57331ec758dd900cce53ff"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b07-same96/.done",
+      "bytes": 5217,
+      "sha256": "a1367c241ee825bdd37ce3fedfe94cc10b9dac4d41e184b1ea4a144af218bff9"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b07-same96/manifest.json",
+      "bytes": 3022,
+      "sha256": "e3bacd5ff8347513ce644552b93cca7e3bf5434afb06635c71bb38832925c2cd"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b07-same96/checkpoint_evaluation.json",
+      "bytes": 576,
+      "sha256": "7a28cb8fc2556a255bdb229f197464de6bb0c7860275fa8e8b1eb2b162348092"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/host-supervision/b07-same96-guardian.json",
+      "bytes": 14124,
+      "sha256": "93a43ef037bd4af03c38da02926d0d3b619fefee3f6d70536f91a5b34a5e98d6"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b00-random96/result.json",
+      "bytes": 5217,
+      "sha256": "786255eee8f3840e31100b103214e9670dbd3fc3b48993acaf7ea6818a8d6f9c"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/acceptance-b00-random96.json",
+      "bytes": 8089,
+      "sha256": "ec2caafae3cb9c04b73f71a6b920f6e6775273f8f1101fe69361bf632b502fb5"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b00-random96/.done",
+      "bytes": 5217,
+      "sha256": "786255eee8f3840e31100b103214e9670dbd3fc3b48993acaf7ea6818a8d6f9c"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b00-random96/manifest.json",
+      "bytes": 3026,
+      "sha256": "394d5645b3ac58d7a4d6b97f92902c49af8d17b209f7a77a6ef84bcf6e897d61"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b00-random96/checkpoint_evaluation.json",
+      "bytes": 583,
+      "sha256": "9cc47fc5b983676de5f980cc68dce985745b5d8f12fe81295af1c7375de067bc"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/host-supervision/b00-random96-guardian.json",
+      "bytes": 11626,
+      "sha256": "a6f1d55b3933cf01bb62728e2490213ac525ca96897b934dad4498015f09e2c0"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b01-random96/result.json",
+      "bytes": 5222,
+      "sha256": "f9a821025c6cc43c0a581e3ddb791fc64f130dcf96691109682b40f122dcc93b"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/acceptance-b01-random96.json",
+      "bytes": 8000,
+      "sha256": "e0891011a6e5252751431c84c18af11696a8f42a8248331b43f97acfc899860d"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b01-random96/.done",
+      "bytes": 5222,
+      "sha256": "f9a821025c6cc43c0a581e3ddb791fc64f130dcf96691109682b40f122dcc93b"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b01-random96/manifest.json",
+      "bytes": 3026,
+      "sha256": "5c933a4155c6eb987350d297e441644c4ad1f50829caa453e1edfa57b4ab6d2f"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b01-random96/checkpoint_evaluation.json",
+      "bytes": 583,
+      "sha256": "b5657a6e5aa038722b3002e19b06dde7bd695c1aa0be872b53efa8a72e2cd663"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/host-supervision/b01-random96-guardian.json",
+      "bytes": 13510,
+      "sha256": "36400f0ab7786c6a193ba731dcdfe76dec93c2a855c48277cf582b1875df971c"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b02-random96/result.json",
+      "bytes": 5219,
+      "sha256": "ccd2e518071c72e5003f0b6b7b4629de08f77f52cfed6c486461e8f491a58409"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/acceptance-b02-random96.json",
+      "bytes": 7903,
+      "sha256": "214dbbaea3fffc31d64a5d4e342c8c182fc2f16a85ed77270d592ea22e023243"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b02-random96/.done",
+      "bytes": 5219,
+      "sha256": "ccd2e518071c72e5003f0b6b7b4629de08f77f52cfed6c486461e8f491a58409"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b02-random96/manifest.json",
+      "bytes": 3026,
+      "sha256": "5a22161d36c47e22652fc636b412488020f7a1054b4be4c130ff3e92ef087c86"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b02-random96/checkpoint_evaluation.json",
+      "bytes": 583,
+      "sha256": "b3f8a4ffe4a9886a4850fecac1783674d67c074a63291fc7b3408a2b425853f9"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/host-supervision/b02-random96-guardian.json",
+      "bytes": 11622,
+      "sha256": "a632e3a07332b9a9125069cb75b2f657a874cf8fbec5a5c9a45a00690ef6238b"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b03-random96/result.json",
+      "bytes": 5219,
+      "sha256": "92430663a3c4bddc7cc59f2f8eb97e4f3286b17a2f90b371ae2b79c98259f264"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/acceptance-b03-random96.json",
+      "bytes": 8091,
+      "sha256": "7e49b9297d0311096c6e2f2701739c62a3a9c9a4c0c3f003971e34aa569a15f9"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b03-random96/.done",
+      "bytes": 5219,
+      "sha256": "92430663a3c4bddc7cc59f2f8eb97e4f3286b17a2f90b371ae2b79c98259f264"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b03-random96/manifest.json",
+      "bytes": 3026,
+      "sha256": "3e054804839dc29b48522f71232b7b4e83a67c7d7aaef3c981c6b8f50ae20007"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b03-random96/checkpoint_evaluation.json",
+      "bytes": 583,
+      "sha256": "f18ce40a05f49a49429f89606177cedf78400327f8aecedd9a38fa49ffa2b652"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/host-supervision/b03-random96-guardian.json",
+      "bytes": 13507,
+      "sha256": "3f41e5e99947645895b4ca88dacf47843abacebb5446d671d22d8e2d94494858"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b04-random96/result.json",
+      "bytes": 5220,
+      "sha256": "f13696b5f8ffa70ae4954ed46d8f50a8f8449a434a4975618089b547e4dc1ca2"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/acceptance-b04-random96.json",
+      "bytes": 7999,
+      "sha256": "43ea290d82e52a9d9e8bc8687eea5105d3cba00922720d2675aa448673cd5948"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b04-random96/.done",
+      "bytes": 5220,
+      "sha256": "f13696b5f8ffa70ae4954ed46d8f50a8f8449a434a4975618089b547e4dc1ca2"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b04-random96/manifest.json",
+      "bytes": 3026,
+      "sha256": "5f7329cd3c1a736432bc13410844dee454b8bbbfab7234678452ddf106542515"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b04-random96/checkpoint_evaluation.json",
+      "bytes": 584,
+      "sha256": "fbc554c7f7032d7af4eb81c570ed4af48e20f714b3fefaab6fd567a45ab459fb"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/host-supervision/b04-random96-guardian.json",
+      "bytes": 10999,
+      "sha256": "e3f0ed022b89df4244a1a06eda270c3a2c128beb4c305029ca47ee6b74030bf4"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b05-random96/result.json",
+      "bytes": 5221,
+      "sha256": "ace15bd1fe7efa48b0776e2fcab10f7b3c44d52008bdd2f66105afa8d5edd3c2"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/acceptance-b05-random96.json",
+      "bytes": 7903,
+      "sha256": "9b19febed0fe795a567bf53252e48f387b4ca24ee8df7d7d595aeab095ce21b7"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b05-random96/.done",
+      "bytes": 5221,
+      "sha256": "ace15bd1fe7efa48b0776e2fcab10f7b3c44d52008bdd2f66105afa8d5edd3c2"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b05-random96/manifest.json",
+      "bytes": 3026,
+      "sha256": "381a07984f7d8684931894dc867fab73ae34d2f60f7d4b0d059e7c44173b12de"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b05-random96/checkpoint_evaluation.json",
+      "bytes": 581,
+      "sha256": "40ecfe610d49aebcad920224059f90194c433ac692dc3a09aab1bbc721dad625"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/host-supervision/b05-random96-guardian.json",
+      "bytes": 13506,
+      "sha256": "26e23d544e41bf0d7e3c8d3e9ba0bed29f7debfa2b532a7559f3b588dab816a2"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b06-random96/result.json",
+      "bytes": 5223,
+      "sha256": "138597b296e9fd9a1b88911ca1a31f63ec01769cf23feb93d5c6a5599619545e"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/acceptance-b06-random96.json",
+      "bytes": 8093,
+      "sha256": "90f6a68394e13cb9207fdb85ef4d303e114f8215375adf5cb5656343ca395538"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b06-random96/.done",
+      "bytes": 5223,
+      "sha256": "138597b296e9fd9a1b88911ca1a31f63ec01769cf23feb93d5c6a5599619545e"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b06-random96/manifest.json",
+      "bytes": 3026,
+      "sha256": "c59d5f909149c844bebcfbb573c4269975305366c362043cb70a517560ad67f0"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b06-random96/checkpoint_evaluation.json",
+      "bytes": 581,
+      "sha256": "f02895fa7e948f8c49a60428ed96dfcfa70378699425a7722c3d2510c110c7d4"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/host-supervision/b06-random96-guardian.json",
+      "bytes": 12253,
+      "sha256": "328625b94f2bba4e59b37618a3152bb4197073e0502dde5d5fe07bad14e4ec8e"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b07-random96/result.json",
+      "bytes": 5222,
+      "sha256": "cb79769e79cefe66f751712dd4bf2760ccf5b8fb6b11bbc7419a56f598f23b38"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/acceptance-b07-random96.json",
+      "bytes": 7997,
+      "sha256": "cac9b8347e799e856c96cb321e1cb21d089f4be49343ae4899c064ece023996f"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b07-random96/.done",
+      "bytes": 5222,
+      "sha256": "cb79769e79cefe66f751712dd4bf2760ccf5b8fb6b11bbc7419a56f598f23b38"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b07-random96/manifest.json",
+      "bytes": 3026,
+      "sha256": "90fe21f68ed49aea9085caa212c46973c2eb7d033d9df89a9644a6489230033c"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b07-random96/checkpoint_evaluation.json",
+      "bytes": 580,
+      "sha256": "986bcf98effe01475c10c2f0dc0bac7e699361c124c9732ef68f4ab9b02d98ee"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/host-supervision/b07-random96-guardian.json",
+      "bytes": 12891,
+      "sha256": "8a32645fdef263275ef2e45f4470e8f37192c228cc7384fc7ebc9b6315270689"
+    }
+  ],
+  "scope": "Read-only bounded receipts; no weights, console, repair, pruning or new evaluation.",
+  "caveat": "Distinct loaded checkpoint paths/steps and completed PPO do not independently quantify actual parameter deltas or prove meaningful learning."
+}

@@ -1,0 +1,90 @@
+{
+  "approval": "User approved L8random96 + three-arm64 including sparse full CP2/32/64/96, 18h/144GPUh/288GiB; checkpoint redesign remains proposal.",
+  "local_tests": {
+    "command": "PYTHONPATH=/private/tmp/sc2-qwen-native-testdeps-20260924:tests:. PYTHONDONTWRITEBYTECODE=1 python3 -B -m unittest test_qwen_l8random197 test_qwen_l9l10_same197 test_qwen_l9l10_continue197 test_qwen_l8_common64_197 test_sc2_policy_resume test_sc2_checkpoint_resume -v",
+    "tests": 116,
+    "passed": 112,
+    "skipped": 4,
+    "skip_reason": "Four TrainerResumeTest cases require pinned CPU Torch runtime; actual 197 model CPU gate must have zero skips."
+  },
+  "frozen_source_comparison": {
+    "baseline": "eef0f049bb09b7a51188ae67a6c35436a3bf055f",
+    "unchanged_checkpoint_manager_sha256": "8c552fae85be2a07fdbe4f24aae7c11a0dc2366ce2768dcefa05b993e34b8a03",
+    "unchanged_ray_trainer_sha256": "31200fc1170e54d39331be75bed81393fa9ae6c1b7f770e0f188164ce32c8bfc",
+    "core_difference": "Only explicit resume-contract extensions and associated source-hash manifest versus baseline; no optimizer/reward/precision changes."
+  },
+  "preparation_health": {
+    "checked_at": "2026-09-27T23:08:41.890034+08:00",
+    "hostname": {
+      "returncode": 0,
+      "stdout": "k8s-a-gpu01\n",
+      "stderr": ""
+    },
+    "queue": {
+      "phase": "running-unverified",
+      "completed": [
+        "L9/qwen-same/long",
+        "L10/qwen-same/short"
+      ],
+      "retained_games": 784,
+      "retained_updates": 96,
+      "new_games": 800,
+      "new_updates": 96,
+      "deadline": 1790568708.224269,
+      "level": 10,
+      "arm_deadline": 1790561940.3084953,
+      "part": "qwen-same/long"
+    },
+    "host": {
+      "version": "host-guardian-v1",
+      "phase": "running-unverified",
+      "completed": [],
+      "deadline": 1790561940.3084953,
+      "learning_validated": false,
+      "started_at": 1790520167.7715538,
+      "stage": "train96",
+      "container_id": "5c6dad7a7beff07053574400d6bd5a090fbc92db1f77a0ff70abc0b1f723befd"
+    },
+    "dispatch": {
+      "start": 1790518740.3084953,
+      "deadline": 1790561940.3084953,
+      "suite_deadline": 1790568708.224269,
+      "gpu_hours": 96,
+      "clock_inherited": false,
+      "new_games": 792,
+      "new_updates": 96,
+      "resumed_at": 1790518740.3085077
+    },
+    "gpu": {
+      "returncode": 0,
+      "stdout": "0, 5262, 0\n1, 5406, 0\n2, 5406, 0\n3, 5406, 0\n4, 5406, 0\n5, 5406, 0\n6, 5406, 0\n7, 5262, 0\n",
+      "stderr": ""
+    },
+    "compute": {
+      "returncode": 0,
+      "stdout": "429770, ray::WorkerDict, 5230 MiB\n429964, ray::WorkerDict, 5374 MiB\n429965, ray::WorkerDict, 5374 MiB\n429966, ray::WorkerDict, 5374 MiB\n429967, ray::WorkerDict, 5374 MiB\n429968, ray::WorkerDict, 5374 MiB\n429969, ray::WorkerDict, 5374 MiB\n429970, ray::WorkerDict, 5230 MiB\n",
+      "stderr": ""
+    },
+    "containers": {
+      "returncode": 0,
+      "stdout": "5c6dad7a7bef sc2-qwen-l10same96-197-20260927-r3-long-train96 Up 25 minutes\n62a197a64abc new_scii_spb2_stageguard_v1_20260815 Up 6 weeks\n2542e9ed108b new_scii_spb2_runtime_v1_20260815 Up 6 weeks\n269b6d79d3b4 new_scii_clean_core_20260815 Up 6 weeks\n9c608a58d0be sc2_spb2_l7_env_20260814 Up 6 weeks\n",
+      "stderr": ""
+    },
+    "disk": {
+      "total": 7679364128768,
+      "used": 6870958927872,
+      "free": 808405200896
+    },
+    "new_roots": {
+      "/var/jfsCache/sc2-qwen-l8random96-197-20260927-r1": false,
+      "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260927-r1": false,
+      "/var/jfsCache/sc2-qwen-l8random96-197-source-20260927-r1": false
+    },
+    "prior_tmux": {
+      "returncode": 0,
+      "stdout": "qwen_l9l10same96_197_r3: 1 windows (created Sun Sep 27 22:11:22 2026)\n",
+      "stderr": ""
+    }
+  },
+  "server_writes_at_this_receipt": false
+}

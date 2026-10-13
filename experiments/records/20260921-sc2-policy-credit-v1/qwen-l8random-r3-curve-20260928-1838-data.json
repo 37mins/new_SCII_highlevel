@@ -1,0 +1,3120 @@
+{
+  "schema": "sc2-l8random-r3-curve-v1",
+  "checked_at_beijing": "2026-09-28T18:38:11.002460+08:00",
+  "run_id": "sc2-qwen-l8random96-197-20260928-r3",
+  "node": "sc2-a100-197",
+  "runtime_sha": "ad81511b270f782420208ac8a6f305a141e8042b",
+  "root": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3",
+  "rows": [
+    {
+      "step": 1,
+      "wins": 6,
+      "games": 8,
+      "seeds": [
+        49,
+        97,
+        53,
+        5,
+        33,
+        65,
+        62,
+        51
+      ],
+      "actor/grad_norm": 140.06891098022462,
+      "timing_s/update_actor": 18.915772494859993,
+      "timing_s/step": 306.27994985319674,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 2,
+      "wins": 7,
+      "games": 8,
+      "seeds": [
+        100,
+        38,
+        61,
+        45,
+        74,
+        27,
+        64,
+        17
+      ],
+      "actor/grad_norm": 33.3932892481486,
+      "timing_s/update_actor": 20.45523542072624,
+      "timing_s/step": 232.95230577979237,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 3,
+      "wins": 4,
+      "games": 8,
+      "seeds": [
+        36,
+        17,
+        96,
+        12,
+        79,
+        32,
+        68,
+        90
+      ],
+      "actor/grad_norm": 34.279701421658196,
+      "timing_s/update_actor": 20.563685956411064,
+      "timing_s/step": 254.52958474308252,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 4,
+      "wins": 3,
+      "games": 8,
+      "seeds": [
+        77,
+        18,
+        39,
+        12,
+        93,
+        9,
+        87,
+        42
+      ],
+      "actor/grad_norm": 32.697604179382324,
+      "timing_s/update_actor": 17.116890554316342,
+      "timing_s/step": 181.36413702648133,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 5,
+      "wins": 6,
+      "games": 8,
+      "seeds": [
+        60,
+        71,
+        12,
+        45,
+        55,
+        40,
+        78,
+        81
+      ],
+      "actor/grad_norm": 46.64001541137695,
+      "timing_s/update_actor": 17.06699732132256,
+      "timing_s/step": 186.35284705460072,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 6,
+      "wins": 6,
+      "games": 8,
+      "seeds": [
+        26,
+        70,
+        61,
+        56,
+        66,
+        33,
+        7,
+        70
+      ],
+      "actor/grad_norm": 69.2238643277029,
+      "timing_s/update_actor": 17.521442570723593,
+      "timing_s/step": 201.5712989550084,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 7,
+      "wins": 7,
+      "games": 8,
+      "seeds": [
+        1,
+        11,
+        92,
+        51,
+        90,
+        100,
+        85,
+        80
+      ],
+      "actor/grad_norm": 8.988144266291055,
+      "timing_s/update_actor": 17.100040432065725,
+      "timing_s/step": 207.51077548228204,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 8,
+      "wins": 7,
+      "games": 8,
+      "seeds": [
+        0,
+        78,
+        63,
+        42,
+        31,
+        93,
+        41,
+        90
+      ],
+      "actor/grad_norm": 0.004588392039295286,
+      "timing_s/update_actor": 14.054096667096019,
+      "timing_s/step": 163.76422414090484,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 9,
+      "wins": 7,
+      "games": 8,
+      "seeds": [
+        8,
+        24,
+        72,
+        28,
+        30,
+        18,
+        69,
+        57
+      ],
+      "actor/grad_norm": 0.0024487648624926805,
+      "timing_s/update_actor": 13.973025401122868,
+      "timing_s/step": 155.455534780398,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 10,
+      "wins": 8,
+      "games": 8,
+      "seeds": [
+        11,
+        10,
+        40,
+        65,
+        62,
+        13,
+        38,
+        70
+      ],
+      "actor/grad_norm": 0.00007110699073109572,
+      "timing_s/update_actor": 14.169792786240578,
+      "timing_s/step": 152.40574895311147,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 11,
+      "wins": 4,
+      "games": 8,
+      "seeds": [
+        37,
+        90,
+        15,
+        70,
+        42,
+        69,
+        26,
+        77
+      ],
+      "actor/grad_norm": 2.089397820808517,
+      "timing_s/update_actor": 17.328817025758326,
+      "timing_s/step": 194.3689058292657,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 12,
+      "wins": 6,
+      "games": 8,
+      "seeds": [
+        70,
+        75,
+        36,
+        56,
+        11,
+        76,
+        49,
+        40
+      ],
+      "actor/grad_norm": 3.0505766157119067,
+      "timing_s/update_actor": 17.08434555400163,
+      "timing_s/step": 194.2090182453394,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 13,
+      "wins": 7,
+      "games": 8,
+      "seeds": [
+        73,
+        30,
+        37,
+        23,
+        24,
+        23,
+        4,
+        78
+      ],
+      "actor/grad_norm": 0.5661964029830415,
+      "timing_s/update_actor": 17.12429975811392,
+      "timing_s/step": 192.9587971046567,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 14,
+      "wins": 6,
+      "games": 8,
+      "seeds": [
+        84,
+        33,
+        60,
+        8,
+        11,
+        86,
+        96,
+        16
+      ],
+      "actor/grad_norm": 2.4449376160046086,
+      "timing_s/update_actor": 14.020905181765556,
+      "timing_s/step": 166.71035933028907,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 15,
+      "wins": 7,
+      "games": 8,
+      "seeds": [
+        19,
+        4,
+        10,
+        89,
+        69,
+        87,
+        50,
+        90
+      ],
+      "actor/grad_norm": 0.000056123865078916424,
+      "timing_s/update_actor": 14.057346449233592,
+      "timing_s/step": 157.96752662677318,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 16,
+      "wins": 5,
+      "games": 8,
+      "seeds": [
+        67,
+        35,
+        66,
+        30,
+        27,
+        86,
+        75,
+        53
+      ],
+      "actor/grad_norm": 9.477010130480995,
+      "timing_s/update_actor": 17.316195026040077,
+      "timing_s/step": 202.7239578170702,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 17,
+      "wins": 8,
+      "games": 8,
+      "seeds": [
+        74,
+        35,
+        57,
+        63,
+        84,
+        82,
+        89,
+        45
+      ],
+      "actor/grad_norm": 0.0000023715061843176954,
+      "timing_s/update_actor": 14.074848372489214,
+      "timing_s/step": 143.01035068370402,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 18,
+      "wins": 6,
+      "games": 8,
+      "seeds": [
+        10,
+        41,
+        78,
+        14,
+        62,
+        75,
+        80,
+        42
+      ],
+      "actor/grad_norm": 0.004109559507924132,
+      "timing_s/update_actor": 17.090199081227183,
+      "timing_s/step": 208.75811876077205,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 19,
+      "wins": 6,
+      "games": 8,
+      "seeds": [
+        24,
+        31,
+        2,
+        93,
+        34,
+        14,
+        90,
+        28
+      ],
+      "actor/grad_norm": 0.0018489944166503846,
+      "timing_s/update_actor": 17.10312588699162,
+      "timing_s/step": 193.85208448953927,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 20,
+      "wins": 6,
+      "games": 8,
+      "seeds": [
+        47,
+        21,
+        42,
+        54,
+        7,
+        12,
+        100,
+        18
+      ],
+      "actor/grad_norm": 0.002856524952221662,
+      "timing_s/update_actor": 13.99510613642633,
+      "timing_s/step": 158.74157562851906,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 21,
+      "wins": 5,
+      "games": 8,
+      "seeds": [
+        89,
+        28,
+        5,
+        73,
+        81,
+        68,
+        77,
+        87
+      ],
+      "actor/grad_norm": 0.12169427436892874,
+      "timing_s/update_actor": 17.346845600754023,
+      "timing_s/step": 198.52984135504812,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 22,
+      "wins": 3,
+      "games": 8,
+      "seeds": [
+        9,
+        3,
+        15,
+        81,
+        24,
+        77,
+        73,
+        15
+      ],
+      "actor/grad_norm": 0.0010550668521318585,
+      "timing_s/update_actor": 13.991380132734776,
+      "timing_s/step": 163.07568702753633,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 23,
+      "wins": 6,
+      "games": 8,
+      "seeds": [
+        50,
+        11,
+        47,
+        14,
+        4,
+        77,
+        2,
+        24
+      ],
+      "actor/grad_norm": 7.3034229759825395,
+      "timing_s/update_actor": 17.1088014729321,
+      "timing_s/step": 192.05904744751751,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 24,
+      "wins": 5,
+      "games": 8,
+      "seeds": [
+        23,
+        91,
+        15,
+        61,
+        26,
+        93,
+        7,
+        86
+      ],
+      "actor/grad_norm": 0.013665020698681474,
+      "timing_s/update_actor": 14.010796716436744,
+      "timing_s/step": 166.2505905861035,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 25,
+      "wins": 4,
+      "games": 8,
+      "seeds": [
+        2,
+        69,
+        54,
+        79,
+        12,
+        33,
+        8,
+        28
+      ],
+      "actor/grad_norm": 154.26373351365328,
+      "timing_s/update_actor": 17.18077063281089,
+      "timing_s/step": 191.9753987994045,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 26,
+      "wins": 7,
+      "games": 8,
+      "seeds": [
+        9,
+        82,
+        38,
+        44,
+        55,
+        23,
+        7,
+        64
+      ],
+      "actor/grad_norm": 72.47180339694023,
+      "timing_s/update_actor": 14.338173295371234,
+      "timing_s/step": 154.41724918037653,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 27,
+      "wins": 5,
+      "games": 8,
+      "seeds": [
+        59,
+        5,
+        76,
+        12,
+        89,
+        50,
+        25,
+        33
+      ],
+      "actor/grad_norm": 0.5275361385196448,
+      "timing_s/update_actor": 17.069581140764058,
+      "timing_s/step": 211.75509519968182,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 28,
+      "wins": 5,
+      "games": 8,
+      "seeds": [
+        45,
+        93,
+        60,
+        72,
+        21,
+        89,
+        86,
+        26
+      ],
+      "actor/grad_norm": 4.4556695483624935,
+      "timing_s/update_actor": 14.003493312746286,
+      "timing_s/step": 199.73219116032124,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 29,
+      "wins": 3,
+      "games": 8,
+      "seeds": [
+        98,
+        7,
+        100,
+        86,
+        20,
+        20,
+        43,
+        67
+      ],
+      "actor/grad_norm": 15.441240787506104,
+      "timing_s/update_actor": 17.164604308083653,
+      "timing_s/step": 262.01114487461746,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 30,
+      "wins": 4,
+      "games": 8,
+      "seeds": [
+        32,
+        15,
+        76,
+        56,
+        85,
+        22,
+        1,
+        60
+      ],
+      "actor/grad_norm": 49.16074829101562,
+      "timing_s/update_actor": 17.30049598403275,
+      "timing_s/step": 243.43288153316826,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 31,
+      "wins": 7,
+      "games": 8,
+      "seeds": [
+        87,
+        52,
+        72,
+        65,
+        39,
+        83,
+        45,
+        49
+      ],
+      "actor/grad_norm": 4.058747011423111,
+      "timing_s/update_actor": 17.136031589470804,
+      "timing_s/step": 205.10520955361426,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 32,
+      "wins": 8,
+      "games": 8,
+      "seeds": [
+        84,
+        32,
+        19,
+        71,
+        88,
+        1,
+        58,
+        94
+      ],
+      "actor/grad_norm": 0.015084001142531634,
+      "timing_s/update_actor": 17.124994333833456,
+      "timing_s/step": 205.09499700926244,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 33,
+      "wins": 6,
+      "games": 8,
+      "seeds": [
+        10,
+        42,
+        94,
+        5,
+        69,
+        35,
+        17,
+        30
+      ],
+      "actor/grad_norm": 1.3254523575305939,
+      "timing_s/update_actor": 17.12349064089358,
+      "timing_s/step": 219.36366500798613,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 34,
+      "wins": 5,
+      "games": 8,
+      "seeds": [
+        97,
+        61,
+        45,
+        78,
+        36,
+        86,
+        45,
+        75
+      ],
+      "actor/grad_norm": 0.781053239107132,
+      "timing_s/update_actor": 17.21395855396986,
+      "timing_s/step": 210.5320748630911,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 35,
+      "wins": 6,
+      "games": 8,
+      "seeds": [
+        81,
+        79,
+        16,
+        91,
+        39,
+        49,
+        95,
+        53
+      ],
+      "actor/grad_norm": 2.3703237950801848,
+      "timing_s/update_actor": 17.568876061588526,
+      "timing_s/step": 204.4803271740675,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 36,
+      "wins": 6,
+      "games": 8,
+      "seeds": [
+        83,
+        10,
+        0,
+        76,
+        24,
+        89,
+        42,
+        20
+      ],
+      "actor/grad_norm": 0.25276134721934795,
+      "timing_s/update_actor": 14.139728794805706,
+      "timing_s/step": 179.78233675844967,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 37,
+      "wins": 8,
+      "games": 8,
+      "seeds": [
+        30,
+        28,
+        81,
+        57,
+        48,
+        90,
+        86,
+        72
+      ],
+      "actor/grad_norm": 0.029160935955587775,
+      "timing_s/update_actor": 13.97561388835311,
+      "timing_s/step": 170.7941059693694,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 38,
+      "wins": 8,
+      "games": 8,
+      "seeds": [
+        53,
+        4,
+        51,
+        89,
+        72,
+        53,
+        98,
+        84
+      ],
+      "actor/grad_norm": 0.06386259966529906,
+      "timing_s/update_actor": 14.129693469032645,
+      "timing_s/step": 157.20992458984256,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 39,
+      "wins": 5,
+      "games": 8,
+      "seeds": [
+        90,
+        5,
+        21,
+        57,
+        8,
+        33,
+        89,
+        20
+      ],
+      "actor/grad_norm": 28.59976119995117,
+      "timing_s/update_actor": 17.079748754389584,
+      "timing_s/step": 222.50391846336424,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 40,
+      "wins": 5,
+      "games": 8,
+      "seeds": [
+        57,
+        67,
+        62,
+        71,
+        77,
+        96,
+        0,
+        4
+      ],
+      "actor/grad_norm": 5.976287317276001,
+      "timing_s/update_actor": 18.161018538288772,
+      "timing_s/step": 216.9416258521378,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 41,
+      "wins": 7,
+      "games": 8,
+      "seeds": [
+        63,
+        41,
+        39,
+        59,
+        6,
+        53,
+        24,
+        70
+      ],
+      "actor/grad_norm": 12.150071811676025,
+      "timing_s/update_actor": 17.237884121015668,
+      "timing_s/step": 206.44825441483408,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 42,
+      "wins": 8,
+      "games": 8,
+      "seeds": [
+        81,
+        10,
+        92,
+        16,
+        1,
+        51,
+        86,
+        53
+      ],
+      "actor/grad_norm": 0.17666848748922348,
+      "timing_s/update_actor": 14.011694961227477,
+      "timing_s/step": 195.37025237921625,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 43,
+      "wins": 7,
+      "games": 8,
+      "seeds": [
+        40,
+        0,
+        27,
+        1,
+        91,
+        96,
+        0,
+        86
+      ],
+      "actor/grad_norm": 24.097683143615722,
+      "timing_s/update_actor": 17.140295691788197,
+      "timing_s/step": 334.2032801369205,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 44,
+      "wins": 4,
+      "games": 8,
+      "seeds": [
+        67,
+        78,
+        12,
+        24,
+        15,
+        77,
+        83,
+        25
+      ],
+      "actor/grad_norm": 18.563096952438354,
+      "timing_s/update_actor": 17.685928191058338,
+      "timing_s/step": 191.11604146659374,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 45,
+      "wins": 6,
+      "games": 8,
+      "seeds": [
+        38,
+        35,
+        88,
+        23,
+        12,
+        60,
+        50,
+        80
+      ],
+      "actor/grad_norm": 16.221951908535427,
+      "timing_s/update_actor": 29.67946690879762,
+      "timing_s/step": 313.91897016204894,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 46,
+      "wins": 7,
+      "games": 8,
+      "seeds": [
+        10,
+        2,
+        35,
+        57,
+        14,
+        32,
+        17,
+        83
+      ],
+      "actor/grad_norm": 1.5620848321123049,
+      "timing_s/update_actor": 52.32427550107241,
+      "timing_s/step": 355.29162732418627,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 47,
+      "wins": 5,
+      "games": 8,
+      "seeds": [
+        66,
+        83,
+        82,
+        44,
+        14,
+        19,
+        35,
+        2
+      ],
+      "actor/grad_norm": 5.827918231487274,
+      "timing_s/update_actor": 48.102279991842806,
+      "timing_s/step": 412.6121867755428,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 48,
+      "wins": 6,
+      "games": 8,
+      "seeds": [
+        5,
+        5,
+        26,
+        87,
+        33,
+        71,
+        40,
+        46
+      ],
+      "actor/grad_norm": 11.292236443076815,
+      "timing_s/update_actor": 46.90624583978206,
+      "timing_s/step": 324.16569931805134,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 49,
+      "wins": 7,
+      "games": 8,
+      "seeds": [
+        72,
+        5,
+        95,
+        89,
+        77,
+        83,
+        63,
+        91
+      ],
+      "actor/grad_norm": 7.558239420255025,
+      "timing_s/update_actor": 29.506917701102793,
+      "timing_s/step": 312.5802565012127,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 50,
+      "wins": 7,
+      "games": 8,
+      "seeds": [
+        82,
+        58,
+        81,
+        55,
+        47,
+        68,
+        22,
+        26
+      ],
+      "actor/grad_norm": 1.54141865670681,
+      "timing_s/update_actor": 14.086306845769286,
+      "timing_s/step": 161.77401902154088,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 51,
+      "wins": 6,
+      "games": 8,
+      "seeds": [
+        48,
+        75,
+        37,
+        1,
+        17,
+        19,
+        34,
+        42
+      ],
+      "actor/grad_norm": 14.192311584949493,
+      "timing_s/update_actor": 18.421155346557498,
+      "timing_s/step": 214.30209255218506,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 52,
+      "wins": 7,
+      "games": 8,
+      "seeds": [
+        43,
+        47,
+        91,
+        11,
+        43,
+        99,
+        79,
+        4
+      ],
+      "actor/grad_norm": 0.684968575835228,
+      "timing_s/update_actor": 14.012950870208442,
+      "timing_s/step": 154.12262689508498,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 53,
+      "wins": 5,
+      "games": 8,
+      "seeds": [
+        5,
+        34,
+        20,
+        19,
+        74,
+        37,
+        46,
+        50
+      ],
+      "actor/grad_norm": 4.359127914905548,
+      "timing_s/update_actor": 17.55417496152222,
+      "timing_s/step": 197.591660708189,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 54,
+      "wins": 5,
+      "games": 8,
+      "seeds": [
+        70,
+        16,
+        37,
+        14,
+        61,
+        93,
+        30,
+        6
+      ],
+      "actor/grad_norm": 4.110456670820713,
+      "timing_s/update_actor": 17.12127864547074,
+      "timing_s/step": 212.83608949091285,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 55,
+      "wins": 4,
+      "games": 8,
+      "seeds": [
+        39,
+        22,
+        66,
+        93,
+        9,
+        38,
+        51,
+        42
+      ],
+      "actor/grad_norm": 11.437036141753197,
+      "timing_s/update_actor": 20.227765982970595,
+      "timing_s/step": 242.4506265372038,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 56,
+      "wins": 5,
+      "games": 8,
+      "seeds": [
+        38,
+        53,
+        13,
+        12,
+        71,
+        61,
+        60,
+        43
+      ],
+      "actor/grad_norm": 0.18922048062086105,
+      "timing_s/update_actor": 14.005013764835894,
+      "timing_s/step": 167.71829862426966,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 57,
+      "wins": 6,
+      "games": 8,
+      "seeds": [
+        43,
+        15,
+        61,
+        14,
+        89,
+        63,
+        54,
+        4
+      ],
+      "actor/grad_norm": 0.38636424764990807,
+      "timing_s/update_actor": 14.043532950803638,
+      "timing_s/step": 161.44266494736075,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 58,
+      "wins": 6,
+      "games": 8,
+      "seeds": [
+        38,
+        42,
+        94,
+        87,
+        19,
+        21,
+        80,
+        72
+      ],
+      "actor/grad_norm": 7.6541938245296475,
+      "timing_s/update_actor": 17.678735932335258,
+      "timing_s/step": 228.2576423222199,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 59,
+      "wins": 8,
+      "games": 8,
+      "seeds": [
+        48,
+        81,
+        11,
+        8,
+        10,
+        25,
+        95,
+        28
+      ],
+      "actor/grad_norm": 0.0005142233276274055,
+      "timing_s/update_actor": 14.307475354522467,
+      "timing_s/step": 149.01187204010785,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 60,
+      "wins": 5,
+      "games": 8,
+      "seeds": [
+        7,
+        49,
+        1,
+        12,
+        50,
+        71,
+        66,
+        37
+      ],
+      "actor/grad_norm": 8.317124574258923,
+      "timing_s/update_actor": 17.26672616507858,
+      "timing_s/step": 202.22945387847722,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 61,
+      "wins": 8,
+      "games": 8,
+      "seeds": [
+        57,
+        62,
+        100,
+        74,
+        91,
+        86,
+        27,
+        54
+      ],
+      "actor/grad_norm": 0.0006073700496926904,
+      "timing_s/update_actor": 14.066567892208695,
+      "timing_s/step": 150.7792061092332,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 62,
+      "wins": 7,
+      "games": 8,
+      "seeds": [
+        10,
+        47,
+        28,
+        33,
+        74,
+        99,
+        21,
+        55
+      ],
+      "actor/grad_norm": 0.031412871554493904,
+      "timing_s/update_actor": 14.065425434149802,
+      "timing_s/step": 159.6463876804337,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 63,
+      "wins": 6,
+      "games": 8,
+      "seeds": [
+        24,
+        45,
+        14,
+        8,
+        89,
+        3,
+        67,
+        57
+      ],
+      "actor/grad_norm": 43.17221339605749,
+      "timing_s/update_actor": 17.57435798458755,
+      "timing_s/step": 186.69085900764912,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 64,
+      "wins": 6,
+      "games": 8,
+      "seeds": [
+        96,
+        86,
+        25,
+        15,
+        63,
+        50,
+        32,
+        26
+      ],
+      "actor/grad_norm": 2.9265981443226337,
+      "timing_s/update_actor": 17.138663995079696,
+      "timing_s/step": 199.13544490467757,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 65,
+      "wins": 6,
+      "games": 8,
+      "seeds": [
+        82,
+        5,
+        27,
+        79,
+        18,
+        13,
+        25,
+        58
+      ],
+      "actor/grad_norm": 3.4068981152027846,
+      "timing_s/update_actor": 17.143793095834553,
+      "timing_s/step": 189.55242487136275,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 66,
+      "wins": 6,
+      "games": 8,
+      "seeds": [
+        48,
+        46,
+        69,
+        19,
+        13,
+        76,
+        62,
+        18
+      ],
+      "actor/grad_norm": 0.05333588505163789,
+      "timing_s/update_actor": 14.101999836042523,
+      "timing_s/step": 166.06410842388868,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 67,
+      "wins": 7,
+      "games": 8,
+      "seeds": [
+        72,
+        51,
+        81,
+        87,
+        54,
+        66,
+        63,
+        86
+      ],
+      "actor/grad_norm": 2.685496300458908,
+      "timing_s/update_actor": 17.154778079129755,
+      "timing_s/step": 201.03067286126316,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 68,
+      "wins": 7,
+      "games": 8,
+      "seeds": [
+        41,
+        63,
+        63,
+        81,
+        85,
+        25,
+        69,
+        78
+      ],
+      "actor/grad_norm": 0.07416733261197805,
+      "timing_s/update_actor": 14.481916544027627,
+      "timing_s/step": 159.36620781756938,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 69,
+      "wins": 8,
+      "games": 8,
+      "seeds": [
+        28,
+        1,
+        43,
+        90,
+        95,
+        40,
+        41,
+        4
+      ],
+      "actor/grad_norm": 0.002623495485750027,
+      "timing_s/update_actor": 14.012520742602646,
+      "timing_s/step": 151.5743928141892,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 70,
+      "wins": 6,
+      "games": 8,
+      "seeds": [
+        67,
+        18,
+        32,
+        77,
+        100,
+        19,
+        48,
+        74
+      ],
+      "actor/grad_norm": 8.794896376132964,
+      "timing_s/update_actor": 17.244144192896783,
+      "timing_s/step": 219.5732791321352,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 71,
+      "wins": 4,
+      "games": 8,
+      "seeds": [
+        37,
+        91,
+        90,
+        60,
+        8,
+        10,
+        66,
+        5
+      ],
+      "actor/grad_norm": 5.2037874855101105,
+      "timing_s/update_actor": 17.127153570763767,
+      "timing_s/step": 209.4196340860799,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 72,
+      "wins": 6,
+      "games": 8,
+      "seeds": [
+        8,
+        28,
+        16,
+        5,
+        38,
+        1,
+        97,
+        57
+      ],
+      "actor/grad_norm": 7.195647802576422,
+      "timing_s/update_actor": 17.355046533048153,
+      "timing_s/step": 194.48014949075878,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 73,
+      "wins": 7,
+      "games": 8,
+      "seeds": [
+        42,
+        20,
+        19,
+        83,
+        58,
+        47,
+        64,
+        48
+      ],
+      "actor/grad_norm": 0.04207615368068218,
+      "timing_s/update_actor": 14.775587094016373,
+      "timing_s/step": 154.31285705510527,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 74,
+      "wins": 5,
+      "games": 8,
+      "seeds": [
+        67,
+        64,
+        4,
+        73,
+        11,
+        86,
+        66,
+        97
+      ],
+      "actor/grad_norm": 13.309158404668173,
+      "timing_s/update_actor": 20.27791254874319,
+      "timing_s/step": 235.08336468134075,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 75,
+      "wins": 3,
+      "games": 8,
+      "seeds": [
+        76,
+        9,
+        95,
+        54,
+        96,
+        26,
+        37,
+        68
+      ],
+      "actor/grad_norm": 10.319939225912094,
+      "timing_s/update_actor": 17.206348553299904,
+      "timing_s/step": 206.83437997940928,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 76,
+      "wins": 3,
+      "games": 8,
+      "seeds": [
+        76,
+        53,
+        61,
+        49,
+        77,
+        75,
+        29,
+        2
+      ],
+      "actor/grad_norm": 6.82228422164917,
+      "timing_s/update_actor": 17.233476138673723,
+      "timing_s/step": 227.237363839522,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 77,
+      "wins": 8,
+      "games": 8,
+      "seeds": [
+        84,
+        0,
+        94,
+        23,
+        38,
+        64,
+        72,
+        32
+      ],
+      "actor/grad_norm": 0.43057188391685486,
+      "timing_s/update_actor": 18.494976674206555,
+      "timing_s/step": 200.0510597806424,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 78,
+      "wins": 8,
+      "games": 8,
+      "seeds": [
+        42,
+        8,
+        63,
+        33,
+        38,
+        98,
+        52,
+        49
+      ],
+      "actor/grad_norm": 0.20646911580115557,
+      "timing_s/update_actor": 14.107425114139915,
+      "timing_s/step": 152.9195760441944,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 79,
+      "wins": 6,
+      "games": 8,
+      "seeds": [
+        49,
+        7,
+        20,
+        82,
+        16,
+        30,
+        36,
+        93
+      ],
+      "actor/grad_norm": 10.764866590499878,
+      "timing_s/update_actor": 14.099521561525762,
+      "timing_s/step": 166.0475088916719,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 80,
+      "wins": 6,
+      "games": 8,
+      "seeds": [
+        42,
+        7,
+        4,
+        61,
+        53,
+        18,
+        62,
+        77
+      ],
+      "actor/grad_norm": 8.878717601299286,
+      "timing_s/update_actor": 14.20071420725435,
+      "timing_s/step": 160.48429080750793,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 81,
+      "wins": 8,
+      "games": 8,
+      "seeds": [
+        91,
+        10,
+        86,
+        89,
+        19,
+        45,
+        52,
+        4
+      ],
+      "actor/grad_norm": 0.0664795390330255,
+      "timing_s/update_actor": 14.128737884573638,
+      "timing_s/step": 153.17711084987968,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 82,
+      "wins": 6,
+      "games": 8,
+      "seeds": [
+        78,
+        59,
+        49,
+        58,
+        6,
+        12,
+        60,
+        99
+      ],
+      "actor/grad_norm": 1.3665977790951729,
+      "timing_s/update_actor": 14.735428862273693,
+      "timing_s/step": 169.3459821548313,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 83,
+      "wins": 4,
+      "games": 8,
+      "seeds": [
+        19,
+        2,
+        4,
+        76,
+        79,
+        16,
+        80,
+        41
+      ],
+      "actor/grad_norm": 3.480593556165695,
+      "timing_s/update_actor": 17.320677093230188,
+      "timing_s/step": 227.132990187034,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 84,
+      "wins": 8,
+      "games": 8,
+      "seeds": [
+        13,
+        89,
+        70,
+        83,
+        44,
+        24,
+        49,
+        100
+      ],
+      "actor/grad_norm": 0.05656903516501188,
+      "timing_s/update_actor": 14.09454077668488,
+      "timing_s/step": 146.39498171769083,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 85,
+      "wins": 8,
+      "games": 8,
+      "seeds": [
+        99,
+        99,
+        62,
+        14,
+        7,
+        78,
+        89,
+        59
+      ],
+      "actor/grad_norm": 0.32445650547742844,
+      "timing_s/update_actor": 14.170927135273814,
+      "timing_s/step": 152.42855973076075,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 86,
+      "wins": 5,
+      "games": 8,
+      "seeds": [
+        78,
+        80,
+        43,
+        83,
+        15,
+        87,
+        91,
+        79
+      ],
+      "actor/grad_norm": 11.790499877929687,
+      "timing_s/update_actor": 17.295590571127832,
+      "timing_s/step": 233.03155447822064,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 87,
+      "wins": 5,
+      "games": 8,
+      "seeds": [
+        37,
+        100,
+        16,
+        49,
+        37,
+        95,
+        87,
+        15
+      ],
+      "actor/grad_norm": 16.658710956573486,
+      "timing_s/update_actor": 17.893092257902026,
+      "timing_s/step": 238.07410741131753,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 88,
+      "wins": 7,
+      "games": 8,
+      "seeds": [
+        66,
+        100,
+        24,
+        4,
+        100,
+        50,
+        56,
+        47
+      ],
+      "actor/grad_norm": 17.7646595954895,
+      "timing_s/update_actor": 17.2404921092093,
+      "timing_s/step": 202.8435243871063,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 89,
+      "wins": 3,
+      "games": 8,
+      "seeds": [
+        96,
+        24,
+        58,
+        45,
+        80,
+        9,
+        5,
+        5
+      ],
+      "actor/grad_norm": 12.700881640116373,
+      "timing_s/update_actor": 20.267759582959116,
+      "timing_s/step": 273.2575472788885,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 90,
+      "wins": 6,
+      "games": 8,
+      "seeds": [
+        62,
+        32,
+        3,
+        66,
+        85,
+        72,
+        73,
+        27
+      ],
+      "actor/grad_norm": 8.715123796463013,
+      "timing_s/update_actor": 17.177634321153164,
+      "timing_s/step": 208.36154370289296,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 91,
+      "wins": 6,
+      "games": 8,
+      "seeds": [
+        29,
+        11,
+        99,
+        80,
+        99,
+        64,
+        89,
+        67
+      ],
+      "actor/grad_norm": 8.552483856678009,
+      "timing_s/update_actor": 18.387509177438915,
+      "timing_s/step": 230.74824488628656,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 92,
+      "wins": 7,
+      "games": 8,
+      "seeds": [
+        53,
+        64,
+        39,
+        14,
+        18,
+        54,
+        72,
+        54
+      ],
+      "actor/grad_norm": 5.8768809387460355,
+      "timing_s/update_actor": 17.18049308564514,
+      "timing_s/step": 188.92526661232114,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 93,
+      "wins": 7,
+      "games": 8,
+      "seeds": [
+        10,
+        13,
+        53,
+        8,
+        12,
+        53,
+        99,
+        19
+      ],
+      "actor/grad_norm": 0.021510609425604343,
+      "timing_s/update_actor": 14.257911706343293,
+      "timing_s/step": 159.96931007038802,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 94,
+      "wins": 5,
+      "games": 8,
+      "seeds": [
+        93,
+        3,
+        57,
+        55,
+        87,
+        53,
+        3,
+        63
+      ],
+      "actor/grad_norm": 0.04575812257826328,
+      "timing_s/update_actor": 14.064786585979164,
+      "timing_s/step": 166.38708875142038,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 95,
+      "wins": 6,
+      "games": 8,
+      "seeds": [
+        41,
+        92,
+        32,
+        10,
+        45,
+        9,
+        15,
+        45
+      ],
+      "actor/grad_norm": 1.2815437503159046,
+      "timing_s/update_actor": 17.30497325770557,
+      "timing_s/step": 189.94677392113954,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 96,
+      "wins": 7,
+      "games": 8,
+      "seeds": [
+        88,
+        3,
+        44,
+        44,
+        22,
+        1,
+        29,
+        46
+      ],
+      "actor/grad_norm": 0.04172493424266577,
+      "timing_s/update_actor": 14.762172070331872,
+      "timing_s/step": 160.9998526191339,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    }
+  ],
+  "segments": [
+    {
+      "stage": "train2",
+      "owner": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/short",
+      "container_id": "caec342c22191fea5392d0e52a7f506356c75f8c18a7f07a1d7c9a889c47a52c",
+      "container_name": "/sc2-qwen-l8random96-197-20260928-r3-short-train2",
+      "finished_at": "2026-09-28T02:03:57.273020841Z",
+      "result_done_acceptance_equal": true,
+      "exit_code": 0,
+      "guardian_completed": true,
+      "natural_games": 16,
+      "wins": 13,
+      "consumed_answers": 83,
+      "valid_consumed_answers": 83,
+      "zero_updates": false,
+      "first": 1,
+      "last": 2,
+      "returned_ppo": 2,
+      "audits": 2,
+      "matched_seed_batches": 2
+    },
+    {
+      "stage": "train96",
+      "owner": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/long",
+      "container_id": "95aa45153a4bf937f445abebfd804ea7d4a0915312f59e6681a2c7561f273952",
+      "container_name": "/sc2-qwen-l8random96-197-20260928-r3-long-train96",
+      "finished_at": "2026-09-28T07:28:17.121252822Z",
+      "result_done_acceptance_equal": true,
+      "exit_code": 0,
+      "guardian_completed": true,
+      "natural_games": 752,
+      "wins": 562,
+      "consumed_answers": 3483,
+      "valid_consumed_answers": 3483,
+      "zero_updates": false,
+      "first": 3,
+      "last": 96,
+      "returned_ppo": 94,
+      "audits": 94,
+      "matched_seed_batches": 94
+    }
+  ],
+  "diagnostics": [
+    {
+      "stage": "pre",
+      "owner": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/short",
+      "container_id": "719101af8b913254e5a816998ab6cb5743e4039490c973e80c71cbf278558305",
+      "container_name": "/sc2-qwen-l8random96-197-20260928-r3-short-pre",
+      "finished_at": "2026-09-28T01:52:58.774876056Z",
+      "result_done_acceptance_equal": true,
+      "exit_code": 0,
+      "guardian_completed": true,
+      "natural_games": 8,
+      "wins": 6,
+      "consumed_answers": 48,
+      "valid_consumed_answers": 48,
+      "zero_updates": true,
+      "step": 0,
+      "actual_checkpoint_load_returned": false
+    },
+    {
+      "stage": "post",
+      "owner": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/short",
+      "container_id": "3a0a3f00111a5d8f6c95218e8e98906feb2e75042a539f338a365175febda7b7",
+      "container_name": "/sc2-qwen-l8random96-197-20260928-r3-short-post",
+      "finished_at": "2026-09-28T02:11:53.331143494Z",
+      "result_done_acceptance_equal": true,
+      "exit_code": 0,
+      "guardian_completed": true,
+      "natural_games": 8,
+      "wins": 6,
+      "consumed_answers": 46,
+      "valid_consumed_answers": 46,
+      "zero_updates": true,
+      "step": 2,
+      "actual_checkpoint_load_returned": true
+    },
+    {
+      "stage": "eval96",
+      "owner": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/long",
+      "container_id": "21bb5e0d36740e80eccc9c24a4c4bb0db5e063cb810f452e792eaec9e3dfc7a5",
+      "container_name": "/sc2-qwen-l8random96-197-20260928-r3-long-eval96",
+      "finished_at": "2026-09-28T07:33:21.227803258Z",
+      "result_done_acceptance_equal": true,
+      "exit_code": 0,
+      "guardian_completed": true,
+      "natural_games": 8,
+      "wins": 6,
+      "consumed_answers": 33,
+      "valid_consumed_answers": 33,
+      "zero_updates": true,
+      "step": 96,
+      "actual_checkpoint_load_returned": true
+    }
+  ],
+  "training_summary": {
+    "ppo_updates": 96,
+    "games": 768,
+    "wins": 575,
+    "valid_consumed_answers": 3566,
+    "last8_wins": 47,
+    "last8_games": 64,
+    "gradient_min": 0.0000023715061843176954,
+    "gradient_max": 154.26373351365328,
+    "actor_update_seconds": 1686.76542729605
+  },
+  "train_state": {
+    "phase": "completed",
+    "exit_code": 0,
+    "deadline": 1790617515.4663188,
+    "completed": [
+      "qwen-random/short",
+      "qwen-random/long"
+    ],
+    "learning_validated": false,
+    "finished_at": 1790580815.8774211
+  },
+  "queue": {
+    "phase": "running-unverified",
+    "completed": [
+      "qwen-random/short",
+      "qwen-random/long",
+      "selection32"
+    ],
+    "new_games": 1112,
+    "new_updates": 96,
+    "part": "paired64",
+    "deadline": 1790639115.4663188,
+    "component_deadline": 1790617515.4663188
+  },
+  "selection": {
+    "state": {
+      "version": "host-guardian-v1",
+      "phase": "completed",
+      "completed": [
+        "b00-cp2",
+        "b01-cp2",
+        "b02-cp2",
+        "b03-cp2",
+        "b00-cp32",
+        "b01-cp32",
+        "b02-cp32",
+        "b03-cp32",
+        "b00-cp64",
+        "b01-cp64",
+        "b02-cp64",
+        "b03-cp64",
+        "b00-cp96",
+        "b01-cp96",
+        "b02-cp96",
+        "b03-cp96"
+      ],
+      "deadline": 1790595216.5217776,
+      "learning_validated": false,
+      "started_at": 1790580849.7361894,
+      "stage": "b03-cp96",
+      "container_id": "c07c57e03075eaef25e48c56ec2bcb7e99fd8b7d897a93330904b0ad31c7adc2",
+      "exit_code": 0,
+      "finished_at": 1790585823.2483969
+    },
+    "best": 2,
+    "scored": [
+      {
+        "step": 2,
+        "wins": 22,
+        "games": 32
+      },
+      {
+        "step": 32,
+        "wins": 22,
+        "games": 32
+      },
+      {
+        "step": 64,
+        "wins": 22,
+        "games": 32
+      },
+      {
+        "step": 96,
+        "wins": 22,
+        "games": 32
+      }
+    ],
+    "seed_sha256": "0f47acf2c792395cb17d73d678bbe8ad618b2c89c1ff5a4d85733465fa2a372c",
+    "test_used": false
+  },
+  "retention": {
+    "retained": [
+      2,
+      64,
+      96
+    ],
+    "removed": [
+      32
+    ],
+    "best": 2,
+    "files": {
+      "actor/added_tokens.json": {
+        "bytes": 707,
+        "sha256": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680"
+      },
+      "actor/chat_template.jinja": {
+        "bytes": 2630,
+        "sha256": "64f85b198065d0fba2a81f37e10ed68161ce2c19a754c7100e67e0ca2ee9c326"
+      },
+      "actor/config.json": {
+        "bytes": 1542,
+        "sha256": "a8c359bb93a6d9056f5ecef32aa6a85c1608eb66217741bcbc0894d2c1227f82"
+      },
+      "actor/extra_state_world_size_8_rank_0.pt": {
+        "bytes": 15141,
+        "sha256": "527d5de1c42132a2b757189699a3621a7ce1e4e687d7bdc907e99b144d93fb28"
+      },
+      "actor/extra_state_world_size_8_rank_1.pt": {
+        "bytes": 15141,
+        "sha256": "c003aacacab5c3299602bfc1957c9bc0c29f3054b13cdf8f15e062ee976d7d2a"
+      },
+      "actor/extra_state_world_size_8_rank_2.pt": {
+        "bytes": 15205,
+        "sha256": "afe73a2cdd1960023d2258db765d52852861beff8e900f8a4b4cbb54758fcb08"
+      },
+      "actor/extra_state_world_size_8_rank_3.pt": {
+        "bytes": 15141,
+        "sha256": "ecb62e546645718230f61940a19ebb611143251f0f89b9c11ef59787e1bb3969"
+      },
+      "actor/extra_state_world_size_8_rank_4.pt": {
+        "bytes": 15141,
+        "sha256": "9d0ece809cecfb079efd038251352ce7b291bcd1ee51333bea338b5bde307bf0"
+      },
+      "actor/extra_state_world_size_8_rank_5.pt": {
+        "bytes": 15141,
+        "sha256": "8fc214a77eb095271ce2a23f7469d6c508af7cb319825f39e79951af994ccad6"
+      },
+      "actor/extra_state_world_size_8_rank_6.pt": {
+        "bytes": 15141,
+        "sha256": "949561ac2a4e802a6e1c32c7ea13c43e2703733dca766dca75960607ce0b6c07"
+      },
+      "actor/extra_state_world_size_8_rank_7.pt": {
+        "bytes": 15205,
+        "sha256": "1e623b2cf5c4ea337984ecca920a76d4af9f7fcb387cf71edb2d56d2f553ee8d"
+      },
+      "actor/generation_config.json": {
+        "bytes": 213,
+        "sha256": "075c5f83fe0ef0bb4b7fabd3baf987ac277fe64adf5a62aaa948bba788bf8ecd"
+      },
+      "actor/merges.txt": {
+        "bytes": 1671853,
+        "sha256": null
+      },
+      "actor/model_world_size_8_rank_0.pt": {
+        "bytes": 2205943659,
+        "sha256": null
+      },
+      "actor/model_world_size_8_rank_1.pt": {
+        "bytes": 2205943659,
+        "sha256": null
+      },
+      "actor/model_world_size_8_rank_2.pt": {
+        "bytes": 2205943659,
+        "sha256": null
+      },
+      "actor/model_world_size_8_rank_3.pt": {
+        "bytes": 2205943659,
+        "sha256": null
+      },
+      "actor/model_world_size_8_rank_4.pt": {
+        "bytes": 2205943659,
+        "sha256": null
+      },
+      "actor/model_world_size_8_rank_5.pt": {
+        "bytes": 2205943659,
+        "sha256": null
+      },
+      "actor/model_world_size_8_rank_6.pt": {
+        "bytes": 2205943659,
+        "sha256": null
+      },
+      "actor/model_world_size_8_rank_7.pt": {
+        "bytes": 2205943659,
+        "sha256": null
+      },
+      "actor/optim_world_size_8_rank_0.pt": {
+        "bytes": 4022500763,
+        "sha256": null
+      },
+      "actor/optim_world_size_8_rank_1.pt": {
+        "bytes": 4022500763,
+        "sha256": null
+      },
+      "actor/optim_world_size_8_rank_2.pt": {
+        "bytes": 4022500763,
+        "sha256": null
+      },
+      "actor/optim_world_size_8_rank_3.pt": {
+        "bytes": 4022500763,
+        "sha256": null
+      },
+      "actor/optim_world_size_8_rank_4.pt": {
+        "bytes": 4022500763,
+        "sha256": null
+      },
+      "actor/optim_world_size_8_rank_5.pt": {
+        "bytes": 4022500763,
+        "sha256": null
+      },
+      "actor/optim_world_size_8_rank_6.pt": {
+        "bytes": 4022500763,
+        "sha256": null
+      },
+      "actor/optim_world_size_8_rank_7.pt": {
+        "bytes": 4022500763,
+        "sha256": null
+      },
+      "actor/special_tokens_map.json": {
+        "bytes": 613,
+        "sha256": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd"
+      },
+      "actor/tokenizer.json": {
+        "bytes": 11422654,
+        "sha256": null
+      },
+      "actor/tokenizer_config.json": {
+        "bytes": 5405,
+        "sha256": "4b5f2f80f84faefe8420e1616671adb1dd3d7e632038d34b1f0e3a1363a51059"
+      },
+      "actor/vocab.json": {
+        "bytes": 2776833,
+        "sha256": null
+      },
+      "data.pt": {
+        "bytes": 1947,
+        "sha256": "306340c8e9ecd8f09f386f58f9f077fdea12d30c577cc04108e3e9522c7b7853"
+      },
+      "sc2_state.pt": {
+        "bytes": 30007,
+        "sha256": "90bf7c9aaa42ac815aeba1f77cb58e971949e5d229f5181406f03c1425f701c4"
+      }
+    },
+    "target": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/long/runs/train96/checkpoints/global_step_32",
+    "irreversible": true,
+    "authorized_scope": "sc2-qwen-l8random96-197-20260928-r3 CP32 only",
+    "best_sha256": "e754fd359ad00b409fbbe9e493ba6e494669a0149a375e967af24c64fa033194",
+    "checked_at": 1790585823.5893538,
+    "completed_at": 1790585827.4420114,
+    "bytes_removed": 49843591036,
+    "metrics_and_evidence_retained": true
+  },
+  "primary": {
+    "state": {
+      "version": "host-guardian-v1",
+      "phase": "running-unverified",
+      "completed": [
+        "b00-original",
+        "b00-same96",
+        "b00-random96",
+        "b01-same96",
+        "b01-random96",
+        "b01-original",
+        "b02-random96",
+        "b02-original",
+        "b02-same96",
+        "b03-original",
+        "b03-same96",
+        "b03-random96",
+        "b04-same96",
+        "b04-random96",
+        "b04-original",
+        "b05-random96"
+      ],
+      "deadline": 1790607428.465348,
+      "learning_validated": false,
+      "started_at": 1790585862.0270648,
+      "stage": "b05-original",
+      "container_id": "1dadce14fccf7ae067a07378181947656785cb8c13dcb5cbe64b0839360d34fc"
+    },
+    "rows": [
+      {
+        "stage": "b00-original",
+        "batch": 0,
+        "arm": "original",
+        "wins": 5,
+        "games": 8
+      },
+      {
+        "stage": "b00-same96",
+        "batch": 0,
+        "arm": "same96",
+        "wins": 2,
+        "games": 8
+      },
+      {
+        "stage": "b00-random96",
+        "batch": 0,
+        "arm": "random96",
+        "wins": 6,
+        "games": 8
+      },
+      {
+        "stage": "b01-same96",
+        "batch": 1,
+        "arm": "same96",
+        "wins": 5,
+        "games": 8
+      },
+      {
+        "stage": "b01-random96",
+        "batch": 1,
+        "arm": "random96",
+        "wins": 5,
+        "games": 8
+      },
+      {
+        "stage": "b01-original",
+        "batch": 1,
+        "arm": "original",
+        "wins": 5,
+        "games": 8
+      },
+      {
+        "stage": "b02-random96",
+        "batch": 2,
+        "arm": "random96",
+        "wins": 4,
+        "games": 8
+      },
+      {
+        "stage": "b02-original",
+        "batch": 2,
+        "arm": "original",
+        "wins": 3,
+        "games": 8
+      },
+      {
+        "stage": "b02-same96",
+        "batch": 2,
+        "arm": "same96",
+        "wins": 5,
+        "games": 8
+      },
+      {
+        "stage": "b03-original",
+        "batch": 3,
+        "arm": "original",
+        "wins": 6,
+        "games": 8
+      },
+      {
+        "stage": "b03-same96",
+        "batch": 3,
+        "arm": "same96",
+        "wins": 4,
+        "games": 8
+      },
+      {
+        "stage": "b03-random96",
+        "batch": 3,
+        "arm": "random96",
+        "wins": 6,
+        "games": 8
+      },
+      {
+        "stage": "b04-same96",
+        "batch": 4,
+        "arm": "same96",
+        "wins": 5,
+        "games": 8
+      },
+      {
+        "stage": "b04-random96",
+        "batch": 4,
+        "arm": "random96",
+        "wins": 7,
+        "games": 8
+      },
+      {
+        "stage": "b04-original",
+        "batch": 4,
+        "arm": "original",
+        "wins": 7,
+        "games": 8
+      },
+      {
+        "stage": "b05-random96",
+        "batch": 5,
+        "arm": "random96",
+        "wins": 7,
+        "games": 8
+      }
+    ],
+    "complete": false
+  },
+  "source_files": [
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/short/runs/train2/result.json",
+      "bytes": 9506,
+      "sha256": "8d62db86a1cfa33abaf5122b428e1ae5cc66e1d1cd3be5de796ba5e39bda9f3a"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/short/runs/train2/.done",
+      "bytes": 9506,
+      "sha256": "8d62db86a1cfa33abaf5122b428e1ae5cc66e1d1cd3be5de796ba5e39bda9f3a"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/short/acceptance-train2.json",
+      "bytes": 15569,
+      "sha256": "94f695ee974d7ca080310dcf2e6b4c3f2a18831f6c96f7447d7fd4c32a671119"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/short/runs/train2/manifest.json",
+      "bytes": 2917,
+      "sha256": "edd2e0cc6714ca4ae9e3074889ab5ec01b29481c380879e121332195f9790d71"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/short/host-supervision/train2-guardian.json",
+      "bytes": 27937,
+      "sha256": "f1ff3641337b14be63dde7e0a7ab190f2a50accef128d1c17d555a884f9c7a90"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/short/runs/train2/metrics.json",
+      "bytes": 5773,
+      "sha256": "3ccd76fbdc6d5028e53715d5f352fd22b6d0dc2276e784337b6587640df4d7fe"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/short/runs/train2/episode_outcomes.jsonl",
+      "bytes": 3656,
+      "sha256": "ab2f348e693e807142998663a4c4ed1170f32eb55dca14d7eeec3ef753e4582c"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/short/runs/train2/training_seeds.jsonl",
+      "bytes": 242,
+      "sha256": "e6fd6d694811367de8b1023e20ba103d0cfbaab581ac1100ae78d4398007676f"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/short/runs/train2/checkpoints/sc2_policy_credit_audit.jsonl",
+      "bytes": 416,
+      "sha256": "7f62f8c3a20daa662b28ad8d820a9acf010cac1e3523a44fcefc49b02c7b5898"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/long/runs/train96/result.json",
+      "bytes": 249396,
+      "sha256": "6fb3ceaf4923cd5098c91dbd19f5424699b601770b7033fa53de7c90068215e2"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/long/runs/train96/.done",
+      "bytes": 249396,
+      "sha256": "6fb3ceaf4923cd5098c91dbd19f5424699b601770b7033fa53de7c90068215e2"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/long/acceptance-train96.json",
+      "bytes": 283680,
+      "sha256": "424316d0b08faae3dcc1b5d64b9ce812c2119eeb912554c281b05f60b25acbae"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/long/runs/train96/manifest.json",
+      "bytes": 3022,
+      "sha256": "fdc7cb9d44726bd28d45e99a0e036133c86693826545be1cad6d0058435c1272"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/long/host-supervision/train96-guardian.json",
+      "bytes": 766269,
+      "sha256": "6e60e450dceb0f20177a3403d87fcd6feab2bd5baba57b3d64d73ee823c4bf94"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/long/runs/train96/metrics.json",
+      "bytes": 265882,
+      "sha256": "0e6f60dfc396854d6e78fc4f9c8c0da5f53ca50580099da2986349350a78b776"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/long/runs/train96/episode_outcomes.jsonl",
+      "bytes": 173580,
+      "sha256": "4150da3706cdfb64c8361b9088ef368b7894f8f42838da6809b46334e2dd49fb"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/long/runs/train96/training_seeds.jsonl",
+      "bytes": 11385,
+      "sha256": "25ec2090b83e1ce562139e88572d61fbda7b7c3907db96941ad3648a3ad9fd3f"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/long/runs/train96/checkpoints/sc2_policy_credit_audit.jsonl",
+      "bytes": 19645,
+      "sha256": "89465c8fecec098daac4c551aa7776fcf71835118c6df6c0d7655f37dd7efbf1"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/short/runs/pre/result.json",
+      "bytes": 5219,
+      "sha256": "074b07ba9886e0580be2d1ed870b1d0f8999bffa8d852467cfd6e421f9948955"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/short/runs/pre/.done",
+      "bytes": 5219,
+      "sha256": "074b07ba9886e0580be2d1ed870b1d0f8999bffa8d852467cfd6e421f9948955"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/short/acceptance-pre.json",
+      "bytes": 5843,
+      "sha256": "2139e93e42a75924d42922e6e215404bff649f4e2f4b1047c002eef18defdad5"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/short/runs/pre/manifest.json",
+      "bytes": 2920,
+      "sha256": "a49e1562b93a69f1c828da62aa57ae887aeb3077b2f7e043c5f13c7465d351d3"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/short/host-supervision/pre-guardian.json",
+      "bytes": 17922,
+      "sha256": "e757be812a03dcfbcdf337faf957d762a198a874b1d06e1df5eb28f085e8051e"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/short/runs/pre/checkpoint_evaluation.json",
+      "bytes": 475,
+      "sha256": "bcf33641f0acbe82f4ba09d73b91e19322f04398528415687514472426f3ff01"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/short/runs/post/result.json",
+      "bytes": 5219,
+      "sha256": "694df8d17ee9604dfd59fb7bc26a8dd1b3bbeb199f4f738086af778aeab2fbf7"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/short/runs/post/.done",
+      "bytes": 5219,
+      "sha256": "694df8d17ee9604dfd59fb7bc26a8dd1b3bbeb199f4f738086af778aeab2fbf7"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/short/acceptance-post.json",
+      "bytes": 5844,
+      "sha256": "cc46682db4df5e3c330a6538ea56177a8cd849210b2364b6f4a61de39b9b22f8"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/short/runs/post/manifest.json",
+      "bytes": 3023,
+      "sha256": "97caaadd7c69a7a2355d7f7705c2b3431b75101e8f17f97b33d894fa4287664a"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/short/host-supervision/post-guardian.json",
+      "bytes": 19781,
+      "sha256": "83e7112afcd599019a10aca494e958e4ed39435643ad768a7a4ee5ded1da4b1c"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/short/runs/post/checkpoint_evaluation.json",
+      "bytes": 576,
+      "sha256": "02fd84e964b9359f48133efe11b0d6c83940b7c4dc31c94f28c92ffdb2e0a989"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/long/runs/eval96/result.json",
+      "bytes": 5219,
+      "sha256": "eb43e36dbd58e1d9414244829aef32efa713b135cd0a1cf35f99ce573fdf3aeb"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/long/runs/eval96/.done",
+      "bytes": 5219,
+      "sha256": "eb43e36dbd58e1d9414244829aef32efa713b135cd0a1cf35f99ce573fdf3aeb"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/long/acceptance-eval96.json",
+      "bytes": 5844,
+      "sha256": "bd7d298b79148b3b8ea6227caa9445f92b4fd9d4d61ebfb625163ac03dea6645"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/long/runs/eval96/manifest.json",
+      "bytes": 3025,
+      "sha256": "f41805a1b6cdc702efcf0702bbf511d02e9dd74b56434232fc0d1f9eff10ca4a"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/long/host-supervision/eval96-guardian.json",
+      "bytes": 12894,
+      "sha256": "323b463972cc10391f8b7fda52ee4affd6d17cbfd75188a90df51a654b0060b0"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/long/runs/eval96/checkpoint_evaluation.json",
+      "bytes": 578,
+      "sha256": "273e3b18c824c2066ee8283ee9dac10a06eea5a3421618a9d19bf0bfcb0f017e"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/retention/best.json",
+      "bytes": 2928,
+      "sha256": "e754fd359ad00b409fbbe9e493ba6e494669a0149a375e967af24c64fa033194"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/state.json",
+      "bytes": 597,
+      "sha256": "ed2cfaea6d75c76f69aea5d783b964993d22dd9fb2b7ae9a4ca47191e3d5ecaf"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/acceptance-b00-cp2.json",
+      "bytes": 7903,
+      "sha256": "8c64513cd149a3fce7354257b313f31414f3b8cd1291791241601a501b0b7e05"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b00-cp2/result.json",
+      "bytes": 5219,
+      "sha256": "846480e46b635b54c33284439bc6520465c599d9f7b0731154e9336c354bf111"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b00-cp2/.done",
+      "bytes": 5219,
+      "sha256": "846480e46b635b54c33284439bc6520465c599d9f7b0731154e9336c354bf111"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/acceptance-b01-cp2.json",
+      "bytes": 7904,
+      "sha256": "7214eb655c3803738d2ca5fc39131dd90dc1e22a08e1a475cc92439e6ec2e5d0"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b01-cp2/result.json",
+      "bytes": 5221,
+      "sha256": "7feb1c278c01a8ada8110c60a03afe300667f22d51f8e1faa72dad3d6962f85c"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b01-cp2/.done",
+      "bytes": 5221,
+      "sha256": "7feb1c278c01a8ada8110c60a03afe300667f22d51f8e1faa72dad3d6962f85c"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/acceptance-b02-cp2.json",
+      "bytes": 7899,
+      "sha256": "fbde3a24f9bba11ca2ce13ef24a4a88d29b7b030a35a3629364a9d24bbe35783"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b02-cp2/result.json",
+      "bytes": 5216,
+      "sha256": "658724a7f1f76686033cc511f106d08e7cb81ffd7c5da2ed599e4059597d44bd"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b02-cp2/.done",
+      "bytes": 5216,
+      "sha256": "658724a7f1f76686033cc511f106d08e7cb81ffd7c5da2ed599e4059597d44bd"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/acceptance-b03-cp2.json",
+      "bytes": 7903,
+      "sha256": "5f7fa69edc494c2a1a9965a3ad0cd3d06cad9fd60c01c68f30bef80d5134dd72"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b03-cp2/result.json",
+      "bytes": 5221,
+      "sha256": "b7bb3fa70537877e50f39dbb26afd8ba23b7d4c24b25b7d960e39b4e5d5c1219"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b03-cp2/.done",
+      "bytes": 5221,
+      "sha256": "b7bb3fa70537877e50f39dbb26afd8ba23b7d4c24b25b7d960e39b4e5d5c1219"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/acceptance-b00-cp32.json",
+      "bytes": 7996,
+      "sha256": "bc7dfe702c47844a65dabf31af6265f3979832d92382c3afd08f7ea250c6de87"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b00-cp32/result.json",
+      "bytes": 5219,
+      "sha256": "3595e599a485379222680acac01e7c782e8905b0a8c4d2bf2c596a570b0b0188"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b00-cp32/.done",
+      "bytes": 5219,
+      "sha256": "3595e599a485379222680acac01e7c782e8905b0a8c4d2bf2c596a570b0b0188"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/acceptance-b01-cp32.json",
+      "bytes": 7999,
+      "sha256": "6557c684fb128a8bf0b7377b33316a9e3991e34add15ddd2c284733b2b4475f6"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b01-cp32/result.json",
+      "bytes": 5223,
+      "sha256": "869e1ce13651a095026e89411f7b9c6659d6a9e6fb7e6e5aad457561deb12e67"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b01-cp32/.done",
+      "bytes": 5223,
+      "sha256": "869e1ce13651a095026e89411f7b9c6659d6a9e6fb7e6e5aad457561deb12e67"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/acceptance-b02-cp32.json",
+      "bytes": 7992,
+      "sha256": "922c7ee5654820b04c5522ff6e8f1eb1bce93ac23d05eb95140be102d224ec88"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b02-cp32/result.json",
+      "bytes": 5216,
+      "sha256": "c4c752d4d5afd160d7fbd28ea961ac5dc005e96a2f66b61deeb1cc82609692e8"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b02-cp32/.done",
+      "bytes": 5216,
+      "sha256": "c4c752d4d5afd160d7fbd28ea961ac5dc005e96a2f66b61deeb1cc82609692e8"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/acceptance-b03-cp32.json",
+      "bytes": 7997,
+      "sha256": "3c43a1558cc86da7f9b27bc8e5b6309c45ead499519ae6b2783d9df517a1cfc0"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b03-cp32/result.json",
+      "bytes": 5221,
+      "sha256": "d1100f1ec408f7724854bc63cdb8154cbd867f64c4678f571f3c01a7ec92c1a1"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b03-cp32/.done",
+      "bytes": 5221,
+      "sha256": "d1100f1ec408f7724854bc63cdb8154cbd867f64c4678f571f3c01a7ec92c1a1"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/acceptance-b00-cp64.json",
+      "bytes": 8088,
+      "sha256": "490af801bb2915e9ad697396f20578ce81d3a9819222eaa0c72df6cee8bab565"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b00-cp64/result.json",
+      "bytes": 5219,
+      "sha256": "25a70df462fd3f5ea0e58f983cca38badb7b3eb22cf8002199a85f9b801c7799"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b00-cp64/.done",
+      "bytes": 5219,
+      "sha256": "25a70df462fd3f5ea0e58f983cca38badb7b3eb22cf8002199a85f9b801c7799"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/acceptance-b01-cp64.json",
+      "bytes": 8091,
+      "sha256": "321d588088688ceffa023ced3a5773bdb27a212b8ad1e93eefbbc748d572b0b3"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b01-cp64/result.json",
+      "bytes": 5223,
+      "sha256": "4f10864c846cf68af26a73ab669e06c430dab9e69f299d8184f06875acaff3af"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b01-cp64/.done",
+      "bytes": 5223,
+      "sha256": "4f10864c846cf68af26a73ab669e06c430dab9e69f299d8184f06875acaff3af"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/acceptance-b02-cp64.json",
+      "bytes": 8084,
+      "sha256": "146420ba4eec80a7d42ae30dc78aefdec2035f30bc5d821adff91f5f3189a3e9"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b02-cp64/result.json",
+      "bytes": 5216,
+      "sha256": "cd7acc24d633004f2c452d69e192e66354f09e3548b975420e428b5af4454582"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b02-cp64/.done",
+      "bytes": 5216,
+      "sha256": "cd7acc24d633004f2c452d69e192e66354f09e3548b975420e428b5af4454582"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/acceptance-b03-cp64.json",
+      "bytes": 8089,
+      "sha256": "44c29119bd910bf0d59f8f8cf5fcdbf1d231028f55e9336b3a8b18e19f1bddaa"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b03-cp64/result.json",
+      "bytes": 5221,
+      "sha256": "5c140ec4d97b808a08348556efc98827a8718b47c33f8590941189b499f954f1"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b03-cp64/.done",
+      "bytes": 5221,
+      "sha256": "5c140ec4d97b808a08348556efc98827a8718b47c33f8590941189b499f954f1"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/acceptance-b00-cp96.json",
+      "bytes": 8180,
+      "sha256": "29aa65ddadfb01d9a94644ccd90e6f7f8911bb6717f2297c3c1a49b60613f482"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b00-cp96/result.json",
+      "bytes": 5219,
+      "sha256": "67e2976ee9ac59b1344ba113a56bf4633e75323bdaf4c4d8ef09f9f5edc03df7"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b00-cp96/.done",
+      "bytes": 5219,
+      "sha256": "67e2976ee9ac59b1344ba113a56bf4633e75323bdaf4c4d8ef09f9f5edc03df7"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/acceptance-b01-cp96.json",
+      "bytes": 8182,
+      "sha256": "c5a1e4347f96cf7c56910d59f1ba0a96e6eb3a9d2393f0f215cf749c0c16d197"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b01-cp96/result.json",
+      "bytes": 5223,
+      "sha256": "b3932ec5d7aa5c6e4207d51b572555f927661fdbd2a10a77ecaea840a50dd2cb"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b01-cp96/.done",
+      "bytes": 5223,
+      "sha256": "b3932ec5d7aa5c6e4207d51b572555f927661fdbd2a10a77ecaea840a50dd2cb"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/acceptance-b02-cp96.json",
+      "bytes": 8175,
+      "sha256": "a6d88ec07b161492ca6e7fbd68628102613ba03f082e074d924affd37be03fec"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b02-cp96/result.json",
+      "bytes": 5216,
+      "sha256": "ee18ee5c5c0ced24eed8a4d06ac01c6a8899c1bb50f99885dd1f682de79e3ab6"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b02-cp96/.done",
+      "bytes": 5216,
+      "sha256": "ee18ee5c5c0ced24eed8a4d06ac01c6a8899c1bb50f99885dd1f682de79e3ab6"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/acceptance-b03-cp96.json",
+      "bytes": 8181,
+      "sha256": "374db192078126f505b829bc5957acdac9b3e1d2244f03cc9b7838d21c656b23"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b03-cp96/result.json",
+      "bytes": 5221,
+      "sha256": "48032a82dbd4b28569bf09124cb9b94c9f77e5bb6937071c5d8fa5be886efcae"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection/runs/b03-cp96/.done",
+      "bytes": 5221,
+      "sha256": "48032a82dbd4b28569bf09124cb9b94c9f77e5bb6937071c5d8fa5be886efcae"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/host-supervision/state.json",
+      "bytes": 612,
+      "sha256": "4b6374461346db24262f4c53a8f6c37341ee727a6a26754a921c2a4488c4db30"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b00-original/result.json",
+      "bytes": 5223,
+      "sha256": "bbc8bfa726bc51c2db60f4ced54505d080ba1504db1fc2aaa567f827fb59d36b"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/acceptance-b00-original.json",
+      "bytes": 7905,
+      "sha256": "3b7ab41e0dd0d8d7155ce094ccb60ba1c9a38b4e6be811fa040aaeb060910ea3"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b00-original/.done",
+      "bytes": 5223,
+      "sha256": "bbc8bfa726bc51c2db60f4ced54505d080ba1504db1fc2aaa567f827fb59d36b"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b00-same96/result.json",
+      "bytes": 5221,
+      "sha256": "ca925106c05629bada1b9d79cc7a86f774eb481125fb03b43cd62bb852d9a778"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/acceptance-b00-same96.json",
+      "bytes": 8000,
+      "sha256": "044853b89d18420d6e1ecd10fea4d68cd095e8dda1d6803f57b178fcd2abdeea"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b00-same96/.done",
+      "bytes": 5221,
+      "sha256": "ca925106c05629bada1b9d79cc7a86f774eb481125fb03b43cd62bb852d9a778"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b00-random96/result.json",
+      "bytes": 5217,
+      "sha256": "786255eee8f3840e31100b103214e9670dbd3fc3b48993acaf7ea6818a8d6f9c"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/acceptance-b00-random96.json",
+      "bytes": 8089,
+      "sha256": "ec2caafae3cb9c04b73f71a6b920f6e6775273f8f1101fe69361bf632b502fb5"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b00-random96/.done",
+      "bytes": 5217,
+      "sha256": "786255eee8f3840e31100b103214e9670dbd3fc3b48993acaf7ea6818a8d6f9c"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b01-same96/result.json",
+      "bytes": 5223,
+      "sha256": "7fbf28252763e48a4d7cdf8a955fc5143aa8462cfa5ae95f116de8d2a3978ffc"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/acceptance-b01-same96.json",
+      "bytes": 7907,
+      "sha256": "fcab61ae3f70145a8136ca6bd137fcaea470ba7a601c1b6a539bf92d5fd5d903"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b01-same96/.done",
+      "bytes": 5223,
+      "sha256": "7fbf28252763e48a4d7cdf8a955fc5143aa8462cfa5ae95f116de8d2a3978ffc"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b01-random96/result.json",
+      "bytes": 5222,
+      "sha256": "f9a821025c6cc43c0a581e3ddb791fc64f130dcf96691109682b40f122dcc93b"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/acceptance-b01-random96.json",
+      "bytes": 8000,
+      "sha256": "e0891011a6e5252751431c84c18af11696a8f42a8248331b43f97acfc899860d"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b01-random96/.done",
+      "bytes": 5222,
+      "sha256": "f9a821025c6cc43c0a581e3ddb791fc64f130dcf96691109682b40f122dcc93b"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b01-original/result.json",
+      "bytes": 5220,
+      "sha256": "cc03260664a3dafa5ec8e8800e9685106bf22a8eddf6a2913e3e4fdb2bb7a15d"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/acceptance-b01-original.json",
+      "bytes": 8091,
+      "sha256": "7a5c608bd03de998f595dc48ee5f542cc0547cb9aa060297c3627019111e418b"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b01-original/.done",
+      "bytes": 5220,
+      "sha256": "cc03260664a3dafa5ec8e8800e9685106bf22a8eddf6a2913e3e4fdb2bb7a15d"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b02-random96/result.json",
+      "bytes": 5219,
+      "sha256": "ccd2e518071c72e5003f0b6b7b4629de08f77f52cfed6c486461e8f491a58409"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/acceptance-b02-random96.json",
+      "bytes": 7903,
+      "sha256": "214dbbaea3fffc31d64a5d4e342c8c182fc2f16a85ed77270d592ea22e023243"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b02-random96/.done",
+      "bytes": 5219,
+      "sha256": "ccd2e518071c72e5003f0b6b7b4629de08f77f52cfed6c486461e8f491a58409"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b02-original/result.json",
+      "bytes": 5222,
+      "sha256": "da0eb38fec89b3bb2c89537455590d1a3d6b1beb53f6ff8f1eb56a7a0e15f39e"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/acceptance-b02-original.json",
+      "bytes": 8001,
+      "sha256": "cf82cba1e1b23329c093273b13d5cf9e9c7cbf0574960a60ae4cfabd253127f9"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b02-original/.done",
+      "bytes": 5222,
+      "sha256": "da0eb38fec89b3bb2c89537455590d1a3d6b1beb53f6ff8f1eb56a7a0e15f39e"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b02-same96/result.json",
+      "bytes": 5219,
+      "sha256": "214f421119468bc3ddfb02d227590bfd31ed66e014a469e4bf2188ce3b6198ce"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/acceptance-b02-same96.json",
+      "bytes": 8093,
+      "sha256": "24a17c2be76a1e5478226d2a846f96576359a6e495490691ae5ff845391676ac"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b02-same96/.done",
+      "bytes": 5219,
+      "sha256": "214f421119468bc3ddfb02d227590bfd31ed66e014a469e4bf2188ce3b6198ce"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b03-original/result.json",
+      "bytes": 5219,
+      "sha256": "59558bea697a5fdb4af4da7b4b71face34db4ef4e8a7c3a760e148a398acf9aa"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/acceptance-b03-original.json",
+      "bytes": 7903,
+      "sha256": "8a55f825263f6667375d2c1ff183d98e0f66db1b8bcb2ff718b232e77ec59743"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b03-original/.done",
+      "bytes": 5219,
+      "sha256": "59558bea697a5fdb4af4da7b4b71face34db4ef4e8a7c3a760e148a398acf9aa"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b03-same96/result.json",
+      "bytes": 5217,
+      "sha256": "f06d4917ccb9fc84d12139141fe09a5c6c3fa4bf4d051ad2654bd18f8568b1ea"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/acceptance-b03-same96.json",
+      "bytes": 7995,
+      "sha256": "1ac5275d4f9b4c8c80e0dfd3d6b06eafc7afe48a82073f8743440b7087728ccc"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b03-same96/.done",
+      "bytes": 5217,
+      "sha256": "f06d4917ccb9fc84d12139141fe09a5c6c3fa4bf4d051ad2654bd18f8568b1ea"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b03-random96/result.json",
+      "bytes": 5219,
+      "sha256": "92430663a3c4bddc7cc59f2f8eb97e4f3286b17a2f90b371ae2b79c98259f264"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/acceptance-b03-random96.json",
+      "bytes": 8091,
+      "sha256": "7e49b9297d0311096c6e2f2701739c62a3a9c9a4c0c3f003971e34aa569a15f9"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b03-random96/.done",
+      "bytes": 5219,
+      "sha256": "92430663a3c4bddc7cc59f2f8eb97e4f3286b17a2f90b371ae2b79c98259f264"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b04-same96/result.json",
+      "bytes": 5221,
+      "sha256": "a723e055971a56b54fc9089a62818ddeb2f4ad2f1a63b7fb3beddbf38c0f463c"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/acceptance-b04-same96.json",
+      "bytes": 7906,
+      "sha256": "5f5f7529f630884e5ec74d7aa7d1ec98fcfa2f6fa25cc93c0b2a09f3715e23a2"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b04-same96/.done",
+      "bytes": 5221,
+      "sha256": "a723e055971a56b54fc9089a62818ddeb2f4ad2f1a63b7fb3beddbf38c0f463c"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b04-random96/result.json",
+      "bytes": 5220,
+      "sha256": "f13696b5f8ffa70ae4954ed46d8f50a8f8449a434a4975618089b547e4dc1ca2"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/acceptance-b04-random96.json",
+      "bytes": 7999,
+      "sha256": "43ea290d82e52a9d9e8bc8687eea5105d3cba00922720d2675aa448673cd5948"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b04-random96/.done",
+      "bytes": 5220,
+      "sha256": "f13696b5f8ffa70ae4954ed46d8f50a8f8449a434a4975618089b547e4dc1ca2"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b04-original/result.json",
+      "bytes": 5222,
+      "sha256": "b770dda3fd76f139ac0102f953280b76a9a75f05a9675936429aa0ed81310590"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/acceptance-b04-original.json",
+      "bytes": 8095,
+      "sha256": "78c805d5e2bdaa1300d01c0ac98757e10ff04171636049585c17b8e9443011d0"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b04-original/.done",
+      "bytes": 5222,
+      "sha256": "b770dda3fd76f139ac0102f953280b76a9a75f05a9675936429aa0ed81310590"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b05-random96/result.json",
+      "bytes": 5221,
+      "sha256": "ace15bd1fe7efa48b0776e2fcab10f7b3c44d52008bdd2f66105afa8d5edd3c2"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/acceptance-b05-random96.json",
+      "bytes": 7903,
+      "sha256": "9b19febed0fe795a567bf53252e48f387b4ca24ee8df7d7d595aeab095ce21b7"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/runs/b05-random96/.done",
+      "bytes": 5221,
+      "sha256": "ace15bd1fe7efa48b0776e2fcab10f7b3c44d52008bdd2f66105afa8d5edd3c2"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/train-state.json",
+      "bytes": 216,
+      "sha256": "0f0a594385100f00403f5a4cc33fa3438e6d5b7086165480aa4c3f4decc3c691"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/queue-state.json",
+      "bytes": 266,
+      "sha256": "2144761128583bc1bb9e490d83632dee3615d3422521f6563a20cb4a7fdfa06d"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/retention/prune-receipt.json",
+      "bytes": 4804,
+      "sha256": "81e8afc9e14f73a0f44e52236a65d218b92ea03228ccc3688d02195c798390fc"
+    }
+  ],
+  "limitations": [
+    "Training curves are not fixed-weight held-out evidence.",
+    "Validation32 selects best; ties retain earlier step. Test64 is separate.",
+    "Primary192 remains incomplete until all24 stages pass; no final treatment claim.",
+    "Native checkpoint payloads and full console logs were not read.",
+    "CP32 was pruned by the approved queue after validation; old artifacts untouched."
+  ]
+}

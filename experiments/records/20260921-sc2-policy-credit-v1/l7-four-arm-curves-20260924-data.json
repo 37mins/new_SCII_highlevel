@@ -1,0 +1,3043 @@
+{
+  "schema": "sc2-l7-four-arm-curves-v1",
+  "generated_for": "User-requested completed L7 training curves and current status",
+  "status_observed_at": "2026-09-24T10:00:37.706412+08:00",
+  "qwen_data_observed_at": "2026-09-24T10:03:44.524797+08:00",
+  "read_only": true,
+  "source_commit": "89da6a3ba157fd115ad820c2cd3fe330467e982f",
+  "smoothing": {
+    "method": "trailing arithmetic mean of 8 completed steps",
+    "first_plotted_step": 8,
+    "imputation": false,
+    "interpolation": false,
+    "evaluation_in_training": false
+  },
+  "sources": {
+    "local_record_sha256": {
+      "spb-l7same-complete-20260923-data.json": "34c7a709182e1c3e2a3500b03159330f9a1c00f88357f2683227758334a127a8",
+      "spb-random-train2-complete-20260924-020553.json": "def056ee1fa45950863d1fa1a7bba71f2b2511a71d9935199ef066f8105ca45a",
+      "spb-random-train96-complete-20260924-093505.json": "734d17350694a88e67523ed1c5bd230bc98cb02e751d3ef26193d53481e2dc20",
+      "spb-random-short-complete-long-start-20260924-021546.json": "86598cc30f2a53137a1bdb2686cb7f9ea7c330ec04f5a7c1e410832d20dea1f3",
+      "qwen-random-complete-spb-random-start-20260924.json": "8cd67088cceb7792985f68951b1770d934b635c078254378c3a9f92a62e79ead",
+      "l7-results-interpretation-20260922.md": "d405434e54034b1d8e0a3e3b987315450a681919e79ed085e8694b0223346360"
+    },
+    "qwen_remote": {
+      "qwen_same_short": {
+        "root": "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-same/runs/train2",
+        "range": [
+          1,
+          2
+        ],
+        "runtime_sha": "2f95c9fd505bd4529070ff4988c5c9efcb111b53",
+        "dirty": false,
+        "world_size": 8,
+        "file_hashes": {
+          "metrics.json": {
+            "bytes": 4745,
+            "sha256": "021b296d151d3a35cef4d76d190eab21a15cb3a307155fcacaaa7ef8ce424bfd"
+          },
+          "episode_outcomes.jsonl": {
+            "bytes": 3660,
+            "sha256": "355d1759c0ab52bb2d55de26d9a26ff6ed20c97c7c4e84b412e4b8efbec9d208"
+          },
+          "training_seeds.jsonl": {
+            "bytes": 228,
+            "sha256": "c7225e901aea10a4a2bfdd18f5ce95214e57d5a21c2d0960e263de06c6910283"
+          },
+          "checkpoints/sc2_policy_credit_audit.jsonl": {
+            "bytes": 416,
+            "sha256": "0668a487dde9c64d853b329fa353bcb9d261cf06fd971e6b0896ccb9ece7b59f"
+          },
+          "manifest.json": {
+            "bytes": 2664,
+            "sha256": "7447bbb2ba705262a67a1d8a55cf923913c19d2043aa6b31cf0c3a30d6c4f8f9"
+          }
+        },
+        "seed_protocol": "same_uniform101"
+      },
+      "qwen_same_long": {
+        "root": "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/runs/train96",
+        "range": [
+          3,
+          96
+        ],
+        "runtime_sha": "279d5496464de29e14c64924ccb829147351efbd",
+        "dirty": false,
+        "world_size": 8,
+        "file_hashes": {
+          "metrics.json": {
+            "bytes": 220194,
+            "sha256": "081c7440f21d9501070b2e2186d721ae5bda3de5ddde395b558b351c8257fecd"
+          },
+          "episode_outcomes.jsonl": {
+            "bytes": 173800,
+            "sha256": "6af81a5dc676554904bda2b47b5260806b2d0dfef9f4c3d57c689ff93bd468c9"
+          },
+          "training_seeds.jsonl": {
+            "bytes": 10770,
+            "sha256": "4db86eab6b1945772139a586d16b50fbd6ec756936e8450a3bac8eee5ba8a660"
+          },
+          "checkpoints/sc2_policy_credit_audit.jsonl": {
+            "bytes": 19645,
+            "sha256": "fa72355afc35d41dde1993a4d8973278aa0bc742ef090d934b1bdadd99ff3246"
+          },
+          "manifest.json": {
+            "bytes": 2756,
+            "sha256": "37f11ed07e95948921a8d0231ffd87291a6f5b54f3c72fb201b56990ee7cdc8c"
+          }
+        },
+        "seed_protocol": "same_uniform101"
+      },
+      "qwen_random_short": {
+        "root": "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-random/runs/train2",
+        "range": [
+          1,
+          2
+        ],
+        "runtime_sha": "2f95c9fd505bd4529070ff4988c5c9efcb111b53",
+        "dirty": false,
+        "world_size": 8,
+        "file_hashes": {
+          "metrics.json": {
+            "bytes": 4755,
+            "sha256": "646b2d9c2bc1bcc4db4165a7f655f7f6ca9a506433625989a407e215f78b90ca"
+          },
+          "episode_outcomes.jsonl": {
+            "bytes": 3656,
+            "sha256": "e24e29c97648249fa40c48aeea02a576ecf3ad1bddc9216678eccff9fabbbf11"
+          },
+          "training_seeds.jsonl": {
+            "bytes": 242,
+            "sha256": "e6fd6d694811367de8b1023e20ba103d0cfbaab581ac1100ae78d4398007676f"
+          },
+          "checkpoints/sc2_policy_credit_audit.jsonl": {
+            "bytes": 416,
+            "sha256": "1860abd3a879ebbeb3ea72c340e8b5c04fa45a8807d9e1d2768635cb55c65ecc"
+          },
+          "manifest.json": {
+            "bytes": 2664,
+            "sha256": "f2ba0edf409c5a01a8fcc66146b156d52039c953b8617da8110e8be8c0749d8e"
+          }
+        },
+        "seed_protocol": "independent_uniform101"
+      },
+      "qwen_random_prefix": {
+        "root": "/var/jfsCache/sc2-l7-followup197-20260922-r4/qwen-random/long/runs/train96",
+        "range": [
+          3,
+          8
+        ],
+        "runtime_sha": "9cb291ea5f50de205c5d88371e08ce229b7d9d04",
+        "dirty": false,
+        "world_size": 8,
+        "file_hashes": {
+          "metrics.json": {
+            "bytes": 31204,
+            "sha256": "1f42fc47bd0980c60cc3512f32acda83930fb69395bd5733953b5d4ee0dd2d97"
+          },
+          "episode_outcomes.jsonl": {
+            "bytes": 20176,
+            "sha256": "e496110fc8d7f1523b2fcc4dc3c41196caab953be7ae6e8b1ab4f5d5cf622dd3"
+          },
+          "training_seeds.jsonl": {
+            "bytes": 1450,
+            "sha256": "036733e1ff08b557c9859f6c17cda606cd28b557cc50243ad2e6f2b3c62115f3"
+          },
+          "checkpoints/sc2_policy_credit_audit.jsonl": {
+            "bytes": 2292,
+            "sha256": "b8b61ff0e3c1321444dc81e2833cebebd2d10e3500dad7ca7c0d9a3467de05de"
+          },
+          "manifest.json": {
+            "bytes": 3003,
+            "sha256": "d969e1ca70fc9aeee40166f123c1d6aaa46ae5dda6c652547b23d94c78d2360c"
+          }
+        },
+        "seed_protocol": "independent_uniform101"
+      },
+      "qwen_random_suffix": {
+        "root": "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2/runs/train96",
+        "range": [
+          9,
+          96
+        ],
+        "runtime_sha": "34154283a8298ac4fbaab1c63770a6b81f7d375c",
+        "dirty": false,
+        "world_size": 8,
+        "file_hashes": {
+          "metrics.json": {
+            "bytes": 249493,
+            "sha256": "322ed7ddfde01fb64e0c8aa9baae3876fef9a90cd4fff5103c53084b6d20e301"
+          },
+          "episode_outcomes.jsonl": {
+            "bytes": 162508,
+            "sha256": "2569b9535b38369689720842136734bde9e735da8d1487d80868db42d1e7a630"
+          },
+          "training_seeds.jsonl": {
+            "bytes": 10662,
+            "sha256": "6be24a7a6386d4c86a3e79576755577ef0f9e36c91943e9fdb178882abde2079"
+          },
+          "checkpoints/sc2_policy_credit_audit.jsonl": {
+            "bytes": 18391,
+            "sha256": "940c43914d2d2a6544ca55ad241674d221f7e5544fade3bedb9d8e4ff73b58a2"
+          },
+          "manifest.json": {
+            "bytes": 3017,
+            "sha256": "06bd9fbe5f38b0c0bc86add64b0ba5533eca4d4115574c59380859c4beb347cb"
+          }
+        },
+        "seed_protocol": "independent_uniform101"
+      }
+    },
+    "spb_same_remote_hashes": {
+      "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long/runs/train96/manifest.json": "72d486827c24ead8ea997c081ba4d10462f0a91a1ad2c9598316cbf9f842e0ae",
+      "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long/runs/train96/checkpoints/resume_state.json": "ffa9f44740ad3eff3c127929d2c898e3e0eb3ac17fe49e671ad3f86679c6ca93",
+      "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/short/runs/train2/result.json": "bd50704d5ccbf9ec2ef450c7df42b686a1bf464a36f1152f8a1cf42a73ed416b",
+      "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/short/runs/train2/.done": "bd50704d5ccbf9ec2ef450c7df42b686a1bf464a36f1152f8a1cf42a73ed416b",
+      "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/short/runs/train2/metrics.json": "97431d3107e59bc1f01d1103582008691d8c823415c5a9b40118369d9a5108e7",
+      "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/short/runs/train2/manifest.json": "465bc3535add1a2816ad31af02b6ca2b125965d2b9ab3832e48bbd1bccf7a13d",
+      "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long/runs/train96/result.json": "e325b05be02e52696477191b922db4329badf4731fcfbf6203542657aca6f74e",
+      "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long/runs/train96/.done": "e325b05be02e52696477191b922db4329badf4731fcfbf6203542657aca6f74e",
+      "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long/runs/train96/metrics.json": "c12d9d2089e13537b5287bceb7a5a3919d385d11e09b387240aa7ee33559e6f7",
+      "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/short/runs/train2/training_seeds.jsonl": "c7225e901aea10a4a2bfdd18f5ce95214e57d5a21c2d0960e263de06c6910283",
+      "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/short/runs/train2/episode_outcomes.jsonl": "bb3ea3ecdb6cc658d231f369e94699dda894b0d89222c225e4eb5647c0cfe304",
+      "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/short/runs/train2/checkpoints/sc2_policy_credit_audit.jsonl": "b3e2f11e7c60a81ab712540bbdf68d10acac79003c98e92bf673e235cf9873b7",
+      "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long/runs/train96/training_seeds.jsonl": "4db86eab6b1945772139a586d16b50fbd6ec756936e8450a3bac8eee5ba8a660",
+      "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long/runs/train96/episode_outcomes.jsonl": "7e419d8eceda8a95f1004e7f9a5ff565a061ca5aaa04d75b5c4726c958b0ff76",
+      "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long/runs/train96/checkpoints/sc2_policy_credit_audit.jsonl": "d94b840c67c83bb0ce2700c7bfc4b4edadbdb7180114967edbb0513a2986f69b",
+      "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/short/runs/pre/result.json": "1414a677bd328654f195d09f12d169db5110da5733ba00f22255553461e5dbff",
+      "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/short/runs/pre/.done": "1414a677bd328654f195d09f12d169db5110da5733ba00f22255553461e5dbff",
+      "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/short/runs/pre/episode_outcomes.jsonl": "76bfe0303d316c40cf775c0932c5c3b830749bbfb4a3c28e8bf03727fc07e575",
+      "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/short/runs/post/result.json": "248b869d75b80ed805fda813850cd950c02177a9361705c64bba7566d2389bd8",
+      "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/short/runs/post/.done": "248b869d75b80ed805fda813850cd950c02177a9361705c64bba7566d2389bd8",
+      "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/short/runs/post/episode_outcomes.jsonl": "58fb9dd591e8af4db6034d5f47f98245b42861c91d6ffcb5b4bb95ff533cc8ff",
+      "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long/runs/eval96/result.json": "5a5e655deb3fb96bcfb018b65b3650e69f27926e07d8b082e279e2ce665728e3",
+      "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long/runs/eval96/.done": "5a5e655deb3fb96bcfb018b65b3650e69f27926e07d8b082e279e2ce665728e3",
+      "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long/runs/eval96/episode_outcomes.jsonl": "2acfb036fe8ae2172becced102ec17af28b3f6c978b9cad9ecb6ad8f413b939b",
+      "/var/jfsCache/sc2-l7-followup197-20260922-r4/queue-state.json": "28d12345393b3b552f88a4381e9892ada85ca9b6acff3af4b7210cd44a305633",
+      "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long/host-supervision/state.json": "a654151d3b1bad3526a235c38977aeb51bd63c6092637a03c089feea92b284b9",
+      "/var/jfsCache/sc2-l7-followup197-20260922-r4/qwen-random/long/dispatch.json": "93de9be668e10918509171b2a3a10047ef7edea3de31916b4800087d42c8fd2a"
+    },
+    "spb_random_runtime": "83f3530765babe048035524ddf1651291810818a"
+  },
+  "limitations": [
+    "Each arm's evaluation is paired with its own CP2 post; n=8, not evidence of robust improvement or architecture superiority.",
+    "Qwen same strict training remains failed at historical rounded-gradient gaps 7/9/10/56/65/92; separately authorized CP96 evaluation passed.",
+    "Qwen random main curve excludes completed old steps 9–13 and failed step14 slots; preserves failed run and non-bitwise CP2 ancestry.",
+    "SpB random additionally changes startup serialization relative to same-seed; not strictly seed-only or timing-equivalent.",
+    "Independent-seed mixed UID confounds scenario difficulty in advantage; model parameter/FLOPs and Executor limitations remain.",
+    "Legality is 100% under constrained action/no-thinking support, not proof of strategic learning."
+  ],
+  "arms": [
+    {
+      "id": "qwen_same",
+      "title": "Qwen 4B · 同 seed",
+      "rows": [
+        {
+          "step": 1,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 54,
+          "valid_answers": 54
+        },
+        {
+          "step": 2,
+          "games": 8,
+          "wins": 0,
+          "real_answers": 70,
+          "valid_answers": 70
+        },
+        {
+          "step": 3,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 55,
+          "valid_answers": 55
+        },
+        {
+          "step": 4,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 80,
+          "valid_answers": 80
+        },
+        {
+          "step": 5,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 64,
+          "valid_answers": 64
+        },
+        {
+          "step": 6,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 64,
+          "valid_answers": 64
+        },
+        {
+          "step": 7,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 64,
+          "valid_answers": 64
+        },
+        {
+          "step": 8,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 69,
+          "valid_answers": 69
+        },
+        {
+          "step": 9,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 64,
+          "valid_answers": 64
+        },
+        {
+          "step": 10,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 64,
+          "valid_answers": 64
+        },
+        {
+          "step": 11,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 64,
+          "valid_answers": 64
+        },
+        {
+          "step": 12,
+          "games": 8,
+          "wins": 0,
+          "real_answers": 72,
+          "valid_answers": 72
+        },
+        {
+          "step": 13,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 64,
+          "valid_answers": 64
+        },
+        {
+          "step": 14,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 64,
+          "valid_answers": 64
+        },
+        {
+          "step": 15,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 64,
+          "valid_answers": 64
+        },
+        {
+          "step": 16,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 64,
+          "valid_answers": 64
+        },
+        {
+          "step": 17,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 64,
+          "valid_answers": 64
+        },
+        {
+          "step": 18,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 55,
+          "valid_answers": 55
+        },
+        {
+          "step": 19,
+          "games": 8,
+          "wins": 0,
+          "real_answers": 60,
+          "valid_answers": 60
+        },
+        {
+          "step": 20,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 40,
+          "valid_answers": 40
+        },
+        {
+          "step": 21,
+          "games": 8,
+          "wins": 0,
+          "real_answers": 48,
+          "valid_answers": 48
+        },
+        {
+          "step": 22,
+          "games": 8,
+          "wins": 0,
+          "real_answers": 40,
+          "valid_answers": 40
+        },
+        {
+          "step": 23,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 40,
+          "valid_answers": 40
+        },
+        {
+          "step": 24,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 40,
+          "valid_answers": 40
+        },
+        {
+          "step": 25,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 40,
+          "valid_answers": 40
+        },
+        {
+          "step": 26,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 52,
+          "valid_answers": 52
+        },
+        {
+          "step": 27,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 40,
+          "valid_answers": 40
+        },
+        {
+          "step": 28,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 40,
+          "valid_answers": 40
+        },
+        {
+          "step": 29,
+          "games": 8,
+          "wins": 0,
+          "real_answers": 40,
+          "valid_answers": 40
+        },
+        {
+          "step": 30,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 40,
+          "valid_answers": 40
+        },
+        {
+          "step": 31,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 40,
+          "valid_answers": 40
+        },
+        {
+          "step": 32,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 40,
+          "valid_answers": 40
+        },
+        {
+          "step": 33,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 37,
+          "valid_answers": 37
+        },
+        {
+          "step": 34,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 40,
+          "valid_answers": 40
+        },
+        {
+          "step": 35,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 40,
+          "valid_answers": 40
+        },
+        {
+          "step": 36,
+          "games": 8,
+          "wins": 0,
+          "real_answers": 48,
+          "valid_answers": 48
+        },
+        {
+          "step": 37,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 40,
+          "valid_answers": 40
+        },
+        {
+          "step": 38,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 40,
+          "valid_answers": 40
+        },
+        {
+          "step": 39,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 40,
+          "valid_answers": 40
+        },
+        {
+          "step": 40,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 40,
+          "valid_answers": 40
+        },
+        {
+          "step": 41,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 40,
+          "valid_answers": 40
+        },
+        {
+          "step": 42,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 40,
+          "valid_answers": 40
+        },
+        {
+          "step": 43,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 40,
+          "valid_answers": 40
+        },
+        {
+          "step": 44,
+          "games": 8,
+          "wins": 0,
+          "real_answers": 48,
+          "valid_answers": 48
+        },
+        {
+          "step": 45,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 40,
+          "valid_answers": 40
+        },
+        {
+          "step": 46,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 40,
+          "valid_answers": 40
+        },
+        {
+          "step": 47,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 40,
+          "valid_answers": 40
+        },
+        {
+          "step": 48,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 40,
+          "valid_answers": 40
+        },
+        {
+          "step": 49,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 40,
+          "valid_answers": 40
+        },
+        {
+          "step": 50,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 40,
+          "valid_answers": 40
+        },
+        {
+          "step": 51,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 40,
+          "valid_answers": 40
+        },
+        {
+          "step": 52,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 52,
+          "valid_answers": 52
+        },
+        {
+          "step": 53,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 69,
+          "valid_answers": 69
+        },
+        {
+          "step": 54,
+          "games": 8,
+          "wins": 0,
+          "real_answers": 119,
+          "valid_answers": 119
+        },
+        {
+          "step": 55,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 74,
+          "valid_answers": 74
+        },
+        {
+          "step": 56,
+          "games": 8,
+          "wins": 0,
+          "real_answers": 64,
+          "valid_answers": 64
+        },
+        {
+          "step": 57,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 80,
+          "valid_answers": 80
+        },
+        {
+          "step": 58,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 80,
+          "valid_answers": 80
+        },
+        {
+          "step": 59,
+          "games": 8,
+          "wins": 0,
+          "real_answers": 96,
+          "valid_answers": 96
+        },
+        {
+          "step": 60,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 80,
+          "valid_answers": 80
+        },
+        {
+          "step": 61,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 88,
+          "valid_answers": 88
+        },
+        {
+          "step": 62,
+          "games": 8,
+          "wins": 0,
+          "real_answers": 112,
+          "valid_answers": 112
+        },
+        {
+          "step": 63,
+          "games": 8,
+          "wins": 0,
+          "real_answers": 96,
+          "valid_answers": 96
+        },
+        {
+          "step": 64,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 72,
+          "valid_answers": 72
+        },
+        {
+          "step": 65,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 64,
+          "valid_answers": 64
+        },
+        {
+          "step": 66,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 80,
+          "valid_answers": 80
+        },
+        {
+          "step": 67,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 72,
+          "valid_answers": 72
+        },
+        {
+          "step": 68,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 72,
+          "valid_answers": 72
+        },
+        {
+          "step": 69,
+          "games": 8,
+          "wins": 0,
+          "real_answers": 88,
+          "valid_answers": 88
+        },
+        {
+          "step": 70,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 64,
+          "valid_answers": 64
+        },
+        {
+          "step": 71,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 76,
+          "valid_answers": 76
+        },
+        {
+          "step": 72,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 72,
+          "valid_answers": 72
+        },
+        {
+          "step": 73,
+          "games": 8,
+          "wins": 0,
+          "real_answers": 97,
+          "valid_answers": 97
+        },
+        {
+          "step": 74,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 72,
+          "valid_answers": 72
+        },
+        {
+          "step": 75,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 72,
+          "valid_answers": 72
+        },
+        {
+          "step": 76,
+          "games": 8,
+          "wins": 2,
+          "real_answers": 132,
+          "valid_answers": 132
+        },
+        {
+          "step": 77,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 15,
+          "valid_answers": 15
+        },
+        {
+          "step": 78,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 16,
+          "valid_answers": 16
+        },
+        {
+          "step": 79,
+          "games": 8,
+          "wins": 5,
+          "real_answers": 21,
+          "valid_answers": 21
+        },
+        {
+          "step": 80,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 16,
+          "valid_answers": 16
+        },
+        {
+          "step": 81,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 16,
+          "valid_answers": 16
+        },
+        {
+          "step": 82,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 17,
+          "valid_answers": 17
+        },
+        {
+          "step": 83,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 20,
+          "valid_answers": 20
+        },
+        {
+          "step": 84,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 16,
+          "valid_answers": 16
+        },
+        {
+          "step": 85,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 16,
+          "valid_answers": 16
+        },
+        {
+          "step": 86,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 16,
+          "valid_answers": 16
+        },
+        {
+          "step": 87,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 16,
+          "valid_answers": 16
+        },
+        {
+          "step": 88,
+          "games": 8,
+          "wins": 0,
+          "real_answers": 25,
+          "valid_answers": 25
+        },
+        {
+          "step": 89,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 16,
+          "valid_answers": 16
+        },
+        {
+          "step": 90,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 16,
+          "valid_answers": 16
+        },
+        {
+          "step": 91,
+          "games": 8,
+          "wins": 0,
+          "real_answers": 34,
+          "valid_answers": 34
+        },
+        {
+          "step": 92,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 16,
+          "valid_answers": 16
+        },
+        {
+          "step": 93,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 31,
+          "valid_answers": 31
+        },
+        {
+          "step": 94,
+          "games": 8,
+          "wins": 0,
+          "real_answers": 46,
+          "valid_answers": 46
+        },
+        {
+          "step": 95,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 24,
+          "valid_answers": 24
+        },
+        {
+          "step": 96,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 27,
+          "valid_answers": 27
+        }
+      ],
+      "status": "训练已结束；严格验收 failed（六项梯度精度缺口）",
+      "evaluation": {
+        "cp2_wins": 7,
+        "cp96_wins": 5,
+        "games": 8
+      },
+      "boundaries": [
+        2.5
+      ],
+      "gradient_gaps": [
+        7,
+        9,
+        10,
+        56,
+        65,
+        92
+      ],
+      "note": "历史缺口保留；胜率点是真实观测，不代表该步梯度已验证。",
+      "summary": {
+        "games": 768,
+        "wins": 609,
+        "valid_answers": 4995,
+        "real_answers": 4995
+      }
+    },
+    {
+      "id": "spb_same",
+      "title": "SpB 5.17B · 同 seed",
+      "rows": [
+        {
+          "step": 1,
+          "games": 8,
+          "wins": 3,
+          "real_answers": 40,
+          "valid_answers": 40
+        },
+        {
+          "step": 2,
+          "games": 8,
+          "wins": 2,
+          "real_answers": 63,
+          "valid_answers": 63
+        },
+        {
+          "step": 3,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 95,
+          "valid_answers": 95
+        },
+        {
+          "step": 4,
+          "games": 8,
+          "wins": 2,
+          "real_answers": 148,
+          "valid_answers": 148
+        },
+        {
+          "step": 5,
+          "games": 8,
+          "wins": 3,
+          "real_answers": 73,
+          "valid_answers": 73
+        },
+        {
+          "step": 6,
+          "games": 8,
+          "wins": 5,
+          "real_answers": 113,
+          "valid_answers": 113
+        },
+        {
+          "step": 7,
+          "games": 8,
+          "wins": 4,
+          "real_answers": 169,
+          "valid_answers": 169
+        },
+        {
+          "step": 8,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 185,
+          "valid_answers": 185
+        },
+        {
+          "step": 9,
+          "games": 8,
+          "wins": 4,
+          "real_answers": 200,
+          "valid_answers": 200
+        },
+        {
+          "step": 10,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 157,
+          "valid_answers": 157
+        },
+        {
+          "step": 11,
+          "games": 8,
+          "wins": 3,
+          "real_answers": 171,
+          "valid_answers": 171
+        },
+        {
+          "step": 12,
+          "games": 8,
+          "wins": 4,
+          "real_answers": 173,
+          "valid_answers": 173
+        },
+        {
+          "step": 13,
+          "games": 8,
+          "wins": 4,
+          "real_answers": 125,
+          "valid_answers": 125
+        },
+        {
+          "step": 14,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 144,
+          "valid_answers": 144
+        },
+        {
+          "step": 15,
+          "games": 8,
+          "wins": 5,
+          "real_answers": 146,
+          "valid_answers": 146
+        },
+        {
+          "step": 16,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 127,
+          "valid_answers": 127
+        },
+        {
+          "step": 17,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 147,
+          "valid_answers": 147
+        },
+        {
+          "step": 18,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 146,
+          "valid_answers": 146
+        },
+        {
+          "step": 19,
+          "games": 8,
+          "wins": 0,
+          "real_answers": 150,
+          "valid_answers": 150
+        },
+        {
+          "step": 20,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 120,
+          "valid_answers": 120
+        },
+        {
+          "step": 21,
+          "games": 8,
+          "wins": 0,
+          "real_answers": 159,
+          "valid_answers": 159
+        },
+        {
+          "step": 22,
+          "games": 8,
+          "wins": 0,
+          "real_answers": 126,
+          "valid_answers": 126
+        },
+        {
+          "step": 23,
+          "games": 8,
+          "wins": 2,
+          "real_answers": 170,
+          "valid_answers": 170
+        },
+        {
+          "step": 24,
+          "games": 8,
+          "wins": 2,
+          "real_answers": 176,
+          "valid_answers": 176
+        },
+        {
+          "step": 25,
+          "games": 8,
+          "wins": 5,
+          "real_answers": 152,
+          "valid_answers": 152
+        },
+        {
+          "step": 26,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 122,
+          "valid_answers": 122
+        },
+        {
+          "step": 27,
+          "games": 8,
+          "wins": 2,
+          "real_answers": 165,
+          "valid_answers": 165
+        },
+        {
+          "step": 28,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 123,
+          "valid_answers": 123
+        },
+        {
+          "step": 29,
+          "games": 8,
+          "wins": 0,
+          "real_answers": 152,
+          "valid_answers": 152
+        },
+        {
+          "step": 30,
+          "games": 8,
+          "wins": 3,
+          "real_answers": 144,
+          "valid_answers": 144
+        },
+        {
+          "step": 31,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 148,
+          "valid_answers": 148
+        },
+        {
+          "step": 32,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 153,
+          "valid_answers": 153
+        },
+        {
+          "step": 33,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 137,
+          "valid_answers": 137
+        },
+        {
+          "step": 34,
+          "games": 8,
+          "wins": 5,
+          "real_answers": 149,
+          "valid_answers": 149
+        },
+        {
+          "step": 35,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 155,
+          "valid_answers": 155
+        },
+        {
+          "step": 36,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 157,
+          "valid_answers": 157
+        },
+        {
+          "step": 37,
+          "games": 8,
+          "wins": 1,
+          "real_answers": 187,
+          "valid_answers": 187
+        },
+        {
+          "step": 38,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 153,
+          "valid_answers": 153
+        },
+        {
+          "step": 39,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 137,
+          "valid_answers": 137
+        },
+        {
+          "step": 40,
+          "games": 8,
+          "wins": 3,
+          "real_answers": 135,
+          "valid_answers": 135
+        },
+        {
+          "step": 41,
+          "games": 8,
+          "wins": 2,
+          "real_answers": 146,
+          "valid_answers": 146
+        },
+        {
+          "step": 42,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 141,
+          "valid_answers": 141
+        },
+        {
+          "step": 43,
+          "games": 8,
+          "wins": 0,
+          "real_answers": 155,
+          "valid_answers": 155
+        },
+        {
+          "step": 44,
+          "games": 8,
+          "wins": 0,
+          "real_answers": 182,
+          "valid_answers": 182
+        },
+        {
+          "step": 45,
+          "games": 8,
+          "wins": 5,
+          "real_answers": 156,
+          "valid_answers": 156
+        },
+        {
+          "step": 46,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 136,
+          "valid_answers": 136
+        },
+        {
+          "step": 47,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 157,
+          "valid_answers": 157
+        },
+        {
+          "step": 48,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 128,
+          "valid_answers": 128
+        },
+        {
+          "step": 49,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 145,
+          "valid_answers": 145
+        },
+        {
+          "step": 50,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 121,
+          "valid_answers": 121
+        },
+        {
+          "step": 51,
+          "games": 8,
+          "wins": 1,
+          "real_answers": 166,
+          "valid_answers": 166
+        },
+        {
+          "step": 52,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 82,
+          "valid_answers": 82
+        },
+        {
+          "step": 53,
+          "games": 8,
+          "wins": 4,
+          "real_answers": 95,
+          "valid_answers": 95
+        },
+        {
+          "step": 54,
+          "games": 8,
+          "wins": 4,
+          "real_answers": 111,
+          "valid_answers": 111
+        },
+        {
+          "step": 55,
+          "games": 8,
+          "wins": 4,
+          "real_answers": 132,
+          "valid_answers": 132
+        },
+        {
+          "step": 56,
+          "games": 8,
+          "wins": 4,
+          "real_answers": 124,
+          "valid_answers": 124
+        },
+        {
+          "step": 57,
+          "games": 8,
+          "wins": 4,
+          "real_answers": 127,
+          "valid_answers": 127
+        },
+        {
+          "step": 58,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 105,
+          "valid_answers": 105
+        },
+        {
+          "step": 59,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 85,
+          "valid_answers": 85
+        },
+        {
+          "step": 60,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 106,
+          "valid_answers": 106
+        },
+        {
+          "step": 61,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 102,
+          "valid_answers": 102
+        },
+        {
+          "step": 62,
+          "games": 8,
+          "wins": 0,
+          "real_answers": 112,
+          "valid_answers": 112
+        },
+        {
+          "step": 63,
+          "games": 8,
+          "wins": 5,
+          "real_answers": 128,
+          "valid_answers": 128
+        },
+        {
+          "step": 64,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 101,
+          "valid_answers": 101
+        },
+        {
+          "step": 65,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 107,
+          "valid_answers": 107
+        },
+        {
+          "step": 66,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 119,
+          "valid_answers": 119
+        },
+        {
+          "step": 67,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 99,
+          "valid_answers": 99
+        },
+        {
+          "step": 68,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 101,
+          "valid_answers": 101
+        },
+        {
+          "step": 69,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 102,
+          "valid_answers": 102
+        },
+        {
+          "step": 70,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 104,
+          "valid_answers": 104
+        },
+        {
+          "step": 71,
+          "games": 8,
+          "wins": 4,
+          "real_answers": 120,
+          "valid_answers": 120
+        },
+        {
+          "step": 72,
+          "games": 8,
+          "wins": 2,
+          "real_answers": 143,
+          "valid_answers": 143
+        },
+        {
+          "step": 73,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 120,
+          "valid_answers": 120
+        },
+        {
+          "step": 74,
+          "games": 8,
+          "wins": 4,
+          "real_answers": 114,
+          "valid_answers": 114
+        },
+        {
+          "step": 75,
+          "games": 8,
+          "wins": 3,
+          "real_answers": 128,
+          "valid_answers": 128
+        },
+        {
+          "step": 76,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 106,
+          "valid_answers": 106
+        },
+        {
+          "step": 77,
+          "games": 8,
+          "wins": 3,
+          "real_answers": 114,
+          "valid_answers": 114
+        },
+        {
+          "step": 78,
+          "games": 8,
+          "wins": 5,
+          "real_answers": 84,
+          "valid_answers": 84
+        },
+        {
+          "step": 79,
+          "games": 8,
+          "wins": 5,
+          "real_answers": 115,
+          "valid_answers": 115
+        },
+        {
+          "step": 80,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 99,
+          "valid_answers": 99
+        },
+        {
+          "step": 81,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 106,
+          "valid_answers": 106
+        },
+        {
+          "step": 82,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 99,
+          "valid_answers": 99
+        },
+        {
+          "step": 83,
+          "games": 8,
+          "wins": 0,
+          "real_answers": 21,
+          "valid_answers": 21
+        },
+        {
+          "step": 84,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 55,
+          "valid_answers": 55
+        },
+        {
+          "step": 85,
+          "games": 8,
+          "wins": 1,
+          "real_answers": 40,
+          "valid_answers": 40
+        },
+        {
+          "step": 86,
+          "games": 8,
+          "wins": 3,
+          "real_answers": 28,
+          "valid_answers": 28
+        },
+        {
+          "step": 87,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 44,
+          "valid_answers": 44
+        },
+        {
+          "step": 88,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 60,
+          "valid_answers": 60
+        },
+        {
+          "step": 89,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 28,
+          "valid_answers": 28
+        },
+        {
+          "step": 90,
+          "games": 8,
+          "wins": 4,
+          "real_answers": 37,
+          "valid_answers": 37
+        },
+        {
+          "step": 91,
+          "games": 8,
+          "wins": 1,
+          "real_answers": 56,
+          "valid_answers": 56
+        },
+        {
+          "step": 92,
+          "games": 8,
+          "wins": 2,
+          "real_answers": 61,
+          "valid_answers": 61
+        },
+        {
+          "step": 93,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 53,
+          "valid_answers": 53
+        },
+        {
+          "step": 94,
+          "games": 8,
+          "wins": 0,
+          "real_answers": 36,
+          "valid_answers": 36
+        },
+        {
+          "step": 95,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 39,
+          "valid_answers": 39
+        },
+        {
+          "step": 96,
+          "games": 8,
+          "wins": 2,
+          "real_answers": 40,
+          "valid_answers": 40
+        }
+      ],
+      "status": "训练 + 终评：完整验收",
+      "evaluation": {
+        "cp2_wins": 3,
+        "cp96_wins": 2,
+        "games": 8
+      },
+      "boundaries": [
+        2.5
+      ],
+      "note": "每步 8 局共享一个 seed；跨步重新抽取，并非全程固定。",
+      "summary": {
+        "games": 768,
+        "wins": 445,
+        "valid_answers": 11313,
+        "real_answers": 11313
+      }
+    },
+    {
+      "id": "qwen_random",
+      "title": "Qwen 4B · 每局独立 seed",
+      "rows": [
+        {
+          "step": 1,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 46,
+          "valid_answers": 46
+        },
+        {
+          "step": 2,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 50,
+          "valid_answers": 50
+        },
+        {
+          "step": 3,
+          "games": 8,
+          "wins": 5,
+          "real_answers": 61,
+          "valid_answers": 61
+        },
+        {
+          "step": 4,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 24,
+          "valid_answers": 24
+        },
+        {
+          "step": 5,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 25,
+          "valid_answers": 25
+        },
+        {
+          "step": 6,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 28,
+          "valid_answers": 28
+        },
+        {
+          "step": 7,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 24,
+          "valid_answers": 24
+        },
+        {
+          "step": 8,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 25,
+          "valid_answers": 25
+        },
+        {
+          "step": 9,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 31,
+          "valid_answers": 31
+        },
+        {
+          "step": 10,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 24,
+          "valid_answers": 24
+        },
+        {
+          "step": 11,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 24,
+          "valid_answers": 24
+        },
+        {
+          "step": 12,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 34,
+          "valid_answers": 34
+        },
+        {
+          "step": 13,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 24,
+          "valid_answers": 24
+        },
+        {
+          "step": 14,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 25,
+          "valid_answers": 25
+        },
+        {
+          "step": 15,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 25,
+          "valid_answers": 25
+        },
+        {
+          "step": 16,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 24,
+          "valid_answers": 24
+        },
+        {
+          "step": 17,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 26,
+          "valid_answers": 26
+        },
+        {
+          "step": 18,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 24,
+          "valid_answers": 24
+        },
+        {
+          "step": 19,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 24,
+          "valid_answers": 24
+        },
+        {
+          "step": 20,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 24,
+          "valid_answers": 24
+        },
+        {
+          "step": 21,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 25,
+          "valid_answers": 25
+        },
+        {
+          "step": 22,
+          "games": 8,
+          "wins": 5,
+          "real_answers": 24,
+          "valid_answers": 24
+        },
+        {
+          "step": 23,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 24,
+          "valid_answers": 24
+        },
+        {
+          "step": 24,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 24,
+          "valid_answers": 24
+        },
+        {
+          "step": 25,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 25,
+          "valid_answers": 25
+        },
+        {
+          "step": 26,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 24,
+          "valid_answers": 24
+        },
+        {
+          "step": 27,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 26,
+          "valid_answers": 26
+        },
+        {
+          "step": 28,
+          "games": 8,
+          "wins": 5,
+          "real_answers": 26,
+          "valid_answers": 26
+        },
+        {
+          "step": 29,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 24,
+          "valid_answers": 24
+        },
+        {
+          "step": 30,
+          "games": 8,
+          "wins": 4,
+          "real_answers": 26,
+          "valid_answers": 26
+        },
+        {
+          "step": 31,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 25,
+          "valid_answers": 25
+        },
+        {
+          "step": 32,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 24,
+          "valid_answers": 24
+        },
+        {
+          "step": 33,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 24,
+          "valid_answers": 24
+        },
+        {
+          "step": 34,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 26,
+          "valid_answers": 26
+        },
+        {
+          "step": 35,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 29,
+          "valid_answers": 29
+        },
+        {
+          "step": 36,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 28,
+          "valid_answers": 28
+        },
+        {
+          "step": 37,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 24,
+          "valid_answers": 24
+        },
+        {
+          "step": 38,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 25,
+          "valid_answers": 25
+        },
+        {
+          "step": 39,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 25,
+          "valid_answers": 25
+        },
+        {
+          "step": 40,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 25,
+          "valid_answers": 25
+        },
+        {
+          "step": 41,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 24,
+          "valid_answers": 24
+        },
+        {
+          "step": 42,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 24,
+          "valid_answers": 24
+        },
+        {
+          "step": 43,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 25,
+          "valid_answers": 25
+        },
+        {
+          "step": 44,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 25,
+          "valid_answers": 25
+        },
+        {
+          "step": 45,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 24,
+          "valid_answers": 24
+        },
+        {
+          "step": 46,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 24,
+          "valid_answers": 24
+        },
+        {
+          "step": 47,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 24,
+          "valid_answers": 24
+        },
+        {
+          "step": 48,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 24,
+          "valid_answers": 24
+        },
+        {
+          "step": 49,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 28,
+          "valid_answers": 28
+        },
+        {
+          "step": 50,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 24,
+          "valid_answers": 24
+        },
+        {
+          "step": 51,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 24,
+          "valid_answers": 24
+        },
+        {
+          "step": 52,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 27,
+          "valid_answers": 27
+        },
+        {
+          "step": 53,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 24,
+          "valid_answers": 24
+        },
+        {
+          "step": 54,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 24,
+          "valid_answers": 24
+        },
+        {
+          "step": 55,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 24,
+          "valid_answers": 24
+        },
+        {
+          "step": 56,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 24,
+          "valid_answers": 24
+        },
+        {
+          "step": 57,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 25,
+          "valid_answers": 25
+        },
+        {
+          "step": 58,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 24,
+          "valid_answers": 24
+        },
+        {
+          "step": 59,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 25,
+          "valid_answers": 25
+        },
+        {
+          "step": 60,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 24,
+          "valid_answers": 24
+        },
+        {
+          "step": 61,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 24,
+          "valid_answers": 24
+        },
+        {
+          "step": 62,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 24,
+          "valid_answers": 24
+        },
+        {
+          "step": 63,
+          "games": 8,
+          "wins": 5,
+          "real_answers": 26,
+          "valid_answers": 26
+        },
+        {
+          "step": 64,
+          "games": 8,
+          "wins": 5,
+          "real_answers": 25,
+          "valid_answers": 25
+        },
+        {
+          "step": 65,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 25,
+          "valid_answers": 25
+        },
+        {
+          "step": 66,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 25,
+          "valid_answers": 25
+        },
+        {
+          "step": 67,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 24,
+          "valid_answers": 24
+        },
+        {
+          "step": 68,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 24,
+          "valid_answers": 24
+        },
+        {
+          "step": 69,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 26,
+          "valid_answers": 26
+        },
+        {
+          "step": 70,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 24,
+          "valid_answers": 24
+        },
+        {
+          "step": 71,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 24,
+          "valid_answers": 24
+        },
+        {
+          "step": 72,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 24,
+          "valid_answers": 24
+        },
+        {
+          "step": 73,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 24,
+          "valid_answers": 24
+        },
+        {
+          "step": 74,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 24,
+          "valid_answers": 24
+        },
+        {
+          "step": 75,
+          "games": 8,
+          "wins": 5,
+          "real_answers": 29,
+          "valid_answers": 29
+        },
+        {
+          "step": 76,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 25,
+          "valid_answers": 25
+        },
+        {
+          "step": 77,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 24,
+          "valid_answers": 24
+        },
+        {
+          "step": 78,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 24,
+          "valid_answers": 24
+        },
+        {
+          "step": 79,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 24,
+          "valid_answers": 24
+        },
+        {
+          "step": 80,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 24,
+          "valid_answers": 24
+        },
+        {
+          "step": 81,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 28,
+          "valid_answers": 28
+        },
+        {
+          "step": 82,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 24,
+          "valid_answers": 24
+        },
+        {
+          "step": 83,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 26,
+          "valid_answers": 26
+        },
+        {
+          "step": 84,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 25,
+          "valid_answers": 25
+        },
+        {
+          "step": 85,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 25,
+          "valid_answers": 25
+        },
+        {
+          "step": 86,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 25,
+          "valid_answers": 25
+        },
+        {
+          "step": 87,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 25,
+          "valid_answers": 25
+        },
+        {
+          "step": 88,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 26,
+          "valid_answers": 26
+        },
+        {
+          "step": 89,
+          "games": 8,
+          "wins": 5,
+          "real_answers": 30,
+          "valid_answers": 30
+        },
+        {
+          "step": 90,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 27,
+          "valid_answers": 27
+        },
+        {
+          "step": 91,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 31,
+          "valid_answers": 31
+        },
+        {
+          "step": 92,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 35,
+          "valid_answers": 35
+        },
+        {
+          "step": 93,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 25,
+          "valid_answers": 25
+        },
+        {
+          "step": 94,
+          "games": 8,
+          "wins": 5,
+          "real_answers": 24,
+          "valid_answers": 24
+        },
+        {
+          "step": 95,
+          "games": 8,
+          "wins": 4,
+          "real_answers": 29,
+          "valid_answers": 29
+        },
+        {
+          "step": 96,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 24,
+          "valid_answers": 24
+        }
+      ],
+      "status": "有效 prefix + CP8 续训 + 终评：验收完成",
+      "evaluation": {
+        "cp2_wins": 8,
+        "cp96_wins": 8,
+        "games": 8
+      },
+      "boundaries": [
+        2.5,
+        8.5
+      ],
+      "note": "CP8 重启前的失败段不计入主曲线；祖先非 bitwise 限制仍保留。",
+      "segments": [
+        {
+          "range": [
+            1,
+            2
+          ],
+          "wins": 14,
+          "games": 16
+        },
+        {
+          "range": [
+            3,
+            8
+          ],
+          "wins": 41,
+          "games": 48
+        },
+        {
+          "range": [
+            9,
+            96
+          ],
+          "wins": 614,
+          "games": 704
+        }
+      ],
+      "summary": {
+        "games": 768,
+        "wins": 669,
+        "valid_answers": 2508,
+        "real_answers": 2508
+      }
+    },
+    {
+      "id": "spb_random",
+      "title": "SpB 5.17B · 每局独立 seed",
+      "rows": [
+        {
+          "step": 1,
+          "games": 8,
+          "wins": 5,
+          "real_answers": 46,
+          "valid_answers": 46
+        },
+        {
+          "step": 2,
+          "games": 8,
+          "wins": 3,
+          "real_answers": 79,
+          "valid_answers": 79
+        },
+        {
+          "step": 3,
+          "games": 8,
+          "wins": 1,
+          "real_answers": 62,
+          "valid_answers": 62
+        },
+        {
+          "step": 4,
+          "games": 8,
+          "wins": 3,
+          "real_answers": 40,
+          "valid_answers": 40
+        },
+        {
+          "step": 5,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 27,
+          "valid_answers": 27
+        },
+        {
+          "step": 6,
+          "games": 8,
+          "wins": 3,
+          "real_answers": 32,
+          "valid_answers": 32
+        },
+        {
+          "step": 7,
+          "games": 8,
+          "wins": 5,
+          "real_answers": 31,
+          "valid_answers": 31
+        },
+        {
+          "step": 8,
+          "games": 8,
+          "wins": 5,
+          "real_answers": 26,
+          "valid_answers": 26
+        },
+        {
+          "step": 9,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 22,
+          "valid_answers": 22
+        },
+        {
+          "step": 10,
+          "games": 8,
+          "wins": 3,
+          "real_answers": 30,
+          "valid_answers": 30
+        },
+        {
+          "step": 11,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 20,
+          "valid_answers": 20
+        },
+        {
+          "step": 12,
+          "games": 8,
+          "wins": 4,
+          "real_answers": 22,
+          "valid_answers": 22
+        },
+        {
+          "step": 13,
+          "games": 8,
+          "wins": 3,
+          "real_answers": 25,
+          "valid_answers": 25
+        },
+        {
+          "step": 14,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 24,
+          "valid_answers": 24
+        },
+        {
+          "step": 15,
+          "games": 8,
+          "wins": 4,
+          "real_answers": 25,
+          "valid_answers": 25
+        },
+        {
+          "step": 16,
+          "games": 8,
+          "wins": 4,
+          "real_answers": 25,
+          "valid_answers": 25
+        },
+        {
+          "step": 17,
+          "games": 8,
+          "wins": 4,
+          "real_answers": 26,
+          "valid_answers": 26
+        },
+        {
+          "step": 18,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 22,
+          "valid_answers": 22
+        },
+        {
+          "step": 19,
+          "games": 8,
+          "wins": 4,
+          "real_answers": 23,
+          "valid_answers": 23
+        },
+        {
+          "step": 20,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 20,
+          "valid_answers": 20
+        },
+        {
+          "step": 21,
+          "games": 8,
+          "wins": 4,
+          "real_answers": 20,
+          "valid_answers": 20
+        },
+        {
+          "step": 22,
+          "games": 8,
+          "wins": 3,
+          "real_answers": 18,
+          "valid_answers": 18
+        },
+        {
+          "step": 23,
+          "games": 8,
+          "wins": 5,
+          "real_answers": 17,
+          "valid_answers": 17
+        },
+        {
+          "step": 24,
+          "games": 8,
+          "wins": 4,
+          "real_answers": 18,
+          "valid_answers": 18
+        },
+        {
+          "step": 25,
+          "games": 8,
+          "wins": 2,
+          "real_answers": 28,
+          "valid_answers": 28
+        },
+        {
+          "step": 26,
+          "games": 8,
+          "wins": 5,
+          "real_answers": 21,
+          "valid_answers": 21
+        },
+        {
+          "step": 27,
+          "games": 8,
+          "wins": 5,
+          "real_answers": 19,
+          "valid_answers": 19
+        },
+        {
+          "step": 28,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 19,
+          "valid_answers": 19
+        },
+        {
+          "step": 29,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 16,
+          "valid_answers": 16
+        },
+        {
+          "step": 30,
+          "games": 8,
+          "wins": 5,
+          "real_answers": 16,
+          "valid_answers": 16
+        },
+        {
+          "step": 31,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 17,
+          "valid_answers": 17
+        },
+        {
+          "step": 32,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 17,
+          "valid_answers": 17
+        },
+        {
+          "step": 33,
+          "games": 8,
+          "wins": 5,
+          "real_answers": 16,
+          "valid_answers": 16
+        },
+        {
+          "step": 34,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 17,
+          "valid_answers": 17
+        },
+        {
+          "step": 35,
+          "games": 8,
+          "wins": 4,
+          "real_answers": 17,
+          "valid_answers": 17
+        },
+        {
+          "step": 36,
+          "games": 8,
+          "wins": 3,
+          "real_answers": 17,
+          "valid_answers": 17
+        },
+        {
+          "step": 37,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 17,
+          "valid_answers": 17
+        },
+        {
+          "step": 38,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 17,
+          "valid_answers": 17
+        },
+        {
+          "step": 39,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 16,
+          "valid_answers": 16
+        },
+        {
+          "step": 40,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 18,
+          "valid_answers": 18
+        },
+        {
+          "step": 41,
+          "games": 8,
+          "wins": 5,
+          "real_answers": 17,
+          "valid_answers": 17
+        },
+        {
+          "step": 42,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 17,
+          "valid_answers": 17
+        },
+        {
+          "step": 43,
+          "games": 8,
+          "wins": 5,
+          "real_answers": 19,
+          "valid_answers": 19
+        },
+        {
+          "step": 44,
+          "games": 8,
+          "wins": 5,
+          "real_answers": 17,
+          "valid_answers": 17
+        },
+        {
+          "step": 45,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 16,
+          "valid_answers": 16
+        },
+        {
+          "step": 46,
+          "games": 8,
+          "wins": 4,
+          "real_answers": 16,
+          "valid_answers": 16
+        },
+        {
+          "step": 47,
+          "games": 8,
+          "wins": 4,
+          "real_answers": 17,
+          "valid_answers": 17
+        },
+        {
+          "step": 48,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 16,
+          "valid_answers": 16
+        },
+        {
+          "step": 49,
+          "games": 8,
+          "wins": 4,
+          "real_answers": 18,
+          "valid_answers": 18
+        },
+        {
+          "step": 50,
+          "games": 8,
+          "wins": 5,
+          "real_answers": 17,
+          "valid_answers": 17
+        },
+        {
+          "step": 51,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 17,
+          "valid_answers": 17
+        },
+        {
+          "step": 52,
+          "games": 8,
+          "wins": 5,
+          "real_answers": 18,
+          "valid_answers": 18
+        },
+        {
+          "step": 53,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 18,
+          "valid_answers": 18
+        },
+        {
+          "step": 54,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 18,
+          "valid_answers": 18
+        },
+        {
+          "step": 55,
+          "games": 8,
+          "wins": 4,
+          "real_answers": 19,
+          "valid_answers": 19
+        },
+        {
+          "step": 56,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 16,
+          "valid_answers": 16
+        },
+        {
+          "step": 57,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 16,
+          "valid_answers": 16
+        },
+        {
+          "step": 58,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 17,
+          "valid_answers": 17
+        },
+        {
+          "step": 59,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 16,
+          "valid_answers": 16
+        },
+        {
+          "step": 60,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 16,
+          "valid_answers": 16
+        },
+        {
+          "step": 61,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 18,
+          "valid_answers": 18
+        },
+        {
+          "step": 62,
+          "games": 8,
+          "wins": 3,
+          "real_answers": 18,
+          "valid_answers": 18
+        },
+        {
+          "step": 63,
+          "games": 8,
+          "wins": 5,
+          "real_answers": 18,
+          "valid_answers": 18
+        },
+        {
+          "step": 64,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 17,
+          "valid_answers": 17
+        },
+        {
+          "step": 65,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 16,
+          "valid_answers": 16
+        },
+        {
+          "step": 66,
+          "games": 8,
+          "wins": 5,
+          "real_answers": 18,
+          "valid_answers": 18
+        },
+        {
+          "step": 67,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 18,
+          "valid_answers": 18
+        },
+        {
+          "step": 68,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 16,
+          "valid_answers": 16
+        },
+        {
+          "step": 69,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 16,
+          "valid_answers": 16
+        },
+        {
+          "step": 70,
+          "games": 8,
+          "wins": 4,
+          "real_answers": 20,
+          "valid_answers": 20
+        },
+        {
+          "step": 71,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 17,
+          "valid_answers": 17
+        },
+        {
+          "step": 72,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 16,
+          "valid_answers": 16
+        },
+        {
+          "step": 73,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 18,
+          "valid_answers": 18
+        },
+        {
+          "step": 74,
+          "games": 8,
+          "wins": 8,
+          "real_answers": 16,
+          "valid_answers": 16
+        },
+        {
+          "step": 75,
+          "games": 8,
+          "wins": 4,
+          "real_answers": 17,
+          "valid_answers": 17
+        },
+        {
+          "step": 76,
+          "games": 8,
+          "wins": 5,
+          "real_answers": 17,
+          "valid_answers": 17
+        },
+        {
+          "step": 77,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 17,
+          "valid_answers": 17
+        },
+        {
+          "step": 78,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 17,
+          "valid_answers": 17
+        },
+        {
+          "step": 79,
+          "games": 8,
+          "wins": 2,
+          "real_answers": 21,
+          "valid_answers": 21
+        },
+        {
+          "step": 80,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 17,
+          "valid_answers": 17
+        },
+        {
+          "step": 81,
+          "games": 8,
+          "wins": 5,
+          "real_answers": 18,
+          "valid_answers": 18
+        },
+        {
+          "step": 82,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 18,
+          "valid_answers": 18
+        },
+        {
+          "step": 83,
+          "games": 8,
+          "wins": 4,
+          "real_answers": 17,
+          "valid_answers": 17
+        },
+        {
+          "step": 84,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 16,
+          "valid_answers": 16
+        },
+        {
+          "step": 85,
+          "games": 8,
+          "wins": 5,
+          "real_answers": 19,
+          "valid_answers": 19
+        },
+        {
+          "step": 86,
+          "games": 8,
+          "wins": 5,
+          "real_answers": 18,
+          "valid_answers": 18
+        },
+        {
+          "step": 87,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 17,
+          "valid_answers": 17
+        },
+        {
+          "step": 88,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 16,
+          "valid_answers": 16
+        },
+        {
+          "step": 89,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 17,
+          "valid_answers": 17
+        },
+        {
+          "step": 90,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 18,
+          "valid_answers": 18
+        },
+        {
+          "step": 91,
+          "games": 8,
+          "wins": 6,
+          "real_answers": 19,
+          "valid_answers": 19
+        },
+        {
+          "step": 92,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 16,
+          "valid_answers": 16
+        },
+        {
+          "step": 93,
+          "games": 8,
+          "wins": 5,
+          "real_answers": 19,
+          "valid_answers": 19
+        },
+        {
+          "step": 94,
+          "games": 8,
+          "wins": 5,
+          "real_answers": 20,
+          "valid_answers": 20
+        },
+        {
+          "step": 95,
+          "games": 8,
+          "wins": 4,
+          "real_answers": 17,
+          "valid_answers": 17
+        },
+        {
+          "step": 96,
+          "games": 8,
+          "wins": 7,
+          "real_answers": 17,
+          "valid_answers": 17
+        }
+      ],
+      "status": "训练完整验收；CP96 终评待入场",
+      "evaluation": {
+        "cp2_wins": 4,
+        "cp96_wins": null,
+        "games": 8
+      },
+      "boundaries": [
+        2.5
+      ],
+      "note": "96 次 PPO 已完成；最后 8 局零更新终评尚未派发。",
+      "summary": {
+        "games": 768,
+        "wins": 513,
+        "valid_answers": 1959,
+        "real_answers": 1959
+      }
+    }
+  ]
+}

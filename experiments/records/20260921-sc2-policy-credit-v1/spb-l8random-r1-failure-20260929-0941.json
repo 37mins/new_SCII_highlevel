@@ -1,0 +1,542 @@
+{
+  "checked_at": 1790646069.8995671,
+  "checked_at_beijing": "2026-09-29T09:41:09.899577+08:00",
+  "task": "Read-only status; no server writes, retry, resume, deletion or code fix",
+  "runtime_sha": "f7497ab5a1876a5e899f3e620758850c996212d6",
+  "root": "/var/jfsCache/sc2-spb-l8random96-197-20260928-r1",
+  "queue": {
+    "phase": "failed",
+    "completed": [],
+    "new_games": 1048,
+    "new_updates": 96,
+    "part": "spb-random/short",
+    "deadline": 1790716328.2092705,
+    "component_deadline": 1790694728.2092705,
+    "error_type": "RuntimeError",
+    "error": "Storage measurement failed; no retry; /var/jfsCache/sc2-spb-l8random96-197-20260928-r1/train-storage/storage-failure-0ed8ef2380314eb38c823e8d35b0bd6e.json",
+    "finished_at": 1790610562.6794252
+  },
+  "host_supervision": {
+    "version": "host-guardian-v1",
+    "phase": "failed",
+    "completed": [
+      "pre"
+    ],
+    "deadline": 1790694728.2092705,
+    "learning_validated": false,
+    "started_at": 1790608360.1206398,
+    "stage": "train2",
+    "container_id": "4775300d3d2d3a66f671bf78e80b7d4784b20ab9cf1ed812dbead11882f269d2",
+    "error_type": "RuntimeError",
+    "error": "Storage measurement failed; no retry; /var/jfsCache/sc2-spb-l8random96-197-20260928-r1/train-storage/storage-failure-0ed8ef2380314eb38c823e8d35b0bd6e.json",
+    "finished_at": 1790610562.6789167
+  },
+  "container": {
+    "id": "4775300d3d2d3a66f671bf78e80b7d4784b20ab9cf1ed812dbead11882f269d2",
+    "name": "/sc2-spb-l8random96-197-20260928-r1-short-train2",
+    "state": {
+      "Dead": false,
+      "Error": "",
+      "ExitCode": 137,
+      "FinishedAt": "2026-09-28T15:49:22.381716049Z",
+      "OOMKilled": false,
+      "Paused": false,
+      "Pid": 0,
+      "Restarting": false,
+      "Running": false,
+      "StartedAt": "2026-09-28T15:24:00.318851616Z",
+      "Status": "exited"
+    },
+    "owner": "/var/jfsCache/sc2-spb-l8random96-197-20260928-r1/spb-random/short"
+  },
+  "dispatch": {
+    "start": 1790608328.2092705,
+    "deadline": 1790694728.2092705,
+    "suite_deadline": 1790716328.2092705,
+    "gpu_hours": 192,
+    "suite_gpu_hours": 240,
+    "new_games": 920,
+    "new_updates": 96,
+    "includes_gpu_preflight": true
+  },
+  "storage_failure": {
+    "command": [
+      "du",
+      "-sb",
+      "--null",
+      "--",
+      "/var/jfsCache/sc2-spb-l8random96-197-20260928-r1",
+      "/var/jfsCache/sc2-spb-l8random96-197-source-20260928-r1"
+    ],
+    "roots": [
+      "/var/jfsCache/sc2-spb-l8random96-197-20260928-r1",
+      "/var/jfsCache/sc2-spb-l8random96-197-source-20260928-r1"
+    ],
+    "started_at": 1790610540.4749944,
+    "deadline": 1790694728.2092705,
+    "limit": 343597383680,
+    "bytes": null,
+    "returncode": null,
+    "status": "measurement-failed",
+    "stdout": {
+      "tail": "",
+      "characters": 0,
+      "truncated": false
+    },
+    "stderr": {
+      "tail": "",
+      "characters": 0,
+      "truncated": false
+    },
+    "quiescence": {
+      "version": "host-guardian-v1",
+      "container_id": "4775300d3d2d3a66f671bf78e80b7d4784b20ab9cf1ed812dbead11882f269d2",
+      "owner_root": "/var/jfsCache/sc2-spb-l8random96-197-20260928-r1/spb-random/short",
+      "guardian_pid": 2097645,
+      "paused_verified": false,
+      "cleanup": "guardian-recovery-required",
+      "error_type": "TimeoutError",
+      "error": "Original guardian request allowance exhausted"
+    },
+    "error_type": "TimeoutError",
+    "error": "Original guardian request allowance exhausted",
+    "checked_at": 1790610555.4902725
+  },
+  "pre": {
+    "accepted": true,
+    "result_done_acceptance_equal": true,
+    "ended_at": "2026-09-28T15:23:55.718675+00:00",
+    "exit_code": 0,
+    "training_updates": 0,
+    "games": 8,
+    "wins": 5,
+    "consumed_answers": 45,
+    "valid_consumed_answers": 45
+  },
+  "train2": {
+    "accepted": false,
+    "result_exists": false,
+    "done_exists": false,
+    "acceptance_exists": false,
+    "outcomes": {
+      "count": 16,
+      "wins": 7,
+      "terminated": 16,
+      "truncated": 0
+    },
+    "audits": [
+      {
+        "pending_global_step": 1,
+        "global_step": null,
+        "real_answers": 64,
+        "valid_answers": 64,
+        "valid_ratio": 1,
+        "decision": "accept",
+        "optimizer_updates_for_this_batch": 0,
+        "invalid_advantage_max": null
+      },
+      {
+        "pending_global_step": 2,
+        "global_step": null,
+        "real_answers": 56,
+        "valid_answers": 56,
+        "valid_ratio": 1,
+        "decision": "accept",
+        "optimizer_updates_for_this_batch": 0,
+        "invalid_advantage_max": null
+      }
+    ],
+    "seeds": [
+      {
+        "base_seed": 0,
+        "reset_index": 0,
+        "seed_protocol": "independent_uniform101",
+        "seeds": [
+          49,
+          97,
+          53,
+          5,
+          33,
+          65,
+          62,
+          51
+        ]
+      },
+      {
+        "base_seed": 0,
+        "reset_index": 1,
+        "seed_protocol": "independent_uniform101",
+        "seeds": [
+          100,
+          38,
+          61,
+          45,
+          74,
+          27,
+          64,
+          17
+        ]
+      }
+    ],
+    "last_returned_step": 2,
+    "returned_step2": {
+      "source": "bounded train2-entry.log tail 10000 bytes",
+      "metrics_precision": "binary64-v1",
+      "grad_norm": 148.9976419721331,
+      "update_actor_seconds": 60.04926444776356,
+      "save_checkpoint_seconds": 9.02879301365465,
+      "invalid_advantage_max": 0
+    },
+    "strict_stage_pass": false
+  },
+  "guardian": {
+    "pre": {
+      "version": "host-guardian-v1",
+      "container_id": "d9e4c0ce158a382f2af1e2d74f3efb0d1ee0dfd6015bc29a1ed217bcf3f57d0f",
+      "owner_root": "/var/jfsCache/sc2-spb-l8random96-197-20260928-r1/spb-random/short",
+      "deadline": 1790694728.2092705,
+      "lease_seconds": 45,
+      "phase": "completed",
+      "pause_attempted": true,
+      "started_at": 1790608360.5550654,
+      "initial_state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "0001-01-01T00:00:00Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "0001-01-01T00:00:00Z",
+        "Status": "created"
+      },
+      "final_state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-09-28T15:23:55.73938988Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-09-28T15:12:40.582737584Z",
+        "Status": "exited"
+      },
+      "finished_at": 1790609039.7152977,
+      "last_events": [
+        {
+          "op": "pause",
+          "at": 1790609024.5316284,
+          "quiescence": "paused"
+        },
+        {
+          "op": "resume",
+          "at": 1790609024.5706642,
+          "quiescence": "running"
+        },
+        {
+          "op": "pause",
+          "at": 1790609024.6197407,
+          "quiescence": "paused"
+        },
+        {
+          "op": "resume",
+          "at": 1790609024.6738908,
+          "quiescence": "running"
+        },
+        {
+          "op": "pulse",
+          "at": 1790609024.6744523
+        },
+        {
+          "op": "pulse",
+          "at": 1790609039.689634
+        }
+      ],
+      "event_count": 442
+    },
+    "train2": {
+      "version": "host-guardian-v1",
+      "container_id": "4775300d3d2d3a66f671bf78e80b7d4784b20ab9cf1ed812dbead11882f269d2",
+      "owner_root": "/var/jfsCache/sc2-spb-l8random96-197-20260928-r1/spb-random/short",
+      "deadline": 1790694728.2092705,
+      "lease_seconds": 45,
+      "phase": "failed",
+      "pause_attempted": true,
+      "started_at": 1790609040.2909465,
+      "initial_state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "0001-01-01T00:00:00Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "0001-01-01T00:00:00Z",
+        "Status": "created"
+      },
+      "error_type": "RuntimeError",
+      "error": "Pause not verified; measurement forbidden",
+      "recovery": {
+        "errors": [],
+        "state": {
+          "Dead": false,
+          "Error": "",
+          "ExitCode": 137,
+          "FinishedAt": "2026-09-28T15:49:22.381716049Z",
+          "OOMKilled": false,
+          "Paused": false,
+          "Pid": 0,
+          "Restarting": false,
+          "Running": false,
+          "StartedAt": "2026-09-28T15:24:00.318851616Z",
+          "Status": "exited"
+        },
+        "stopped_verified": true
+      },
+      "finished_at": 1790610562.6035476,
+      "last_events": [
+        {
+          "op": "pause",
+          "at": 1790610525.2628605,
+          "quiescence": "paused"
+        },
+        {
+          "op": "resume",
+          "at": 1790610525.299483,
+          "quiescence": "running"
+        },
+        {
+          "op": "pause",
+          "at": 1790610525.3456633,
+          "quiescence": "paused"
+        },
+        {
+          "op": "resume",
+          "at": 1790610525.442597,
+          "quiescence": "running"
+        },
+        {
+          "op": "pulse",
+          "at": 1790610525.4432793
+        },
+        {
+          "op": "pulse",
+          "at": 1790610540.4585493
+        }
+      ],
+      "event_count": 972
+    }
+  },
+  "checkpoint": {
+    "inventory": [
+      {
+        "name": "data.pt",
+        "bytes": 1947
+      },
+      {
+        "name": "sc2_state.pt",
+        "bytes": 30007
+      },
+      {
+        "name": "actor/model_world_size_8_rank_0.pt",
+        "bytes": 2778173291
+      },
+      {
+        "name": "actor/model_world_size_8_rank_3.pt",
+        "bytes": 2778173291
+      },
+      {
+        "name": "actor/model_world_size_8_rank_1.pt",
+        "bytes": 2778173291
+      },
+      {
+        "name": "actor/model_world_size_8_rank_4.pt",
+        "bytes": 2777907051
+      },
+      {
+        "name": "actor/model_world_size_8_rank_6.pt",
+        "bytes": 2777907051
+      },
+      {
+        "name": "actor/model_world_size_8_rank_5.pt",
+        "bytes": 2777907051
+      },
+      {
+        "name": "actor/model_world_size_8_rank_7.pt",
+        "bytes": 2777907051
+      },
+      {
+        "name": "actor/model_world_size_8_rank_2.pt",
+        "bytes": 2778173291
+      },
+      {
+        "name": "actor/optim_world_size_8_rank_3.pt",
+        "bytes": 5166248083
+      },
+      {
+        "name": "actor/optim_world_size_8_rank_1.pt",
+        "bytes": 5166248083
+      },
+      {
+        "name": "actor/optim_world_size_8_rank_4.pt",
+        "bytes": 5166248083
+      },
+      {
+        "name": "actor/optim_world_size_8_rank_6.pt",
+        "bytes": 5166248083
+      },
+      {
+        "name": "actor/optim_world_size_8_rank_7.pt",
+        "bytes": 5166248083
+      },
+      {
+        "name": "actor/optim_world_size_8_rank_0.pt",
+        "bytes": 5166248083
+      },
+      {
+        "name": "actor/optim_world_size_8_rank_5.pt",
+        "bytes": 5166248083
+      },
+      {
+        "name": "actor/optim_world_size_8_rank_2.pt",
+        "bytes": 5166248083
+      },
+      {
+        "name": "actor/extra_state_world_size_8_rank_3.pt",
+        "bytes": 15205
+      },
+      {
+        "name": "actor/extra_state_world_size_8_rank_4.pt",
+        "bytes": 15077
+      },
+      {
+        "name": "actor/extra_state_world_size_8_rank_1.pt",
+        "bytes": 15077
+      },
+      {
+        "name": "actor/extra_state_world_size_8_rank_5.pt",
+        "bytes": 15077
+      },
+      {
+        "name": "actor/extra_state_world_size_8_rank_0.pt",
+        "bytes": 15141
+      },
+      {
+        "name": "actor/generation_config.json",
+        "bytes": 121
+      },
+      {
+        "name": "actor/configuration_sse_swa_moba.py",
+        "bytes": 4533
+      },
+      {
+        "name": "actor/config.json",
+        "bytes": 1651
+      },
+      {
+        "name": "actor/chat_template.jinja",
+        "bytes": 2630
+      },
+      {
+        "name": "actor/tokenizer_config.json",
+        "bytes": 5415
+      },
+      {
+        "name": "actor/special_tokens_map.json",
+        "bytes": 758
+      },
+      {
+        "name": "actor/added_tokens.json",
+        "bytes": 707
+      },
+      {
+        "name": "actor/vocab.json",
+        "bytes": 2776833
+      },
+      {
+        "name": "actor/merges.txt",
+        "bytes": 1671853
+      },
+      {
+        "name": "actor/extra_state_world_size_8_rank_2.pt",
+        "bytes": 15077
+      },
+      {
+        "name": "actor/extra_state_world_size_8_rank_6.pt",
+        "bytes": 15141
+      },
+      {
+        "name": "actor/tokenizer.json",
+        "bytes": 11422654
+      },
+      {
+        "name": "actor/extra_state_world_size_8_rank_7.pt",
+        "bytes": 15077
+      }
+    ],
+    "total_bytes": 63570346013,
+    "tensors_read": false,
+    "load_or_recovery_verified": false,
+    "comment": "CP2 file metadata exists; no terminal result/acceptance, not an authorized or validated recovery parent."
+  },
+  "current_gpu": {
+    "checked_at": 1790645947.406851,
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "memory_used_mib": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "utilization_percent": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "compute_processes": []
+  },
+  "successors": {
+    "post_started": false,
+    "long_started": false,
+    "selection_started": false,
+    "primary_started": false
+  },
+  "conclusion": {
+    "status": "failed infrastructure/control-plane, not model performance failure",
+    "known": "Guardian pause request timed out, pause not verified; measurement forbidden; fail-closed recovery stopped exact owner container.",
+    "not_established": [
+      "Disk capacity exhaustion",
+      "GPU OOM",
+      "Model training divergence",
+      "Full underlying Docker pause timeout root cause"
+    ],
+    "clock_unchanged": true,
+    "automatic_retry": false,
+    "old_eta_invalid": true,
+    "next": "Diagnose pause/teardown race, validate CP2 and design controlled continuation; implementation/GPU retry require new authorization."
+  }
+}

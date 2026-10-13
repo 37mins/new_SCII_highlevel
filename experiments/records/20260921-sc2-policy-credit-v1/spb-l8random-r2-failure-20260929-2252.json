@@ -1,0 +1,442 @@
+{
+  "checked_at_beijing": "2026-09-29T22:51:11.954345+08:00",
+  "storage_checked_at_beijing": "2026-09-29T22:52:40+08:00",
+  "run_id": "sc2-spb-l8random96-197-20260929-r2",
+  "runtime_sha": "12f3600ca8e6e8edabc460de70860baeef2b5146",
+  "read_only": true,
+  "queue": {
+    "phase": "failed",
+    "completed": [
+      "spb-random/short"
+    ],
+    "new_games": 1048,
+    "new_updates": 96,
+    "part": "spb-random/long",
+    "deadline": 1790755863.2781556,
+    "component_deadline": 1790734263.2781556,
+    "error_type": "RuntimeError",
+    "error": "Storage batch failed; no retry; /var/jfsCache/sc2-spb-l8random96-197-20260929-r2/suite-storage/storage-failure-ece870d8286143a7803930c67bccf2ab.json",
+    "finished_at": 1790679199.4458046
+  },
+  "host_supervision": {
+    "short": {
+      "version": "host-guardian-v1",
+      "phase": "completed",
+      "completed": [
+        "pre",
+        "train2",
+        "post"
+      ],
+      "deadline": 1790734263.2781556,
+      "learning_validated": false,
+      "started_at": 1790647895.4268959,
+      "stage": "post",
+      "container_id": "f0ceec285c278d462fab5cdac45216341cb8b48f922e50853b111e14d2bde76b",
+      "exit_code": 0,
+      "finished_at": 1790650629.7810867
+    },
+    "long": {
+      "version": "host-guardian-v1",
+      "phase": "failed",
+      "completed": [],
+      "deadline": 1790734263.2781556,
+      "learning_validated": false,
+      "started_at": 1790650634.6053514,
+      "stage": "train96",
+      "container_id": "cb1a5950be537f2561c6efad3aafd4645b4bccf1312fd7ed3f467c8d57aa0da8",
+      "error_type": "RuntimeError",
+      "error": "Storage batch failed; no retry; /var/jfsCache/sc2-spb-l8random96-197-20260929-r2/suite-storage/storage-failure-ece870d8286143a7803930c67bccf2ab.json",
+      "finished_at": 1790679199.4452088
+    },
+    "selection": null,
+    "primary": null
+  },
+  "current_container": {
+    "id": "cb1a5950be537f2561c6efad3aafd4645b4bccf1312fd7ed3f467c8d57aa0da8",
+    "name": "/sc2-spb-l8random96-197-20260929-r2-long-train96",
+    "state": {
+      "Dead": false,
+      "Error": "",
+      "ExitCode": 137,
+      "FinishedAt": "2026-09-29T10:53:19.175864143Z",
+      "OOMKilled": false,
+      "Paused": false,
+      "Pid": 0,
+      "Restarting": false,
+      "Running": false,
+      "StartedAt": "2026-09-29T02:57:15.490585811Z",
+      "Status": "exited"
+    },
+    "owner": "/var/jfsCache/sc2-spb-l8random96-197-20260929-r2/spb-random/long"
+  },
+  "failure": {
+    "/var/jfsCache/sc2-spb-l8random96-197-20260929-r2/suite-storage/storage-failure-ece870d8286143a7803930c67bccf2ab.json": {
+      "version": "single-pause-batch-v1",
+      "started_at": 1790679176.9154892,
+      "deadline": 1790734263.2781556,
+      "bytes": null,
+      "status": "measurement-failed",
+      "samples": [],
+      "quiescence": {
+        "version": "host-guardian-v1",
+        "container_id": "cb1a5950be537f2561c6efad3aafd4645b4bccf1312fd7ed3f467c8d57aa0da8",
+        "owner_root": "/var/jfsCache/sc2-spb-l8random96-197-20260929-r2/spb-random/long",
+        "guardian_pid": 2279723,
+        "paused_verified": false,
+        "cleanup": "guardian-recovery-required"
+      },
+      "error_type": "RuntimeError",
+      "error": "Guardian rejected operation: pause: {\"ok\": false, \"event\": \"failed\", \"error_type\": \"RuntimeError\", \"error\": \"Pause not verified; measurement forbidden\", \"operation\": {\"op\": \"pause\", \"at\": 1790679176.9156456, \"pause_command_error\": \"Owned-container command failed: pause: Error response from daemon: cannot pause container cb1a5950be537f2561c6efad3aafd4645b4bccf1312fd7ed3f467c8d57aa0da8: OCI runtime pause failed: timeout of 10s reached waiting for the cgroup to freeze\\n\", \"observed_state\": {\"Dead\": false, \"Error\": \"\", \"ExitCode\": 0, \"FinishedAt\": \"0001-01-01T00:00:00Z\", \"OOMKilled\": false, \"Paused\": false, \"Pid\": 2279780, \"Restarting\": false, \"Running\": true, \"StartedAt\": \"2026-09-29T02:57:15.490585811Z\", \"Status\": \"running\"}}}",
+      "checked_at": 1790679187.0736694
+    }
+  },
+  "guardian_terminal_tail": {
+    "pending_operation": {
+      "op": "pause",
+      "at": 1790679176.9156456,
+      "pause_command_error": "Owned-container command failed: pause: Error response from daemon: cannot pause container cb1a5950be537f2561c6efad3aafd4645b4bccf1312fd7ed3f467c8d57aa0da8: OCI runtime pause failed: timeout of 10s reached waiting for the cgroup to freeze\n",
+      "observed_state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "0001-01-01T00:00:00Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 2279780,
+        "Restarting": false,
+        "Running": true,
+        "StartedAt": "2026-09-29T02:57:15.490585811Z",
+        "Status": "running"
+      }
+    },
+    "error_type": "RuntimeError",
+    "error": "Pause not verified; measurement forbidden",
+    "recovery": {
+      "errors": [],
+      "state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 137,
+        "FinishedAt": "2026-09-29T10:53:19.175864143Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-09-29T02:57:15.490585811Z",
+        "Status": "exited"
+      },
+      "stopped_verified": true
+    },
+    "finished_at": 1790679199.3583498
+  },
+  "short": {
+    "short/pre": {
+      "result": {
+        "status": "completed",
+        "process_exit_code": 0,
+        "training_updates": 0,
+        "metrics_finite": true,
+        "metrics_precision": "binary64-v1",
+        "evaluable_action_count": 45,
+        "valid_evaluable_action_count": 45,
+        "ended_at": "2026-09-29T02:22:44.390391+00:00"
+      },
+      "outcomes": {
+        "natural_games": 8,
+        "wins": 5,
+        "defeats": 3,
+        "ties": 0,
+        "truncated": 0
+      },
+      "terminal_equal": true,
+      "evidence": {
+        "consumed_answers": 45,
+        "valid_consumed_answers": 45,
+        "parsed_plans": 45,
+        "validated_queue_entries": 690,
+        "validated_locally_queued_commands": 370,
+        "execution_scope": "local Depot/Marine commands, not production completion or causal wins"
+      }
+    },
+    "short/train2": {
+      "result": {
+        "status": "completed",
+        "process_exit_code": 0,
+        "metrics_finite": true,
+        "metrics_precision": "binary64-v1",
+        "ended_at": "2026-09-29T02:48:38.642892+00:00"
+      },
+      "outcomes": {
+        "natural_games": 16,
+        "wins": 4,
+        "defeats": 12,
+        "ties": 0,
+        "truncated": 0
+      },
+      "terminal_equal": true,
+      "evidence": {
+        "consumed_answers": 100,
+        "valid_consumed_answers": 100,
+        "parsed_plans": 100,
+        "validated_queue_entries": 1661,
+        "validated_locally_queued_commands": 1047,
+        "execution_scope": "local Depot/Marine commands, not production completion or causal wins",
+        "ppo_updates": 2,
+        "checkpoints": [
+          2
+        ]
+      }
+    },
+    "short/post": {
+      "result": {
+        "status": "completed",
+        "process_exit_code": 0,
+        "training_updates": 0,
+        "metrics_finite": true,
+        "metrics_precision": "binary64-v1",
+        "evaluable_action_count": 30,
+        "valid_evaluable_action_count": 30,
+        "ended_at": "2026-09-29T02:57:06.792647+00:00"
+      },
+      "outcomes": {
+        "natural_games": 8,
+        "wins": 6,
+        "defeats": 2,
+        "ties": 0,
+        "truncated": 0
+      },
+      "terminal_equal": true,
+      "evidence": {
+        "consumed_answers": 30,
+        "valid_consumed_answers": 30,
+        "parsed_plans": 30,
+        "validated_queue_entries": 763,
+        "validated_locally_queued_commands": 424,
+        "execution_scope": "local Depot/Marine commands, not production completion or causal wins"
+      }
+    }
+  },
+  "long": {
+    "result_exists": false,
+    "done_exists": false,
+    "acceptance_exists": false,
+    "natural_games": 752,
+    "wins": 499,
+    "truncated": 0,
+    "audit_rows": 94,
+    "audit_steps_contiguous_3_to96": true,
+    "consumed_answers_preupdate": 2658,
+    "valid_answers_preupdate": 2658,
+    "audits_are_not_independent_update_proof": true,
+    "seed_batches": 94,
+    "reset_indices_contiguous_2_to95": true,
+    "last_returned_ppo": {
+      "training/global_step": 96,
+      "actor/grad_norm": 55.61417531967163,
+      "timing_s/update_actor": 8.437246065586805,
+      "timing_s/save_checkpoint": 8.627443953417242,
+      "timing_s/step": 252.29997470788658,
+      "policy_credit/invalid_advantage_max": 0,
+      "episode/valid_action_ratio": 1
+    },
+    "last_console_mtime": 1790679172.3331163,
+    "console_bytes": 89134791,
+    "tail_read_bytes": 65536,
+    "full_returned_update_series_not_reaudited": true
+  },
+  "total_training_observed": {
+    "natural_games": 768,
+    "wins": 503,
+    "win_rate": 0.6549479166666666,
+    "provisional_not_strict_completion": true
+  },
+  "current_stopped_storage": {
+    "command": "timeout 15s du -sb -- <six exact r1/r2 roots>",
+    "root_bytes": {
+      "/var/jfsCache/sc2-spb-l8random96-197-20260928-r1": 64432989310,
+      "/var/jfsCache/sc2-spb-l8random-paired128-197-20260928-r1": 945239,
+      "/var/jfsCache/sc2-spb-l8random96-197-source-20260928-r1": 25775629,
+      "/var/jfsCache/sc2-spb-l8random96-197-20260929-r2": 258839390914,
+      "/var/jfsCache/sc2-spb-l8random-paired128-197-20260929-r2": 946270,
+      "/var/jfsCache/sc2-spb-l8random96-197-source-20260929-r2": 25798865
+    },
+    "total_bytes": 323325846227,
+    "limit_bytes": 377957122048,
+    "returncode": 0,
+    "stderr_empty": true,
+    "old_values_not_used": true
+  },
+  "prior_successful_storage": {
+    "train-storage": {
+      "bytes": 259752871333,
+      "limit": 343597383680,
+      "returncode": 0,
+      "stderr": {
+        "tail": "",
+        "characters": 0,
+        "truncated": false
+      },
+      "root_bytes": {
+        "/var/jfsCache/sc2-spb-l8random96-197-20260928-r1": 64432989310,
+        "/var/jfsCache/sc2-spb-l8random96-197-source-20260928-r1": 25775629,
+        "/var/jfsCache/sc2-spb-l8random96-197-20260929-r2": 195268310434,
+        "/var/jfsCache/sc2-spb-l8random96-197-source-20260929-r2": 25795960
+      },
+      "measured_at": 1790679161.5557017,
+      "status": "measured",
+      "sampling_version": "single-pause-batch-v1",
+      "batch_accounts": 4,
+      "quiescence": {
+        "version": "host-guardian-v1",
+        "container_id": "cb1a5950be537f2561c6efad3aafd4645b4bccf1312fd7ed3f467c8d57aa0da8",
+        "owner_root": "/var/jfsCache/sc2-spb-l8random96-197-20260929-r2/spb-random/long",
+        "guardian_pid": 2279723,
+        "paused_verified": true,
+        "cleanup": "verified-unpaused",
+        "paused_at": 1790679161.2773764,
+        "mode": "paused",
+        "resumed_at": 1790679161.8818061
+      }
+    },
+    "suite-storage": {
+      "bytes": 259754762844,
+      "limit": 377957122048,
+      "returncode": 0,
+      "stderr": {
+        "tail": "",
+        "characters": 0,
+        "truncated": false
+      },
+      "root_bytes": {
+        "/var/jfsCache/sc2-spb-l8random96-197-20260928-r1": 64432989310,
+        "/var/jfsCache/sc2-spb-l8random-paired128-197-20260928-r1": 945239,
+        "/var/jfsCache/sc2-spb-l8random96-197-source-20260928-r1": 25775629,
+        "/var/jfsCache/sc2-spb-l8random96-197-20260929-r2": 195268310434,
+        "/var/jfsCache/sc2-spb-l8random-paired128-197-20260929-r2": 946272,
+        "/var/jfsCache/sc2-spb-l8random96-197-source-20260929-r2": 25795960
+      },
+      "measured_at": 1790679161.8437028,
+      "status": "measured",
+      "sampling_version": "single-pause-batch-v1",
+      "batch_accounts": 4,
+      "quiescence": {
+        "version": "host-guardian-v1",
+        "container_id": "cb1a5950be537f2561c6efad3aafd4645b4bccf1312fd7ed3f467c8d57aa0da8",
+        "owner_root": "/var/jfsCache/sc2-spb-l8random96-197-20260929-r2/spb-random/long",
+        "guardian_pid": 2279723,
+        "paused_verified": true,
+        "cleanup": "verified-unpaused",
+        "paused_at": 1790679161.2773764,
+        "mode": "paused",
+        "resumed_at": 1790679161.8818061
+      }
+    },
+    "selection-storage": {
+      "bytes": 1176975,
+      "limit": 8589934592,
+      "returncode": 0,
+      "stderr": {
+        "tail": "",
+        "characters": 0,
+        "truncated": false
+      },
+      "root_bytes": {
+        "/var/jfsCache/sc2-spb-l8random96-197-20260929-r2/selection": 1176975
+      },
+      "measured_at": 1790679161.5652235,
+      "status": "measured",
+      "sampling_version": "single-pause-batch-v1",
+      "batch_accounts": 4,
+      "quiescence": {
+        "version": "host-guardian-v1",
+        "container_id": "cb1a5950be537f2561c6efad3aafd4645b4bccf1312fd7ed3f467c8d57aa0da8",
+        "owner_root": "/var/jfsCache/sc2-spb-l8random96-197-20260929-r2/spb-random/long",
+        "guardian_pid": 2279723,
+        "paused_verified": true,
+        "cleanup": "verified-unpaused",
+        "paused_at": 1790679161.2773764,
+        "mode": "paused",
+        "resumed_at": 1790679161.8818061
+      }
+    }
+  },
+  "checkpoints": {
+    "2": {
+      "path": "/var/jfsCache/sc2-spb-l8random96-197-20260929-r2/spb-random/short/runs/train2/checkpoints/global_step_2",
+      "total_bytes": 63570346397,
+      "model_shards": 8,
+      "optimizer_shards": 8,
+      "extra_state_shards": 8,
+      "data_exists": true,
+      "sc2_state_exists": true,
+      "required26_nonempty": true,
+      "stat_only_not_load_validation": true
+    },
+    "32": {
+      "path": "/var/jfsCache/sc2-spb-l8random96-197-20260929-r2/spb-random/long/runs/train96/checkpoints/global_step_32",
+      "total_bytes": 63570346333,
+      "model_shards": 8,
+      "optimizer_shards": 8,
+      "extra_state_shards": 8,
+      "data_exists": true,
+      "sc2_state_exists": true,
+      "required26_nonempty": true,
+      "stat_only_not_load_validation": true
+    },
+    "64": {
+      "path": "/var/jfsCache/sc2-spb-l8random96-197-20260929-r2/spb-random/long/runs/train96/checkpoints/global_step_64",
+      "total_bytes": 63570346333,
+      "model_shards": 8,
+      "optimizer_shards": 8,
+      "extra_state_shards": 8,
+      "data_exists": true,
+      "sc2_state_exists": true,
+      "required26_nonempty": true,
+      "stat_only_not_load_validation": true
+    },
+    "96": {
+      "path": "/var/jfsCache/sc2-spb-l8random96-197-20260929-r2/spb-random/long/runs/train96/checkpoints/global_step_96",
+      "total_bytes": 63570346269,
+      "model_shards": 8,
+      "optimizer_shards": 8,
+      "extra_state_shards": 8,
+      "data_exists": true,
+      "sc2_state_exists": true,
+      "required26_nonempty": true,
+      "stat_only_not_load_validation": true
+    }
+  },
+  "retention": {
+    "latest.json": {
+      "step": 2,
+      "checkpoint": "/var/jfsCache/sc2-spb-l8random96-197-20260929-r2/spb-random/short/runs/train2/checkpoints/global_step_2",
+      "publication": "/var/jfsCache/sc2-spb-l8random96-197-20260929-r2/retention/cp2.json"
+    },
+    "best.json": null,
+    "prune-intent.json": null,
+    "prune-receipt.json": null
+  },
+  "gpu_snapshot": [
+    "0, 0, 0, 81920",
+    "1, 0, 0, 81920",
+    "2, 0, 0, 81920",
+    "3, 0, 0, 81920",
+    "4, 0, 0, 81920",
+    "5, 0, 0, 81920",
+    "6, 0, 0, 81920",
+    "7, 0, 0, 81920"
+  ],
+  "compute_apps_empty": true,
+  "actions": "Read-only exact state/container/receipts, small seed/outcome/audit files,64KiB console tail and8KiB guardian tail, stat-only checkpoint inventory and one bounded six-root du. No tensor/full-log read, no server writes, no repair/restart/dispatch/prune.",
+  "interpretation": [
+    "Stopped Sep29 18:53:19 Beijing after returned step96 and CP96 save; GPUs idle at22:51/22:52.",
+    "Pause failed with Docker OCI cgroup freeze timeout10s; measurement forbidden; supervisor stopped exact owned container exit137,noOOM.",
+    "Failure is in control-plane storage sampling, not evidence of model failure or quota exhaustion. R2 reduced pause frequency but did not eliminate the freezer failure.",
+    "Short pre/train2/post accepted. Long result/.done/acceptance absent; long and whole suite remain failed despite complete episode counts and returned step96.",
+    "CP2 published; CP32/64/96 exist with26required positive files each, but not published/fully accepted. Do not silently promote to accepted parents.",
+    "No eval96, independent selection32 or primary paired64 started. No best selected or checkpoint pruning.",
+    "Prior ETA no longer applies. Next work requires freezer diagnosis and a separately approved controlled handoff/recovery after checking CP96; no automatic retry."
+  ],
+  "verification": "JSON parse, exact owner/terminal agreement, positive required-file inventory, audit/reset-index continuity, natural-outcome counts and fresh bounded du checked. No new model/SC2 tests or full long verifier run."
+}

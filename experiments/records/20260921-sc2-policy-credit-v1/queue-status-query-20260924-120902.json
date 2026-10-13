@@ -1,0 +1,42 @@
+{
+  "schema": "sc2-readonly-queue-status-query-v1",
+  "observed_at": "2026-09-24T12:09:02.563439+08:00",
+  "automation_id": "197-qwen-cp8",
+  "read_only": true,
+  "compared_to": "spb-random-heartbeat-20260924-104827.json",
+  "queue_phase": "running-unverified",
+  "queue_part": "spb-random/long",
+  "host_phase": "stage-completed",
+  "host_completed": [
+    "train96"
+  ],
+  "eval96_admission_exists": false,
+  "eval96_run_exists": false,
+  "accepted_train96_terminal_hashes_unchanged": 5,
+  "shared_deadline": 1790356959.0174987,
+  "storage": {
+    "bytes": 831162453512,
+    "limit": 1099511627776,
+    "checked_at": 1790222914.5457578,
+    "returncode": 0,
+    "stderr_empty": true,
+    "status": "measured",
+    "exact_accounted_root_count": 2,
+    "failure_exists": false
+  },
+  "prior_disk_blocker_not_remeasured": true,
+  "new_qwen_same_budget_approved_but_not_prepared_queued_or_dispatched": true,
+  "server_mutation": false,
+  "gpu_diagnostics": false,
+  "full_log_or_checkpoint_read": false,
+  "training_metrics_reread": false,
+  "monitor_retained": true,
+  "notification": "Respond to explicit user question: new Qwen same-seed rerun budget approved but not prepared/queued/dispatched; existing SpB final evaluation remains in original controller awaiting admission.",
+  "validation": "Parsed current small states; five accepted train terminal hashes match prior receipt; shared deadline and strict storage sample verified. No model tests.",
+  "heartbeat_scheduled_at": "2026-09-24T04:08:13.031Z",
+  "prior_disk_evidence": "gpu-usage197-20260924-114537.json",
+  "user_query": "你没安排实验跑？",
+  "authorization_boundary": "Budget approval is retained. No authorized capacity migration/cleanup, shared-gate reduction, SpB controller handoff, new server preparation or dispatch has occurred. Capacity solution remains unresolved.",
+  "resource_time_caveat": "GPU idle/free NVMe 810.11GiB versus1084GiB gate is the prior11:45:37 snapshot, not remeasured at12:09.",
+  "next_step": "Resolve a specifically authorized capacity solution before the approved new Qwen rerun can start; do not represent approval or monitoring as a submitted/running experiment."
+}

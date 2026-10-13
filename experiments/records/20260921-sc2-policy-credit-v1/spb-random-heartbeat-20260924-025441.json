@@ -1,0 +1,341 @@
+{
+  "schema": "spb-random-long-read-only-heartbeat-v2",
+  "observed_at": "2026-09-24T02:54:41.909992+08:00",
+  "read_only": true,
+  "ssh_alias": "sc2-a100-197",
+  "root": "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1",
+  "runtime_sha": "83f3530765babe048035524ddf1651291810818a",
+  "prior_evidence": "spb-random-heartbeat-20260924-024546.json",
+  "file_hashes": {
+    "changed": {
+      "storage-state.json": {
+        "exists": true,
+        "bytes": 1439,
+        "sha256": "d6c902a71ac57b4243c41455a2d6833d1a6d20eebc956a61670f9dd97657a1e0"
+      },
+      "spb-random/long/runs/train96/training_seeds.jsonl": {
+        "exists": true,
+        "bytes": 482,
+        "sha256": "0143466fa693f2981c6b6546df43ebb5e5bd705c3b886e5007e99a694029e870"
+      },
+      "spb-random/long/runs/train96/episode_outcomes.jsonl": {
+        "exists": true,
+        "bytes": 6191,
+        "sha256": "368c17553c0c49a3cad5a57617e291760cc1abbbcd26ea36d848d0b667afaa2f"
+      },
+      "spb-random/long/runs/train96/checkpoints/sc2_policy_credit_audit.jsonl": {
+        "exists": true,
+        "bytes": 624,
+        "sha256": "b4054b302b96f811a1c2c9b9cad305a2c63200af41e2444572c6727949728508"
+      }
+    },
+    "unchanged_files": [
+      "deployment.json",
+      "queue-state.json",
+      "dispatch.json",
+      "predecessor-acceptance.json",
+      "storage-failure.json",
+      "spb-random/short/host-supervision/state.json",
+      "spb-random/short/state.json",
+      "spb-random/long/host-supervision/state.json",
+      "spb-random/long/state.json",
+      "spb-random/long/dispatch.json",
+      "spb-random/long/parent-readiness.json",
+      "spb-random/long/resume-contract.json",
+      "spb-random/long/cpu/parent-small-state.json",
+      "spb-random/long/runs/train96/result.json",
+      "spb-random/long/runs/train96/.done",
+      "spb-random/long/acceptance-train96.json",
+      "spb-random/long/runs/train96/manifest.json",
+      "spb-random/long/host-supervision/train96-guardian.json",
+      "spb-random/long/admission-train96.json",
+      "spb-random/long/runs/train96/evaluation_seeds.jsonl",
+      "spb-random/long/runs/train96/checkpoint_evaluation.json",
+      "spb-random/long/runs/train96/checkpoints/resume_state.json"
+    ],
+    "unchanged_hash_reference": "spb-random-heartbeat-20260924-024546.json"
+  },
+  "queue": {
+    "phase": "running-unverified",
+    "completed": [
+      "spb-random/short"
+    ],
+    "first_dispatch_by": 1790312320.0467553,
+    "part": "spb-random/long",
+    "deadline": 1790356959.0174987
+  },
+  "host": {
+    "version": "host-guardian-v1",
+    "phase": "running-unverified",
+    "completed": [],
+    "deadline": 1790356959.0174987,
+    "learning_validated": false,
+    "started_at": 1790187111.9027476,
+    "stage": "train96",
+    "container_id": "40d5a3f43a41fffb0eb51ea9a1c816b118cddef0b151464946d0c663fc024217"
+  },
+  "container": {
+    "returncode": 0,
+    "data": {
+      "id": "40d5a3f43a41fffb0eb51ea9a1c816b118cddef0b151464946d0c663fc024217",
+      "owner": "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/spb-random/long",
+      "state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "0001-01-01T00:00:00Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 1825200,
+        "Restarting": false,
+        "Running": true,
+        "StartedAt": "2026-09-23T18:11:52.44508979Z",
+        "Status": "running"
+      }
+    },
+    "error": ""
+  },
+  "dispatch": {
+    "start": 1790184159.0174987,
+    "deadline": 1790356959.0174987,
+    "clock_shared_with_short": true
+  },
+  "progress": {
+    "last_returned_global_step": 5,
+    "returned_long_ppo": 3,
+    "including_short_ppo": 5,
+    "returned_metrics": [
+      {
+        "step": 4,
+        "actor/grad_norm": 117.42168426513672,
+        "timing_s/update_actor": 69.32322212588042,
+        "episode/success_rate": 0.375,
+        "episode/valid_action_ratio": 1,
+        "policy_credit/invalid_advantage_max": 0,
+        "timing_s/step": 650.2367502823472
+      },
+      {
+        "step": 5,
+        "actor/grad_norm": 92.73734760284424,
+        "timing_s/update_actor": 57.29647265560925,
+        "episode/success_rate": 0.75,
+        "episode/valid_action_ratio": 1,
+        "policy_credit/invalid_advantage_max": 0,
+        "timing_s/step": 526.4325045179576
+      }
+    ],
+    "prior_returned_step3_evidence": "spb-random-heartbeat-20260924-023912.json",
+    "completed_long_games": 24,
+    "completed_long_wins": 10,
+    "consumed_answers_valid": 129,
+    "consumed_answers_total": 129,
+    "batch_summaries": [
+      {
+        "reset_index": 2,
+        "global_step": 3,
+        "closed_games": 8,
+        "wins": 1,
+        "defeats": 7,
+        "all_natural": true
+      },
+      {
+        "reset_index": 3,
+        "global_step": 4,
+        "closed_games": 8,
+        "wins": 3,
+        "defeats": 5,
+        "all_natural": true
+      },
+      {
+        "reset_index": 4,
+        "global_step": 5,
+        "closed_games": 8,
+        "wins": 6,
+        "defeats": 2,
+        "all_natural": true
+      },
+      {
+        "reset_index": 5,
+        "global_step": 6,
+        "closed_games": 3,
+        "wins": 2,
+        "defeats": 1,
+        "all_natural": true
+      }
+    ],
+    "audits": [
+      {
+        "real_answers": 62,
+        "valid_answers": 62,
+        "valid_ratio": 1,
+        "min_valid_ratio": 0.5,
+        "decision": "accept",
+        "reason": "validity_floor_passed",
+        "pending_global_step": 3,
+        "optimizer_updates_for_this_batch": 0
+      },
+      {
+        "real_answers": 40,
+        "valid_answers": 40,
+        "valid_ratio": 1,
+        "min_valid_ratio": 0.5,
+        "decision": "accept",
+        "reason": "validity_floor_passed",
+        "pending_global_step": 4,
+        "optimizer_updates_for_this_batch": 0
+      },
+      {
+        "real_answers": 27,
+        "valid_answers": 27,
+        "valid_ratio": 1,
+        "min_valid_ratio": 0.5,
+        "decision": "accept",
+        "reason": "validity_floor_passed",
+        "pending_global_step": 5,
+        "optimizer_updates_for_this_batch": 0
+      }
+    ],
+    "seed_batches": [
+      {
+        "base_seed": 0,
+        "reset_index": 2,
+        "seed_protocol": "independent_uniform101",
+        "seeds": [
+          36,
+          17,
+          96,
+          12,
+          79,
+          32,
+          68,
+          90
+        ]
+      },
+      {
+        "base_seed": 0,
+        "reset_index": 3,
+        "seed_protocol": "independent_uniform101",
+        "seeds": [
+          77,
+          18,
+          39,
+          12,
+          93,
+          9,
+          87,
+          42
+        ]
+      },
+      {
+        "base_seed": 0,
+        "reset_index": 4,
+        "seed_protocol": "independent_uniform101",
+        "seeds": [
+          60,
+          71,
+          12,
+          45,
+          55,
+          40,
+          78,
+          81
+        ]
+      },
+      {
+        "base_seed": 0,
+        "reset_index": 5,
+        "seed_protocol": "independent_uniform101",
+        "seeds": [
+          26,
+          70,
+          61,
+          56,
+          66,
+          33,
+          7,
+          70
+        ]
+      }
+    ],
+    "seed_checks": [
+      {
+        "reset_index": 2,
+        "matches": true
+      },
+      {
+        "reset_index": 3,
+        "matches": true
+      },
+      {
+        "reset_index": 4,
+        "matches": true
+      },
+      {
+        "reset_index": 5,
+        "matches": true
+      }
+    ],
+    "checkpoint_inventory": [],
+    "stage_result_exists": false,
+    "stage_acceptance_exists": false
+  },
+  "storage": {
+    "bytes": 65564506624,
+    "limit": 1099511627776,
+    "roots": [
+      "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1",
+      "/var/jfsCache/sc2-spb-l7random96-197-source-20260923-r1"
+    ],
+    "deadline": 1790356959.0174987,
+    "returncode": 0,
+    "status": "measured",
+    "stderr": {
+      "tail": "",
+      "characters": 0,
+      "truncated": false
+    },
+    "checked_at": 1790189668.5214207,
+    "quiescence": {
+      "version": "host-guardian-v1",
+      "container_id": "40d5a3f43a41fffb0eb51ea9a1c816b118cddef0b151464946d0c663fc024217",
+      "owner_root": "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/spb-random/long",
+      "guardian_pid": 1825139,
+      "paused_verified": true,
+      "cleanup": "verified-unpaused",
+      "paused_at": 1790189668.366075,
+      "mode": "paused",
+      "resumed_at": 1790189668.521264
+    },
+    "failure_exists": false
+  },
+  "bounded_log": {
+    "total_bytes": 4150766,
+    "tail_bytes": 2097152,
+    "full_log_read": false,
+    "extracted_returned_steps": [
+      4,
+      5
+    ],
+    "last_boundary_lines": [
+      "(SC2Worker pid=2512) Combat result reward: {\"pid\": 48316, \"game_loop\": 12800, \"boundary\": \"planner\", \"last_consumed_policy_action_id\": 2, \"killed_value\": 3150.0, \"lost_value\": 2050.0, \"scale\": 0.001, \"reward\": 1.0}",
+      "(SC2Worker pid=2515) Combat result reward: {\"pid\": 48406, \"game_loop\": 13772, \"boundary\": \"terminal\", \"last_consumed_policy_action_id\": 2, \"killed_value\": 9550.0, \"lost_value\": 1650.0, \"scale\": 0.001, \"reward\": 7.9}"
+    ]
+  },
+  "actions": {
+    "server_mutation": false,
+    "automatic_retry_or_repair": false,
+    "duplicate_dispatch": false,
+    "large_checkpoint_read": false,
+    "gpu_diagnostics": false,
+    "monitor_changed": false
+  },
+  "notification_events": [],
+  "interpretation": "Healthy continuation: prior step3 receipt plus current returned steps4–5 establish three resumed PPO phases,24natural games/10wins and129/129 audited consumed answers valid. Reset5 is pendingglobal6:three natural completions/two wins are excluded. No stage terminal or CP8. Stable native-parent/manifest/deployment hashes unchanged. Previously notified SpB first GPU/SC2/PPO and short completion are not repeated. Original budget/deadline and sole monitor retained; no learning-gain inference.",
+  "validation": {
+    "evidence_assertions_passed": true,
+    "model_tests_run": false,
+    "documentation_only": true,
+    "branch": "codex/fix-sc2-startup-port-race",
+    "base_commit": "19f4048b79c387afa6a043fe19a7208c0cb0a3f6"
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "observed_at": "2026-09-24T13:37:31.305208+08:00",
+  "read_only": true,
+  "trigger": "User-authorized old plotted same-seed model/optimizer pruning; existing frozen queue auto-admitted eval96.",
+  "queue": {
+    "phase": "running-unverified",
+    "completed": [
+      "spb-random/short"
+    ],
+    "first_dispatch_by": 1790312320.0467553,
+    "part": "spb-random/long",
+    "deadline": 1790356959.0174987
+  },
+  "dispatch": {
+    "start": 1790184159.0174987,
+    "deadline": 1790356959.0174987,
+    "gpu_hours": 384,
+    "new_games": 792,
+    "new_updates": 96
+  },
+  "admission": {
+    "passed": true,
+    "checked_at": 1790228173.205792,
+    "deadline": 1790356959.0174987,
+    "eight_idle_gpus": true,
+    "ram_gib_min": 600,
+    "nvme_gib_min": 1084,
+    "fsync": true
+  },
+  "host": {
+    "version": "host-guardian-v1",
+    "phase": "running-unverified",
+    "completed": [
+      "train96"
+    ],
+    "deadline": 1790356959.0174987,
+    "learning_validated": false,
+    "started_at": 1790187111.9027476,
+    "stage": "eval96",
+    "container_id": "a55875ca0978bc8a75233918251fa40e7851fb50c17a6104d7a2c3a34bf9e213"
+  },
+  "container": {
+    "returncode": 0,
+    "data": {
+      "id": "a55875ca0978bc8a75233918251fa40e7851fb50c17a6104d7a2c3a34bf9e213",
+      "owner": "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/spb-random/long",
+      "state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "0001-01-01T00:00:00Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 2125539,
+        "Restarting": false,
+        "Running": true,
+        "StartedAt": "2026-09-24T05:36:13.312600411Z",
+        "Status": "running"
+      }
+    },
+    "error": ""
+  },
+  "manifest": {
+    "source_commit": "83f3530765babe048035524ddf1651291810818a",
+    "dirty": false,
+    "world_size": 8,
+    "mode": "evaluation",
+    "metrics_precision": "binary64-v1",
+    "resume_from_path": "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/spb-random/long/runs/train96/checkpoints/global_step_96"
+  },
+  "accepted_train_terminal_receipts": {
+    "spb-random/long/runs/train96/result.json": {
+      "exists": true,
+      "bytes": 249366,
+      "sha256": "5feb66bd0bc24fae031e879db25e2df3d05fc5fbcb905549b521d100cb81f53b"
+    },
+    "spb-random/long/runs/train96/.done": {
+      "exists": true,
+      "bytes": 249366,
+      "sha256": "5feb66bd0bc24fae031e879db25e2df3d05fc5fbcb905549b521d100cb81f53b"
+    },
+    "spb-random/long/acceptance-train96.json": {
+      "exists": true,
+      "bytes": 268607,
+      "sha256": "49860fa66d7c291a6104770b5152ea73fbac780cdd7527d4b12133d5f29adf01"
+    },
+    "spb-random/long/runs/train96/manifest.json": {
+      "exists": true,
+      "bytes": 3046,
+      "sha256": "5422ae326074c24532d525ab7152f78a7256e3b1b5046305644b56fdc2e274d8"
+    },
+    "spb-random/long/host-supervision/train96-guardian.json": {
+      "exists": true,
+      "bytes": 378147,
+      "sha256": "09b6936d89dbba2f78bd4235c1ac5f3f4df13f41135be046ce1ec8848c57cd61"
+    }
+  },
+  "storage": {
+    "bytes": 831179617969,
+    "limit": 1099511627776,
+    "roots": [
+      "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1",
+      "/var/jfsCache/sc2-spb-l7random96-197-source-20260923-r1"
+    ],
+    "returncode": 0,
+    "stderr": {
+      "tail": "",
+      "characters": 0,
+      "truncated": false
+    },
+    "status": "measured",
+    "failure": null
+  },
+  "result_present": false,
+  "checkpoint_load_returned_verified": false,
+  "optimizer_updates_completed": 0,
+  "manual_dispatch": false,
+  "restart": false,
+  "gate_relaxed": false,
+  "old_deadline_reset": false
+}

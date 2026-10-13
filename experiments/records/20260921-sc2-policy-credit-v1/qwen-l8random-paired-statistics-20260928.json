@@ -1,0 +1,86 @@
+{
+  "arms": {
+    "original": {
+      "wins": 43,
+      "games": 64,
+      "wilson95": [
+        0.549991058490915,
+        0.7742944209553081
+      ],
+      "ties": 0,
+      "valid_consumed_answers": 383
+    },
+    "same96": {
+      "wins": 35,
+      "games": 64,
+      "wilson95": [
+        0.4257359722005412,
+        0.6627055221938833
+      ],
+      "ties": 0,
+      "valid_consumed_answers": 506
+    },
+    "random96": {
+      "wins": 45,
+      "games": 64,
+      "wilson95": [
+        0.5822979889645707,
+        0.8009484867446022
+      ],
+      "ties": 0,
+      "valid_consumed_answers": 266
+    }
+  },
+  "comparisons": [
+    {
+      "treatment": "random96",
+      "control": "same96",
+      "role": "registered_primary",
+      "gains": 11,
+      "losses": 1,
+      "difference": 0.15625,
+      "paired_bootstrap95": [
+        0.0625,
+        0.265625
+      ],
+      "exact_two_sided_mcnemar": 0.00634765625,
+      "multiplicity_adjusted": false
+    },
+    {
+      "treatment": "random96",
+      "control": "original",
+      "role": "secondary_exploratory",
+      "gains": 2,
+      "losses": 0,
+      "difference": 0.03125,
+      "paired_bootstrap95": [
+        0,
+        0.078125
+      ],
+      "exact_two_sided_mcnemar": 0.5,
+      "multiplicity_adjusted": false
+    },
+    {
+      "treatment": "same96",
+      "control": "original",
+      "role": "secondary_exploratory",
+      "gains": 2,
+      "losses": 10,
+      "difference": -0.125,
+      "paired_bootstrap95": [
+        -0.234375,
+        -0.03125
+      ],
+      "exact_two_sided_mcnemar": 0.03857421875,
+      "multiplicity_adjusted": false
+    }
+  ],
+  "method": {
+    "analysis_seed": 2026092709,
+    "resamples": 100000,
+    "quantile": "linear",
+    "numpy_version": "2.3.5",
+    "primary": "random96 minus same96; original-model comparisons are exploratory",
+    "caveat": "One run per training condition. Sparse percentile-bootstrap intervals are not exact-test inversions; no equivalence claim."
+  }
+}

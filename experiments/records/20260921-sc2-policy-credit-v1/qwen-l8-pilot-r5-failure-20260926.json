@@ -1,0 +1,41 @@
+{
+  "observed_at_beijing": "2026-09-26T00:34:03+08:00",
+  "status": "invalid_before_gpu_dispatch",
+  "branch": "codex/fix-sc2-startup-port-race",
+  "runtime_sha": "c2471b12e743fa2421ac3837e4b0e9de0877220b",
+  "root": "/var/jfsCache/sc2-qwen-l8-pilot96-197-20260926-r5",
+  "source_parent": "/var/jfsCache/sc2-qwen-l8-pilot96-197-source-20260926-r5",
+  "scope": {
+    "retained_r1_accepted_games": 32,
+    "r2_new_games": 0,
+    "r3_new_games": 0,
+    "r4_new_games": 0,
+    "r5_new_games": 0,
+    "r5_optimizer_updates": 0,
+    "r5_gpu_dispatch": false,
+    "r5_formal_queue": false
+  },
+  "cpu_preflight": {
+    "real_launcher_hydra_stages": 8,
+    "container_tests": 93,
+    "host_tests": 71,
+    "skips": 0,
+    "cuda_initialized": false,
+    "cpu_hook_container_id": "6550586afa8fec3b2763c1d01ed4212f39fb206ca583a3d10b4577faebfbb58c",
+    "cpu_hook_container_terminal": "exited1",
+    "cpu_hook_container_oom_killed": false,
+    "cpu_hook_container_device_requests": null,
+    "ray_hook_proof_present": false
+  },
+  "failure": "The cpu-hook CLI fell through to globals()[cli.mode], producing KeyError: 'cpu-hook' before the Ray worker check ran. This is a controller dispatch error, not a model, GPU, or SC2 result.",
+  "terminal_sha256": {
+    "deployment.json": "d833dc621b34136145a3669df9fe30dad846108fe15cb275c38dcaa2e4889b36",
+    "readiness.json": "d8e968d75f9fbcd0ac528e0e93ea8db5bebf3b45e7285de72bcbeb39ee1bc323",
+    "regressions.json": "47dc3eb08b977a8fea3de23ffd35179d2a9c05bc1883504446c89e0ccab33a1c",
+    "host-regressions.json": "1f8254d1922fd42c38937133d68ef761ac8ef4db462a76513c477ddb6803bfbb",
+    "historical-boundary.json": "e2817cd537d3d57ce08d1e2776cafdba8b3525d81f0ce7c70e3e849d21f9e3b7"
+  },
+  "absence_observed": ["dispatch.json", "queue-state.json", "cpu/ray-hook/cpu-hook-preflight.json"],
+  "host_after_failure": "At 2026-09-26 00:34:03 Beijing all eight GPUs showed 0 MiB and 0% utilization, no compute apps, 757 GiB available RAM and 1257 GiB available NVMe.",
+  "actions": "No r5 restart or frozen-source edit; r1–r5 roots retained; no L8 RL training."
+}

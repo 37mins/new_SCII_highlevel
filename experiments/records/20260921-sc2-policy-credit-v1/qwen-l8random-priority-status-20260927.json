@@ -1,0 +1,283 @@
+{
+  "checked_at": "2026-09-27T22:32:33.483042+08:00",
+  "purpose": "Read-only 197 queue, container, approved-budget and capacity check for proposed priority change. No L8 random budget approved or dispatch performed.",
+  "server": "sc2-a100-197",
+  "gpu": {
+    "returncode": 0,
+    "stdout": "0, NVIDIA A100-SXM4-80GB, 100, 12716, 81920\n1, NVIDIA A100-SXM4-80GB, 100, 12900, 81920\n2, NVIDIA A100-SXM4-80GB, 100, 12900, 81920\n3, NVIDIA A100-SXM4-80GB, 100, 12900, 81920\n4, NVIDIA A100-SXM4-80GB, 100, 12900, 81920\n5, NVIDIA A100-SXM4-80GB, 100, 12900, 81920\n6, NVIDIA A100-SXM4-80GB, 100, 12900, 81920\n7, NVIDIA A100-SXM4-80GB, 100, 12756, 81920\n",
+    "stderr": ""
+  },
+  "compute": {
+    "returncode": 0,
+    "stdout": "397922, ray::WorkerDict.actor_rollout_compute_log_prob, 12704 MiB\n398115, ray::WorkerDict.actor_rollout_compute_log_prob, 12888 MiB\n398116, ray::WorkerDict.actor_rollout_compute_log_prob, 12888 MiB\n398117, ray::WorkerDict.actor_rollout_compute_log_prob, 12888 MiB\n398118, ray::WorkerDict.actor_rollout_compute_log_prob, 12888 MiB\n398119, ray::WorkerDict.actor_rollout_compute_log_prob, 12888 MiB\n398120, ray::WorkerDict.actor_rollout_compute_log_prob, 12888 MiB\n398121, ray::WorkerDict.actor_rollout_compute_log_prob, 12744 MiB\n",
+    "stderr": ""
+  },
+  "tmux": {
+    "returncode": 0,
+    "stdout": "qwen_l9l10same96_197_r3: 1 windows (created Sun Sep 27 22:11:22 2026)\n",
+    "stderr": ""
+  },
+  "queue": {
+    "phase": "running-unverified",
+    "completed": [
+      "L9/qwen-same/long"
+    ],
+    "retained_games": 784,
+    "retained_updates": 96,
+    "new_games": 800,
+    "new_updates": 96,
+    "deadline": 1790568708.224269,
+    "level": 10,
+    "arm_deadline": 1790561940.3084953,
+    "part": "qwen-same/short"
+  },
+  "l9_arm": {
+    "phase": "completed",
+    "exit_code": 0,
+    "deadline": 1790525508.224269,
+    "retained_acceptance": "c9f8fca36270b9ed81215593bbc54adcfade5012da72d7402a85c4a111c85426",
+    "newly_executed": [
+      "eval96"
+    ],
+    "learning_validated": false,
+    "finished_at": 1790518739.7556505
+  },
+  "l10_dispatch": {
+    "start": 1790518740.3084953,
+    "deadline": 1790561940.3084953,
+    "suite_deadline": 1790568708.224269,
+    "gpu_hours": 96,
+    "clock_inherited": false,
+    "new_games": 792,
+    "new_updates": 96,
+    "resumed_at": 1790518740.3085077
+  },
+  "l10_short_host": {
+    "version": "host-guardian-v1",
+    "phase": "running-unverified",
+    "completed": [
+      "pre"
+    ],
+    "deadline": 1790561940.3084953,
+    "learning_validated": false,
+    "started_at": 1790518773.3676074,
+    "stage": "train2",
+    "container_id": "46628739500b0d715ec00a603d7aab0172a0b8d7221746a27b57bf69a5579657"
+  },
+  "l10_long_host": {
+    "exists": false
+  },
+  "current_stage": "train2",
+  "current_manifest": {
+    "source_commit": "1c6cf60b111570ef13f9817d0b1b16fb774546f5",
+    "dirty": false,
+    "formal": true,
+    "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+    "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+    "metrics_precision": "binary64-v1",
+    "world_size": 8,
+    "mode": "training",
+    "start_step": 0,
+    "target_steps": 2,
+    "resume_from_path": null
+  },
+  "current_container": [
+    {
+      "id": "46628739500b0d715ec00a603d7aab0172a0b8d7221746a27b57bf69a5579657",
+      "name": "/sc2-qwen-l10same96-197-20260927-r3-short-train2",
+      "state": {
+        "Status": "running",
+        "Running": true,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 392402,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-09-27T14:27:22.339402627Z",
+        "FinishedAt": "0001-01-01T00:00:00Z"
+      },
+      "gpu_requests": [
+        {
+          "Driver": "",
+          "Count": -1,
+          "DeviceIDs": null,
+          "Capabilities": [
+            [
+              "gpu"
+            ]
+          ],
+          "Options": {}
+        }
+      ],
+      "owner": "/var/jfsCache/sc2-qwen-l10same96-197-20260927-r3/qwen-same/short"
+    }
+  ],
+  "current_result": {
+    "exists": false
+  },
+  "current_done_exists": false,
+  "bounded_log_check": {
+    "bytes": 670133,
+    "tail_limit_bytes": 131072,
+    "returned_metric_lines": [],
+    "interpretation": "train2 is active; no completed train2/PPO count claimed from this bounded tail"
+  },
+  "pre_summary": {
+    "status": "completed",
+    "training_updates": 0,
+    "process_exit_code": 0,
+    "metrics_precision": "binary64-v1"
+  },
+  "pre_outcomes": {
+    "natural_games": 8,
+    "wins": 1,
+    "defeats": 7,
+    "truncated": 0
+  },
+  "deployment": {
+    "runtime_sha": "1c6cf60b111570ef13f9817d0b1b16fb774546f5",
+    "controller_sha": "5152bbb74def8d0bd54d172c70bf18dfa2fed90a",
+    "output_limit_bytes": 274877906944,
+    "storage_roots": [
+      "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r1",
+      "/var/jfsCache/sc2-qwen-l10same96-197-20260927-r1",
+      "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r2",
+      "/var/jfsCache/sc2-qwen-l10same96-197-20260927-r2",
+      "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r3",
+      "/var/jfsCache/sc2-qwen-l10same96-197-20260927-r3",
+      "/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r1",
+      "/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r2",
+      "/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r3"
+    ],
+    "no_retry": true,
+    "new_games": 792,
+    "new_updates": 96
+  },
+  "storage": {
+    "suite_storage": {
+      "command": [
+        "du",
+        "-sb",
+        "--null",
+        "--",
+        "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r1",
+        "/var/jfsCache/sc2-qwen-l10same96-197-20260927-r1",
+        "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r2",
+        "/var/jfsCache/sc2-qwen-l10same96-197-20260927-r2",
+        "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r3",
+        "/var/jfsCache/sc2-qwen-l10same96-197-20260927-r3",
+        "/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r1",
+        "/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r2",
+        "/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r3"
+      ],
+      "roots": [
+        "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r1",
+        "/var/jfsCache/sc2-qwen-l10same96-197-20260927-r1",
+        "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r2",
+        "/var/jfsCache/sc2-qwen-l10same96-197-20260927-r2",
+        "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r3",
+        "/var/jfsCache/sc2-qwen-l10same96-197-20260927-r3",
+        "/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r1",
+        "/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r2",
+        "/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r3"
+      ],
+      "limit": 549755813888,
+      "bytes": 202100048561,
+      "returncode": 0,
+      "status": "measured",
+      "stderr": {
+        "tail": "",
+        "characters": 0,
+        "truncated": false
+      },
+      "root_bytes": {
+        "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r1": 201913182001,
+        "/var/jfsCache/sc2-qwen-l10same96-197-20260927-r1": 25117991,
+        "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r2": 764161,
+        "/var/jfsCache/sc2-qwen-l10same96-197-20260927-r2": 689515,
+        "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r3": 28923431,
+        "/var/jfsCache/sc2-qwen-l10same96-197-20260927-r3": 57040225,
+        "/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r1": 24621332,
+        "/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r2": 24835520,
+        "/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r3": 24874385
+      },
+      "checked_at": 1790519538.7862263
+    },
+    "arm_storage": {
+      "command": [
+        "du",
+        "-sb",
+        "--null",
+        "--",
+        "/var/jfsCache/sc2-qwen-l10same96-197-20260927-r1",
+        "/var/jfsCache/sc2-qwen-l10same96-197-20260927-r2",
+        "/var/jfsCache/sc2-qwen-l10same96-197-20260927-r3",
+        "/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r1",
+        "/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r2",
+        "/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r3"
+      ],
+      "roots": [
+        "/var/jfsCache/sc2-qwen-l10same96-197-20260927-r1",
+        "/var/jfsCache/sc2-qwen-l10same96-197-20260927-r2",
+        "/var/jfsCache/sc2-qwen-l10same96-197-20260927-r3",
+        "/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r1",
+        "/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r2",
+        "/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r3"
+      ],
+      "limit": 274877906944,
+      "bytes": 157178967,
+      "returncode": 0,
+      "status": "measured",
+      "stderr": {
+        "tail": "",
+        "characters": 0,
+        "truncated": false
+      },
+      "root_bytes": {
+        "/var/jfsCache/sc2-qwen-l10same96-197-20260927-r1": 25117991,
+        "/var/jfsCache/sc2-qwen-l10same96-197-20260927-r2": 689515,
+        "/var/jfsCache/sc2-qwen-l10same96-197-20260927-r3": 57040224,
+        "/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r1": 24621332,
+        "/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r2": 24835520,
+        "/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r3": 24874385
+      },
+      "checked_at": 1790519538.5795162
+    }
+  },
+  "capacity": {
+    "disk": {
+      "total": 7679364128768,
+      "used": 6882556575744,
+      "free": 796807553024
+    },
+    "mem_available_bytes": 744714006528,
+    "free_gib": 742.0848617553711,
+    "conservative_free_gib_after_reserving_l10_remaining_256gib": 486.23124607559294,
+    "not_admission_guarantee": true
+  },
+  "observed_failure_files": {},
+  "frozen_queue_review": {
+    "controller_sha": "5152bbb74def8d0bd54d172c70bf18dfa2fed90a",
+    "source": "qwen_l9l10_continue197.py",
+    "ordered_levels": [
+      9,
+      10
+    ],
+    "after_l10": "terminal; no CP192 or additional arm",
+    "note": "Read-only inspection of local exact frozen source matching deployment, not server queue modification"
+  },
+  "actions": {
+    "server_writes": false,
+    "interrupted_tasks": false,
+    "queue_reordered": false,
+    "deleted_artifacts": false,
+    "prepared_l8_random": false,
+    "enqueued_l8_random": false,
+    "dispatched_l8_random": false,
+    "automatic_retry": false,
+    "approved_new_budget": false
+  },
+  "proposal": "qwen-l8random96-proposal-20260927.md"
+}

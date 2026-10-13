@@ -1,0 +1,377 @@
+{
+  "schema": "sc2-readonly-progress-eta-v1",
+  "observed_at": "2026-09-24T14:39:46.139908+08:00",
+  "request": "When will this fresh Qwen same-seed experiment finish?",
+  "ssh_alias": "sc2-a100-197",
+  "runtime_sha": "5228e9acc7698c69bdcce9af30aa5a7570829a19",
+  "output_root": "/var/jfsCache/sc2-qwen-l7same96-197-20260924-r1",
+  "dispatch": {
+    "start": 1790230503.797456,
+    "deadline": 1790403303.797456,
+    "gpu_hours": 384,
+    "new_games": 792,
+    "new_updates": 96
+  },
+  "queue": {
+    "phase": "running-unverified",
+    "completed": [
+      "qwen-same/short"
+    ],
+    "first_dispatch_by": 1790360559.0174987,
+    "part": "qwen-same/long",
+    "deadline": 1790403303.797456
+  },
+  "parts": {
+    "short": {
+      "host": {
+        "version": "host-guardian-v1",
+        "phase": "completed",
+        "completed": [
+          "pre",
+          "train2",
+          "post"
+        ],
+        "deadline": 1790403303.797456,
+        "learning_validated": false,
+        "started_at": 1790230503.7987063,
+        "stage": "post",
+        "container_id": "738de48fc1f46c3da4a9afa92b758d59016771b0aaf333fe3f427136906f46a4",
+        "exit_code": 0,
+        "finished_at": 1790231810.967072
+      },
+      "state": {
+        "version": "host-guardian-v1",
+        "phase": "completed",
+        "completed": [
+          "pre",
+          "train2",
+          "post"
+        ],
+        "deadline": 1790403303.797456,
+        "learning_validated": false,
+        "started_at": 1790230503.7987063,
+        "stage": "post",
+        "container_id": "738de48fc1f46c3da4a9afa92b758d59016771b0aaf333fe3f427136906f46a4",
+        "exit_code": 0,
+        "finished_at": 1790231810.967072
+      },
+      "parent_readiness": null
+    },
+    "long": {
+      "host": {
+        "version": "host-guardian-v1",
+        "phase": "running-unverified",
+        "completed": [],
+        "deadline": 1790403303.797456,
+        "learning_validated": false,
+        "started_at": 1790231815.6909914,
+        "stage": "train96",
+        "container_id": "80abe03174c3b0b584e16b1d0aef48fb87f9f45390435b3cc57484a5dba1df9d"
+      },
+      "state": null,
+      "parent_readiness": {
+        "passed": true,
+        "actual_parent_verified": true,
+        "runtime_sha": "5228e9acc7698c69bdcce9af30aa5a7570829a19",
+        "cuda_initialized": false,
+        "checked_at": 1790231814.8561351
+      }
+    }
+  },
+  "stages": {
+    "short/pre": {
+      "manifest": {
+        "started_at": "2026-09-24T06:15:15.069680+00:00",
+        "source_commit": "5228e9acc7698c69bdcce9af30aa5a7570829a19",
+        "dirty": false,
+        "world_size": 8,
+        "metrics_precision": "binary64-v1",
+        "start_step": 0,
+        "target_steps": 1
+      },
+      "terminal": {
+        "status": "completed",
+        "ended_at": "2026-09-24T06:21:52.336493+00:00",
+        "process_exit_code": 0,
+        "training_updates": 0,
+        "completed_steps": null,
+        "last_global_step": null,
+        "checkpoint_complete": null,
+        "metrics_finite": true
+      },
+      "returned_metrics": [],
+      "load": {
+        "checkpoint": null,
+        "loaded_global_step": 0,
+        "checkpoint_load_returned": false,
+        "val_only": true,
+        "optimizer_updates": 0,
+        "feedback": "0",
+        "temperature": 0.8,
+        "do_sample": true,
+        "games": 8,
+        "game_seeds": [
+          605183188,
+          1075501356,
+          2084414326,
+          2203880230,
+          3000371298,
+          949752300,
+          3225036469,
+          2823708076
+        ],
+        "answers": "online SpB; no replay or replacement",
+        "optimizer_loaded_by_existing_loader_but_not_updated": false
+      },
+      "result_done_equal": true,
+      "acceptance_result_equal": true,
+      "natural_outcomes": {
+        "trajectories": 8,
+        "natural_games": 8,
+        "wins": 7,
+        "defeats": 1,
+        "ties": 0,
+        "truncated": 0,
+        "natural_win_rate": 0.875
+      },
+      "container": {
+        "id": "761f502cd72635dadb63eb301e683b646b7f56dfd3b3ccc285f7ac91b4aaf46b",
+        "owner": "/var/jfsCache/sc2-qwen-l7same96-197-20260924-r1/qwen-same/short",
+        "state": {
+          "Dead": false,
+          "Error": "",
+          "ExitCode": 0,
+          "FinishedAt": "2026-09-24T06:21:52.357646592Z",
+          "OOMKilled": false,
+          "Paused": false,
+          "Pid": 0,
+          "Restarting": false,
+          "Running": false,
+          "StartedAt": "2026-09-24T06:15:04.214956886Z",
+          "Status": "exited"
+        }
+      }
+    },
+    "short/train2": {
+      "manifest": {
+        "started_at": "2026-09-24T06:22:02.701289+00:00",
+        "source_commit": "5228e9acc7698c69bdcce9af30aa5a7570829a19",
+        "dirty": false,
+        "world_size": 8,
+        "metrics_precision": "binary64-v1",
+        "start_step": 0,
+        "target_steps": 2
+      },
+      "terminal": {
+        "status": "completed",
+        "ended_at": "2026-09-24T06:30:25.127951+00:00",
+        "process_exit_code": 0,
+        "training_updates": null,
+        "completed_steps": 2,
+        "last_global_step": 2,
+        "checkpoint_complete": true,
+        "metrics_finite": true
+      },
+      "returned_metrics": [
+        {
+          "step": 1,
+          "episode/valid_action_ratio": 1,
+          "policy_credit/invalid_advantage_max": 0,
+          "actor/grad_norm": 4.426372253149748,
+          "timing_s/gen": 156.74576073419303,
+          "timing_s/update_actor": 18.66656713373959,
+          "timing_s/step": 190.92363338638097
+        },
+        {
+          "step": 2,
+          "episode/valid_action_ratio": 1,
+          "policy_credit/invalid_advantage_max": 0,
+          "actor/grad_norm": 19.828430019319057,
+          "timing_s/gen": 175.82342114765197,
+          "timing_s/update_actor": 26.321345342323184,
+          "timing_s/step": 224.07562017347664
+        }
+      ],
+      "load": null,
+      "result_done_equal": true,
+      "acceptance_result_equal": true,
+      "natural_outcomes": {
+        "trajectories": 16,
+        "natural_games": 16,
+        "wins": 8,
+        "defeats": 8,
+        "ties": 0,
+        "truncated": 0,
+        "natural_win_rate": 0.5
+      },
+      "container": {
+        "id": "2fc8071e13000a5bf55bf8fbc0b44cf4072590da4b0bf4afb0e21a6058b7239e",
+        "owner": "/var/jfsCache/sc2-qwen-l7same96-197-20260924-r1/qwen-same/short",
+        "state": {
+          "Dead": false,
+          "Error": "",
+          "ExitCode": 0,
+          "FinishedAt": "2026-09-24T06:30:42.180648611Z",
+          "OOMKilled": false,
+          "Paused": false,
+          "Pid": 0,
+          "Restarting": false,
+          "Running": false,
+          "StartedAt": "2026-09-24T06:21:53.968977382Z",
+          "Status": "exited"
+        }
+      }
+    },
+    "short/post": {
+      "manifest": {
+        "started_at": "2026-09-24T06:30:53.534875+00:00",
+        "source_commit": "5228e9acc7698c69bdcce9af30aa5a7570829a19",
+        "dirty": false,
+        "world_size": 8,
+        "metrics_precision": "binary64-v1",
+        "start_step": 0,
+        "target_steps": 1
+      },
+      "terminal": {
+        "status": "completed",
+        "ended_at": "2026-09-24T06:36:37.220486+00:00",
+        "process_exit_code": 0,
+        "training_updates": 0,
+        "completed_steps": null,
+        "last_global_step": null,
+        "checkpoint_complete": null,
+        "metrics_finite": true
+      },
+      "returned_metrics": [],
+      "load": {
+        "checkpoint": "/var/jfsCache/sc2-qwen-l7same96-197-20260924-r1/qwen-same/short/runs/train2/checkpoints/global_step_2",
+        "loaded_global_step": 2,
+        "checkpoint_load_returned": true,
+        "val_only": true,
+        "optimizer_updates": 0,
+        "feedback": "0",
+        "temperature": 0.8,
+        "do_sample": true,
+        "games": 8,
+        "game_seeds": [
+          605183188,
+          1075501356,
+          2084414326,
+          2203880230,
+          3000371298,
+          949752300,
+          3225036469,
+          2823708076
+        ],
+        "answers": "online SpB; no replay or replacement",
+        "optimizer_loaded_by_existing_loader_but_not_updated": true
+      },
+      "result_done_equal": true,
+      "acceptance_result_equal": true,
+      "natural_outcomes": {
+        "trajectories": 8,
+        "natural_games": 8,
+        "wins": 6,
+        "defeats": 2,
+        "ties": 0,
+        "truncated": 0,
+        "natural_win_rate": 0.75
+      },
+      "container": {
+        "id": "738de48fc1f46c3da4a9afa92b758d59016771b0aaf333fe3f427136906f46a4",
+        "owner": "/var/jfsCache/sc2-qwen-l7same96-197-20260924-r1/qwen-same/short",
+        "state": {
+          "Dead": false,
+          "Error": "",
+          "ExitCode": 0,
+          "FinishedAt": "2026-09-24T06:36:37.240015038Z",
+          "OOMKilled": false,
+          "Paused": false,
+          "Pid": 0,
+          "Restarting": false,
+          "Running": false,
+          "StartedAt": "2026-09-24T06:30:44.737640021Z",
+          "Status": "exited"
+        }
+      }
+    },
+    "long/train96": {
+      "manifest": {
+        "started_at": "2026-09-24T06:37:05.096949+00:00",
+        "source_commit": "5228e9acc7698c69bdcce9af30aa5a7570829a19",
+        "dirty": false,
+        "world_size": 8,
+        "metrics_precision": "binary64-v1",
+        "start_step": 2,
+        "target_steps": 96
+      },
+      "terminal": null,
+      "returned_metrics": [],
+      "load": null,
+      "bounded_tail_start": 0,
+      "returned_metric_lines": [],
+      "container": {
+        "id": "80abe03174c3b0b584e16b1d0aef48fb87f9f45390435b3cc57484a5dba1df9d",
+        "owner": "/var/jfsCache/sc2-qwen-l7same96-197-20260924-r1/qwen-same/long",
+        "state": {
+          "Dead": false,
+          "Error": "",
+          "ExitCode": 0,
+          "FinishedAt": "0001-01-01T00:00:00Z",
+          "OOMKilled": false,
+          "Paused": false,
+          "Pid": 2174367,
+          "Restarting": false,
+          "Running": true,
+          "StartedAt": "2026-09-24T06:36:56.15518741Z",
+          "Status": "running"
+        }
+      }
+    }
+  },
+  "storage": {
+    "roots": [
+      "/var/jfsCache/sc2-qwen-l7same96-197-20260924-r1",
+      "/var/jfsCache/sc2-qwen-l7same96-197-source-20260924-r1"
+    ],
+    "bytes": 49994358380,
+    "limit": 1099511627776,
+    "returncode": 0,
+    "stderr": {
+      "tail": "",
+      "characters": 0,
+      "truncated": false
+    },
+    "measured_at": 1790231983.4200087
+  },
+  "failure": null,
+  "forecast": {
+    "timezone": "Asia/Shanghai",
+    "estimated_completion_window": [
+      "2026-09-24T20:00:00+08:00",
+      "2026-09-24T22:00:00+08:00"
+    ],
+    "mean_of_first_two_returned_step_seconds": 207.4996267799288,
+    "remaining_long_training_updates": 94,
+    "extrapolated_long_training_hours": 5.4180458103648075,
+    "additional_work": "initial native load, checkpoint saves and final 8-game zero-update evaluation",
+    "limitations": [
+      "Only two early training steps are available; no returned long-step metric was yet observed in this bounded snapshot.",
+      "Different game seeds, checkpoint I/O and admission waits can change wall time.",
+      "Conditional estimate assuming no failure or additional resource wait, not a guarantee; hard deadline is unchanged."
+    ],
+    "hard_deadline_beijing": "2026-09-26T14:15:03.797456+08:00"
+  },
+  "actions": {
+    "server_mutation": false,
+    "repeat_dispatch": false,
+    "cleanup": false,
+    "restart": false,
+    "full_log_read": false,
+    "large_checkpoint_read": false,
+    "gpu_diagnostic": false,
+    "repeat_verifier": false
+  },
+  "validation": "JSON parsing; terminal equality with .done and existing part acceptance; exact container owner/state; finite positive two returned gradients/update times; original 48h clock. No new training tests or full verifier rerun.",
+  "conclusion": "Controller accepted all three short stages; own native parent readiness passed. Long train96 container is running but has no terminal acceptance and no returned long update in this snapshot. Pre7/8 -> post6/8 on eight reused seeds is not evidence of learning improvement; historic strict failures remain."
+}

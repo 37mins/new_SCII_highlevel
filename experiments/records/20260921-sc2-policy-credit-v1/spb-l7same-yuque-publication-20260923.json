@@ -1,0 +1,42 @@
+{
+  "schema": "sc2-yuque-publication-receipt-v1",
+  "verified_at_beijing": "2026-09-23T21:48:10+08:00",
+  "document_title": "SCII日志",
+  "document_url": "https://www.yuque.com/yangdage-mu30r/nsahpp/io9ul989o6qkposx",
+  "section_title": "2026-09-23｜SpB Level7 same-seed：完整96步设置、曲线与终评",
+  "operation": "append dated section and completed chart in existing Safari document; click 更新; read back published reading view",
+  "status": "published-and-verified",
+  "local_report": "spb-l7same-yuque-20260923.md",
+  "local_report_sha256": "29c761b9f568344e3450735e352f9fa259b5912c72dc5997fb6c86710d95f954",
+  "source_data_commit": "2e3e5b221f4009e3c3989934a522441aa4d895d4",
+  "experiment_runtime_sha": "9cb291ea5f50de205c5d88371e08ce229b7d9d04",
+  "data_snapshot": "spb-l7same-complete-20260923-data.json",
+  "data_sha256": "34c7a709182e1c3e2a3500b03159330f9a1c00f88357f2683227758334a127a8",
+  "uploaded_chart": {
+    "filename": "spb-l7same-complete-20260923.png",
+    "sha256": "28ed7c967eac1175fb00561d9561ab81ae9897100b6ac58584af98b5baa005b3",
+    "dimensions": [1440, 1010],
+    "blue": "per-step actual measurements",
+    "orange": "trailing eight-step arithmetic mean, current included, begins at step8"
+  },
+  "readback_checks": {
+    "reading_view_edit_button_visible": true,
+    "new_dated_heading_and_two_tables_visible_in_accessibility_tree": true,
+    "full_chart_rendered_and_visually_checked": true,
+    "training_445_of_768_and_11313_valid_answers_present": true,
+    "separate_pre4_post3_final2_of8_and_small_sample_caveat_present": true,
+    "no_thinking_not_rolled_back_and_legality_not_strategy_caveat_present": true,
+    "immutable_github_snapshot_and_plot_links_present": true,
+    "older_d_c_qwen_sections_preserved_in_reading_view": true,
+    "historical_images_not_replaced": true,
+    "sharing_permissions_unchanged": true
+  },
+  "scope": {
+    "gpu_or_server_actions": false,
+    "experiment_rerun_or_configuration_change": false,
+    "new_experiment_or_monitor": false,
+    "internal_server_paths_published": false,
+    "weights_credentials_or_full_logs_published": false,
+    "qwen_followup_status_is_timestamped_prior_snapshot_not_fresh_poll": true
+  }
+}

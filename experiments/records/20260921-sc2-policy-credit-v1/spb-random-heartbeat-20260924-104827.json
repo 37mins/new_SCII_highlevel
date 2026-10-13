@@ -1,0 +1,118 @@
+{
+  "schema": "sc2-readonly-heartbeat-v1",
+  "observed_at": "2026-09-24T10:48:27.490415+08:00",
+  "automation_id": "197-qwen-cp8",
+  "read_only": true,
+  "queue": {
+    "phase": "running-unverified",
+    "completed": [
+      "spb-random/short"
+    ],
+    "first_dispatch_by": 1790312320.0467553,
+    "part": "spb-random/long",
+    "deadline": 1790356959.0174987
+  },
+  "dispatch": {
+    "start": 1790184159.0174987,
+    "deadline": 1790356959.0174987,
+    "gpu_hours": 384,
+    "new_games": 792,
+    "new_updates": 96
+  },
+  "host": {
+    "version": "host-guardian-v1",
+    "phase": "stage-completed",
+    "completed": [
+      "train96"
+    ],
+    "stage": "train96",
+    "deadline": 1790356959.0174987,
+    "learning_validated": false
+  },
+  "eval96": {
+    "admission_exists": false,
+    "run_directory_exists": false,
+    "part_state_absent_expected_until_end": true
+  },
+  "storage": {
+    "status": "measured",
+    "bytes": 831162453514,
+    "limit": 1099511627776,
+    "returncode": 0,
+    "stderr_empty": true,
+    "checked_at": 1790218084.2580707,
+    "deadline": 1790356959.0174987,
+    "exact_accounted_root_count": 2,
+    "storage_failure_exists": false
+  },
+  "accepted_train96_terminal_files": {
+    "spb-random/long/runs/train96/result.json": {
+      "exists": true,
+      "bytes": 249366,
+      "sha256": "5feb66bd0bc24fae031e879db25e2df3d05fc5fbcb905549b521d100cb81f53b",
+      "matches_previous_acceptance": true
+    },
+    "spb-random/long/runs/train96/.done": {
+      "exists": true,
+      "bytes": 249366,
+      "sha256": "5feb66bd0bc24fae031e879db25e2df3d05fc5fbcb905549b521d100cb81f53b",
+      "matches_previous_acceptance": true
+    },
+    "spb-random/long/acceptance-train96.json": {
+      "exists": true,
+      "bytes": 268607,
+      "sha256": "49860fa66d7c291a6104770b5152ea73fbac780cdd7527d4b12133d5f29adf01",
+      "matches_previous_acceptance": true
+    },
+    "spb-random/long/runs/train96/manifest.json": {
+      "exists": true,
+      "bytes": 3046,
+      "sha256": "5422ae326074c24532d525ab7152f78a7256e3b1b5046305644b56fdc2e274d8",
+      "matches_previous_acceptance": true
+    },
+    "spb-random/long/host-supervision/train96-guardian.json": {
+      "exists": true,
+      "bytes": 378147,
+      "sha256": "09b6936d89dbba2f78bd4235c1ac5f3f4df13f41135be046ce1ec8848c57cd61",
+      "matches_previous_acceptance": true
+    }
+  },
+  "checks": {
+    "all_five_accepted_terminal_hashes_unchanged": true,
+    "shared_deadline_unchanged": true,
+    "eval96_not_started": true,
+    "new_failure_observed": false
+  },
+  "admission_context": {
+    "known_blocker": "Disk free below unchanged1084GiB at prior10:38 resource diagnostic.",
+    "previous_evidence": "qwen-l7same-budget-approved-20260924-103801.json",
+    "resources_remeasured_this_heartbeat": false,
+    "capacity_solution_not_authorized": true
+  },
+  "new_qwen_same": {
+    "budget": "approved",
+    "prepared": false,
+    "queued": false,
+    "dispatched": false,
+    "clock_started": false,
+    "blocked_on": "capacity and separately authorized capacity solution",
+    "evidence": "qwen-l7same-rerun-budget-20260924.md"
+  },
+  "actions": {
+    "server_mutation": false,
+    "gpu_diagnostics": false,
+    "large_checkpoint_read": false,
+    "full_log_read": false,
+    "training_metrics_reread": false,
+    "duplicate_dispatch": false,
+    "gate_relaxation": false,
+    "monitor_deleted_or_created": false
+  },
+  "notification": {
+    "new_experiment_event": false,
+    "quiet_unchanged_wait": true,
+    "previous_completion_and_disk_decision_not_repeated": true
+  },
+  "validation": "JSON parsing, five terminal hashes against accepted receipt, host completed train96, fixed shared deadline and fresh strict storage receipt; no model tests run.",
+  "export_scope": "Small experiment state, aggregate existing storage sample and terminal hashes only; no raw logs, checkpoint content, GPU identifiers or container inventory."
+}

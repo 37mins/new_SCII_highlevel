@@ -1,0 +1,21 @@
+{
+  "checked_at_beijing": "2026-09-26T18:49:10+08:00",
+  "run_root": "/var/jfsCache/sc2-qwen-l8same192-197-20260926-r1",
+  "source_parent": "/var/jfsCache/sc2-qwen-l8same192-197-source-20260926-r1",
+  "frozen_sha": "bb27295366cc207d5277fb5d1ce6187824b3ead9",
+  "status": "failed_cpu_preflight",
+  "cause": "New regression harness changed old SpB controller PARTS to ('.',), breaking two-part fixtures; IndexError and FileExistsError in two old queue tests.",
+  "host_tests": {"passed": true, "tests": 71, "skips": 0},
+  "actual_cpu_readiness": {"passed": true, "actual_parent_verified": true, "actual_entries_and_hydra_configs": true, "cuda_initialized": false},
+  "regressions": {"passed": false, "tests": 261, "errors": 2, "skips": 0, "cuda_initialized": false},
+  "containers": [
+    {"name": "sc2-qwen-l8same192-197-20260926-r1-cpu", "id": "6bd6a108ead68f07f484d794b00e849b5d1d1768f5db8a2995c2c219cc31e597", "status": "exited", "exit_code": 0, "device_requests": null, "finished_at": "2026-09-26T10:41:33.79549292Z"},
+    {"name": "sc2-qwen-l8same192-197-20260926-r1-regressions", "id": "1df76da9d28d7ac593a61709926508597d16553114dd1875dd6799fadabb5539", "status": "exited", "exit_code": 1, "device_requests": null, "finished_at": "2026-09-26T10:41:52.124409632Z"}
+  ],
+  "dispatch_exists": false,
+  "queue_state_exists": false,
+  "new_games": 0,
+  "new_ppo_updates": 0,
+  "gpu_snapshot": {"eight_cards_memory_mib": 0, "eight_cards_utilization_percent": 0, "compute_apps": []},
+  "action": "Preserve r1 unchanged; user explicitly approved corrected r2 single dispatch, four r1+r2 roots together capped at384GiB. No automatic retry."
+}

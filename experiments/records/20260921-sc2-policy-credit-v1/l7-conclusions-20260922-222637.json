@@ -1,0 +1,255 @@
+{
+  "schema": "l7-conclusion-readonly-v1",
+  "checked_at": "2026-09-22T22:26:37.838427+08:00",
+  "acceptance_checked_at": "2026-09-22T22:28:00.928315+08:00",
+  "root": "/var/jfsCache/sc2-l7-followup197-20260922-r4",
+  "expected_frozen_runtime": "9cb291ea5f50de205c5d88371e08ce229b7d9d04",
+  "receipts": {
+    "queue-state.json": {
+      "sha256": "4d8ae8f93eee86aea41dd5e8964d563d611317107d126c8cb8964a96c629b189",
+      "bytes": 228,
+      "data": {
+        "phase": "running-unverified",
+        "completed": [],
+        "deadline": 1790420762.305692,
+        "original_start": 1790075162.305692,
+        "spb_deadline": 1790247962.305692,
+        "part": "spb-same/short",
+        "arm_deadline": 1790247962.305692
+      }
+    },
+    "storage-state.json": {
+      "sha256": "edbfa045fe92865076ffc92ba4f9519622751da6d635ed787eb5ab9646acdb22",
+      "bytes": 3646,
+      "data": {
+        "status": "measured",
+        "bytes": 50926218661,
+        "returncode": 0,
+        "checked_at": 1790087195.8195162,
+        "limit": 2199023255552,
+        "deadline": 1790420762.305692,
+        "quiescence": {
+          "version": "host-guardian-v1",
+          "container_id": "2a3e64503973b35ee514f12bcdf60b39bce7522157187d128aba25588c1c00de",
+          "owner_root": "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/short",
+          "guardian_pid": 745246,
+          "paused_verified": true,
+          "cleanup": "verified-unpaused",
+          "paused_at": 1790087195.7024825,
+          "mode": "paused",
+          "resumed_at": 1790087195.8193383
+        }
+      }
+    },
+    "storage-failure.json": {
+      "exists": false
+    },
+    "spb-same/short/host-supervision/state.json": {
+      "sha256": "5e55ffe73a1ca8b5e076e85574064c2fc383204dee4c5583f6bf9cb792bec824",
+      "bytes": 307,
+      "data": {
+        "version": "host-guardian-v1",
+        "phase": "running-unverified",
+        "completed": [
+          "pre"
+        ],
+        "deadline": 1790247962.305692,
+        "learning_validated": false,
+        "started_at": 1790085600.1374924,
+        "stage": "train2",
+        "container_id": "2a3e64503973b35ee514f12bcdf60b39bce7522157187d128aba25588c1c00de"
+      }
+    },
+    "spb-same/short/runs/pre/result.json": {
+      "sha256": "1414a677bd328654f195d09f12d169db5110da5733ba00f22255553461e5dbff",
+      "bytes": 5197,
+      "data": {
+        "status": "completed",
+        "ended_at": "2026-09-22T14:09:34.972135+00:00",
+        "mode": "evaluation",
+        "process_exit_code": 0,
+        "training_updates": 0,
+        "metrics": {
+          "val/text/test_score": -12.811749935150146,
+          "val/text/tool_call_count/mean": 0,
+          "val/success_rate": 0.5,
+          "val/sc2_attack_ct": 0.125,
+          "val/sc2_action_valid": 1,
+          "val/sc2_semantic_action_valid": 1,
+          "val/sc2_semantic_action_evaluable": 1,
+          "val/sc2_projection_action_valid": 1,
+          "val/sc2_executor_action_valid": 1,
+          "val/sc2/episode_count": 8,
+          "val/sc2/no_policy_episode_count": 0,
+          "val/sc2/policy_decision_count": 46
+        },
+        "metrics_finite": true,
+        "response_record_count": 80,
+        "metrics_precision": "binary64-v1",
+        "evaluable_action_count": 46,
+        "valid_evaluable_action_count": 46,
+        "console_sha256": "880f96cc6d64e34e0c4218730d5459b2954c6bbb96158cbcb70210e908f78260",
+        "episode_outcomes": {
+          "trajectories": 8,
+          "natural_games": 8,
+          "wins": 4,
+          "defeats": 4,
+          "ties": 0,
+          "truncated": 0,
+          "natural_win_rate": 0.5
+        },
+        "natural_match_completed": true,
+        "termination_evidence": "game_result"
+      }
+    },
+    "spb-same/short/runs/pre/.done": {
+      "sha256": "1414a677bd328654f195d09f12d169db5110da5733ba00f22255553461e5dbff",
+      "bytes": 5197
+    },
+    "spb-same/short/runs/train2/result.json": {
+      "exists": false
+    },
+    "spb-same/short/runs/post/result.json": {
+      "exists": false
+    },
+    "spb-same/long/dispatch.json": {
+      "exists": false
+    },
+    "qwen-random/long/dispatch.json": {
+      "exists": false
+    },
+    "spb-same/short/acceptance-pre.json": {
+      "sha256": "076b54cc70cc544e5e9f964afcd3ce1690581e253fab2421fd10d3eb023acdcb",
+      "bytes": 5822,
+      "data": {
+        "checked_at": 1790086182.3514223,
+        "evidence": {
+          "consumed_answers": 46,
+          "valid_consumed_answers": 46,
+          "parsed_plans": 46,
+          "validated_queue_entries": 602,
+          "validated_locally_queued_commands": 367,
+          "execution_scope": "local Depot/Marine commands, not production completion or causal wins"
+        },
+        "result_status": "completed"
+      }
+    },
+    "spb-same/short/runs/pre/manifest.json": {
+      "sha256": "55fa32c1cc5004f0ba20b537e9d6148cfa05597e4d819bb94323b5a4bb01dd02",
+      "bytes": 2942,
+      "data": {
+        "dirty": false,
+        "metrics_precision": "binary64-v1",
+        "mode": "evaluation",
+        "world_size": 8
+      },
+      "top_level_keys": [
+        "schema_version",
+        "status",
+        "started_at",
+        "source_commit",
+        "dirty",
+        "formal",
+        "model_id",
+        "model_revision",
+        "model_source",
+        "model_manifest_sha256",
+        "bo_profile",
+        "episode_api",
+        "metrics_precision",
+        "bo_path",
+        "bo_sha256",
+        "mode",
+        "source_files_sha256",
+        "target_steps",
+        "sc2_signal_max_batches",
+        "start_step",
+        "sc2_checkpoint_resume",
+        "training_goal_global_steps",
+        "resume_from_path",
+        "host",
+        "python",
+        "gpu_selection",
+        "world_size",
+        "container_image_id",
+        "versions"
+      ]
+    },
+    "spb-same/short/runs/train2/manifest.json": {
+      "sha256": "465bc3535add1a2816ad31af02b6ca2b125965d2b9ab3832e48bbd1bccf7a13d",
+      "bytes": 2939,
+      "data": {
+        "dirty": false,
+        "metrics_precision": "binary64-v1",
+        "mode": "training",
+        "world_size": 8
+      },
+      "top_level_keys": [
+        "schema_version",
+        "status",
+        "started_at",
+        "source_commit",
+        "dirty",
+        "formal",
+        "model_id",
+        "model_revision",
+        "model_source",
+        "model_manifest_sha256",
+        "bo_profile",
+        "episode_api",
+        "metrics_precision",
+        "bo_path",
+        "bo_sha256",
+        "mode",
+        "source_files_sha256",
+        "target_steps",
+        "sc2_signal_max_batches",
+        "start_step",
+        "sc2_checkpoint_resume",
+        "training_goal_global_steps",
+        "resume_from_path",
+        "host",
+        "python",
+        "gpu_selection",
+        "world_size",
+        "container_image_id",
+        "versions"
+      ]
+    },
+    "spb-same/short/runs/train2/metrics.json": {
+      "exists": false
+    },
+    "spb-same/short/runs/train2/checkpoints/sc2_policy_credit_audit.jsonl": {
+      "sha256": "ad33947db97dfd2b2fb03bff0ed33fb196d8b1ec68e8cc64e9fa8636f90950d9",
+      "bytes": 208,
+      "data": [
+        {
+          "real_answers": 40,
+          "valid_answers": 40,
+          "valid_ratio": 1,
+          "min_valid_ratio": 0.5,
+          "decision": "accept",
+          "reason": "validity_floor_passed",
+          "pending_global_step": 1,
+          "optimizer_updates_for_this_batch": 0
+        }
+      ]
+    }
+  },
+  "containers": {
+    "returncode": 0,
+    "stdout": "sc2-l7-followup197-20260922-r4-spb-same-short-train2 Up 16 minutes\nsc2-l7-followup197-20260922-r4-spb-same-short-pre Exited (0) 17 minutes ago\nsc2-l7-followup197-20260922-r4-qwen-random-long-cpu-cpu Exited (0) 27 minutes ago\nsc2-l7-followup197-20260922-r4-spb-same-long-cpu-cpu Exited (0) 27 minutes ago\nsc2-l7-followup197-20260922-r4-spb-same-short-cpu-cpu Exited (0) 28 minutes ago\nsc2-l7-followup197-20260922-r4-spb-same-short-cpu-regressions Exited (0) 28 minutes ago\n",
+    "stderr": ""
+  },
+  "operations": "SSH read-only small receipts and container status only; no dispatch, mutation, GPU diagnostic or checkpoint read",
+  "interpretation": {
+    "pre_accepted": true,
+    "pre_wins": 4,
+    "pre_natural_games": 8,
+    "consumed_valid": "46/46",
+    "training_stage_active": true,
+    "completed_ppo_updates": "not established from this read; audit is pre-update only",
+    "longs_dispatched": false,
+    "learning_improvement_demonstrated": false
+  }
+}

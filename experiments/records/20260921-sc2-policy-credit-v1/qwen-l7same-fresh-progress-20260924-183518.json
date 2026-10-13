@@ -1,0 +1,314 @@
+{
+  "checked_at": "2026-09-24T18:35:18.345898+08:00",
+  "root": "/var/jfsCache/sc2-qwen-l7same96-197-20260924-r1",
+  "receipts": {
+    "queue-state.json": {
+      "phase": "running-unverified",
+      "completed": [
+        "qwen-same/short"
+      ],
+      "first_dispatch_by": 1790360559.0174987,
+      "part": "qwen-same/long",
+      "deadline": 1790403303.797456
+    },
+    "dispatch.json": {
+      "start": 1790230503.797456,
+      "deadline": 1790403303.797456,
+      "gpu_hours": 384,
+      "new_games": 792,
+      "new_updates": 96
+    },
+    "state.json": null,
+    "failure.json": null,
+    "storage-state.json": {
+      "command": [
+        "du",
+        "-sb",
+        "--null",
+        "--",
+        "/var/jfsCache/sc2-qwen-l7same96-197-20260924-r1",
+        "/var/jfsCache/sc2-qwen-l7same96-197-source-20260924-r1"
+      ],
+      "roots": [
+        "/var/jfsCache/sc2-qwen-l7same96-197-20260924-r1",
+        "/var/jfsCache/sc2-qwen-l7same96-197-source-20260924-r1"
+      ],
+      "started_at": 1790246110.6636713,
+      "deadline": 1790403303.797456,
+      "limit": 1099511627776,
+      "bytes": 600321892008,
+      "returncode": 0,
+      "status": "measured",
+      "stdout": {
+        "tail": "600298625838\t/var/jfsCache/sc2-qwen-l7same96-197-20260924-r1\u000023266170\t/var/jfsCache/sc2-qwen-l7same96-197-source-20260924-r1\u0000",
+        "characters": 125,
+        "truncated": false
+      },
+      "stderr": {
+        "tail": "",
+        "characters": 0,
+        "truncated": false
+      },
+      "quiescence": {
+        "version": "host-guardian-v1",
+        "container_id": "80abe03174c3b0b584e16b1d0aef48fb87f9f45390435b3cc57484a5dba1df9d",
+        "owner_root": "/var/jfsCache/sc2-qwen-l7same96-197-20260924-r1/qwen-same/long",
+        "guardian_pid": 2174308,
+        "paused_verified": true,
+        "cleanup": "verified-unpaused",
+        "paused_at": 1790246110.7185402,
+        "mode": "paused",
+        "resumed_at": 1790246110.8567564
+      },
+      "measured_at": 1790246110.8194947,
+      "root_bytes": {
+        "/var/jfsCache/sc2-qwen-l7same96-197-20260924-r1": 600298625838,
+        "/var/jfsCache/sc2-qwen-l7same96-197-source-20260924-r1": 23266170
+      },
+      "checked_at": 1790246110.856948
+    },
+    "storage-failure.json": null,
+    "qwen-same/long/state.json": null,
+    "qwen-same/long/host-supervision/state.json": {
+      "version": "host-guardian-v1",
+      "phase": "running-unverified",
+      "completed": [],
+      "deadline": 1790403303.797456,
+      "learning_validated": false,
+      "started_at": 1790231815.6909914,
+      "stage": "train96",
+      "container_id": "80abe03174c3b0b584e16b1d0aef48fb87f9f45390435b3cc57484a5dba1df9d"
+    },
+    "qwen-same/long/acceptance.json": null,
+    "qwen-same/long/failure.json": null,
+    "qwen-same/long/runs/train96/result.json": null,
+    "qwen-same/long/runs/train96/.done": null,
+    "qwen-same/long/runs/eval96/result.json": null,
+    "qwen-same/long/runs/eval96/.done": null
+  },
+  "manifest": {
+    "source_commit": "5228e9acc7698c69bdcce9af30aa5a7570829a19",
+    "dirty": false,
+    "world_size": 8,
+    "metrics_precision": "binary64-v1",
+    "start_step": 2,
+    "target_steps": 96,
+    "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+    "gpu_selection": "0,1,2,3,4,5,6,7"
+  },
+  "resume": {
+    "from_checkpoint": "/var/jfsCache/sc2-qwen-l7same96-197-20260924-r1/qwen-same/short/runs/train2/checkpoints/global_step_2",
+    "global_step": 2,
+    "next_reset_index": 2,
+    "next_seeds": [
+      53,
+      53,
+      53,
+      53,
+      53,
+      53,
+      53,
+      53
+    ],
+    "source": "checkpoint",
+    "model_optimizer_dataloader_load_returned": true
+  },
+  "returned_tail_metrics": [
+    {
+      "step": 91,
+      "actor/grad_norm": 0.0024395659588662966,
+      "timing_s/step": 136.94386942498386,
+      "timing_s/update_actor": 14.051065073348582,
+      "policy_credit/invalid_advantage_max": 0,
+      "episode/success_rate": 1,
+      "episode/reward/mean": 26.92500114440918
+    },
+    {
+      "step": 92,
+      "actor/grad_norm": 0.0012297043173020938,
+      "timing_s/step": 199.9589259168133,
+      "timing_s/update_actor": 17.747936827130616,
+      "policy_credit/invalid_advantage_max": 0,
+      "episode/success_rate": 0,
+      "episode/reward/mean": -54.680999755859375
+    },
+    {
+      "step": 93,
+      "actor/grad_norm": 0.00260054409420718,
+      "timing_s/step": 141.5089146597311,
+      "timing_s/update_actor": 14.085555034689605,
+      "policy_credit/invalid_advantage_max": 0,
+      "episode/success_rate": 1,
+      "episode/reward/mean": 26.02499771118164
+    }
+  ],
+  "console_tail": {
+    "file_size": 25200677,
+    "bytes_read": 1048576,
+    "start": 24152101,
+    "sha256": "d6e040e5822235e3802b185021327d06958cff72605dc96eb07a2584b559ad58"
+  },
+  "checkpoints": [
+    {
+      "name": "global_step_8",
+      "required_count": 26
+    },
+    {
+      "name": "global_step_16",
+      "required_count": 26
+    },
+    {
+      "name": "global_step_24",
+      "required_count": 26
+    },
+    {
+      "name": "global_step_32",
+      "required_count": 26
+    },
+    {
+      "name": "global_step_40",
+      "required_count": 26
+    },
+    {
+      "name": "global_step_48",
+      "required_count": 26
+    },
+    {
+      "name": "global_step_56",
+      "required_count": 26
+    },
+    {
+      "name": "global_step_64",
+      "required_count": 26
+    },
+    {
+      "name": "global_step_72",
+      "required_count": 26
+    },
+    {
+      "name": "global_step_80",
+      "required_count": 26
+    },
+    {
+      "name": "global_step_88",
+      "required_count": 26
+    }
+  ],
+  "container": {
+    "id": "80abe03174c3b0b584e16b1d0aef48fb87f9f45390435b3cc57484a5dba1df9d",
+    "returncode": 0,
+    "state": {
+      "Status": "running",
+      "Running": true,
+      "Paused": false,
+      "Restarting": false,
+      "OOMKilled": false,
+      "Dead": false,
+      "Pid": 2174367,
+      "ExitCode": 0,
+      "Error": "",
+      "StartedAt": "2026-09-24T06:36:56.15518741Z",
+      "FinishedAt": "0001-01-01T00:00:00Z"
+    },
+    "stderr": ""
+  },
+  "receipt_sha256": {
+    "queue-state.json": "650d334776d89d0997c99979bf74c6efcd6f51110207cd42cf7c4abd2adb9241",
+    "dispatch.json": "e64cbe3d5f90b046d15c348a9ec830f63e6f84ecb0309184f8111562531b82cb",
+    "storage-state.json": "8b265479ec2535ea81c50cd07d723e9e362c6eb823a2a1e1e1cde8d385f9e670",
+    "qwen-same/long/host-supervision/state.json": "611b3571d5823c27dfe5f4ddbf213a55b51643a816cc62521746e48f237f8f2f",
+    "qwen-same/long/runs/train96/manifest.json": "47efd02e3b8f821d9635183dd40b97a65cd2baa1448f0481a0a3596e5ca4db66",
+    "qwen-same/long/runs/train96/checkpoints/resume_state.json": "accc9c44aa56ecd718041d3d06da65fcd7371b9c5d66b70cdb2faa83fe4b0831",
+    "qwen-same/short/runs/train2/training_seeds.jsonl": "c7225e901aea10a4a2bfdd18f5ce95214e57d5a21c2d0960e263de06c6910283",
+    "qwen-same/short/runs/train2/episode_outcomes.jsonl": "cac9b5f406e0d27e334e6ee57baa5d1e649946ea7bd360887bce57419c5285c2",
+    "qwen-same/short/runs/train2/checkpoints/sc2_policy_credit_audit.jsonl": "fd217d27a28143f2738530c83ca7478a3d220d9a2e9e5376d4346ca3167101b8",
+    "qwen-same/long/runs/train96/training_seeds.jsonl": "baab45c086e7095861fd2b0471afc13716ee7c27b79a3f355747d75a0600ef3c",
+    "qwen-same/long/runs/train96/episode_outcomes.jsonl": "99b893e1531c39fc40fb2873e662187a1e369a901052ea628b964f3773cb6cad",
+    "qwen-same/long/runs/train96/checkpoints/sc2_policy_credit_audit.jsonl": "e224e4db6134dace443ff806e518a8a2eeb4f88dd19bb9467f0482703aebd0b8",
+    "qwen-same/short/runs/pre/result.json": "b1b882f30e50d7fceee39cad727f8198f2ccdd8cbb50315041530d6404f4ac07",
+    "qwen-same/short/runs/train2/result.json": "77dcf3fd26ba06f21486a43f93f07b23d88fd7e781677de7bcaf7744b7f3e8db",
+    "qwen-same/short/runs/post/result.json": "84550938e18ce18f7c71b57662836e273f3126e9c02fd0843e1d419868409ef0",
+    "qwen-same/short/runs/pre/.done": "b1b882f30e50d7fceee39cad727f8198f2ccdd8cbb50315041530d6404f4ac07",
+    "qwen-same/short/runs/train2/.done": "77dcf3fd26ba06f21486a43f93f07b23d88fd7e781677de7bcaf7744b7f3e8db",
+    "qwen-same/short/runs/post/.done": "84550938e18ce18f7c71b57662836e273f3126e9c02fd0843e1d419868409ef0",
+    "qwen-same/long/host-supervision/train96-guardian.json": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "run_id": "sc2-qwen-l7same96-197-20260924-r1",
+  "check_type": "user-requested read-only progress snapshot",
+  "runtime_sha": "5228e9acc7698c69bdcce9af30aa5a7570829a19",
+  "game_audit_seed_summary": {
+    "through_returned_global_step": 93,
+    "games": 744,
+    "wins": 644,
+    "all_natural": true,
+    "all_steps_have_8_envs": true,
+    "audits": 93,
+    "all_audits_accept": true,
+    "real_answers": 3185,
+    "valid_answers": 3185,
+    "seed_count": 93,
+    "all_same_uniform101_match": true,
+    "latest_observed_seed_step": 95,
+    "latest_observed_audit_step": 94
+  },
+  "summary_checked_at": "2026-09-24T18:36:51.185358+08:00",
+  "short_stages": {
+    "pre": {
+      "status": "completed",
+      "ended_at": "2026-09-24T06:21:52.336493+00:00",
+      "exit_code": 0,
+      "result_done_equal": true,
+      "training_updates": 0,
+      "natural_games": 8,
+      "wins": 7
+    },
+    "train2": {
+      "status": "completed",
+      "ended_at": "2026-09-24T06:30:25.127951+00:00",
+      "exit_code": 0,
+      "result_done_equal": true,
+      "training_updates": 2,
+      "natural_games": 16,
+      "wins": 8
+    },
+    "post": {
+      "status": "completed",
+      "ended_at": "2026-09-24T06:36:37.220486+00:00",
+      "exit_code": 0,
+      "result_done_equal": true,
+      "training_updates": 0,
+      "natural_games": 8,
+      "wins": 6
+    }
+  },
+  "guardian": {
+    "terminal_slot_empty": true,
+    "meaning": "Normal while running, not a failure."
+  },
+  "interpretation": {
+    "latest_returned_global_step": 93,
+    "target": 96,
+    "completed_training_games": 744,
+    "training_wins": 644,
+    "training_win_rate": 0.8655913978494624,
+    "training_not_yet_terminal": true,
+    "eval96_not_yet_started_in_snapshot": true,
+    "counting": "Latest returned global step93 verified from bounded1MiB console tail (steps91-93). 93matching audits and all744natural games/seeds checked; audits alone do not prove updates. Full1-96 returned-metric acceptance remains for terminal verifier.",
+    "limitations": "This is the NEW fresh same-seed rerun, not the historical same arm with six missing-precision gradients. Historical strict failed status remains. Training win rate does not prove learning/generalization.",
+    "actions": "Read-only SSH; no nvidia-smi/GPU diagnostics, full console or checkpoint contents; no server mutation, retry, restart, cleanup, dispatch or new sampling."
+  },
+  "eta": {
+    "based_on_steps": [
+      91,
+      92,
+      93
+    ],
+    "mean_seconds_per_step": 159.4705700005094,
+    "three_remaining_steps_seconds": 478.41171000152826,
+    "provisional_finish_beijing": "2026-09-24 19:00–19:30",
+    "includes": "Remaining training, CP96 save/acceptance, separate eval96 load/eight games/acceptance; approximate overhead allowance.",
+    "conditional": "No failures, resource waits or unusually long games. Not guaranteed. Latest seed95/audit94 not counted as returned PPO in this snapshot.",
+    "hard_deadline_beijing": "2026-09-26 14:15:03.797",
+    "hard_deadline_unmodified": true
+  }
+}

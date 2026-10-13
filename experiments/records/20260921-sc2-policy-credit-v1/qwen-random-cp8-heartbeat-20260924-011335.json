@@ -1,0 +1,704 @@
+{
+  "observed_at": "2026-09-24T01:13:35.667905+08:00",
+  "root": "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2",
+  "read_only": true,
+  "files": {
+    "deployment.json": {
+      "exists": true,
+      "bytes": 13890,
+      "sha256": "0d40bcf2feac7c5415cdcf9e53f3c7452eaa387ca53a17c8d9db601c045fef84"
+    },
+    "queue-state.json": {
+      "exists": true,
+      "bytes": 91,
+      "sha256": "bef692ae73ff470ad9b6f68016db6066700ede4ff40bbe68a9a1c7a0513ed821"
+    },
+    "host-supervision/state.json": {
+      "exists": true,
+      "bytes": 296,
+      "sha256": "320003d824465cd1a3886b11eb84312d94226448829b88c292090f66554d3d72"
+    },
+    "host-supervision/train96-guardian.json": {
+      "exists": true,
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "empty_slot": true
+    },
+    "state.json": {
+      "exists": false
+    },
+    "acceptance.json": {
+      "exists": false
+    },
+    "storage-failure.json": {
+      "exists": false
+    },
+    "suite-account/storage-failure.json": {
+      "exists": false
+    },
+    "runs/train96/result.json": {
+      "exists": false
+    },
+    "runs/train96/.done": {
+      "exists": false
+    },
+    "acceptance-train96.json": {
+      "exists": false
+    },
+    "runs/eval96/result.json": {
+      "exists": false
+    },
+    "runs/eval96/.done": {
+      "exists": false
+    },
+    "acceptance-eval96.json": {
+      "exists": false
+    },
+    "host-supervision/eval96-guardian.json": {
+      "exists": false
+    },
+    "storage-state.json": {
+      "exists": true,
+      "bytes": 4738,
+      "sha256": "76ab986d2cb1de39c438308bff9e88ac345dbcbe3dce844392c3520e2c8e49fe"
+    },
+    "suite-account/storage-state.json": {
+      "exists": true,
+      "bytes": 4691,
+      "sha256": "816342e6798ac6791e281c3aa454de4d6827c61416bf9cfd892240537a40a22c"
+    },
+    "runs/train96/manifest.json": {
+      "exists": true,
+      "bytes": 3017,
+      "sha256": "06bd9fbe5f38b0c0bc86add64b0ba5533eca4d4115574c59380859c4beb347cb"
+    },
+    "runs/train96/checkpoints/resume_state.json": {
+      "exists": true,
+      "bytes": 285,
+      "sha256": "b3683a40c940b53d44773c4371a04ecd0c70be6aff5cbe53abf8a6c87af27031"
+    },
+    "runs/train96/training_seeds.jsonl": {
+      "exists": true,
+      "bytes": 10542,
+      "sha256": "466da4e32c22b80a08d4e21155035290cc45f4a2da449790d4d4ea7f3a253916"
+    },
+    "runs/train96/episode_outcomes.jsonl": {
+      "exists": true,
+      "bytes": 158812,
+      "sha256": "667c99ff627126a156ddb92415b80ae63cdcb0622724d45b7221378287118ab6"
+    },
+    "runs/train96/checkpoints/sc2_policy_credit_audit.jsonl": {
+      "exists": true,
+      "bytes": 17973,
+      "sha256": "2df60a28cdd5e68d6c2115f996474706ef1b298d0b0e8f2ba771143913c56dce"
+    }
+  },
+  "checks": {
+    "deployment_identity": true,
+    "manifest": true,
+    "tail_ppo_metrics": true
+  },
+  "deployment": {
+    "runtime_sha": "34154283a8298ac4fbaab1c63770a6b81f7d375c",
+    "controller_sha": "34154283a8298ac4fbaab1c63770a6b81f7d375c",
+    "start_step": 8,
+    "target_step": 96,
+    "games": [
+      704,
+      8
+    ],
+    "updates": [
+      88,
+      0
+    ],
+    "deadline": 1790308720.0467553,
+    "suite_deadline": 1790420762.305692
+  },
+  "queue-state.json": {
+    "phase": "running-unverified",
+    "stage": "train96",
+    "deadline": 1790308720.0467553
+  },
+  "host-supervision/state.json": {
+    "version": "host-guardian-v1",
+    "phase": "running-unverified",
+    "completed": [],
+    "deadline": 1790308720.0467553,
+    "learning_validated": false,
+    "started_at": 1790168798.0071752,
+    "stage": "train96",
+    "container_id": "fc2f74a4285c5e80660257f42bd1caa21ad1a0614699d680e74938f013106b06"
+  },
+  "storage-state.json": {
+    "checked_at": 1790183606.8342328,
+    "bytes": 600758749356,
+    "limit": 1099511627776,
+    "deadline": 1790308720.0467553,
+    "status": "measured",
+    "returncode": 0,
+    "stderr": {
+      "tail": "",
+      "characters": 0,
+      "truncated": false
+    },
+    "roots_count": 15,
+    "roots_exact_deployment": true,
+    "within_limit": true
+  },
+  "suite-account/storage-state.json": {
+    "checked_at": 1790183607.278609,
+    "bytes": 1432077809156,
+    "limit": 2199023255552,
+    "deadline": 1790420762.305692,
+    "status": "measured",
+    "returncode": 0,
+    "stderr": {
+      "tail": "",
+      "characters": 0,
+      "truncated": false
+    },
+    "roots_count": 15,
+    "roots_exact_deployment": true,
+    "within_limit": true
+  },
+  "manifest": {
+    "source_commit": "34154283a8298ac4fbaab1c63770a6b81f7d375c",
+    "dirty": false,
+    "world_size": 8,
+    "metrics_precision": "binary64-v1"
+  },
+  "resume": {
+    "from_checkpoint": "/var/jfsCache/sc2-l7-followup197-20260922-r4/qwen-random/long/runs/train96/checkpoints/global_step_8",
+    "global_step": 8,
+    "next_reset_index": 8,
+    "next_seeds": [
+      8,
+      24,
+      72,
+      28,
+      30,
+      18,
+      69,
+      57
+    ],
+    "source": "checkpoint",
+    "model_optimizer_dataloader_load_returned": true
+  },
+  "console": {
+    "total_bytes": 39818389,
+    "offset": 35624085,
+    "bytes": 4194304,
+    "sha256": "38298005b1d588166ad4b39f502a0d127b48c515619cedccc0ad43250c21f8b6",
+    "returned_steps": [
+      89,
+      90,
+      91,
+      92,
+      93,
+      94
+    ],
+    "latest": [
+      {
+        "step": 92,
+        "actor/grad_norm": 22.871301913261412,
+        "timing_s/update_actor": 18.16419066488743,
+        "episode/success_rate": 0.875,
+        "episode/valid_action_ratio": 1,
+        "policy_credit/invalid_advantage_max": 0
+      },
+      {
+        "step": 93,
+        "actor/grad_norm": 0.22486806067172438,
+        "timing_s/update_actor": 14.008540066890419,
+        "episode/success_rate": 1,
+        "episode/valid_action_ratio": 1,
+        "policy_credit/invalid_advantage_max": 0
+      },
+      {
+        "step": 94,
+        "actor/grad_norm": 1.7498993600408237,
+        "timing_s/update_actor": 10.8907017018646,
+        "episode/success_rate": 0.625,
+        "episode/valid_action_ratio": 1,
+        "policy_credit/invalid_advantage_max": 0
+      }
+    ]
+  },
+  "seeds": {
+    "rows": 87,
+    "reset_indices": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94
+    ],
+    "all_match": true,
+    "last_batch": {
+      "base_seed": 0,
+      "reset_index": 94,
+      "seed_protocol": "independent_uniform101",
+      "seeds": [
+        41,
+        92,
+        32,
+        10,
+        45,
+        9,
+        15,
+        45
+      ]
+    }
+  },
+  "outcomes": {
+    "total_rows": 688,
+    "through_returned_step": 94,
+    "completed_rows": 688,
+    "wins": 603,
+    "all_natural": true,
+    "complete_reset_indices": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93
+    ],
+    "each_eight_unique_envs": true,
+    "in_progress_rows": 0
+  },
+  "audits": {
+    "rows": 86,
+    "returned_step_rows": 86,
+    "steps": [
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94
+    ],
+    "all_accept": true,
+    "real_answers": 2172,
+    "valid_answers": 2172
+  },
+  "checkpoint_inventories": [
+    {
+      "step": 16,
+      "required_files": 26,
+      "missing_or_empty": [],
+      "contents_read": false
+    },
+    {
+      "step": 24,
+      "required_files": 26,
+      "missing_or_empty": [],
+      "contents_read": false
+    },
+    {
+      "step": 32,
+      "required_files": 26,
+      "missing_or_empty": [],
+      "contents_read": false
+    },
+    {
+      "step": 40,
+      "required_files": 26,
+      "missing_or_empty": [],
+      "contents_read": false
+    },
+    {
+      "step": 48,
+      "required_files": 26,
+      "missing_or_empty": [],
+      "contents_read": false
+    },
+    {
+      "step": 56,
+      "required_files": 26,
+      "missing_or_empty": [],
+      "contents_read": false
+    },
+    {
+      "step": 64,
+      "required_files": 26,
+      "missing_or_empty": [],
+      "contents_read": false
+    },
+    {
+      "step": 72,
+      "required_files": 26,
+      "missing_or_empty": [],
+      "contents_read": false
+    },
+    {
+      "step": 80,
+      "required_files": 26,
+      "missing_or_empty": [],
+      "contents_read": false
+    },
+    {
+      "step": 88,
+      "required_files": 26,
+      "missing_or_empty": [],
+      "contents_read": false
+    }
+  ],
+  "container": {
+    "id": "fc2f74a4285c5e80660257f42bd1caa21ad1a0614699d680e74938f013106b06",
+    "returncode": 0,
+    "state": {
+      "Status": "running",
+      "Running": true,
+      "Paused": false,
+      "Restarting": false,
+      "OOMKilled": false,
+      "Dead": false,
+      "Pid": 1523713,
+      "ExitCode": 0,
+      "Error": "",
+      "StartedAt": "2026-09-23T13:06:39.085218914Z",
+      "FinishedAt": "0001-01-01T00:00:00Z"
+    },
+    "stderr": ""
+  },
+  "spb": {
+    "root": "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1",
+    "files": {
+      "deployment.json": {
+        "exists": true,
+        "bytes": 1177,
+        "sha256": "4fc0d11ba6f5fb2520d495c3054047badb17b0c2b65c0110ad3871114252a7f8",
+        "data": {
+          "runtime_sha": "83f3530765babe048035524ddf1651291810818a",
+          "controller_sha": "83f3530765babe048035524ddf1651291810818a",
+          "first_dispatch_by": 1790312320.0467553,
+          "wall_seconds": 172800,
+          "output_limit_bytes": 1099511627776,
+          "storage_roots": [
+            "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1",
+            "/var/jfsCache/sc2-spb-l7random96-197-source-20260923-r1"
+          ],
+          "predecessor": "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2"
+        }
+      },
+      "queue-state.json": {
+        "exists": true,
+        "bytes": 98,
+        "sha256": "69f75328aa43bf30535e6a94c1c79e8f7da6a44d790e9bc07aa2d44abf4b4680",
+        "data": {
+          "phase": "waiting-predecessor",
+          "completed": [],
+          "first_dispatch_by": 1790312320.0467553
+        }
+      },
+      "dispatch.json": {
+        "exists": false
+      },
+      "state.json": {
+        "exists": false
+      },
+      "storage-state.json": {
+        "exists": true,
+        "bytes": 973,
+        "sha256": "25ee614777bc3e25858d69c442bf668bfb493bef414680019bfa24c06a44c711",
+        "data": {
+          "checked_at": 1790175295.8192792,
+          "status": "measured",
+          "returncode": 0,
+          "bytes": 36091338,
+          "limit": 1099511627776,
+          "deadline": 1790312320.0467553,
+          "roots": [
+            "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1",
+            "/var/jfsCache/sc2-spb-l7random96-197-source-20260923-r1"
+          ],
+          "stderr": {
+            "tail": "",
+            "characters": 0,
+            "truncated": false
+          }
+        }
+      },
+      "storage-failure.json": {
+        "exists": false
+      },
+      "predecessor-acceptance.json": {
+        "exists": false
+      },
+      "spb-random/short/dispatch.json": {
+        "exists": false
+      },
+      "spb-random/short/host-supervision/state.json": {
+        "exists": false
+      },
+      "spb-random/long/dispatch.json": {
+        "exists": false
+      },
+      "spb-random/long/host-supervision/state.json": {
+        "exists": false
+      },
+      "spb-random/long/parent-readiness.json": {
+        "exists": false
+      }
+    }
+  },
+  "monitor_decision": {
+    "automation_id": "197-qwen-cp8",
+    "meaningful_new_event": false,
+    "notification_sent": false,
+    "reason": "Healthy ongoing train96 and expected SpB predecessor wait; no phase completion or new failure.",
+    "remote_mutations": false,
+    "monitor_retained": true,
+    "learning_validated": false,
+    "limitations": [
+      "Running snapshot, not terminal acceptance.",
+      "Bounded console proves returned steps 89–94 in this observation; pre-update audits alone are not proof of earlier completed PPO.",
+      "Registered reset94 is the next batch, not a completed PPO update.",
+      "Checkpoint inventories are nonempty-file stat only; contents unread.",
+      "SpB storage receipt is historical prequeue evidence, not fresh admission."
+    ]
+  }
+}

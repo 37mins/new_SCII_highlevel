@@ -1,0 +1,382 @@
+{
+  "observed_at": "2026-09-24T23:41:15.869169+08:00",
+  "parents": {
+    "qwen-random": {
+      "root": "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2",
+      "runtime_sha": "34154283a8298ac4fbaab1c63770a6b81f7d375c",
+      "host": {
+        "venv": "/data/yangjinyue/new-scii-spb2-system-baseline/envs/spb2-stageguard-r1",
+        "model": "/var/jfsCache/sc2-qwen-instruct2507-cdbee75-20260921-r1/model",
+        "sc2": "/data/yangjinyue/sc2-spb2-level7-20260814/StarCraftII",
+        "image": "sha256:1a497d5721f89bb2e98c0273c4b1495f8fdc6921d589650d090871c11b8d1649"
+      },
+      "environment": {
+        "PYTHON_BIN": "/runtime/bin/python",
+        "MODEL_PATH": "/assets/qwen",
+        "SC2PATH": "/assets/StarCraftII",
+        "LONG_DEPENDENCY_PATH": "/var/jfsCache/sc2-c197-20260919-r1/dependencies:/runtime/lib/python3.12/site-packages",
+        "HF_HUB_OFFLINE": "1",
+        "TRANSFORMERS_OFFLINE": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      },
+      "model_kind": "qwen",
+      "model_mount": "/assets/qwen",
+      "seed_protocol": "independent_uniform101",
+      "seed_group_mode": "mixed_seed_ablation",
+      "state": {
+        "version": "host-guardian-v1",
+        "phase": "completed",
+        "completed": [
+          "train96",
+          "eval96"
+        ],
+        "deadline": 1790308720.0467553,
+        "learning_validated": false,
+        "started_at": 1790168798.0071752,
+        "stage": "eval96",
+        "container_id": "acb6c485085fddb2e0448bb8d74d78c3856dc178025fc3fcf5842bd67b30a49a",
+        "exit_code": 0,
+        "finished_at": 1790184146.5349107
+      },
+      "receipt_sha256": {
+        "deployment.json": "0d40bcf2feac7c5415cdcf9e53f3c7452eaa387ca53a17c8d9db601c045fef84",
+        "state.json": "5c96cf9b4a913bf5636d500a5b6999fcaaf2444a6c2842e5eae70536400ad1ce",
+        "host-supervision/state.json": "5c96cf9b4a913bf5636d500a5b6999fcaaf2444a6c2842e5eae70536400ad1ce",
+        "runs/train96/result.json": "5f4f4acb352587eabb2c46aa7bb06c00434992d7f6958889e1233d755c848d7d",
+        "runs/train96/.done": "5f4f4acb352587eabb2c46aa7bb06c00434992d7f6958889e1233d755c848d7d",
+        "runs/eval96/result.json": "b14a9c9d429f0d41b93dd2dd6257f83964eaf4ec33543d76a1456b66330793eb",
+        "runs/eval96/.done": "b14a9c9d429f0d41b93dd2dd6257f83964eaf4ec33543d76a1456b66330793eb",
+        "host-supervision/train96-guardian.json": "da5dc0860b42c0b0257fcb9bef3a3a0b5860cabc93a339746f2dc10345bfa608",
+        "host-supervision/eval96-guardian.json": "3788304474756df3d8a6d8aeb4b1509e0f37f65b7cd825fc7cc8b6f7e587aa96"
+      },
+      "acceptance_sha256": {
+        "acceptance-train96.json": "42226fd7306af795d32d0c1ecd3b26673426b075978ad37bfab623a730b1073a",
+        "acceptance-eval96.json": "a080711f5ae77635d3981bc3ff59f6aa87ff5153100143bda210015ab2927eb0"
+      },
+      "checkpoint": "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2/runs/train96/checkpoints/global_step_96",
+      "checkpoint_files": {
+        "data.pt": 1947,
+        "sc2_state.pt": 30007,
+        "actor/model_world_size_8_rank_0.pt": 2205943659,
+        "actor/model_world_size_8_rank_1.pt": 2205943659,
+        "actor/model_world_size_8_rank_2.pt": 2205943659,
+        "actor/model_world_size_8_rank_3.pt": 2205943659,
+        "actor/model_world_size_8_rank_4.pt": 2205943659,
+        "actor/model_world_size_8_rank_5.pt": 2205943659,
+        "actor/model_world_size_8_rank_6.pt": 2205943659,
+        "actor/model_world_size_8_rank_7.pt": 2205943659,
+        "actor/optim_world_size_8_rank_0.pt": 4022500763,
+        "actor/optim_world_size_8_rank_1.pt": 4022500763,
+        "actor/optim_world_size_8_rank_2.pt": 4022500763,
+        "actor/optim_world_size_8_rank_3.pt": 4022500763,
+        "actor/optim_world_size_8_rank_4.pt": 4022500763,
+        "actor/optim_world_size_8_rank_5.pt": 4022500763,
+        "actor/optim_world_size_8_rank_6.pt": 4022500763,
+        "actor/optim_world_size_8_rank_7.pt": 4022500763,
+        "actor/extra_state_world_size_8_rank_0.pt": 15205,
+        "actor/extra_state_world_size_8_rank_1.pt": 15205,
+        "actor/extra_state_world_size_8_rank_2.pt": 15141,
+        "actor/extra_state_world_size_8_rank_3.pt": 15077,
+        "actor/extra_state_world_size_8_rank_4.pt": 15141,
+        "actor/extra_state_world_size_8_rank_5.pt": 15077,
+        "actor/extra_state_world_size_8_rank_6.pt": 15077,
+        "actor/extra_state_world_size_8_rank_7.pt": 15141
+      },
+      "containers": {
+        "train96": {
+          "id": "fc2f74a4285c5e80660257f42bd1caa21ad1a0614699d680e74938f013106b06",
+          "name": "/sc2-qwen-random-cp8-197-20260923-r2-train96",
+          "owner": "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2",
+          "state": {
+            "Dead": false,
+            "Error": "",
+            "ExitCode": 0,
+            "FinishedAt": "2026-09-23T17:18:22.068655008Z",
+            "OOMKilled": false,
+            "Paused": false,
+            "Pid": 0,
+            "Restarting": false,
+            "Running": false,
+            "StartedAt": "2026-09-23T13:06:39.085218914Z",
+            "Status": "exited"
+          }
+        },
+        "eval96": {
+          "id": "acb6c485085fddb2e0448bb8d74d78c3856dc178025fc3fcf5842bd67b30a49a",
+          "name": "/sc2-qwen-random-cp8-197-20260923-r2-eval96",
+          "owner": "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2",
+          "state": {
+            "Dead": false,
+            "Error": "",
+            "ExitCode": 0,
+            "FinishedAt": "2026-09-23T17:22:24.173498329Z",
+            "OOMKilled": false,
+            "Paused": false,
+            "Pid": 0,
+            "Restarting": false,
+            "Running": false,
+            "StartedAt": "2026-09-23T17:18:29.200980644Z",
+            "Status": "exited"
+          }
+        }
+      }
+    },
+    "spb-same": {
+      "root": "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long",
+      "runtime_sha": "9cb291ea5f50de205c5d88371e08ce229b7d9d04",
+      "host": {
+        "venv": "/data/yangjinyue/new-scii-spb2-system-baseline/envs/spb2-stageguard-r1",
+        "model": "/data/yangjinyue/sc2-spb2-level7-20260814/model",
+        "sc2": "/data/yangjinyue/sc2-spb2-level7-20260814/StarCraftII",
+        "image": "sha256:1a497d5721f89bb2e98c0273c4b1495f8fdc6921d589650d090871c11b8d1649"
+      },
+      "environment": {
+        "PYTHON_BIN": "/runtime/bin/python",
+        "MODEL_PATH": "/assets/spb",
+        "SC2PATH": "/assets/StarCraftII",
+        "LONG_DEPENDENCY_PATH": "/var/jfsCache/sc2-c197-20260919-r1/dependencies:/runtime/lib/python3.12/site-packages",
+        "HF_HUB_OFFLINE": "1",
+        "TRANSFORMERS_OFFLINE": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      },
+      "model_kind": "spb",
+      "model_mount": "/assets/spb",
+      "seed_protocol": "same_uniform101",
+      "seed_group_mode": "same",
+      "state": {
+        "version": "host-guardian-v1",
+        "phase": "completed",
+        "completed": [
+          "train96",
+          "eval96"
+        ],
+        "deadline": 1790247962.305692,
+        "learning_validated": false,
+        "started_at": 1790088312.1763573,
+        "stage": "eval96",
+        "container_id": "c396f9a1acc91b80aa39df52502a237ed6b7319df6f609102f68910ab9e86e51",
+        "exit_code": 0,
+        "finished_at": 1790135917.4264796
+      },
+      "receipt_sha256": {
+        "deployment.json": "9f271a1d83fc1d1ae9ae7377deaa7c926330818d1e23579bb4882ef52c991e90",
+        "state.json": "a654151d3b1bad3526a235c38977aeb51bd63c6092637a03c089feea92b284b9",
+        "host-supervision/state.json": "a654151d3b1bad3526a235c38977aeb51bd63c6092637a03c089feea92b284b9",
+        "runs/train96/result.json": "e325b05be02e52696477191b922db4329badf4731fcfbf6203542657aca6f74e",
+        "runs/train96/.done": "e325b05be02e52696477191b922db4329badf4731fcfbf6203542657aca6f74e",
+        "runs/eval96/result.json": "5a5e655deb3fb96bcfb018b65b3650e69f27926e07d8b082e279e2ce665728e3",
+        "runs/eval96/.done": "5a5e655deb3fb96bcfb018b65b3650e69f27926e07d8b082e279e2ce665728e3",
+        "host-supervision/train96-guardian.json": "52acfc74ed4daf9b6a9e2e1fb2ceb53f83693471501929eb2f6ab975ccd2dcaf",
+        "host-supervision/eval96-guardian.json": "935aa5b5095f6e2cc265d31ee3ebcda423e6456198fe6dff5ad64f6c26282a5d"
+      },
+      "acceptance_sha256": {
+        "acceptance-train96.json": "0b678ca3eb9c9a024dbfaadd61e0d13fc3056269573b19b993ccc65d851f098d",
+        "acceptance-eval96.json": "571aa81dba4711b14305c8d7a66c3c53837435db1f263551c21219a9b92cda74"
+      },
+      "checkpoint": "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long/runs/train96/checkpoints/global_step_96",
+      "checkpoint_files": {
+        "data.pt": 1947,
+        "sc2_state.pt": 29943,
+        "actor/model_world_size_8_rank_0.pt": 2778173291,
+        "actor/model_world_size_8_rank_1.pt": 2778173291,
+        "actor/model_world_size_8_rank_2.pt": 2778173291,
+        "actor/model_world_size_8_rank_3.pt": 2778173291,
+        "actor/model_world_size_8_rank_4.pt": 2777907051,
+        "actor/model_world_size_8_rank_5.pt": 2777907051,
+        "actor/model_world_size_8_rank_6.pt": 2777907051,
+        "actor/model_world_size_8_rank_7.pt": 2777907051,
+        "actor/optim_world_size_8_rank_0.pt": 5166248083,
+        "actor/optim_world_size_8_rank_1.pt": 5166248083,
+        "actor/optim_world_size_8_rank_2.pt": 5166248083,
+        "actor/optim_world_size_8_rank_3.pt": 5166248083,
+        "actor/optim_world_size_8_rank_4.pt": 5166248083,
+        "actor/optim_world_size_8_rank_5.pt": 5166248083,
+        "actor/optim_world_size_8_rank_6.pt": 5166248083,
+        "actor/optim_world_size_8_rank_7.pt": 5166248083,
+        "actor/extra_state_world_size_8_rank_0.pt": 15141,
+        "actor/extra_state_world_size_8_rank_1.pt": 15141,
+        "actor/extra_state_world_size_8_rank_2.pt": 15141,
+        "actor/extra_state_world_size_8_rank_3.pt": 15077,
+        "actor/extra_state_world_size_8_rank_4.pt": 15141,
+        "actor/extra_state_world_size_8_rank_5.pt": 15205,
+        "actor/extra_state_world_size_8_rank_6.pt": 15077,
+        "actor/extra_state_world_size_8_rank_7.pt": 15141
+      },
+      "containers": {
+        "train96": {
+          "id": "6eab1fd728b6efe0309c2e139fa8b865f7c2a53d30bba4ae637064c74d6780e4",
+          "name": "/sc2-l7-followup197-20260922-r4-spb-same-long-train96",
+          "owner": "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long",
+          "state": {
+            "Dead": false,
+            "Error": "",
+            "ExitCode": 0,
+            "FinishedAt": "2026-09-23T03:45:47.272672921Z",
+            "OOMKilled": false,
+            "Paused": false,
+            "Pid": 0,
+            "Restarting": false,
+            "Running": false,
+            "StartedAt": "2026-09-22T14:45:12.924428977Z",
+            "Status": "exited"
+          }
+        },
+        "eval96": {
+          "id": "c396f9a1acc91b80aa39df52502a237ed6b7319df6f609102f68910ab9e86e51",
+          "name": "/sc2-l7-followup197-20260922-r4-spb-same-long-eval96",
+          "owner": "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long",
+          "state": {
+            "Dead": false,
+            "Error": "",
+            "ExitCode": 0,
+            "FinishedAt": "2026-09-23T03:58:36.165349083Z",
+            "OOMKilled": false,
+            "Paused": false,
+            "Pid": 0,
+            "Restarting": false,
+            "Running": false,
+            "StartedAt": "2026-09-23T03:46:00.661846311Z",
+            "Status": "exited"
+          }
+        }
+      }
+    },
+    "spb-random": {
+      "root": "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/spb-random/long",
+      "runtime_sha": "83f3530765babe048035524ddf1651291810818a",
+      "host": {
+        "venv": "/data/yangjinyue/new-scii-spb2-system-baseline/envs/spb2-stageguard-r1",
+        "model": "/data/yangjinyue/sc2-spb2-level7-20260814/model",
+        "sc2": "/data/yangjinyue/sc2-spb2-level7-20260814/StarCraftII",
+        "image": "sha256:1a497d5721f89bb2e98c0273c4b1495f8fdc6921d589650d090871c11b8d1649"
+      },
+      "environment": {
+        "PYTHON_BIN": "/runtime/bin/python",
+        "MODEL_PATH": "/assets/spb",
+        "SC2PATH": "/assets/StarCraftII",
+        "LONG_DEPENDENCY_PATH": "/var/jfsCache/sc2-c197-20260919-r1/dependencies:/runtime/lib/python3.12/site-packages",
+        "HF_HUB_OFFLINE": "1",
+        "TRANSFORMERS_OFFLINE": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      },
+      "model_kind": "spb",
+      "model_mount": "/assets/spb",
+      "seed_protocol": "independent_uniform101",
+      "seed_group_mode": "mixed_seed_ablation",
+      "state": {
+        "version": "host-guardian-v1",
+        "phase": "completed",
+        "completed": [
+          "train96",
+          "eval96"
+        ],
+        "deadline": 1790356959.0174987,
+        "learning_validated": false,
+        "started_at": 1790187111.9027476,
+        "stage": "eval96",
+        "container_id": "a55875ca0978bc8a75233918251fa40e7851fb50c17a6104d7a2c3a34bf9e213",
+        "exit_code": 0,
+        "finished_at": 1790228711.9826033
+      },
+      "receipt_sha256": {
+        "deployment.json": "cf60986aac8819cc6245f030d4d04dd64dadc531966bc4733c6d21fe84821f0e",
+        "state.json": "b4b562f2badd4316aebd1cca8381c1006fe6f5786c662696435417f3fc77869f",
+        "host-supervision/state.json": "b4b562f2badd4316aebd1cca8381c1006fe6f5786c662696435417f3fc77869f",
+        "runs/train96/result.json": "5feb66bd0bc24fae031e879db25e2df3d05fc5fbcb905549b521d100cb81f53b",
+        "runs/train96/.done": "5feb66bd0bc24fae031e879db25e2df3d05fc5fbcb905549b521d100cb81f53b",
+        "runs/eval96/result.json": "614f184ebfb9a7e593d12ae0c82c8e9ecd25e065753bb7fecbb209fa4ebd0a2e",
+        "runs/eval96/.done": "614f184ebfb9a7e593d12ae0c82c8e9ecd25e065753bb7fecbb209fa4ebd0a2e",
+        "host-supervision/train96-guardian.json": "09b6936d89dbba2f78bd4235c1ac5f3f4df13f41135be046ce1ec8848c57cd61",
+        "host-supervision/eval96-guardian.json": "50dc6b64f128ca787f72916d570d5392a1b2a8ee549d9f64ac9c74f7fbf1d202"
+      },
+      "acceptance_sha256": {
+        "acceptance-train96.json": "49860fa66d7c291a6104770b5152ea73fbac780cdd7527d4b12133d5f29adf01",
+        "acceptance-eval96.json": "ddc7775b9dcad134a88ca86709b3933788cbafd1107ffeadcbebcb9a2df31867"
+      },
+      "checkpoint": "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/spb-random/long/runs/train96/checkpoints/global_step_96",
+      "checkpoint_files": {
+        "data.pt": 1947,
+        "sc2_state.pt": 30007,
+        "actor/model_world_size_8_rank_0.pt": 2778173291,
+        "actor/model_world_size_8_rank_1.pt": 2778173291,
+        "actor/model_world_size_8_rank_2.pt": 2778173291,
+        "actor/model_world_size_8_rank_3.pt": 2778173291,
+        "actor/model_world_size_8_rank_4.pt": 2777907051,
+        "actor/model_world_size_8_rank_5.pt": 2777907051,
+        "actor/model_world_size_8_rank_6.pt": 2777907051,
+        "actor/model_world_size_8_rank_7.pt": 2777907051,
+        "actor/optim_world_size_8_rank_0.pt": 5166248083,
+        "actor/optim_world_size_8_rank_1.pt": 5166248083,
+        "actor/optim_world_size_8_rank_2.pt": 5166248083,
+        "actor/optim_world_size_8_rank_3.pt": 5166248083,
+        "actor/optim_world_size_8_rank_4.pt": 5166248083,
+        "actor/optim_world_size_8_rank_5.pt": 5166248083,
+        "actor/optim_world_size_8_rank_6.pt": 5166248083,
+        "actor/optim_world_size_8_rank_7.pt": 5166248083,
+        "actor/extra_state_world_size_8_rank_0.pt": 15141,
+        "actor/extra_state_world_size_8_rank_1.pt": 15141,
+        "actor/extra_state_world_size_8_rank_2.pt": 15141,
+        "actor/extra_state_world_size_8_rank_3.pt": 15141,
+        "actor/extra_state_world_size_8_rank_4.pt": 15141,
+        "actor/extra_state_world_size_8_rank_5.pt": 15205,
+        "actor/extra_state_world_size_8_rank_6.pt": 15077,
+        "actor/extra_state_world_size_8_rank_7.pt": 15077
+      },
+      "containers": {
+        "train96": {
+          "id": "40d5a3f43a41fffb0eb51ea9a1c816b118cddef0b151464946d0c663fc024217",
+          "name": "/sc2-spb-l7random96-197-20260923-r1-long-train96",
+          "owner": "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/spb-random/long",
+          "state": {
+            "Dead": false,
+            "Error": "",
+            "ExitCode": 0,
+            "FinishedAt": "2026-09-24T01:26:50.114942322Z",
+            "OOMKilled": false,
+            "Paused": false,
+            "Pid": 0,
+            "Restarting": false,
+            "Running": false,
+            "StartedAt": "2026-09-23T18:11:52.44508979Z",
+            "Status": "exited"
+          }
+        },
+        "eval96": {
+          "id": "a55875ca0978bc8a75233918251fa40e7851fb50c17a6104d7a2c3a34bf9e213",
+          "name": "/sc2-spb-l7random96-197-20260923-r1-long-eval96",
+          "owner": "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/spb-random/long",
+          "state": {
+            "Dead": false,
+            "Error": "",
+            "ExitCode": 0,
+            "FinishedAt": "2026-09-24T05:45:08.735231316Z",
+            "OOMKilled": false,
+            "Paused": false,
+            "Pid": 0,
+            "Restarting": false,
+            "Running": false,
+            "StartedAt": "2026-09-24T05:36:13.312600411Z",
+            "Status": "exited"
+          }
+        }
+      }
+    }
+  },
+  "health": {
+    "hostname": "k8s-a-gpu01",
+    "gpu": "0, NVIDIA A100-SXM4-80GB, 2362, 0\n1, NVIDIA A100-SXM4-80GB, 2506, 0\n2, NVIDIA A100-SXM4-80GB, 2506, 0\n3, NVIDIA A100-SXM4-80GB, 2506, 0\n4, NVIDIA A100-SXM4-80GB, 2506, 0\n5, NVIDIA A100-SXM4-80GB, 2506, 0\n6, NVIDIA A100-SXM4-80GB, 2506, 0\n7, NVIDIA A100-SXM4-80GB, 2362, 0",
+    "compute": "2466761, ray::WorkerDict, 2340 MiB\n2466953, ray::WorkerDict, 2484 MiB\n2466954, ray::WorkerDict, 2484 MiB\n2466955, ray::WorkerDict, 2484 MiB\n2466956, ray::WorkerDict, 2484 MiB\n2466958, ray::WorkerDict, 2484 MiB\n2466957, ray::WorkerDict, 2484 MiB\n2466959, ray::WorkerDict, 2340 MiB",
+    "ram_available_kib": "MemAvailable:   678288448 kB",
+    "nvme_free_bytes": 1352728289280
+  },
+  "new_roots_exist": {
+    "sc2-l7-matrix256-197-20260924-r1": false,
+    "sc2-l7-matrix256-197-source-20260924-r1": false
+  }
+}

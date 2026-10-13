@@ -1,0 +1,400 @@
+{
+  "observed_at": "2026-09-24T01:58:25.705482+08:00",
+  "read_only": true,
+  "files": {
+    "deployment.json": {
+      "exists": true,
+      "bytes": 1177,
+      "sha256": "4fc0d11ba6f5fb2520d495c3054047badb17b0c2b65c0110ad3871114252a7f8"
+    },
+    "queue-state.json": {
+      "exists": true,
+      "bytes": 161,
+      "sha256": "2df183a2102a05d0bba1fd88502e7c85f03fcd5ffe53ea29a1235b183d4c7c4c"
+    },
+    "dispatch.json": {
+      "exists": true,
+      "bytes": 128,
+      "sha256": "d24fbfb655ecc422d9fd47e4cd9fad89e19e0edecb041222a1af4a5b2d42dff7"
+    },
+    "predecessor-acceptance.json": {
+      "exists": true,
+      "bytes": 179,
+      "sha256": "b6453b8c6e448272675ea1cc199c89a3f222b5008b014996fcf820d84caf028c"
+    },
+    "storage-state.json": {
+      "exists": true,
+      "bytes": 1435,
+      "sha256": "2340dc825f7188a6aca4e7152858cd9e7137efd55e105d61bf9fe80e8d689721"
+    },
+    "storage-failure.json": {
+      "exists": false
+    },
+    "spb-random/short/host-supervision/state.json": {
+      "exists": true,
+      "bytes": 308,
+      "sha256": "cd82f86ba9fe6a1feb5a20115495ab929e30b142b10b2330895d2366d3fed5da"
+    },
+    "spb-random/short/state.json": {
+      "exists": false
+    },
+    "spb-random/long/host-supervision/state.json": {
+      "exists": false
+    },
+    "spb-random/long/state.json": {
+      "exists": false
+    },
+    "spb-random/long/dispatch.json": {
+      "exists": false
+    },
+    "spb-random/long/parent-readiness.json": {
+      "exists": false
+    },
+    "spb-random/short/runs/train2/result.json": {
+      "exists": false
+    },
+    "spb-random/short/runs/train2/.done": {
+      "exists": false
+    },
+    "spb-random/short/acceptance-train2.json": {
+      "exists": false
+    },
+    "spb-random/short/runs/train2/manifest.json": {
+      "exists": true,
+      "bytes": 2943,
+      "sha256": "83335fae185105bed4ee9e415f8ef90827b45cd9757bcf245cc64a35b9e7a20f"
+    },
+    "spb-random/short/host-supervision/train2-guardian.json": {
+      "exists": true,
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "spb-random/short/admission-train2.json": {
+      "exists": true,
+      "bytes": 179,
+      "sha256": "35a44a188e69ed6fd470f9753dcb2e78befb54313168bfbcb3bd38b3422c82d0"
+    },
+    "spb-random/short/runs/train2/evaluation_seeds.jsonl": {
+      "exists": false
+    },
+    "spb-random/short/runs/train2/training_seeds.jsonl": {
+      "exists": true,
+      "bytes": 242,
+      "sha256": "e6fd6d694811367de8b1023e20ba103d0cfbaab581ac1100ae78d4398007676f"
+    },
+    "spb-random/short/runs/train2/checkpoint_evaluation.json": {
+      "exists": false
+    },
+    "spb-random/short/runs/train2/checkpoints/resume_state.json": {
+      "exists": false
+    },
+    "spb-random/short/runs/train2/episode_outcomes.jsonl": {
+      "exists": true,
+      "bytes": 3664,
+      "sha256": "1036ef5469a04dfc199ce9d208cfa3b84ef55c8ae697e0fcd603200775fe0a68"
+    },
+    "spb-random/short/runs/train2/checkpoints/sc2_policy_credit_audit.jsonl": {
+      "exists": true,
+      "bytes": 416,
+      "sha256": "e1419365ab24e7243f41fd7aec54d072d7a5876867741d8472962c2e770072ed"
+    }
+  },
+  "states": {
+    "deployment.json": {
+      "runtime_sha": "83f3530765babe048035524ddf1651291810818a",
+      "controller_sha": "83f3530765babe048035524ddf1651291810818a",
+      "controller_source": "/var/jfsCache/sc2-spb-l7random96-197-source-20260923-r1/code",
+      "orchestration_sha": "9a7b0faca5b145a891ad211f189121e4949f0eab",
+      "parts": [
+        "spb-random/short",
+        "spb-random/long"
+      ],
+      "predecessor": "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2",
+      "predecessor_sha": "34154283a8298ac4fbaab1c63770a6b81f7d375c",
+      "predecessor_deadline": 1790308720.0467553,
+      "first_dispatch_by": 1790312320.0467553,
+      "wall_seconds": 172800,
+      "gpu_hours": 384,
+      "output_limit_bytes": 1099511627776,
+      "storage_roots": [
+        "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1",
+        "/var/jfsCache/sc2-spb-l7random96-197-source-20260923-r1"
+      ],
+      "new_games": 792,
+      "new_updates": 96,
+      "short_included": true,
+      "no_retry": true,
+      "successors_authorized": false,
+      "authorization": "Sep23 user approved original SpB L7 per-game independent seed short+96 AFTER current Qwen nativeCP8 train+eval complete acceptance; 792new games/96PPO; <=48wallh/384GPUh/1TiB including short/loading/waits/CP/eval; no other arm or retry"
+    },
+    "queue-state.json": {
+      "phase": "running-unverified",
+      "completed": [],
+      "first_dispatch_by": 1790312320.0467553,
+      "part": "spb-random/short",
+      "deadline": 1790356959.0174987
+    },
+    "dispatch.json": {
+      "start": 1790184159.0174987,
+      "deadline": 1790356959.0174987,
+      "gpu_hours": 384,
+      "new_games": 792,
+      "new_updates": 96
+    },
+    "predecessor-acceptance.json": {
+      "passed": true,
+      "root": "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2",
+      "runtime_sha": "34154283a8298ac4fbaab1c63770a6b81f7d375c",
+      "checked_at": 1790184158.693586
+    },
+    "storage-state.json": {
+      "command": [
+        "du",
+        "-sb",
+        "--null",
+        "--",
+        "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1",
+        "/var/jfsCache/sc2-spb-l7random96-197-source-20260923-r1"
+      ],
+      "roots": [
+        "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1",
+        "/var/jfsCache/sc2-spb-l7random96-197-source-20260923-r1"
+      ],
+      "started_at": 1790186297.5374002,
+      "deadline": 1790356959.0174987,
+      "limit": 1099511627776,
+      "bytes": 850883079,
+      "returncode": 0,
+      "status": "measured",
+      "stdout": {
+        "tail": "830934133\t/var/jfsCache/sc2-spb-l7random96-197-20260923-r1\u000019948946\t/var/jfsCache/sc2-spb-l7random96-197-source-20260923-r1\u0000",
+        "characters": 124,
+        "truncated": false
+      },
+      "stderr": {
+        "tail": "",
+        "characters": 0,
+        "truncated": false
+      },
+      "quiescence": {
+        "version": "host-guardian-v1",
+        "container_id": "612a6148306369771e177611693bfd1447460ff026c8a102f1bad788ed106028",
+        "owner_root": "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/spb-random/short",
+        "guardian_pid": 1766513,
+        "paused_verified": true,
+        "cleanup": "verified-unpaused",
+        "paused_at": 1790186297.5883422,
+        "mode": "paused",
+        "resumed_at": 1790186297.677357
+      },
+      "measured_at": 1790186297.6428955,
+      "root_bytes": {
+        "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1": 830934133,
+        "/var/jfsCache/sc2-spb-l7random96-197-source-20260923-r1": 19948946
+      },
+      "checked_at": 1790186297.6775146
+    },
+    "storage-failure.json": null,
+    "spb-random/short/host-supervision/state.json": {
+      "version": "host-guardian-v1",
+      "phase": "running-unverified",
+      "completed": [
+        "pre"
+      ],
+      "deadline": 1790356959.0174987,
+      "learning_validated": false,
+      "started_at": 1790184159.0187504,
+      "stage": "train2",
+      "container_id": "612a6148306369771e177611693bfd1447460ff026c8a102f1bad788ed106028"
+    },
+    "spb-random/short/state.json": null,
+    "spb-random/long/host-supervision/state.json": null,
+    "spb-random/long/state.json": null,
+    "spb-random/long/dispatch.json": null,
+    "spb-random/long/parent-readiness.json": null
+  },
+  "stages": {
+    "short/train2": {
+      "result": null,
+      "outcomes": null,
+      "done_matches_result": null,
+      "acceptance_result_matches": null,
+      "acceptance_evidence": null,
+      "manifest": {
+        "model_id": "Panyuqi/SpikingBrain-2.0-instruct",
+        "model_revision": "sha256:de52e8ef993afc763f9d4fb498e8d8302ef0bc13bd7dfd53c6ae5f77f43698b5",
+        "source_commit": "83f3530765babe048035524ddf1651291810818a",
+        "dirty": false,
+        "world_size": 8,
+        "metrics_precision": "binary64-v1",
+        "mode": "training",
+        "start_step": 0,
+        "target_steps": 2
+      },
+      "guardian": null,
+      "container": {
+        "returncode": 0,
+        "data": {
+          "id": "612a6148306369771e177611693bfd1447460ff026c8a102f1bad788ed106028",
+          "owner": "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/spb-random/short",
+          "state": {
+            "Dead": false,
+            "Error": "",
+            "ExitCode": 0,
+            "FinishedAt": "0001-01-01T00:00:00Z",
+            "OOMKilled": false,
+            "Paused": false,
+            "Pid": 1766568,
+            "Restarting": false,
+            "Running": true,
+            "StartedAt": "2026-09-23T17:33:01.213732274Z",
+            "Status": "running"
+          }
+        },
+        "error": ""
+      },
+      "admission": {
+        "passed": true,
+        "checked_at": 1790184781.118687,
+        "deadline": 1790356959.0174987,
+        "eight_idle_gpus": true,
+        "ram_gib_min": 600,
+        "nvme_gib_min": 1084,
+        "fsync": true
+      },
+      "evaluation_seeds": null,
+      "training_seeds": [
+        {
+          "base_seed": 0,
+          "reset_index": 0,
+          "seed_protocol": "independent_uniform101",
+          "seeds": [
+            49,
+            97,
+            53,
+            5,
+            33,
+            65,
+            62,
+            51
+          ]
+        },
+        {
+          "base_seed": 0,
+          "reset_index": 1,
+          "seed_protocol": "independent_uniform101",
+          "seeds": [
+            100,
+            38,
+            61,
+            45,
+            74,
+            27,
+            64,
+            17
+          ]
+        }
+      ],
+      "checkpoint_evaluation.json": null,
+      "checkpoints/resume_state.json": null,
+      "console_tail": {
+        "total_bytes": 2409601,
+        "tail_bytes": 2409601,
+        "matched_count": 105,
+        "lines": [
+          "(SC2Worker pid=2514) Combat result reward: {\"pid\": 25801, \"game_loop\": 17600, \"boundary\": \"planner\", \"last_consumed_policy_action_id\": 12, \"killed_value\": 3325.0, \"lost_value\": 1450.0, \"scale\": 0.001, \"reward\": -0.05}",
+          "(SC2Worker pid=2509) Combat result reward: {\"pid\": 25681, \"game_loop\": 17492, \"boundary\": \"terminal\", \"last_consumed_policy_action_id\": 13, \"killed_value\": 7000.0, \"lost_value\": 1400.0, \"scale\": 0.001, \"reward\": 0.35000000000000003}",
+          "(SC2Worker pid=2514) Combat result reward: {\"pid\": 25801, \"game_loop\": 19144, \"boundary\": \"terminal\", \"last_consumed_policy_action_id\": 13, \"killed_value\": 3525.0, \"lost_value\": 5150.0, \"scale\": 0.001, \"reward\": -3.5}"
+        ],
+        "read_limit_bytes": 3145728
+      },
+      "returned_ppo": [
+        {
+          "step": 1,
+          "actor/grad_norm": 119.08253415425618,
+          "timing_s/update_actor": 168.143536365591,
+          "episode/success_rate": 0.625,
+          "episode/valid_action_ratio": 1,
+          "policy_credit/invalid_advantage_max": 0,
+          "timing_s/step": 683.9777640523389
+        }
+      ],
+      "audits": [
+        {
+          "real_answers": 46,
+          "valid_answers": 46,
+          "valid_ratio": 1,
+          "min_valid_ratio": 0.5,
+          "decision": "accept",
+          "reason": "validity_floor_passed",
+          "pending_global_step": 1,
+          "optimizer_updates_for_this_batch": 0
+        },
+        {
+          "real_answers": 79,
+          "valid_answers": 79,
+          "valid_ratio": 1,
+          "min_valid_ratio": 0.5,
+          "decision": "accept",
+          "reason": "validity_floor_passed",
+          "pending_global_step": 2,
+          "optimizer_updates_for_this_batch": 0
+        }
+      ],
+      "outcome_batches": [
+        {
+          "reset_index": 0,
+          "natural_games": 8,
+          "wins": 5,
+          "defeats": 3,
+          "truncated": 0,
+          "returned_ppo_observed": true
+        },
+        {
+          "reset_index": 1,
+          "natural_games": 8,
+          "wins": 3,
+          "defeats": 5,
+          "truncated": 0,
+          "returned_ppo_observed": false
+        }
+      ]
+    }
+  },
+  "schema": "spb-random-first-ppo-read-only-v1",
+  "ssh_alias": "sc2-a100-197",
+  "root": "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1",
+  "notification_events": [
+    "SpB independent-seed first actual returned PPO step1"
+  ],
+  "confirmed_updates": 1,
+  "completed_batch_consumed_answers": {
+    "total": 46,
+    "valid": 46
+  },
+  "next_batch": {
+    "reset_index": 1,
+    "natural_games": 8,
+    "wins": 3,
+    "valid_answers": 79,
+    "total_answers": 79,
+    "pre_update_audit_accepted": true,
+    "returned_ppo_observed": false
+  },
+  "actions": {
+    "server_mutation": false,
+    "duplicate_dispatch": false,
+    "automatic_repair_or_restart": false,
+    "gpu_diagnostics": false,
+    "checkpoint_contents_read": false,
+    "monitor_created_or_deleted": false
+  },
+  "limitations": [
+    "Only returned step1 is counted as an actual PPO. Pending step2 audit with optimizer_updates_for_this_batch=0 is pre-update evidence, not second-update completion.",
+    "Two natural batches (16 games,8 wins,125 valid consumed answers) have closed, but train2 result/.done/acceptance, post, CP2 parent-readiness and long dispatch are absent at this snapshot.",
+    "The initial 1 MiB tail did not contain the earlier returned step1 line; the bounded follow-up read was2409601 bytes within a3MiB tail cap. Earlier no-PPO-observed snapshots were not claims of zero completed updates.",
+    "Empty running guardian slot and missing part/state are expected until terminal synchronization.",
+    "Legality, finite positive gradient and training wins do not establish strategic learning, generalization or architecture superiority.",
+    "Original48h deadline1790356959.0174987 and all budgets remain unchanged; prior GPU/SC2/pre-completion and Qwen-completion events are not repeated."
+  ]
+}

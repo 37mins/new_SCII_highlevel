@@ -1,0 +1,24 @@
+{
+  "schema": "spb-early128197-readonly-completion-v1",
+  "observed_at": "2026-09-25T13:27:59+08:00",
+  "run_id": "sc2-spb-early128-197-20260925-r1",
+  "queue_phase": "completed",
+  "host_supervision_phase": "completed",
+  "exit_code": 0,
+  "completed_stages": 16,
+  "expected_stages": 16,
+  "acceptance_files": 16,
+  "done_files": 16,
+  "updates": 0,
+  "natural_games": 128,
+  "cp2": { "wins": 40, "games": 64 },
+  "cp8": { "wins": 37, "games": 64 },
+  "comparator_context": {
+    "released_spb_wins": 35,
+    "same_cp96_wins": 16,
+    "games_per_comparator": 64,
+    "same_paired_seed_set": true
+  },
+  "interpretation": "Descriptive totals only. Exact paired effects and intervals have not been recomputed in this read-only check.",
+  "action": "read-only status and small acceptance summaries; no GPU job or server mutation"
+}

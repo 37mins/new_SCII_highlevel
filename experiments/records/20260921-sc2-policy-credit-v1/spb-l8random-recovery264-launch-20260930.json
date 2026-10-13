@@ -1,0 +1,375 @@
+{
+  "schema_version": 1,
+  "checked_at": 1790730744.180458,
+  "runtime_sha": "d6932869ac75a34d6a244c8879c76ab61982d88a",
+  "source_root": "/var/jfsCache/sc2-spb-l8random-recovery264-197-source-20260930-r1/code",
+  "run_root": "/var/jfsCache/sc2-spb-l8random-recovery264-197-20260930-r1",
+  "queue_submission": {
+    "submitted_once": true,
+    "submitted_at_beijing": "2026-09-30T09:11:45+08:00",
+    "socket": "sc2_spb_l8random_recovery264_197_20260930_r1",
+    "session": "recovery_queue"
+  },
+  "remote_code_verified_before_dispatch": true,
+  "queue-state.json": {
+    "phase": "running-unverified",
+    "completed": [],
+    "new_games": 264,
+    "new_updates": 0,
+    "deadline": 1790759506.6293833
+  },
+  "dispatch.json": {
+    "start": 1790730706.6293833,
+    "deadline": 1790759506.6293833,
+    "gpu_hours": 64,
+    "new_games": 264,
+    "new_updates": 0,
+    "includes_gpu_preflight": true
+  },
+  "gpu-preflight-supervision/state.json": {
+    "version": "host-guardian-v1",
+    "phase": "completed",
+    "completed": [
+      "gpu-preflight"
+    ],
+    "deadline": 1790759506.6293833,
+    "learning_validated": false,
+    "started_at": 1790730706.6303701,
+    "stage": "gpu-preflight",
+    "container_id": "af17ec26935f019c7f77f1cbd9206b364a2b62da0a9aa0dcfa31d5c28231cb8e",
+    "exit_code": 0,
+    "finished_at": 1790730739.726309
+  },
+  "gpu-preflight/gpu-preflight.json": {
+    "passed": true,
+    "ranks": [
+      {
+        "rank": 0,
+        "visible_devices": "0",
+        "ray_gpu_ids": [
+          0
+        ],
+        "cuda_uuid": "40d97276-36a4-2cce-43ff-be66ca654177",
+        "master_port": 26277
+      },
+      {
+        "rank": 1,
+        "visible_devices": "1",
+        "ray_gpu_ids": [
+          1
+        ],
+        "cuda_uuid": "bea101a5-a727-20d0-2270-fb787dd6c7e0",
+        "master_port": 27953
+      },
+      {
+        "rank": 2,
+        "visible_devices": "2",
+        "ray_gpu_ids": [
+          2
+        ],
+        "cuda_uuid": "334e011d-8eb5-e72e-00a3-dcbd8aaf87e5",
+        "master_port": 29513
+      },
+      {
+        "rank": 3,
+        "visible_devices": "3",
+        "ray_gpu_ids": [
+          3
+        ],
+        "cuda_uuid": "a7707e1f-462b-7ed6-9d2c-97fe6c9acce4",
+        "master_port": 29692
+      },
+      {
+        "rank": 4,
+        "visible_devices": "4",
+        "ray_gpu_ids": [
+          4
+        ],
+        "cuda_uuid": "33ec7165-06e2-b141-97db-66711df3e176",
+        "master_port": 24773
+      },
+      {
+        "rank": 5,
+        "visible_devices": "5",
+        "ray_gpu_ids": [
+          5
+        ],
+        "cuda_uuid": "dd2c977f-d2f0-545a-dbfb-153f0a3b3c1b",
+        "master_port": 22064
+      },
+      {
+        "rank": 6,
+        "visible_devices": "6",
+        "ray_gpu_ids": [
+          6
+        ],
+        "cuda_uuid": "868e1fe3-a401-980d-e3fd-2fc4fb7d0e8f",
+        "master_port": 24250
+      },
+      {
+        "rank": 7,
+        "visible_devices": "7",
+        "ray_gpu_ids": [
+          7
+        ],
+        "cuda_uuid": "8347c82f-9c11-c3d9-37ab-016498436356",
+        "master_port": 23848
+      }
+    ],
+    "nccl_sums": [
+      28,
+      28,
+      28,
+      28,
+      28,
+      28,
+      28,
+      28
+    ],
+    "model_loaded": false,
+    "natural_games": 0,
+    "optimizer_updates": 0,
+    "runtime_environment": {
+      "resolved_config_sha256": "da73188e5337707c93d39b8bba71b06864fdd54c0abc9d8eb8162be3b4db855d",
+      "env_sha256": "9bf08f9333cdec8776ba026d1b2fe3fabdeefc86d0c7acd0647724baecf7fadd",
+      "env_var_names": [
+        "PYTHONPATH",
+        "RAY_TMPDIR",
+        "SC2PATH",
+        "SC2_ACCEPTANCE_STAGE",
+        "SC2_ACCEPT_TIMEOUT",
+        "SC2_AI_BUILD",
+        "SC2_ATTACK_ENGAGED_RETARGET_IDLE_ONLY",
+        "SC2_ATTACK_OPTION_ACCOUNT_ISSUED",
+        "SC2_ATTACK_ORDER_POSITION",
+        "SC2_ATTACK_TARGET_UNITS_FIRST",
+        "SC2_AUTO_TRAIN_MARINES",
+        "SC2_BO_ADDRESS",
+        "SC2_CLARIFY_BO_QUOTA",
+        "SC2_COMBAT_REWARD_SCALE",
+        "SC2_COMMAND_TRACE_DIR",
+        "SC2_DIFFICULTY",
+        "SC2_ENABLE_AIR_OPTIONS",
+        "SC2_ENABLE_NEWEXEC_MICRO",
+        "SC2_ENV_SEED",
+        "SC2_EPISODE_OUTCOME_LOG",
+        "SC2_EVAL_SEEDS_LOG_PATH",
+        "SC2_EXECUTION_FAILURE_FEEDBACK",
+        "SC2_EXPECTED_DIFFICULTY",
+        "SC2_FAIL_FAST_ON_ENV_ERROR",
+        "SC2_FIRST_LLM_ATTACK_MIN_UNITS",
+        "SC2_FIXED_BO_PREFIX_LIMIT",
+        "SC2_HOOLIGAN_STRUCTURE_FOCUS",
+        "SC2_L8_RENDEZVOUS_LOW_PORT",
+        "SC2_LLM_ATTACK_MIN_UNITS",
+        "SC2_MAX_FORCED_ATTACKS",
+        "SC2_MAX_STEPS",
+        "SC2_NEWEXEC_BASIC_HOOLIGAN",
+        "SC2_NEWEXEC_DEFENSE_MICRO",
+        "SC2_NEWEXEC_FIGHT_MICRO",
+        "SC2_NEWEXEC_HOOLIGAN_ALLY_POWER_RADIUS",
+        "SC2_NEWEXEC_HOOLIGAN_BIO",
+        "SC2_NEWEXEC_HOOLIGAN_RETREAT",
+        "SC2_NEWEXEC_REQUIRE_TECH_UNIT",
+        "SC2_NEWEXEC_SPECIAL_ABILITIES",
+        "SC2_ORIGINAL_BO_SEGMENT",
+        "SC2_ORIGINAL_GAME_SEEDS",
+        "SC2_PLANNER_PROTOCOL",
+        "SC2_PLAN_BULLET_MAX",
+        "SC2_PLAN_SEGMENT_MAX",
+        "SC2_PRESERVE_VALID_BO",
+        "SC2_PRE_ACTION_TERMINAL_DRAIN_TIMEOUT",
+        "SC2_REINFORCEMENT_MIN_UNITS",
+        "SC2_REINFORCEMENT_TIMER",
+        "SC2_RESET_CONCURRENCY",
+        "SC2_RESET_RETRIES",
+        "SC2_ROLLOUT_N",
+        "SC2_RUNTIME_LOG_ROOT",
+        "SC2_SEED_PYTHON_RANDOM",
+        "SC2_STEP_SHAPING_MODE",
+        "SC2_STRATEGY_PROFILE",
+        "SC2_TERMINAL_ACK_TIMEOUT",
+        "SC2_TRAIN_SEEDS_LOG_PATH",
+        "SC2_TRAIN_SEED_PROTOCOL",
+        "TMPDIR"
+      ],
+      "overridden_env_vars": [
+        "RAY_TMPDIR",
+        "TMPDIR"
+      ],
+      "worker_process_setup_hook": "spb_l8random_recovery_hook.install",
+      "stage": "diagnostic-cp96",
+      "required_worker_module": "feedback_eval"
+    }
+  },
+  "host-supervision/state.json": {
+    "version": "host-guardian-v1",
+    "phase": "running-unverified",
+    "completed": [],
+    "deadline": 1790759506.6293833,
+    "learning_validated": false,
+    "started_at": 1790730739.7269616,
+    "stage": "diagnostic-cp96",
+    "container_id": "0141aeb141a545da48c44c4acc8e44043828f0c732c826aabe727215dbf26d7d"
+  },
+  "container": {
+    "id": "0141aeb141a545da48c44c4acc8e44043828f0c732c826aabe727215dbf26d7d",
+    "name": "/sc2-spb-l8random-recovery264-197-20260930-r1-diagnostic-cp96",
+    "state": {
+      "Dead": false,
+      "Error": "",
+      "ExitCode": 0,
+      "FinishedAt": "0001-01-01T00:00:00Z",
+      "OOMKilled": false,
+      "Paused": false,
+      "Pid": 2595824,
+      "Restarting": false,
+      "Running": true,
+      "StartedAt": "2026-09-30T01:12:20.754027619Z",
+      "Status": "running"
+    },
+    "owner": "/var/jfsCache/sc2-spb-l8random-recovery264-197-20260930-r1",
+    "gpu": [
+      {
+        "Capabilities": [
+          [
+            "gpu"
+          ]
+        ],
+        "Count": -1,
+        "DeviceIDs": null,
+        "Driver": "",
+        "Options": {}
+      }
+    ]
+  },
+  "startup": {
+    "checked_at": 1790730842.550726,
+    "manifest.json": {
+      "source_commit": "d6932869ac75a34d6a244c8879c76ab61982d88a",
+      "dirty": false,
+      "world_size": 8,
+      "metrics_precision": "binary64-v1",
+      "finalization_mode": "terminal-drain-v1",
+      "model_revision": "sha256:de52e8ef993afc763f9d4fb498e8d8302ef0bc13bd7dfd53c6ae5f77f43698b5",
+      "model_manifest_sha256": "40d6f1417568d5fda1107cdafd66c7441a679b03fb148851c8f226ecc9cf884c"
+    },
+    "checkpoint_evaluation.json": null,
+    "terminal-intent.json": null,
+    "result.json": null,
+    ".done": null,
+    "host-supervision/state.json": {
+      "phase": "running-unverified",
+      "stage": "diagnostic-cp96",
+      "container_id": "0141aeb141a545da48c44c4acc8e44043828f0c732c826aabe727215dbf26d7d",
+      "completed": []
+    },
+    "queue-state.json": {
+      "phase": "running-unverified",
+      "completed": []
+    },
+    "suite-storage/storage-state.json": {
+      "bytes": 323423069883,
+      "limit": 377957122048,
+      "returncode": 0,
+      "stderr": {
+        "tail": "",
+        "characters": 0,
+        "truncated": false
+      },
+      "checked_at": 1790730835.1323402,
+      "quiescence": {
+        "version": "host-guardian-v1",
+        "container_id": "0141aeb141a545da48c44c4acc8e44043828f0c732c826aabe727215dbf26d7d",
+        "owner_root": "/var/jfsCache/sc2-spb-l8random-recovery264-197-20260930-r1",
+        "guardian_pid": 2595767,
+        "paused_verified": true,
+        "cleanup": "verified-unpaused",
+        "paused_at": 1790730834.8027258,
+        "mode": "paused",
+        "resumed_at": 1790730835.132225
+      }
+    },
+    "new-storage/storage-state.json": {
+      "bytes": 55167124,
+      "limit": 34359738368,
+      "returncode": 0,
+      "stderr": {
+        "tail": "",
+        "characters": 0,
+        "truncated": false
+      },
+      "checked_at": 1790730835.1323402,
+      "quiescence": {
+        "version": "host-guardian-v1",
+        "container_id": "0141aeb141a545da48c44c4acc8e44043828f0c732c826aabe727215dbf26d7d",
+        "owner_root": "/var/jfsCache/sc2-spb-l8random-recovery264-197-20260930-r1",
+        "guardian_pid": 2595767,
+        "paused_verified": true,
+        "cleanup": "verified-unpaused",
+        "paused_at": 1790730834.8027258,
+        "mode": "paused",
+        "resumed_at": 1790730835.132225
+      }
+    },
+    "bounded_markers": []
+  },
+  "first_actual_load": {
+    "checked_at": 1790730974.392832,
+    "checkpoint_evaluation.json": {
+      "checkpoint": "/var/jfsCache/sc2-spb-l8random96-197-20260929-r2/spb-random/long/runs/train96/checkpoints/global_step_96",
+      "loaded_global_step": 96,
+      "checkpoint_load_returned": true,
+      "val_only": true,
+      "optimizer_updates": 0,
+      "feedback": "0",
+      "temperature": 0.8,
+      "do_sample": true,
+      "games": 8,
+      "game_seeds": [
+        605183188,
+        1075501356,
+        2084414326,
+        2203880230,
+        3000371298,
+        949752300,
+        3225036469,
+        2823708076
+      ],
+      "answers": "online original SpB or explicitly adopted failed-r2 artifact; no replacement",
+      "optimizer_loaded_by_existing_loader_but_not_updated": true
+    },
+    "terminal-intent.json": null,
+    "result.json": null,
+    ".done": null,
+    "host": {
+      "version": "host-guardian-v1",
+      "phase": "running-unverified",
+      "completed": [],
+      "deadline": 1790759506.6293833,
+      "learning_validated": false,
+      "started_at": 1790730739.7269616,
+      "stage": "diagnostic-cp96",
+      "container_id": "0141aeb141a545da48c44c4acc8e44043828f0c732c826aabe727215dbf26d7d"
+    },
+    "queue": {
+      "phase": "running-unverified",
+      "completed": [],
+      "new_games": 264,
+      "new_updates": 0,
+      "deadline": 1790759506.6293833
+    },
+    "bounded_markers": [
+      "\u001b[36m(SC2Worker pid=2507)\u001b[0m 2026-09-29 18:15:50.013 | INFO     | sc2.protocol:_execute:120 - Client status changed to Status.in_game (was None)",
+      "\u001b[36m(SC2Worker pid=2516)\u001b[0m 2026-09-29 18:15:56.473 | INFO     | sc2.protocol:_execute:120 - Client status changed to Status.in_game (was None)",
+      "\u001b[36m(SC2Worker pid=2506)\u001b[0m 2026-09-29 18:16:02.974 | INFO     | sc2.protocol:_execute:120 - Client status changed to Status.in_game (was None)",
+      "\u001b[36m(SC2Worker pid=2511)\u001b[0m 2026-09-29 18:16:09.346 | INFO     | sc2.protocol:_execute:120 - Client status changed to Status.in_game (was None)"
+    ],
+    "outcome_lines": 0
+  },
+  "limitations": [
+    "This is approved failed-r2 weight evaluation, not a training rerun or retroactive acceptance.",
+    "Eight-GPU preflight has no model/game/PPO and does not prove checkpoint load or terminal-drain repair.",
+    "Diagnostic8 must pass before selection128 and primary128; no automatic retry, deletion, or CP192."
+  ]
+}

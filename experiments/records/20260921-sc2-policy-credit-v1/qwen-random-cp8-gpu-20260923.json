@@ -1,0 +1,85 @@
+{
+  "checked_at": 1790168923.4759505,
+  "checkpoints/resume_state.json": {
+    "from_checkpoint": "/var/jfsCache/sc2-l7-followup197-20260922-r4/qwen-random/long/runs/train96/checkpoints/global_step_8",
+    "global_step": 8,
+    "next_reset_index": 8,
+    "next_seeds": [
+      8,
+      24,
+      72,
+      28,
+      30,
+      18,
+      69,
+      57
+    ],
+    "source": "checkpoint",
+    "model_optimizer_dataloader_load_returned": true
+  },
+  "training_seeds.jsonl": [
+    {
+      "base_seed": 0,
+      "reset_index": 8,
+      "seed_protocol": "independent_uniform101",
+      "seeds": [
+        8,
+        24,
+        72,
+        28,
+        30,
+        18,
+        69,
+        57
+      ]
+    }
+  ],
+  "checkpoints/sc2_policy_credit_audit.jsonl": null,
+  "metrics.json": null,
+  "result.json": null,
+  ".done": null,
+  "console": {
+    "bytes": 73539,
+    "tail_offset": 0,
+    "tail_sha256": "6de4156a445028870aeddd994b696288898763376e0d5b5a08e64971466f852c",
+    "matches": [
+      "\u001b[36m(WorkerDict pid=4648)\u001b[0m SC2_ACTION_SUPPORT {\"budget\": 192, \"canonical_tokenizations_only\": true, \"eos_token_id\": 151645, \"mode\": \"sc2-canonical-bo-support-v1\", \"pad_token_id\": 151643, \"tokenizer_sha256\": \"a63080b4b30dc861fe1b0e420c53a241304dc81aff3d9bb315e6e33e2a1ab794\"}",
+      "\u001b[36m(WorkerDict pid=4459)\u001b[0m SC2_NO_THINKING {\"blocked_counts\": {\"\": 2, \"<\": 7, \"</\": 7, \"</t\": 2, \"</th\": 13, \"</thi\": 4, \"</thin\": 276, \"<t\": 2, \"<th\": 13, \"<thi\": 4, \"<thin\": 276}, \"forbidden_prefixes\": [\"<think\", \"</think\"], \"mode\": \"sc2-no-thinking-v1\", \"support_mask_sha256\": \"63a9546dd5fb39a64c6e2a2ad13f31101aacaade9bac07258d0e415480181e0d\"}",
+      "\u001b[36m(WorkerDict pid=4651)\u001b[0m SC2_ACTION_SUPPORT {\"budget\": 192, \"canonical_tokenizations_only\": true, \"eos_token_id\": 151645, \"mode\": \"sc2-canonical-bo-support-v1\", \"pad_token_id\": 151643, \"tokenizer_sha256\": \"a63080b4b30dc861fe1b0e420c53a241304dc81aff3d9bb315e6e33e2a1ab794\"}\u001b[32m [repeated 7x across cluster]\u001b[0m",
+      "\u001b[36m(WorkerDict pid=4651)\u001b[0m SC2_NO_THINKING {\"blocked_counts\": {\"\": 2, \"<\": 7, \"</\": 7, \"</t\": 2, \"</th\": 13, \"</thi\": 4, \"</thin\": 276, \"<t\": 2, \"<th\": 13, \"<thi\": 4, \"<thin\": 276}, \"forbidden_prefixes\": [\"<think\", \"</think\"], \"mode\": \"sc2-no-thinking-v1\", \"support_mask_sha256\": \"63a9546dd5fb39a64c6e2a2ad13f31101aacaade9bac07258d0e415480181e0d\"}\u001b[32m [repeated 7x across cluster]\u001b[0m",
+      "\u001b[36m(TaskRunner pid=2335)\u001b[0m SC2 resume restored: global_step=8, next_reset_index=8, episode_reset_index=7, source=checkpoint",
+      "\u001b[36m(SC2Worker pid=2505)\u001b[0m Acquired SC2 reset slot 0/1.",
+      "\u001b[36m(SC2Worker pid=2508)\u001b[0m Acquired SC2 reset slot 0/1.",
+      "\u001b[36m(SC2Worker pid=2511)\u001b[0m Acquired SC2 reset slot 0/1.",
+      "\u001b[36m(SC2Worker pid=2517)\u001b[0m Acquired SC2 reset slot 0/1."
+    ],
+    "tail": "[36m(SC2Worker pid=2511)\u001b[0m Bonus time: 0\n\u001b[36m(SC2Worker pid=2511)\u001b[0m Generate new plan... [0]\n\u001b[36m(SC2Worker pid=2511)\u001b[0m Step shaping reward off: 0.000\n\u001b[36m(SC2Worker pid=2511)\u001b[0m Combat result reward: {\"pid\": 7218, \"game_loop\": 0, \"boundary\": \"planner\", \"last_consumed_policy_action_id\": null, \"killed_value\": 0.0, \"lost_value\": 0.0, \"scale\": 0.001, \"reward\": 0.0}\n\u001b[36m(SC2Worker pid=2517)\u001b[0m Acquired SC2 reset slot 0/1.\n\u001b[36m(SC2Worker pid=2517)\u001b[0m Start server...\n\u001b[36m(SC2Worker pid=2517)\u001b[0m Server listens...\n\u001b[36m(SC2Worker pid=2517)\u001b[0m Start client...\n\u001b[36m(SC2Worker pid=2517)\u001b[0m 50119\n\u001b[36m(SC2Worker pid=2517)\u001b[0m AdjustAgent initialized. Classification logs will be saved to /var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2/runs/train96/sc2-logs/game-7248/default_player/Flat128_VeryHard_Air/Qwen3-30B/2026-09-23_06-08-38\n\u001b[36m(SC2Worker pid=2517)\u001b[0m Fixed BO handoff: {\"bo_sha256\": \"304b1f4ff12fe30c5e6d5f7b8eaef8ed6823ca65afed3a3706cae10e3639c494\", \"retained_prefix_count\": 0, \"withheld_indices_half_open\": [0, 237]}\n\u001b[36m(SC2Worker pid=2517)\u001b[0m Start to build game.\n\u001b[36m(SC2Worker pid=2517)\u001b[0m 2026-09-23 06:08:40.390 | INFO     | sc2.protocol:_execute:120 - Client status changed to Status.launched (was None)\n\u001b[36m(SC2Worker pid=2517)\u001b[0m 2026-09-23 06:08:40.390 | INFO     | sc2.controller:create_game:42 - Creating new game\n\u001b[36m(SC2Worker pid=2517)\u001b[0m 2026-09-23 06:08:40.390 | INFO     | sc2.controller:create_game:43 - Map:     Flat128\n\u001b[36m(SC2Worker pid=2517)\u001b[0m 2026-09-23 06:08:40.390 | INFO     | sc2.controller:create_game:44 - Players: Bot LLMPlayer(Terran), Computer VeryHard(Terran, Air)\n\u001b[36m(SC2Worker pid=2517)\u001b[0m 2026-09-23 06:08:40.392 | INFO     | sc2.protocol:_execute:120 - Client status changed to Status.init_game (was Status.launched)\n"
+  },
+  "queue-state.json": {
+    "phase": "running-unverified",
+    "stage": "train96",
+    "deadline": 1790308720.0467553
+  },
+  "host-supervision/state.json": {
+    "version": "host-guardian-v1",
+    "phase": "running-unverified",
+    "completed": [],
+    "deadline": 1790308720.0467553,
+    "learning_validated": false,
+    "started_at": 1790168798.0071752,
+    "stage": "train96",
+    "container_id": "fc2f74a4285c5e80660257f42bd1caa21ad1a0614699d680e74938f013106b06"
+  },
+  "version": "cp8-native-gpu-restore-v1",
+  "runtime_sha": "34154283a8298ac4fbaab1c63770a6b81f7d375c",
+  "first_gpu_restore_verified": true,
+  "first_sc2_verified": true,
+  "first_ppo_verified": false,
+  "all_eight_started_verified": false,
+  "limitations": [
+    "Partial first startup snapshot, not completed eight-game batch",
+    "No update completion evidence yet",
+    "Native CP8 restore does not erase historical CP2 non-bitwise ancestry",
+    "Startup scheduling and host pause equivalence not proved"
+  ]
+}

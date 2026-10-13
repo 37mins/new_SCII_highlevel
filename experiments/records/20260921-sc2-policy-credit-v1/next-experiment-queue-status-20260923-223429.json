@@ -1,0 +1,86 @@
+{
+  "observed_at": "2026-09-23T22:34:29.860055+08:00",
+  "root": "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2",
+  "deployment.json": {
+    "sha256": "0d40bcf2feac7c5415cdcf9e53f3c7452eaa387ca53a17c8d9db601c045fef84",
+    "selected": {
+      "runtime_sha": "34154283a8298ac4fbaab1c63770a6b81f7d375c",
+      "stages": [
+        "train96",
+        "eval96"
+      ],
+      "games": [
+        704,
+        8
+      ],
+      "updates": [
+        88,
+        0
+      ],
+      "no_retry": true,
+      "no_long_training": false,
+      "successors_authorized": false,
+      "suite_deadline": 1790420762.305692,
+      "start_step": 8,
+      "target_step": 96,
+      "deadline": 1790308720.0467553
+    }
+  },
+  "queue-state.json": {
+    "phase": "running-unverified",
+    "stage": "train96",
+    "deadline": 1790308720.0467553
+  },
+  "host-supervision/state.json": {
+    "version": "host-guardian-v1",
+    "phase": "running-unverified",
+    "completed": [],
+    "deadline": 1790308720.0467553,
+    "learning_validated": false,
+    "started_at": 1790168798.0071752,
+    "stage": "train96",
+    "container_id": "fc2f74a4285c5e80660257f42bd1caa21ad1a0614699d680e74938f013106b06"
+  },
+  "runs/train96/result.json": {
+    "exists": false
+  },
+  "runs/train96/.done": {
+    "exists": false
+  },
+  "runs/eval96/result.json": {
+    "exists": false
+  },
+  "runs/eval96/.done": {
+    "exists": false
+  },
+  "task": "User asks next experiment and whether queued; read-only queue/authorization audit",
+  "local_plan": "spb-l7-random197.md",
+  "conclusion": {
+    "scheduled_remaining_stage": "Current Qwen L7 independent-seed train96 then ownCP96 eval8/zero updates, gated by successful actual acceptance",
+    "subsequent_experiment": "SpB L7 independent-seed planned only; length/budget choice pending; not prepared/queued/dispatched",
+    "full_option": {
+      "fresh_original_spb": true,
+      "short_games": 32,
+      "total_train_phases": 96,
+      "total_games": 792,
+      "wall_hours_max": 48,
+      "gpu_hours_max": 384,
+      "storage_tib_max": 1,
+      "short_included": true
+    },
+    "short_only_option": {
+      "total_games": 32,
+      "train_phases": 2,
+      "wall_hours_max": 2,
+      "gpu_hours_max": 16,
+      "storage_gib_max": 128,
+      "auto_long_promotion": false
+    },
+    "no_new_authorization_in_status_question": true
+  },
+  "actions": {
+    "remote_writes": false,
+    "queue_changes": false,
+    "new_experiments": false
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "schema_version": 1,
+  "checked_at": 1790731405.8771217,
+  "runtime_sha": "d6932869ac75a34d6a244c8879c76ab61982d88a",
+  "scope": "First mandatory diagnostic8 accepted; whole264 evaluation not completed",
+  "run_root": "/var/jfsCache/sc2-spb-l8random-recovery264-197-20260930-r1",
+  "result_done_acceptance_agree": true,
+  "result": {
+    "status": "completed",
+    "ended_at": "2026-09-30T01:22:44.360889+00:00",
+    "mode": "evaluation",
+    "process_exit_code": 0,
+    "training_updates": 0,
+    "metrics": {
+      "val/text/test_score": -2.7123751640319824,
+      "val/text/tool_call_count/mean": 0,
+      "val/success_rate": 0.625,
+      "val/sc2_attack_ct": 0.375,
+      "val/sc2_action_valid": 1,
+      "val/sc2_semantic_action_valid": 1,
+      "val/sc2_semantic_action_evaluable": 1,
+      "val/sc2_projection_action_valid": 1,
+      "val/sc2_executor_action_valid": 1,
+      "val/sc2/episode_count": 8,
+      "val/sc2/no_policy_episode_count": 0,
+      "val/sc2/policy_decision_count": 29
+    },
+    "metrics_finite": true,
+    "response_record_count": 40,
+    "metrics_precision": "binary64-v1",
+    "evaluable_action_count": 29,
+    "valid_evaluable_action_count": 29,
+    "console_sha256": "1ac8c4caa6c69d47edb580995cdbb650869edebca707ed5e561de342a2755386",
+    "episode_outcomes": {
+      "trajectories": 8,
+      "natural_games": 8,
+      "wins": 5,
+      "defeats": 3,
+      "ties": 0,
+      "truncated": 0,
+      "natural_win_rate": 0.625
+    },
+    "natural_match_completed": true,
+    "termination_evidence": "game_result",
+    "replays_count": 8
+  },
+  "evidence": {
+    "consumed_answers": 29,
+    "valid_consumed_answers": 29,
+    "parsed_plans": 29,
+    "validated_queue_entries": 981,
+    "validated_locally_queued_commands": 504,
+    "execution_scope": "local Depot/Marine commands, not production completion or causal wins"
+  },
+  "rng": [
+    {
+      "rank": 0,
+      "seed": 0,
+      "cpu_rng_sha256": "1ccf17250133dec5e96478acd63e13d728d0dbbabb30389415a302c6f872f81f",
+      "cuda_rng_sha256": "374708fff7719dd5979ec875d56cd2286f6d3cf7ec317a3b25632aab28ec37bb"
+    },
+    {
+      "rank": 1,
+      "seed": 1,
+      "cpu_rng_sha256": "f5defda135ec2e0d1513e6979390f58397d31a904d5f6540f8b88ae64d1decc1",
+      "cuda_rng_sha256": "4cbbd8ca5215b8d161aec181a74b694f4e24b001d5b081dc0030ed797a8973e0"
+    },
+    {
+      "rank": 2,
+      "seed": 2,
+      "cpu_rng_sha256": "0f9cd7b642a3f8f641c5e992f17138b2d094db4d56cc2329b3be2c794ddc79ad",
+      "cuda_rng_sha256": "b1535c7783ea8829b6b0cf67704539798b4d16c39bf0bfe09494c5d9f12eee30"
+    },
+    {
+      "rank": 3,
+      "seed": 3,
+      "cpu_rng_sha256": "76fe321e2dc1dfdec62a274bcedbeea2727be2e2972f97e728e07e0345c21ede",
+      "cuda_rng_sha256": "59d5966c96af7ecad5c9d2918d6582d102b2c67f6b765ea28ac24371ab4f93be"
+    },
+    {
+      "rank": 4,
+      "seed": 4,
+      "cpu_rng_sha256": "de87e86bf2a7b448b35cba75c461560b4b6aa93e7843008c930221dee4551e0f",
+      "cuda_rng_sha256": "6b6f14e6af2627186bf8a55e474dcf6ef3f6ce81af560da871ec51eb670171a9"
+    },
+    {
+      "rank": 5,
+      "seed": 5,
+      "cpu_rng_sha256": "f4ef6f460154679cfe881f5d260e16f8ed904898fabc025c755a71e2692eb75c",
+      "cuda_rng_sha256": "966a28d35016032ee27b1860df4a9b16b6c007da76b2e4f94e7526e31c48959b"
+    },
+    {
+      "rank": 6,
+      "seed": 6,
+      "cpu_rng_sha256": "9e15eceb1ce9d2c2ffe7bcc8fa3155c1445def059cdd06b5429093164db849a7",
+      "cuda_rng_sha256": "5e9a5de4a59a7c3c9ba8846060ba77ab402e3088658aa705e1a64e796f6cd5cf"
+    },
+    {
+      "rank": 7,
+      "seed": 7,
+      "cpu_rng_sha256": "daf9268b18e87b0267a6ad240c6093eb98fe6f03872986bd31a497ba5ea2371a",
+      "cuda_rng_sha256": "76108f84396dc2d72ce275fdb0e0ef37b229b2898bf5a31d576fea11a766a42b"
+    }
+  ],
+  "seeds": [
+    605183188,
+    1075501356,
+    2084414326,
+    2203880230,
+    3000371298,
+    949752300,
+    3225036469,
+    2823708076
+  ],
+  "paired_with": [
+    "/var/jfsCache/sc2-spb-l8random96-197-20260929-r2/spb-random/short/runs/post"
+  ],
+  "recovery_contract_sha256": "f19ac30956197319b91a672eafd05e73898ede4e23e18f72ad18d8fef81f8e84",
+  "terminal_intent": {
+    "version": "terminal-drain-v1",
+    "run_id": "sc2-spb-l8random-recovery264-197-20260930-r1-diagnostic-cp96",
+    "output": "/var/jfsCache/sc2-spb-l8random-recovery264-197-20260930-r1/runs/diagnostic-cp96",
+    "source_commit": "d6932869ac75a34d6a244c8879c76ab61982d88a",
+    "task_fit_returned": true,
+    "experiment_accepted": false,
+    "pid": 2336,
+    "at": 1790731340.5143316
+  },
+  "guardian": {
+    "phase": "completed",
+    "container_id": "0141aeb141a545da48c44c4acc8e44043828f0c732c826aabe727215dbf26d7d",
+    "owner_root": "/var/jfsCache/sc2-spb-l8random-recovery264-197-20260930-r1",
+    "deadline": 1790759506.6293833,
+    "final_state": {
+      "Dead": false,
+      "Error": "",
+      "ExitCode": 0,
+      "FinishedAt": "2026-09-30T01:22:28.353836441Z",
+      "OOMKilled": false,
+      "Paused": false,
+      "Pid": 0,
+      "Restarting": false,
+      "Running": false,
+      "StartedAt": "2026-09-30T01:12:20.754027619Z",
+      "Status": "exited"
+    },
+    "error": null,
+    "pause_count": 39,
+    "last_pause_at": 1790731328.5086412
+  },
+  "container": {
+    "id": "0141aeb141a545da48c44c4acc8e44043828f0c732c826aabe727215dbf26d7d",
+    "state": {
+      "Dead": false,
+      "Error": "",
+      "ExitCode": 0,
+      "FinishedAt": "2026-09-30T01:22:28.353836441Z",
+      "OOMKilled": false,
+      "Paused": false,
+      "Pid": 0,
+      "Restarting": false,
+      "Running": false,
+      "StartedAt": "2026-09-30T01:12:20.754027619Z",
+      "Status": "exited"
+    },
+    "owner": "/var/jfsCache/sc2-spb-l8random-recovery264-197-20260930-r1"
+  },
+  "terminal_observation": {
+    "no_pauses_after_intent": true,
+    "seconds_intent_to_actual_exit": 7.838668346405029
+  },
+  "current_host_state": {
+    "version": "host-guardian-v1",
+    "phase": "running-unverified",
+    "completed": [
+      "diagnostic-cp96"
+    ],
+    "deadline": 1790759506.6293833,
+    "learning_validated": false,
+    "started_at": 1790730739.7269616,
+    "stage": "sel-b00-cp2",
+    "container_id": "88853e5960975fccfc6a19005ffff4d56370dac80a30c00c8dab6b32c2a25ebb"
+  },
+  "final_readonly_verification": {
+    "checked_at": 1790731480.0662067,
+    "artifact_sha256": {
+      "runs/diagnostic-cp96/result.json": "e89de213159b925215d177bf312787d5248d1da5b4e769b2401a89849702d32c",
+      "runs/diagnostic-cp96/.done": "e89de213159b925215d177bf312787d5248d1da5b4e769b2401a89849702d32c",
+      "runs/diagnostic-cp96/checkpoint_evaluation.json": "02a8f59afdf73255fe1c8f2c996d726778304b88ec2c4feb726561f1daa606ab",
+      "acceptance-diagnostic-cp96.json": "f714dcc999e1f2bc28e2fe022c5c805b8b1dc2df1b8bdd2ed56f5c5716ffe1a8",
+      "host-supervision/diagnostic-cp96-guardian.json": "1acbbbc80d366bb0463365e76d889fa7a9861393f93847b8671fb8a3d3010576"
+    },
+    "current_container": {
+      "id": "88853e5960975fccfc6a19005ffff4d56370dac80a30c00c8dab6b32c2a25ebb",
+      "name": "sc2-spb-l8random-recovery264-197-20260930-r1-sel-b00-cp2",
+      "status": "running",
+      "owner": "/var/jfsCache/sc2-spb-l8random-recovery264-197-20260930-r1",
+      "started_at": "2026-09-30T01:22:46.148274661Z",
+      "oom": false
+    },
+    "storage": {
+      "measured_at": 1790731475.3547142,
+      "suite_bytes": 323575595164,
+      "suite_limit": 377957122048,
+      "new_bytes": 207692405,
+      "new_limit": 34359738368,
+      "returncodes": [
+        0,
+        0
+      ],
+      "stderr_empty": true
+    }
+  },
+  "limitations": [
+    "One GPU terminal lifecycle validated; not proof all kernel/cgroup freeze errors are eliminated.",
+    "Old r2 remains failed/exit137; successful independent evaluation does not retroactively validate old strict training.",
+    "5/8 diagnostic is a reused eight-seed small sample, not learning or architecture evidence.",
+    "Current selection32 and primary64 results remain pending; no deletion/retry/PPO/CP192."
+  ]
+}

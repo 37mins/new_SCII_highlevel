@@ -1,0 +1,393 @@
+{
+  "schema": "sc2-startup-race-diagnosis-v1",
+  "checked_at": "2026-09-23T20:30:23.601339+08:00",
+  "authorization": "User approved diagnosis/repair and a controlled continuation proposal; no new GPU dispatch authorized in this turn.",
+  "branch": "codex/fix-sc2-startup-port-race",
+  "base_commit": "7bba013c47dd7750aecec3e1d6e275a95e95a62f",
+  "frozen_runtime": "9cb291ea5f50de205c5d88371e08ce229b7d9d04",
+  "observed": {
+    "checked_at": "2026-09-23T20:30:23.601339+08:00",
+    "log_tail": {
+      "path": "/var/jfsCache/sc2-l7-followup197-20260922-r4/qwen-random/long/runs/train96/console.log",
+      "bytes": 1048576,
+      "sha256": "be0d1c815a212b22f3e9ee1cc735bef58b59030433e1e481b378806661b1ebd3",
+      "port_and_error_lines": [
+        "(SC2Worker pid=2512) 2026-09-22 21:26:03.745 | INFO     | sc2.sc2process:_close_connection:241 - Closing connection at 33471...",
+        "(SC2Worker pid=2506) Error in env_a_process: Connection already closed.",
+        "(SC2Worker pid=2512) Error in env_a_process: Server disconnected",
+        "(SC2Worker pid=2512) aiohttp.client_exceptions.ServerDisconnectedError: Server disconnected",
+        "(SC2Worker pid=2512) aiohttp.client_exceptions.ServerDisconnectedError: Server disconnected",
+        "(SC2Worker pid=2506) 2026-09-22 21:26:03.781 | INFO     | sc2.sc2process:_close_connection:241 - Closing connection at 33471..."
+      ]
+    },
+    "startup_slot_lines": [
+      "(SC2Worker pid=2516) Acquired SC2 reset slot 7/8.",
+      "(SC2Worker pid=2504) Acquired SC2 reset slot 6/8. [repeated 7x across cluster]",
+      "(SC2Worker pid=2516) Acquired SC2 reset slot 7/8.",
+      "(SC2Worker pid=2504) Acquired SC2 reset slot 6/8. [repeated 7x across cluster]",
+      "(SC2Worker pid=2516) Acquired SC2 reset slot 7/8.",
+      "(SC2Worker pid=2504) Acquired SC2 reset slot 6/8. [repeated 7x across cluster]"
+    ],
+    "checkpoint8_inventory": [
+      {
+        "path": "actor/added_tokens.json",
+        "bytes": 707
+      },
+      {
+        "path": "actor/chat_template.jinja",
+        "bytes": 2630
+      },
+      {
+        "path": "actor/config.json",
+        "bytes": 1542
+      },
+      {
+        "path": "actor/extra_state_world_size_8_rank_0.pt",
+        "bytes": 15205
+      },
+      {
+        "path": "actor/extra_state_world_size_8_rank_1.pt",
+        "bytes": 15205
+      },
+      {
+        "path": "actor/extra_state_world_size_8_rank_2.pt",
+        "bytes": 15141
+      },
+      {
+        "path": "actor/extra_state_world_size_8_rank_3.pt",
+        "bytes": 15077
+      },
+      {
+        "path": "actor/extra_state_world_size_8_rank_4.pt",
+        "bytes": 15141
+      },
+      {
+        "path": "actor/extra_state_world_size_8_rank_5.pt",
+        "bytes": 15077
+      },
+      {
+        "path": "actor/extra_state_world_size_8_rank_6.pt",
+        "bytes": 15077
+      },
+      {
+        "path": "actor/extra_state_world_size_8_rank_7.pt",
+        "bytes": 15141
+      },
+      {
+        "path": "actor/generation_config.json",
+        "bytes": 213
+      },
+      {
+        "path": "actor/merges.txt",
+        "bytes": 1671853
+      },
+      {
+        "path": "actor/model_world_size_8_rank_0.pt",
+        "bytes": 2205943659
+      },
+      {
+        "path": "actor/model_world_size_8_rank_1.pt",
+        "bytes": 2205943659
+      },
+      {
+        "path": "actor/model_world_size_8_rank_2.pt",
+        "bytes": 2205943659
+      },
+      {
+        "path": "actor/model_world_size_8_rank_3.pt",
+        "bytes": 2205943659
+      },
+      {
+        "path": "actor/model_world_size_8_rank_4.pt",
+        "bytes": 2205943659
+      },
+      {
+        "path": "actor/model_world_size_8_rank_5.pt",
+        "bytes": 2205943659
+      },
+      {
+        "path": "actor/model_world_size_8_rank_6.pt",
+        "bytes": 2205943659
+      },
+      {
+        "path": "actor/model_world_size_8_rank_7.pt",
+        "bytes": 2205943659
+      },
+      {
+        "path": "actor/optim_world_size_8_rank_0.pt",
+        "bytes": 4022500763
+      },
+      {
+        "path": "actor/optim_world_size_8_rank_1.pt",
+        "bytes": 4022500763
+      },
+      {
+        "path": "actor/optim_world_size_8_rank_2.pt",
+        "bytes": 4022500763
+      },
+      {
+        "path": "actor/optim_world_size_8_rank_3.pt",
+        "bytes": 4022500763
+      },
+      {
+        "path": "actor/optim_world_size_8_rank_4.pt",
+        "bytes": 4022500763
+      },
+      {
+        "path": "actor/optim_world_size_8_rank_5.pt",
+        "bytes": 4022500763
+      },
+      {
+        "path": "actor/optim_world_size_8_rank_6.pt",
+        "bytes": 4022500763
+      },
+      {
+        "path": "actor/optim_world_size_8_rank_7.pt",
+        "bytes": 4022500763
+      },
+      {
+        "path": "actor/special_tokens_map.json",
+        "bytes": 613
+      },
+      {
+        "path": "actor/tokenizer.json",
+        "bytes": 11422654
+      },
+      {
+        "path": "actor/tokenizer_config.json",
+        "bytes": 5405
+      },
+      {
+        "path": "actor/vocab.json",
+        "bytes": 2776833
+      },
+      {
+        "path": "data.pt",
+        "bytes": 1947
+      },
+      {
+        "path": "sc2_state.pt",
+        "bytes": 30071
+      }
+    ],
+    "checkpoint_directories": [
+      "global_step_8"
+    ],
+    "training_seed_ledger": {
+      "path": "/var/jfsCache/sc2-l7-followup197-20260922-r4/qwen-random/long/runs/train96/training_seeds.jsonl",
+      "sha256": "036733e1ff08b557c9859f6c17cda606cd28b557cc50243ad2e6f2b3c62115f3",
+      "rows": 12,
+      "last": {
+        "base_seed": 0,
+        "reset_index": 13,
+        "seed_protocol": "independent_uniform101",
+        "seeds": [
+          84,
+          33,
+          60,
+          8,
+          11,
+          86,
+          96,
+          16
+        ]
+      }
+    },
+    "container": {
+      "Status": "exited",
+      "Running": false,
+      "Paused": false,
+      "Restarting": false,
+      "OOMKilled": false,
+      "Dead": false,
+      "Pid": 0,
+      "ExitCode": 1,
+      "Error": "",
+      "StartedAt": "2026-09-23T03:58:41.048790247Z",
+      "FinishedAt": "2026-09-23T04:26:16.347730538Z"
+    }
+  },
+  "terminal_receipts": {
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/queue-state.json": {
+      "sha256": "28d12345393b3b552f88a4381e9892ada85ca9b6acff3af4b7210cd44a305633",
+      "data": {
+        "phase": "failed",
+        "completed": [
+          "spb-same/short",
+          "spb-same/long"
+        ],
+        "deadline": 1790420762.305692,
+        "original_start": 1790075162.305692,
+        "spb_deadline": 1790247962.305692,
+        "part": "qwen-random/long",
+        "arm_deadline": 1790308720.0467553,
+        "error_type": "RuntimeError",
+        "error": "Stage container failed; no retry/successor"
+      }
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/qwen-random/long/state.json": {
+      "sha256": "8c734d7d685f93e8ba1470579cdfd0cfcfa77c69583599b11d76cff89c8aa5e7",
+      "data": {
+        "version": "host-guardian-v1",
+        "phase": "failed",
+        "completed": [],
+        "deadline": 1790308720.0467553,
+        "learning_validated": false,
+        "started_at": 1790135920.0564756,
+        "stage": "train96",
+        "container_id": "26aefed6c64033fba70d5f8668ef5c714ec35ed134402ab0cf8658d1e89bbf37",
+        "error_type": "RuntimeError",
+        "error": "Stage container failed; no retry/successor",
+        "finished_at": 1790137590.0728903
+      }
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/qwen-random/long/host-supervision/state.json": {
+      "sha256": "8c734d7d685f93e8ba1470579cdfd0cfcfa77c69583599b11d76cff89c8aa5e7",
+      "data": {
+        "version": "host-guardian-v1",
+        "phase": "failed",
+        "completed": [],
+        "deadline": 1790308720.0467553,
+        "learning_validated": false,
+        "started_at": 1790135920.0564756,
+        "stage": "train96",
+        "container_id": "26aefed6c64033fba70d5f8668ef5c714ec35ed134402ab0cf8658d1e89bbf37",
+        "error_type": "RuntimeError",
+        "error": "Stage container failed; no retry/successor",
+        "finished_at": 1790137590.0728903
+      }
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/qwen-random/long/runs/train96/result.json": {
+      "sha256": "f898382dbbdfd8fe673ae3fb2fb476e0137cc665df5f4a09c0118f267058e6c2",
+      "data": {
+        "status": "failed",
+        "ended_at": "2026-09-23T04:26:16.240785+00:00",
+        "process_exit_code": 1,
+        "completed_steps": 11,
+        "start_step": 2,
+        "last_global_step": 13,
+        "target_steps": 96,
+        "metrics_finite": true,
+        "metrics_precision": "binary64-v1",
+        "checkpoint_complete": false,
+        "console_sha256": "9dd85f42462ba935e0358b419a7c89eb140c7ef21fe27637381091ff8c8ac480",
+        "episode_outcomes": {
+          "trajectories": 88,
+          "natural_games": 88,
+          "wins": 76,
+          "defeats": 12,
+          "ties": 0,
+          "truncated": 0,
+          "natural_win_rate": 0.8636363636363636
+        },
+        "empty_policy_batches": []
+      }
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/qwen-random/long/runs/train96/.done": {
+      "sha256": "f898382dbbdfd8fe673ae3fb2fb476e0137cc665df5f4a09c0118f267058e6c2",
+      "data": {
+        "status": "failed",
+        "ended_at": "2026-09-23T04:26:16.240785+00:00",
+        "process_exit_code": 1,
+        "completed_steps": 11,
+        "start_step": 2,
+        "last_global_step": 13,
+        "target_steps": 96,
+        "metrics_finite": true,
+        "metrics_precision": "binary64-v1",
+        "checkpoint_complete": false,
+        "console_sha256": "9dd85f42462ba935e0358b419a7c89eb140c7ef21fe27637381091ff8c8ac480",
+        "episode_outcomes": {
+          "trajectories": 88,
+          "natural_games": 88,
+          "wins": 76,
+          "defeats": 12,
+          "ties": 0,
+          "truncated": 0,
+          "natural_win_rate": 0.8636363636363636
+        },
+        "empty_policy_batches": []
+      }
+    }
+  },
+  "frozen_env_sha256": "6edd12b1ae8f2a0042455e78b82be64024f3129320654889b85d2fd1cd4726d3",
+  "dependency_file_sha256": {
+    "/runtime/lib/python3.12/site-packages/sc2/sc2process.py": "f7c56f2f03b7503258a6c5c4b450ddbb295a6a137d41147b643d4e42d0077279",
+    "/runtime/lib/python3.12/site-packages/sc2/portconfig.py": "db39cfd8cc0c83d7719000d169a21c55a33f8a6783e1acf37d6610964d15e81f",
+    "/runtime/lib/python3.12/site-packages/portpicker.py": "44ec42a123d409e22ca054d69aaedfea4f530eca91f7a2d4350ba082dc9c6b9c"
+  },
+  "dependency_observations": [
+    "SC2Process.__init__ selects a free API port before Popen; portpicker's local probe socket is closed before SC2 binds. Default allocation has no shared reservation across independent processes.",
+    "Two worker prefixes (2512 and 2506) close port33471 at log timestamps21:26:03.745 and21:26:03.781. Log timestamps are retained verbatim; host terminal time is authoritative.",
+    "Dependency Popen uses stderr=DEVNULL; no preserved child bind-error diagnostic establishes the historical root cause conclusively.",
+    "Dependency _clean emits KILLED even when its child has already exited. That string alone is not evidence of OOM or an external kill.",
+    "Actual frozen launch had one SC2 reset attempt. 'after retries' does not prove multiple attempts."
+  ],
+  "interpretation": "A pick/close/bind collision is a strong causal candidate, not a proven unique historical root cause. The CPU reproduction validates the failure mechanism and cooperating-worker startup serialization, not real SC2/GPU equivalence.",
+  "candidate": {
+    "startup_concurrency": 1,
+    "reset_attempts": 1,
+    "rollout_games_per_step": 8,
+    "lock_scope": "Existing shared reset lease acquired before child launch and held until first observation, not whole game.",
+    "fail_closed": "Admission timeout raises before child launch; metadata/arm/clear failures release descriptors/leases.",
+    "unchanged": [
+      "model",
+      "training/evaluation seeds",
+      "action support",
+      "no-thinking support",
+      "reward",
+      "PPO",
+      "old frozen deployment",
+      "old failed results",
+      "absolute deadlines"
+    ],
+    "shared_lock_requirement": "All workers must see the same SC2_RESET_LOCK_DIR in one stage container. Uncoordinated external port users are not covered.",
+    "deployment_performed": false,
+    "gpu_validation_performed": false
+  },
+  "checks": {
+    "local_platform": "macOS CPU",
+    "startup_tests": {
+      "command": "python3 -m unittest discover -s tests -p test_sc2_reset_startup.py -v",
+      "passed": 9,
+      "skipped": 0,
+      "seconds": 1.906,
+      "earlier_sandbox_attempt": "7 passed; two localhost socket tests denied by sandbox. Same tests rerun with permission; all9 passed."
+    },
+    "regressions": {
+      "command": "PYTHONPATH=tests:. python3 -m unittest test_sc2_child_seed test_r6_natural_termination test_r6_terminal_policy_credit test_qwen_l7_long197 test_qwen_seed_acceptance197 -v",
+      "passed": 34,
+      "skipped": 0,
+      "seconds": 0.117
+    },
+    "manifest": "34/34 entries passed shasum -a 256 -c configs/system-v1.sha256",
+    "syntax": "bash -n experiments/records/20260921-sc2-policy-credit-v1/run_qwen_seed_arm.sh passed",
+    "remaining": "Actual Linux runtime/Hydra/nativeCP8 restoration and GPU startup/end-to-end checks not performed."
+  },
+  "continuation_proposal": {
+    "state": "not_dispatched_pending_explicit_approval",
+    "from_checkpoint": "/var/jfsCache/sc2-l7-followup197-20260922-r4/qwen-random/long/runs/train96/checkpoints/global_step_8",
+    "cp_inventory_only": true,
+    "cp_deserialization_or_load_verified": false,
+    "steps": "global9..96",
+    "new_ppo": 88,
+    "new_training_games": 704,
+    "new_terminal_eval_games": 8,
+    "duplicated_completed_games": 40,
+    "old_failed_step14_dispatched_slots": 8,
+    "original_qwen_long_slots": 760,
+    "proposed_cumulative_qwen_long_slots": 808,
+    "extra_slots_over_original_plan": 48,
+    "proposed_suite_cumulative_slot_cap": 1608,
+    "qwen_absolute_deadline": 1790308720.0467553,
+    "suite_absolute_deadline": 1790420762.305692,
+    "extend_wall_or_gpu_or_storage_budget": false,
+    "cp8_driver_rng_and_seed_protocol": "Not yet deserialized; must pass native verification before admission. Do not assume ledger fallback or skip this gate.",
+    "expected_reset_index_after_cp8": 8,
+    "separate_smoke_slots": 0,
+    "stage_first_batch": "Treat the actual resumed first batch as the startup acceptance gate; no extra games or automatic retry.",
+    "inherited_cp_gates": "New native continuation contract must account for retained CP8 provenance and all94 global3..96 completed lineage steps without claiming the failed r4 run passed terminal acceptance."
+  },
+  "remote_mutations": [],
+  "monitor_created": false
+}

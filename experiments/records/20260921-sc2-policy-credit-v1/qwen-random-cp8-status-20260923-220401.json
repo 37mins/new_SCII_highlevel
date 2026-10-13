@@ -1,0 +1,165 @@
+{
+  "observed_at": "2026-09-23T22:04:01.341418+08:00",
+  "task": "Read-only experiment progress synthesis; no experiment mutation or added GPU work",
+  "runtime_sha": "34154283a8298ac4fbaab1c63770a6b81f7d375c",
+  "runtime_source": "qwen-random-cp8-launch-20260923.json (previously frozen launch receipt)",
+  "root": "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2",
+  "queue": {
+    "phase": "running-unverified",
+    "stage": "train96",
+    "deadline": 1790308720.0467553,
+    "sha256": "bef692ae73ff470ad9b6f68016db6066700ede4ff40bbe68a9a1c7a0513ed821"
+  },
+  "host": {
+    "phase": "running-unverified",
+    "stage": "train96",
+    "completed": [],
+    "learning_validated": false,
+    "sha256": "320003d824465cd1a3886b11eb84312d94226448829b88c292090f66554d3d72"
+  },
+  "container": {
+    "id": "fc2f74a4285c5e80660257f42bd1caa21ad1a0614699d680e74938f013106b06",
+    "status": "running",
+    "paused": false,
+    "oom_killed": false,
+    "error": "",
+    "started_at": "2026-09-23T13:06:39.085218914Z",
+    "note": "Running-container ExitCode0 is not terminal success."
+  },
+  "terminal": {
+    "train_result": false,
+    "train_done": false,
+    "eval_result": false,
+    "root_state": false,
+    "guardian": "precreated empty terminal slot; not failure"
+  },
+  "console_tail": {
+    "path": "runs/train96/console.log",
+    "file_bytes": 8886963,
+    "read_bytes": 4194304,
+    "sha256": "45da902a0aba4c35021a13ed9c4271b576b2de4826e79d3a2f423400bd08f577",
+    "returned_steps": [
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27
+    ],
+    "latest": [
+      {
+        "step": 25,
+        "grad_norm": 11.233113477588631,
+        "update_actor_seconds": 14.392104398459196,
+        "training_success_rate": 0.875,
+        "valid_action_ratio": 1,
+        "invalid_advantage_max": 0
+      },
+      {
+        "step": 26,
+        "grad_norm": 0.1482410317112226,
+        "update_actor_seconds": 11.634467116557062,
+        "training_success_rate": 1,
+        "valid_action_ratio": 1,
+        "invalid_advantage_max": 0
+      },
+      {
+        "step": 27,
+        "grad_norm": 14.239273846149445,
+        "update_actor_seconds": 14.68054775800556,
+        "training_success_rate": 0.75,
+        "valid_action_ratio": 1,
+        "invalid_advantage_max": 0
+      }
+    ]
+  },
+  "audit": {
+    "rows": 19,
+    "steps": [
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27
+    ],
+    "decisions": [
+      "accept"
+    ],
+    "real_answers": 481,
+    "valid_answers": 481,
+    "note": "Pre-update audits alone do not prove returned PPO. Prior committed steps9–24 plus new console25–27 establish19 returned phases."
+  },
+  "outcome_ledger": {
+    "rows": 158,
+    "wins": 138,
+    "all_terminated_without_truncation": true,
+    "reset_indices": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27
+    ],
+    "note": "Includes in-progress reset27/step28 outcomes. Do not label all158 as completed PPO training data; this turn did not aggregate per-reset counts."
+  },
+  "storage": {
+    "arm_bytes": 200502927630,
+    "suite_bytes": 1031822159494,
+    "arm_sha256": "978c2e55120ecb1d7deadfde4d5bcdd2bcf84e8364269eb1bafe241bc1ea8579",
+    "suite_sha256": "47750b0806e4f24a7ba608f28c6ea032031b0c023f90dd51e927c167c55e0e1d",
+    "both_roots_count": 15,
+    "both_returncode": 0,
+    "both_status": "measured",
+    "both_stderr": {
+      "tail": "",
+      "characters": 0,
+      "truncated": false
+    },
+    "arm_failure_exists": false,
+    "suite_failure_exists": false,
+    "note": "Existing receipts read only; no new du, no old-value fallback."
+  },
+  "collection_limits": [
+    "SSH alias sc2-a100-197 only",
+    "JSON/JSONL capped at1MiB per file; console last4MiB",
+    "Exact owned container State read only",
+    "No checkpoint contents, GPU diagnostics, server writes, retries, relaunch, new arm, automation change or Yuque mutation"
+  ],
+  "prior_evidence": [
+    "qwen-random-cp8-first-ppo-20260923.json",
+    "qwen-random-cp8-heartbeat-20260923-215502.json"
+  ],
+  "conclusion": "Progress throughglobal27; no new failure seen; final learning outcome pending ownCP96 paired zero-update evaluation."
+}

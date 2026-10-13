@@ -1,0 +1,85 @@
+{
+  "status": "failed-cpu-admission-not-queued",
+  "runtime_sha": "ce17791ada743e37959df2ef114ba73cfc575eb4",
+  "runtime_remote_verified_before_deployment": true,
+  "github_branch": "codex/fix-sc2-startup-port-race",
+  "run_id": "sc2-qwen-l8random96-197-20260927-r2",
+  "failure_at_beijing": "2026-09-28T00:01:58+08:00",
+  "remote_preparation_receipt": "/var/jfsCache/sc2-qwen-l8random96-197-20260927-r2/cpu-preparation.json",
+  "gpu_dispatched": false,
+  "queue_state_exists": false,
+  "dispatch_exists": false,
+  "new_games": 0,
+  "new_updates": 0,
+  "checkpoint_deletions": 0,
+  "actual_host_tests": {"tests": 71, "passed": true, "skips": 0, "cuda_initialized": false},
+  "actual_model_controller_tests": {"tests": 282, "passed": true, "skips": 0, "cuda_initialized": false},
+  "containers": [
+    {
+      "name": "sc2-qwen-l8random96-197-20260927-r2-short-regressions",
+      "id": "264162c1317fdbd9f6bf46564e2cc1557c40510974585ef82705d9a8341b9a6d",
+      "status": "exited", "exit_code": 0, "oom_killed": false, "device_requests": null
+    },
+    {
+      "name": "sc2-qwen-l8random96-197-20260927-r2-short-cpu",
+      "id": "0b7ced097b6d40dd04dbfe814e8187b8ec6a4dcd252afc857495c97f5674f2c7",
+      "status": "exited", "exit_code": 1, "oom_killed": false, "device_requests": null
+    }
+  ],
+  "failure": {
+    "stage": "short-cpu baseline config comparison",
+    "exception": "FileNotFoundError",
+    "requested_file": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/short/cpu/train2/resolved_config.json",
+    "real_file": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r1/qwen-same/short/cpu/train2/resolved_config.json",
+    "real_file_bytes": 15297,
+    "real_file_sha256": "77cd457af0cfc64f0ebe0aab690e33af5af7958e336b13cb396766bd0ac7efa6",
+    "historical_runtime_sha": "eef0f049bb09b7a51188ae67a6c35436a3bf055f",
+    "cause": "Historical same r2 cpu/train2 is an absolute symlink to retained same r1. Mounting only r2 short does not make the r1 target visible inside the read-only container.",
+    "not_a_model_training_or_checkpoint_serialization_failure": true
+  },
+  "partial_short_cpu_evidence": {
+    "three_actual_launchers_hydra_completed": true,
+    "source_hash_checks": 34,
+    "source_hash_all_ok": true,
+    "overall_cpu_admission_passed": false,
+    "resolved_config_sha256": {
+      "pre": "44c920fb6009b7b75757829c9fc348d7f0439ab5e806464600a596b581bbe383",
+      "train2": "449480d2b45ae186601eb7e6238d78e7b14c803c40f488dbf8e45a51547aec5a",
+      "post": "f2eba54a6d61d19347d17d006f89b6d5e78556336b71d10c5d6d139f5dfc6bbe"
+    },
+    "long_selection_primary_launchers_and_all_ray_hooks": "not run; stopped at first failed job"
+  },
+  "readonly_followup": {
+    "checked_at_epoch": 1790525045.8141448,
+    "l10_exact_container_id": "5c6dad7a7beff07053574400d6bd5a090fbc92db1f77a0ff70abc0b1f723befd",
+    "l10_owner": "/var/jfsCache/sc2-qwen-l10same96-197-20260927-r3/qwen-same/long",
+    "l10_status": "running",
+    "l10_paused": false,
+    "l10_oom_killed": false,
+    "l10_error": "",
+    "l10_modified": false,
+    "host_normalized_config_comparison": "passed using existing registered OmegaConf dependency path; only seed_protocol/seed_group_mode scientific differences",
+    "first_host_comparison_attempt": "default host Python lacked OmegaConf; no writes or containers; repeated read-only check with existing dependencies succeeded",
+    "du_returncode": 0,
+    "du_stderr": "",
+    "du_root_bytes": {
+      "/var/jfsCache/sc2-qwen-l8random96-197-20260927-r1": 25061948,
+      "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260927-r1": 6006,
+      "/var/jfsCache/sc2-qwen-l8random96-197-source-20260927-r1": 25116808,
+      "/var/jfsCache/sc2-qwen-l8random96-197-20260927-r2": 25292515,
+      "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260927-r2": 6549,
+      "/var/jfsCache/sc2-qwen-l8random96-197-source-20260927-r2": 25187219
+    },
+    "du_total_bytes": 100671045,
+    "large_checkpoints_read": false
+  },
+  "local_fix_only": {
+    "change": "Bind exact real historical config file read-only and require fixed SHA256; verify retained-prefix link on host before preparing a future new run. No fallback or mounting whole old root.",
+    "tests_command": "PYTHONPATH=/private/tmp/sc2-qwen-native-testdeps-20260924:tests:. PYTHONDONTWRITEBYTECODE=1 /Users/yangjinyue/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -B -m unittest test_qwen_l8random197 test_qwen_l8random_retention test_qwen_l9l10_same197 test_qwen_l9l10_continue197 test_qwen_l8_common64_197 test_sc2_policy_resume test_sc2_checkpoint_resume -q",
+    "tests": 134, "passed": 130, "skips": 4, "failures": 0,
+    "skip_reason": "local Torch unavailable; actual future server zero-skip CPU gates required",
+    "deployed": false,
+    "r2_retried": false
+  },
+  "handoff": "Request controlled r3 authorization before any further preparation/CPU attempt/queue. New frozen SHA/RUN_ID; r1+r2+r3 nine source/output/eval roots count within unchanged train256GiB/test32GiB/suite288GiB;1112games/96PPO/22h176GPUh unchanged. No old deletion, L10 interruption, automatic retry or CP192. GPU budget clock has never started."
+}

@@ -1,0 +1,288 @@
+{
+  "checked_at": "2026-09-22T22:38:45.572469+08:00",
+  "receipts": {
+    "queue-state.json": {
+      "sha256": "4d8ae8f93eee86aea41dd5e8964d563d611317107d126c8cb8964a96c629b189",
+      "bytes": 228,
+      "data": {
+        "phase": "running-unverified",
+        "completed": [],
+        "deadline": 1790420762.305692,
+        "original_start": 1790075162.305692,
+        "spb_deadline": 1790247962.305692,
+        "part": "spb-same/short",
+        "arm_deadline": 1790247962.305692
+      }
+    },
+    "storage-failure.json": {
+      "exists": false
+    },
+    "spb-same/short/host-supervision/state.json": {
+      "sha256": "3ed56ec0b14e4099c5af70ba7093cea1dc95056cbf365df97628d4cafe4c8f5e",
+      "bytes": 319,
+      "data": {
+        "version": "host-guardian-v1",
+        "phase": "running-unverified",
+        "completed": [
+          "pre",
+          "train2"
+        ],
+        "deadline": 1790247962.305692,
+        "learning_validated": false,
+        "started_at": 1790085600.1374924,
+        "stage": "post",
+        "container_id": "6c5189bf07ddc2281baa2af7d764403947f507314acb808a6b816ca5182cad15"
+      }
+    },
+    "spb-same/long/dispatch.json": {
+      "exists": false
+    },
+    "qwen-random/long/dispatch.json": {
+      "exists": false
+    },
+    "spb-same/short/acceptance-pre.json": {
+      "sha256": "076b54cc70cc544e5e9f964afcd3ce1690581e253fab2421fd10d3eb023acdcb",
+      "bytes": 5822,
+      "data": {
+        "checked_at": 1790086182.3514223,
+        "evidence": {
+          "consumed_answers": 46,
+          "valid_consumed_answers": 46,
+          "parsed_plans": 46,
+          "validated_queue_entries": 602,
+          "validated_locally_queued_commands": 367,
+          "execution_scope": "local Depot/Marine commands, not production completion or causal wins"
+        },
+        "result_status": "completed"
+      }
+    },
+    "spb-same/short/runs/pre/manifest.json": {
+      "sha256": "55fa32c1cc5004f0ba20b537e9d6148cfa05597e4d819bb94323b5a4bb01dd02",
+      "bytes": 2942,
+      "data": {
+        "source_commit": "9cb291ea5f50de205c5d88371e08ce229b7d9d04",
+        "model_id": "Panyuqi/SpikingBrain-2.0-instruct",
+        "model_source": "/assets/spb",
+        "formal": true,
+        "dirty": false,
+        "world_size": 8,
+        "metrics_precision": "binary64-v1",
+        "mode": "evaluation",
+        "start_step": 0,
+        "resume_from_path": null
+      }
+    },
+    "spb-same/short/runs/pre/result.json": {
+      "sha256": "1414a677bd328654f195d09f12d169db5110da5733ba00f22255553461e5dbff",
+      "bytes": 5197,
+      "data": {
+        "status": "completed",
+        "mode": "evaluation",
+        "ended_at": "2026-09-22T14:09:34.972135+00:00",
+        "process_exit_code": 0,
+        "training_updates": 0,
+        "metrics_finite": true,
+        "metrics_precision": "binary64-v1",
+        "evaluable_action_count": 46,
+        "valid_evaluable_action_count": 46,
+        "episode_outcomes": {
+          "trajectories": 8,
+          "natural_games": 8,
+          "wins": 4,
+          "defeats": 4,
+          "ties": 0,
+          "truncated": 0,
+          "natural_win_rate": 0.5
+        }
+      }
+    },
+    "spb-same/short/runs/pre/.done": {
+      "sha256": "1414a677bd328654f195d09f12d169db5110da5733ba00f22255553461e5dbff",
+      "bytes": 5197
+    },
+    "spb-same/short/runs/pre/metrics.json": {
+      "exists": false
+    },
+    "spb-same/short/acceptance-train2.json": {
+      "sha256": "b9dfc08618355cf03c5933962419e908b9cd35d807fe559270f01ec58a2aae18",
+      "bytes": 10494,
+      "data": {
+        "checked_at": 1790087566.4086661,
+        "evidence": {
+          "consumed_answers": 103,
+          "valid_consumed_answers": 103,
+          "parsed_plans": 103,
+          "validated_queue_entries": 1343,
+          "validated_locally_queued_commands": 895,
+          "execution_scope": "local Depot/Marine commands, not production completion or causal wins"
+        },
+        "result_status": "completed"
+      }
+    },
+    "spb-same/short/runs/train2/manifest.json": {
+      "sha256": "465bc3535add1a2816ad31af02b6ca2b125965d2b9ab3832e48bbd1bccf7a13d",
+      "bytes": 2939,
+      "data": {
+        "source_commit": "9cb291ea5f50de205c5d88371e08ce229b7d9d04",
+        "model_id": "Panyuqi/SpikingBrain-2.0-instruct",
+        "model_source": "/assets/spb",
+        "formal": true,
+        "dirty": false,
+        "world_size": 8,
+        "metrics_precision": "binary64-v1",
+        "mode": "training",
+        "start_step": 0,
+        "resume_from_path": null
+      }
+    },
+    "spb-same/short/runs/train2/result.json": {
+      "sha256": "bd50704d5ccbf9ec2ef450c7df42b686a1bf464a36f1152f8a1cf42a73ed416b",
+      "bytes": 9511,
+      "data": {
+        "status": "completed",
+        "mode": null,
+        "ended_at": "2026-09-22T14:32:15.767742+00:00",
+        "process_exit_code": 0,
+        "training_updates": null,
+        "metrics_finite": true,
+        "metrics_precision": "binary64-v1",
+        "evaluable_action_count": null,
+        "valid_evaluable_action_count": null,
+        "episode_outcomes": {
+          "trajectories": 16,
+          "natural_games": 16,
+          "wins": 5,
+          "defeats": 11,
+          "ties": 0,
+          "truncated": 0,
+          "natural_win_rate": 0.3125
+        }
+      }
+    },
+    "spb-same/short/runs/train2/.done": {
+      "sha256": "bd50704d5ccbf9ec2ef450c7df42b686a1bf464a36f1152f8a1cf42a73ed416b",
+      "bytes": 9511
+    },
+    "spb-same/short/runs/train2/metrics.json": {
+      "sha256": "97431d3107e59bc1f01d1103582008691d8c823415c5a9b40118369d9a5108e7",
+      "bytes": 5710,
+      "data": [
+        {
+          "step": 1,
+          "actor/grad_norm": 185.50870361328126,
+          "timing_s/update_actor": 154.801962133497,
+          "episode/valid_action_ratio": 1,
+          "policy_credit/invalid_advantage_max": 0,
+          "episode/success_rate": 0.375,
+          "critic/advantages/min": -44.32368850708008,
+          "critic/advantages/max": 62.1885986328125
+        },
+        {
+          "step": 2,
+          "actor/grad_norm": 99.85015511512756,
+          "timing_s/update_actor": 93.73110850341618,
+          "episode/valid_action_ratio": 1,
+          "policy_credit/invalid_advantage_max": 0,
+          "episode/success_rate": 0.25,
+          "critic/advantages/min": -55.4236946105957,
+          "critic/advantages/max": 69.97219848632812
+        }
+      ]
+    },
+    "spb-same/short/acceptance-post.json": {
+      "exists": false
+    },
+    "spb-same/short/runs/post/manifest.json": {
+      "sha256": "10226f318e9dcfe022ce8f766fab74a37f915d89334fd4facc067c1258ee024f",
+      "bytes": 3037,
+      "data": {
+        "source_commit": "9cb291ea5f50de205c5d88371e08ce229b7d9d04",
+        "model_id": "Panyuqi/SpikingBrain-2.0-instruct",
+        "model_source": "/assets/spb",
+        "formal": true,
+        "dirty": false,
+        "world_size": 8,
+        "metrics_precision": "binary64-v1",
+        "mode": "evaluation",
+        "start_step": 0,
+        "resume_from_path": "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/short/runs/train2/checkpoints/global_step_2"
+      }
+    },
+    "spb-same/short/runs/post/result.json": {
+      "exists": false
+    },
+    "spb-same/short/runs/post/.done": {
+      "exists": false
+    },
+    "spb-same/short/runs/post/metrics.json": {
+      "exists": false
+    }
+  },
+  "containers": {
+    "returncode": 0,
+    "stdout": "sc2-l7-followup197-20260922-r4-spb-same-short-post Up 5 minutes\nsc2-l7-followup197-20260922-r4-spb-same-short-train2 Exited (0) 6 minutes ago\nsc2-l7-followup197-20260922-r4-spb-same-short-pre Exited (0) 29 minutes ago\nsc2-l7-followup197-20260922-r4-spb-same-short-cpu-cpu Exited (0) 40 minutes ago\nsc2-l7-followup197-20260922-r4-spb-same-short-cpu-regressions Exited (0) 40 minutes ago\n",
+    "stderr": ""
+  },
+  "schema": "l7-protocol-status-clarification-v1",
+  "protocol": {
+    "checked_at": "2026-09-22T22:40:11.781232+08:00",
+    "effective_config": {
+      "sha256": "e11a56a8895e6b6b99e7e259a95e0cd87fd74eca76e920ad6eb078e09105d103",
+      "protocol_arguments": [
+        "actor_rollout_ref.rollout.top_p=0.9",
+        "algorithm.sc2_policy_credit.enabled=True",
+        "algorithm.sc2_policy_credit.invalid_advantage_penalty=0.1",
+        "algorithm.sc2_policy_credit.min_valid_ratio=0.5",
+        "+data.sc2_no_thinking=True",
+        "actor_rollout_ref.rollout.top_p=1.0",
+        "actor_rollout_ref.rollout.val_kwargs.top_p=1.0",
+        "+actor_rollout_ref.actor.no_thinking_tokenizer_path=/assets/spb",
+        "+actor_rollout_ref.actor.sc2_action_tokenizer_path=/assets/spb",
+        "+actor_rollout_ref.actor.sc2_action_response_length=192",
+        "+actor_rollout_ref.rollout.no_thinking_tokenizer_path=/assets/spb",
+        "+actor_rollout_ref.rollout.sc2_action_tokenizer_path=/assets/spb",
+        "+actor_rollout_ref.rollout.sc2_action_response_length=192",
+        "+actor_rollout_ref.ref.no_thinking_tokenizer_path=/assets/spb",
+        "+actor_rollout_ref.ref.sc2_action_tokenizer_path=/assets/spb",
+        "+actor_rollout_ref.ref.sc2_action_response_length=192",
+        "algorithm.sc2_policy_credit.seed_group_mode=same"
+      ]
+    },
+    "training_seeds": {
+      "sha256": "c7225e901aea10a4a2bfdd18f5ce95214e57d5a21c2d0960e263de06c6910283",
+      "data": [
+        {
+          "base_seed": 0,
+          "reset_index": 0,
+          "seed_protocol": "same_uniform101",
+          "seeds": [
+            49,
+            49,
+            49,
+            49,
+            49,
+            49,
+            49,
+            49
+          ]
+        },
+        {
+          "base_seed": 0,
+          "reset_index": 1,
+          "seed_protocol": "same_uniform101",
+          "seeds": [
+            97,
+            97,
+            97,
+            97,
+            97,
+            97,
+            97,
+            97
+          ]
+        }
+      ]
+    }
+  },
+  "operations": "Small read-only JSON and 1MiB-bounded train console; no server mutation, GPU diagnostic, checkpoint read or experiment change."
+}

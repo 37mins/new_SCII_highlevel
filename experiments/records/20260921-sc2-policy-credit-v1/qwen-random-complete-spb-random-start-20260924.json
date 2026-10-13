@@ -1,0 +1,1100 @@
+{
+  "observed_at": "2026-09-24T01:28:05.862590+08:00",
+  "read_only": true,
+  "files": {
+    "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2/queue-state.json": {
+      "exists": true,
+      "bytes": 372,
+      "sha256": "5c96cf9b4a913bf5636d500a5b6999fcaaf2444a6c2842e5eae70536400ad1ce"
+    },
+    "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2/state.json": {
+      "exists": true,
+      "bytes": 372,
+      "sha256": "5c96cf9b4a913bf5636d500a5b6999fcaaf2444a6c2842e5eae70536400ad1ce"
+    },
+    "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2/host-supervision/state.json": {
+      "exists": true,
+      "bytes": 372,
+      "sha256": "5c96cf9b4a913bf5636d500a5b6999fcaaf2444a6c2842e5eae70536400ad1ce"
+    },
+    "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2/storage-state.json": {
+      "exists": true,
+      "bytes": 4294,
+      "sha256": "26acb979be53c4c113edc9b0c98b460cd677143b851c4c8f6781a2f1e04a012e"
+    },
+    "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2/suite-account/storage-state.json": {
+      "exists": true,
+      "bytes": 4248,
+      "sha256": "7c12cfee8c78c49f54e4b471003067b6384cda833c1b1e7ce0b531707067cb57"
+    },
+    "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2/storage-failure.json": {
+      "exists": false
+    },
+    "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2/suite-account/storage-failure.json": {
+      "exists": false
+    },
+    "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2/deployment.json": {
+      "exists": true,
+      "bytes": 13890,
+      "sha256": "0d40bcf2feac7c5415cdcf9e53f3c7452eaa387ca53a17c8d9db601c045fef84"
+    },
+    "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2/acceptance-train96.json": {
+      "exists": true,
+      "bytes": 251876,
+      "sha256": "42226fd7306af795d32d0c1ecd3b26673426b075978ad37bfab623a730b1073a"
+    },
+    "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2/runs/train96/result.json": {
+      "exists": true,
+      "bytes": 233763,
+      "sha256": "5f4f4acb352587eabb2c46aa7bb06c00434992d7f6958889e1233d755c848d7d"
+    },
+    "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2/runs/train96/.done": {
+      "exists": true,
+      "bytes": 233763,
+      "sha256": "5f4f4acb352587eabb2c46aa7bb06c00434992d7f6958889e1233d755c848d7d"
+    },
+    "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2/runs/train96/manifest.json": {
+      "exists": true,
+      "bytes": 3017,
+      "sha256": "06bd9fbe5f38b0c0bc86add64b0ba5533eca4d4115574c59380859c4beb347cb"
+    },
+    "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2/host-supervision/train96-guardian.json": {
+      "exists": true,
+      "bytes": 345528,
+      "sha256": "da5dc0860b42c0b0257fcb9bef3a3a0b5860cabc93a339746f2dc10345bfa608"
+    },
+    "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2/runs/train96/metrics.json": {
+      "exists": true,
+      "bytes": 249493,
+      "sha256": "322ed7ddfde01fb64e0c8aa9baae3876fef9a90cd4fff5103c53084b6d20e301"
+    },
+    "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2/runs/train96/checkpoints/sc2_policy_credit_audit.jsonl": {
+      "exists": true,
+      "bytes": 18391,
+      "sha256": "940c43914d2d2a6544ca55ad241674d221f7e5544fade3bedb9d8e4ff73b58a2"
+    },
+    "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2/runs/train96/training_seeds.jsonl": {
+      "exists": true,
+      "bytes": 10662,
+      "sha256": "6be24a7a6386d4c86a3e79576755577ef0f9e36c91943e9fdb178882abde2079"
+    },
+    "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2/runs/train96/checkpoints/resume_state.json": {
+      "exists": true,
+      "bytes": 285,
+      "sha256": "b3683a40c940b53d44773c4371a04ecd0c70be6aff5cbe53abf8a6c87af27031"
+    },
+    "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2/acceptance-eval96.json": {
+      "exists": true,
+      "bytes": 5817,
+      "sha256": "a080711f5ae77635d3981bc3ff59f6aa87ff5153100143bda210015ab2927eb0"
+    },
+    "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2/runs/eval96/result.json": {
+      "exists": true,
+      "bytes": 5192,
+      "sha256": "b14a9c9d429f0d41b93dd2dd6257f83964eaf4ec33543d76a1456b66330793eb"
+    },
+    "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2/runs/eval96/.done": {
+      "exists": true,
+      "bytes": 5192,
+      "sha256": "b14a9c9d429f0d41b93dd2dd6257f83964eaf4ec33543d76a1456b66330793eb"
+    },
+    "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2/runs/eval96/manifest.json": {
+      "exists": true,
+      "bytes": 3008,
+      "sha256": "26f8d45d72ba3223313959009c51990b7dc0a60d074914430c1040d7eeeafe68"
+    },
+    "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2/host-supervision/eval96-guardian.json": {
+      "exists": true,
+      "bytes": 6298,
+      "sha256": "3788304474756df3d8a6d8aeb4b1509e0f37f65b7cd825fc7cc8b6f7e587aa96"
+    },
+    "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2/runs/eval96/checkpoint_evaluation.json": {
+      "exists": true,
+      "bytes": 561,
+      "sha256": "0c1fbb0dbfd48dba2824759080f877d6256c9990829e3473ec4deb912384c87e"
+    },
+    "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2/runs/eval96/evaluation_seeds.jsonl": {
+      "exists": true,
+      "bytes": 143,
+      "sha256": "ffaf9953b3c4fc78b2a0f30c67357504f6a6b8e014c3b0adc2db12e87afdad90"
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-random/runs/post/result.json": {
+      "exists": true,
+      "bytes": 5149,
+      "sha256": "32b11901a04830aad149c19cbd59d444e65e1465131d6150b3663a666d9e4ce1"
+    },
+    "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2/runs/eval96/sampling-rank0.json": {
+      "exists": true,
+      "bytes": 220,
+      "sha256": "8e871792661c8e76716df2ddf6e15b76f6308e3c8829eba7d71afc1c95fd3bc8"
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-random/runs/post/sampling-rank0.json": {
+      "exists": true,
+      "bytes": 221,
+      "sha256": "0c2b638ccc9d31c96e5f4dc8163affd837503e55844beffba480f9e3c0da59c8"
+    },
+    "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2/runs/eval96/sampling-rank1.json": {
+      "exists": true,
+      "bytes": 220,
+      "sha256": "d64bfc9410516baa554da04e3b957b6ef94009d067f4cac649be9f0875149644"
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-random/runs/post/sampling-rank1.json": {
+      "exists": true,
+      "bytes": 221,
+      "sha256": "f3fe265fbc7d40ca857bd892f54c8d482b54a08d458d19c0cb037a9a9fbe04b6"
+    },
+    "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2/runs/eval96/sampling-rank2.json": {
+      "exists": true,
+      "bytes": 220,
+      "sha256": "73223a66539d49b0570e4002ca330ee74f46bfd014f29d49126971fb6c7c33e7"
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-random/runs/post/sampling-rank2.json": {
+      "exists": true,
+      "bytes": 221,
+      "sha256": "f56903964d7cbd3a67d7fa68a3f07e17f1b63cea8fe62b13608ab2ea0fbf06dc"
+    },
+    "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2/runs/eval96/sampling-rank3.json": {
+      "exists": true,
+      "bytes": 220,
+      "sha256": "9f1350c0ff7b6a994b3a492a838ff624f7567670e671ffaaa8ff6029149b076a"
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-random/runs/post/sampling-rank3.json": {
+      "exists": true,
+      "bytes": 221,
+      "sha256": "25faf1eb6fa27f0e12eec72a61ba5f4ff60c4975ae41707ee2280cfc6f4cd486"
+    },
+    "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2/runs/eval96/sampling-rank4.json": {
+      "exists": true,
+      "bytes": 220,
+      "sha256": "4afd437a820c5631c925ffc2df769a5dff9b299223a85bb61e57e9a44e565f97"
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-random/runs/post/sampling-rank4.json": {
+      "exists": true,
+      "bytes": 221,
+      "sha256": "4d0f267340eeab45b0158820052d95bf15db1fb7283d0ba976181648a9f462ef"
+    },
+    "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2/runs/eval96/sampling-rank5.json": {
+      "exists": true,
+      "bytes": 220,
+      "sha256": "02fb417813afa165b52829ef03ba4985d84d6aab9b193cce2596c83cd6f35504"
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-random/runs/post/sampling-rank5.json": {
+      "exists": true,
+      "bytes": 221,
+      "sha256": "7983eb23374bbab65481b1932b5b11cb89119233b8d4fdf21055d595a6dc0ee3"
+    },
+    "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2/runs/eval96/sampling-rank6.json": {
+      "exists": true,
+      "bytes": 220,
+      "sha256": "cac2aedcfde362eb021c51c7dd1f3d65b566a162f6340285bf53578ccdd1db38"
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-random/runs/post/sampling-rank6.json": {
+      "exists": true,
+      "bytes": 221,
+      "sha256": "b723c1b531438fa41b5d18803d0cc6cc6a718e9d2a5624a1c5f5f74591e7e712"
+    },
+    "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2/runs/eval96/sampling-rank7.json": {
+      "exists": true,
+      "bytes": 220,
+      "sha256": "4a385e05ab5ae50627d1f6c69fb97b9fc088407dcd8a87579ebbbcb414994a7c"
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-random/runs/post/sampling-rank7.json": {
+      "exists": true,
+      "bytes": 221,
+      "sha256": "e35919ba49dd8fdaee471c95ad2e02c873329237050b7fd22289edf62e55a605"
+    },
+    "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/deployment.json": {
+      "exists": true,
+      "bytes": 1177,
+      "sha256": "4fc0d11ba6f5fb2520d495c3054047badb17b0c2b65c0110ad3871114252a7f8"
+    },
+    "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/queue-state.json": {
+      "exists": true,
+      "bytes": 161,
+      "sha256": "2df183a2102a05d0bba1fd88502e7c85f03fcd5ffe53ea29a1235b183d4c7c4c"
+    },
+    "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/dispatch.json": {
+      "exists": true,
+      "bytes": 128,
+      "sha256": "d24fbfb655ecc422d9fd47e4cd9fad89e19e0edecb041222a1af4a5b2d42dff7"
+    },
+    "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/predecessor-acceptance.json": {
+      "exists": true,
+      "bytes": 179,
+      "sha256": "b6453b8c6e448272675ea1cc199c89a3f222b5008b014996fcf820d84caf028c"
+    },
+    "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/spb-random/short/host-supervision/state.json": {
+      "exists": true,
+      "bytes": 292,
+      "sha256": "abc273ea2270c4984a3271ef197dd021cba6e28354a22c8143fdbab7dc18ae8f"
+    },
+    "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/spb-random/short/state.json": {
+      "exists": false
+    },
+    "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/spb-random/short/host-supervision/pre-guardian.json": {
+      "exists": true,
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/spb-random/short/storage-state.json": {
+      "exists": false
+    },
+    "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/spb-random/short/storage-failure.json": {
+      "exists": false
+    },
+    "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/spb-random/long/dispatch.json": {
+      "exists": false
+    },
+    "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/spb-random/long/parent-readiness.json": {
+      "exists": false
+    },
+    "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/spb-random/short/runs/pre/manifest.json": {
+      "exists": true,
+      "bytes": 2946,
+      "sha256": "d947d3e6251543b05ba6ff08fe272de7cb7a1d1bde4877d180cb8f785cb4fc86"
+    },
+    "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/spb-random/short/runs/pre/result.json": {
+      "exists": false
+    },
+    "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/spb-random/short/runs/pre/.done": {
+      "exists": false
+    },
+    "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/spb-random/short/runs/pre/evaluation_seeds.jsonl": {
+      "exists": true,
+      "bytes": 143,
+      "sha256": "ffaf9953b3c4fc78b2a0f30c67357504f6a6b8e014c3b0adc2db12e87afdad90"
+    }
+  },
+  "qwen": {
+    "queue-state.json": {
+      "version": "host-guardian-v1",
+      "phase": "completed",
+      "completed": [
+        "train96",
+        "eval96"
+      ],
+      "deadline": 1790308720.0467553,
+      "learning_validated": false,
+      "started_at": 1790168798.0071752,
+      "stage": "eval96",
+      "container_id": "acb6c485085fddb2e0448bb8d74d78c3856dc178025fc3fcf5842bd67b30a49a",
+      "exit_code": 0,
+      "finished_at": 1790184146.5349107
+    },
+    "state.json": {
+      "version": "host-guardian-v1",
+      "phase": "completed",
+      "completed": [
+        "train96",
+        "eval96"
+      ],
+      "deadline": 1790308720.0467553,
+      "learning_validated": false,
+      "started_at": 1790168798.0071752,
+      "stage": "eval96",
+      "container_id": "acb6c485085fddb2e0448bb8d74d78c3856dc178025fc3fcf5842bd67b30a49a",
+      "exit_code": 0,
+      "finished_at": 1790184146.5349107
+    },
+    "host-supervision/state.json": {
+      "version": "host-guardian-v1",
+      "phase": "completed",
+      "completed": [
+        "train96",
+        "eval96"
+      ],
+      "deadline": 1790308720.0467553,
+      "learning_validated": false,
+      "started_at": 1790168798.0071752,
+      "stage": "eval96",
+      "container_id": "acb6c485085fddb2e0448bb8d74d78c3856dc178025fc3fcf5842bd67b30a49a",
+      "exit_code": 0,
+      "finished_at": 1790184146.5349107
+    },
+    "storage-state.json": {
+      "roots": [
+        "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2",
+        "/var/jfsCache/sc2-qwen-random-cp8-197-source-20260923-r2",
+        "/var/jfsCache/sc2-l7-followup197-20260922-r4/qwen-random",
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r4",
+        "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-random",
+        "/var/jfsCache/sc2-l7-followup197-20260922-r1",
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r1",
+        "/var/jfsCache/sc2-l7-followup197-20260922-r2",
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r2",
+        "/var/jfsCache/sc2-l7-followup197-20260922-r3",
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r3",
+        "/var/jfsCache/sc2-storage-quiescence-cpu-20260922.4LzwSM",
+        "/var/jfsCache/sc2-host-supervision-cpu-20260922.7lJiIO",
+        "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r1",
+        "/var/jfsCache/sc2-qwen-random-cp8-197-source-20260923-r1"
+      ],
+      "bytes": 650655840531,
+      "limit": 1099511627776,
+      "deadline": 1790308720.0467553,
+      "returncode": 0,
+      "status": "measured",
+      "stderr": {
+        "tail": "",
+        "characters": 0,
+        "truncated": false
+      },
+      "checked_at": 1790184146.186404
+    },
+    "suite-account/storage-state.json": {
+      "roots": [
+        "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2",
+        "/var/jfsCache/sc2-qwen-random-cp8-197-source-20260923-r2",
+        "/var/jfsCache/sc2-l7-followup197-20260922-r4",
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r4",
+        "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-random",
+        "/var/jfsCache/sc2-l7-followup197-20260922-r1",
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r1",
+        "/var/jfsCache/sc2-l7-followup197-20260922-r2",
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r2",
+        "/var/jfsCache/sc2-l7-followup197-20260922-r3",
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r3",
+        "/var/jfsCache/sc2-storage-quiescence-cpu-20260922.4LzwSM",
+        "/var/jfsCache/sc2-host-supervision-cpu-20260922.7lJiIO",
+        "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r1",
+        "/var/jfsCache/sc2-qwen-random-cp8-197-source-20260923-r1"
+      ],
+      "bytes": 1481975072396,
+      "limit": 2199023255552,
+      "deadline": 1790420762.305692,
+      "returncode": 0,
+      "status": "measured",
+      "stderr": {
+        "tail": "",
+        "characters": 0,
+        "truncated": false
+      },
+      "checked_at": 1790184146.534145
+    },
+    "storage-failure.json": null,
+    "suite-account/storage-failure.json": null,
+    "deployment": {
+      "runtime_sha": "34154283a8298ac4fbaab1c63770a6b81f7d375c",
+      "controller_sha": "34154283a8298ac4fbaab1c63770a6b81f7d375c",
+      "controller_source": "/var/jfsCache/sc2-qwen-random-cp8-197-source-20260923-r2/code",
+      "deadline": 1790308720.0467553,
+      "suite_deadline": 1790420762.305692,
+      "games": [
+        704,
+        8
+      ],
+      "updates": [
+        88,
+        0
+      ],
+      "start_step": 8,
+      "target_step": 96
+    },
+    "train96": {
+      "result_summary": {
+        "status": "completed",
+        "ended_at": "2026-09-23T17:18:04.698348+00:00",
+        "process_exit_code": 0,
+        "completed_steps": 88,
+        "start_step": 8,
+        "last_global_step": 96,
+        "target_steps": 96,
+        "metrics_finite": true,
+        "metrics_precision": "binary64-v1",
+        "checkpoint_complete": true,
+        "console_sha256": "70ee008fa759f94bbc729020508d5211f32d779f192fd5c3f84159d096807d91"
+      },
+      "outcomes": {
+        "trajectories": 704,
+        "natural_games": 704,
+        "wins": 614,
+        "defeats": 90,
+        "ties": 0,
+        "truncated": 0,
+        "natural_win_rate": 0.8721590909090909
+      },
+      "done_matches_result": true,
+      "acceptance_result_matches": true,
+      "acceptance_evidence": {
+        "consumed_answers": 2225,
+        "valid_consumed_answers": 2225,
+        "parsed_plans": 2225,
+        "validated_queue_entries": 66523,
+        "validated_locally_queued_commands": 39337,
+        "execution_scope": "local Depot/Marine commands, not production completion or causal wins",
+        "resume": {
+          "from_checkpoint": "/var/jfsCache/sc2-l7-followup197-20260922-r4/qwen-random/long/runs/train96/checkpoints/global_step_8",
+          "global_step": 8,
+          "next_reset_index": 8,
+          "next_seeds": [
+            8,
+            24,
+            72,
+            28,
+            30,
+            18,
+            69,
+            57
+          ],
+          "source": "checkpoint",
+          "model_optimizer_dataloader_load_returned": true
+        },
+        "ppo_updates": 88,
+        "checkpoints": [
+          16,
+          24,
+          32,
+          40,
+          48,
+          56,
+          64,
+          72,
+          80,
+          88,
+          96
+        ],
+        "retained_parent_checkpoint": 8
+      },
+      "manifest": {
+        "source_commit": "34154283a8298ac4fbaab1c63770a6b81f7d375c",
+        "dirty": false,
+        "world_size": 8,
+        "metrics_precision": "binary64-v1"
+      },
+      "guardian": {
+        "version": "host-guardian-v1",
+        "container_id": "fc2f74a4285c5e80660257f42bd1caa21ad1a0614699d680e74938f013106b06",
+        "owner_root": "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2",
+        "deadline": 1790308720.0467553,
+        "lease_seconds": 45,
+        "phase": "completed",
+        "pause_attempted": true,
+        "started_at": 1790168799.0572057,
+        "final_state": {
+          "Dead": false,
+          "Error": "",
+          "ExitCode": 0,
+          "FinishedAt": "2026-09-23T17:18:22.068655008Z",
+          "OOMKilled": false,
+          "Paused": false,
+          "Pid": 0,
+          "Restarting": false,
+          "Running": false,
+          "StartedAt": "2026-09-23T13:06:39.085218914Z",
+          "Status": "exited"
+        },
+        "finished_at": 1790183904.6496942
+      },
+      "container": {
+        "returncode": 0,
+        "data": {
+          "id": "fc2f74a4285c5e80660257f42bd1caa21ad1a0614699d680e74938f013106b06",
+          "owner": "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2",
+          "state": {
+            "Dead": false,
+            "Error": "",
+            "ExitCode": 0,
+            "FinishedAt": "2026-09-23T17:18:22.068655008Z",
+            "OOMKilled": false,
+            "Paused": false,
+            "Pid": 0,
+            "Restarting": false,
+            "Running": false,
+            "StartedAt": "2026-09-23T13:06:39.085218914Z",
+            "Status": "exited"
+          }
+        },
+        "error": ""
+      },
+      "metrics_summary": {
+        "count": 88,
+        "steps_exact": true,
+        "ranges": {
+          "actor/grad_norm": {
+            "min": 4.97569310198287e-8,
+            "max": 248.86488588154316,
+            "all_finite": true
+          },
+          "timing_s/update_actor": {
+            "min": 10.8907017018646,
+            "max": 18.16419066488743,
+            "all_finite": true
+          },
+          "policy_credit/invalid_advantage_max": {
+            "min": 0,
+            "max": 0,
+            "all_finite": true
+          }
+        },
+        "gates_passed": true
+      },
+      "audit_summary": {
+        "count": 88,
+        "exact_steps": true,
+        "all_accept": true
+      },
+      "seed_summary": {
+        "count": 88,
+        "all_match": true
+      },
+      "resume_state": {
+        "from_checkpoint": "/var/jfsCache/sc2-l7-followup197-20260922-r4/qwen-random/long/runs/train96/checkpoints/global_step_8",
+        "global_step": 8,
+        "next_reset_index": 8,
+        "next_seeds": [
+          8,
+          24,
+          72,
+          28,
+          30,
+          18,
+          69,
+          57
+        ],
+        "source": "checkpoint",
+        "model_optimizer_dataloader_load_returned": true
+      },
+      "checkpoints": [
+        {
+          "step": 16,
+          "required_count": 26,
+          "nonempty": 26
+        },
+        {
+          "step": 24,
+          "required_count": 26,
+          "nonempty": 26
+        },
+        {
+          "step": 32,
+          "required_count": 26,
+          "nonempty": 26
+        },
+        {
+          "step": 40,
+          "required_count": 26,
+          "nonempty": 26
+        },
+        {
+          "step": 48,
+          "required_count": 26,
+          "nonempty": 26
+        },
+        {
+          "step": 56,
+          "required_count": 26,
+          "nonempty": 26
+        },
+        {
+          "step": 64,
+          "required_count": 26,
+          "nonempty": 26
+        },
+        {
+          "step": 72,
+          "required_count": 26,
+          "nonempty": 26
+        },
+        {
+          "step": 80,
+          "required_count": 26,
+          "nonempty": 26
+        },
+        {
+          "step": 88,
+          "required_count": 26,
+          "nonempty": 26
+        },
+        {
+          "step": 96,
+          "required_count": 26,
+          "nonempty": 26
+        }
+      ]
+    },
+    "eval96": {
+      "result_summary": {
+        "status": "completed",
+        "ended_at": "2026-09-23T17:22:24.153697+00:00",
+        "mode": "evaluation",
+        "process_exit_code": 0,
+        "training_updates": 0,
+        "metrics_finite": true,
+        "response_record_count": 24,
+        "metrics_precision": "binary64-v1",
+        "evaluable_action_count": 24,
+        "valid_evaluable_action_count": 24,
+        "console_sha256": "62540913a404e697f0ea1cdd16df5359c45e1a2646fd469b296c9bd0bf2b074b",
+        "natural_match_completed": true,
+        "termination_evidence": "game_result"
+      },
+      "outcomes": {
+        "trajectories": 8,
+        "natural_games": 8,
+        "wins": 8,
+        "defeats": 0,
+        "ties": 0,
+        "truncated": 0,
+        "natural_win_rate": 1
+      },
+      "done_matches_result": true,
+      "acceptance_result_matches": true,
+      "acceptance_evidence": {
+        "consumed_answers": 24,
+        "valid_consumed_answers": 24,
+        "parsed_plans": 24,
+        "validated_queue_entries": 730,
+        "validated_locally_queued_commands": 456,
+        "execution_scope": "local Depot/Marine commands, not production completion or causal wins"
+      },
+      "manifest": {
+        "source_commit": "34154283a8298ac4fbaab1c63770a6b81f7d375c",
+        "dirty": false,
+        "world_size": 8,
+        "metrics_precision": "binary64-v1"
+      },
+      "guardian": {
+        "version": "host-guardian-v1",
+        "container_id": "acb6c485085fddb2e0448bb8d74d78c3856dc178025fc3fcf5842bd67b30a49a",
+        "owner_root": "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2",
+        "deadline": 1790308720.0467553,
+        "lease_seconds": 45,
+        "phase": "completed",
+        "pause_attempted": true,
+        "started_at": 1790183909.1480854,
+        "final_state": {
+          "Dead": false,
+          "Error": "",
+          "ExitCode": 0,
+          "FinishedAt": "2026-09-23T17:22:24.173498329Z",
+          "OOMKilled": false,
+          "Paused": false,
+          "Pid": 0,
+          "Restarting": false,
+          "Running": false,
+          "StartedAt": "2026-09-23T17:18:29.200980644Z",
+          "Status": "exited"
+        },
+        "finished_at": 1790184145.5415502
+      },
+      "container": {
+        "returncode": 0,
+        "data": {
+          "id": "acb6c485085fddb2e0448bb8d74d78c3856dc178025fc3fcf5842bd67b30a49a",
+          "owner": "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2",
+          "state": {
+            "Dead": false,
+            "Error": "",
+            "ExitCode": 0,
+            "FinishedAt": "2026-09-23T17:22:24.173498329Z",
+            "OOMKilled": false,
+            "Paused": false,
+            "Pid": 0,
+            "Restarting": false,
+            "Running": false,
+            "StartedAt": "2026-09-23T17:18:29.200980644Z",
+            "Status": "exited"
+          }
+        },
+        "error": ""
+      },
+      "checkpoint_evaluation": {
+        "checkpoint": "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2/runs/train96/checkpoints/global_step_96",
+        "loaded_global_step": 96,
+        "checkpoint_load_returned": true,
+        "val_only": true,
+        "optimizer_updates": 0,
+        "feedback": "0",
+        "temperature": 0.8,
+        "do_sample": true,
+        "games": 8,
+        "game_seeds": [
+          605183188,
+          1075501356,
+          2084414326,
+          2203880230,
+          3000371298,
+          949752300,
+          3225036469,
+          2823708076
+        ],
+        "answers": "online SpB; no replay or replacement",
+        "optimizer_loaded_by_existing_loader_but_not_updated": true
+      },
+      "evaluation_seeds": [
+        {
+          "base_seed": 1000,
+          "reset_index": 0,
+          "seeds": [
+            605183188,
+            1075501356,
+            2084414326,
+            2203880230,
+            3000371298,
+            949752300,
+            3225036469,
+            2823708076
+          ]
+        }
+      ],
+      "parent_post_outcomes": {
+        "trajectories": 8,
+        "natural_games": 8,
+        "wins": 8,
+        "defeats": 0,
+        "ties": 0,
+        "truncated": 0,
+        "natural_win_rate": 1
+      },
+      "paired_rng": [
+        {
+          "rank": 0,
+          "seed": 0,
+          "all_hashes_match": true
+        },
+        {
+          "rank": 1,
+          "seed": 1,
+          "all_hashes_match": true
+        },
+        {
+          "rank": 2,
+          "seed": 2,
+          "all_hashes_match": true
+        },
+        {
+          "rank": 3,
+          "seed": 3,
+          "all_hashes_match": true
+        },
+        {
+          "rank": 4,
+          "seed": 4,
+          "all_hashes_match": true
+        },
+        {
+          "rank": 5,
+          "seed": 5,
+          "all_hashes_match": true
+        },
+        {
+          "rank": 6,
+          "seed": 6,
+          "all_hashes_match": true
+        },
+        {
+          "rank": 7,
+          "seed": 7,
+          "all_hashes_match": true
+        }
+      ]
+    }
+  },
+  "spb": {
+    "deployment.json": {
+      "runtime_sha": "83f3530765babe048035524ddf1651291810818a",
+      "controller_sha": "83f3530765babe048035524ddf1651291810818a",
+      "controller_source": "/var/jfsCache/sc2-spb-l7random96-197-source-20260923-r1/code",
+      "parts": [
+        "spb-random/short",
+        "spb-random/long"
+      ],
+      "predecessor": "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2",
+      "predecessor_sha": "34154283a8298ac4fbaab1c63770a6b81f7d375c"
+    },
+    "queue-state.json": {
+      "phase": "running-unverified",
+      "completed": [],
+      "first_dispatch_by": 1790312320.0467553,
+      "part": "spb-random/short",
+      "deadline": 1790356959.0174987
+    },
+    "dispatch.json": {
+      "start": 1790184159.0174987,
+      "deadline": 1790356959.0174987,
+      "gpu_hours": 384,
+      "new_games": 792,
+      "new_updates": 96
+    },
+    "predecessor-acceptance.json": {
+      "passed": true,
+      "root": "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2",
+      "runtime_sha": "34154283a8298ac4fbaab1c63770a6b81f7d375c",
+      "checked_at": 1790184158.693586
+    },
+    "spb-random/short/host-supervision/state.json": {
+      "version": "host-guardian-v1",
+      "phase": "running-unverified",
+      "completed": [],
+      "deadline": 1790356959.0174987,
+      "learning_validated": false,
+      "started_at": 1790184159.0187504,
+      "stage": "pre",
+      "container_id": "b9e8b1a538d7ee08552ac546d405dd351236f76ff9b745cbce0e163e5a579da2"
+    },
+    "spb-random/short/state.json": null,
+    "spb-random/short/host-supervision/pre-guardian.json": null,
+    "spb-random/short/storage-state.json": null,
+    "spb-random/short/storage-failure.json": null,
+    "spb-random/long/dispatch.json": null,
+    "spb-random/long/parent-readiness.json": null,
+    "manifest.json": {
+      "schema_version": 1,
+      "status": "running",
+      "started_at": "2026-09-23T17:23:06.346850+00:00",
+      "source_commit": "83f3530765babe048035524ddf1651291810818a",
+      "dirty": false,
+      "formal": true,
+      "model_id": "Panyuqi/SpikingBrain-2.0-instruct",
+      "model_revision": "sha256:de52e8ef993afc763f9d4fb498e8d8302ef0bc13bd7dfd53c6ae5f77f43698b5",
+      "model_source": "/assets/spb",
+      "model_manifest_sha256": "40d6f1417568d5fda1107cdafd66c7441a679b03fb148851c8f226ecc9cf884c",
+      "bo_profile": "canonical",
+      "episode_api": "gymnasium-v0.26",
+      "metrics_precision": "binary64-v1",
+      "bo_path": "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/runtime/agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/knowledge/BO/replay_observations_Flat128_d4_TvT_Macro_g2_Result.Victory_twobase.json",
+      "bo_sha256": "304b1f4ff12fe30c5e6d5f7b8eaef8ed6823ca65afed3a3706cae10e3639c494",
+      "mode": "evaluation",
+      "target_steps": 1,
+      "sc2_signal_max_batches": 0,
+      "start_step": 0,
+      "sc2_checkpoint_resume": false,
+      "training_goal_global_steps": 2,
+      "resume_from_path": null,
+      "host": "b9e8b1a538d7",
+      "python": "3.12.11",
+      "gpu_selection": "0,1,2,3,4,5,6,7",
+      "world_size": 8,
+      "container_image_id": "sha256:1a497d5721f89bb2e98c0273c4b1495f8fdc6921d589650d090871c11b8d1649"
+    },
+    "result.json": null,
+    ".done": null,
+    "evaluation_seeds.jsonl": [
+      {
+        "base_seed": 1000,
+        "reset_index": 0,
+        "seeds": [
+          605183188,
+          1075501356,
+          2084414326,
+          2203880230,
+          3000371298,
+          949752300,
+          3225036469,
+          2823708076
+        ]
+      }
+    ],
+    "pre_container": {
+      "returncode": 0,
+      "data": {
+        "id": "b9e8b1a538d7ee08552ac546d405dd351236f76ff9b745cbce0e163e5a579da2",
+        "owner": "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/spb-random/short",
+        "state": {
+          "Dead": false,
+          "Error": "",
+          "ExitCode": 0,
+          "FinishedAt": "0001-01-01T00:00:00Z",
+          "OOMKilled": false,
+          "Paused": false,
+          "Pid": 1739874,
+          "Restarting": false,
+          "Running": true,
+          "StartedAt": "2026-09-23T17:22:39.408587037Z",
+          "Status": "running"
+        }
+      },
+      "error": ""
+    },
+    "bounded_console": {
+      "total_bytes": 230846,
+      "tail_bytes": 230846,
+      "matched_count": 22,
+      "lines": [
+        "(WorkerDict pid=4459) NCCL version 2.26.2+cuda12.2",
+        "(WorkerDict pid=4459) SC2_ACTION_SUPPORT {\"budget\": 192, \"canonical_tokenizations_only\": true, \"eos_token_id\": 151645, \"mode\": \"sc2-canonical-bo-support-v1\", \"pad_token_id\": 151643, \"tokenizer_sha256\": \"a63080b4b30dc861fe1b0e420c53a241304dc81aff3d9bb315e6e33e2a1ab794\"}",
+        "(WorkerDict pid=4459) SC2_NO_THINKING {\"blocked_counts\": {\"\": 2, \"<\": 7, \"</\": 7, \"</t\": 2, \"</th\": 13, \"</thi\": 4, \"</thin\": 276, \"<t\": 2, \"<th\": 13, \"<thi\": 4, \"<thin\": 276}, \"forbidden_prefixes\": [\"<think\", \"</think\"], \"mode\": \"sc2-no-thinking-v1\", \"support_mask_sha256\": \"63a9546dd5fb39a64c6e2a2ad13f31101aacaade9bac07258d0e415480181e0d\"}",
+        "(WorkerDict pid=4648) SC2_ACTION_SUPPORT {\"budget\": 192, \"canonical_tokenizations_only\": true, \"eos_token_id\": 151645, \"mode\": \"sc2-canonical-bo-support-v1\", \"pad_token_id\": 151643, \"tokenizer_sha256\": \"a63080b4b30dc861fe1b0e420c53a241304dc81aff3d9bb315e6e33e2a1ab794\"} [repeated 7x across cluster]",
+        "(WorkerDict pid=4648) SC2_NO_THINKING {\"blocked_counts\": {\"\": 2, \"<\": 7, \"</\": 7, \"</t\": 2, \"</th\": 13, \"</thi\": 4, \"</thin\": 276, \"<t\": 2, \"<th\": 13, \"<thi\": 4, \"<thin\": 276}, \"forbidden_prefixes\": [\"<think\", \"</think\"], \"mode\": \"sc2-no-thinking-v1\", \"support_mask_sha256\": \"63a9546dd5fb39a64c6e2a2ad13f31101aacaade9bac07258d0e415480181e0d\"} [repeated 7x across cluster]",
+        "(SC2Worker pid=2544) Combat result reward: {\"pid\": 7189, \"game_loop\": 0, \"boundary\": \"planner\", \"last_consumed_policy_action_id\": null, \"killed_value\": 0.0, \"lost_value\": 0.0, \"scale\": 0.001, \"reward\": 0.0}",
+        "(SC2Worker pid=2546) Combat result reward: {\"pid\": 7279, \"game_loop\": 0, \"boundary\": \"planner\", \"last_consumed_policy_action_id\": null, \"killed_value\": 0.0, \"lost_value\": 0.0, \"scale\": 0.001, \"reward\": 0.0}",
+        "(SC2Worker pid=2548) Combat result reward: {\"pid\": 7309, \"game_loop\": 0, \"boundary\": \"planner\", \"last_consumed_policy_action_id\": null, \"killed_value\": 0.0, \"lost_value\": 0.0, \"scale\": 0.001, \"reward\": 0.0}",
+        "(SC2Worker pid=2545) Combat result reward: {\"pid\": 7339, \"game_loop\": 0, \"boundary\": \"planner\", \"last_consumed_policy_action_id\": null, \"killed_value\": 0.0, \"lost_value\": 0.0, \"scale\": 0.001, \"reward\": 0.0}",
+        "(SC2Worker pid=2542) Combat result reward: {\"pid\": 7369, \"game_loop\": 0, \"boundary\": \"planner\", \"last_consumed_policy_action_id\": null, \"killed_value\": 0.0, \"lost_value\": 0.0, \"scale\": 0.001, \"reward\": 0.0}",
+        "(SC2Worker pid=2549) Combat result reward: {\"pid\": 7399, \"game_loop\": 0, \"boundary\": \"planner\", \"last_consumed_policy_action_id\": null, \"killed_value\": 0.0, \"lost_value\": 0.0, \"scale\": 0.001, \"reward\": 0.0}",
+        "(SC2Worker pid=2548) Combat result reward: {\"pid\": 7309, \"game_loop\": 2036, \"boundary\": \"planner\", \"last_consumed_policy_action_id\": 1, \"killed_value\": 0.0, \"lost_value\": 0.0, \"scale\": 0.001, \"reward\": 0.0}",
+        "(SC2Worker pid=2542) Combat result reward: {\"pid\": 7369, \"game_loop\": 2500, \"boundary\": \"planner\", \"last_consumed_policy_action_id\": 1, \"killed_value\": 0.0, \"lost_value\": 0.0, \"scale\": 0.001, \"reward\": 0.0} [repeated 3x across cluster]",
+        "(SC2Worker pid=2547) Combat result reward: {\"pid\": 7249, \"game_loop\": 4200, \"boundary\": \"planner\", \"last_consumed_policy_action_id\": 1, \"killed_value\": 0.0, \"lost_value\": 0.0, \"scale\": 0.001, \"reward\": 0.0}",
+        "(SC2Worker pid=2549) Combat result reward: {\"pid\": 7399, \"game_loop\": 5672, \"boundary\": \"planner\", \"last_consumed_policy_action_id\": 1, \"killed_value\": 750.0, \"lost_value\": 50.0, \"scale\": 0.001, \"reward\": 0.7000000000000001}",
+        "(SC2Worker pid=2546) Combat result reward: {\"pid\": 7279, \"game_loop\": 6464, \"boundary\": \"planner\", \"last_consumed_policy_action_id\": 1, \"killed_value\": 50.0, \"lost_value\": 50.0, \"scale\": 0.001, \"reward\": 0.0}",
+        "(SC2Worker pid=2544) Combat result reward: {\"pid\": 7189, \"game_loop\": 10408, \"boundary\": \"terminal\", \"last_consumed_policy_action_id\": 1, \"killed_value\": 150.0, \"lost_value\": 1300.0, \"scale\": 0.001, \"reward\": -1.1500000000000001}",
+        "(SC2Worker pid=2548) Combat result reward: {\"pid\": 7309, \"game_loop\": 2488, \"boundary\": \"planner\", \"last_consumed_policy_action_id\": 2, \"killed_value\": 0.0, \"lost_value\": 0.0, \"scale\": 0.001, \"reward\": 0.0}"
+      ]
+    }
+  },
+  "monitor_checks": {
+    "exact_terminal_identity_and_exit": true,
+    "result_done_acceptance_match": true,
+    "qwen_runtime_and_controller_clean": true,
+    "monitor_reran_full_verifier": false,
+    "full_verifier_scope": "Frozen SpB predecessor_complete() runs original Qwen 3415428 train96/eval96 verifier with write=False before saving passed predecessor receipt. Monitor checked that receipt, matching final states, small metric/seed/load/RNG records and file inventories; did not re-read full logs or checkpoint contents."
+  },
+  "followup_read": {
+    "observed_at": "2026-09-24T01:30:24.422394+08:00",
+    "files": {
+      "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2/runs/train96/manifest.json": {
+        "exists": true,
+        "bytes": 3017,
+        "sha256": "06bd9fbe5f38b0c0bc86add64b0ba5533eca4d4115574c59380859c4beb347cb",
+        "data": {
+          "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+          "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+          "model_source": "/assets/qwen",
+          "model_manifest_sha256": "c82106ca091f4797af1217cca7578618bb2a5cd7c4136ca0d2d06c0a77ed00a7",
+          "source_commit": "34154283a8298ac4fbaab1c63770a6b81f7d375c",
+          "dirty": false,
+          "world_size": 8,
+          "metrics_precision": "binary64-v1"
+        }
+      },
+      "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2/runs/eval96/manifest.json": {
+        "exists": true,
+        "bytes": 3008,
+        "sha256": "26f8d45d72ba3223313959009c51990b7dc0a60d074914430c1040d7eeeafe68",
+        "data": {
+          "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+          "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+          "model_source": "/assets/qwen",
+          "model_manifest_sha256": "c82106ca091f4797af1217cca7578618bb2a5cd7c4136ca0d2d06c0a77ed00a7",
+          "source_commit": "34154283a8298ac4fbaab1c63770a6b81f7d375c",
+          "dirty": false,
+          "world_size": 8,
+          "metrics_precision": "binary64-v1"
+        }
+      },
+      "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/storage-state.json": {
+        "exists": true,
+        "bytes": 1435,
+        "sha256": "f03829a0cf7dec7b2fbdb90bc092f2e607aedbae94438942746ca6fd9af3364b",
+        "data": {
+          "roots": [
+            "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1",
+            "/var/jfsCache/sc2-spb-l7random96-197-source-20260923-r1"
+          ],
+          "bytes": 195029243,
+          "limit": 1099511627776,
+          "deadline": 1790356959.0174987,
+          "returncode": 0,
+          "status": "measured",
+          "stderr": {
+            "tail": "",
+            "characters": 0,
+            "truncated": false
+          },
+          "checked_at": 1790184614.2887652
+        }
+      },
+      "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/storage-failure.json": {
+        "exists": false
+      },
+      "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/spb-random/short/admission-pre.json": {
+        "exists": true,
+        "bytes": 180,
+        "sha256": "b3cabe76495df0aa51129a7b72ff392ecc00b96c5223213e3f97654f7137ddeb",
+        "data": {
+          "passed": true,
+          "checked_at": 1790184159.3113813,
+          "deadline": 1790356959.0174987,
+          "eight_idle_gpus": true,
+          "ram_gib_min": 600,
+          "nvme_gib_min": 1084,
+          "fsync": true
+        }
+      },
+      "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/spb-random/short/host-supervision/state.json": {
+        "exists": true,
+        "bytes": 292,
+        "sha256": "abc273ea2270c4984a3271ef197dd021cba6e28354a22c8143fdbab7dc18ae8f",
+        "data": {
+          "version": "host-guardian-v1",
+          "phase": "running-unverified",
+          "completed": [],
+          "deadline": 1790356959.0174987,
+          "learning_validated": false,
+          "started_at": 1790184159.0187504,
+          "stage": "pre",
+          "container_id": "b9e8b1a538d7ee08552ac546d405dd351236f76ff9b745cbce0e163e5a579da2"
+        }
+      },
+      "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/spb-random/short/runs/pre/result.json": {
+        "exists": false
+      },
+      "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/spb-random/short/acceptance-pre.json": {
+        "exists": false
+      }
+    },
+    "git": {
+      "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2/runtime": {
+        "head": {
+          "returncode": 0,
+          "output": "34154283a8298ac4fbaab1c63770a6b81f7d375c",
+          "stderr": ""
+        },
+        "status": {
+          "returncode": 0,
+          "output": "",
+          "stderr": ""
+        }
+      },
+      "/var/jfsCache/sc2-qwen-random-cp8-197-source-20260923-r2/code": {
+        "head": {
+          "returncode": 0,
+          "output": "34154283a8298ac4fbaab1c63770a6b81f7d375c",
+          "stderr": ""
+        },
+        "status": {
+          "returncode": 0,
+          "output": "",
+          "stderr": ""
+        }
+      },
+      "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/runtime": {
+        "head": {
+          "returncode": 0,
+          "output": "83f3530765babe048035524ddf1651291810818a",
+          "stderr": ""
+        },
+        "status": {
+          "returncode": 0,
+          "output": "",
+          "stderr": ""
+        }
+      },
+      "/var/jfsCache/sc2-spb-l7random96-197-source-20260923-r1/code": {
+        "head": {
+          "returncode": 0,
+          "output": "83f3530765babe048035524ddf1651291810818a",
+          "stderr": ""
+        },
+        "status": {
+          "returncode": 0,
+          "output": "",
+          "stderr": ""
+        }
+      }
+    }
+  },
+  "events_to_notify": [
+    "Qwen native CP8 suffix train96 and paired eval96 completed and accepted",
+    "SpB random pre first actual GPU/NCCL/support banners and SC2 planner/terminal boundaries observed; zero PPO, no phase completion yet"
+  ],
+  "limitations": [
+    "Training suffix is 9..96 only: 88 updates,704 games,614 wins; not a newly measured full1..96 total.",
+    "Paired own randomCP2post8/8 -> CP96eval8/8 is saturated; no demonstrated gain; only8pairs, executor/parameter/FLOPs confounds remain.",
+    "Original CP2 ancestor driver RNG missing/non-bitwise historical restriction and old failed r4 remain unchanged.",
+    "SpB independent seeds plus startup serialization differ from completed SpB same arm; timing equivalence unproven.",
+    "First broad terminal collector output was truncated and not used as standalone complete evidence. This receipt uses bounded projected follow-up reads.",
+    "Existing Qwen checkpoint_evaluation.answers string says online SpB as a generic inherited label; both actual manifests identify Qwen/Qwen3-4B-Instruct-2507. No frozen artifact was changed.",
+    "No server mutation, GPU diagnostic, additional dispatch, recovery, bigCP read, full-log upload or new experiment."
+  ]
+}

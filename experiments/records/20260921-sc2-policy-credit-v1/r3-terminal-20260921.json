@@ -1,0 +1,53 @@
+{
+  "status": "failed_handoff_no_retry",
+  "host_alias": "sc2-a100-197",
+  "root": "/var/jfsCache/sc2-policy-credit197-20260921-r3",
+  "runtime_sha": "ce8b938341cd5b881b4dea8446ad570ed7509f78",
+  "controller_sha": "a6aa4c33d0956c9d25cb07b88dbee3e3be6ee264",
+  "queue_state": {
+    "phase": "failed",
+    "changed_at": "2026-09-21T23:13:47.257417287+08:00",
+    "error": "Command '['du', '-sb', '/var/jfsCache/sc2-policy-credit197-20260921-r3', '/var/jfsCache/sc2-policy-credit197-source-20260921-r3']' returned non-zero exit status 1."
+  },
+  "container": {
+    "name": "sc2-policy-credit197-20260921-r3",
+    "status": "exited",
+    "running": false,
+    "exit_code": 137,
+    "oom_killed": false,
+    "started_at": "2026-09-21T15:11:17.06369017Z",
+    "finished_at": "2026-09-21T15:14:00.893705225Z",
+    "ownership_label": "/var/jfsCache/sc2-policy-credit197-20260921-r3",
+    "stop_path": "host queue exception -> ownership-checked stop_owned"
+  },
+  "artifacts": {
+    "child_state": "stale running-unverified/pre; not evidence of a live process",
+    "pre_result_present": false,
+    "pre_done_present": false,
+    "pre_prompt_response_present": false,
+    "train2_directory_present": false,
+    "post_directory_present": false,
+    "accepted_stages": [],
+    "ppo_updates": 0,
+    "queue_log_sha256": "5fa3fd4ffaeee52c7df75bff9aadb9a2064a247874e09ccb0558bbfa435d04fc",
+    "queue_state_sha256": "3b748db96b4f1c5984c0efe67b745653ecbef5e9729af73d1db5d581645f1be7",
+    "dispatch_sha256": "f00b22606d45620ca38b996373745d585048fed05b4872ada953aaf351410ada"
+  },
+  "post_stop_diagnostic": {
+    "checked_at": "2026-09-21T23:16:47+08:00",
+    "same_du_command_exit_code": 0,
+    "run_root_bytes": 52726352,
+    "source_parent_bytes": 17595104,
+    "sum_bytes": 70321456,
+    "limit_bytes": 137438953472,
+    "original_du_stderr_preserved": false,
+    "exact_measurement_failure_cause": "unknown; transient file changes are only a hypothesis"
+  },
+  "monitor": {"id": "197-spb-r3", "deleted": true},
+  "retry_performed": false,
+  "gpu_retry_authorized": false,
+  "qwen_successors_dispatched": false,
+  "long_training_authorized": false,
+  "old_artifacts_preserved": true,
+  "next_decision": "CPU-only budget-measurement repair/diagnosis, with a separate decision before any new GPU run"
+}

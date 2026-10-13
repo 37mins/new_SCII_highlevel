@@ -1,0 +1,176 @@
+{
+  "schema": "sc2-l7-chart-status-readonly-v1",
+  "observed_at": "2026-09-24T10:09:50.509476+08:00",
+  "read_only": true,
+  "ssh_alias": "sc2-a100-197",
+  "files": {
+    "queue-state.json": {
+      "exists": true,
+      "bytes": 186,
+      "sha256": "7c0a259b9e0aabd9ceffaf5c930a41b82313bcd5cec803c9430937a1568f9c8a"
+    },
+    "dispatch.json": {
+      "exists": true,
+      "bytes": 128,
+      "sha256": "d24fbfb655ecc422d9fd47e4cd9fad89e19e0edecb041222a1af4a5b2d42dff7"
+    },
+    "storage-state.json": {
+      "exists": true,
+      "bytes": 985,
+      "sha256": "c131f9fd432bd849203c3c5d120c62fadc4dcaf796c6b8145d0562d63ff0a6d6"
+    },
+    "storage-failure.json": {
+      "exists": false
+    },
+    "spb-random/long/host-supervision/state.json": {
+      "exists": true,
+      "bytes": 310,
+      "sha256": "2c1a284aec05748df61899fec70f3961fbbe093a8563481cb49e2753ebea8ff7"
+    },
+    "spb-random/long/state.json": {
+      "exists": false
+    },
+    "spb-random/long/admission-eval96.json": {
+      "exists": false
+    },
+    "spb-random/long/runs/train96/result.json": {
+      "exists": true,
+      "bytes": 249366,
+      "sha256": "5feb66bd0bc24fae031e879db25e2df3d05fc5fbcb905549b521d100cb81f53b"
+    },
+    "spb-random/long/runs/train96/.done": {
+      "exists": true,
+      "bytes": 249366,
+      "sha256": "5feb66bd0bc24fae031e879db25e2df3d05fc5fbcb905549b521d100cb81f53b"
+    },
+    "spb-random/long/acceptance-train96.json": {
+      "exists": true,
+      "bytes": 268607,
+      "sha256": "49860fa66d7c291a6104770b5152ea73fbac780cdd7527d4b12133d5f29adf01"
+    },
+    "spb-random/long/runs/train96/manifest.json": {
+      "exists": true,
+      "bytes": 3046,
+      "sha256": "5422ae326074c24532d525ab7152f78a7256e3b1b5046305644b56fdc2e274d8"
+    },
+    "spb-random/long/host-supervision/train96-guardian.json": {
+      "exists": true,
+      "bytes": 378147,
+      "sha256": "09b6936d89dbba2f78bd4235c1ac5f3f4df13f41135be046ce1ec8848c57cd61"
+    }
+  },
+  "states": {
+    "queue-state.json": {
+      "phase": "running-unverified",
+      "completed": [
+        "spb-random/short"
+      ],
+      "first_dispatch_by": 1790312320.0467553,
+      "part": "spb-random/long",
+      "deadline": 1790356959.0174987
+    },
+    "dispatch.json": {
+      "start": 1790184159.0174987,
+      "deadline": 1790356959.0174987,
+      "gpu_hours": 384,
+      "new_games": 792,
+      "new_updates": 96
+    },
+    "storage-state.json": {
+      "command": [
+        "du",
+        "-sb",
+        "--null",
+        "--",
+        "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1",
+        "/var/jfsCache/sc2-spb-l7random96-197-source-20260923-r1"
+      ],
+      "roots": [
+        "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1",
+        "/var/jfsCache/sc2-spb-l7random96-197-source-20260923-r1"
+      ],
+      "started_at": 1790215760.5469759,
+      "deadline": 1790356959.0174987,
+      "limit": 1099511627776,
+      "bytes": 831162453513,
+      "returncode": 0,
+      "status": "measured",
+      "stdout": {
+        "tail": "831142504567\t/var/jfsCache/sc2-spb-l7random96-197-20260923-r1\u000019948946\t/var/jfsCache/sc2-spb-l7random96-197-source-20260923-r1\u0000",
+        "characters": 127,
+        "truncated": false
+      },
+      "stderr": {
+        "tail": "",
+        "characters": 0,
+        "truncated": false
+      },
+      "root_bytes": {
+        "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1": 831142504567,
+        "/var/jfsCache/sc2-spb-l7random96-197-source-20260923-r1": 19948946
+      },
+      "checked_at": 1790215760.7822037
+    },
+    "storage-failure.json": null,
+    "spb-random/long/host-supervision/state.json": {
+      "version": "host-guardian-v1",
+      "phase": "stage-completed",
+      "completed": [
+        "train96"
+      ],
+      "deadline": 1790356959.0174987,
+      "learning_validated": false,
+      "started_at": 1790187111.9027476,
+      "stage": "train96",
+      "container_id": "40d5a3f43a41fffb0eb51ea9a1c816b118cddef0b151464946d0c663fc024217"
+    },
+    "spb-random/long/state.json": null,
+    "spb-random/long/admission-eval96.json": null
+  },
+  "eval96": {
+    "run_directory_exists": false
+  },
+  "previous_interrupted_heartbeat": {
+    "observed_at": "2026-09-24T09:58:10.782969+08:00",
+    "queue": {
+      "phase": "running-unverified",
+      "completed": [
+        "spb-random/short"
+      ],
+      "first_dispatch_by": 1790312320.0467553,
+      "part": "spb-random/long",
+      "deadline": 1790356959.0174987
+    },
+    "host": {
+      "version": "host-guardian-v1",
+      "phase": "stage-completed",
+      "completed": [
+        "train96"
+      ],
+      "deadline": 1790356959.0174987,
+      "learning_validated": false,
+      "started_at": 1790187111.9027476,
+      "stage": "train96",
+      "container_id": "40d5a3f43a41fffb0eb51ea9a1c816b118cddef0b151464946d0c663fc024217"
+    },
+    "storage_checked_at": 1790215088.2444866,
+    "storage_bytes": 831162453513,
+    "note": "Read-only acquisition completed before user interruption; no mutation or commit had started. Recorded here with the later user-requested chart delivery."
+  },
+  "validation": {
+    "accepted_train96_terminal_hashes_unchanged": true,
+    "eval_admission_absent": true,
+    "eval_run_absent": true,
+    "no_storage_failure": true,
+    "unchanged_shared_deadline": 1790356959.0174987
+  },
+  "actions": {
+    "server_mutation": false,
+    "rerun_or_dispatch": false,
+    "gpu_diagnostics": false,
+    "large_checkpoint_read": false,
+    "full_log_read": false,
+    "monitor_changed": false
+  },
+  "interpretation": "Train96 remains accepted; final eval96 awaits unchanged admission. Specific unmet resource and ETA are not established. No failure; retain sole existing monitor."
+}

@@ -1,0 +1,46 @@
+{
+  "observed_at_beijing": "2026-09-26T01:03:26+08:00",
+  "observed_at_epoch": 1790355806.530762,
+  "status": "invalid_before_gpu_dispatch",
+  "runtime_sha": "769e55ef1b615ed08fe3259aee7026c730874429",
+  "github_runtime_sha_verified": true,
+  "branch": "codex/fix-sc2-startup-port-race",
+  "root": "/var/jfsCache/sc2-qwen-l8-pilot96-197-20260926-r6",
+  "source_parent": "/var/jfsCache/sc2-qwen-l8-pilot96-197-source-20260926-r6",
+  "scope": {"retained_r1_accepted_games": 32, "r6_new_games": 0, "r6_optimizer_updates": 0, "gpu_dispatch": false, "formal_queue": false},
+  "cpu": {"real_launcher_hydra_stages": 8, "container_tests": 96, "host_tests": 71, "skips": 0, "cuda_initialized": false,
+    "launcher_container_id": "5dac0f1f77d2593a07cadad10c70f2eea7ef765fcdd950e16bea4bfedbcc5d0d",
+    "tests_container_id": "49c316716ae2a9fb9bfc6cbf4afe1c59cd869b430dd607600934c43f496a4b25",
+    "both_exit_codes": 0, "both_device_requests": null, "exact_owner_verified": true},
+  "hook": {
+    "container_id": "f3ef82506577be82ff908fe83d9fc8d950fb2d6da33cb498e0e5bbe03c56971e",
+    "container_name": "sc2-qwen-l8-pilot96-197-20260926-r6-cpu-hook",
+    "terminal": "exited1", "oom_killed": false, "device_requests": null,
+    "proof_present": false, "exact_owner_verified": true,
+    "direct_error": "RuntimeError: SC2PATH must point to the StarCraftII installation",
+    "cause": "The direct probe passed only PYTHONPATH and two L8 flags into Ray, omitting SC2PATH and other actual-launcher runtime_env values. The actual CPU/Hydra config includes SC2PATH=/assets/StarCraftII. Ray's setup hook imported envSC2 and failed before any model/game/GPU work.",
+    "ray_default_task_retry_observed": true,
+    "scope_limit": "CUDA identity/NCCL and the prior duplicate-GPU issue remain unverified."
+  },
+  "terminal_sha256": {
+    "deployment.json": "278c24ad1d47a9ce9275a751e803e532bdd93415093a644373ec0fecee9ed66b",
+    "readiness.json": "4130563e7f7288ca1607054b391b7bcefa28b6b6a58301524ea69bad1b7db599",
+    "regressions.json": "6a68dc5d0b99ed1a6f097d866d4afb65406a944f7ad4557b64d4bb93b93b54b9",
+    "host-regressions.json": "74e4120a2a0126ec7fc9b05f3034660ff489fa8c9888716cfaaae37faa3a1871",
+    "cpu/ray-hook/entry.log": "1758ad2f67e8ac0ab15ec8f7ddbad443c6b3e15a8a2475bdaf8862d17e03eaa4",
+    "historical-boundary.json": "c2b415838560321211e73082e8367088ea445ff8dcd6aabcb22e41c23234ef88",
+    "preparation-completion.json": "8e5e575049b43214c1a88ae61053c1ecaeb2bf9aad064d58259810b64312fce4"
+  },
+  "preparation_completion": {
+    "cause": "shared Git object references exceeded nesting limit before deployment creation",
+    "same_runtime_sha_preserved": true,
+    "helper_commit": "090a1bd",
+    "helper_sha256": "fdd50b40c1cdcbc3abdc7b3d88ca00c2197eb08122d0cde22488a28b97114506",
+    "old_alternate_pointer_preserved": true,
+    "git_pack_bytes": 4449277,
+    "git_pack_sha256": "55e22dfa08665781fdc30cb733b2de2b438b97b50c84975b2cd76f6e0558e7a3"
+  },
+  "storage": {"counted_roots": 12, "bytes": 349017439, "limit_bytes": 34359738368, "du_return_code": 0, "du_stderr_empty": true},
+  "gpu_after_failure": "All eight host GPUs 0 MiB/0%; no compute PID at observation time.",
+  "actions": "No r6 hook restart, GPU dispatch, formal queue, game, optimizer update, deletion or L8 RL training."
+}

@@ -1,0 +1,692 @@
+{
+  "schema": "sc2-minibatch-semantics-comparison-v1",
+  "observed_at": "2026-09-24T14:56:50.234365+08:00",
+  "config_supplement_at": "2026-09-24T14:59:46.911206+08:00",
+  "ssh_alias": "sc2-a100-197",
+  "runs": {
+    "fresh_qwen": {
+      "run": "/var/jfsCache/sc2-qwen-l7same96-197-20260924-r1/qwen-same/long/runs/train96",
+      "manifest": {
+        "source_commit": "5228e9acc7698c69bdcce9af30aa5a7570829a19",
+        "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+        "started_at": "2026-09-24T06:37:05.096949+00:00",
+        "start_step": 2,
+        "target_steps": 96,
+        "world_size": 8,
+        "metrics_precision": "binary64-v1"
+      },
+      "effective": {
+        "selected_final_overrides": {
+          "algorithm.adv_estimator": "gigpo",
+          "data.train_batch_size": "1",
+          "data.max_prompt_length": "4096",
+          "data.max_response_length": "192",
+          "actor_rollout_ref.actor.optim.lr": "1e-6",
+          "actor_rollout_ref.actor.ppo_mini_batch_size": "8",
+          "actor_rollout_ref.actor.ppo_micro_batch_size_per_gpu": "1",
+          "actor_rollout_ref.rollout.temperature": "0.8",
+          "actor_rollout_ref.rollout.top_p": "1.0",
+          "actor_rollout_ref.rollout.top_k": "0",
+          "actor_rollout_ref.rollout.n": "1",
+          "env.max_steps": "0",
+          "env.rollout.n": "8",
+          "trainer.n_gpus_per_node": "8",
+          "trainer.nnodes": "1"
+        },
+        "sha256": "2dd903ea686457a9abb7d2053ad7e4f7e2e685d8b72d19ad60e4ec575f5ce5b2"
+      },
+      "timings": {
+        "returned_rows": 6,
+        "scope": "fresh train2 steps1-2 plus bounded returned long steps3-6",
+        "means": {
+          "timing_s/step": 221.92258491103226,
+          "timing_s/gen": 185.2415136025908,
+          "timing_s/update_actor": 21.628360417361062
+        }
+      },
+      "native_resume": {
+        "from_checkpoint": "/var/jfsCache/sc2-qwen-l7same96-197-20260924-r1/qwen-same/short/runs/train2/checkpoints/global_step_2",
+        "global_step": 2,
+        "next_reset_index": 2,
+        "next_seeds": [
+          53,
+          53,
+          53,
+          53,
+          53,
+          53,
+          53,
+          53
+        ],
+        "source": "checkpoint",
+        "model_optimizer_dataloader_load_returned": true
+      }
+    },
+    "old_qwen_same": {
+      "run": "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/runs/train96",
+      "manifest": {
+        "source_commit": "279d5496464de29e14c64924ccb829147351efbd",
+        "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+        "started_at": "2026-09-22T05:18:55.415084+00:00",
+        "start_step": 2,
+        "target_steps": 96,
+        "world_size": 8,
+        "metrics_precision": null
+      },
+      "effective": {
+        "selected_final_overrides": {
+          "algorithm.adv_estimator": "gigpo",
+          "data.train_batch_size": "1",
+          "data.max_prompt_length": "4096",
+          "data.max_response_length": "192",
+          "actor_rollout_ref.actor.optim.lr": "1e-6",
+          "actor_rollout_ref.actor.ppo_mini_batch_size": "8",
+          "actor_rollout_ref.actor.ppo_micro_batch_size_per_gpu": "1",
+          "actor_rollout_ref.rollout.temperature": "0.8",
+          "actor_rollout_ref.rollout.top_p": "1.0",
+          "actor_rollout_ref.rollout.top_k": "0",
+          "actor_rollout_ref.rollout.n": "1",
+          "env.max_steps": "0",
+          "env.rollout.n": "8",
+          "trainer.n_gpus_per_node": "8",
+          "trainer.nnodes": "1"
+        },
+        "sha256": "ceeb2452dddf73374de33c50092b95f00e87ce1a03a25725d26a7fd018ec712e"
+      },
+      "timings": {
+        "returned_rows": 94,
+        "timing_s/step": {
+          "mean": 141.1941914893617,
+          "median": 128.851,
+          "min": 88.941,
+          "max": 369.316
+        },
+        "timing_s/gen": {
+          "mean": 105.53640425531916,
+          "median": 90.3965,
+          "min": 66.617,
+          "max": 283.139
+        },
+        "timing_s/update_actor": {
+          "mean": 22.15904255319149,
+          "median": 18.985500000000002,
+          "min": 7.783,
+          "max": 55.289
+        },
+        "episode/length/mean": {
+          "mean": 6.477393617021277,
+          "median": 5.375,
+          "min": 1.875,
+          "max": 16.5
+        },
+        "prompt_length/mean": {
+          "mean": 1019.9302872340426,
+          "median": 1016.1875,
+          "min": 998.125,
+          "max": 1062.425
+        },
+        "response_length/mean": {
+          "mean": 51.168542553191486,
+          "median": 27.6,
+          "min": 21.625,
+          "max": 163.583
+        }
+      },
+      "native_resume": {
+        "from_checkpoint": "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-same/runs/train2/checkpoints/global_step_2",
+        "global_step": 2,
+        "next_reset_index": 2,
+        "next_seeds": [
+          53,
+          53,
+          53,
+          53,
+          53,
+          53,
+          53,
+          53
+        ],
+        "source": "verified legacy ledger; driver RNG unavailable, not bitwise replay",
+        "model_optimizer_dataloader_load_returned": true
+      }
+    },
+    "qwen_random": {
+      "run": "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2/runs/train96",
+      "manifest": {
+        "source_commit": "34154283a8298ac4fbaab1c63770a6b81f7d375c",
+        "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+        "started_at": "2026-09-23T13:06:48.238800+00:00",
+        "start_step": 8,
+        "target_steps": 96,
+        "world_size": 8,
+        "metrics_precision": "binary64-v1"
+      },
+      "effective": {
+        "selected_final_overrides": {
+          "algorithm.adv_estimator": "gigpo",
+          "data.train_batch_size": "1",
+          "data.max_prompt_length": "4096",
+          "data.max_response_length": "192",
+          "actor_rollout_ref.actor.optim.lr": "1e-6",
+          "actor_rollout_ref.actor.ppo_mini_batch_size": "8",
+          "actor_rollout_ref.actor.ppo_micro_batch_size_per_gpu": "1",
+          "actor_rollout_ref.rollout.temperature": "0.8",
+          "actor_rollout_ref.rollout.top_p": "1.0",
+          "actor_rollout_ref.rollout.top_k": "0",
+          "actor_rollout_ref.rollout.n": "1",
+          "env.max_steps": "0",
+          "env.rollout.n": "8",
+          "trainer.n_gpus_per_node": "8",
+          "trainer.nnodes": "1"
+        },
+        "sha256": "a6e6753a4dde87614ac10433048d250123b8c233d972ef107ea41205b9568718"
+      },
+      "timings": {
+        "returned_rows": 88,
+        "timing_s/step": {
+          "mean": 170.02203093506185,
+          "median": 171.4528049491346,
+          "min": 130.01744957081974,
+          "max": 268.59653671551496
+        },
+        "timing_s/gen": {
+          "mean": 148.74926382432352,
+          "median": 151.19304945506155,
+          "min": 111.73343036323786,
+          "max": 246.15015121083707
+        },
+        "timing_s/update_actor": {
+          "mean": 12.919309453932907,
+          "median": 11.953106467612088,
+          "min": 10.8907017018646,
+          "max": 18.16419066488743
+        },
+        "episode/length/mean": {
+          "mean": 3.1605113636363638,
+          "median": 3,
+          "min": 3,
+          "max": 4.375
+        },
+        "prompt_length/mean": {
+          "mean": 1027.7739784934304,
+          "median": 1025.9114379882812,
+          "min": 1022.5,
+          "max": 1045.875
+        },
+        "response_length/mean": {
+          "mean": 36.60797760703347,
+          "median": 36.171875,
+          "min": 30.75,
+          "max": 47.3125
+        }
+      },
+      "native_resume": {
+        "from_checkpoint": "/var/jfsCache/sc2-l7-followup197-20260922-r4/qwen-random/long/runs/train96/checkpoints/global_step_8",
+        "global_step": 8,
+        "next_reset_index": 8,
+        "next_seeds": [
+          8,
+          24,
+          72,
+          28,
+          30,
+          18,
+          69,
+          57
+        ],
+        "source": "checkpoint",
+        "model_optimizer_dataloader_load_returned": true
+      }
+    },
+    "spb_random": {
+      "run": "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/spb-random/long/runs/train96",
+      "manifest": {
+        "source_commit": "83f3530765babe048035524ddf1651291810818a",
+        "model_id": "Panyuqi/SpikingBrain-2.0-instruct",
+        "started_at": "2026-09-23T18:12:14.935075+00:00",
+        "start_step": 2,
+        "target_steps": 96,
+        "world_size": 8,
+        "metrics_precision": "binary64-v1"
+      },
+      "effective": {
+        "selected_final_overrides": {
+          "algorithm.adv_estimator": "gigpo",
+          "data.train_batch_size": "1",
+          "data.max_prompt_length": "4096",
+          "data.max_response_length": "192",
+          "actor_rollout_ref.actor.optim.lr": "1e-6",
+          "actor_rollout_ref.actor.ppo_mini_batch_size": "8",
+          "actor_rollout_ref.actor.ppo_micro_batch_size_per_gpu": "1",
+          "actor_rollout_ref.rollout.temperature": "0.8",
+          "actor_rollout_ref.rollout.top_p": "1.0",
+          "actor_rollout_ref.rollout.top_k": "0",
+          "actor_rollout_ref.rollout.n": "1",
+          "env.max_steps": "0",
+          "env.rollout.n": "8",
+          "trainer.n_gpus_per_node": "8",
+          "trainer.nnodes": "1"
+        },
+        "sha256": "066b7c7217f946054d96099e25eb03315d969eee1c151dc7e7482f277c9c1e17"
+      },
+      "timings": {
+        "returned_rows": 94,
+        "timing_s/step": {
+          "mean": 275.71449470320874,
+          "median": 231.60437791096047,
+          "min": 138.4948669653386,
+          "max": 1002.6449762890115
+        },
+        "timing_s/gen": {
+          "mean": 253.5965649308835,
+          "median": 217.25128903333098,
+          "min": 130.793487357907,
+          "max": 707.8860161174089
+        },
+        "timing_s/update_actor": {
+          "mean": 13.119837614133003,
+          "median": 6.713103478308767,
+          "min": 4.578999447636306,
+          "max": 193.50770314224064
+        },
+        "episode/length/mean": {
+          "mean": 2.4388297872340425,
+          "median": 2.25,
+          "min": 2,
+          "max": 7.75
+        },
+        "prompt_length/mean": {
+          "mean": 1035.7503447837018,
+          "median": 1034.6875,
+          "min": 1020.5,
+          "max": 1056.890625
+        },
+        "response_length/mean": {
+          "mean": 64.98781041896089,
+          "median": 50.45833396911621,
+          "min": 40.70833206176758,
+          "max": 148.7916717529297
+        }
+      },
+      "native_resume": {
+        "from_checkpoint": "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/spb-random/short/runs/train2/checkpoints/global_step_2",
+        "global_step": 2,
+        "next_reset_index": 2,
+        "next_seeds": [
+          36,
+          17,
+          96,
+          12,
+          79,
+          32,
+          68,
+          90
+        ],
+        "source": "checkpoint",
+        "model_optimizer_dataloader_load_returned": true
+      }
+    }
+  },
+  "current": {
+    "queue-state.json": {
+      "phase": "running-unverified",
+      "completed": [
+        "qwen-same/short"
+      ],
+      "first_dispatch_by": 1790360559.0174987,
+      "part": "qwen-same/long",
+      "deadline": 1790403303.797456
+    },
+    "dispatch.json": {
+      "start": 1790230503.797456,
+      "deadline": 1790403303.797456,
+      "gpu_hours": 384,
+      "new_games": 792,
+      "new_updates": 96
+    },
+    "failure.json": null,
+    "qwen-same/long/host-supervision/state.json": {
+      "version": "host-guardian-v1",
+      "phase": "running-unverified",
+      "completed": [],
+      "deadline": 1790403303.797456,
+      "learning_validated": false,
+      "started_at": 1790231815.6909914,
+      "stage": "train96",
+      "container_id": "80abe03174c3b0b584e16b1d0aef48fb87f9f45390435b3cc57484a5dba1df9d"
+    },
+    "storage": {
+      "roots": [
+        "/var/jfsCache/sc2-qwen-l7same96-197-20260924-r1",
+        "/var/jfsCache/sc2-qwen-l7same96-197-source-20260924-r1"
+      ],
+      "bytes": 50114527761,
+      "limit": 1099511627776,
+      "returncode": 0,
+      "stderr": {
+        "tail": "",
+        "characters": 0,
+        "truncated": false
+      },
+      "checked_at": 1790232997.3907044,
+      "deadline": 1790403303.797456
+    },
+    "container": {
+      "id": "80abe03174c3b0b584e16b1d0aef48fb87f9f45390435b3cc57484a5dba1df9d",
+      "owner": "/var/jfsCache/sc2-qwen-l7same96-197-20260924-r1/qwen-same/long",
+      "state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "0001-01-01T00:00:00Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 2174367,
+        "Restarting": false,
+        "Running": true,
+        "StartedAt": "2026-09-24T06:36:56.15518741Z",
+        "Status": "running"
+      }
+    }
+  },
+  "fresh_returned_long_metrics": [
+    {
+      "step": 3,
+      "actor/grad_norm": 1.2881733079751332,
+      "timing_s/step": 181.8153512114659,
+      "timing_s/gen": 144.82948922924697,
+      "timing_s/update_actor": 20.450109027326107,
+      "episode/length/mean": 5.625,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 4,
+      "actor/grad_norm": 316.423760005406,
+      "timing_s/step": 352.53091753367335,
+      "timing_s/gen": 316.06585269887,
+      "timing_s/update_actor": 23.269323430024087,
+      "episode/length/mean": 6.875,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 5,
+      "actor/grad_norm": 7.5671792725722,
+      "timing_s/step": 174.35942159220576,
+      "timing_s/gen": 141.88406830467284,
+      "timing_s/update_actor": 20.898641154170036,
+      "episode/length/mean": 5.5,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 6,
+      "actor/grad_norm": 0.6833466589450836,
+      "timing_s/step": 207.830565568991,
+      "timing_s/gen": 176.10048950091004,
+      "timing_s/update_actor": 20.16417641658336,
+      "episode/length/mean": 5.375,
+      "policy_credit/invalid_advantage_max": 0
+    }
+  ],
+  "fresh_training_seeds": [
+    {
+      "base_seed": 0,
+      "reset_index": 2,
+      "seed_protocol": "same_uniform101",
+      "seeds": [
+        53,
+        53,
+        53,
+        53,
+        53,
+        53,
+        53,
+        53
+      ]
+    },
+    {
+      "base_seed": 0,
+      "reset_index": 3,
+      "seed_protocol": "same_uniform101",
+      "seeds": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "base_seed": 0,
+      "reset_index": 4,
+      "seed_protocol": "same_uniform101",
+      "seeds": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ]
+    },
+    {
+      "base_seed": 0,
+      "reset_index": 5,
+      "seed_protocol": "same_uniform101",
+      "seeds": [
+        65,
+        65,
+        65,
+        65,
+        65,
+        65,
+        65,
+        65
+      ]
+    },
+    {
+      "base_seed": 0,
+      "reset_index": 6,
+      "seed_protocol": "same_uniform101",
+      "seeds": [
+        62,
+        62,
+        62,
+        62,
+        62,
+        62,
+        62,
+        62
+      ]
+    },
+    {
+      "base_seed": 0,
+      "reset_index": 7,
+      "seed_protocol": "same_uniform101",
+      "seeds": [
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51
+      ]
+    }
+  ],
+  "fresh_audits": [
+    {
+      "real_answers": 45,
+      "valid_answers": 45,
+      "valid_ratio": 1,
+      "min_valid_ratio": 0.5,
+      "decision": "accept",
+      "reason": "validity_floor_passed",
+      "pending_global_step": 3,
+      "optimizer_updates_for_this_batch": 0
+    },
+    {
+      "real_answers": 55,
+      "valid_answers": 55,
+      "valid_ratio": 1,
+      "min_valid_ratio": 0.5,
+      "decision": "accept",
+      "reason": "validity_floor_passed",
+      "pending_global_step": 4,
+      "optimizer_updates_for_this_batch": 0
+    },
+    {
+      "real_answers": 44,
+      "valid_answers": 44,
+      "valid_ratio": 1,
+      "min_valid_ratio": 0.5,
+      "decision": "accept",
+      "reason": "validity_floor_passed",
+      "pending_global_step": 5,
+      "optimizer_updates_for_this_batch": 0
+    },
+    {
+      "real_answers": 43,
+      "valid_answers": 43,
+      "valid_ratio": 1,
+      "min_valid_ratio": 0.5,
+      "decision": "accept",
+      "reason": "validity_floor_passed",
+      "pending_global_step": 6,
+      "optimizer_updates_for_this_batch": 0
+    },
+    {
+      "real_answers": 40,
+      "valid_answers": 40,
+      "valid_ratio": 1,
+      "min_valid_ratio": 0.5,
+      "decision": "accept",
+      "reason": "validity_floor_passed",
+      "pending_global_step": 7,
+      "optimizer_updates_for_this_batch": 0
+    },
+    {
+      "real_answers": 40,
+      "valid_answers": 40,
+      "valid_ratio": 1,
+      "min_valid_ratio": 0.5,
+      "decision": "accept",
+      "reason": "validity_floor_passed",
+      "pending_global_step": 8,
+      "optimizer_updates_for_this_batch": 0
+    }
+  ],
+  "fresh_natural_games_by_reset": {
+    "2": {
+      "rows": 8,
+      "terminated": 8,
+      "truncated": 0
+    },
+    "3": {
+      "rows": 8,
+      "terminated": 8,
+      "truncated": 0
+    },
+    "4": {
+      "rows": 8,
+      "terminated": 8,
+      "truncated": 0
+    },
+    "5": {
+      "rows": 8,
+      "terminated": 8,
+      "truncated": 0
+    },
+    "6": {
+      "rows": 8,
+      "terminated": 8,
+      "truncated": 0
+    },
+    "7": {
+      "rows": 8,
+      "terminated": 8,
+      "truncated": 0
+    }
+  },
+  "confirmed_global_step_at_main_snapshot": 6,
+  "note": "Later audits7/8 and closed games are NOT counted as returned updates without returned metrics. No win aggregate asserted: preliminary collector used the wrong outcome key; its zero-valued wins field was discarded. Source field is game_result.",
+  "semantics": {
+    "algorithm": "GiGPO advantage with PPO minibatch actor update",
+    "outer_iteration": "one group of eight natural games, flatten consumed model decisions, then one update_actor RPC containing multiple optimizer steps",
+    "global_minibatch_rows": 8,
+    "microbatch_rows_per_gpu": 1,
+    "world_size": 8,
+    "rollout_n": 1,
+    "env_rollout_n": 8,
+    "per_rank_normalized_minibatch": 1,
+    "gradient_accumulation_microbatches": 1,
+    "ppo_epochs": 1,
+    "ppo_epochs_evidence": "unchanged frozen config default, no override",
+    "copy_padding": "repeat a few existing decision rows to a multiple of8; not new games or new unique policy data",
+    "inferred_examples": [
+      {
+        "outer_step": 1,
+        "unique_consumed_answers": 39,
+        "aligned_rows": 40,
+        "derived_synchronized_optimizer_steps": 5
+      },
+      {
+        "outer_step": 2,
+        "unique_consumed_answers": 57,
+        "aligned_rows": 64,
+        "derived_synchronized_optimizer_steps": 8
+      }
+    ],
+    "optimizer_count_warning": "Examples are inferred from verified row counts and frozen control flow, not an independently instrumented optimizer-call counter; 96 returned PPO iterations do not mean96 optimizer.step calls."
+  },
+  "code_evidence": {
+    "current_frozen_sha": "5228e9acc7698c69bdcce9af30aa5a7570829a19",
+    "old_same_sha": "279d5496464de29e14c64924ccb829147351efbd",
+    "spb_random_sha": "83f3530765babe048035524ddf1651291810818a",
+    "unchanged_paths": [
+      "verl/trainer/config/ppo_trainer.yaml",
+      "verl/workers/actor/dp_actor.py",
+      "verl/workers/fsdp_workers.py",
+      "agent_system/multi_turn_rollout/utils.py"
+    ],
+    "diff_old_same_to_current": "empty on listed paths",
+    "diff_spb_to_current": "empty on listed paths",
+    "actor_update_lines": [
+      373,
+      383,
+      395,
+      502
+    ],
+    "rank_normalization_lines": [
+      150,
+      151
+    ],
+    "batch_alignment_lines": [
+      86,
+      126
+    ],
+    "flatten_consumed_rows_path": "agent_system/multi_turn_rollout/rollout_loop.py"
+  },
+  "conclusion": "All four runs have identical selected batch/rollout/epoch settings. No minibatch reduction explains runtime. Current Qwen first6 outer cycles average221.92s, of which185.24s collection and21.63s actor update. Old same long94 cycles mean141.19/105.54/22.16s. Different models/seeds/checkpoint history/early-vs-full sample and startup timing prevent causal performance claims.",
+  "limitations": [
+    "Historical Qwen same strict acceptance remains failed despite useful timing observations.",
+    "New run has binary64 logging, fresh full-stateCP2 and startup serialization differences; not a bitwise or logger-only rerun.",
+    "Outer96iterations mean768training natural games plus24zero-update evaluation games; a bounded experimental validation budget, not convergence proof."
+  ],
+  "actions": {
+    "server_mutation": false,
+    "diagnostics": false,
+    "repeat_dispatch": false,
+    "restart": false,
+    "cleanup": false,
+    "full_log_read": false,
+    "large_checkpoint_read": false,
+    "monitor_change": false
+  },
+  "checks": "Read-only effective override equality; source diff on minibatch implementation and default config; positive finite returned metrics; seed sequence; JSON serialization. No GPU test or verifier rerun."
+}

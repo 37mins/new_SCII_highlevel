@@ -1,0 +1,638 @@
+{
+  "schema": "qwen-l7same-fresh197-pre-complete-first-ppo-v1",
+  "observed_at": "2026-09-24T14:28:17.323980+08:00",
+  "supplement_observed_at": "2026-09-24T14:31:05.464060+08:00",
+  "root": "/var/jfsCache/sc2-qwen-l7same96-197-20260924-r1",
+  "runtime_sha": "5228e9acc7698c69bdcce9af30aa5a7570829a19",
+  "queue": {
+    "phase": "running-unverified",
+    "completed": [],
+    "first_dispatch_by": 1790360559.0174987,
+    "part": "qwen-same/short",
+    "deadline": 1790403303.797456
+  },
+  "dispatch": {
+    "start": 1790230503.797456,
+    "deadline": 1790403303.797456,
+    "gpu_hours": 384,
+    "new_games": 792,
+    "new_updates": 96
+  },
+  "host": {
+    "version": "host-guardian-v1",
+    "phase": "running-unverified",
+    "completed": [
+      "pre"
+    ],
+    "deadline": 1790403303.797456,
+    "learning_validated": false,
+    "started_at": 1790230503.7987063,
+    "stage": "train2",
+    "container_id": "2fc8071e13000a5bf55bf8fbc0b44cf4072590da4b0bf4afb0e21a6058b7239e"
+  },
+  "storage": {
+    "command": [
+      "du",
+      "-sb",
+      "--null",
+      "--",
+      "/var/jfsCache/sc2-qwen-l7same96-197-20260924-r1",
+      "/var/jfsCache/sc2-qwen-l7same96-197-source-20260924-r1"
+    ],
+    "roots": [
+      "/var/jfsCache/sc2-qwen-l7same96-197-20260924-r1",
+      "/var/jfsCache/sc2-qwen-l7same96-197-source-20260924-r1"
+    ],
+    "started_at": 1790231292.7767155,
+    "deadline": 1790403303.797456,
+    "limit": 1099511627776,
+    "bytes": 102318870,
+    "returncode": 0,
+    "status": "measured",
+    "stdout": {
+      "tail": "79052700\t/var/jfsCache/sc2-qwen-l7same96-197-20260924-r1\u000023266170\t/var/jfsCache/sc2-qwen-l7same96-197-source-20260924-r1\u0000",
+      "characters": 121,
+      "truncated": false
+    },
+    "stderr": {
+      "tail": "",
+      "characters": 0,
+      "truncated": false
+    },
+    "quiescence": {
+      "version": "host-guardian-v1",
+      "container_id": "2fc8071e13000a5bf55bf8fbc0b44cf4072590da4b0bf4afb0e21a6058b7239e",
+      "owner_root": "/var/jfsCache/sc2-qwen-l7same96-197-20260924-r1/qwen-same/short",
+      "guardian_pid": 2151703,
+      "paused_verified": true,
+      "cleanup": "verified-unpaused",
+      "paused_at": 1790231292.8314934,
+      "mode": "paused",
+      "resumed_at": 1790231292.8815732
+    },
+    "measured_at": 1790231292.8435087,
+    "root_bytes": {
+      "/var/jfsCache/sc2-qwen-l7same96-197-20260924-r1": 79052700,
+      "/var/jfsCache/sc2-qwen-l7same96-197-source-20260924-r1": 23266170
+    },
+    "checked_at": 1790231292.8817172
+  },
+  "failure": {
+    "exists": false
+  },
+  "containers": {
+    "pre": {
+      "id": "761f502cd72635dadb63eb301e683b646b7f56dfd3b3ccc285f7ac91b4aaf46b",
+      "owner": "/var/jfsCache/sc2-qwen-l7same96-197-20260924-r1/qwen-same/short",
+      "state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-09-24T06:21:52.357646592Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-09-24T06:15:04.214956886Z",
+        "Status": "exited"
+      }
+    },
+    "train2": {
+      "id": "2fc8071e13000a5bf55bf8fbc0b44cf4072590da4b0bf4afb0e21a6058b7239e",
+      "owner": "/var/jfsCache/sc2-qwen-l7same96-197-20260924-r1/qwen-same/short",
+      "state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "0001-01-01T00:00:00Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 2151759,
+        "Restarting": false,
+        "Running": true,
+        "StartedAt": "2026-09-24T06:21:53.968977382Z",
+        "Status": "running"
+      }
+    }
+  },
+  "pre": {
+    "ended_at": "2026-09-24T06:21:52.336493+00:00",
+    "status": "completed",
+    "process_exit_code": 0,
+    "training_updates": 0,
+    "metrics_finite": true,
+    "metrics_precision": "binary64-v1",
+    "evaluable_action_count": 49,
+    "valid_evaluable_action_count": 49,
+    "outcomes": {
+      "trajectories": 8,
+      "natural_games": 8,
+      "wins": 7,
+      "defeats": 1,
+      "ties": 0,
+      "truncated": 0,
+      "natural_win_rate": 0.875,
+      "outcomes": [
+        {
+          "reset_index": 0,
+          "env_index": 6,
+          "decision_count": 3,
+          "step_index": 2,
+          "policy_decision_count": 3,
+          "terminated": true,
+          "truncated": false,
+          "game_result": "Victory",
+          "termination_reason": "game_result",
+          "outcome_reward": 20
+        },
+        {
+          "reset_index": 0,
+          "env_index": 0,
+          "decision_count": 4,
+          "step_index": 3,
+          "policy_decision_count": 4,
+          "terminated": true,
+          "truncated": false,
+          "game_result": "Victory",
+          "termination_reason": "game_result",
+          "outcome_reward": 20
+        },
+        {
+          "reset_index": 0,
+          "env_index": 4,
+          "decision_count": 4,
+          "step_index": 3,
+          "policy_decision_count": 4,
+          "terminated": true,
+          "truncated": false,
+          "game_result": "Victory",
+          "termination_reason": "game_result",
+          "outcome_reward": 20
+        },
+        {
+          "reset_index": 0,
+          "env_index": 2,
+          "decision_count": 5,
+          "step_index": 4,
+          "policy_decision_count": 5,
+          "terminated": true,
+          "truncated": false,
+          "game_result": "Victory",
+          "termination_reason": "game_result",
+          "outcome_reward": 20
+        },
+        {
+          "reset_index": 0,
+          "env_index": 7,
+          "decision_count": 7,
+          "step_index": 6,
+          "policy_decision_count": 7,
+          "terminated": true,
+          "truncated": false,
+          "game_result": "Victory",
+          "termination_reason": "game_result",
+          "outcome_reward": 20
+        },
+        {
+          "reset_index": 0,
+          "env_index": 5,
+          "decision_count": 8,
+          "step_index": 7,
+          "policy_decision_count": 8,
+          "terminated": true,
+          "truncated": false,
+          "game_result": "Victory",
+          "termination_reason": "game_result",
+          "outcome_reward": 20
+        },
+        {
+          "reset_index": 0,
+          "env_index": 1,
+          "decision_count": 9,
+          "step_index": 8,
+          "policy_decision_count": 9,
+          "terminated": true,
+          "truncated": false,
+          "game_result": "Defeat",
+          "termination_reason": "game_result",
+          "outcome_reward": -50
+        },
+        {
+          "reset_index": 0,
+          "env_index": 3,
+          "decision_count": 9,
+          "step_index": 8,
+          "policy_decision_count": 9,
+          "terminated": true,
+          "truncated": false,
+          "game_result": "Victory",
+          "termination_reason": "game_result",
+          "outcome_reward": 20
+        }
+      ]
+    },
+    "result_done_acceptance_equal": true,
+    "acceptance_sha256": "5883930c6018443a7949ae82740aa8251bcb1bf5272efe87e3ee4c493153e4fa",
+    "acceptance_evidence": {
+      "consumed_answers": 49,
+      "valid_consumed_answers": 49,
+      "parsed_plans": 49,
+      "validated_queue_entries": 754,
+      "validated_locally_queued_commands": 521,
+      "execution_scope": "local Depot/Marine commands, not production completion or causal wins"
+    },
+    "acceptance_checked_at": 1790230913.5269456,
+    "guardian": {
+      "container_id": "761f502cd72635dadb63eb301e683b646b7f56dfd3b3ccc285f7ac91b4aaf46b",
+      "owner_root": "/var/jfsCache/sc2-qwen-l7same96-197-20260924-r1/qwen-same/short",
+      "deadline": 1790403303.797456,
+      "phase": "completed",
+      "final_state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-09-24T06:21:52.357646592Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-09-24T06:15:04.214956886Z",
+        "Status": "exited"
+      }
+    },
+    "manifest": {
+      "schema_version": 1,
+      "status": "running",
+      "started_at": "2026-09-24T06:15:15.069680+00:00",
+      "source_commit": "5228e9acc7698c69bdcce9af30aa5a7570829a19",
+      "dirty": false,
+      "formal": true,
+      "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+      "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "model_source": "/assets/qwen",
+      "model_manifest_sha256": "c82106ca091f4797af1217cca7578618bb2a5cd7c4136ca0d2d06c0a77ed00a7",
+      "bo_profile": "canonical",
+      "episode_api": "gymnasium-v0.26",
+      "metrics_precision": "binary64-v1",
+      "bo_path": "/var/jfsCache/sc2-qwen-l7same96-197-20260924-r1/runtime/agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/knowledge/BO/replay_observations_Flat128_d4_TvT_Macro_g2_Result.Victory_twobase.json",
+      "bo_sha256": "304b1f4ff12fe30c5e6d5f7b8eaef8ed6823ca65afed3a3706cae10e3639c494",
+      "mode": "evaluation",
+      "source_files_sha256": {
+        "configs/qwen3-4b-instruct-2507-level5.env": "faa88a45451d5c42003430fdf244775ca9f20b4ee4e2c0f49bd2b2d8c764957e",
+        "configs/system-v1.env": "f99583a73de679b3c11845e7037bbee5629750126241dd8b156206d2734f61a7",
+        "scripts/train_sc2.sh": "c9df070916cb3be0e5732520491bc84ffe09dfe5e0c478cc0a3f74526f27f104",
+        "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/agents/planner.py": "01cc3ac5d6c4c0aebec9817d2cead58d6ddadfa5811eaa048c331fb4054f77d4",
+        "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/players/script_player.py": "89ed4006cf35af238b0962409bd5a183780d8676af5a49af35422d3077030069",
+        "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/players/llm_player.py": "2134b0d02b9b506554ef613facee90c99976fc64f098a1688f4ad3f26d8d0cc2",
+        "agent_system/sc2_episode.py": "882aa88c609100a70892e6479d2e1c48e71c039073b4dbec7267a46e306fff27",
+        "agent_system/environments/env_package/sc2_online_restored/envSC2.py": "f6a1b7eebb470089f548ab96e957cb1c00ad487e4702690385fae8d4b9898a5f",
+        "agent_system/environments/strategic_sc2_env_manager_v2.py": "5592b763164fd64f0c98c5b55380326b8bbe16465404cbce2b21b9aff2ed1a6a",
+        "scripts/run_record.py": "35cce3357733772470ae50f8196ada4cc9a0066cf706d2cf50534dea3ae37541",
+        "verl/utils/logger/aggregate_logger.py": "822439e09abc53f188ffbfce2a360388590be8aa13bee31182e69fe1e9421bd8"
+      },
+      "target_steps": 1,
+      "sc2_signal_max_batches": 0,
+      "start_step": 0,
+      "sc2_checkpoint_resume": false,
+      "training_goal_global_steps": 2,
+      "resume_from_path": null,
+      "host": "761f502cd726",
+      "python": "3.12.11",
+      "gpu_selection": "0,1,2,3,4,5,6,7",
+      "world_size": 8,
+      "container_image_id": "sha256:1a497d5721f89bb2e98c0273c4b1495f8fdc6921d589650d090871c11b8d1649",
+      "versions": {
+        "torch": "2.7.1+cu128",
+        "transformers": "4.55.2",
+        "ray": "2.48.0",
+        "gymnasium": "1.2.3",
+        "flash-attn": "2.6.3",
+        "flash-linear-attention": "0.4.0",
+        "moba": "1.0.0"
+      }
+    },
+    "checkpoint_evaluation": {
+      "checkpoint": null,
+      "loaded_global_step": 0,
+      "checkpoint_load_returned": false,
+      "val_only": true,
+      "optimizer_updates": 0,
+      "feedback": "0",
+      "temperature": 0.8,
+      "do_sample": true,
+      "games": 8,
+      "game_seeds": [
+        605183188,
+        1075501356,
+        2084414326,
+        2203880230,
+        3000371298,
+        949752300,
+        3225036469,
+        2823708076
+      ],
+      "answers": "online SpB; no replay or replacement",
+      "optimizer_loaded_by_existing_loader_but_not_updated": false
+    },
+    "evaluation_seeds": {
+      "base_seed": 1000,
+      "reset_index": 0,
+      "seeds": [
+        605183188,
+        1075501356,
+        2084414326,
+        2203880230,
+        3000371298,
+        949752300,
+        3225036469,
+        2823708076
+      ]
+    },
+    "rank_rng": {
+      "runs/pre/sampling-rank0.json": {
+        "sha256": "3147b32c434c4156b57ba96ce00a812b90d3c4b63f7320b784a2a273e6919cbf",
+        "size": 220,
+        "data": {
+          "rank": 0,
+          "seed": 0,
+          "pid": 4457,
+          "cpu_rng_sha256": "1ccf17250133dec5e96478acd63e13d728d0dbbabb30389415a302c6f872f81f",
+          "cuda_rng_sha256": "374708fff7719dd5979ec875d56cd2286f6d3cf7ec317a3b25632aab28ec37bb"
+        }
+      },
+      "runs/pre/sampling-rank1.json": {
+        "sha256": "bf580b9900cbfb13d2f60f88cb977e35a88ddd73d7c7f44b940f6b79a2b83a71",
+        "size": 220,
+        "data": {
+          "rank": 1,
+          "seed": 1,
+          "pid": 4646,
+          "cpu_rng_sha256": "f5defda135ec2e0d1513e6979390f58397d31a904d5f6540f8b88ae64d1decc1",
+          "cuda_rng_sha256": "4cbbd8ca5215b8d161aec181a74b694f4e24b001d5b081dc0030ed797a8973e0"
+        }
+      },
+      "runs/pre/sampling-rank2.json": {
+        "sha256": "5be7fd66047c39ce6c4099d2b17f0aeeb41ccd95ff04d375da82ae40de9e0085",
+        "size": 220,
+        "data": {
+          "rank": 2,
+          "seed": 2,
+          "pid": 4647,
+          "cpu_rng_sha256": "0f9cd7b642a3f8f641c5e992f17138b2d094db4d56cc2329b3be2c794ddc79ad",
+          "cuda_rng_sha256": "b1535c7783ea8829b6b0cf67704539798b4d16c39bf0bfe09494c5d9f12eee30"
+        }
+      },
+      "runs/pre/sampling-rank3.json": {
+        "sha256": "2a9c0f1193edbb80b55baa8d37a9d0b38e5513afacea72d828a546dead94d24b",
+        "size": 220,
+        "data": {
+          "rank": 3,
+          "seed": 3,
+          "pid": 4648,
+          "cpu_rng_sha256": "76fe321e2dc1dfdec62a274bcedbeea2727be2e2972f97e728e07e0345c21ede",
+          "cuda_rng_sha256": "59d5966c96af7ecad5c9d2918d6582d102b2c67f6b765ea28ac24371ab4f93be"
+        }
+      },
+      "runs/pre/sampling-rank4.json": {
+        "sha256": "56abc500f195bb974d67c5913a377a399cb1c56e53d355e3827fb72cc0aef9c3",
+        "size": 220,
+        "data": {
+          "rank": 4,
+          "seed": 4,
+          "pid": 4649,
+          "cpu_rng_sha256": "de87e86bf2a7b448b35cba75c461560b4b6aa93e7843008c930221dee4551e0f",
+          "cuda_rng_sha256": "6b6f14e6af2627186bf8a55e474dcf6ef3f6ce81af560da871ec51eb670171a9"
+        }
+      },
+      "runs/pre/sampling-rank5.json": {
+        "sha256": "c3bb284e495fe4ca953cfe2d61c22d35356a75f341936d976d8065d4cf615380",
+        "size": 220,
+        "data": {
+          "rank": 5,
+          "seed": 5,
+          "pid": 4650,
+          "cpu_rng_sha256": "f4ef6f460154679cfe881f5d260e16f8ed904898fabc025c755a71e2692eb75c",
+          "cuda_rng_sha256": "966a28d35016032ee27b1860df4a9b16b6c007da76b2e4f94e7526e31c48959b"
+        }
+      },
+      "runs/pre/sampling-rank6.json": {
+        "sha256": "ed3aa549e180e7a8418cf3202cdb50baf0e18bcdf29260a5d02810e8b2b7e027",
+        "size": 220,
+        "data": {
+          "rank": 6,
+          "seed": 6,
+          "pid": 4651,
+          "cpu_rng_sha256": "9e15eceb1ce9d2c2ffe7bcc8fa3155c1445def059cdd06b5429093164db849a7",
+          "cuda_rng_sha256": "5e9a5de4a59a7c3c9ba8846060ba77ab402e3088658aa705e1a64e796f6cd5cf"
+        }
+      },
+      "runs/pre/sampling-rank7.json": {
+        "sha256": "34bec9a1e71c7c262b62d82adceb1138c69b9efb879a3689a81907deaceef35c",
+        "size": 220,
+        "data": {
+          "rank": 7,
+          "seed": 7,
+          "pid": 4652,
+          "cpu_rng_sha256": "daf9268b18e87b0267a6ad240c6093eb98fe6f03872986bd31a497ba5ea2371a",
+          "cuda_rng_sha256": "76108f84396dc2d72ce275fdb0e0ef37b229b2898bf5a31d576fea11a766a42b"
+        }
+      }
+    }
+  },
+  "train2": {
+    "manifest": {
+      "schema_version": 1,
+      "status": "running",
+      "started_at": "2026-09-24T06:22:02.701289+00:00",
+      "source_commit": "5228e9acc7698c69bdcce9af30aa5a7570829a19",
+      "dirty": false,
+      "formal": true,
+      "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+      "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "model_source": "/assets/qwen",
+      "model_manifest_sha256": "c82106ca091f4797af1217cca7578618bb2a5cd7c4136ca0d2d06c0a77ed00a7",
+      "bo_profile": "canonical",
+      "episode_api": "gymnasium-v0.26",
+      "metrics_precision": "binary64-v1",
+      "bo_path": "/var/jfsCache/sc2-qwen-l7same96-197-20260924-r1/runtime/agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/knowledge/BO/replay_observations_Flat128_d4_TvT_Macro_g2_Result.Victory_twobase.json",
+      "bo_sha256": "304b1f4ff12fe30c5e6d5f7b8eaef8ed6823ca65afed3a3706cae10e3639c494",
+      "mode": "training",
+      "source_files_sha256": {
+        "configs/qwen3-4b-instruct-2507-level5.env": "faa88a45451d5c42003430fdf244775ca9f20b4ee4e2c0f49bd2b2d8c764957e",
+        "configs/system-v1.env": "f99583a73de679b3c11845e7037bbee5629750126241dd8b156206d2734f61a7",
+        "scripts/train_sc2.sh": "c9df070916cb3be0e5732520491bc84ffe09dfe5e0c478cc0a3f74526f27f104",
+        "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/agents/planner.py": "01cc3ac5d6c4c0aebec9817d2cead58d6ddadfa5811eaa048c331fb4054f77d4",
+        "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/players/script_player.py": "89ed4006cf35af238b0962409bd5a183780d8676af5a49af35422d3077030069",
+        "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/players/llm_player.py": "2134b0d02b9b506554ef613facee90c99976fc64f098a1688f4ad3f26d8d0cc2",
+        "agent_system/sc2_episode.py": "882aa88c609100a70892e6479d2e1c48e71c039073b4dbec7267a46e306fff27",
+        "agent_system/environments/env_package/sc2_online_restored/envSC2.py": "f6a1b7eebb470089f548ab96e957cb1c00ad487e4702690385fae8d4b9898a5f",
+        "agent_system/environments/strategic_sc2_env_manager_v2.py": "5592b763164fd64f0c98c5b55380326b8bbe16465404cbce2b21b9aff2ed1a6a",
+        "scripts/run_record.py": "35cce3357733772470ae50f8196ada4cc9a0066cf706d2cf50534dea3ae37541",
+        "verl/utils/logger/aggregate_logger.py": "822439e09abc53f188ffbfce2a360388590be8aa13bee31182e69fe1e9421bd8"
+      },
+      "target_steps": 2,
+      "sc2_signal_max_batches": 0,
+      "start_step": 0,
+      "sc2_checkpoint_resume": true,
+      "training_goal_global_steps": 2,
+      "resume_from_path": null,
+      "host": "2fc8071e1300",
+      "python": "3.12.11",
+      "gpu_selection": "0,1,2,3,4,5,6,7",
+      "world_size": 8,
+      "container_image_id": "sha256:1a497d5721f89bb2e98c0273c4b1495f8fdc6921d589650d090871c11b8d1649",
+      "versions": {
+        "torch": "2.7.1+cu128",
+        "transformers": "4.55.2",
+        "ray": "2.48.0",
+        "gymnasium": "1.2.3",
+        "flash-attn": "2.6.3",
+        "flash-linear-attention": "0.4.0",
+        "moba": "1.0.0"
+      }
+    },
+    "seeds": [
+      {
+        "base_seed": 0,
+        "reset_index": 0,
+        "seed_protocol": "same_uniform101",
+        "seeds": [
+          49,
+          49,
+          49,
+          49,
+          49,
+          49,
+          49,
+          49
+        ]
+      },
+      {
+        "base_seed": 0,
+        "reset_index": 1,
+        "seed_protocol": "same_uniform101",
+        "seeds": [
+          97,
+          97,
+          97,
+          97,
+          97,
+          97,
+          97,
+          97
+        ]
+      }
+    ],
+    "audit": {
+      "sha256": "fd217d27a28143f2738530c83ca7478a3d220d9a2e9e5376d4346ca3167101b8",
+      "size": 416,
+      "data": [
+        {
+          "real_answers": 39,
+          "valid_answers": 39,
+          "valid_ratio": 1,
+          "min_valid_ratio": 0.5,
+          "decision": "accept",
+          "reason": "validity_floor_passed",
+          "pending_global_step": 1,
+          "optimizer_updates_for_this_batch": 0
+        },
+        {
+          "real_answers": 57,
+          "valid_answers": 57,
+          "valid_ratio": 1,
+          "min_valid_ratio": 0.5,
+          "decision": "accept",
+          "reason": "validity_floor_passed",
+          "pending_global_step": 2,
+          "optimizer_updates_for_this_batch": 0
+        }
+      ]
+    },
+    "returned_ppo_evidence": {
+      "observed_at": "2026-09-24T14:28:17.323980+08:00",
+      "step": 1,
+      "metrics": {
+        "actor/grad_norm": 4.426372253149748,
+        "timing_s/update_actor": 18.66656713373959,
+        "policy_credit/invalid_advantage_max": 0,
+        "episode/valid_action_ratio": 1,
+        "training/global_step": 1
+      },
+      "source": "/var/jfsCache/sc2-qwen-l7same96-197-20260924-r1/qwen-same/short/runs/train2/console.log",
+      "tail_max_bytes": 1048576,
+      "raw_returned_metric_line": "(TaskRunner pid=2335) step:1 - metrics_precision:binary64-v1 - global_seqlen/min:5067 - global_seqlen/max:5312 - global_seqlen/minmax_diff:245 - global_seqlen/balanced_min:5191 - global_seqlen/balanced_max:5215 - global_seqlen/mean:5200.125 - actor/entropy_loss:0.013859187252819538 - episode/valid_action_ratio:1 - policy_credit/invalid_positive_tokens_removed:0 - policy_credit/invalid_tokens:0 - policy_credit/invalid_advantage_max:0 - actor/kl_loss:0.012349186331499595 - actor/kl_coef:0.01 - actor/pg_loss:-8.1105681850601739e-07 - actor/pg_clipfrac:0.0070645364932715891 - actor/ppo_kl:0.00710914487572154 - actor/pg_clipfrac_lower:0 - actor/grad_norm:4.426372253149748 - perf/mfu/actor:0.02950814219649997 - perf/max_memory_allocated_gb:20.517151355743408 - perf/max_memory_reserved_gb:29.06640625 - perf/cpu_memory_used_gb:68.597183227539062 - actor/lr:9.9999999999999995e-07 - training/global_step:1 - training/epoch:0 - critic/score/mean:26.274999618530273 - critic/score/max:26.274999618530273 - critic/score/min:26.274999618530273 - critic/rewards/mean:26.274999618530273 - critic/rewards/max:26.274999618530273 - critic/rewards/min:26.274999618530273 - critic/advantages/mean:4.4093931705901923e-07 - critic/advantages/max:2.5431315862078918e-06 - critic/advantages/min:-1.6689300537109375e-06 - critic/returns/mean:4.4093931705901923e-07 - critic/returns/max:2.5431315862078918e-06 - critic/returns/min:-1.6689300537109375e-06 - response_length/mean:27.950000762939453 - response_length/max:57 - response_length/min:13 - response_length/clip_ratio:0 - prompt_length/mean:1012.0750122070312 - prompt_length/max:1059 - prompt_length/min:981 - prompt_length/clip_ratio:0 - episode/reward/mean:26.274997711181641 - episode/reward/max:26.274999618530273 - episode/reward/min:26.274999618530273 - episode/length/mean:4.875 - episode/length/max:8 - episode/length/min:3 - episode/tool_call_count/mean:0 - episode/success_rate:1 - timing_s/gen:156.74576073419303 - timing_s/reward:0.014428467489778996 - timing_s/old_log_prob:6.0659679993987083 - timing_s/ref:9.4167435560375452 - timing_s/adv:0.0037315366789698601 - timing_s/update_actor:18.666567133739591 - timing_s/step:190.92363338638097 - timing_per_token_ms/adv:8.9698244728969492e-05 - timing_per_token_ms/gen:140.20193267816907 - timing_per_token_ms/ref:0.22635858647718912 - timing_per_token_ms/update_actor:0.44870476992715536 - perf/total_num_tokens:41601 - perf/time_per_step:190.92363338638097 - perf/throughput:27.236675249502856"
+    },
+    "result_at_main_snapshot": {
+      "exists": false
+    },
+    "short_or_native_parent_accepted": false
+  },
+  "file_hashes": {
+    "queue-state.json": {
+      "sha256": "f07c42fe4be259d80624f9142ca1032ff55fd89bd86a51725bb92405248e75a0",
+      "size": 159
+    },
+    "dispatch.json": {
+      "sha256": "e64cbe3d5f90b046d15c348a9ec830f63e6f84ecb0309184f8111562531b82cb",
+      "size": 126
+    },
+    "storage-state.json": {
+      "sha256": "299be8938a6b82c8d12a6b2cc3b4812289e4397584d964acd85b7703f7251d0d",
+      "size": 1423
+    },
+    "qwen-same/short/host-supervision/state.json": {
+      "sha256": "a5e51e373f0eca0119ab00e48143715e69d7304903cf79f08627ca9dfdd232fb",
+      "size": 307
+    },
+    "qwen-same/short/host-supervision/pre-guardian.json": {
+      "sha256": "763eb9f53b63040980ce156b2efb87b8025b47b5eea5b7e8ab676e1970cfd760",
+      "size": 6933
+    },
+    "qwen-same/short/runs/pre/manifest.json": {
+      "sha256": "86d2962c579203c4e03f217177d299997026954b25fd53d5faae13ff8e64cce0",
+      "size": 2918
+    },
+    "qwen-same/short/runs/pre/result.json": {
+      "sha256": "b1b882f30e50d7fceee39cad727f8198f2ccdd8cbb50315041530d6404f4ac07",
+      "size": 5196
+    },
+    "qwen-same/short/runs/pre/.done": {
+      "sha256": "b1b882f30e50d7fceee39cad727f8198f2ccdd8cbb50315041530d6404f4ac07",
+      "size": 5196
+    },
+    "qwen-same/short/runs/pre/checkpoint_evaluation.json": {
+      "sha256": "bcf33641f0acbe82f4ba09d73b91e19322f04398528415687514472426f3ff01",
+      "size": 475
+    },
+    "qwen-same/short/runs/pre/evaluation_seeds.jsonl": {
+      "sha256": "ffaf9953b3c4fc78b2a0f30c67357504f6a6b8e014c3b0adc2db12e87afdad90",
+      "size": 143
+    },
+    "qwen-same/short/runs/train2/manifest.json": {
+      "sha256": "3fadef5b2e61629be920a0e478cac8b1c3cb2d7bd74aa3e8d991fdc1a3a32b05",
+      "size": 2915
+    },
+    "qwen-same/short/runs/train2/training_seeds.jsonl": {
+      "sha256": "c7225e901aea10a4a2bfdd18f5ce95214e57d5a21c2d0960e263de06c6910283",
+      "size": 228
+    }
+  },
+  "inspection_notes": [
+    "The first collector queried runs/<stage>/acceptance.json and audit at the wrong root; these missing paths do NOT indicate failure. Correct part/acceptance-pre.json and runs/train2/checkpoints/sc2_policy_credit_audit.jsonl were then read and checked.",
+    "First PPO1 is established by returned actor metrics, not the pre-update audit. Both audits1/2 exist in the later14:31 snapshot; no returned PPO2 checked in that snapshot, so do not count two updates.",
+    "No natural training-game total asserted from audit alone; final train2 acceptance still pending at main snapshot.",
+    "Reusable checkpoint_evaluation answers text says online SpB; manifest and frozen model provenance identify original Qwen; receipt not rewritten."
+  ],
+  "scope": "Read-only SSH small receipts, exact container inspection and bounded1MiB train log tail; no GPU diagnostic, server write, verifier rerun, checkpoint read, dispatch/retry or automation change.",
+  "notification_events": [
+    "fresh-Qwen-pre-complete",
+    "fresh-Qwen-first-returned-PPO"
+  ],
+  "limitations": [
+    "Pre7/8 and nonzero gradient do not establish strategic learning or architecture advantage.",
+    "Historical failed Qwen same gradient gaps remain failed; clock/budgets unchanged."
+  ]
+}

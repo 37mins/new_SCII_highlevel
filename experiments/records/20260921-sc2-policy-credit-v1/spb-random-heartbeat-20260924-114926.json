@@ -1,0 +1,38 @@
+{
+  "schema": "sc2-readonly-heartbeat-delta-v1",
+  "observed_at": "2026-09-24T11:49:26.235189+08:00",
+  "automation_id": "197-qwen-cp8",
+  "read_only": true,
+  "compared_to": "spb-random-heartbeat-20260924-104827.json",
+  "queue_phase": "running-unverified",
+  "queue_part": "spb-random/long",
+  "host_phase": "stage-completed",
+  "host_completed": [
+    "train96"
+  ],
+  "eval96_admission_exists": false,
+  "eval96_run_exists": false,
+  "accepted_train96_terminal_hashes_unchanged": 5,
+  "shared_deadline": 1790356959.0174987,
+  "storage": {
+    "bytes": 831162453514,
+    "limit": 1099511627776,
+    "checked_at": 1790221752.787253,
+    "returncode": 0,
+    "stderr_empty": true,
+    "status": "measured",
+    "exact_accounted_root_count": 2,
+    "failure_exists": false
+  },
+  "prior_disk_blocker_not_remeasured": true,
+  "new_qwen_same_budget_approved_but_not_prepared_queued_or_dispatched": true,
+  "server_mutation": false,
+  "gpu_diagnostics": false,
+  "full_log_or_checkpoint_read": false,
+  "training_metrics_reread": false,
+  "monitor_retained": true,
+  "notification": "Quiet unchanged wait; no new completion/failure/decision to report.",
+  "validation": "Parsed current small states; five accepted train terminal hashes match prior receipt; shared deadline and strict storage sample verified. No model tests.",
+  "heartbeat_scheduled_at": "2026-09-24T03:48:12.919Z",
+  "prior_disk_evidence": "gpu-usage197-20260924-114537.json"
+}

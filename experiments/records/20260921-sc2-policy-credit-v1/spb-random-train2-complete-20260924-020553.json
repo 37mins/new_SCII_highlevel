@@ -1,0 +1,775 @@
+{
+  "observed_at": "2026-09-24T02:05:53.974622+08:00",
+  "read_only": true,
+  "files": {
+    "deployment.json": {
+      "exists": true,
+      "bytes": 1177,
+      "sha256": "4fc0d11ba6f5fb2520d495c3054047badb17b0c2b65c0110ad3871114252a7f8"
+    },
+    "queue-state.json": {
+      "exists": true,
+      "bytes": 161,
+      "sha256": "2df183a2102a05d0bba1fd88502e7c85f03fcd5ffe53ea29a1235b183d4c7c4c"
+    },
+    "dispatch.json": {
+      "exists": true,
+      "bytes": 128,
+      "sha256": "d24fbfb655ecc422d9fd47e4cd9fad89e19e0edecb041222a1af4a5b2d42dff7"
+    },
+    "predecessor-acceptance.json": {
+      "exists": true,
+      "bytes": 179,
+      "sha256": "b6453b8c6e448272675ea1cc199c89a3f222b5008b014996fcf820d84caf028c"
+    },
+    "storage-state.json": {
+      "exists": true,
+      "bytes": 1441,
+      "sha256": "bf05343ada26a241ac5cd8b0dd45b19fa360ad73171ad35daf476b9bca47311a"
+    },
+    "storage-failure.json": {
+      "exists": false
+    },
+    "spb-random/short/host-supervision/state.json": {
+      "exists": true,
+      "bytes": 320,
+      "sha256": "9f02d09ffc62270cb24156ca1293d9226d60e6340da833332c7d9958153767b5"
+    },
+    "spb-random/short/state.json": {
+      "exists": false
+    },
+    "spb-random/long/host-supervision/state.json": {
+      "exists": false
+    },
+    "spb-random/long/state.json": {
+      "exists": false
+    },
+    "spb-random/long/dispatch.json": {
+      "exists": false
+    },
+    "spb-random/long/parent-readiness.json": {
+      "exists": false
+    },
+    "spb-random/short/runs/train2/result.json": {
+      "exists": true,
+      "bytes": 9510,
+      "sha256": "e7ef23f23688b5abecbd456ecbd36502b8a212e657c6cf4cb682950afea83d9e"
+    },
+    "spb-random/short/runs/train2/.done": {
+      "exists": true,
+      "bytes": 9510,
+      "sha256": "e7ef23f23688b5abecbd456ecbd36502b8a212e657c6cf4cb682950afea83d9e"
+    },
+    "spb-random/short/acceptance-train2.json": {
+      "exists": true,
+      "bytes": 10493,
+      "sha256": "c7d66d947cf3d1d39e32b876bdbef835e2919e8c9dee41e92d01abd7e6556878"
+    },
+    "spb-random/short/runs/train2/manifest.json": {
+      "exists": true,
+      "bytes": 2943,
+      "sha256": "83335fae185105bed4ee9e415f8ef90827b45cd9757bcf245cc64a35b9e7a20f"
+    },
+    "spb-random/short/host-supervision/train2-guardian.json": {
+      "exists": true,
+      "bytes": 25050,
+      "sha256": "c39ff909117b77fe0e09a81187d358c2ae6a8817aaa519bf6a89c3a0281e0d7d"
+    },
+    "spb-random/short/admission-train2.json": {
+      "exists": true,
+      "bytes": 179,
+      "sha256": "35a44a188e69ed6fd470f9753dcb2e78befb54313168bfbcb3bd38b3422c82d0"
+    },
+    "spb-random/short/runs/train2/evaluation_seeds.jsonl": {
+      "exists": false
+    },
+    "spb-random/short/runs/train2/training_seeds.jsonl": {
+      "exists": true,
+      "bytes": 242,
+      "sha256": "e6fd6d694811367de8b1023e20ba103d0cfbaab581ac1100ae78d4398007676f"
+    },
+    "spb-random/short/runs/train2/checkpoint_evaluation.json": {
+      "exists": false
+    },
+    "spb-random/short/runs/train2/checkpoints/resume_state.json": {
+      "exists": false
+    },
+    "spb-random/short/runs/train2/metrics.json": {
+      "exists": true,
+      "bytes": 5743,
+      "sha256": "0d8a88dbf93e344637040ab4bda40a8d74654196d9346b411c1f4d33f9fc5d0b"
+    },
+    "spb-random/short/runs/train2/checkpoints/sc2_policy_credit_audit.jsonl": {
+      "exists": true,
+      "bytes": 416,
+      "sha256": "e1419365ab24e7243f41fd7aec54d072d7a5876867741d8472962c2e770072ed"
+    },
+    "spb-random/short/runs/post/result.json": {
+      "exists": false
+    },
+    "spb-random/short/runs/post/.done": {
+      "exists": false
+    },
+    "spb-random/short/acceptance-post.json": {
+      "exists": false
+    },
+    "spb-random/short/runs/post/manifest.json": {
+      "exists": true,
+      "bytes": 3047,
+      "sha256": "95184866e444ea0436b2ef90568ca2ff39f6cb7eec577c585b90c855dbb24c72"
+    },
+    "spb-random/short/host-supervision/post-guardian.json": {
+      "exists": true,
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "spb-random/short/admission-post.json": {
+      "exists": true,
+      "bytes": 180,
+      "sha256": "26dcc6f8dbddcf04aeef1abcd0e4fe1db2fb891381ee3357b949dd1cac3a4868"
+    },
+    "spb-random/short/runs/post/evaluation_seeds.jsonl": {
+      "exists": true,
+      "bytes": 143,
+      "sha256": "ffaf9953b3c4fc78b2a0f30c67357504f6a6b8e014c3b0adc2db12e87afdad90"
+    },
+    "spb-random/short/runs/post/training_seeds.jsonl": {
+      "exists": false
+    },
+    "spb-random/short/runs/post/checkpoint_evaluation.json": {
+      "exists": true,
+      "bytes": 574,
+      "sha256": "4f6caa3dff00947035a535c01f2fb6556482218fbef239349ad8d74816ec1fad"
+    },
+    "spb-random/short/runs/post/checkpoints/resume_state.json": {
+      "exists": false
+    },
+    "spb-random/short/runs/post/checkpoints/sc2_policy_credit_audit.jsonl": {
+      "exists": false
+    },
+    "spb-random/short/runs/post/sampling-rank0.json": {
+      "exists": true,
+      "bytes": 220,
+      "sha256": "3147b32c434c4156b57ba96ce00a812b90d3c4b63f7320b784a2a273e6919cbf"
+    },
+    "spb-random/short/runs/pre/sampling-rank0.json": {
+      "exists": true,
+      "bytes": 220,
+      "sha256": "b50cee5fd352ab06194727adcccc830284ab703efe17e06b09ed93e2ed0b68ab"
+    },
+    "spb-random/short/runs/post/sampling-rank1.json": {
+      "exists": true,
+      "bytes": 220,
+      "sha256": "bf580b9900cbfb13d2f60f88cb977e35a88ddd73d7c7f44b940f6b79a2b83a71"
+    },
+    "spb-random/short/runs/pre/sampling-rank1.json": {
+      "exists": true,
+      "bytes": 220,
+      "sha256": "7e2a0652ee2b819db3e6073a561722a299b83d33132cc4242dc078617a91fea6"
+    },
+    "spb-random/short/runs/post/sampling-rank2.json": {
+      "exists": true,
+      "bytes": 220,
+      "sha256": "5be7fd66047c39ce6c4099d2b17f0aeeb41ccd95ff04d375da82ae40de9e0085"
+    },
+    "spb-random/short/runs/pre/sampling-rank2.json": {
+      "exists": true,
+      "bytes": 220,
+      "sha256": "e50683fb0098cbd594a4d666a9e32d523950322cac0994273ac18e676fa1abde"
+    },
+    "spb-random/short/runs/post/sampling-rank3.json": {
+      "exists": true,
+      "bytes": 220,
+      "sha256": "2a9c0f1193edbb80b55baa8d37a9d0b38e5513afacea72d828a546dead94d24b"
+    },
+    "spb-random/short/runs/pre/sampling-rank3.json": {
+      "exists": true,
+      "bytes": 220,
+      "sha256": "bf13aa3924114988142d1386ae70119f5d19931323e0f09a88dbbbf45c2f21e2"
+    },
+    "spb-random/short/runs/post/sampling-rank4.json": {
+      "exists": true,
+      "bytes": 220,
+      "sha256": "56abc500f195bb974d67c5913a377a399cb1c56e53d355e3827fb72cc0aef9c3"
+    },
+    "spb-random/short/runs/pre/sampling-rank4.json": {
+      "exists": true,
+      "bytes": 220,
+      "sha256": "43fe879faec67ee0a5e53578fb823d3bfd6fe9ee014b24bdb6b1c2d3d2d1b27d"
+    },
+    "spb-random/short/runs/post/sampling-rank5.json": {
+      "exists": true,
+      "bytes": 220,
+      "sha256": "c3bb284e495fe4ca953cfe2d61c22d35356a75f341936d976d8065d4cf615380"
+    },
+    "spb-random/short/runs/pre/sampling-rank5.json": {
+      "exists": true,
+      "bytes": 220,
+      "sha256": "4e290b695fe2ad8ef9a912a16854c6d54042498c87fd47c4009bcad698848361"
+    },
+    "spb-random/short/runs/post/sampling-rank6.json": {
+      "exists": true,
+      "bytes": 220,
+      "sha256": "ed3aa549e180e7a8418cf3202cdb50baf0e18bcdf29260a5d02810e8b2b7e027"
+    },
+    "spb-random/short/runs/pre/sampling-rank6.json": {
+      "exists": true,
+      "bytes": 220,
+      "sha256": "6e451d070a860daef9539443fdb7c8c6405ec031242823360b01de36f3c5fc6a"
+    },
+    "spb-random/short/runs/post/sampling-rank7.json": {
+      "exists": true,
+      "bytes": 220,
+      "sha256": "34bec9a1e71c7c262b62d82adceb1138c69b9efb879a3689a81907deaceef35c"
+    },
+    "spb-random/short/runs/pre/sampling-rank7.json": {
+      "exists": true,
+      "bytes": 220,
+      "sha256": "9599b92e06eab7aa702abc0e02d234579b3b90d37a21f65695cadaa6660b58a1"
+    }
+  },
+  "states": {
+    "deployment.json": {
+      "runtime_sha": "83f3530765babe048035524ddf1651291810818a",
+      "controller_sha": "83f3530765babe048035524ddf1651291810818a",
+      "controller_source": "/var/jfsCache/sc2-spb-l7random96-197-source-20260923-r1/code",
+      "orchestration_sha": "9a7b0faca5b145a891ad211f189121e4949f0eab",
+      "parts": [
+        "spb-random/short",
+        "spb-random/long"
+      ],
+      "predecessor": "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2",
+      "predecessor_sha": "34154283a8298ac4fbaab1c63770a6b81f7d375c",
+      "predecessor_deadline": 1790308720.0467553,
+      "first_dispatch_by": 1790312320.0467553,
+      "wall_seconds": 172800,
+      "gpu_hours": 384,
+      "output_limit_bytes": 1099511627776,
+      "storage_roots": [
+        "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1",
+        "/var/jfsCache/sc2-spb-l7random96-197-source-20260923-r1"
+      ],
+      "new_games": 792,
+      "new_updates": 96,
+      "short_included": true,
+      "no_retry": true,
+      "successors_authorized": false,
+      "authorization": "Sep23 user approved original SpB L7 per-game independent seed short+96 AFTER current Qwen nativeCP8 train+eval complete acceptance; 792new games/96PPO; <=48wallh/384GPUh/1TiB including short/loading/waits/CP/eval; no other arm or retry"
+    },
+    "queue-state.json": {
+      "phase": "running-unverified",
+      "completed": [],
+      "first_dispatch_by": 1790312320.0467553,
+      "part": "spb-random/short",
+      "deadline": 1790356959.0174987
+    },
+    "dispatch.json": {
+      "start": 1790184159.0174987,
+      "deadline": 1790356959.0174987,
+      "gpu_hours": 384,
+      "new_games": 792,
+      "new_updates": 96
+    },
+    "predecessor-acceptance.json": {
+      "passed": true,
+      "root": "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2",
+      "runtime_sha": "34154283a8298ac4fbaab1c63770a6b81f7d375c",
+      "checked_at": 1790184158.693586
+    },
+    "storage-state.json": {
+      "command": [
+        "du",
+        "-sb",
+        "--null",
+        "--",
+        "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1",
+        "/var/jfsCache/sc2-spb-l7random96-197-source-20260923-r1"
+      ],
+      "roots": [
+        "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1",
+        "/var/jfsCache/sc2-spb-l7random96-197-source-20260923-r1"
+      ],
+      "started_at": 1790186739.226641,
+      "deadline": 1790356959.0174987,
+      "limit": 1099511627776,
+      "bytes": 64536083382,
+      "returncode": 0,
+      "status": "measured",
+      "stdout": {
+        "tail": "64516134436\t/var/jfsCache/sc2-spb-l7random96-197-20260923-r1\u000019948946\t/var/jfsCache/sc2-spb-l7random96-197-source-20260923-r1\u0000",
+        "characters": 126,
+        "truncated": false
+      },
+      "stderr": {
+        "tail": "",
+        "characters": 0,
+        "truncated": false
+      },
+      "quiescence": {
+        "version": "host-guardian-v1",
+        "container_id": "e7d857c5a6f3bf8ea0a9ee6e69d048fe6aa76a5994014a0c9a47221856c125ec",
+        "owner_root": "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/spb-random/short",
+        "guardian_pid": 1810289,
+        "paused_verified": true,
+        "cleanup": "verified-unpaused",
+        "paused_at": 1790186739.2768266,
+        "mode": "paused",
+        "resumed_at": 1790186739.3742342
+      },
+      "measured_at": 1790186739.3376794,
+      "root_bytes": {
+        "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1": 64516134436,
+        "/var/jfsCache/sc2-spb-l7random96-197-source-20260923-r1": 19948946
+      },
+      "checked_at": 1790186739.3743742
+    },
+    "storage-failure.json": null,
+    "spb-random/short/host-supervision/state.json": {
+      "version": "host-guardian-v1",
+      "phase": "running-unverified",
+      "completed": [
+        "pre",
+        "train2"
+      ],
+      "deadline": 1790356959.0174987,
+      "learning_validated": false,
+      "started_at": 1790184159.0187504,
+      "stage": "post",
+      "container_id": "e7d857c5a6f3bf8ea0a9ee6e69d048fe6aa76a5994014a0c9a47221856c125ec"
+    },
+    "spb-random/short/state.json": null,
+    "spb-random/long/host-supervision/state.json": null,
+    "spb-random/long/state.json": null,
+    "spb-random/long/dispatch.json": null,
+    "spb-random/long/parent-readiness.json": null
+  },
+  "stages": {
+    "short/train2": {
+      "result": {
+        "status": "completed",
+        "ended_at": "2026-09-23T18:00:03.611684+00:00",
+        "process_exit_code": 0,
+        "completed_steps": 2,
+        "start_step": 0,
+        "last_global_step": 2,
+        "target_steps": 2,
+        "metrics_finite": true,
+        "metrics_precision": "binary64-v1",
+        "checkpoint_complete": true,
+        "console_sha256": "0aea1d1da9a1d7c519ffc7bdf2a050dfc87d6c40e497c1628ab8f40083c9e61b"
+      },
+      "outcomes": {
+        "trajectories": 16,
+        "natural_games": 16,
+        "wins": 8,
+        "defeats": 8,
+        "ties": 0,
+        "truncated": 0,
+        "natural_win_rate": 0.5
+      },
+      "done_matches_result": true,
+      "acceptance_result_matches": true,
+      "acceptance_evidence": {
+        "consumed_answers": 125,
+        "valid_consumed_answers": 125,
+        "parsed_plans": 125,
+        "validated_queue_entries": 1633,
+        "validated_locally_queued_commands": 927,
+        "execution_scope": "local Depot/Marine commands, not production completion or causal wins"
+      },
+      "manifest": {
+        "model_id": "Panyuqi/SpikingBrain-2.0-instruct",
+        "model_revision": "sha256:de52e8ef993afc763f9d4fb498e8d8302ef0bc13bd7dfd53c6ae5f77f43698b5",
+        "source_commit": "83f3530765babe048035524ddf1651291810818a",
+        "dirty": false,
+        "world_size": 8,
+        "metrics_precision": "binary64-v1",
+        "mode": "training",
+        "start_step": 0,
+        "target_steps": 2
+      },
+      "guardian": {
+        "version": "host-guardian-v1",
+        "container_id": "612a6148306369771e177611693bfd1447460ff026c8a102f1bad788ed106028",
+        "owner_root": "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/spb-random/short",
+        "deadline": 1790356959.0174987,
+        "lease_seconds": 45,
+        "phase": "completed",
+        "pause_attempted": true,
+        "started_at": 1790184781.1873827,
+        "final_state": {
+          "Dead": false,
+          "Error": "",
+          "ExitCode": 0,
+          "FinishedAt": "2026-09-23T18:00:25.313122231Z",
+          "OOMKilled": false,
+          "Paused": false,
+          "Pid": 0,
+          "Restarting": false,
+          "Running": false,
+          "StartedAt": "2026-09-23T17:33:01.213732274Z",
+          "Status": "exited"
+        },
+        "finished_at": 1790186434.2973318
+      },
+      "container": {
+        "returncode": 0,
+        "data": {
+          "id": "612a6148306369771e177611693bfd1447460ff026c8a102f1bad788ed106028",
+          "owner": "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/spb-random/short",
+          "state": {
+            "Dead": false,
+            "Error": "",
+            "ExitCode": 0,
+            "FinishedAt": "2026-09-23T18:00:25.313122231Z",
+            "OOMKilled": false,
+            "Paused": false,
+            "Pid": 0,
+            "Restarting": false,
+            "Running": false,
+            "StartedAt": "2026-09-23T17:33:01.213732274Z",
+            "Status": "exited"
+          }
+        },
+        "error": ""
+      },
+      "admission": {
+        "passed": true,
+        "checked_at": 1790184781.118687,
+        "deadline": 1790356959.0174987,
+        "eight_idle_gpus": true,
+        "ram_gib_min": 600,
+        "nvme_gib_min": 1084,
+        "fsync": true
+      },
+      "evaluation_seeds": null,
+      "training_seeds": [
+        {
+          "base_seed": 0,
+          "reset_index": 0,
+          "seed_protocol": "independent_uniform101",
+          "seeds": [
+            49,
+            97,
+            53,
+            5,
+            33,
+            65,
+            62,
+            51
+          ]
+        },
+        {
+          "base_seed": 0,
+          "reset_index": 1,
+          "seed_protocol": "independent_uniform101",
+          "seeds": [
+            100,
+            38,
+            61,
+            45,
+            74,
+            27,
+            64,
+            17
+          ]
+        }
+      ],
+      "checkpoint_evaluation.json": null,
+      "checkpoints/resume_state.json": null,
+      "console_tail": {
+        "total_bytes": 2413883,
+        "tail_bytes": 1048576,
+        "matched_count": 49,
+        "lines": [
+          "(SC2Worker pid=2514) Combat result reward: {\"pid\": 25801, \"game_loop\": 19144, \"boundary\": \"terminal\", \"last_consumed_policy_action_id\": 13, \"killed_value\": 3525.0, \"lost_value\": 5150.0, \"scale\": 0.001, \"reward\": -3.5}",
+          "(TaskRunner pid=2336) step:2 - metrics_precision:binary64-v1 - global_seqlen/min:10560 - global_seqlen/max:11252 - global_seqlen/minmax_diff:692 - global_seqlen/balanced_min:10860 - global_seqlen/balanced_max:10909 - global_seqlen/mean:10877.875 - actor/entropy_loss:0.19890344142913818 - episode/valid_action_ratio:1 - policy_credit/invalid_positive_tokens_removed:0 - policy_credit/invalid_tokens:0 - policy_credit/invalid_advantage_max:0 - actor/kl_loss:0.01043127630109666 - actor/kl_coef:0.01 - actor/pg_loss:0.068164753913879397 - actor/pg_clipfrac:0.0096196873986627903 - actor/ppo_kl:0.0032824349771544805 - actor/pg_clipfrac_lower:0 - actor/grad_norm:76.014303970336911 - perf/mfu/actor:0 - perf/max_memory_allocated_gb:23.744373798370361 - perf/max_memory_reserved_gb:32.041015625 - perf/cpu_memory_used_gb:66.003402709960938 - actor/lr:9.9999999999999995e-07 - training/global_step:2 - training/epoch:1 - critic/score/mean:-25.835363388061523 - critic/score/max:28.899999618530273 - critic/score/min:-55.174999237060547 - critic/rewards/mean:-25.835363388061523 - critic/rewards/max:28.899999618530273 - critic/rewards/min:-55.174999237060547 - critic/advantages/mean:0.45612573623657227 - critic/advantages/max:59.775749206542969 - critic/advantages/min:-35.570560455322266 - critic/returns/mean:0.45612573623657227 - critic/returns/max:59.775749206542969 - critic/returns/min:-35.570560455322266 - response_length/mean:39.125 - response_length/max:192 - response_length/min:13 - response_length/clip_ratio:0.012500000186264515 - prompt_length/mean:1048.6624755859375 - prompt_length/max:1111 - prompt_length/min:982 - prompt_length/clip_ratio:0 - episode/reward/mean:-22.838125228881836 - episode/reward/max:28.899999618530273 - episode/reward/min:-55.174999237060547 - episode/length/mean:9.875 - episode/length/max:13 - episode/length/min:5 - episode/tool_call_count/mean:0 - episode/success_rate:0.375 - timing_s/gen:603.65737327933311 - timing_s/reward:0.028914273716509342 - timing_s/old_log_prob:66.907764349132776 - timing_s/ref:6.3001201711595058 - timing_s/adv:0.0052811773493885994 - timing_s/update_actor:118.24050322733819 - timing_s/save_checkpoint:9.6777416998520494 - timing_s/step:804.83593441080302 - timing_per_token_ms/adv:6.0687144196230873e-05 - timing_per_token_ms/ref:0.072396035199424363 - timing_per_token_ms/update_actor:1.3587270402920859 - timing_per_token_ms"
+        ],
+        "read_limit_bytes": 1048576
+      },
+      "returned_ppo": [
+        {
+          "step": 2,
+          "actor/grad_norm": 76.01430397033691,
+          "timing_s/update_actor": 118.2405032273382,
+          "episode/success_rate": 0.375,
+          "episode/valid_action_ratio": 1,
+          "policy_credit/invalid_advantage_max": 0,
+          "timing_s/step": 804.835934410803
+        }
+      ],
+      "audits": [
+        {
+          "real_answers": 46,
+          "valid_answers": 46,
+          "valid_ratio": 1,
+          "min_valid_ratio": 0.5,
+          "decision": "accept",
+          "reason": "validity_floor_passed",
+          "pending_global_step": 1,
+          "optimizer_updates_for_this_batch": 0
+        },
+        {
+          "real_answers": 79,
+          "valid_answers": 79,
+          "valid_ratio": 1,
+          "min_valid_ratio": 0.5,
+          "decision": "accept",
+          "reason": "validity_floor_passed",
+          "pending_global_step": 2,
+          "optimizer_updates_for_this_batch": 0
+        }
+      ],
+      "cp2_inventory": {
+        "required": 26,
+        "nonempty": 26,
+        "contents_read": false
+      },
+      "metrics_summary": {
+        "count": 2,
+        "all_metrics_finite": true,
+        "steps": [
+          {
+            "step": 1,
+            "actor/grad_norm": 119.08253415425618,
+            "timing_s/update_actor": 168.143536365591,
+            "episode/success_rate": 0.625,
+            "episode/valid_action_ratio": 1,
+            "policy_credit/invalid_advantage_max": 0,
+            "timing_s/step": 683.9777640523389
+          },
+          {
+            "step": 2,
+            "actor/grad_norm": 76.01430397033691,
+            "timing_s/update_actor": 118.2405032273382,
+            "episode/success_rate": 0.375,
+            "episode/valid_action_ratio": 1,
+            "policy_credit/invalid_advantage_max": 0,
+            "timing_s/step": 804.835934410803
+          }
+        ]
+      }
+    },
+    "short/post": {
+      "result": null,
+      "outcomes": null,
+      "done_matches_result": null,
+      "acceptance_result_matches": null,
+      "acceptance_evidence": null,
+      "manifest": {
+        "model_id": "Panyuqi/SpikingBrain-2.0-instruct",
+        "model_revision": "sha256:de52e8ef993afc763f9d4fb498e8d8302ef0bc13bd7dfd53c6ae5f77f43698b5",
+        "source_commit": "83f3530765babe048035524ddf1651291810818a",
+        "dirty": false,
+        "world_size": 8,
+        "metrics_precision": "binary64-v1",
+        "mode": "evaluation",
+        "start_step": 0,
+        "target_steps": 1
+      },
+      "guardian": null,
+      "container": {
+        "returncode": 0,
+        "data": {
+          "id": "e7d857c5a6f3bf8ea0a9ee6e69d048fe6aa76a5994014a0c9a47221856c125ec",
+          "owner": "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/spb-random/short",
+          "state": {
+            "Dead": false,
+            "Error": "",
+            "ExitCode": 0,
+            "FinishedAt": "0001-01-01T00:00:00Z",
+            "OOMKilled": false,
+            "Paused": false,
+            "Pid": 1810344,
+            "Restarting": false,
+            "Running": true,
+            "StartedAt": "2026-09-23T18:00:35.045487395Z",
+            "Status": "running"
+          }
+        },
+        "error": ""
+      },
+      "admission": {
+        "passed": true,
+        "checked_at": 1790186434.9459085,
+        "deadline": 1790356959.0174987,
+        "eight_idle_gpus": true,
+        "ram_gib_min": 600,
+        "nvme_gib_min": 1084,
+        "fsync": true
+      },
+      "evaluation_seeds": [
+        {
+          "base_seed": 1000,
+          "reset_index": 0,
+          "seeds": [
+            605183188,
+            1075501356,
+            2084414326,
+            2203880230,
+            3000371298,
+            949752300,
+            3225036469,
+            2823708076
+          ]
+        }
+      ],
+      "training_seeds": null,
+      "checkpoint_evaluation.json": {
+        "checkpoint": "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/spb-random/short/runs/train2/checkpoints/global_step_2",
+        "loaded_global_step": 2,
+        "checkpoint_load_returned": true,
+        "val_only": true,
+        "optimizer_updates": 0,
+        "feedback": "0",
+        "temperature": 0.8,
+        "do_sample": true,
+        "games": 8,
+        "game_seeds": [
+          605183188,
+          1075501356,
+          2084414326,
+          2203880230,
+          3000371298,
+          949752300,
+          3225036469,
+          2823708076
+        ],
+        "answers": "online SpB; no replay or replacement",
+        "optimizer_loaded_by_existing_loader_but_not_updated": true
+      },
+      "checkpoints/resume_state.json": null,
+      "console_tail": {
+        "total_bytes": 300133,
+        "tail_bytes": 300133,
+        "matched_count": 22,
+        "lines": [
+          "(SC2Worker pid=2511) Combat result reward: {\"pid\": 7199, \"game_loop\": 5672, \"boundary\": \"planner\", \"last_consumed_policy_action_id\": 3, \"killed_value\": 50.0, \"lost_value\": 0.0, \"scale\": 0.001, \"reward\": 0.05}",
+          "(SC2Worker pid=2508) Combat result reward: {\"pid\": 7319, \"game_loop\": 6368, \"boundary\": \"planner\", \"last_consumed_policy_action_id\": 3, \"killed_value\": 50.0, \"lost_value\": 0.0, \"scale\": 0.001, \"reward\": 0.05}"
+        ],
+        "read_limit_bytes": 1048576
+      },
+      "returned_ppo": [],
+      "audits": null,
+      "paired_rng": [
+        {
+          "rank": 0,
+          "seed": 0,
+          "cpu_rng_sha256": "1ccf17250133dec5e96478acd63e13d728d0dbbabb30389415a302c6f872f81f",
+          "cuda_rng_sha256": "374708fff7719dd5979ec875d56cd2286f6d3cf7ec317a3b25632aab28ec37bb",
+          "pre_file_sha256": "b50cee5fd352ab06194727adcccc830284ab703efe17e06b09ed93e2ed0b68ab",
+          "post_file_sha256": "3147b32c434c4156b57ba96ce00a812b90d3c4b63f7320b784a2a273e6919cbf",
+          "all_fields_present_and_match": true,
+          "pid_equality_required": false
+        },
+        {
+          "rank": 1,
+          "seed": 1,
+          "cpu_rng_sha256": "f5defda135ec2e0d1513e6979390f58397d31a904d5f6540f8b88ae64d1decc1",
+          "cuda_rng_sha256": "4cbbd8ca5215b8d161aec181a74b694f4e24b001d5b081dc0030ed797a8973e0",
+          "pre_file_sha256": "7e2a0652ee2b819db3e6073a561722a299b83d33132cc4242dc078617a91fea6",
+          "post_file_sha256": "bf580b9900cbfb13d2f60f88cb977e35a88ddd73d7c7f44b940f6b79a2b83a71",
+          "all_fields_present_and_match": true,
+          "pid_equality_required": false
+        },
+        {
+          "rank": 2,
+          "seed": 2,
+          "cpu_rng_sha256": "0f9cd7b642a3f8f641c5e992f17138b2d094db4d56cc2329b3be2c794ddc79ad",
+          "cuda_rng_sha256": "b1535c7783ea8829b6b0cf67704539798b4d16c39bf0bfe09494c5d9f12eee30",
+          "pre_file_sha256": "e50683fb0098cbd594a4d666a9e32d523950322cac0994273ac18e676fa1abde",
+          "post_file_sha256": "5be7fd66047c39ce6c4099d2b17f0aeeb41ccd95ff04d375da82ae40de9e0085",
+          "all_fields_present_and_match": true,
+          "pid_equality_required": false
+        },
+        {
+          "rank": 3,
+          "seed": 3,
+          "cpu_rng_sha256": "76fe321e2dc1dfdec62a274bcedbeea2727be2e2972f97e728e07e0345c21ede",
+          "cuda_rng_sha256": "59d5966c96af7ecad5c9d2918d6582d102b2c67f6b765ea28ac24371ab4f93be",
+          "pre_file_sha256": "bf13aa3924114988142d1386ae70119f5d19931323e0f09a88dbbbf45c2f21e2",
+          "post_file_sha256": "2a9c0f1193edbb80b55baa8d37a9d0b38e5513afacea72d828a546dead94d24b",
+          "all_fields_present_and_match": true,
+          "pid_equality_required": false
+        },
+        {
+          "rank": 4,
+          "seed": 4,
+          "cpu_rng_sha256": "de87e86bf2a7b448b35cba75c461560b4b6aa93e7843008c930221dee4551e0f",
+          "cuda_rng_sha256": "6b6f14e6af2627186bf8a55e474dcf6ef3f6ce81af560da871ec51eb670171a9",
+          "pre_file_sha256": "43fe879faec67ee0a5e53578fb823d3bfd6fe9ee014b24bdb6b1c2d3d2d1b27d",
+          "post_file_sha256": "56abc500f195bb974d67c5913a377a399cb1c56e53d355e3827fb72cc0aef9c3",
+          "all_fields_present_and_match": true,
+          "pid_equality_required": false
+        },
+        {
+          "rank": 5,
+          "seed": 5,
+          "cpu_rng_sha256": "f4ef6f460154679cfe881f5d260e16f8ed904898fabc025c755a71e2692eb75c",
+          "cuda_rng_sha256": "966a28d35016032ee27b1860df4a9b16b6c007da76b2e4f94e7526e31c48959b",
+          "pre_file_sha256": "4e290b695fe2ad8ef9a912a16854c6d54042498c87fd47c4009bcad698848361",
+          "post_file_sha256": "c3bb284e495fe4ca953cfe2d61c22d35356a75f341936d976d8065d4cf615380",
+          "all_fields_present_and_match": true,
+          "pid_equality_required": false
+        },
+        {
+          "rank": 6,
+          "seed": 6,
+          "cpu_rng_sha256": "9e15eceb1ce9d2c2ffe7bcc8fa3155c1445def059cdd06b5429093164db849a7",
+          "cuda_rng_sha256": "5e9a5de4a59a7c3c9ba8846060ba77ab402e3088658aa705e1a64e796f6cd5cf",
+          "pre_file_sha256": "6e451d070a860daef9539443fdb7c8c6405ec031242823360b01de36f3c5fc6a",
+          "post_file_sha256": "ed3aa549e180e7a8418cf3202cdb50baf0e18bcdf29260a5d02810e8b2b7e027",
+          "all_fields_present_and_match": true,
+          "pid_equality_required": false
+        },
+        {
+          "rank": 7,
+          "seed": 7,
+          "cpu_rng_sha256": "daf9268b18e87b0267a6ad240c6093eb98fe6f03872986bd31a497ba5ea2371a",
+          "cuda_rng_sha256": "76108f84396dc2d72ce275fdb0e0ef37b229b2898bf5a31d576fea11a766a42b",
+          "pre_file_sha256": "9599b92e06eab7aa702abc0e02d234579b3b90d37a21f65695cadaa6660b58a1",
+          "post_file_sha256": "34bec9a1e71c7c262b62d82adceb1138c69b9efb879a3689a81907deaceef35c",
+          "all_fields_present_and_match": true,
+          "pid_equality_required": false
+        }
+      ]
+    }
+  },
+  "followup": {
+    "observed_at": "2026-09-24T02:06:50.892127+08:00",
+    "post_worker_banners": {
+      "total_bytes": 421571,
+      "read_bytes": 421571,
+      "limit": 524288,
+      "sha256": "43321e35716f588c1d24b5fbca3366ae3fafe9bb972a4c8097ee5543656b3c3b",
+      "worker_banners": [
+        "(WorkerDict pid=4457) SC2_ACTION_SUPPORT {\"budget\": 192, \"canonical_tokenizations_only\": true, \"eos_token_id\": 151645, \"mode\": \"sc2-canonical-bo-support-v1\", \"pad_token_id\": 151643, \"tokenizer_sha256\": \"a63080b4b30dc861fe1b0e420c53a241304dc81aff3d9bb315e6e33e2a1ab794\"}",
+        "(WorkerDict pid=4650) SC2_NO_THINKING {\"blocked_counts\": {\"\": 2, \"<\": 7, \"</\": 7, \"</t\": 2, \"</th\": 13, \"</thi\": 4, \"</thin\": 276, \"<t\": 2, \"<th\": 13, \"<thi\": 4, \"<thin\": 276}, \"forbidden_prefixes\": [\"<think\", \"</think\"], \"mode\": \"sc2-no-thinking-v1\", \"support_mask_sha256\": \"63a9546dd5fb39a64c6e2a2ad13f31101aacaade9bac07258d0e415480181e0d\"}",
+        "(WorkerDict pid=4647) SC2_ACTION_SUPPORT {\"budget\": 192, \"canonical_tokenizations_only\": true, \"eos_token_id\": 151645, \"mode\": \"sc2-canonical-bo-support-v1\", \"pad_token_id\": 151643, \"tokenizer_sha256\": \"a63080b4b30dc861fe1b0e420c53a241304dc81aff3d9bb315e6e33e2a1ab794\"} [repeated 7x across cluster]",
+        "(WorkerDict pid=4647) SC2_NO_THINKING {\"blocked_counts\": {\"\": 2, \"<\": 7, \"</\": 7, \"</t\": 2, \"</th\": 13, \"</thi\": 4, \"</thin\": 276, \"<t\": 2, \"<th\": 13, \"<thi\": 4, \"<thin\": 276}, \"forbidden_prefixes\": [\"<think\", \"</think\"], \"mode\": \"sc2-no-thinking-v1\", \"support_mask_sha256\": \"63a9546dd5fb39a64c6e2a2ad13f31101aacaade9bac07258d0e415480181e0d\"} [repeated 7x across cluster]"
+      ]
+    }
+  },
+  "schema": "spb-random-train2-complete-post-start-read-only-v1",
+  "ssh_alias": "sc2-a100-197",
+  "root": "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1",
+  "notification_events": [
+    "SpB random train2 completed and accepted; ownCP2 zero-update post active"
+  ],
+  "actions": {
+    "server_mutation": false,
+    "duplicate_dispatch": false,
+    "automatic_repair_or_restart": false,
+    "gpu_diagnostics": false,
+    "checkpoint_contents_read": false,
+    "monitor_created_or_deleted": false
+  },
+  "limitations": [
+    "First actual PPO was notified previously; this event is train2 completion, not a repeat of first GPU/SC2/PPO/pre completion.",
+    "Train2 has2 returned PPO phases,16 natural games/8wins and125/125 consumed answers valid. This is not strategic-learning or architecture-superiority evidence.",
+    "CP2 inventory26/26 is metadata only. Post actualCP2 load returned; short terminal acceptance and native full-state parent readiness remain pending. No legacy fallback or long dispatch is permitted before these gates.",
+    "Post eight rank/seed/CPU-CUDA RNG hashes match pre with explicit field presence checked; PID equality is not required. Post result/.done/acceptance are absent at02:05:53.",
+    "Whole-arm fixed deadline1790356959.0174987 and budgets unchanged. Empty running post guardian and unsynchronized part/state are normal.",
+    "Only compact projected metrics and bounded log lines are retained; no weights or full logs. No completed Qwen or SpBsame rerun."
+  ]
+}

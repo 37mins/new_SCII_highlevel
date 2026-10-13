@@ -1,0 +1,240 @@
+{
+  "checked_at": 1790076322.498379,
+  "checked_at_beijing": "2026-09-22T19:25:22+08:00",
+  "root": "/var/jfsCache/sc2-l7-followup197-20260922-r3",
+  "runtime_sha": "469c77eb9c767f6db87dc4701401805fa22b46e2",
+  "receipts": {
+    "queue-state.json": {
+      "sha256": "013a5a572442be138c77f7288398f496a54b7263613f49ccb291baf7537bfd0d",
+      "bytes": 334,
+      "value": {
+        "phase": "failed",
+        "completed": [],
+        "first_dispatch_by": 1790230726.5133374,
+        "part": "spb-same/short",
+        "deadline": 1790420762.305692,
+        "arm_deadline": 1790247962.305692,
+        "error": "Storage measurement failed; no retry; /var/jfsCache/sc2-l7-followup197-20260922-r3/storage-failure-d62266c12536492d97f0482a33359865.json"
+      }
+    },
+    "dispatch.json": {
+      "sha256": "6fcee59a4f281db9a4aeed836c7afcf9339c14fef349ded9f0a880e05010fc56",
+      "bytes": 85,
+      "value": {
+        "start": 1790075162.305692,
+        "deadline": 1790420762.305692,
+        "gpu_hours": 768
+      }
+    },
+    "spb-same/short/state.json": {
+      "sha256": "0b36f0b787385dd13e551d2b288d4add0dc4781446b681f3d88f2bba25913c8c",
+      "bytes": 325,
+      "value": {
+        "phase": "failed",
+        "completed": [],
+        "deadline": 1790247962.305692,
+        "stage": "pre",
+        "run": "/var/jfsCache/sc2-l7-followup197-20260922-r3/spb-same/short/runs/pre",
+        "error": "Storage measurement failed; no retry; /var/jfsCache/sc2-l7-followup197-20260922-r3/storage-failure-fff4897390524ede897caf4bd3b34cb9.json"
+      }
+    },
+    "spb-same/short/dispatch.json": {
+      "sha256": "9c1d2b6e0f5b90d17eb018e7111a1f82867d54cad1488f6e860096ffc88eb0d7",
+      "bytes": 3142,
+      "value": {
+        "start": 1790075162.305692,
+        "deadline": 1790247962.305692
+      }
+    },
+    "spb-same/short/acceptance-pre.json": {
+      "exists": false
+    },
+    "spb-same/short/acceptance-train2.json": {
+      "exists": false
+    },
+    "spb-same/short/acceptance-post.json": {
+      "exists": false
+    },
+    "spb-same/long/dispatch.json": {
+      "exists": false
+    },
+    "spb-same/long/parent-readiness.json": {
+      "exists": false
+    },
+    "qwen-random/long/dispatch.json": {
+      "exists": false
+    }
+  },
+  "containers": {
+    "sc2-l7-followup197-20260922-r3-spb-same-short": {
+      "exit_code": 0,
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 1,
+        "Error": "",
+        "StartedAt": "2026-09-22T11:06:02.351196285Z",
+        "FinishedAt": "2026-09-22T11:08:37.465595808Z"
+      },
+      "stderr": ""
+    },
+    "sc2-l7-followup197-20260922-r3-spb-same-long": {
+      "exit_code": 1,
+      "state": null,
+      "stderr": "error: no such object: sc2-l7-followup197-20260922-r3-spb-same-long\n"
+    },
+    "sc2-l7-followup197-20260922-r3-qwen-random-long": {
+      "exit_code": 1,
+      "state": null,
+      "stderr": "error: no such object: sc2-l7-followup197-20260922-r3-qwen-random-long\n"
+    }
+  },
+  "storage_failures": [
+    {
+      "path": "storage-failure-d62266c12536492d97f0482a33359865.json",
+      "sha256": "648d63eff9486409730a0ba428e187da48bfcc966d41aca5d08ae94c056024d5",
+      "receipt_bytes": 2206,
+      "started_at": 1790075312.9194767,
+      "checked_at": 1790075312.9461071,
+      "status": "measurement-failed",
+      "returncode": 1,
+      "measured_bytes": null,
+      "deadline": 1790420762.305692,
+      "limit": 2199023255552,
+      "stderr_characters": 407,
+      "stderr_missing_paths_count": 3,
+      "stderr_excerpt": "du: cannot access '/var/jfsCache/sc2-l7-followup197-20260922-r3/spb-same/short/tmp/fup-pre/tmp3ps2rclk.ptx': No such file or directory",
+      "error": "du failed or emitted diagnostics; partial totals are not trusted"
+    },
+    {
+      "path": "storage-failure-fff4897390524ede897caf4bd3b34cb9.json",
+      "sha256": "4cb774627f8ecc784f6ccd739b1f7e43620a553de8259c0cd74d8e5c04b08df7",
+      "receipt_bytes": 4735,
+      "started_at": 1790075313.941609,
+      "checked_at": 1790075313.990709,
+      "status": "measurement-failed",
+      "returncode": 1,
+      "measured_bytes": null,
+      "deadline": 1790420762.305692,
+      "limit": 2199023255552,
+      "stderr_characters": 2918,
+      "stderr_missing_paths_count": 22,
+      "stderr_excerpt": "du: cannot access '/var/jfsCache/sc2-l7-followup197-20260922-r3/spb-same/short/tmp/fup-pre/ccjOHksa.s': No such file or directory",
+      "error": "du failed or emitted diagnostics; partial totals are not trusted"
+    }
+  ],
+  "last_successful_measurements_not_current": [
+    {
+      "path": "storage-state.json",
+      "sha256": "05fbacdb53d3c5303f43feb942af2cb2ebadff43ff7c51aade96f2c091f7ccc3",
+      "checked_at": 1790075298.904962,
+      "bytes": 50113781242,
+      "status": "measured",
+      "interpretation": "pre-failure successful suite measurement; not substituted for failed measurement"
+    },
+    {
+      "path": "spb-same/short/storage-state.json",
+      "sha256": "5d562abc460f0beb7e26f59eafd32fc24f7ea90fe3ff24fa2f74dfe935f6ed17",
+      "checked_at": 1790075313.9405704,
+      "bytes": 156482295,
+      "status": "measured",
+      "interpretation": "arm-only success; cannot replace failure of required inclusive suite measurement"
+    }
+  ],
+  "small_pre_receipts": {
+    "checkpoint_evaluation": {
+      "sha256": "bcf33641f0acbe82f4ba09d73b91e19322f04398528415687514472426f3ff01",
+      "checkpoint": null,
+      "loaded_global_step": 0,
+      "val_only": true,
+      "optimizer_updates": 0
+    },
+    "manifest": {
+      "sha256": "8c472840b07493718f86078e124c4555564d7f0dcb3f5a8243fcc5800e37448b",
+      "dirty": false,
+      "formal": true,
+      "world_size": 8,
+      "metrics_precision": "binary64-v1"
+    },
+    "evaluation_seeds": {
+      "sha256": "ffaf9953b3c4fc78b2a0f30c67357504f6a6b8e014c3b0adc2db12e87afdad90",
+      "reset_index": 0,
+      "seeds": [
+        605183188,
+        1075501356,
+        2084414326,
+        2203880230,
+        3000371298,
+        949752300,
+        3225036469,
+        2823708076
+      ]
+    }
+  },
+  "missing_paths": [
+    "spb-same/short/runs/pre/result.json",
+    "spb-same/short/runs/pre/.done",
+    "spb-same/short/runs/train2",
+    "spb-same/short/runs/post",
+    "spb-same/long/dispatch.json",
+    "qwen-random/long/dispatch.json"
+  ],
+  "bounded_log_reads": {
+    "limit_bytes_each": 16384,
+    "last_lines_each": 35,
+    "paths": [
+      "queue.log",
+      "spb-same/short/container.log",
+      "spb-same/short/pre.log",
+      "spb-same/short/runs/pre/console.log"
+    ],
+    "finding": "Host queue and child both raised measure_budget RuntimeError. Console ended during first planner/generation initialization; no completed pre result or training directory."
+  },
+  "conclusion": {
+    "status": "failed",
+    "stage": "spb-same/short/pre",
+    "completed_stages": [],
+    "ppo_updates": 0,
+    "natural_games_accepted": 0,
+    "natural_games_actual": "unknown; no terminal result, do not equate to accepted zero",
+    "successors": "blocked, no dispatch or containers",
+    "verified_trigger": "GNU du returned 1 with ENOENT for transient compiler paths inside accounted run root",
+    "inference": "Consistent with concurrent temporary-file removal during traversal; producer/lifetime mechanism not independently reproduced",
+    "not_established": [
+      "storage exhaustion",
+      "GPU OOM",
+      "model degradation",
+      "fixed GPU stop timeout root cause"
+    ],
+    "historical_qwen_eval": "previously accepted and unchanged; not rerun"
+  },
+  "actions": {
+    "remote_mutations": [],
+    "no_measurement_retry": true,
+    "no_large_checkpoint_reads": true,
+    "no_gpu_diagnostic": true,
+    "no_frozen_edit": true,
+    "no_budget_extension": true,
+    "artifacts_preserved": true,
+    "monitor": {
+      "automation_id": "197-l7",
+      "delete_status": "deleted",
+      "reason": "terminal failure handed off; automatic repair/retry prohibited and no later authorization"
+    },
+    "requested_direction": "Approve CPU-only diagnosis/regression repair first; separately review any new RUN and remaining-budget continuation before GPU dispatch."
+  },
+  "validation": {
+    "type": "read-only receipt/terminal/dispatch consistency assertions and local JSON/diff checks",
+    "model_tests_run": false
+  },
+  "notification": {
+    "event": "new_spb_pre_storage_failure_and_successor_block",
+    "first_gpu_event_repeated": false,
+    "previous_eval_completion_repeated": false
+  }
+}

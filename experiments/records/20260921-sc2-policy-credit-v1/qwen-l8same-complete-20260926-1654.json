@@ -1,0 +1,703 @@
+{
+  "checked_at_beijing": "2026-09-26T16:54:58.644356+08:00",
+  "runtime_sha": "eef0f049bb09b7a51188ae67a6c35436a3bf055f",
+  "controller_sha": "db60d075879750cabf30a38c555d1c3aaaf104c1",
+  "queue": {
+    "phase": "completed",
+    "completed": [
+      "qwen-same/short",
+      "qwen-same/long"
+    ],
+    "retained_games": 24,
+    "retained_updates": 2,
+    "new_games": 768,
+    "new_updates": 94,
+    "deadline": 1790530922.7417548,
+    "part": "qwen-same/long",
+    "exit_code": 0,
+    "learning_validated": false
+  },
+  "host": {
+    "version": "host-guardian-v1",
+    "phase": "completed",
+    "completed": [
+      "train96",
+      "eval96"
+    ],
+    "deadline": 1790530922.7417548,
+    "learning_validated": false,
+    "started_at": 1790390273.874901,
+    "stage": "eval96",
+    "container_id": "193875937dca94d8175d7509cb91ee07574cb4b92855bdc7fa4d37196adafdfe",
+    "exit_code": 0,
+    "finished_at": 1790412730.4998167
+  },
+  "long_state": {
+    "version": "host-guardian-v1",
+    "phase": "completed",
+    "completed": [
+      "train96",
+      "eval96"
+    ],
+    "deadline": 1790530922.7417548,
+    "learning_validated": false,
+    "started_at": 1790390273.874901,
+    "stage": "eval96",
+    "container_id": "193875937dca94d8175d7509cb91ee07574cb4b92855bdc7fa4d37196adafdfe",
+    "exit_code": 0,
+    "finished_at": 1790412730.4998167
+  },
+  "stages": {
+    "pre": {
+      "result": {
+        "status": "completed",
+        "ended_at": "2026-09-25T17:49:23.781657+00:00",
+        "mode": "evaluation",
+        "process_exit_code": 0,
+        "training_updates": 0,
+        "metrics_finite": true,
+        "response_record_count": 64,
+        "metrics_precision": "binary64-v1",
+        "evaluable_action_count": 48,
+        "valid_evaluable_action_count": 48,
+        "console_sha256": "37736a426f5627269aa3c8be8851615576308c79b294c3a7e4714734b87ebf70",
+        "natural_match_completed": true,
+        "termination_evidence": "game_result"
+      },
+      "natural_games": {
+        "trajectories": 8,
+        "natural_games": 8,
+        "wins": 6,
+        "defeats": 2,
+        "ties": 0,
+        "truncated": 0,
+        "natural_win_rate": 0.75
+      },
+      "acceptance_evidence": {
+        "consumed_answers": 48,
+        "valid_consumed_answers": 48,
+        "parsed_plans": 48,
+        "validated_queue_entries": 755,
+        "validated_locally_queued_commands": 485,
+        "execution_scope": "local Depot/Marine commands, not production completion or causal wins"
+      },
+      "result_done_acceptance_equal": true,
+      "acceptance_checked_at": 1790389930.788964
+    },
+    "train2": {
+      "result": {
+        "status": "completed",
+        "ended_at": "2026-09-25T17:59:25.548470+00:00",
+        "process_exit_code": 0,
+        "completed_steps": 2,
+        "start_step": 0,
+        "last_global_step": 2,
+        "target_steps": 2,
+        "metrics_finite": true,
+        "metrics_precision": "binary64-v1",
+        "checkpoint_complete": true,
+        "console_sha256": "2cd2a4fa12798544faa6972a7c3040ac5414feeecc8e15c77be3919a06380fd5"
+      },
+      "natural_games": {
+        "trajectories": 16,
+        "natural_games": 16,
+        "wins": 8,
+        "defeats": 8,
+        "ties": 0,
+        "truncated": 0,
+        "natural_win_rate": 0.5
+      },
+      "acceptance_evidence": {
+        "consumed_answers": 96,
+        "valid_consumed_answers": 96,
+        "parsed_plans": 96,
+        "validated_queue_entries": 2274,
+        "validated_locally_queued_commands": 1145,
+        "execution_scope": "local Depot/Marine commands, not production completion or causal wins"
+      },
+      "result_done_acceptance_equal": true,
+      "acceptance_checked_at": 1790389930.9141786,
+      "actual_metric_rows": 2
+    },
+    "post": {
+      "result": {
+        "status": "completed",
+        "ended_at": "2026-09-26T02:37:35.112583+00:00",
+        "mode": "evaluation",
+        "process_exit_code": 0,
+        "training_updates": 0,
+        "metrics_finite": true,
+        "response_record_count": 32,
+        "metrics_precision": "binary64-v1",
+        "evaluable_action_count": 29,
+        "valid_evaluable_action_count": 29,
+        "console_sha256": "24c63141d88f170f7308180f795458841846b067bbe2b4c0e438a211f07d090f",
+        "natural_match_completed": true,
+        "termination_evidence": "game_result"
+      },
+      "natural_games": {
+        "trajectories": 8,
+        "natural_games": 8,
+        "wins": 5,
+        "defeats": 3,
+        "ties": 0,
+        "truncated": 0,
+        "natural_win_rate": 0.625
+      },
+      "acceptance_evidence": {
+        "consumed_answers": 29,
+        "valid_consumed_answers": 29,
+        "parsed_plans": 29,
+        "validated_queue_entries": 903,
+        "validated_locally_queued_commands": 588,
+        "execution_scope": "local Depot/Marine commands, not production completion or causal wins"
+      },
+      "result_done_acceptance_equal": true,
+      "acceptance_checked_at": 1790390269.0334527
+    },
+    "train96": {
+      "result": {
+        "status": "completed",
+        "ended_at": "2026-09-26T08:45:58.044645+00:00",
+        "process_exit_code": 0,
+        "completed_steps": 94,
+        "start_step": 2,
+        "last_global_step": 96,
+        "target_steps": 96,
+        "metrics_finite": true,
+        "metrics_precision": "binary64-v1",
+        "checkpoint_complete": true,
+        "console_sha256": "e9e9663ea67a7d34326700ee461c4365edd850cb1f0b60221598553e819fec6a"
+      },
+      "natural_games": {
+        "trajectories": 752,
+        "natural_games": 752,
+        "wins": 433,
+        "defeats": 319,
+        "ties": 0,
+        "truncated": 0,
+        "natural_win_rate": 0.5757978723404256
+      },
+      "acceptance_evidence": {
+        "consumed_answers": 5842,
+        "valid_consumed_answers": 5842,
+        "parsed_plans": 5842,
+        "validated_queue_entries": 58334,
+        "validated_locally_queued_commands": 38507,
+        "execution_scope": "local Depot/Marine commands, not production completion or causal wins",
+        "ppo_updates": 94
+      },
+      "result_done_acceptance_equal": true,
+      "acceptance_checked_at": 1790412393.8401365,
+      "actual_metric_rows": 94,
+      "guardian": {
+        "version": "host-guardian-v1",
+        "container_id": "91d0dbd99c166ea114df62af0e3d07ec3aa94cf3f59f5d4a86ea43d6ff4d986b",
+        "owner_root": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/long",
+        "deadline": 1790530922.7417548,
+        "lease_seconds": 45,
+        "phase": "completed",
+        "pause_attempted": true,
+        "started_at": 1790390274.292184,
+        "finished_at": 1790412388.8312056,
+        "final_state": {
+          "Dead": false,
+          "Error": "",
+          "ExitCode": 0,
+          "FinishedAt": "2026-09-26T08:46:15.332834527Z",
+          "OOMKilled": false,
+          "Paused": false,
+          "Pid": 0,
+          "Restarting": false,
+          "Running": false,
+          "StartedAt": "2026-09-26T02:37:54.320353345Z",
+          "Status": "exited"
+        }
+      },
+      "container": {
+        "id": "91d0dbd99c166ea114df62af0e3d07ec3aa94cf3f59f5d4a86ea43d6ff4d986b",
+        "owner": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/long",
+        "state": {
+          "Dead": false,
+          "Error": "",
+          "ExitCode": 0,
+          "FinishedAt": "2026-09-26T08:46:15.332834527Z",
+          "OOMKilled": false,
+          "Paused": false,
+          "Pid": 0,
+          "Restarting": false,
+          "Running": false,
+          "StartedAt": "2026-09-26T02:37:54.320353345Z",
+          "Status": "exited"
+        }
+      }
+    },
+    "eval96": {
+      "result": {
+        "status": "completed",
+        "ended_at": "2026-09-26T08:52:09.078994+00:00",
+        "mode": "evaluation",
+        "process_exit_code": 0,
+        "training_updates": 0,
+        "metrics_finite": true,
+        "response_record_count": 72,
+        "metrics_precision": "binary64-v1",
+        "evaluable_action_count": 63,
+        "valid_evaluable_action_count": 63,
+        "console_sha256": "ea2283fe305a058f78034e96c01abe07d509f36be73bebf88626a3b866a01e41",
+        "natural_match_completed": true,
+        "termination_evidence": "game_result"
+      },
+      "natural_games": {
+        "trajectories": 8,
+        "natural_games": 8,
+        "wins": 5,
+        "defeats": 3,
+        "ties": 0,
+        "truncated": 0,
+        "natural_win_rate": 0.625
+      },
+      "acceptance_evidence": {
+        "consumed_answers": 63,
+        "valid_consumed_answers": 63,
+        "parsed_plans": 63,
+        "validated_queue_entries": 689,
+        "validated_locally_queued_commands": 442,
+        "execution_scope": "local Depot/Marine commands, not production completion or causal wins"
+      },
+      "result_done_acceptance_equal": true,
+      "acceptance_checked_at": 1790412730.396788,
+      "guardian": {
+        "version": "host-guardian-v1",
+        "container_id": "193875937dca94d8175d7509cb91ee07574cb4b92855bdc7fa4d37196adafdfe",
+        "owner_root": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/long",
+        "deadline": 1790530922.7417548,
+        "lease_seconds": 45,
+        "phase": "completed",
+        "pause_attempted": true,
+        "started_at": 1790412394.551268,
+        "finished_at": 1790412730.2255104,
+        "final_state": {
+          "Dead": false,
+          "Error": "",
+          "ExitCode": 0,
+          "FinishedAt": "2026-09-26T08:52:09.09964024Z",
+          "OOMKilled": false,
+          "Paused": false,
+          "Pid": 0,
+          "Restarting": false,
+          "Running": false,
+          "StartedAt": "2026-09-26T08:46:34.581443943Z",
+          "Status": "exited"
+        }
+      },
+      "container": {
+        "id": "193875937dca94d8175d7509cb91ee07574cb4b92855bdc7fa4d37196adafdfe",
+        "owner": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/long",
+        "state": {
+          "Dead": false,
+          "Error": "",
+          "ExitCode": 0,
+          "FinishedAt": "2026-09-26T08:52:09.09964024Z",
+          "OOMKilled": false,
+          "Paused": false,
+          "Pid": 0,
+          "Restarting": false,
+          "Running": false,
+          "StartedAt": "2026-09-26T08:46:34.581443943Z",
+          "Status": "exited"
+        }
+      }
+    }
+  },
+  "totals": {
+    "training_games": 768,
+    "training_wins": 441,
+    "ppo_updates": 96,
+    "training_consumed_answers": 5938,
+    "evaluation_games": 24,
+    "evaluation_wins": 16
+  },
+  "training_gradient_range": [
+    0.0029812718762514123,
+    283.9210074742635
+  ],
+  "training_all96_positive_finite_updates_valid1": true,
+  "checkpoint_inventory": [
+    {
+      "step": 2,
+      "required_nonempty_files": 26
+    },
+    {
+      "step": 8,
+      "required_nonempty_files": 26
+    },
+    {
+      "step": 16,
+      "required_nonempty_files": 26
+    },
+    {
+      "step": 24,
+      "required_nonempty_files": 26
+    },
+    {
+      "step": 32,
+      "required_nonempty_files": 26
+    },
+    {
+      "step": 40,
+      "required_nonempty_files": 26
+    },
+    {
+      "step": 48,
+      "required_nonempty_files": 26
+    },
+    {
+      "step": 56,
+      "required_nonempty_files": 26
+    },
+    {
+      "step": 64,
+      "required_nonempty_files": 26
+    },
+    {
+      "step": 72,
+      "required_nonempty_files": 26
+    },
+    {
+      "step": 80,
+      "required_nonempty_files": 26
+    },
+    {
+      "step": 88,
+      "required_nonempty_files": 26
+    },
+    {
+      "step": 96,
+      "required_nonempty_files": 26
+    }
+  ],
+  "eval96_actual_load": {
+    "checkpoint": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/long/runs/train96/checkpoints/global_step_96",
+    "loaded_global_step": 96,
+    "checkpoint_load_returned": true,
+    "val_only": true,
+    "optimizer_updates": 0,
+    "feedback": "0",
+    "temperature": 0.8,
+    "do_sample": true,
+    "games": 8,
+    "game_seeds": [
+      605183188,
+      1075501356,
+      2084414326,
+      2203880230,
+      3000371298,
+      949752300,
+      3225036469,
+      2823708076
+    ],
+    "answers": "online SpB; no replay or replacement",
+    "optimizer_loaded_by_existing_loader_but_not_updated": true
+  },
+  "paired_eval_outcomes": [
+    {
+      "rank": 0,
+      "seed": 0,
+      "rng_matched": true,
+      "pre": "Defeat",
+      "cp2": "Victory",
+      "cp96": "Defeat"
+    },
+    {
+      "rank": 1,
+      "seed": 1,
+      "rng_matched": true,
+      "pre": "Victory",
+      "cp2": "Victory",
+      "cp96": "Defeat"
+    },
+    {
+      "rank": 2,
+      "seed": 2,
+      "rng_matched": true,
+      "pre": "Victory",
+      "cp2": "Victory",
+      "cp96": "Victory"
+    },
+    {
+      "rank": 3,
+      "seed": 3,
+      "rng_matched": true,
+      "pre": "Victory",
+      "cp2": "Victory",
+      "cp96": "Victory"
+    },
+    {
+      "rank": 4,
+      "seed": 4,
+      "rng_matched": true,
+      "pre": "Defeat",
+      "cp2": "Defeat",
+      "cp96": "Defeat"
+    },
+    {
+      "rank": 5,
+      "seed": 5,
+      "rng_matched": true,
+      "pre": "Victory",
+      "cp2": "Defeat",
+      "cp96": "Victory"
+    },
+    {
+      "rank": 6,
+      "seed": 6,
+      "rng_matched": true,
+      "pre": "Victory",
+      "cp2": "Defeat",
+      "cp96": "Victory"
+    },
+    {
+      "rank": 7,
+      "seed": 7,
+      "rng_matched": true,
+      "pre": "Victory",
+      "cp2": "Victory",
+      "cp96": "Victory"
+    }
+  ],
+  "storage": {
+    "checked_at": 1790412730.499135,
+    "bytes": 650422838238,
+    "limit": 1099511627776,
+    "returncode": 0,
+    "status": "measured",
+    "stderr": {
+      "tail": "",
+      "characters": 0,
+      "truncated": false
+    },
+    "deadline": 1790530922.7417548
+  },
+  "source_file_hashes": [
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/queue-state.json",
+      "sha256": "6014bf6e713d268acdcceabd87e72bbbcf24c21ef6886394696e174a5471531e",
+      "bytes": 293
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/long/host-supervision/state.json",
+      "sha256": "79f3f513b34cbd3f23a089a7778b76ae1e15b34baf3c73f4987d117509e6a421",
+      "bytes": 371
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/long/state.json",
+      "sha256": "79f3f513b34cbd3f23a089a7778b76ae1e15b34baf3c73f4987d117509e6a421",
+      "bytes": 371
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/short/runs/pre/result.json",
+      "sha256": "bc147e199cde33931f2e2bc19a06e9aed9bf839229aa551f70b824e144324ad1",
+      "bytes": 5219
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/short/runs/pre/.done",
+      "sha256": "bc147e199cde33931f2e2bc19a06e9aed9bf839229aa551f70b824e144324ad1",
+      "bytes": 5219
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/short/acceptance-pre.json",
+      "sha256": "996a17fd4a3e50592459c79a46a641c7581ad59bf3b0756717793ffea7f30ea0",
+      "bytes": 5843
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/short/runs/train2/result.json",
+      "sha256": "83e4a6adb869baf50196c4d6f2ceee6e861e0dcf20a7bc1f81ab7a6ff76d874d",
+      "bytes": 9502
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/short/runs/train2/.done",
+      "sha256": "83e4a6adb869baf50196c4d6f2ceee6e861e0dcf20a7bc1f81ab7a6ff76d874d",
+      "bytes": 9502
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/short/acceptance-train2.json",
+      "sha256": "1960fc9c49b68e4a8a4cad7281adaa6d70edc0f821b74ab1cde269b0ff317446",
+      "bytes": 10483
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/short/runs/train2/metrics.json",
+      "sha256": "db09b2be10ce34cffed4c73cc75ab02504df66d5b937e8cf4e76df6c97ff13a8",
+      "bytes": 5742
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/short/runs/post/result.json",
+      "sha256": "7cfbedbb912dba3b9b24a32f4e08ed306b48f48923ad25d972169cc12dfc1c08",
+      "bytes": 5221
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/short/runs/post/.done",
+      "sha256": "7cfbedbb912dba3b9b24a32f4e08ed306b48f48923ad25d972169cc12dfc1c08",
+      "bytes": 5221
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/short/acceptance-post.json",
+      "sha256": "af97fbbbe342c22f54eeed6e075735de81b7967012847323806d985e5ddd9b9d",
+      "bytes": 5846
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/long/runs/train96/result.json",
+      "sha256": "82497e308e402cca2db08164d4a748ed896cd9acc1bd119e93e4de71cb164d43",
+      "bytes": 249660
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/long/runs/train96/.done",
+      "sha256": "82497e308e402cca2db08164d4a748ed896cd9acc1bd119e93e4de71cb164d43",
+      "bytes": 249660
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/long/acceptance-train96.json",
+      "sha256": "1702725af64a665bc6048d6f07da0a4eb8e17815de333bc8db318c452e9f8c02",
+      "bytes": 268899
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/long/runs/train96/metrics.json",
+      "sha256": "112012f2bb45addaa93176b71ae0dbc7fce3a0165bf8c2d1d59df6d2b5d9a78f",
+      "bytes": 268736
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/long/host-supervision/train96-guardian.json",
+      "sha256": "bfc962cd0d4a0a61ae62e742bfa4bede0463011b05f4d2e51aeb80d3e22c895c",
+      "bytes": 322704
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/long/runs/eval96/result.json",
+      "sha256": "b0a4cff717eccf3b8623058963aeef2c3f9a0b58414dc2928b31b543c8fdc16d",
+      "bytes": 5221
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/long/runs/eval96/.done",
+      "sha256": "b0a4cff717eccf3b8623058963aeef2c3f9a0b58414dc2928b31b543c8fdc16d",
+      "bytes": 5221
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/long/acceptance-eval96.json",
+      "sha256": "64278c475f126ef2719786fd0b959914818fadc956a6b12926df6a620baa5a0a",
+      "bytes": 5845
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/long/host-supervision/eval96-guardian.json",
+      "sha256": "4831ffd72011ff8e91d8b09dc856f8039d7b95fcd6d999c289194606064d35b0",
+      "bytes": 5833
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/long/runs/eval96/checkpoint_evaluation.json",
+      "sha256": "51a9fe09c671e24cd9705120895e3c615c8d809c5dde4acf1b17c029abf79331",
+      "bytes": 574
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/short/runs/post/sampling-rank0.json",
+      "sha256": "1065485028cf208ece809ba552704448a7517097b2cf615d4cf8864a3e07ba04",
+      "bytes": 220
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/long/runs/eval96/sampling-rank0.json",
+      "sha256": "ec2a9fce570f57614e41badbae1d3c161de4347b6ec4087b7ea0d66e9e9131f1",
+      "bytes": 220
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/short/runs/post/sampling-rank1.json",
+      "sha256": "72f5400deb30cf2b5400809cdfcc73e3458377f0fca346cf997eabcab2b64ceb",
+      "bytes": 220
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/long/runs/eval96/sampling-rank1.json",
+      "sha256": "9edca4cafe81974d897e14e070e0583b9f8cb2308e6366f541d7265104c0446b",
+      "bytes": 220
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/short/runs/post/sampling-rank2.json",
+      "sha256": "7e9dfeb8cf255f9bb336ca6d731c10a965092e36899bdf3ab33960148906e53c",
+      "bytes": 220
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/long/runs/eval96/sampling-rank2.json",
+      "sha256": "893fe8f6277e8f2c0b508616727bb6bd35375a24f7c270b38098d519ded2692f",
+      "bytes": 220
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/short/runs/post/sampling-rank3.json",
+      "sha256": "6190b1b7ce642dbdff7ae32b90476e110d3c3dfcd4d13a5b42c0ae84f2e8656e",
+      "bytes": 220
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/long/runs/eval96/sampling-rank3.json",
+      "sha256": "b8bfde211433ed5c5e09d170bb8254a7095786d0650cd70ac37a27757aab3cd9",
+      "bytes": 220
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/short/runs/post/sampling-rank4.json",
+      "sha256": "db17c8d992e9e73c9ff7919fde57a6fb3b11ad8fdcaf4bdc32f1dd4ccfe08734",
+      "bytes": 220
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/long/runs/eval96/sampling-rank4.json",
+      "sha256": "9efc5e81d6004690620a61e7d56418f063b2c677976547263a146cec17d7b6e7",
+      "bytes": 220
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/short/runs/post/sampling-rank5.json",
+      "sha256": "ec9b6dd93863e2cfa36daebccd5c0cd6f157d0af810567b4a6bce5b501358583",
+      "bytes": 220
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/long/runs/eval96/sampling-rank5.json",
+      "sha256": "aaebd2d98f528becd6e18a360e839f69fa798763c67b2730e9b731496e72e925",
+      "bytes": 220
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/short/runs/post/sampling-rank6.json",
+      "sha256": "6d142a0226156177b291d096b7b78ed4624800fe278d1ef927b570ce114679e9",
+      "bytes": 220
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/long/runs/eval96/sampling-rank6.json",
+      "sha256": "ad034ef98247ce7f0bddcadec6eb8065024f1f9cc06c030f4e644d15513a0c4f",
+      "bytes": 220
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/short/runs/post/sampling-rank7.json",
+      "sha256": "7e0fe22442b363200257d8a6227b7af1f103b07492b935888a16594cff75f842",
+      "bytes": 220
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/long/runs/eval96/sampling-rank7.json",
+      "sha256": "96c55afe9c422db9a9b0eeff10405d67cb0ac92f23499a711d3c098d80712fe6",
+      "bytes": 220
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/storage-state.json",
+      "sha256": "34eaec121e02c3c6132e8556eadf2bb83002202920ce60559f1d8e9e73eb2792",
+      "bytes": 1485
+    }
+  ],
+  "limits": "Read-only terminal/acceptance/metrics/RNG and filename-only CP checks; no verifier rerun, full logs, large checkpoint reads or server writes. Historical r1 verifier failure preserved; no proof of learning/generalization.",
+  "record_version": "l8same-terminal-readonly-v1",
+  "readonly": true,
+  "total_natural_games": 792,
+  "training_win_rate": 0.57421875,
+  "storage_gib": 605.7534722965211,
+  "scientific_interpretation": {
+    "original_pre_wins": 6,
+    "cp2_post_wins": 5,
+    "cp96_wins": 5,
+    "paired_eval_games_per_model": 8,
+    "cp2_to_cp96_gained": 2,
+    "cp2_to_cp96_lost": 2,
+    "technical_completion": true,
+    "learning_validated": false,
+    "limitation": "Eight reused paired scenarios show no net win-rate gain; do not establish generalization, deterioration, causal policy learning or architecture advantage. Training batches use a shared scenario seed within each step and cannot be treated as 768 independent held-out trials.",
+    "seed_note": "paired_eval_outcomes.seed is the rank model-sampling seed 0..7, not the scenario seed; scenario seeds are in eval96_actual_load.game_seeds.",
+    "provenance_note": "Retained original r1 pre/train2 prefix plus approved r2 post/native CP2 long/eval96 continuation; original r1 host-verifier failure remains preserved. The evaluation loader text 'online SpB' is legacy helper wording, not model identity."
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "schema": "plotted-checkpoint-prune-receipt-v1",
+  "authorization": "2026-09-24 user: 你看看我们实验一些存过图的权重就删了吧，然后再把实验跑上",
+  "node_alias": "sc2-a100-197",
+  "plan_file": "plotted-checkpoint-prune-20260924-plan.json",
+  "plan_commit": "82b6f3c",
+  "preflight": {
+    "event": "preflight_passed",
+    "epoch": 1790228155.5299978,
+    "apply": true,
+    "targets": 320,
+    "open_references": 0,
+    "plan_sha256": "0e7f49cbc93f3c88f8cc9becd73d1db6acab8ff3193afd76a7ebcce1447484d1",
+    "free_bytes": 869850730496
+  },
+  "completed": {
+    "event": "completed",
+    "epoch": 1790228156.1512415,
+    "deleted_files": 320,
+    "deleted_logical_bytes": 1133818614080,
+    "free_before": 869850730496,
+    "free_after": 2003669897216,
+    "retained_files_unchanged": 532,
+    "preserved_receipts_unchanged": 8,
+    "queue_modified": false,
+    "recovery": "No weight backup; intermediate CPs non-resumable."
+  },
+  "exact_320_paths_match_plan": true,
+  "exit_code": 0,
+  "free_after_gib": 1866.0630073547363,
+  "source_and_random_weights_untouched": true,
+  "old_qwen_strict_failure_unchanged": true,
+  "full_checkpoint_reverification_after_prune": false,
+  "known_limitation": "Intermediate CP16..88 in two same arms are no longer resumable; historical acceptance is time-stamped pre-prune evidence."
+}

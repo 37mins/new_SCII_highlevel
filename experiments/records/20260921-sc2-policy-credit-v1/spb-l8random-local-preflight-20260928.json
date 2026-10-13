@@ -1,0 +1,40 @@
+{
+  "status": "local-regressions-passed-not-server-admitted",
+  "run_id": "sc2-spb-l8random96-197-20260928-r1",
+  "authorization": "User approved the complete1048-game/96PPO/30h/240GPUh/352GiB proposal and exact own nonbest CP32 pruning.",
+  "base_commit": "41dceea9c84292ef1a9ac1a4eb88fff1dc26b782",
+  "local_tests": {
+    "command": "PYTHONPATH=/private/tmp/sc2-spb-l8-testdeps.nzp1NX:tests:. PYTHONDONTWRITEBYTECODE=1 python3 -B -m unittest test_spb_l8random197 test_qwen_l8random197 test_qwen_l8random_retention test_qwen_l7same_fresh197 test_qwen_l8_common64_197 test_spb_l7_random197 test_sc2_policy_resume -q",
+    "tests": 143,
+    "skips": 0,
+    "exit_code": 0,
+    "initial_local_dependency_issue": "OmegaConf missing; installed2.3.0 to isolated local temporary directory, no server or shared-environment change.",
+    "gpu_or_game_tests": false
+  },
+  "host_snapshot": {
+    "checked_at_beijing": "2026-09-28T22:41:11+08:00",
+    "ssh_alias": "sc2-a100-197",
+    "gpu_count": 8,
+    "all_memory_and_utilization_zero": true,
+    "compute_pids": [],
+    "free_disk_bytes": 831321141248,
+    "mem_available_kib": 793120272,
+    "original_spb_config_sha256": "fe0e3c00571eabc7e625ea192b55f6e360d5a6cb3d53c602085a81bada1fed5b",
+    "existing_services_untouched": true
+  },
+  "budget": {
+    "train_and_selection_hours": 24,
+    "primary_hours": 6,
+    "suite_hours": 30,
+    "suite_gpu_hours": 240,
+    "train_and_selection_gib": 320,
+    "primary_gib": 32,
+    "suite_gib": 352,
+    "games": 1048,
+    "ppo_updates": 96
+  },
+  "server_cpu_admission": "not_yet_run",
+  "gpu_dispatched": false,
+  "old_artifacts_deleted": false,
+  "limitations": "Local tests do not prove actual launchers, GPU mapping, SC2 games, model loads or PPO. Freeze/push then one-shot CPU admission is required."
+}

@@ -1,0 +1,522 @@
+{
+  "checked_at": 1790074864.9364452,
+  "receipts": {
+    "/var/jfsCache/sc2-qwen-l7eval96-197-20260922-r1/deployment.json": {
+      "bytes": 11337,
+      "sha256": "52ea6d725a750008225d5549c00918ef86c9d4ae06d4404f1ddb2aa506bca893",
+      "value": {
+        "runtime_sha": "469c77eb9c767f6db87dc4701401805fa22b46e2",
+        "controller_sha": "469c77eb9c767f6db87dc4701401805fa22b46e2",
+        "controller_source": "/var/jfsCache/sc2-qwen-l7eval96-197-source-20260922-r1/code2",
+        "stages": [
+          "eval96"
+        ],
+        "games": [
+          8
+        ],
+        "updates": [
+          0
+        ],
+        "queue_expires": 1790227081.5133374,
+        "output_limit_bytes": 1099511627776,
+        "authorization": "User approved retaining CP96, exactly8 paired zero-update final games with original deadline/budget; accepts six historical gradients unresolved and old failure retained; then new SpB same and Qwen random queue under existing budgets",
+        "storage_roots": [
+          "/var/jfsCache/sc2-qwen-l7eval96-197-20260922-r1",
+          "/var/jfsCache/sc2-qwen-l7eval96-197-source-20260922-r1",
+          "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1",
+          "/var/jfsCache/sc2-qwen-l7same96-197-source-20260922-r1",
+          "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-same"
+        ],
+        "absolute_deadline": 1790227126.5133374
+      }
+    },
+    "/var/jfsCache/sc2-qwen-l7eval96-197-20260922-r1/queue-state.json": {
+      "bytes": 61,
+      "sha256": "1c4b9a9d3a45a247cfdb7540ded61e7fa3874c66a26228c24326a8fb780ebefc",
+      "value": {
+        "phase": "dispatched",
+        "deadline": 1790227126.5133374
+      }
+    },
+    "/var/jfsCache/sc2-qwen-l7eval96-197-20260922-r1/dispatch.json": {
+      "bytes": 2665,
+      "sha256": "90a4c72e6d264ae7a101097e544fd62e3ec782f830b183c6e1904c8da3ef24ea",
+      "value": {
+        "start": 1790074800.934445,
+        "deadline": 1790227126.5133374,
+        "original_start": 1790054326.5133374,
+        "original_deadline_preserved": true
+      }
+    },
+    "/var/jfsCache/sc2-qwen-l7eval96-197-20260922-r1/state.json": {
+      "bytes": 181,
+      "sha256": "437136af7fb6d7fe24df12c1652f676d3114a16863e22b9c6845c7a8f86dae47",
+      "value": {
+        "phase": "running-unverified",
+        "completed": [],
+        "deadline": 1790227126.5133374,
+        "stage": "eval96",
+        "run": "/var/jfsCache/sc2-qwen-l7eval96-197-20260922-r1/runs/eval96"
+      }
+    },
+    "/var/jfsCache/sc2-qwen-l7eval96-197-20260922-r1/storage-state.json": {
+      "bytes": 1739,
+      "sha256": "e6ea11ec7334bb5bd35aa33539a0b68acd42ca8834811fd6efac53541089ee53",
+      "value": {
+        "command": [
+          "du",
+          "-sb",
+          "--null",
+          "--",
+          "/var/jfsCache/sc2-qwen-l7eval96-197-20260922-r1",
+          "/var/jfsCache/sc2-qwen-l7eval96-197-source-20260922-r1",
+          "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1",
+          "/var/jfsCache/sc2-qwen-l7same96-197-source-20260922-r1",
+          "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-same"
+        ],
+        "roots": [
+          "/var/jfsCache/sc2-qwen-l7eval96-197-20260922-r1",
+          "/var/jfsCache/sc2-qwen-l7eval96-197-source-20260922-r1",
+          "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1",
+          "/var/jfsCache/sc2-qwen-l7same96-197-source-20260922-r1",
+          "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-same"
+        ],
+        "started_at": 1790074862.770612,
+        "deadline": 1790227126.5133374,
+        "limit": 1099511627776,
+        "bytes": 650340460448,
+        "returncode": 0,
+        "status": "measured",
+        "stdout": {
+          "tail": "16008459\t/var/jfsCache/sc2-qwen-l7eval96-197-20260922-r1\u000036889237\t/var/jfsCache/sc2-qwen-l7eval96-197-source-20260922-r1\u0000600271409567\t/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1\u000051041532\t/var/jfsCache/sc2-qwen-l7same96-197-source-20260922-r1\u000049965111653\t/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-same\u0000",
+          "characters": 310,
+          "truncated": false
+        },
+        "stderr": {
+          "tail": "",
+          "characters": 0,
+          "truncated": false
+        },
+        "root_bytes": {
+          "/var/jfsCache/sc2-qwen-l7eval96-197-20260922-r1": 16008459,
+          "/var/jfsCache/sc2-qwen-l7eval96-197-source-20260922-r1": 36889237,
+          "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1": 600271409567,
+          "/var/jfsCache/sc2-qwen-l7same96-197-source-20260922-r1": 51041532,
+          "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-same": 49965111653
+        },
+        "checked_at": 1790074862.978571
+      }
+    },
+    "/var/jfsCache/sc2-qwen-l7eval96-197-20260922-r1/readiness.json": {
+      "bytes": 254,
+      "sha256": "bc90858856323b58906e40bf69d671a26c035476a2165bbb0219fe641ed172ee",
+      "value": {
+        "passed": true,
+        "cuda_initialized": false,
+        "controller_sha": "469c77eb9c767f6db87dc4701401805fa22b46e2",
+        "runtime_sha": "469c77eb9c767f6db87dc4701401805fa22b46e2",
+        "actual_entries_and_hydra_configs": true,
+        "checked_at": 1790074706.8981185
+      }
+    },
+    "/var/jfsCache/sc2-qwen-l7eval96-197-20260922-r1/regressions.json": {
+      "bytes": 176,
+      "sha256": "3f05129227b878d6434ef1bef3bfd01761b3e2e9e76f793286e15d6b7b5e286e",
+      "value": {
+        "passed": true,
+        "tests": 214,
+        "skips": 0,
+        "cuda_initialized": false,
+        "runtime_sha": "469c77eb9c767f6db87dc4701401805fa22b46e2",
+        "checked_at": 1790074701.3016484
+      }
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r3/deployment.json": {
+      "bytes": 1441,
+      "sha256": "d98a700591b21fe7a33e1b88d849b2debb52d9a330bca574c3dd4f284f72ca64",
+      "value": {
+        "runtime_sha": "469c77eb9c767f6db87dc4701401805fa22b46e2",
+        "controller_sha": "469c77eb9c767f6db87dc4701401805fa22b46e2",
+        "first_dispatch_by": 1790230726.5133374,
+        "output_limit_bytes": 2199023255552,
+        "storage_roots": [
+          "/var/jfsCache/sc2-l7-followup197-20260922-r3",
+          "/var/jfsCache/sc2-l7-followup197-source-20260922-r3",
+          "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-random",
+          "/var/jfsCache/sc2-l7-followup197-20260922-r1",
+          "/var/jfsCache/sc2-l7-followup197-source-20260922-r1",
+          "/var/jfsCache/sc2-l7-followup197-20260922-r2",
+          "/var/jfsCache/sc2-l7-followup197-source-20260922-r2"
+        ],
+        "authorization": "Sep22 user approved new CP96-only evaluation with six historical raw gradients unresolved and old failure retained, then fresh SpB same short+96 and Qwen random ownCP2+96; same budgets and original admission expiry; no old queue restart or extra training",
+        "predecessor_contract": "CP96 paired zero-update evaluation passed; historical rounded-gradient gap accepted, not retroactive training acceptance"
+      }
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r3/queue-state.json": {
+      "bytes": 98,
+      "sha256": "cf0171be90843d5345d935300b97cc4c94d19d55c08afce6d1c1e403abc2e03b",
+      "value": {
+        "phase": "waiting-predecessor",
+        "completed": [],
+        "first_dispatch_by": 1790230726.5133374
+      }
+    },
+    "/var/jfsCache/sc2-qwen-l7eval96-197-20260922-r1/cpu/protocol-match.json": {
+      "bytes": 318,
+      "sha256": "ded5962c740f28eaafab014419378201be82097ee26f44511bfc767d890a2c3d",
+      "value": {
+        "passed": true,
+        "old_sha": "7d80df079c5553e2191ff5d76fc149df3e83766d57aee8ca9f6b9b74cd83e407",
+        "new_sha": "7b4ab30eb65d06b19563c27b74f9c8e6c64b35ab929cfb368448e7be43d174ee",
+        "checkpoint": "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/runs/train96/checkpoints/global_step_96",
+        "zero_new_training": true
+      }
+    },
+    "/var/jfsCache/sc2-qwen-l7eval96-197-20260922-r1/cpu/regressions-missing-history.json": {
+      "bytes": 177,
+      "sha256": "cd566703051a7e1f891fecc5ec474c3d4f083ec63b75df43a8b6347d5d0c62fd",
+      "value": {
+        "passed": false,
+        "tests": 214,
+        "skips": 0,
+        "cuda_initialized": false,
+        "runtime_sha": "469c77eb9c767f6db87dc4701401805fa22b46e2",
+        "checked_at": 1790074393.0179296
+      }
+    },
+    "/var/jfsCache/sc2-qwen-l7eval96-197-20260922-r1/historical-evidence-gap.json": {
+      "bytes": 2105,
+      "sha256": "963b387fdd097b7c15e5eaf58c5b96ce5dbd39493ede2e3885c75e461741dc71",
+      "value": {
+        "version": "approved-rounded-gradient-gap-v1",
+        "approved": true,
+        "historical_terminal_acceptance": "failed, unchanged",
+        "historical_gradient_unknown": [
+          7,
+          9,
+          10,
+          56,
+          65,
+          92
+        ],
+        "historical_receipts_sha256": {
+          "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/runs/train96/result.json": "2b39c3554924743008783177494016bc3d7110ce5068700205305a7279042eb5",
+          "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/runs/train96/.done": "2b39c3554924743008783177494016bc3d7110ce5068700205305a7279042eb5",
+          "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/runs/train96/metrics.json": "081c7440f21d9501070b2e2186d721ae5bda3de5ddde395b558b351c8257fecd",
+          "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/runs/train96/checkpoints/sc2_policy_credit_audit.jsonl": "fa72355afc35d41dde1993a4d8973278aa0bc742ef090d934b1bdadd99ff3246",
+          "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/runs/train96/checkpoints/resume_state.json": "dd8f08d7f28fd617f58e59a726a36e56c44c705b00225bdafe8e5ea990d4d0fe",
+          "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/runs/train96/training_seeds.jsonl": "4db86eab6b1945772139a586d16b50fbd6ec756936e8450a3bac8eee5ba8a660",
+          "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/deployment.json": "53271d11a63de9718ddc8678b4409955dcc67432e67b188dbf48885279935743",
+          "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/queue-state.json": "81e1dd3213aaaf1a28fc5458bc4c8dd5b0a698d9accff2909a3966d01741ad17",
+          "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/state.json": "e8f23c2a7e0c7da925b702dd358f30b231dc09ea201bc0e66ddabd18792bb4fa",
+          "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/dispatch.json": "086a0afa0129b84bbd3c3c21834458edd1c3108c86962848a592c5820c68ee9e",
+          "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/runs/train96/manifest.json": "37f11ed07e95948921a8d0231ffd87291a6f5b54f3c72fb201b56990ee7cdc8c"
+        },
+        "checkpoint": "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/runs/train96/checkpoints/global_step_96",
+        "retraining": false,
+        "interpretation": "CP96 behavior only; not retroactive full training acceptance"
+      }
+    },
+    "/var/jfsCache/sc2-qwen-l7eval96-197-20260922-r1/runs/eval96/manifest.json": {
+      "bytes": 3004,
+      "sha256": "9c1b8d7375ddcda02b58171ab0fe5a1b0e967ab5cdf34679eddbc95963e246ac",
+      "value": {
+        "metrics_precision": "binary64-v1",
+        "world_size": 8
+      }
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r3/spb-same/short/deployment.json": {
+      "bytes": 11132,
+      "sha256": "1022aff55ace7eee923e17c4ae9fd994ce44b5ec3442ea2fe586f2cb9a203900",
+      "value": {
+        "runtime_sha": "469c77eb9c767f6db87dc4701401805fa22b46e2",
+        "controller_sha": "469c77eb9c767f6db87dc4701401805fa22b46e2",
+        "controller_source": "/var/jfsCache/sc2-l7-followup197-source-20260922-r3/code2",
+        "stages": [
+          "pre",
+          "train2",
+          "post"
+        ],
+        "games": [
+          8,
+          16,
+          8
+        ],
+        "updates": [
+          0,
+          2,
+          0
+        ],
+        "queue_expires": 1790018140.699252,
+        "output_limit_bytes": 1099511627776,
+        "authorization": "Sep22 user approved new CP96-only evaluation with six historical raw gradients unresolved and old failure retained, then fresh SpB same short+96 and Qwen random ownCP2+96; same budgets and original admission expiry; no old queue restart or extra training",
+        "predecessor_contract": "CP96 paired zero-update evaluation passed; historical rounded-gradient gap accepted, not retroactive training acceptance"
+      }
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r3/spb-same/short/readiness.json": {
+      "bytes": 249,
+      "sha256": "fd6e194fc8be4a30ba245200b8ac0a9f990a8aa6cfad8e9373aecf3de388f120",
+      "value": {
+        "passed": true,
+        "runtime_sha": "469c77eb9c767f6db87dc4701401805fa22b46e2",
+        "cuda_initialized": false,
+        "actual_entries_and_hydra_configs": true,
+        "actual_parent_verified": true,
+        "deferred_gate": null,
+        "checked_at": 1790074726.3869894
+      }
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r3/spb-same/short/regressions.json": {
+      "bytes": 175,
+      "sha256": "fb31b891ca5830d9046f4554f1aaa65a7a2bc398ff137b065c1ae3fb30284f2e",
+      "value": {
+        "passed": true,
+        "tests": 214,
+        "skips": 0,
+        "cuda_initialized": false,
+        "runtime_sha": "469c77eb9c767f6db87dc4701401805fa22b46e2",
+        "checked_at": 1790074754.448274
+      }
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r3/spb-same/long/deployment.json": {
+      "bytes": 11123,
+      "sha256": "47ac337006a9c9145e187ec550539c71f76241094c580bc2447cd7ca605d38da",
+      "value": {
+        "runtime_sha": "469c77eb9c767f6db87dc4701401805fa22b46e2",
+        "controller_sha": "469c77eb9c767f6db87dc4701401805fa22b46e2",
+        "controller_source": "/var/jfsCache/sc2-l7-followup197-source-20260922-r3/code2",
+        "stages": [
+          "train96",
+          "eval96"
+        ],
+        "games": [
+          752,
+          8
+        ],
+        "updates": [
+          94,
+          0
+        ],
+        "queue_expires": 1790018140.699252,
+        "output_limit_bytes": 1099511627776,
+        "authorization": "Sep22 user approved new CP96-only evaluation with six historical raw gradients unresolved and old failure retained, then fresh SpB same short+96 and Qwen random ownCP2+96; same budgets and original admission expiry; no old queue restart or extra training",
+        "predecessor_contract": "CP96 paired zero-update evaluation passed; historical rounded-gradient gap accepted, not retroactive training acceptance"
+      }
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r3/spb-same/long/readiness.json": {
+      "bytes": 307,
+      "sha256": "0117be78ad9748ecb2da8b1036ac490ab01fb2a23df07b92fd1da3afc8c91b92",
+      "value": {
+        "passed": true,
+        "runtime_sha": "469c77eb9c767f6db87dc4701401805fa22b46e2",
+        "cuda_initialized": false,
+        "actual_entries_and_hydra_configs": true,
+        "actual_parent_verified": false,
+        "deferred_gate": "SpB actual CP2 and accepted prefix required before long GPU",
+        "checked_at": 1790074732.0077732
+      }
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r3/qwen-random/long/deployment.json": {
+      "bytes": 11297,
+      "sha256": "cdad79a5bc7c0e0b2b46258e09d251214f5e147601db04ba85b584dc52dfd116",
+      "value": {
+        "runtime_sha": "469c77eb9c767f6db87dc4701401805fa22b46e2",
+        "controller_sha": "469c77eb9c767f6db87dc4701401805fa22b46e2",
+        "controller_source": "/var/jfsCache/sc2-l7-followup197-source-20260922-r3/code2",
+        "stages": [
+          "train96",
+          "eval96"
+        ],
+        "games": [
+          752,
+          8
+        ],
+        "updates": [
+          94,
+          0
+        ],
+        "queue_expires": 1790018140.699252,
+        "output_limit_bytes": 1099511627776,
+        "authorization": "Sep22 user approved new CP96-only evaluation with six historical raw gradients unresolved and old failure retained, then fresh SpB same short+96 and Qwen random ownCP2+96; same budgets and original admission expiry; no old queue restart or extra training",
+        "predecessor_contract": "CP96 paired zero-update evaluation passed; historical rounded-gradient gap accepted, not retroactive training acceptance"
+      }
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r3/qwen-random/long/readiness.json": {
+      "bytes": 249,
+      "sha256": "705049e0b11d6ff8b9fd387e408fd7f67dced4fe8f74726a9e70cebab2320a2e",
+      "value": {
+        "passed": true,
+        "runtime_sha": "469c77eb9c767f6db87dc4701401805fa22b46e2",
+        "cuda_initialized": false,
+        "actual_entries_and_hydra_configs": true,
+        "actual_parent_verified": true,
+        "deferred_gate": null,
+        "checked_at": 1790074737.7824013
+      }
+    }
+  },
+  "containers": [
+    {
+      "name": "sc2-qwen-l7eval96-197-20260922-r1",
+      "state": {
+        "Status": "running",
+        "Running": true,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 679451,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-09-22T11:00:00.979307015Z",
+        "FinishedAt": "0001-01-01T00:00:00Z"
+      },
+      "device_requests": [
+        {
+          "Driver": "",
+          "Count": -1,
+          "DeviceIDs": null,
+          "Capabilities": [
+            [
+              "gpu"
+            ]
+          ],
+          "Options": {}
+        }
+      ]
+    },
+    {
+      "name": "sc2-qwen-l7eval96-197-20260922-r1-cpu-regressions",
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 1,
+        "Error": "",
+        "StartedAt": "2026-09-22T10:52:57.050610784Z",
+        "FinishedAt": "2026-09-22T10:53:13.99051536Z"
+      },
+      "device_requests": null
+    },
+    {
+      "name": "sc2-qwen-l7eval96-197-20260922-r1-cpu-regressions-history-complete",
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-09-22T10:58:05.574148118Z",
+        "FinishedAt": "2026-09-22T10:58:22.3043691Z"
+      },
+      "device_requests": null
+    },
+    {
+      "name": "sc2-qwen-l7eval96-197-20260922-r1-cpu-cpu",
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-09-22T10:58:22.594463807Z",
+        "FinishedAt": "2026-09-22T10:58:27.597940202Z"
+      },
+      "device_requests": null
+    },
+    {
+      "name": "sc2-l7-followup197-20260922-r3-spb-same-short-cpu-cpu",
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-09-22T10:58:41.272579625Z",
+        "FinishedAt": "2026-09-22T10:58:47.076124622Z"
+      },
+      "device_requests": null
+    },
+    {
+      "name": "sc2-l7-followup197-20260922-r3-spb-same-long-cpu-cpu",
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-09-22T10:58:47.34105505Z",
+        "FinishedAt": "2026-09-22T10:58:52.648226129Z"
+      },
+      "device_requests": null
+    },
+    {
+      "name": "sc2-l7-followup197-20260922-r3-qwen-random-long-cpu-cpu",
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-09-22T10:58:53.013823413Z",
+        "FinishedAt": "2026-09-22T10:58:58.470240083Z"
+      },
+      "device_requests": null
+    },
+    {
+      "name": "sc2-l7-followup197-20260922-r3-spb-same-short-cpu-regressions",
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-09-22T10:58:58.781700996Z",
+        "FinishedAt": "2026-09-22T10:59:15.453920386Z"
+      },
+      "device_requests": null
+    }
+  ],
+  "log_evidence": {
+    "bounded_console_read_bytes": 14000,
+    "observations": [
+      "Qwen3ForCausalLM contains 4.02B parameters",
+      "NCCL version 2.26.2+cuda12.2"
+    ],
+    "cp96_load_returned_at_snapshot": false,
+    "sc2_start_verified_at_snapshot": false
+  },
+  "preparation_notes": [
+    "First 4e7a2a7 candidate failed before run root/CPU/GPU, retained code clone; final-only CP inventory fixed with regression; active code2 at469c77.",
+    "First Linux CPU regression failed only because historical git objects 0d7ba09/019a8b3 were missing inside read-only container; failed receipt/container/log preserved. Full same-SHA history bundle unbundled into both code2 repositories. Rerun214/0 passed with no GPU request; source SHA unchanged.",
+    "Host queue labels alone do not prove checkpoint load or evaluation acceptance."
+  ]
+}

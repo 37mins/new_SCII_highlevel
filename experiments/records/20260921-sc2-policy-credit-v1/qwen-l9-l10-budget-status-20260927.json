@@ -1,0 +1,118 @@
+{
+  "checked_at_beijing": "2026-09-27T10:12:56.181244+08:00",
+  "root": "/var/jfsCache/sc2-qwen-l8-common192-197-20260927-r1",
+  "host": {
+    "version": "host-guardian-v1",
+    "phase": "running-unverified",
+    "completed": [
+      "b00-original",
+      "b00-cp96",
+      "b00-cp192",
+      "b01-cp96"
+    ],
+    "deadline": 1790495189.9456112,
+    "learning_validated": false,
+    "started_at": 1790473621.310089,
+    "stage": "b01-cp192",
+    "container_id": "d7af962c0081141f20f34b7af81cdab387548b363046fd4796e86a9851d4d2ac"
+  },
+  "queue": {
+    "phase": "running-unverified",
+    "completed": [],
+    "new_games": 192,
+    "new_updates": 0,
+    "deadline": 1790495189.9456112
+  },
+  "dispatch": {
+    "start": 1790473589.9456112,
+    "deadline": 1790495189.9456112,
+    "gpu_hours": 48,
+    "new_games": 192,
+    "new_updates": 0,
+    "includes_gpu_preflight": true
+  },
+  "gpu": [
+    "0, 5186, 0",
+    "1, 5330, 0",
+    "2, 5330, 0",
+    "3, 5330, 0",
+    "4, 5330, 0",
+    "5, 5330, 0",
+    "6, 5330, 0",
+    "7, 5186, 0"
+  ],
+  "compute_apps": [
+    "3758301, ray::WorkerDict, 5164 MiB",
+    "3758494, ray::WorkerDict, 5308 MiB",
+    "3758495, ray::WorkerDict, 5308 MiB",
+    "3758496, ray::WorkerDict, 5308 MiB",
+    "3758497, ray::WorkerDict, 5308 MiB",
+    "3758498, ray::WorkerDict, 5308 MiB",
+    "3758499, ray::WorkerDict, 5308 MiB",
+    "3758500, ray::WorkerDict, 5164 MiB"
+  ],
+  "container": {
+    "id": "d7af962c0081141f20f34b7af81cdab387548b363046fd4796e86a9851d4d2ac",
+    "owner": "/var/jfsCache/sc2-qwen-l8-common192-197-20260927-r1",
+    "state": {
+      "Dead": false,
+      "Error": "",
+      "ExitCode": 0,
+      "FinishedAt": "0001-01-01T00:00:00Z",
+      "OOMKilled": false,
+      "Paused": false,
+      "Pid": 3753231,
+      "Restarting": false,
+      "Running": true,
+      "StartedAt": "2026-09-27T02:11:21.32174447Z",
+      "Status": "running"
+    }
+  },
+  "accepted": [
+    {
+      "stage": "b00-cp192",
+      "games": 8,
+      "wins": 5,
+      "updates": 0
+    },
+    {
+      "stage": "b00-cp96",
+      "games": 8,
+      "wins": 5,
+      "updates": 0
+    },
+    {
+      "stage": "b00-original",
+      "games": 8,
+      "wins": 6,
+      "updates": 0
+    },
+    {
+      "stage": "b01-cp96",
+      "games": 8,
+      "wins": 4,
+      "updates": 0
+    }
+  ],
+  "installed_sc2_difficulty_source": {
+    "/data/yangjinyue/new-scii-spb2-system-baseline/envs/spb2-stageguard-r1/lib/python3.12/site-packages/sc2/data.py": [
+      "Difficulty = enum.Enum(\"Difficulty\", sc_pb.Difficulty.items())"
+    ]
+  },
+  "new_l9_l10_launch_performed": false,
+  "budget_capacity_check": {
+    "checked_at_beijing": "2026-09-27T10:17:32+08:00",
+    "filesystem": "/var/jfsCache",
+    "available_bytes": 850856951808,
+    "available_ram_bytes": 704592752640,
+    "reference_checkpoint_bytes": 49843590588,
+    "reference_checkpoint_source": "qwen-l8same-cp192-20260926.md: CP96 filename/stat inventory",
+    "checkpoint_contents_read": false
+  },
+  "authorization": {
+    "user_requested": "L9/L10 RL long training; give training budget first",
+    "zero_update_384_game_proposal": "not selected; not queued",
+    "new_rl_budget": "pending explicit confirmation",
+    "new_gpu_or_server_write": false
+  }
+}

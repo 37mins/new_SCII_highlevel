@@ -1,0 +1,169 @@
+{
+  "schema": "sc2-spb-random-readonly-heartbeat-v1",
+  "observed_at": "2026-09-24T09:49:12.868798+08:00",
+  "read_only": true,
+  "ssh_alias": "sc2-a100-197",
+  "root": "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1",
+  "runtime_sha": "83f3530765babe048035524ddf1651291810818a",
+  "prior_evidence": "spb-random-train96-complete-20260924-093505.json",
+  "file_hashes": {
+    "queue-state.json": {
+      "exists": true,
+      "bytes": 186,
+      "sha256": "7c0a259b9e0aabd9ceffaf5c930a41b82313bcd5cec803c9430937a1568f9c8a"
+    },
+    "dispatch.json": {
+      "exists": true,
+      "bytes": 128,
+      "sha256": "d24fbfb655ecc422d9fd47e4cd9fad89e19e0edecb041222a1af4a5b2d42dff7"
+    },
+    "storage-state.json": {
+      "exists": true,
+      "bytes": 983,
+      "sha256": "57dc827f6d5c1605cceb0c027033ffd531c3df01c2c9df552cc79b183a0a235e"
+    },
+    "storage-failure.json": {
+      "exists": false
+    },
+    "spb-random/long/host-supervision/state.json": {
+      "exists": true,
+      "bytes": 310,
+      "sha256": "2c1a284aec05748df61899fec70f3961fbbe093a8563481cb49e2753ebea8ff7"
+    },
+    "spb-random/long/state.json": {
+      "exists": false
+    },
+    "spb-random/long/admission-eval96.json": {
+      "exists": false
+    },
+    "spb-random/long/runs/train96/result.json": {
+      "exists": true,
+      "bytes": 249366,
+      "sha256": "5feb66bd0bc24fae031e879db25e2df3d05fc5fbcb905549b521d100cb81f53b"
+    },
+    "spb-random/long/runs/train96/.done": {
+      "exists": true,
+      "bytes": 249366,
+      "sha256": "5feb66bd0bc24fae031e879db25e2df3d05fc5fbcb905549b521d100cb81f53b"
+    },
+    "spb-random/long/acceptance-train96.json": {
+      "exists": true,
+      "bytes": 268607,
+      "sha256": "49860fa66d7c291a6104770b5152ea73fbac780cdd7527d4b12133d5f29adf01"
+    },
+    "spb-random/long/runs/train96/manifest.json": {
+      "exists": true,
+      "bytes": 3046,
+      "sha256": "5422ae326074c24532d525ab7152f78a7256e3b1b5046305644b56fdc2e274d8"
+    },
+    "spb-random/long/host-supervision/train96-guardian.json": {
+      "exists": true,
+      "bytes": 378147,
+      "sha256": "09b6936d89dbba2f78bd4235c1ac5f3f4df13f41135be046ce1ec8848c57cd61"
+    }
+  },
+  "queue": {
+    "phase": "running-unverified",
+    "completed": [
+      "spb-random/short"
+    ],
+    "first_dispatch_by": 1790312320.0467553,
+    "part": "spb-random/long",
+    "deadline": 1790356959.0174987
+  },
+  "host": {
+    "version": "host-guardian-v1",
+    "phase": "stage-completed",
+    "completed": [
+      "train96"
+    ],
+    "deadline": 1790356959.0174987,
+    "learning_validated": false,
+    "started_at": 1790187111.9027476,
+    "stage": "train96",
+    "container_id": "40d5a3f43a41fffb0eb51ea9a1c816b118cddef0b151464946d0c663fc024217"
+  },
+  "dispatch": {
+    "start": 1790184159.0174987,
+    "deadline": 1790356959.0174987,
+    "gpu_hours": 384,
+    "new_games": 792,
+    "new_updates": 96
+  },
+  "eval96": {
+    "run_directory_exists": false,
+    "admission_receipt_exists": false,
+    "completion_accepted": false,
+    "interpretation": "Awaiting unchanged per-stage admission, inferred from stage-completed host state, absent eval96 admission/run, continuing storage samples and previously inspected frozen control flow. Exact unmet resource is not established; no GPU diagnostics performed."
+  },
+  "train96": {
+    "previously_accepted": true,
+    "terminal_receipt_hashes_unchanged": [
+      "spb-random/long/runs/train96/result.json",
+      "spb-random/long/runs/train96/.done",
+      "spb-random/long/acceptance-train96.json",
+      "spb-random/long/runs/train96/manifest.json",
+      "spb-random/long/host-supervision/train96-guardian.json"
+    ],
+    "result_done_match": true,
+    "completion_already_notified": true,
+    "full_metrics_or_logs_reread": false,
+    "checkpoints_read": false
+  },
+  "storage": {
+    "command": [
+      "du",
+      "-sb",
+      "--null",
+      "--",
+      "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1",
+      "/var/jfsCache/sc2-spb-l7random96-197-source-20260923-r1"
+    ],
+    "roots": [
+      "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1",
+      "/var/jfsCache/sc2-spb-l7random96-197-source-20260923-r1"
+    ],
+    "started_at": 1790214537.77116,
+    "deadline": 1790356959.0174987,
+    "limit": 1099511627776,
+    "bytes": 831162453514,
+    "returncode": 0,
+    "status": "measured",
+    "stdout": {
+      "tail": "831142504568\t/var/jfsCache/sc2-spb-l7random96-197-20260923-r1\u000019948946\t/var/jfsCache/sc2-spb-l7random96-197-source-20260923-r1\u0000",
+      "characters": 127,
+      "truncated": false
+    },
+    "stderr": {
+      "tail": "",
+      "characters": 0,
+      "truncated": false
+    },
+    "root_bytes": {
+      "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1": 831142504568,
+      "/var/jfsCache/sc2-spb-l7random96-197-source-20260923-r1": 19948946
+    },
+    "checked_at": 1790214538.0066905
+  },
+  "storage_failure_exists": false,
+  "actions": {
+    "server_mutation": false,
+    "automatic_retry_or_repair": false,
+    "duplicate_dispatch": false,
+    "large_checkpoint_read": false,
+    "gpu_diagnostics": false,
+    "monitor_changed": false
+  },
+  "notification_events": [],
+  "interpretation": "Healthy waiting snapshot; remain quiet and retain the existing sole 10-minute heartbeat. No new experiment result or learning/architecture conclusion.",
+  "validation": [
+    "All five prior accepted train96 terminal-file hashes unchanged",
+    "Existing storage sample measured exact two roots, returncode 0, empty stderr, below 1 TiB",
+    "Fixed dispatch start and shared 48-hour deadline unchanged",
+    "Eval96 admission and run directory absent; no missing-state file interpreted as failure"
+  ],
+  "acquisition": {
+    "remote_exit_code": 0,
+    "remote_read_scope": "Small state and terminal receipts only; no console or training metrics reread, no checkpoint contents."
+  }
+}

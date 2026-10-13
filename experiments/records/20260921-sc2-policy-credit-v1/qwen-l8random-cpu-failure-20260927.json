@@ -1,0 +1,94 @@
+{
+  "checked_at": "2026-09-27T23:16:49.828667+08:00",
+  "run_root": "/var/jfsCache/sc2-qwen-l8random96-197-20260927-r1",
+  "runtime_sha": "1fbe6e1ecc9f39b22d69ad38df165fcc1dd61b8d",
+  "host_regressions": {
+    "passed": true,
+    "tests": 71,
+    "skips": 0,
+    "cuda_initialized": false,
+    "host_only": true,
+    "runtime_sha": "1fbe6e1ecc9f39b22d69ad38df165fcc1dd61b8d",
+    "checked_at": 1790522089.4279287
+  },
+  "model_regression_container": {
+    "id": "bae1b326597da3f58f31439c89138606e614ca995fedfc962deb3e47643aed36",
+    "name": "/sc2-qwen-l8random96-197-20260927-r1-short-regressions",
+    "owner": "/var/jfsCache/sc2-qwen-l8random96-197-20260927-r1/qwen-random/short",
+    "state": {
+      "Dead": false,
+      "Error": "",
+      "ExitCode": 1,
+      "FinishedAt": "2026-09-27T15:15:04.765450935Z",
+      "OOMKilled": false,
+      "Paused": false,
+      "Pid": 0,
+      "Restarting": false,
+      "Running": false,
+      "StartedAt": "2026-09-27T15:14:49.613603892Z",
+      "Status": "exited"
+    },
+    "devices": null
+  },
+  "model_regression_receipt": null,
+  "queue": null,
+  "dispatch": null,
+  "short_readiness": null,
+  "eval_readiness": null,
+  "new_games": 0,
+  "new_updates": 0,
+  "gpu_dispatched": false,
+  "cpu_failure": "265 tests OK, zero skips; receipt save OSError EROFS at suite root readonly mount; no retry",
+  "storage": {
+    "command": [
+      "du",
+      "-sb",
+      "--null",
+      "--",
+      "/var/jfsCache/sc2-qwen-l8random96-197-20260927-r1",
+      "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260927-r1",
+      "/var/jfsCache/sc2-qwen-l8random96-197-source-20260927-r1"
+    ],
+    "returncode": 0,
+    "stdout": "25061948\t/var/jfsCache/sc2-qwen-l8random96-197-20260927-r1\u00006006\t/var/jfsCache/sc2-qwen-l8random-paired192-197-20260927-r1\u000025116808\t/var/jfsCache/sc2-qwen-l8random96-197-source-20260927-r1\u0000",
+    "stderr": ""
+  },
+  "l10_host": {
+    "version": "host-guardian-v1",
+    "phase": "running-unverified",
+    "completed": [],
+    "deadline": 1790561940.3084953,
+    "learning_validated": false,
+    "started_at": 1790520167.7715538,
+    "stage": "train96",
+    "container_id": "5c6dad7a7beff07053574400d6bd5a090fbc92db1f77a0ff70abc0b1f723befd"
+  },
+  "local_fix": {
+    "status": "implemented_and_locally_tested_not_deployed",
+    "change": "CPU model regression receipt moved into short owner writable bind; host receipt stays at suite root",
+    "regression": "checks actual generated Docker read-only/writable bind destinations",
+    "tests": {
+      "run": 117,
+      "passed": 113,
+      "skipped": 4,
+      "reason": "local Torch-dependent tests unavailable",
+      "exit_code": 0
+    },
+    "command": "PYTHONPATH=/private/tmp/sc2-qwen-native-testdeps-20260924:tests:. PYTHONDONTWRITEBYTECODE=1 /Users/yangjinyue/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -B -m unittest test_qwen_l8random197 test_qwen_l9l10_same197 test_qwen_l9l10_continue197 test_qwen_l8_common64_197 test_sc2_policy_resume test_sc2_checkpoint_resume -q",
+    "server_retrial_authorized": false
+  },
+  "handoff": {
+    "classification": "CPU controller receipt write failure, not model/SC2 failure",
+    "not_run": [
+      "actual launcher/Hydra checks",
+      "no-GPU Ray hooks",
+      "GPU probe",
+      "queue",
+      "training",
+      "evaluation"
+    ],
+    "old_run_retained": true,
+    "l10_unchanged": true,
+    "proposed_controlled_continuation": "New frozen SHA and unique r2 after explicit approval; retain r1 output/eval/source plus r2 output/eval/source in six-root accounting; original training 256GiB/evaluation 32GiB/suite 288GiB and 12h/6h/18h,96/48/144GPUh,984 games unchanged; no further automatic retry."
+  }
+}

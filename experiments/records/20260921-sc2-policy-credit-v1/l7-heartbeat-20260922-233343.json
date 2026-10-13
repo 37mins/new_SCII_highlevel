@@ -1,0 +1,276 @@
+{
+  "schema": "l7-r4-heartbeat-v1",
+  "checked_at": "2026-09-22T23:33:43.563187+08:00",
+  "automation_id": "197-l7-r4",
+  "root": "/var/jfsCache/sc2-l7-followup197-20260922-r4",
+  "expected_frozen_runtime": "9cb291ea5f50de205c5d88371e08ce229b7d9d04",
+  "previous_runtime_evidence": "l7-settings-analysis-20260922-2307.json",
+  "queue": {
+    "bytes": 251,
+    "sha256": "20f2926a344d24d48de5c5b1877bbf5889024d09eb3bbae70d09975f131e1088",
+    "data": {
+      "phase": "running-unverified",
+      "completed": [
+        "spb-same/short"
+      ],
+      "deadline": 1790420762.305692,
+      "original_start": 1790075162.305692,
+      "spb_deadline": 1790247962.305692,
+      "part": "spb-same/long",
+      "arm_deadline": 1790247962.305692
+    }
+  },
+  "dispatch": {
+    "bytes": 157,
+    "sha256": "7670b428454112f47e30ef69cdd66d08292a74645bf5021c1f77b8b8656dd74c",
+    "data": {
+      "start": 1790075162.305692,
+      "resumed_at": 1790085599.7561057,
+      "deadline": 1790420762.305692,
+      "original_clock_preserved": true,
+      "gpu_hours": 768
+    }
+  },
+  "host_state": {
+    "bytes": 295,
+    "sha256": "034195b42e7bf5bc0a3e621b0f9f22e6d83e18b32d62a4ca356b86ace34310b6",
+    "data": {
+      "version": "host-guardian-v1",
+      "phase": "running-unverified",
+      "completed": [],
+      "deadline": 1790247962.305692,
+      "learning_validated": false,
+      "started_at": 1790088312.1763573,
+      "stage": "train96",
+      "container_id": "6eab1fd728b6efe0309c2e139fa8b865f7c2a53d30bba4ae637064c74d6780e4"
+    }
+  },
+  "guardian": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "text": ""
+  },
+  "container": {
+    "name": "sc2-l7-followup197-20260922-r4-spb-same-long-train96",
+    "returncode": 0,
+    "stderr": "",
+    "state": {
+      "Status": "running",
+      "Running": true,
+      "Paused": false,
+      "Restarting": false,
+      "OOMKilled": false,
+      "Dead": false,
+      "Pid": 813153,
+      "ExitCode": 0,
+      "Error": "",
+      "StartedAt": "2026-09-22T14:45:12.924428977Z",
+      "FinishedAt": "0001-01-01T00:00:00Z"
+    }
+  },
+  "console": {
+    "total_bytes": 4738965,
+    "read_bytes": 1048576,
+    "tail_sha256": "d8793baccdf09d45ce5c5e2d67bd832f190fc8f0e80dc4a8e5b107b747deb286",
+    "completed_ppo_rows_in_bound": [
+      {
+        "step": 5,
+        "episode/valid_action_ratio": 1,
+        "policy_credit/invalid_advantage_max": 0,
+        "actor/grad_norm": 131.23414001464843,
+        "actor/lr": 0.000001,
+        "episode/success_rate": 0.375,
+        "timing_s/update_actor": 62.21691596508026,
+        "timing_s/step": 594.8652364071459
+      }
+    ],
+    "tail": [
+      "(TaskRunner pid=2336) SC2 policy credit gate: {\"real_answers\": 113, \"valid_answers\": 113, \"valid_ratio\": 1.0, \"min_valid_ratio\": 0.5, \"decision\": \"accept\", \"reason\": \"validity_floor_passed\", \"pending_global_step\": 6, \"optimizer_updates_for_this_batch\": 0}",
+      "(SC2Worker pid=2518) RES: ",
+      "(SC2Worker pid=2518)  Result.Victory",
+      "(SC2Worker pid=2518) Plan format reward: 0.5",
+      "(SC2Worker pid=2518) Result: Victory",
+      "(SC2Worker pid=2518) Combat result reward: {\"pid\": 46590, \"game_loop\": 10856, \"boundary\": \"terminal\", \"last_consumed_policy_action_id\": 18, \"killed_value\": 7150.0, \"lost_value\": 650.0, \"scale\": 0.001, \"reward\": 0.65}",
+      "(SC2Worker pid=2518) Terminal ack received.",
+      "(SC2Worker pid=2518) Game end.",
+      "(TaskRunner pid=2336) list(reward_extra_infos_dict.keys())=[]",
+      "(TaskRunner pid=2336) Avg size of step-level group: 1.1764705882352942"
+    ]
+  },
+  "seed_ledger": {
+    "bytes": 448,
+    "sha256": "1eadcc2185ccc873ebd382755ba03e0c651922ca01f69f6a21c146890df87f07",
+    "rows": 4,
+    "last": {
+      "base_seed": 0,
+      "reset_index": 5,
+      "seed_protocol": "same_uniform101",
+      "seeds": [
+        65,
+        65,
+        65,
+        65,
+        65,
+        65,
+        65,
+        65
+      ]
+    }
+  },
+  "outcome_ledger": {
+    "bytes": 7378,
+    "sha256": "bf9c113b024f967a00e0a886bb648de093c137ac6d1b6bf9ee6586339dc84f17",
+    "rows": 32,
+    "last": {
+      "reset_index": 5,
+      "env_index": 6,
+      "decision_count": 18,
+      "step_index": 94,
+      "policy_decision_count": 18,
+      "terminated": true,
+      "truncated": false,
+      "game_result": "Victory",
+      "termination_reason": "game_result",
+      "outcome_reward": 20
+    }
+  },
+  "storage": {
+    "storage-state.json": {
+      "sha256": "e8c42fe1b85955b7d2593929c80a1b44937020664c39e59bc93cce715a6ce93e",
+      "checked_at": 1790091218.505733,
+      "roots": [
+        "/var/jfsCache/sc2-l7-followup197-20260922-r4",
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r4",
+        "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-random",
+        "/var/jfsCache/sc2-l7-followup197-20260922-r1",
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r1",
+        "/var/jfsCache/sc2-l7-followup197-20260922-r2",
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r2",
+        "/var/jfsCache/sc2-l7-followup197-20260922-r3",
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r3",
+        "/var/jfsCache/sc2-storage-quiescence-cpu-20260922.4LzwSM",
+        "/var/jfsCache/sc2-host-supervision-cpu-20260922.7lJiIO"
+      ],
+      "root_bytes": {
+        "/var/jfsCache/sc2-l7-followup197-20260922-r4": 65469660126,
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r4": 22366358,
+        "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-random": 49949049988,
+        "/var/jfsCache/sc2-l7-followup197-20260922-r1": 14859086,
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r1": 39986975,
+        "/var/jfsCache/sc2-l7-followup197-20260922-r2": 15022348,
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r2": 21701753,
+        "/var/jfsCache/sc2-l7-followup197-20260922-r3": 46541029,
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r3": 33174944,
+        "/var/jfsCache/sc2-storage-quiescence-cpu-20260922.4LzwSM": 29973103,
+        "/var/jfsCache/sc2-host-supervision-cpu-20260922.7lJiIO": 30160896
+      },
+      "bytes": 115672496606,
+      "limit": 2199023255552,
+      "deadline": 1790420762.305692,
+      "returncode": 0,
+      "status": "measured",
+      "stderr": {
+        "tail": "",
+        "characters": 0,
+        "truncated": false
+      },
+      "quiescence": {
+        "version": "host-guardian-v1",
+        "container_id": "6eab1fd728b6efe0309c2e139fa8b865f7c2a53d30bba4ae637064c74d6780e4",
+        "owner_root": "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long",
+        "guardian_pid": 813095,
+        "paused_verified": true,
+        "cleanup": "verified-unpaused",
+        "paused_at": 1790091218.3263974,
+        "mode": "paused",
+        "resumed_at": 1790091218.5055842
+      }
+    },
+    "spb-same/long/storage-state.json": {
+      "sha256": "8cc85aa6a3f9f3153394a0eb885feb9e7476f093fb60ac9eff1de93b5a1597b8",
+      "checked_at": 1790091218.276889,
+      "roots": [
+        "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same",
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r4",
+        "/var/jfsCache/sc2-l7-followup197-20260922-r1",
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r1",
+        "/var/jfsCache/sc2-l7-followup197-20260922-r2",
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r2",
+        "/var/jfsCache/sc2-l7-followup197-20260922-r3",
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r3",
+        "/var/jfsCache/sc2-storage-quiescence-cpu-20260922.4LzwSM",
+        "/var/jfsCache/sc2-host-supervision-cpu-20260922.7lJiIO"
+      ],
+      "root_bytes": {
+        "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same": 65454559056,
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r4": 22366358,
+        "/var/jfsCache/sc2-l7-followup197-20260922-r1": 14859086,
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r1": 39986975,
+        "/var/jfsCache/sc2-l7-followup197-20260922-r2": 15022348,
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r2": 21701753,
+        "/var/jfsCache/sc2-l7-followup197-20260922-r3": 46541029,
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r3": 33174944,
+        "/var/jfsCache/sc2-storage-quiescence-cpu-20260922.4LzwSM": 29973103,
+        "/var/jfsCache/sc2-host-supervision-cpu-20260922.7lJiIO": 30160896
+      },
+      "bytes": 65708345548,
+      "limit": 1099511627776,
+      "deadline": 1790247962.305692,
+      "returncode": 0,
+      "status": "measured",
+      "stderr": {
+        "tail": "",
+        "characters": 0,
+        "truncated": false
+      },
+      "quiescence": {
+        "version": "host-guardian-v1",
+        "container_id": "6eab1fd728b6efe0309c2e139fa8b865f7c2a53d30bba4ae637064c74d6780e4",
+        "owner_root": "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long",
+        "guardian_pid": 813095,
+        "paused_verified": true,
+        "cleanup": "verified-unpaused",
+        "paused_at": 1790091218.103267,
+        "mode": "paused",
+        "resumed_at": 1790091218.276734
+      }
+    }
+  },
+  "absent_receipts": [
+    "storage-failure.json",
+    "spb-same/long/state.json",
+    "spb-same/long/storage-failure.json",
+    "spb-same/long/acceptance-train96.json",
+    "spb-same/long/runs/train96/result.json",
+    "spb-same/long/runs/train96/.done",
+    "spb-same/long/runs/eval96/result.json",
+    "spb-same/long/runs/eval96/.done",
+    "qwen-random/long/dispatch.json",
+    "qwen-random/long/host-supervision/state.json"
+  ],
+  "interpretation": {
+    "latest_completed_global_step": 5,
+    "target_global_step": 96,
+    "pending_global_step": 6,
+    "pending_valid_answers": 113,
+    "pending_real_answers": 113,
+    "pending_audit_is_not_completed_ppo": true,
+    "guardian_empty_is_precreated_terminal_slot": true,
+    "missing_part_state_is_expected_until_stage_completion": true,
+    "qwen_random_long_not_dispatched": true,
+    "new_failure": false,
+    "stage_completed_this_turn": false,
+    "first_events_already_notified": true,
+    "decision": "DONT_NOTIFY"
+  },
+  "actions": {
+    "read_only_ssh_alias": "sc2-a100-197",
+    "gpu_diagnostics": false,
+    "large_checkpoint_reads": false,
+    "remote_writes": false,
+    "retries": false,
+    "new_dispatch": false,
+    "monitor_retained": true,
+    "local_record_and_git_sync": true
+  }
+}

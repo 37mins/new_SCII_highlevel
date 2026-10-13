@@ -1,0 +1,407 @@
+{
+  "checked_at_beijing": "2026-09-22T17:15:08.340701+08:00",
+  "automation_id": "197-qwen-l7-seed96",
+  "current": {
+    "root": "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1",
+    "runtime_sha": "279d5496464de29e14c64924ccb829147351efbd",
+    "queue": {
+      "phase": "failed",
+      "error": "Acceptance failed, container exit1; no retry"
+    },
+    "state": {
+      "phase": "failed",
+      "completed": [],
+      "deadline": 1790227126.5133374,
+      "stage": "train96",
+      "run": "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/runs/train96",
+      "error": "Actual PPO/audit/gradient acceptance failed"
+    },
+    "docker": {
+      "returncode": 0,
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 1,
+        "Error": "",
+        "StartedAt": "2026-09-22T05:18:46.570744204Z",
+        "FinishedAt": "2026-09-22T09:02:34.156418053Z"
+      },
+      "stderr": ""
+    },
+    "result_done_equal": true,
+    "result_status": "completed",
+    "ended_at": "2026-09-22T09:02:06.489331+00:00",
+    "training_process_exit_code": 0,
+    "completed_new_steps": 94,
+    "last_global_step": 96,
+    "outcomes": {
+      "trajectories": 752,
+      "natural_games": 752,
+      "wins": 601,
+      "defeats": 151,
+      "ties": 0,
+      "truncated": 0,
+      "natural_win_rate": 0.7992021276595744
+    },
+    "checkpoint_inventories": [
+      {
+        "step": 8,
+        "required_nonempty": 26,
+        "required_count": 26,
+        "total_files": 35
+      },
+      {
+        "step": 16,
+        "required_nonempty": 26,
+        "required_count": 26,
+        "total_files": 35
+      },
+      {
+        "step": 24,
+        "required_nonempty": 26,
+        "required_count": 26,
+        "total_files": 35
+      },
+      {
+        "step": 32,
+        "required_nonempty": 26,
+        "required_count": 26,
+        "total_files": 35
+      },
+      {
+        "step": 40,
+        "required_nonempty": 26,
+        "required_count": 26,
+        "total_files": 35
+      },
+      {
+        "step": 48,
+        "required_nonempty": 26,
+        "required_count": 26,
+        "total_files": 35
+      },
+      {
+        "step": 56,
+        "required_nonempty": 26,
+        "required_count": 26,
+        "total_files": 35
+      },
+      {
+        "step": 64,
+        "required_nonempty": 26,
+        "required_count": 26,
+        "total_files": 35
+      },
+      {
+        "step": 72,
+        "required_nonempty": 26,
+        "required_count": 26,
+        "total_files": 35
+      },
+      {
+        "step": 80,
+        "required_nonempty": 26,
+        "required_count": 26,
+        "total_files": 35
+      },
+      {
+        "step": 88,
+        "required_nonempty": 26,
+        "required_count": 26,
+        "total_files": 35
+      },
+      {
+        "step": 96,
+        "required_nonempty": 26,
+        "required_count": 26,
+        "total_files": 35
+      }
+    ],
+    "storage": {
+      "command": [
+        "du",
+        "-sb",
+        "--null",
+        "--",
+        "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1",
+        "/var/jfsCache/sc2-qwen-l7same96-197-source-20260922-r1",
+        "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-same"
+      ],
+      "roots": [
+        "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1",
+        "/var/jfsCache/sc2-qwen-l7same96-197-source-20260922-r1",
+        "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-same"
+      ],
+      "started_at": 1790067752.6827083,
+      "deadline": 1790227126.5133374,
+      "limit": 1099511627776,
+      "bytes": 650287561313,
+      "returncode": 0,
+      "status": "measured",
+      "stdout": {
+        "tail": "600271408128\t/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1\u000051041532\t/var/jfsCache/sc2-qwen-l7same96-197-source-20260922-r1\u000049965111653\t/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-same\u0000",
+        "characters": 189,
+        "truncated": false
+      },
+      "stderr": {
+        "tail": "",
+        "characters": 0,
+        "truncated": false
+      },
+      "root_bytes": {
+        "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1": 600271408128,
+        "/var/jfsCache/sc2-qwen-l7same96-197-source-20260922-r1": 51041532,
+        "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-same": 49965111653
+      },
+      "checked_at": 1790067752.7870913
+    },
+    "storage_failure": null,
+    "eval_started": false,
+    "eval_result_present": false,
+    "full_training_acceptance": false
+  },
+  "ppo_checks": {
+    "metrics_count": 94,
+    "metrics_finite": true,
+    "all_update_actor_times_positive": true,
+    "audit_count": 94,
+    "audit_steps_match": true,
+    "audit_decisions": [
+      "accept"
+    ],
+    "bad_recorded_gradient_rows": [
+      {
+        "step": 7,
+        "training/global_step": 7,
+        "actor/grad_norm": 0,
+        "timing_s/update_actor": 26.317,
+        "policy_credit/invalid_advantage_max": 0,
+        "episode/valid_action_ratio": 1,
+        "episode/success_rate": 1,
+        "critic/advantages/max": 0,
+        "critic/advantages/min": 0
+      },
+      {
+        "step": 9,
+        "training/global_step": 9,
+        "actor/grad_norm": 0,
+        "timing_s/update_actor": 26.303,
+        "policy_credit/invalid_advantage_max": 0,
+        "episode/valid_action_ratio": 1,
+        "episode/success_rate": 1,
+        "critic/advantages/max": 0,
+        "critic/advantages/min": 0
+      },
+      {
+        "step": 10,
+        "training/global_step": 10,
+        "actor/grad_norm": 0,
+        "timing_s/update_actor": 26.292,
+        "policy_credit/invalid_advantage_max": 0,
+        "episode/valid_action_ratio": 1,
+        "episode/success_rate": 1,
+        "critic/advantages/max": 0,
+        "critic/advantages/min": 0
+      },
+      {
+        "step": 56,
+        "training/global_step": 56,
+        "actor/grad_norm": 0,
+        "timing_s/update_actor": 26.318,
+        "policy_credit/invalid_advantage_max": 0,
+        "episode/valid_action_ratio": 1,
+        "episode/success_rate": 0,
+        "critic/advantages/max": 0,
+        "critic/advantages/min": 0
+      },
+      {
+        "step": 65,
+        "training/global_step": 65,
+        "actor/grad_norm": 0,
+        "timing_s/update_actor": 26.384,
+        "policy_credit/invalid_advantage_max": 0,
+        "episode/valid_action_ratio": 1,
+        "episode/success_rate": 1,
+        "critic/advantages/max": 0,
+        "critic/advantages/min": 0
+      },
+      {
+        "step": 92,
+        "training/global_step": 92,
+        "actor/grad_norm": 0,
+        "timing_s/update_actor": 7.784,
+        "policy_credit/invalid_advantage_max": 0,
+        "episode/valid_action_ratio": 1,
+        "episode/success_rate": 1,
+        "critic/advantages/max": 0,
+        "critic/advantages/min": 0
+      }
+    ],
+    "all_recorded_valid_action_ratios_one": true,
+    "all_recorded_invalid_advantages_nonpositive": true,
+    "nonpositive_recorded_gradient_steps": [
+      7,
+      9,
+      10,
+      56,
+      65,
+      92
+    ],
+    "all_gradient_values_are_console_rounded_not_full_precision": true
+  },
+  "seed_protocol": {
+    "count": 94,
+    "matches": true,
+    "indices_match": true,
+    "protocols": [
+      "same_uniform101"
+    ]
+  },
+  "resume_state": {
+    "from_checkpoint": "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-same/runs/train2/checkpoints/global_step_2",
+    "global_step": 2,
+    "next_reset_index": 2,
+    "next_seeds": [
+      53,
+      53,
+      53,
+      53,
+      53,
+      53,
+      53,
+      53
+    ],
+    "source": "verified legacy ledger; driver RNG unavailable, not bitwise replay",
+    "model_optimizer_dataloader_load_returned": true
+  },
+  "logger_evidence": {
+    "effective_config.json": {
+      "sha256": "ceeb2452dddf73374de33c50092b95f00e87ce1a03a25725d26a7fd018ec712e",
+      "trainer_logger": {
+        "trainer.logger": "['console']"
+      }
+    },
+    "manifest.json": {
+      "sha256": "37f11ed07e95948921a8d0231ffd87291a6f5b54f3c72fb201b56990ee7cdc8c",
+      "source_commit": "279d5496464de29e14c64924ccb829147351efbd",
+      "dirty": false,
+      "world_size": 8
+    },
+    "container.log": {
+      "text": "Traceback (most recent call last):\n  File \"/var/jfsCache/sc2-qwen-l7same96-197-source-20260922-r1/code/experiments/records/20260921-sc2-policy-credit-v1/qwen_l7_long197.py\", line 325, in <module>\n    a.execute()\n  File \"/var/jfsCache/sc2-qwen-l7same96-197-source-20260922-r1/code/experiments/records/20260921-sc2-policy-credit-v1/acceptance197.py\", line 402, in execute\n    verify(stage)\n  File \"/var/jfsCache/sc2-qwen-l7same96-197-source-20260922-r1/code/experiments/records/20260921-sc2-policy-credit-v1/qwen_l7_long197.py\", line 275, in verify\n    raise RuntimeError('Actual PPO/audit/gradient acceptance failed')\nRuntimeError: Actual PPO/audit/gradient acceptance failed\n",
+      "sha256": "7f57cb948e9ffd5431b8836f99f3771a3dbdbf0bbd34687b9af09fbcf7f5c75a"
+    },
+    "queue.log": {
+      "text": "Traceback (most recent call last):\n  File \"/var/jfsCache/sc2-qwen-l7same96-197-source-20260922-r1/code/experiments/records/20260921-sc2-policy-credit-v1/qwen_l7_long197.py\", line 327, in <module>\n    globals()[mode]()\n  File \"/var/jfsCache/sc2-qwen-l7same96-197-source-20260922-r1/code/experiments/records/20260921-sc2-policy-credit-v1/qwen_l7_long197.py\", line 311, in queue\n    a.queue()\n  File \"/var/jfsCache/sc2-qwen-l7same96-197-source-20260922-r1/code/experiments/records/20260921-sc2-policy-credit-v1/acceptance197.py\", line 526, in queue\n    raise RuntimeError(f'Acceptance failed, container exit{process.returncode}; no retry')\nRuntimeError: Acceptance failed, container exit1; no retry\n",
+      "sha256": "6a67ba67caf1b20b76c7d05345e0e9222d808fc48033c2e1ae739fdc00d0f53f"
+    }
+  },
+  "diagnosis": {
+    "confirmed": "Frozen console logger rounds every scalar to 3 decimals; scripts/run_record.py metric_rows parses that console and writes metrics.json; frozen qwen_l7_long197.py rejects every grad_norm<=0. Six recorded zeros trigger terminal failure. Actual zero versus small positive is unresolved.",
+    "raw_gradient_recovered": false,
+    "classification": "training subprocess completed; terminal acceptance failed due insufficient-precision gradient evidence, not proven model collapse or storage failure",
+    "prior_record_correction": "16:54 record called the pending gate full-precision; actual terminal metrics are console-derived rounded values. That earlier description is incorrect.",
+    "read_only_validation": "94 metric rows/PPO timings and 94 accepting pre-update audits; matched 94 seed batches; 12 CP filename/size inventories, no CP contents read. Audit alone is not proof of PPO."
+  },
+  "followup": {
+    "root": "/var/jfsCache/sc2-l7-followup197-20260922-r2",
+    "runtime_sha": "e95b9cb425e1d25c4c2c006bb674fb66e8f6dc95",
+    "queue": {
+      "phase": "failed",
+      "completed": [],
+      "first_dispatch_by": 1790230726.5133374,
+      "error": "Predecessor failed; stop all successors"
+    },
+    "dispatch": null,
+    "parts": {
+      "spb-same/short": {
+        "dispatch": null,
+        "state": null,
+        "acceptance": null
+      },
+      "spb-same/long": {
+        "dispatch": null,
+        "state": null,
+        "acceptance": null
+      },
+      "qwen-random/long": {
+        "dispatch": null,
+        "state": null,
+        "acceptance": null
+      }
+    }
+  },
+  "receipts": {
+    "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/runs/train96/result.json": {
+      "bytes": 249578,
+      "sha256": "2b39c3554924743008783177494016bc3d7110ce5068700205305a7279042eb5"
+    },
+    "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/runs/train96/.done": {
+      "bytes": 249578,
+      "sha256": "2b39c3554924743008783177494016bc3d7110ce5068700205305a7279042eb5"
+    },
+    "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/runs/train96/metrics.json": {
+      "bytes": 220194,
+      "sha256": "081c7440f21d9501070b2e2186d721ae5bda3de5ddde395b558b351c8257fecd"
+    },
+    "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/runs/train96/checkpoints/sc2_policy_credit_audit.jsonl": {
+      "bytes": 19645,
+      "sha256": "fa72355afc35d41dde1993a4d8973278aa0bc742ef090d934b1bdadd99ff3246"
+    },
+    "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/runs/train96/checkpoints/resume_state.json": {
+      "bytes": 331,
+      "sha256": "dd8f08d7f28fd617f58e59a726a36e56c44c705b00225bdafe8e5ea990d4d0fe"
+    },
+    "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/runs/train96/training_seeds.jsonl": {
+      "bytes": 10770,
+      "sha256": "4db86eab6b1945772139a586d16b50fbd6ec756936e8450a3bac8eee5ba8a660"
+    },
+    "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/deployment.json": {
+      "sha256": "53271d11a63de9718ddc8678b4409955dcc67432e67b188dbf48885279935743"
+    },
+    "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/queue-state.json": {
+      "sha256": "81e1dd3213aaaf1a28fc5458bc4c8dd5b0a698d9accff2909a3966d01741ad17"
+    },
+    "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/state.json": {
+      "sha256": "e8f23c2a7e0c7da925b702dd358f30b231dc09ea201bc0e66ddabd18792bb4fa"
+    },
+    "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/dispatch.json": {
+      "sha256": "086a0afa0129b84bbd3c3c21834458edd1c3108c86962848a592c5820c68ee9e"
+    },
+    "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/storage-state.json": {
+      "sha256": "ef35c96b00025ce9012ae2c1cac71cead4ec1259a3190579535b3feb04c07e55"
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r2/deployment.json": {
+      "sha256": "c3ef0795a92079eb7cfb3d62bb2906dc7dcb84cda29d23cbb029fa7b08f61345"
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r2/queue-state.json": {
+      "sha256": "0c78ecbb9583f10a9091a7ecf7d3355c3142abe4981544d0d38f3da9fc337fef"
+    },
+    "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/runs/train96/manifest.json": {
+      "sha256": "37f11ed07e95948921a8d0231ffd87291a6f5b54f3c72fb201b56990ee7cdc8c"
+    }
+  },
+  "monitor": {
+    "deleted": true,
+    "reason": "Terminal predecessor and successor failure, no retry/repair authorization. Failure handed off and direction requested.",
+    "tool_result": "197-qwen-l7-seed96 deleteStatus deleted"
+  },
+  "prohibited_actions_performed": [],
+  "next_step_requires_authorization": "CPU-only repair of full-precision PPO evidence and acceptance diagnostics; no rewriting frozen runs, no training replay, no gate weakening, no new GPU dispatch without a separately approved plan.",
+  "limitations": [
+    "79.92% is correlated same-seed training win rate, not held-out strategic improvement.",
+    "CP96 paired evaluation did not run.",
+    "Six console-derived zeros do not establish exact zero or strictly positive raw gradients.",
+    "Non-bitwise driver RNG limitation unchanged.",
+    "No new GPU or model tests."
+  ],
+  "validation": {
+    "json_and_assertions": "passed: JSON parse, exact94metrics/audits/seeds, positive returned PPO timings, six recorded-zero gradient steps, result=.done,12checkpoint inventories, original deadline and blocked successor checks; git diff --check passed",
+    "precision_reproduction": "Frozen logger maps both0 and0.0004 to0.000; offline reproduction passed, no runtime changes."
+  }
+}

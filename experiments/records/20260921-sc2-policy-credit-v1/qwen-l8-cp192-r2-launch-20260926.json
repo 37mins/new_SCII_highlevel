@@ -1,0 +1,583 @@
+{
+  "checked_at_beijing": "2026-09-26T18:59:10.534093+08:00",
+  "run_root": "/var/jfsCache/sc2-qwen-l8same192-197-20260926-r2",
+  "source_parent": "/var/jfsCache/sc2-qwen-l8same192-197-source-20260926-r2",
+  "frozen_sha": "f0e1059aabd28cc5be259908e0955c2509d74a87",
+  "socket": "sc2_qwen_l8same192_197_20260926_r2",
+  "session": "qwen_l8same192_197_r2",
+  "dispatch.json": {
+    "start": 1790420186.617149,
+    "deadline": 1790463386.617149,
+    "gpu_hours": 96,
+    "new_games": 784,
+    "new_updates": 96,
+    "includes_gpu_preflight": true
+  },
+  "queue-state.json": {
+    "phase": "running-unverified",
+    "completed": [],
+    "new_games": 784,
+    "new_updates": 96,
+    "deadline": 1790463386.617149
+  },
+  "host-supervision/state.json": {
+    "version": "host-guardian-v1",
+    "phase": "running-unverified",
+    "completed": [],
+    "deadline": 1790463386.617149,
+    "learning_validated": false,
+    "started_at": 1790420217.9998558,
+    "stage": "pre96",
+    "container_id": "bb0d3f1f5f9c4fa5753b082e270c23c83b0ef6cd4403b528c6c7c2ee2c01eff3"
+  },
+  "readiness.json": {
+    "passed": true,
+    "runtime_sha": "f0e1059aabd28cc5be259908e0955c2509d74a87",
+    "cuda_initialized": false,
+    "actual_parent_verified": true,
+    "actual_entries_and_hydra_configs": true,
+    "checked_at": 1790420062.9192793
+  },
+  "regressions.json": {
+    "passed": true,
+    "tests": 321,
+    "skips": 0,
+    "cuda_initialized": false,
+    "host_only": false,
+    "cp192_tests": 17,
+    "runtime_sha": "f0e1059aabd28cc5be259908e0955c2509d74a87",
+    "checked_at": 1790420081.0071173
+  },
+  "host-regressions.json": {
+    "passed": true,
+    "tests": 71,
+    "skips": 0,
+    "cuda_initialized": false,
+    "host_only": true,
+    "cp192_tests": 0,
+    "runtime_sha": "f0e1059aabd28cc5be259908e0955c2509d74a87",
+    "checked_at": 1790420013.2176614
+  },
+  "parent-readiness.json": {
+    "passed": true,
+    "global_step": 96,
+    "next_reset_index": 96,
+    "native_driver_rng": true,
+    "next_seeds": [
+      73,
+      73,
+      73,
+      73,
+      73,
+      73,
+      73,
+      73
+    ],
+    "ranks": [
+      {
+        "rank": 0,
+        "scheduler_epoch": 96,
+        "rng_keys": [
+          "cpu",
+          "cuda",
+          "numpy",
+          "random"
+        ]
+      },
+      {
+        "rank": 1,
+        "scheduler_epoch": 96,
+        "rng_keys": [
+          "cpu",
+          "cuda",
+          "numpy",
+          "random"
+        ]
+      },
+      {
+        "rank": 2,
+        "scheduler_epoch": 96,
+        "rng_keys": [
+          "cpu",
+          "cuda",
+          "numpy",
+          "random"
+        ]
+      },
+      {
+        "rank": 3,
+        "scheduler_epoch": 96,
+        "rng_keys": [
+          "cpu",
+          "cuda",
+          "numpy",
+          "random"
+        ]
+      },
+      {
+        "rank": 4,
+        "scheduler_epoch": 96,
+        "rng_keys": [
+          "cpu",
+          "cuda",
+          "numpy",
+          "random"
+        ]
+      },
+      {
+        "rank": 5,
+        "scheduler_epoch": 96,
+        "rng_keys": [
+          "cpu",
+          "cuda",
+          "numpy",
+          "random"
+        ]
+      },
+      {
+        "rank": 6,
+        "scheduler_epoch": 96,
+        "rng_keys": [
+          "cpu",
+          "cuda",
+          "numpy",
+          "random"
+        ]
+      },
+      {
+        "rank": 7,
+        "scheduler_epoch": 96,
+        "rng_keys": [
+          "cpu",
+          "cuda",
+          "numpy",
+          "random"
+        ]
+      }
+    ],
+    "cuda_initialized": false,
+    "actual_gpu_load_not_yet_claimed": true
+  },
+  "gpu_preflight": {
+    "passed": true,
+    "ranks": [
+      {
+        "rank": 0,
+        "visible_devices": "0",
+        "ray_gpu_ids": [
+          0
+        ],
+        "cuda_uuid": "40d97276-36a4-2cce-43ff-be66ca654177",
+        "master_port": 27316
+      },
+      {
+        "rank": 1,
+        "visible_devices": "1",
+        "ray_gpu_ids": [
+          1
+        ],
+        "cuda_uuid": "bea101a5-a727-20d0-2270-fb787dd6c7e0",
+        "master_port": 23304
+      },
+      {
+        "rank": 2,
+        "visible_devices": "2",
+        "ray_gpu_ids": [
+          2
+        ],
+        "cuda_uuid": "334e011d-8eb5-e72e-00a3-dcbd8aaf87e5",
+        "master_port": 22871
+      },
+      {
+        "rank": 3,
+        "visible_devices": "3",
+        "ray_gpu_ids": [
+          3
+        ],
+        "cuda_uuid": "a7707e1f-462b-7ed6-9d2c-97fe6c9acce4",
+        "master_port": 22629
+      },
+      {
+        "rank": 4,
+        "visible_devices": "4",
+        "ray_gpu_ids": [
+          4
+        ],
+        "cuda_uuid": "33ec7165-06e2-b141-97db-66711df3e176",
+        "master_port": 22445
+      },
+      {
+        "rank": 5,
+        "visible_devices": "5",
+        "ray_gpu_ids": [
+          5
+        ],
+        "cuda_uuid": "dd2c977f-d2f0-545a-dbfb-153f0a3b3c1b",
+        "master_port": 21550
+      },
+      {
+        "rank": 6,
+        "visible_devices": "6",
+        "ray_gpu_ids": [
+          6
+        ],
+        "cuda_uuid": "868e1fe3-a401-980d-e3fd-2fc4fb7d0e8f",
+        "master_port": 21823
+      },
+      {
+        "rank": 7,
+        "visible_devices": "7",
+        "ray_gpu_ids": [
+          7
+        ],
+        "cuda_uuid": "8347c82f-9c11-c3d9-37ab-016498436356",
+        "master_port": 26593
+      }
+    ],
+    "nccl_sums": [
+      28,
+      28,
+      28,
+      28,
+      28,
+      28,
+      28,
+      28
+    ],
+    "model_loaded": false,
+    "natural_games": 0,
+    "optimizer_updates": 0
+  },
+  "gpu_preflight_host": {
+    "version": "host-guardian-v1",
+    "phase": "completed",
+    "completed": [
+      "gpu-preflight"
+    ],
+    "deadline": 1790463386.617149,
+    "learning_validated": false,
+    "started_at": 1790420186.6179473,
+    "stage": "gpu-preflight",
+    "container_id": "2bf612bdc053305355d3538f1d43dcb4da739d197e11ac16ea85e5f348ecc41e",
+    "exit_code": 0,
+    "finished_at": 1790420217.9991956
+  },
+  "gpu_preflight_container": {
+    "id": "2bf612bdc053305355d3538f1d43dcb4da739d197e11ac16ea85e5f348ecc41e",
+    "name": "/sc2-qwen-l8same192-197-20260926-r2-gpu-preflight-train192",
+    "state": {
+      "Dead": false,
+      "Error": "",
+      "ExitCode": 0,
+      "FinishedAt": "2026-09-26T10:56:45.251119753Z",
+      "OOMKilled": false,
+      "Paused": false,
+      "Pid": 0,
+      "Restarting": false,
+      "Running": false,
+      "StartedAt": "2026-09-26T10:56:27.047050991Z",
+      "Status": "exited"
+    },
+    "owner": "/var/jfsCache/sc2-qwen-l8same192-197-20260926-r2",
+    "device_requests": [
+      {
+        "Capabilities": [
+          [
+            "gpu"
+          ]
+        ],
+        "Count": -1,
+        "DeviceIDs": null,
+        "Driver": "",
+        "Options": {}
+      }
+    ]
+  },
+  "stage_container": {
+    "id": "bb0d3f1f5f9c4fa5753b082e270c23c83b0ef6cd4403b528c6c7c2ee2c01eff3",
+    "name": "/sc2-qwen-l8same192-197-20260926-r2-stage-pre96",
+    "state": {
+      "Dead": false,
+      "Error": "",
+      "ExitCode": 0,
+      "FinishedAt": "0001-01-01T00:00:00Z",
+      "OOMKilled": false,
+      "Paused": false,
+      "Pid": 3507654,
+      "Restarting": false,
+      "Running": true,
+      "StartedAt": "2026-09-26T10:56:58.43713756Z",
+      "Status": "running"
+    },
+    "owner": "/var/jfsCache/sc2-qwen-l8same192-197-20260926-r2",
+    "device_requests": [
+      {
+        "Capabilities": [
+          [
+            "gpu"
+          ]
+        ],
+        "Count": -1,
+        "DeviceIDs": null,
+        "Driver": "",
+        "Options": {}
+      }
+    ]
+  },
+  "cpu_hooks": {
+    "pre96": {
+      "passed": true,
+      "worker": {
+        "feedback_eval_loaded": true,
+        "required_module": "refinery_order_eval",
+        "required_module_loaded": true,
+        "sc2path": "/assets/StarCraftII",
+        "cuda_visible_devices": "",
+        "cuda_initialized": false,
+        "cuda_device_count": 0
+      },
+      "model_loaded": false,
+      "natural_games": 0,
+      "optimizer_updates": 0
+    },
+    "train192": {
+      "passed": true,
+      "worker": {
+        "feedback_eval_loaded": false,
+        "required_module": "refinery_order_eval",
+        "required_module_loaded": true,
+        "sc2path": "/assets/StarCraftII",
+        "cuda_visible_devices": "",
+        "cuda_initialized": false,
+        "cuda_device_count": 0
+      },
+      "model_loaded": false,
+      "natural_games": 0,
+      "optimizer_updates": 0
+    },
+    "eval192": {
+      "passed": true,
+      "worker": {
+        "feedback_eval_loaded": true,
+        "required_module": "refinery_order_eval",
+        "required_module_loaded": true,
+        "sc2path": "/assets/StarCraftII",
+        "cuda_visible_devices": "",
+        "cuda_initialized": false,
+        "cuda_device_count": 0
+      },
+      "model_loaded": false,
+      "natural_games": 0,
+      "optimizer_updates": 0
+    }
+  },
+  "cpu_containers": [
+    {
+      "id": "778c455c3b23641a7149a70e96b221929e1dce089fd99763252db9af12cf9feb",
+      "name": "/sc2-qwen-l8same192-197-20260926-r2-cpu",
+      "state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-09-26T10:54:23.615294723Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-09-26T10:54:17.497261714Z",
+        "Status": "exited"
+      },
+      "owner": "/var/jfsCache/sc2-qwen-l8same192-197-20260926-r2",
+      "device_requests": null
+    },
+    {
+      "id": "c2629bc91048bb655f90d5f0630ccafada2a7fbe3e7769c85eb6502f395a69a6",
+      "name": "/sc2-qwen-l8same192-197-20260926-r2-regressions",
+      "state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-09-26T10:54:42.092605902Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-09-26T10:54:23.928740016Z",
+        "Status": "exited"
+      },
+      "owner": "/var/jfsCache/sc2-qwen-l8same192-197-20260926-r2",
+      "device_requests": null
+    },
+    {
+      "id": "abbb6be882d4bfbbcc47c183e74fb43322e78d8065a71c9a612587706928d1ae",
+      "name": "/sc2-qwen-l8same192-197-20260926-r2-cpu-hook-pre96",
+      "state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-09-26T10:54:52.350854381Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-09-26T10:54:42.384073829Z",
+        "Status": "exited"
+      },
+      "owner": "/var/jfsCache/sc2-qwen-l8same192-197-20260926-r2",
+      "device_requests": null
+    },
+    {
+      "id": "9b578e4caefa62175ec741e05150aef4ff8d69bbf1d5709d7aaa063a82c79a08",
+      "name": "/sc2-qwen-l8same192-197-20260926-r2-cpu-hook-train192",
+      "state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-09-26T10:55:02.700990683Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-09-26T10:54:52.750447793Z",
+        "Status": "exited"
+      },
+      "owner": "/var/jfsCache/sc2-qwen-l8same192-197-20260926-r2",
+      "device_requests": null
+    },
+    {
+      "id": "cc11bdbf17e7c129d877a5dfe7ea4cd3af78661566c3c710d9b170fa3f87e043",
+      "name": "/sc2-qwen-l8same192-197-20260926-r2-cpu-hook-eval192",
+      "state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-09-26T10:55:12.753240642Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-09-26T10:55:03.016915538Z",
+        "Status": "exited"
+      },
+      "owner": "/var/jfsCache/sc2-qwen-l8same192-197-20260926-r2",
+      "device_requests": null
+    }
+  ],
+  "storage": {
+    "command": [
+      "du",
+      "-sb",
+      "--null",
+      "--",
+      "/var/jfsCache/sc2-qwen-l8same192-197-20260926-r1",
+      "/var/jfsCache/sc2-qwen-l8same192-197-source-20260926-r1",
+      "/var/jfsCache/sc2-qwen-l8same192-197-20260926-r2",
+      "/var/jfsCache/sc2-qwen-l8same192-197-source-20260926-r2"
+    ],
+    "roots": [
+      "/var/jfsCache/sc2-qwen-l8same192-197-20260926-r1",
+      "/var/jfsCache/sc2-qwen-l8same192-197-source-20260926-r1",
+      "/var/jfsCache/sc2-qwen-l8same192-197-20260926-r2",
+      "/var/jfsCache/sc2-qwen-l8same192-197-source-20260926-r2"
+    ],
+    "started_at": 1790420340.1502495,
+    "deadline": 1790463386.617149,
+    "limit": 412316860416,
+    "bytes": 109117129,
+    "returncode": 0,
+    "status": "measured",
+    "stderr": {
+      "tail": "",
+      "characters": 0,
+      "truncated": false
+    },
+    "quiescence": {
+      "version": "host-guardian-v1",
+      "container_id": "bb0d3f1f5f9c4fa5753b082e270c23c83b0ef6cd4403b528c6c7c2ee2c01eff3",
+      "owner_root": "/var/jfsCache/sc2-qwen-l8same192-197-20260926-r2",
+      "guardian_pid": 3507591,
+      "paused_verified": true,
+      "cleanup": "verified-unpaused",
+      "paused_at": 1790420340.1997304,
+      "mode": "paused",
+      "resumed_at": 1790420340.2523715
+    },
+    "measured_at": 1790420340.2140257,
+    "root_bytes": {
+      "/var/jfsCache/sc2-qwen-l8same192-197-20260926-r1": 24534022,
+      "/var/jfsCache/sc2-qwen-l8same192-197-source-20260926-r1": 28826860,
+      "/var/jfsCache/sc2-qwen-l8same192-197-20260926-r2": 26900196,
+      "/var/jfsCache/sc2-qwen-l8same192-197-source-20260926-r2": 28856051
+    },
+    "checked_at": 1790420340.2525394
+  },
+  "storage_failure": null,
+  "runs/pre96/checkpoint_evaluation.json": {
+    "checkpoint": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/long/runs/train96/checkpoints/global_step_96",
+    "loaded_global_step": 96,
+    "checkpoint_load_returned": true,
+    "val_only": true,
+    "optimizer_updates": 0,
+    "feedback": "0",
+    "temperature": 0.8,
+    "do_sample": true,
+    "games": 8,
+    "game_seeds": [
+      605183188,
+      1075501356,
+      2084414326,
+      2203880230,
+      3000371298,
+      949752300,
+      3225036469,
+      2823708076
+    ],
+    "answers": "online SpB; no replay or replacement",
+    "optimizer_loaded_by_existing_loader_but_not_updated": true
+  },
+  "runs/pre96/manifest.json": {
+    "source_commit": "f0e1059aabd28cc5be259908e0955c2509d74a87",
+    "dirty": false,
+    "world_size": 8,
+    "metrics_precision": "binary64-v1"
+  },
+  "runs/pre96/result.json": null,
+  "runs/pre96/.done": null,
+  "acceptance-pre96.json": null,
+  "bounded_entry_tail_evidence": [
+    "(SC2Worker pid=2504) 2026-09-26 03:58:47.270 | INFO     | sc2.protocol:_execute:120 - Client status changed to Status.in_game (was None)",
+    "(SC2Worker pid=2504) Combat result reward: {\"pid\": 7131, \"game_loop\": 0, \"boundary\": \"planner\", \"last_consumed_policy_action_id\": null, \"killed_value\": 0.0, \"lost_value\": 0.0, \"scale\": 0.001, \"reward\": 0.0}"
+  ],
+  "new_returned_ppo_claimed": false,
+  "scope": {
+    "difficulty": "CheatVision (L8)",
+    "model": "Qwen3-4B-Instruct-2507 own L8 CP96",
+    "target_step": 192,
+    "new_ppo_updates": 96,
+    "new_train_games": 768,
+    "evaluation_games": 16,
+    "training_seed_protocol": "same_uniform101",
+    "saved_steps": [
+      112,
+      128,
+      144,
+      160,
+      176,
+      192
+    ],
+    "disk_gate_train_gib": 448,
+    "disk_gate_eval_gib": 128
+  },
+  "limitations": [
+    "pre96 is running, not accepted yet; no new returned PPO claimed",
+    "feedback evaluation receipt's 'online SpB' is an inherited descriptive label; actual Qwen checkpoint/config controls provenance",
+    "CUDA mapping preflight and CPU checks do not prove PPO or learning",
+    "reused8 paired evaluation seeds do not establish generalization"
+  ],
+  "sc2_first_observation_seen": true
+}

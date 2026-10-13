@@ -1,0 +1,36 @@
+{
+  "observed_at": "2026-09-21T08:32:23.605368+00:00",
+  "status": "cpu-verified-not-gpu-accepted",
+  "host": "sc2-a100-197",
+  "staging": "/var/jfsCache/sc2-action-support-cpu-20260921.W0hNLj",
+  "container": "sc2-action-support-cpu-20260921-r4",
+  "image": "sha256:1a497d5721f89bb2e98c0273c4b1495f8fdc6921d589650d090871c11b8d1649",
+  "exit_code": 0,
+  "gpu_device_requests": null,
+  "cpus": 2,
+  "memory_gib": 6,
+  "network": "none",
+  "source_mount": "read-only",
+  "tests_run": 87,
+  "test_seconds": 19.301,
+  "skips": 0,
+  "log_sha256": "fc12b6e20a9c590b70189dff3ba3adf2740b2386c8f120cb8d53675400e67c14",
+  "log_bytes": 49465,
+  "log_source": "docker logs sc2-action-support-cpu-20260921-r4 (stdout/stderr merged)",
+  "entrypoint": "/runtime/bin/python",
+  "command": ["-B", "-m", "unittest", "test_sc2_action_support", "test_sc2_policy_credit", "test_sc2_task_signal", "test_sc2_no_thinking_torch", "test_thinking_action_boundary", "test_r6_format_reward", "test_original_bo_segment", "-v"],
+  "tested_files_sha256": {
+    "verl/utils/sc2_action_support.py": "e513d920d736402ce6044a9990340a99e41e2f5a6e4b649b116acf00c9c670d8",
+    "verl/workers/actor/dp_actor.py": "86aa72dfad2cddf812457f16ee296a14d73654f7cb541b9f797d6d8820848074",
+    "verl/workers/rollout/hf_rollout.py": "da7c1109b6581651b422b1741613709b2a0142f273e66e052c3a90845341347c",
+    "agent_system/multi_turn_rollout/rollout_loop.py": "907c6d47f560082aa2112041acca765233d6f69481f312e25580c05babca3449",
+    "tests/test_sc2_action_support.py": "c879d3c70027cdd60f44b8cabba8bb847fe87d68a2946d5b0d70f9c5c77d5bd7"
+  },
+  "tokenizer_sha256": "a63080b4b30dc861fe1b0e420c53a241304dc81aff3d9bb315e6e33e2a1ab794",
+  "failures_retained": [
+    {"container": "sc2-action-support-cpu-20260921-r1", "exit_code": 126, "reason": "image bash entrypoint treated python as a script; zero tests"},
+    {"container": "sc2-action-support-cpu-20260921-r2", "exit_code": 1, "reason": "86 tests run; five historical-baseline subcase errors due to missing alternate object mount"}
+  ],
+  "prior_pass": {"container": "sc2-action-support-cpu-20260921-r3", "exit_code": 0, "tests_run": 86, "skips": 0},
+  "limitations": ["No real SpB weights", "No CUDA initialization", "No distributed GPU acceptance", "No SC2 engine games", "No learning or win-rate improvement claim", "Current matched panel unchanged", "Short GPU acceptance budget requested, not assumed approved"]
+}

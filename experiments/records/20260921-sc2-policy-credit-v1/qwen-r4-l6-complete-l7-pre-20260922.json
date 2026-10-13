@@ -1,0 +1,524 @@
+{
+  "schema_version": 1,
+  "checked_at": 1790046509.4653478,
+  "automation_id": "197-qwen-r4",
+  "suite": "/var/jfsCache/sc2-qwen-seeds197-20260922-r4",
+  "runtime_sha": "2f95c9fd505bd4529070ff4988c5c9efcb111b53",
+  "verification_scope": "Read-only small receipts, manifests, metrics, seeds, rank RNG and CP filename/stat sizes; bounded logs. No checkpoint contents or GPU diagnostics. Frozen controller acceptance supplies worker support/no-thinking and consumption/command checks.",
+  "l6_random": {
+    "checked_at": 1790046480.4175506,
+    "phase": "completed",
+    "exit_code": 0,
+    "all_three_result_done_acceptance_equal": true,
+    "clean_sha_world8_all_stages": true,
+    "finite_all_stages": true,
+    "natural_games": 32,
+    "truncated": 0,
+    "completed_ppo_steps": 2,
+    "stage_counts": {
+      "pre": {
+        "games": 8,
+        "updates": 0,
+        "consumed": 49,
+        "valid": 49,
+        "plans": 49,
+        "queue_entries": 769,
+        "local_commands": 374,
+        "wins": 8
+      },
+      "train2": {
+        "games": 16,
+        "updates": 2,
+        "consumed": 121,
+        "valid": 121,
+        "plans": 121,
+        "queue_entries": 1460,
+        "local_commands": 728,
+        "wins": 15
+      },
+      "post": {
+        "games": 8,
+        "updates": 0,
+        "consumed": 79,
+        "valid": 79,
+        "plans": 79,
+        "queue_entries": 778,
+        "local_commands": 355,
+        "wins": 8
+      }
+    },
+    "train_ended_at": "2026-09-22T02:57:39.179575+00:00",
+    "train_accepted_at": 1790045879.1308324,
+    "post_ended_at": "2026-09-22T03:02:09.550832+00:00",
+    "post_accepted_at": 1790046134.552292,
+    "gradient_norms": [
+      1.072,
+      11.505
+    ],
+    "invalid_tokens": [
+      0,
+      0
+    ],
+    "invalid_advantage_max": [
+      0,
+      0
+    ],
+    "invalid_positive_tokens_removed": [
+      0,
+      0
+    ],
+    "pre_update_audits": [
+      {
+        "pending_step": 1,
+        "consumed": 50,
+        "valid": 50,
+        "decision": "accept"
+      },
+      {
+        "pending_step": 2,
+        "consumed": 71,
+        "valid": 71,
+        "decision": "accept"
+      }
+    ],
+    "training_seed_protocol": "independent_uniform101",
+    "training_seeds": [
+      [
+        49,
+        97,
+        53,
+        5,
+        33,
+        65,
+        62,
+        51
+      ],
+      [
+        100,
+        38,
+        61,
+        45,
+        74,
+        27,
+        64,
+        17
+      ]
+    ],
+    "checkpoint": {
+      "required_files": 25,
+      "all_stat_sizes_match_result": true,
+      "content_read": false,
+      "rehash": false,
+      "path": "l6-random/runs/train2/checkpoints/global_step_2"
+    },
+    "post_load_returned": true,
+    "post_loaded_global_step": 2,
+    "pre_post_eval_seeds": [
+      605183188,
+      1075501356,
+      2084414326,
+      2203880230,
+      3000371298,
+      949752300,
+      3225036469,
+      2823708076
+    ],
+    "pre_post_rank_rng_hashes_equal": true,
+    "total_consumed_valid": [
+      249,
+      249
+    ],
+    "paired_outcomes": {
+      "win_win": 8,
+      "win_loss": 0,
+      "loss_win": 0,
+      "loss_loss": 0
+    },
+    "marginal_wilson95_each": [
+      0.675592,
+      1
+    ],
+    "hashes": {
+      "acceptance-train2.json": "1517ebebb5fcdaaf913e26c058eef848eef0608ca5bbd8f5d0381e88065d8ed0",
+      "runs/train2/result.json": "8ec0cc69317077e2fe200ffe3652e6a6e1d59cac781f8756795a975de51c6258",
+      "runs/train2/.done": "8ec0cc69317077e2fe200ffe3652e6a6e1d59cac781f8756795a975de51c6258",
+      "runs/train2/metrics.json": "6cde147ff0f065306b96a54eae1cc3b610b08f6b7b5164d70778d98950950635",
+      "runs/train2/training_seeds.jsonl": "e6fd6d694811367de8b1023e20ba103d0cfbaab581ac1100ae78d4398007676f",
+      "runs/train2/checkpoints/sc2_policy_credit_audit.jsonl": "8dd2b2a19936881c39f96edfef367223a418b2f818fcd9639fd06e180fd8335b",
+      "acceptance-post.json": "e81395d5311055c3e6cad69f94b4f4b88340e7389bdd25e3342e786f2ddbd099",
+      "runs/post/result.json": "3466f302d4421def3770395918e9b09416ef9ef70c75363eea0f3ce5905d5927",
+      "runs/post/.done": "3466f302d4421def3770395918e9b09416ef9ef70c75363eea0f3ce5905d5927",
+      "runs/post/checkpoint_evaluation.json": "a3f4b572eb09cbdbf6ef386382155e5383ff2ddfae6f9d9485177d2c2deb1de4"
+    }
+  },
+  "l7_same": {
+    "dispatch_start": 1790046136.8343916,
+    "deadline": 1790053336.8343916,
+    "state": {
+      "phase": "running-unverified",
+      "completed": [
+        "pre"
+      ],
+      "deadline": 1790053336.8343916,
+      "stage": "train2",
+      "run": "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-same/runs/train2"
+    },
+    "pre_triplet_equal": true,
+    "acceptance": {
+      "result": {
+        "status": "completed",
+        "ended_at": "2026-09-22T03:08:13.435671+00:00",
+        "mode": "evaluation",
+        "process_exit_code": 0,
+        "training_updates": 0,
+        "metrics": {
+          "val/text/test_score": 16.106,
+          "val/text/tool_call_count/mean": 0,
+          "val/success_rate": 0.875,
+          "val/sc2_attack_ct": 0,
+          "val/sc2_action_valid": 1,
+          "val/sc2_semantic_action_valid": 1,
+          "val/sc2_semantic_action_evaluable": 1,
+          "val/sc2_projection_action_valid": 1,
+          "val/sc2_executor_action_valid": 1,
+          "val/sc2/episode_count": 8,
+          "val/sc2/no_policy_episode_count": 0,
+          "val/sc2/policy_decision_count": 49
+        },
+        "metrics_finite": true,
+        "response_record_count": 72,
+        "evaluable_action_count": 49,
+        "valid_evaluable_action_count": 49,
+        "replays": {
+          "sc2-logs/game-7141/default_player/Flat128_VeryHard_Air/Qwen3-30B/2026-09-21_20-03-43/replay.SC2Replay": "1d21dbca74a35a910e1a062735398c572ddae2fb6f9feed065d86e53a7ea5e2e",
+          "sc2-logs/game-7142/default_player/Flat128_VeryHard_Air/Qwen3-30B/2026-09-21_20-03-43/replay.SC2Replay": "3a3225780a5cffca4a84e60b167aabd1cb7c7ee675c9cc1c695546a459e0d559",
+          "sc2-logs/game-7143/default_player/Flat128_VeryHard_Air/Qwen3-30B/2026-09-21_20-03-43/replay.SC2Replay": "143c32b06fcfc59e424ac120f1a631b29034f3a5f2e5fd941b5a1c85adde02ef",
+          "sc2-logs/game-7144/default_player/Flat128_VeryHard_Air/Qwen3-30B/2026-09-21_20-03-43/replay.SC2Replay": "daa79ecd725386a08d7d52691a78b45ae8d638904c79fe0746175f81e5d8fd40",
+          "sc2-logs/game-7145/default_player/Flat128_VeryHard_Air/Qwen3-30B/2026-09-21_20-03-43/replay.SC2Replay": "37a81b0cf3b5786679f3387434d371c405323c4af5d7f6dea79a22595b74a151",
+          "sc2-logs/game-7146/default_player/Flat128_VeryHard_Air/Qwen3-30B/2026-09-21_20-03-43/replay.SC2Replay": "ce51f9498544533bd71721381f91f454cde1c1a5d5eb588e2af239c6c405410f",
+          "sc2-logs/game-7148/default_player/Flat128_VeryHard_Air/Qwen3-30B/2026-09-21_20-03-43/replay.SC2Replay": "baafef6e6c80394dc38e132ed27025cc533fc1c8f31eee3622fbf394845af70c",
+          "sc2-logs/game-7147/default_player/Flat128_VeryHard_Air/Qwen3-30B/2026-09-21_20-03-43/replay.SC2Replay": "05617d7d70a1da132e813371444173332001ed240900c7c2ae48590727c46060"
+        },
+        "console_sha256": "8a113e024830b9b7860e61372b87f1237b29643283dea1f7897f1e2451a5ff0f",
+        "episode_outcomes": {
+          "trajectories": 8,
+          "natural_games": 8,
+          "wins": 7,
+          "defeats": 1,
+          "ties": 0,
+          "truncated": 0,
+          "natural_win_rate": 0.875,
+          "outcomes": [
+            {
+              "reset_index": 0,
+              "env_index": 6,
+              "decision_count": 3,
+              "step_index": 2,
+              "policy_decision_count": 3,
+              "terminated": true,
+              "truncated": false,
+              "game_result": "Victory",
+              "termination_reason": "game_result",
+              "outcome_reward": 20
+            },
+            {
+              "reset_index": 0,
+              "env_index": 0,
+              "decision_count": 4,
+              "step_index": 3,
+              "policy_decision_count": 4,
+              "terminated": true,
+              "truncated": false,
+              "game_result": "Victory",
+              "termination_reason": "game_result",
+              "outcome_reward": 20
+            },
+            {
+              "reset_index": 0,
+              "env_index": 4,
+              "decision_count": 4,
+              "step_index": 3,
+              "policy_decision_count": 4,
+              "terminated": true,
+              "truncated": false,
+              "game_result": "Victory",
+              "termination_reason": "game_result",
+              "outcome_reward": 20
+            },
+            {
+              "reset_index": 0,
+              "env_index": 2,
+              "decision_count": 5,
+              "step_index": 4,
+              "policy_decision_count": 5,
+              "terminated": true,
+              "truncated": false,
+              "game_result": "Victory",
+              "termination_reason": "game_result",
+              "outcome_reward": 20
+            },
+            {
+              "reset_index": 0,
+              "env_index": 7,
+              "decision_count": 7,
+              "step_index": 6,
+              "policy_decision_count": 7,
+              "terminated": true,
+              "truncated": false,
+              "game_result": "Victory",
+              "termination_reason": "game_result",
+              "outcome_reward": 20
+            },
+            {
+              "reset_index": 0,
+              "env_index": 5,
+              "decision_count": 8,
+              "step_index": 7,
+              "policy_decision_count": 8,
+              "terminated": true,
+              "truncated": false,
+              "game_result": "Victory",
+              "termination_reason": "game_result",
+              "outcome_reward": 20
+            },
+            {
+              "reset_index": 0,
+              "env_index": 1,
+              "decision_count": 9,
+              "step_index": 8,
+              "policy_decision_count": 9,
+              "terminated": true,
+              "truncated": false,
+              "game_result": "Defeat",
+              "termination_reason": "game_result",
+              "outcome_reward": -50
+            },
+            {
+              "reset_index": 0,
+              "env_index": 3,
+              "decision_count": 9,
+              "step_index": 8,
+              "policy_decision_count": 9,
+              "terminated": true,
+              "truncated": false,
+              "game_result": "Victory",
+              "termination_reason": "game_result",
+              "outcome_reward": 20
+            }
+          ]
+        },
+        "natural_match_completed": true,
+        "termination_evidence": "game_result"
+      },
+      "evidence": {
+        "consumed_answers": 49,
+        "valid_consumed_answers": 49,
+        "parsed_plans": 49,
+        "validated_queue_entries": 754,
+        "validated_locally_queued_commands": 521,
+        "execution_scope": "local Depot/Marine commands, not production completion or causal wins"
+      },
+      "checked_at": 1790046498.0306857
+    },
+    "manifest": {
+      "source_commit": "2f95c9fd505bd4529070ff4988c5c9efcb111b53",
+      "dirty": false,
+      "world_size": 8,
+      "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+      "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554"
+    },
+    "checkpoint_evaluation": {
+      "checkpoint": null,
+      "loaded_global_step": 0,
+      "checkpoint_load_returned": false,
+      "val_only": true,
+      "optimizer_updates": 0,
+      "feedback": "0",
+      "temperature": 0.8,
+      "do_sample": true,
+      "games": 8,
+      "game_seeds": [
+        605183188,
+        1075501356,
+        2084414326,
+        2203880230,
+        3000371298,
+        949752300,
+        3225036469,
+        2823708076
+      ],
+      "answers": "online SpB; no replay or replacement",
+      "optimizer_loaded_by_existing_loader_but_not_updated": false
+    },
+    "rank_rng": [
+      {
+        "rank": 0,
+        "seed": 0,
+        "pid": 4464,
+        "cpu_rng_sha256": "1ccf17250133dec5e96478acd63e13d728d0dbbabb30389415a302c6f872f81f",
+        "cuda_rng_sha256": "374708fff7719dd5979ec875d56cd2286f6d3cf7ec317a3b25632aab28ec37bb"
+      },
+      {
+        "rank": 1,
+        "seed": 1,
+        "pid": 4653,
+        "cpu_rng_sha256": "f5defda135ec2e0d1513e6979390f58397d31a904d5f6540f8b88ae64d1decc1",
+        "cuda_rng_sha256": "4cbbd8ca5215b8d161aec181a74b694f4e24b001d5b081dc0030ed797a8973e0"
+      },
+      {
+        "rank": 2,
+        "seed": 2,
+        "pid": 4654,
+        "cpu_rng_sha256": "0f9cd7b642a3f8f641c5e992f17138b2d094db4d56cc2329b3be2c794ddc79ad",
+        "cuda_rng_sha256": "b1535c7783ea8829b6b0cf67704539798b4d16c39bf0bfe09494c5d9f12eee30"
+      },
+      {
+        "rank": 3,
+        "seed": 3,
+        "pid": 4655,
+        "cpu_rng_sha256": "76fe321e2dc1dfdec62a274bcedbeea2727be2e2972f97e728e07e0345c21ede",
+        "cuda_rng_sha256": "59d5966c96af7ecad5c9d2918d6582d102b2c67f6b765ea28ac24371ab4f93be"
+      },
+      {
+        "rank": 4,
+        "seed": 4,
+        "pid": 4656,
+        "cpu_rng_sha256": "de87e86bf2a7b448b35cba75c461560b4b6aa93e7843008c930221dee4551e0f",
+        "cuda_rng_sha256": "6b6f14e6af2627186bf8a55e474dcf6ef3f6ce81af560da871ec51eb670171a9"
+      },
+      {
+        "rank": 5,
+        "seed": 5,
+        "pid": 4657,
+        "cpu_rng_sha256": "f4ef6f460154679cfe881f5d260e16f8ed904898fabc025c755a71e2692eb75c",
+        "cuda_rng_sha256": "966a28d35016032ee27b1860df4a9b16b6c007da76b2e4f94e7526e31c48959b"
+      },
+      {
+        "rank": 6,
+        "seed": 6,
+        "pid": 4658,
+        "cpu_rng_sha256": "9e15eceb1ce9d2c2ffe7bcc8fa3155c1445def059cdd06b5429093164db849a7",
+        "cuda_rng_sha256": "5e9a5de4a59a7c3c9ba8846060ba77ab402e3088658aa705e1a64e796f6cd5cf"
+      },
+      {
+        "rank": 7,
+        "seed": 7,
+        "pid": 4659,
+        "cpu_rng_sha256": "daf9268b18e87b0267a6ad240c6093eb98fe6f03872986bd31a497ba5ea2371a",
+        "cuda_rng_sha256": "76108f84396dc2d72ce275fdb0e0ef37b229b2898bf5a31d576fea11a766a42b"
+      }
+    ],
+    "hashes": {
+      "l7-same/deployment.json": "947300dc36e78caa19ffb7e7afb1ea3833df52a41d83d3a289589f80c9ef2189",
+      "l7-same/state.json": "f3237c96291a20813a71222a1a322049bd66125846cdd5fc4a89a8965eeccdbc",
+      "l7-same/dispatch.json": "37e54fc464832a32d33ee2f79c990e9d429d961b0761b3cb824d5af28bd17de7",
+      "l7-same/acceptance-pre.json": "d06033138e69bfb7ba4cf0db4098acc7b8e2345a94526ac0ec298911dfc64501",
+      "l7-same/runs/pre/result.json": "c4a7e64a61fb1c7686d87102cd0f57f23a15f52b8c4e0141320b0e289dabf2e0",
+      "l7-same/runs/pre/.done": "c4a7e64a61fb1c7686d87102cd0f57f23a15f52b8c4e0141320b0e289dabf2e0",
+      "l7-same/runs/pre/manifest.json": "c066c2953e513293e4f66afb50bbb53b774ea0aa0559346e930bb546855dd6ef",
+      "l7-same/runs/pre/checkpoint_evaluation.json": "bcf33641f0acbe82f4ba09d73b91e19322f04398528415687514472426f3ff01",
+      "l7-same/runs/pre/evaluation_seeds.jsonl": "ffaf9953b3c4fc78b2a0f30c67357504f6a6b8e014c3b0adc2db12e87afdad90",
+      "l7-same/runs/pre/sampling-rank0.json": "e8644335e6801bc63c169d2aa03b0a28be7fb53f859b611f518e336ae1c9e617",
+      "l7-same/runs/pre/sampling-rank1.json": "342638fff45da2af30ccb8cebfa495a794af1e4f6367a9a766cf4551ef5a4602",
+      "l7-same/runs/pre/sampling-rank2.json": "63461a441d27d5c3d20b2aa523a1c1056ab033dad0e85bfd8323f4bfc56366c8",
+      "l7-same/runs/pre/sampling-rank3.json": "3796b5a58a445013b2098955612eb5d7aa955bb0fd08f269ab31eae62c73d2e9",
+      "l7-same/runs/pre/sampling-rank4.json": "814a2f91c22d3ab0f677feb797df00e3e287205f2e6928e9456d7f9aacfccbe7",
+      "l7-same/runs/pre/sampling-rank5.json": "505188f0969291fe62118b357931d14346973e0225ac80fc788db7b991f892d4",
+      "l7-same/runs/pre/sampling-rank6.json": "cb1b150bd3732c0e77172e1d64dd524d6fb7a12924880cb5f5bb80036f987301",
+      "l7-same/runs/pre/sampling-rank7.json": "fb0a21a4e54587de5e7863d7f17473e6e0a660af98c9f0ea869ddc05b6b37c3e"
+    },
+    "bounded_pre_log_tail": "t': 0.0, 'val/sc2_action_valid': 1.0, \"\n\u001b[36m(TaskRunner pid=2339)\u001b[0m  \"'val/sc2_semantic_action_valid': 1.0, 'val/sc2_semantic_action_evaluable': \"\n\u001b[36m(TaskRunner pid=2339)\u001b[0m  \"1.0, 'val/sc2_projection_action_valid': 1.0, \"\n\u001b[36m(TaskRunner pid=2339)\u001b[0m  \"'val/sc2_executor_action_valid': 1.0, 'val/sc2/episode_count': 8, \"\n\u001b[36m(TaskRunner pid=2339)\u001b[0m  \"'val/sc2/no_policy_episode_count': 0, 'val/sc2/policy_decision_count': 49}\")\n\u001b[36m(TaskRunner pid=2339)\u001b[0m step:0 - val/text/test_score:16.106 - val/text/tool_call_count/mean:0.000 - val/success_rate:0.875 - val/sc2_attack_ct:0.000 - val/sc2_action_valid:1.000 - val/sc2_semantic_action_valid:1.000 - val/sc2_semantic_action_evaluable:1.000 - val/sc2_projection_action_valid:1.000 - val/sc2_executor_action_valid:1.000 - val/sc2/episode_count:8.000 - val/sc2/no_policy_episode_count:0.000 - val/sc2/policy_decision_count:49.000\n\u001b[36m(SC2Worker pid=2520)\u001b[0m RES: \n\u001b[36m(SC2Worker pid=2520)\u001b[0m  Result.Defeat\n\u001b[36m(SC2Worker pid=2520)\u001b[0m Plan format reward: 0.5\n\u001b[36m(SC2Worker pid=2520)\u001b[0m Result: Defeat\n\u001b[36m(SC2Worker pid=2520)\u001b[0m Outcome shaping reward: 0.050\n\u001b[36m(SC2Worker pid=2520)\u001b[0m Combat result reward: {\"pid\": 7142, \"game_loop\": 18344, \"boundary\": \"terminal\", \"last_consumed_policy_action_id\": 9, \"killed_value\": 4625.0, \"lost_value\": 8050.0, \"scale\": 0.001, \"reward\": -5.325}\n\u001b[36m(SC2Worker pid=2520)\u001b[0m Terminal ack received.\n\u001b[36m(SC2Worker pid=2520)\u001b[0m Game end.\n\u001b[36m(WorkerDict pid=4657)\u001b[0m `generation_config` default values have been modified to match model-specific defaults: {'top_p': 0.8, 'pad_token_id': 151643, 'bos_token_id': 151643, 'eos_token_id': [151645, 151643]}. If this is not desired, please set these values explicitly.\u001b[32m [repeated 7x across cluster]\u001b[0m\n{\"status\": \"completed\", \"ended_at\": \"2026-09-22T03:08:13.435671+00:00\", \"mode\": \"evaluation\", \"process_exit_code\": 0, \"training_updates\": 0, \"metrics\": {\"val/text/test_score\": 16.106, \"val/text/tool_call_count/mean\": 0.0, \"val/success_rate\": 0.875, \"val/sc2_attack_ct\": 0.0, \"val/sc2_action_valid\": 1.0, \"val/sc2_semantic_action_valid\": 1.0, \"val/sc2_semantic_action_evaluable\": 1.0, \"val/sc2_projection_action_valid\": 1.0, \"val/sc2_executor_action_valid\": 1.0, \"val/sc2/episode_count\": 8.0, \"val/sc2/no_policy_episode_count\": 0.0, \"val/sc2/policy_decision_count\": 49.0}, \"metrics_finite\": true, \"response_record_count\": 72, \"evaluable_action_count\": 49, \"valid_evaluable_action_count\": 49, \"replays\": {\"sc2-logs/game-7141/default_player/Flat128_VeryHard_Air/Qwen3-30B/2026-09-21_20-03-43/replay.SC2Replay\": \"1d21dbca74a35a910e1a062735398c572ddae2fb6f9feed065d86e53a7ea5e2e\", \"sc2-logs/game-7142/default_player/Flat128_VeryHard_Air/Qwen3-30B/2026-09-21_20-03-43/replay.SC2Replay\": \"3a3225780a5cffca4a84e60b167aabd1cb7c7ee675c9cc1c695546a459e0d559\", \"sc2-logs/game-7143/default_player/Flat128_VeryHard_Air/Qwen3-30B/2026-09-21_20-03-43/replay.SC2Replay\": \"143c32b06fcfc59e424ac120f1a631b29034f3a5f2e5fd941b5a1c85adde02ef\", \"sc2-logs/game-7144/default_player/Flat128_VeryHard_Air/Qwen3-30B/2026-09-21_20-03-43/replay.SC2Replay\": \"daa79ecd725386a08d7d52691a78b45ae8d638904c79fe0746175f81e5d8fd40\", \"sc2-logs/game-7145/default_player/Flat128_VeryHard_Air/Qwen3-30B/2026-09-21_20-03-43/replay.SC2Replay\": \"37a81b0cf3b5786679f3387434d371c405323c4af5d7f6dea79a22595b74a151\", \"sc2-logs/game-7146/default_player/Flat128_VeryHard_Air/Qwen3-30B/2026-09-21_20-03-43/replay.SC2Replay\": \"ce51f9498544533bd71721381f91f454cde1c1a5d5eb588e2af239c6c405410f\", \"sc2-logs/game-7148/default_player/Flat128_VeryHard_Air/Qwen3-30B/2026-09-21_20-03-43/replay.SC2Replay\": \"baafef6e6c80394dc38e132ed27025cc533fc1c8f31eee3622fbf394845af70c\", \"sc2-logs/game-7147/default_player/Flat128_VeryHard_Air/Qwen3-30B/2026-09-21_20-03-43/replay.SC2Replay\": \"05617d7d70a1da132e813371444173332001ed240900c7c2ae48590727c46060\"}, \"console_sha256\": \"8a113e024830b9b7860e61372b87f1237b29643283dea1f7897f1e2451a5ff0f\", \"episode_outcomes\": {\"trajectories\": 8, \"natural_games\": 8, \"wins\": 7, \"defeats\": 1, \"ties\": 0, \"truncated\": 0, \"natural_win_rate\": 0.875, \"outcomes\": [{\"reset_index\": 0, \"env_index\": 6, \"decision_count\": 3, \"step_index\": 2, \"policy_decision_count\": 3, \"terminated\": true, \"truncated\": false, \"game_result\": \"Victory\", \"termination_reason\": \"game_result\", \"outcome_reward\": 20.0}, {\"reset_index\": 0, \"env_index\": 0, \"decision_count\": 4, \"step_index\": 3, \"policy_decision_count\": 4, \"terminated\": true, \"truncated\": false, \"game_result\": \"Victory\", \"termination_reason\": \"game_result\", \"outcome_reward\": 20.0}, {\"reset_index\": 0, \"env_index\": 4, \"decision_count\": 4, \"step_index\": 3, \"policy_decision_count\": 4, \"terminated\": true, \"truncated\": false, \"game_result\": \"Victory\", \"termination_reason\": \"game_result\", \"outcome_reward\": 20.0}, {\"reset_index\": 0, \"env_index\": 2, \"decision_count\": 5, \"step_index\": 4, \"policy_decision_count\": 5, \"terminated\": true, \"truncated\": false, \"game_result\": \"Victory\", \"termination_reason\": \"game_result\", \"outcome_reward\": 20.0}, {\"reset_index\": 0, \"env_index\": 7, \"decision_count\": 7, \"step_index\": 6, \"policy_decision_count\": 7, \"terminated\": true, \"truncated\": false, \"game_result\": \"Victory\", \"termination_reason\": \"game_result\", \"outcome_reward\": 20.0}, {\"reset_index\": 0, \"env_index\": 5, \"decision_count\": 8, \"step_index\": 7, \"policy_decision_count\": 8, \"terminated\": true, \"truncated\": false, \"game_result\": \"Victory\", \"termination_reason\": \"game_result\", \"outcome_reward\": 20.0}, {\"reset_index\": 0, \"env_index\": 1, \"decision_count\": 9, \"step_index\": 8, \"policy_decision_count\": 9, \"terminated\": true, \"truncated\": false, \"game_result\": \"Defeat\", \"termination_reason\": \"game_result\", \"outcome_reward\": -50.0}, {\"reset_index\": 0, \"env_index\": 3, \"decision_count\": 9, \"step_index\": 8, \"policy_decision_count\": 9, \"terminated\": true, \"truncated\": false, \"game_result\": \"Victory\", \"termination_reason\": \"game_result\", \"outcome_reward\": 20.0}]}, \"natural_match_completed\": true, \"termination_evidence\": \"game_result\"}\n"
+  },
+  "queue": {
+    "phase": "running-unverified",
+    "completed": [
+      "l6-random"
+    ],
+    "first_dispatch_by": 1790051700,
+    "arm": "l7-same",
+    "deadline": 1790066532.2731953,
+    "arm_deadline": 1790053336.8343916
+  },
+  "dispatch": {
+    "start": 1790044932.2731953,
+    "deadline": 1790066532.2731953,
+    "gpu_hours": 48
+  },
+  "storage": {
+    "command": [
+      "du",
+      "-sb",
+      "--null",
+      "--",
+      "/var/jfsCache/sc2-qwen-seeds197-20260922-r4",
+      "/var/jfsCache/sc2-qwen-seeds197-source-20260922-r4",
+      "/var/jfsCache/sc2-qwen-instruct2507-cdbee75-20260921-r1",
+      "/var/jfsCache/sc2-qwen-instruct2507-cdbee75-20260921-r1-staging",
+      "/var/jfsCache/sc2-qwen-instruct2507-cdbee75-20260921-r1-direct-staging",
+      "/var/jfsCache/sc2-qwen-seeds197-20260921-r1",
+      "/var/jfsCache/sc2-qwen-seeds197-source-20260921-r1",
+      "/var/jfsCache/sc2-qwen-seeds197-20260921-r2",
+      "/var/jfsCache/sc2-qwen-seeds197-source-20260921-r2",
+      "/var/jfsCache/sc2-qwen-seeds197-20260922-r3",
+      "/var/jfsCache/sc2-qwen-seeds197-source-20260922-r3"
+    ],
+    "roots": [
+      "/var/jfsCache/sc2-qwen-seeds197-20260922-r4",
+      "/var/jfsCache/sc2-qwen-seeds197-source-20260922-r4",
+      "/var/jfsCache/sc2-qwen-instruct2507-cdbee75-20260921-r1",
+      "/var/jfsCache/sc2-qwen-instruct2507-cdbee75-20260921-r1-staging",
+      "/var/jfsCache/sc2-qwen-instruct2507-cdbee75-20260921-r1-direct-staging",
+      "/var/jfsCache/sc2-qwen-seeds197-20260921-r1",
+      "/var/jfsCache/sc2-qwen-seeds197-source-20260921-r1",
+      "/var/jfsCache/sc2-qwen-seeds197-20260921-r2",
+      "/var/jfsCache/sc2-qwen-seeds197-source-20260921-r2",
+      "/var/jfsCache/sc2-qwen-seeds197-20260922-r3",
+      "/var/jfsCache/sc2-qwen-seeds197-source-20260922-r3"
+    ],
+    "started_at": 1790046498.1648645,
+    "deadline": 1790066532.2731953,
+    "limit": 549755813888,
+    "bytes": 108987649415,
+    "returncode": 0,
+    "status": "measured",
+    "stdout": {
+      "tail": "49978905350\t/var/jfsCache/sc2-qwen-seeds197-20260922-r4\u000021232099\t/var/jfsCache/sc2-qwen-seeds197-source-20260922-r4\u00008060922654\t/var/jfsCache/sc2-qwen-instruct2507-cdbee75-20260921-r1\u0000833204067\t/var/jfsCache/sc2-qwen-instruct2507-cdbee75-20260921-r1-staging\u000025\t/var/jfsCache/sc2-qwen-instruct2507-cdbee75-20260921-r1-direct-staging\u000014046874\t/var/jfsCache/sc2-qwen-seeds197-20260921-r1\u000017571078\t/var/jfsCache/sc2-qwen-seeds197-source-20260921-r1\u000014627737\t/var/jfsCache/sc2-qwen-seeds197-20260921-r2\u000017577963\t/var/jfsCache/sc2-qwen-seeds197-source-20260921-r2\u000050011752126\t/var/jfsCache/sc2-qwen-seeds197-20260922-r3\u000017809442\t/var/jfsCache/sc2-qwen-seeds197-source-20260922-r3\u0000",
+      "characters": 673,
+      "truncated": false
+    },
+    "stderr": {
+      "tail": "",
+      "characters": 0,
+      "truncated": false
+    },
+    "root_bytes": {
+      "/var/jfsCache/sc2-qwen-seeds197-20260922-r4": 49978905350,
+      "/var/jfsCache/sc2-qwen-seeds197-source-20260922-r4": 21232099,
+      "/var/jfsCache/sc2-qwen-instruct2507-cdbee75-20260921-r1": 8060922654,
+      "/var/jfsCache/sc2-qwen-instruct2507-cdbee75-20260921-r1-staging": 833204067,
+      "/var/jfsCache/sc2-qwen-instruct2507-cdbee75-20260921-r1-direct-staging": 25,
+      "/var/jfsCache/sc2-qwen-seeds197-20260921-r1": 14046874,
+      "/var/jfsCache/sc2-qwen-seeds197-source-20260921-r1": 17571078,
+      "/var/jfsCache/sc2-qwen-seeds197-20260921-r2": 14627737,
+      "/var/jfsCache/sc2-qwen-seeds197-source-20260921-r2": 17577963,
+      "/var/jfsCache/sc2-qwen-seeds197-20260922-r3": 50011752126,
+      "/var/jfsCache/sc2-qwen-seeds197-source-20260922-r3": 17809442
+    },
+    "checked_at": 1790046498.1991904
+  },
+  "queue_log_tail": "",
+  "storage_failure_files_at_1790046436": [],
+  "limitations": [
+    "Two PPO steps and valid actions do not prove strategic learning or architecture superiority.",
+    "L6 pre/post8of8 is saturated; paired change0 is not evidence of no true effect.",
+    "No invalid tokens sampled; invalid-credit correction not exercised on invalid GPU samples.",
+    "Mixed-seed UID retains scenario difficulty confound.",
+    "Storage success does not establish all live traversal/stop issues root-fixed."
+  ],
+  "notifications": [
+    "First r4 actual PPO; l6-random train2/post/all-stage completion; l7-same actualGPU/SC2 and pre completion notified in this heartbeat.",
+    "L7-same train2 entry is not a completed PPO claim; l7-random pending.",
+    "Previously notified l6-random firstGPU/pre not repeated."
+  ],
+  "monitor_action": "Keep existing unique197-qwen-r4; remaining arms running/pending; no requeue/retry or budget reset."
+}

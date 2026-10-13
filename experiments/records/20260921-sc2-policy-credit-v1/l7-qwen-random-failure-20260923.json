@@ -1,0 +1,298 @@
+{
+  "checked_at": "2026-09-23T17:47:06.497852+08:00",
+  "root": "/var/jfsCache/sc2-l7-followup197-20260922-r4/qwen-random/long",
+  "receipts": {
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/queue-state.json": {
+      "sha256": "28d12345393b3b552f88a4381e9892ada85ca9b6acff3af4b7210cd44a305633",
+      "bytes": 353,
+      "data": {
+        "phase": "failed",
+        "completed": [
+          "spb-same/short",
+          "spb-same/long"
+        ],
+        "deadline": 1790420762.305692,
+        "original_start": 1790075162.305692,
+        "spb_deadline": 1790247962.305692,
+        "part": "qwen-random/long",
+        "arm_deadline": 1790308720.0467553,
+        "error_type": "RuntimeError",
+        "error": "Stage container failed; no retry/successor"
+      }
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/qwen-random/long/state.json": {
+      "sha256": "8c734d7d685f93e8ba1470579cdfd0cfcfa77c69583599b11d76cff89c8aa5e7",
+      "bytes": 410,
+      "data": {
+        "version": "host-guardian-v1",
+        "phase": "failed",
+        "completed": [],
+        "deadline": 1790308720.0467553,
+        "learning_validated": false,
+        "started_at": 1790135920.0564756,
+        "stage": "train96",
+        "container_id": "26aefed6c64033fba70d5f8668ef5c714ec35ed134402ab0cf8658d1e89bbf37",
+        "error_type": "RuntimeError",
+        "error": "Stage container failed; no retry/successor",
+        "finished_at": 1790137590.0728903
+      }
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/qwen-random/long/host-supervision/state.json": {
+      "sha256": "8c734d7d685f93e8ba1470579cdfd0cfcfa77c69583599b11d76cff89c8aa5e7",
+      "bytes": 410,
+      "data": {
+        "version": "host-guardian-v1",
+        "phase": "failed",
+        "completed": [],
+        "deadline": 1790308720.0467553,
+        "learning_validated": false,
+        "started_at": 1790135920.0564756,
+        "stage": "train96",
+        "container_id": "26aefed6c64033fba70d5f8668ef5c714ec35ed134402ab0cf8658d1e89bbf37",
+        "error_type": "RuntimeError",
+        "error": "Stage container failed; no retry/successor",
+        "finished_at": 1790137590.0728903
+      }
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/qwen-random/long/runs/train96/result.json": {
+      "sha256": "f898382dbbdfd8fe673ae3fb2fb476e0137cc665df5f4a09c0118f267058e6c2",
+      "bytes": 29184,
+      "data": {
+        "status": "failed",
+        "ended_at": "2026-09-23T04:26:16.240785+00:00",
+        "process_exit_code": 1,
+        "completed_steps": 11,
+        "start_step": 2,
+        "last_global_step": 13,
+        "target_steps": 96,
+        "metrics_finite": true,
+        "metrics_precision": "binary64-v1",
+        "checkpoint_complete": false,
+        "console_sha256": "9dd85f42462ba935e0358b419a7c89eb140c7ef21fe27637381091ff8c8ac480",
+        "episode_outcomes": {
+          "trajectories": 88,
+          "natural_games": 88,
+          "wins": 76,
+          "defeats": 12,
+          "ties": 0,
+          "truncated": 0,
+          "natural_win_rate": 0.8636363636363636
+        },
+        "empty_policy_batches": [],
+        "checkpoint_files_inventory_count": 0
+      }
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/qwen-random/long/runs/train96/.done": {
+      "sha256": "f898382dbbdfd8fe673ae3fb2fb476e0137cc665df5f4a09c0118f267058e6c2",
+      "bytes": 29184,
+      "data": {
+        "status": "failed",
+        "ended_at": "2026-09-23T04:26:16.240785+00:00",
+        "process_exit_code": 1,
+        "completed_steps": 11,
+        "start_step": 2,
+        "last_global_step": 13,
+        "target_steps": 96,
+        "metrics_finite": true,
+        "metrics_precision": "binary64-v1",
+        "checkpoint_complete": false,
+        "console_sha256": "9dd85f42462ba935e0358b419a7c89eb140c7ef21fe27637381091ff8c8ac480",
+        "episode_outcomes": {
+          "trajectories": 88,
+          "natural_games": 88,
+          "wins": 76,
+          "defeats": 12,
+          "ties": 0,
+          "truncated": 0,
+          "natural_win_rate": 0.8636363636363636
+        },
+        "empty_policy_batches": [],
+        "checkpoint_files_inventory_count": 0
+      }
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/qwen-random/long/storage-state.json": {
+      "sha256": "50c45e53b99d76c6f8f693754cb389c6d33ab3c82a354e13a7a56426dd0b3428",
+      "bytes": 3703,
+      "data": {
+        "command": [
+          "du",
+          "-sb",
+          "--null",
+          "--",
+          "/var/jfsCache/sc2-l7-followup197-20260922-r4/qwen-random",
+          "/var/jfsCache/sc2-l7-followup197-source-20260922-r4",
+          "/var/jfsCache/sc2-l7-followup197-20260922-r1",
+          "/var/jfsCache/sc2-l7-followup197-source-20260922-r1",
+          "/var/jfsCache/sc2-l7-followup197-20260922-r2",
+          "/var/jfsCache/sc2-l7-followup197-source-20260922-r2",
+          "/var/jfsCache/sc2-l7-followup197-20260922-r3",
+          "/var/jfsCache/sc2-l7-followup197-source-20260922-r3",
+          "/var/jfsCache/sc2-storage-quiescence-cpu-20260922.4LzwSM",
+          "/var/jfsCache/sc2-host-supervision-cpu-20260922.7lJiIO",
+          "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-random"
+        ],
+        "roots": [
+          "/var/jfsCache/sc2-l7-followup197-20260922-r4/qwen-random",
+          "/var/jfsCache/sc2-l7-followup197-source-20260922-r4",
+          "/var/jfsCache/sc2-l7-followup197-20260922-r1",
+          "/var/jfsCache/sc2-l7-followup197-source-20260922-r1",
+          "/var/jfsCache/sc2-l7-followup197-20260922-r2",
+          "/var/jfsCache/sc2-l7-followup197-source-20260922-r2",
+          "/var/jfsCache/sc2-l7-followup197-20260922-r3",
+          "/var/jfsCache/sc2-l7-followup197-source-20260922-r3",
+          "/var/jfsCache/sc2-storage-quiescence-cpu-20260922.4LzwSM",
+          "/var/jfsCache/sc2-host-supervision-cpu-20260922.7lJiIO",
+          "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-random"
+        ],
+        "started_at": 1790137566.7244785,
+        "deadline": 1790308720.0467553,
+        "limit": 1099511627776,
+        "bytes": 100292169540,
+        "returncode": 0,
+        "status": "measured",
+        "stdout": {
+          "tail": "50089333060\t/var/jfsCache/sc2-l7-followup197-20260922-r4/qwen-random\u000022366358\t/var/jfsCache/sc2-l7-followup197-source-20260922-r4\u000014859086\t/var/jfsCache/sc2-l7-followup197-20260922-r1\u000039986975\t/var/jfsCache/sc2-l7-followup197-source-20260922-r1\u000015022348\t/var/jfsCache/sc2-l7-followup197-20260922-r2\u000021701753\t/var/jfsCache/sc2-l7-followup197-source-20260922-r2\u000046541029\t/var/jfsCache/sc2-l7-followup197-20260922-r3\u000033174944\t/var/jfsCache/sc2-l7-followup197-source-20260922-r3\u000029973103\t/var/jfsCache/sc2-storage-quiescence-cpu-20260922.4LzwSM\u000030160896\t/var/jfsCache/sc2-host-supervision-cpu-20260922.7lJiIO\u000049949049988\t/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-random\u0000",
+          "characters": 671,
+          "truncated": false
+        },
+        "stderr": {
+          "tail": "",
+          "characters": 0,
+          "truncated": false
+        },
+        "quiescence": {
+          "version": "host-guardian-v1",
+          "container_id": "26aefed6c64033fba70d5f8668ef5c714ec35ed134402ab0cf8658d1e89bbf37",
+          "owner_root": "/var/jfsCache/sc2-l7-followup197-20260922-r4/qwen-random/long",
+          "guardian_pid": 1448946,
+          "paused_verified": true,
+          "cleanup": "verified-unpaused",
+          "paused_at": 1790137574.4997633,
+          "mode": "paused",
+          "resumed_at": 1790137574.5811508
+        },
+        "measured_at": 1790137574.5486674,
+        "root_bytes": {
+          "/var/jfsCache/sc2-l7-followup197-20260922-r4/qwen-random": 50089333060,
+          "/var/jfsCache/sc2-l7-followup197-source-20260922-r4": 22366358,
+          "/var/jfsCache/sc2-l7-followup197-20260922-r1": 14859086,
+          "/var/jfsCache/sc2-l7-followup197-source-20260922-r1": 39986975,
+          "/var/jfsCache/sc2-l7-followup197-20260922-r2": 15022348,
+          "/var/jfsCache/sc2-l7-followup197-source-20260922-r2": 21701753,
+          "/var/jfsCache/sc2-l7-followup197-20260922-r3": 46541029,
+          "/var/jfsCache/sc2-l7-followup197-source-20260922-r3": 33174944,
+          "/var/jfsCache/sc2-storage-quiescence-cpu-20260922.4LzwSM": 29973103,
+          "/var/jfsCache/sc2-host-supervision-cpu-20260922.7lJiIO": 30160896,
+          "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-random": 49949049988
+        },
+        "checked_at": 1790137574.5813813
+      }
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/qwen-random/long/storage-failure.json": {
+      "exists": false
+    }
+  },
+  "log_tail": {
+    "read_bytes": 524288,
+    "sha256": "8f4da155f8134117c540773c7c8e9a51e55cefb997c9eaa09a2455581d428de6",
+    "returned_step": "(TaskRunner pid=2334) step:13 - metrics_precision:binary64-v1 - global_seqlen/min:3172 - global_seqlen/max:3198 - global_seqlen/minmax_diff:26 - global_seqlen/balanced_min:3181 - global_seqlen/balanced_max:3192 - global_seqlen/mean:3189.625 - actor/entropy_loss:0 - episode/valid_action_ratio:1 - policy_credit/invalid_positive_tokens_removed:0 - policy_credit/invalid_tokens:0 - policy_credit/invalid_advantage_max:0 - actor/kl_loss:0.046034326418835647 - actor/kl_coef:0.01 - actor/pg_loss:-6.2088171641031898e-10 - actor/pg_clipfrac:0 - actor/ppo_kl:0 - actor/pg_clipfrac_lower:0 - actor/grad_norm:4.9756931019828698e-08 - perf/mfu/actor:0.027991490141762807 - perf/max_memory_allocated_gb:20.517569541931152 - perf/max_memory_reserved_gb:30.0625 - perf/cpu_memory_used_gb:70.355136871337891 - actor/lr:9.9999999999999995e-07 - training/global_step:13 - training/epoch:11 - critic/score/mean:25.80937385559082 - critic/score/max:26.25 - critic/score/min:24.850000381469727 - critic/rewards/mean:25.80937385559082 - critic/rewards/max:26.25 - critic/rewards/min:24.850000381469727 - critic/advantages/mean:-4.8960959730948161e-08 - critic/advantages/max:0.58750087022781372 - critic/advantages/min:-1.2791652679443359 - critic/returns/mean:-4.8960959730948161e-08 - critic/returns/max:0.58750087022781372 - critic/returns/min:-1.2791652679443359 - response_length/mean:37.333332061767578 - response_length/max:57 - response_length/min:27 - response_length/clip_ratio:0 - prompt_length/mean:1025.875 - prompt_length/max:1079 - prompt_length/min:994 - prompt_length/clip_ratio:0 - episode/reward/mean:25.809375762939453 - episode/reward/max:26.25 - episode/reward/min:24.850000381469727 - episode/length/mean:3 - episode/length/max:3 - episode/length/min:3 - episode/tool_call_count/mean:0 - episode/success_rate:1 - timing_s/gen:73.158478991128504 - timing_s/reward:0.0096821235492825508 - timing_s/old_log_prob:3.4347037291154265 - timing_s/ref:2.8413094179704785 - timing_s/adv:0.0025997329503297806 - timing_s/update_actor:11.233978042379022 - timing_s/step:90.684930885210633 - timing_per_token_ms/update_actor:0.44025465542105346 - timing_per_token_ms/adv:0.00010188239018418234 - timing_per_token_ms/gen:81.650088159741628 - timing_per_token_ms/ref:0.11134966563351799 - perf/total_num_tokens:25517 - perf/time_per_step:90.684930885210633 - perf/throughput:35.172602204851884",
+    "failure_lines": [
+      "RuntimeError: SC2 reset failed after retries.",
+      "(TaskRunner pid=2334) RuntimeError: SC2 reset failed after retries.",
+      "(SC2Worker pid=2512)     ws = await self._session.ws_connect(self.ws_url, timeout=120)",
+      "(SC2Worker pid=2512)     ws = await self._session.ws_connect(self.ws_url, timeout=120)"
+    ],
+    "server_disconnected_excerpt": [
+      "(SC2Worker pid=2512) Error in env_a_process: Server disconnected",
+      "(SC2Worker pid=2512)   File \"/runtime/lib/python3.12/site-packages/sc2/sc2process.py\", line 110, in __aenter__",
+      "(SC2Worker pid=2512)   File \"/runtime/lib/python3.12/site-packages/sc2/sc2process.py\", line 225, in _connect",
+      "(SC2Worker pid=2512)     ws = await self._session.ws_connect(self.ws_url, timeout=120)",
+      "(SC2Worker pid=2512) aiohttp.client_exceptions.ServerDisconnectedError: Server disconnected",
+      "(SC2Worker pid=2512)   File \"/runtime/lib/python3.12/site-packages/sc2/sc2process.py\", line 110, in __aenter__",
+      "(SC2Worker pid=2512)   File \"/runtime/lib/python3.12/site-packages/sc2/sc2process.py\", line 225, in _connect",
+      "(SC2Worker pid=2512)     ws = await self._session.ws_connect(self.ws_url, timeout=120)",
+      "(SC2Worker pid=2512) aiohttp.client_exceptions.ServerDisconnectedError: Server disconnected",
+      "(SC2Worker pid=2512) RESET returned no observation; cleaning up SC2 subprocess."
+    ]
+  },
+  "audit": {
+    "rows": 11,
+    "pending_steps": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "consumed": 324,
+    "valid": 324
+  },
+  "seed": {
+    "rows": 12,
+    "last": {
+      "base_seed": 0,
+      "reset_index": 13,
+      "seed_protocol": "independent_uniform101",
+      "seeds": [
+        84,
+        33,
+        60,
+        8,
+        11,
+        86,
+        96,
+        16
+      ]
+    }
+  },
+  "container": {
+    "returncode": 0,
+    "stderr": "",
+    "state": {
+      "Status": "exited",
+      "Running": false,
+      "Paused": false,
+      "Restarting": false,
+      "OOMKilled": false,
+      "Dead": false,
+      "Pid": 0,
+      "ExitCode": 1,
+      "Error": "",
+      "StartedAt": "2026-09-23T03:58:41.048790247Z",
+      "FinishedAt": "2026-09-23T04:26:16.347730538Z"
+    }
+  },
+  "cp_directory_names": [
+    "global_step_8"
+  ],
+  "result_done_equal": true,
+  "interpretation": {
+    "trigger": "SC2 reset failed after retries; observed ServerDisconnectedError while opening the SC2 WebSocket and no reset observation",
+    "underlying_root_cause": "not established",
+    "container_oom_killed": false,
+    "answer_legality": "324/324 consumed answers valid before failure; this is not a validity-collapse failure",
+    "completed_global_step": 13,
+    "new_completed_ppo": 11,
+    "new_natural_games": 88,
+    "train_wins": 76,
+    "eval96_run": false,
+    "existing_cp_directory": "global_step_8 only; inventory existence is not an authorized/verified resume plan",
+    "automatic_retry": false,
+    "requires_new_authorization": "Investigate/fix SC2 connection/reset failure and propose bounded new continuation; do not reuse failed RUN or reset old deadline."
+  },
+  "notification_events": [
+    "qwen_random_train96_failed_after_step13"
+  ],
+  "collection_notes": [
+    "17:45/17:47Beijing final read-only refresh supersedes the 12:17running snapshot. The first refresh tool output carried a truncation warning; the subsequent compact collector omitted per-episode records and succeeded.",
+    "Remote operations only small JSON/ledger, <=512KiB log tail/100lines and exact Docker inspect. No new GPU diagnostics, state changes, CP tensor reads or automatic restart.",
+    "Time in archived SC2 internal log text differs from host UTC result/Docker timestamps; use host/result timestamps for failure time.",
+    "Last successful existing storage measurement is historical, not a fresh post-failure measurement; missing failure receipt alone does not prove a subsystem healthy."
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "observed_at_beijing": "2026-09-25T19:14:47+08:00",
+  "status": "r2 failed before any new natural game; fail-closed without retry or successor",
+  "authorization": "User approved exactly one controlled continuation of the remaining 64 L8 games, with the original cutoff and aggregate ceilings",
+  "branch": "codex/fix-sc2-startup-port-race",
+  "runtime_sha": "8f0fcf98cdc8e383f6b873282776c91971843c0e",
+  "github_remote_sha_verified": "8f0fcf98cdc8e383f6b873282776c91971843c0e",
+  "host": "sc2-a100-197",
+  "old_root": "/var/jfsCache/sc2-qwen-l8-pilot96-197-20260925-r1",
+  "new_root": "/var/jfsCache/sc2-qwen-l8-pilot96-197-20260925-r2",
+  "original_dispatch_start_epoch": 1790329988.5255494,
+  "original_deadline_epoch": 1790344388.5255494,
+  "continuation_dispatch_epoch": 1790334575.1690753,
+  "scope": {
+    "old_accepted_stages": ["b00-original", "b00-same-cp96", "b00-random-cp96", "b01-same-cp96"],
+    "old_accepted_natural_games": 32,
+    "new_declared_stages": 8,
+    "new_declared_games": 64,
+    "new_completed_stages": 0,
+    "new_natural_games": 0,
+    "new_optimizer_updates": 0
+  },
+  "cpu_preflight": {
+    "real_launcher_hydra_stages": 8,
+    "container_tests": 81,
+    "host_tests": 71,
+    "skips": 0,
+    "cuda_initialized": false,
+    "cpu_container_exit_codes": [0, 0],
+    "cpu_device_requests": null
+  },
+  "first_stage": {
+    "name": "b01-random-cp96",
+    "container_id": "14f04100b88834cb754125993c7848b35fae52d75c97172e916fe973945b93f0",
+    "owner": "/var/jfsCache/sc2-qwen-l8-pilot96-197-20260925-r2",
+    "container_terminal": "exited1",
+    "oom_killed": false,
+    "manifest_source_sha": "8f0fcf98cdc8e383f6b873282776c91971843c0e",
+    "manifest_world_size": 8,
+    "metrics_precision": "binary64-v1",
+    "failure_result_equals_failure_done": true,
+    "acceptance_receipt_present": false,
+    "checkpoint_evaluation_receipt_present": false,
+    "rendezvous_ledger_port": 28164
+  },
+  "failure": {
+    "direct_error": "torch.distributed.DistBackendError / NCCL ncclInvalidUsage: Duplicate GPU detected; ranks 0..7 reported CUDA device 10000 during ref model FSDP initialization",
+    "stage": "distributed model initialization, before SC2 game or CP96 evaluation load receipt",
+    "not_proven": "Exact first cause of lost CUDA device mapping; whether the newly added worker setup-hook import caused it",
+    "strong_inference": "The r2-only hook imports WorkerHelper, whose module imports verl.utils.device and probes torch.cuda.is_available() at import time; the pre-existing evaluation hook explicitly avoids CUDA probing in Ray's worker setup hook. Ray's debug placement groups assigned eight distinct GPU bundles while NCCL identified all ranks on device 10000. The import-order change is a plausible regression, not a proven exclusive cause.",
+    "original_r1_failure_distinct": "The prior r1 stage had EADDRINUSE on an ephemeral Torch rendezvous port; r2 passed that point then failed at NCCL mapping. Neither failed stage completed a natural game."
+  },
+  "terminal_sha256": {
+    "deployment.json": "f7ac5e0cd7ab67975617c4d1a5fb4c05ba994ab7c6de17ced55f1d20b9e01a14",
+    "original-prefix-acceptance.json": "0db04b90f288b8ac6b09196196c8e5524686ea865cf9c42c68723c19b96ce108",
+    "dispatch.json": "523dd89b4565f733d1fa582d00dedcc77f248013813bbc80d325bec50e11a07e",
+    "queue-state.json": "a432ed8aca9534092e60079fed147d5a6f83bc5550ac2d3f3cc489ab3b833920",
+    "host-supervision/state.json": "794f586f0690b0849651cd443e511bb59307e72946b577586b0ac5ee9acd3c63",
+    "runs/b01-random-cp96/result.json": "3023f653e3cd86777adeafe4035678c8a78159223e67575089090334b0cdad58",
+    "runs/b01-random-cp96/.done": "3023f653e3cd86777adeafe4035678c8a78159223e67575089090334b0cdad58",
+    "storage-state.json": "90431af92abb65a472aa59e84a3770874bb490fccb774b766e140f199cd71be4"
+  },
+  "storage": {
+    "latest_direct_gnu_du_four_root_bytes": 187296343,
+    "limit_bytes": 34359738368,
+    "direct_du_return_code": 0,
+    "direct_du_stderr_empty": true,
+    "storage_failure_receipts": 0
+  },
+  "gpu_after_failure": "2026-09-25 19:11:51 Beijing: all eight host GPUs 0 MiB/0% utilization; no compute app returned",
+  "actions": "No old output was deleted or modified; no r2 restart, repair, successor, L8 PPO training or deadline/budget reset. Further GPU dispatch requires new explicit user approval after diagnosis."
+}

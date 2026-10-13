@@ -1,0 +1,170 @@
+{
+  "checked_at": "2026-09-27T10:59:51.144653+08:00",
+  "queue": {
+    "phase": "waiting-predecessor",
+    "completed": [],
+    "new_games": 1584,
+    "new_updates": 192
+  },
+  "suite_dispatch": null,
+  "l9_dispatch": null,
+  "l10_dispatch": null,
+  "storage": {
+    "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r1/arm-storage/storage-state.json": {
+      "command": [
+        "du",
+        "-sb",
+        "--null",
+        "--",
+        "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r1",
+        "/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r1"
+      ],
+      "roots": [
+        "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r1",
+        "/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r1"
+      ],
+      "started_at": 1790477980.2303839,
+      "deadline": 1790563688.7018523,
+      "limit": 274877906944,
+      "bytes": 49777727,
+      "returncode": 0,
+      "status": "measured",
+      "stdout": {
+        "tail": "25156395\t/var/jfsCache/sc2-qwen-l9same96-197-20260927-r1\u000024621332\t/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r1\u0000",
+        "characters": 124,
+        "truncated": false
+      },
+      "stderr": {
+        "tail": "",
+        "characters": 0,
+        "truncated": false
+      },
+      "root_bytes": {
+        "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r1": 25156395,
+        "/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r1": 24621332
+      },
+      "checked_at": 1790477980.2381172
+    },
+    "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r1/arm-storage/storage-failure.json": null,
+    "/var/jfsCache/sc2-qwen-l10same96-197-20260927-r1/arm-storage/storage-state.json": {
+      "command": [
+        "du",
+        "-sb",
+        "--null",
+        "--",
+        "/var/jfsCache/sc2-qwen-l10same96-197-20260927-r1",
+        "/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r1"
+      ],
+      "roots": [
+        "/var/jfsCache/sc2-qwen-l10same96-197-20260927-r1",
+        "/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r1"
+      ],
+      "started_at": 1790477980.23873,
+      "deadline": 1790563688.7018523,
+      "limit": 274877906944,
+      "bytes": 49739324,
+      "returncode": 0,
+      "status": "measured",
+      "stdout": {
+        "tail": "25117992\t/var/jfsCache/sc2-qwen-l10same96-197-20260927-r1\u000024621332\t/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r1\u0000",
+        "characters": 125,
+        "truncated": false
+      },
+      "stderr": {
+        "tail": "",
+        "characters": 0,
+        "truncated": false
+      },
+      "root_bytes": {
+        "/var/jfsCache/sc2-qwen-l10same96-197-20260927-r1": 25117992,
+        "/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r1": 24621332
+      },
+      "checked_at": 1790477980.2461264
+    },
+    "/var/jfsCache/sc2-qwen-l10same96-197-20260927-r1/arm-storage/storage-failure.json": null,
+    "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r1/suite-storage/storage-state.json": {
+      "command": [
+        "du",
+        "-sb",
+        "--null",
+        "--",
+        "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r1",
+        "/var/jfsCache/sc2-qwen-l10same96-197-20260927-r1",
+        "/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r1"
+      ],
+      "roots": [
+        "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r1",
+        "/var/jfsCache/sc2-qwen-l10same96-197-20260927-r1",
+        "/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r1"
+      ],
+      "started_at": 1790477980.2465982,
+      "deadline": 1790563688.7018523,
+      "limit": 549755813888,
+      "bytes": 74895717,
+      "returncode": 0,
+      "status": "measured",
+      "stdout": {
+        "tail": "25156395\t/var/jfsCache/sc2-qwen-l9same96-197-20260927-r1\u000025117990\t/var/jfsCache/sc2-qwen-l10same96-197-20260927-r1\u000024621332\t/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r1\u0000",
+        "characters": 182,
+        "truncated": false
+      },
+      "stderr": {
+        "tail": "",
+        "characters": 0,
+        "truncated": false
+      },
+      "root_bytes": {
+        "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r1": 25156395,
+        "/var/jfsCache/sc2-qwen-l10same96-197-20260927-r1": 25117990,
+        "/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r1": 24621332
+      },
+      "checked_at": 1790477980.2568705
+    },
+    "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r1/suite-storage/storage-failure.json": null
+  },
+  "tmux": "qwen_l9l10same96_197_r1 3850733 0 python3",
+  "l8_predecessor": {
+    "queue-state.json": {
+      "phase": "running-unverified",
+      "completed": [],
+      "new_games": 192,
+      "new_updates": 0,
+      "deadline": 1790495189.9456112
+    },
+    "host-supervision/state.json": {
+      "version": "host-guardian-v1",
+      "phase": "running-unverified",
+      "completed": [
+        "b00-original",
+        "b00-cp96",
+        "b00-cp192",
+        "b01-cp96",
+        "b01-cp192",
+        "b01-original",
+        "b02-cp192",
+        "b02-original",
+        "b02-cp96",
+        "b03-original",
+        "b03-cp96",
+        "b03-cp192"
+      ],
+      "deadline": 1790495189.9456112,
+      "learning_validated": false,
+      "started_at": 1790473621.310089,
+      "stage": "b04-cp96",
+      "container_id": "50ee86eb13594f1057ca792734469973f9c825f0816877d77736a852e6f136f3"
+    }
+  },
+  "queued_at": "2026-09-27T10:58:40.013591+08:00",
+  "queue_launch_count": 1,
+  "runtime_sha": "1c6cf60b111570ef13f9817d0b1b16fb774546f5",
+  "remote_branch": "codex/fix-sc2-startup-port-race",
+  "runtime_sha_pushed_and_independently_verified_before_deploy": true,
+  "socket": "sc2_qwen_l9l10same96_197_20260927_r1",
+  "session": "qwen_l9l10same96_197_r1",
+  "controller": "/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r1/code/experiments/records/20260921-sc2-policy-credit-v1/qwen_l9l10_same197.py",
+  "gpu_sc2_ppo_started": false,
+  "predecessor_games_accepted": 96,
+  "new_cpu_receipt": "qwen-l9-l10-cpu-20260927.json",
+  "scope": "Single authorized L9 then L10 RL queue. L8 untouched; no old deletions, retries or other experiments. Waiting does not hold GPUs; GPU clocks not yet started."
+}

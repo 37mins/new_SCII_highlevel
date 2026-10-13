@@ -1,0 +1,201 @@
+{
+  "schema_version": 1,
+  "source_sha": "d6932869ac75a34d6a244c8879c76ab61982d88a",
+  "remote_verified_before_preparation": true,
+  "source_bundle_sha256": "740f8981d0cfc0caf9691d5831b1f953424b97e26d0ceda32b8ada059373700f",
+  "local_tests": {
+    "new_tests": 15,
+    "new_passed": 15,
+    "related_tests": 134,
+    "passed": 129,
+    "skipped": 5
+  },
+  "linux_cpu": {
+    "preparation.json": {
+      "status": "passed",
+      "no_gpu": true,
+      "started_at": 1790730505.0186725,
+      "finished_at": 1790730614.3809366,
+      "recovery_contract_sha256": "f19ac30956197319b91a672eafd05e73898ede4e23e18f72ad18d8fef81f8e84",
+      "jobs": [
+        {
+          "label": "host-regressions",
+          "exit_code": 0,
+          "id": null,
+          "device_requests": null
+        },
+        {
+          "label": "model-regressions",
+          "exit_code": 0,
+          "id": "3fb9ccc765fcccf9a3f7d8c9679bca758508057bdeb081ae4c1f1ea635b8b9e3",
+          "device_requests": null
+        },
+        {
+          "label": "configs",
+          "exit_code": 0,
+          "id": "c68a1a4714951d1bc5e94b08f5351e54df37d1968e477f6ee112adc69ec2f2d5",
+          "device_requests": null
+        },
+        {
+          "label": "hook-diagnostic-cp96",
+          "exit_code": 0,
+          "id": "fcdf7443c7e481132f59b370105d1a101f8f7a4f47eba29eae4762da84183393",
+          "device_requests": null
+        },
+        {
+          "label": "hook-sel-b00-cp2",
+          "exit_code": 0,
+          "id": "7fe0f29fa721dc98c7d74f998066f5e8c8d4cbb103c8c39bdc2c3f19ff0458ed",
+          "device_requests": null
+        },
+        {
+          "label": "hook-sel-b00-cp32",
+          "exit_code": 0,
+          "id": "c4d399025189fe401532d1e8a519e5746499e4ed1781a1f41655eadd6bc23d63",
+          "device_requests": null
+        },
+        {
+          "label": "hook-sel-b00-cp64",
+          "exit_code": 0,
+          "id": "5153673bbbc40203aabadb03f7f3f79ea923cf5cf68f748c21f0a3a0fc8544f6",
+          "device_requests": null
+        },
+        {
+          "label": "hook-sel-b00-cp96",
+          "exit_code": 0,
+          "id": "c7e4706b2bb2e20841b4d83d46dcb8f3e8ce26802b2614c473c25068d4272e3d",
+          "device_requests": null
+        },
+        {
+          "label": "hook-test-b00-original",
+          "exit_code": 0,
+          "id": "a24ee0ee8cca14b94769d4f8e8234a8896e01ddd42c0944d38e73146b285b924",
+          "device_requests": null
+        },
+        {
+          "label": "hook-test-b00-random96",
+          "exit_code": 0,
+          "id": "1a469140de77d9ab768378e887ff3a775f9b3d4eece9b38ea19bc85a359e5998",
+          "device_requests": null
+        }
+      ]
+    },
+    "host-regressions.json": {
+      "passed": true,
+      "tests": 112,
+      "skips": 0,
+      "cuda_initialized": false,
+      "host_only": true,
+      "runtime_sha": "d6932869ac75a34d6a244c8879c76ab61982d88a",
+      "checked_at": 1790730506.4496834
+    },
+    "regressions.json": {
+      "passed": true,
+      "tests": 114,
+      "skips": 0,
+      "cuda_initialized": false,
+      "host_only": false,
+      "runtime_sha": "d6932869ac75a34d6a244c8879c76ab61982d88a",
+      "checked_at": 1790730524.2546442
+    },
+    "readiness.json": {
+      "passed": true,
+      "runtime_sha": "d6932869ac75a34d6a244c8879c76ab61982d88a",
+      "stages": [
+        "diagnostic-cp96",
+        "sel-b00-cp2",
+        "sel-b01-cp2",
+        "sel-b02-cp2",
+        "sel-b03-cp2",
+        "sel-b00-cp32",
+        "sel-b01-cp32",
+        "sel-b02-cp32",
+        "sel-b03-cp32",
+        "sel-b00-cp64",
+        "sel-b01-cp64",
+        "sel-b02-cp64",
+        "sel-b03-cp64",
+        "sel-b00-cp96",
+        "sel-b01-cp96",
+        "sel-b02-cp96",
+        "sel-b03-cp96",
+        "test-b00-original",
+        "test-b00-random96",
+        "test-b01-random96",
+        "test-b01-original",
+        "test-b02-original",
+        "test-b02-random96",
+        "test-b03-random96",
+        "test-b03-original",
+        "test-b04-original",
+        "test-b04-random96",
+        "test-b05-random96",
+        "test-b05-original",
+        "test-b06-original",
+        "test-b06-random96",
+        "test-b07-random96",
+        "test-b07-original"
+      ],
+      "actual_entries_and_hydra_configs": true,
+      "cuda_initialized": false,
+      "checked_at": 1790730541.4146483
+    },
+    "suite-storage/storage-state.json": {
+      "bytes": 323403794938,
+      "limit": 377957122048,
+      "returncode": 0,
+      "measured_at": 1790730505.017876,
+      "roots": [
+        "/var/jfsCache/sc2-spb-l8random96-197-20260928-r1",
+        "/var/jfsCache/sc2-spb-l8random-paired128-197-20260928-r1",
+        "/var/jfsCache/sc2-spb-l8random96-197-source-20260928-r1",
+        "/var/jfsCache/sc2-spb-l8random96-197-20260929-r2",
+        "/var/jfsCache/sc2-spb-l8random-paired128-197-20260929-r2",
+        "/var/jfsCache/sc2-spb-l8random96-197-source-20260929-r2",
+        "/var/jfsCache/sc2-terminal-storage-cpu-20260929-r1",
+        "/var/jfsCache/sc2-terminal-storage-cpu-source-20260929-r1",
+        "/var/jfsCache/sc2-spb-l8random-recovery264-197-20260930-r1",
+        "/var/jfsCache/sc2-spb-l8random-recovery264-197-source-20260930-r1"
+      ],
+      "stderr": {
+        "tail": "",
+        "characters": 0,
+        "truncated": false
+      }
+    },
+    "new-storage/storage-state.json": {
+      "bytes": 35892179,
+      "limit": 34359738368,
+      "returncode": 0,
+      "measured_at": 1790730504.7329116,
+      "roots": [
+        "/var/jfsCache/sc2-spb-l8random-recovery264-197-20260930-r1",
+        "/var/jfsCache/sc2-spb-l8random-recovery264-197-source-20260930-r1"
+      ],
+      "stderr": {
+        "tail": "",
+        "characters": 0,
+        "truncated": false
+      }
+    }
+  },
+  "artifact_integrity": {
+    "checkpoints": [
+      2,
+      32,
+      64,
+      96
+    ],
+    "required_files_per_checkpoint": 26,
+    "all_file_sha256": true,
+    "model_zip_crc_per_checkpoint": 8,
+    "previously_audited_small_state_sha256_matched": true,
+    "read_mode": "Server-local 1MiB streaming, 30 minute bound; no pickle/model tensor load during host file integrity check",
+    "contract_sha256": "f19ac30956197319b91a672eafd05e73898ede4e23e18f72ad18d8fef81f8e84"
+  },
+  "limitations": [
+    "CPU checks and file integrity do not prove GPU model load or experiment acceptance.",
+    "Old r2 remains failed/exit137; historical deadlines are not modified.",
+    "Candidate source bundle 9b0f4c4 retained in new counted source root; only d693286 deployed/prepared."
+  ]
+}

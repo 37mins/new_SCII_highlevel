@@ -1,0 +1,19 @@
+{
+  "schema": "spb-early128197-readonly-status-v1",
+  "observed_at": "2026-09-25T13:20:43+08:00",
+  "host": "sc2-a100-197",
+  "run_id": "sc2-spb-early128-197-20260925-r1",
+  "source": "/var/jfsCache/sc2-spb-early128-197-20260925-r1/host-supervision/state.json",
+  "phase": "running-unverified",
+  "completed_stages": 15,
+  "total_stages": 16,
+  "completed_natural_games_from_accepted_stages": 120,
+  "planned_natural_games": 128,
+  "current_stage": "b07-cp2",
+  "current_container_id": "8301b07a15b7a040efcbc9a55e1ed8865b0c0ed4d86c64ca3a1f488c5b223d2d",
+  "current_stage_acceptance_present": false,
+  "current_stage_done_present": false,
+  "fixed_deadline": "2026-09-25T16:07:22.437+08:00",
+  "estimate": "If the final stage and validation proceed normally, 13:30-14:00 Beijing; not a guarantee or deadline.",
+  "action": "read-only checks; no server mutation, requeue, or retry"
+}

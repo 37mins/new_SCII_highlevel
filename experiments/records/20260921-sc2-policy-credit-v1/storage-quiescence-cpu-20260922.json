@@ -1,0 +1,469 @@
+{
+  "schema": "sc2-storage-quiescence-cpu-evidence-v1",
+  "scope": "CPU-only candidate after user approval; no GPU experiment preparation/queue/dispatch/restart or monitor",
+  "status": "cpu_candidate_verified_not_production_integrated",
+  "branch": "codex/fix-quiescent-storage",
+  "base_sha": "c0e8a2eba0684a8b1aded48396646a5def6c7fe2",
+  "final_source_sha": "8d085dfd82c1f8efdf92442f4c2d2d8921581761",
+  "server": "sc2-a100-197",
+  "stage": "/var/jfsCache/sc2-storage-quiescence-cpu-20260922.4LzwSM",
+  "tools": {
+    "python": "3.10.12",
+    "gnu_du": "8.32"
+  },
+  "command": "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=tests python3 -m unittest test_storage_quiescent197 test_policy_credit_storage197 test_policy_credit_storage_coordination197 test_policy_credit_acceptance197 test_policy_credit_acceptance197_r3 test_qwen_seed_acceptance197 test_qwen_seed_acceptance197_r3 test_qwen_seed_acceptance197_r4 test_l7_precision_continuation197 -q",
+  "probe_command": "python3 -B tests/storage_quiescence_probe197.py NEW_EMPTY_FIXTURE_ROOT",
+  "local": {
+    "final_tests": 79,
+    "passed": 75,
+    "linux_only_skips": 4,
+    "initial_failures_resolved": [
+      "Opt-in measurement timestamp initially exhausted a legacy mocked clock; legacy call count restored."
+    ],
+    "excluded_not_passed": [
+      "Additional local test_l7_followup197 import failed because macOS Python lacks omegaconf; not included in the reported selected-suite result."
+    ]
+  },
+  "linux_rounds": [
+    {
+      "unit": {
+        "code_sha": "f47f90349f1223324bec8e42d67bf06029f254a1",
+        "clean": true,
+        "started_at": 1790080967.1728666,
+        "ended_at": 1790080968.0354786,
+        "tests": 78,
+        "failures": 0,
+        "errors": 0,
+        "skips": 0,
+        "passed": true,
+        "modules": [
+          "test_storage_quiescent197",
+          "test_policy_credit_storage197",
+          "test_policy_credit_storage_coordination197",
+          "test_policy_credit_acceptance197",
+          "test_policy_credit_acceptance197_r3",
+          "test_qwen_seed_acceptance197",
+          "test_qwen_seed_acceptance197_r3",
+          "test_qwen_seed_acceptance197_r4",
+          "test_l7_precision_continuation197"
+        ],
+        "heavy_imports": [],
+        "log_sha256": "fc7719f7eea6fbaa0d71fce4a37901bcea1d27bba72e97aa2307d96caaf7f73e"
+      },
+      "probe_log_sha256": "3ffbe5ce600fe4ad942e7fb4e5cc8a97c46c7b55d991c011d608ea3a59c1e591",
+      "probe": {
+        "passed": true,
+        "checked_at": 1790080968.7230122,
+        "heavy_imports": false,
+        "cases": [
+          {
+            "fixed": false,
+            "container_id": "a1605a703413aa5f5e7d55e581f99f2a93f583421d74594134a68015dae4968b",
+            "name": "sc2-storage-cpu-3413511a9e2a",
+            "root": "/var/jfsCache/sc2-storage-quiescence-cpu-20260922.4LzwSM/probe/baseline",
+            "receipt": "/var/jfsCache/sc2-storage-quiescence-cpu-20260922.4LzwSM/probe/baseline/run/storage-failure-71b7f71abd2f43e98081c676abb96a8b.json",
+            "receipt_sha256": "bfbe4acbbf324930fb95598401e8e6548e67e3411bc8e58f90c26cf3157530f6",
+            "proof": {
+              "command": [
+                "du",
+                "-sb",
+                "--null",
+                "--",
+                "/var/jfsCache/sc2-storage-quiescence-cpu-20260922.4LzwSM/probe/baseline/run"
+              ],
+              "roots": [
+                "/var/jfsCache/sc2-storage-quiescence-cpu-20260922.4LzwSM/probe/baseline/run"
+              ],
+              "started_at": 1790080968.251602,
+              "deadline": 1790081088.2514324,
+              "limit": 1048576,
+              "bytes": null,
+              "returncode": 1,
+              "status": "measurement-failed",
+              "stdout": {
+                "tail": "47\t/var/jfsCache/sc2-storage-quiescence-cpu-20260922.4LzwSM/probe/baseline/run\u0000",
+                "characters": 79,
+                "truncated": false
+              },
+              "stderr": {
+                "tail": "du: cannot access '/var/jfsCache/sc2-storage-quiescence-cpu-20260922.4LzwSM/probe/baseline/run/compiler.ptx': No such file or directory\n",
+                "characters": 136,
+                "truncated": false
+              },
+              "error_type": "ValueError",
+              "error": "du failed or emitted diagnostics; partial totals are not trusted",
+              "checked_at": 1790080968.2840896
+            },
+            "passed": true,
+            "final_state": {
+              "Dead": false,
+              "Error": "",
+              "ExitCode": 0,
+              "FinishedAt": "2026-09-22T12:42:48.298811366Z",
+              "OOMKilled": false,
+              "Paused": false,
+              "Pid": 0,
+              "Restarting": false,
+              "Running": false,
+              "StartedAt": "2026-09-22T12:42:48.191762518Z",
+              "Status": "exited"
+            },
+            "container_scope": {
+              "gpu_requests": null,
+              "mounts": [
+                {
+                  "Type": "bind",
+                  "Source": "/var/jfsCache/sc2-storage-quiescence-cpu-20260922.4LzwSM/probe/baseline",
+                  "Destination": "/fixture",
+                  "Mode": "",
+                  "RW": true,
+                  "Propagation": "rprivate"
+                }
+              ],
+              "image": "sha256:1a497d5721f89bb2e98c0273c4b1495f8fdc6921d589650d090871c11b8d1649",
+              "network": "none"
+            }
+          },
+          {
+            "fixed": true,
+            "container_id": "605729c48092d0f50b8a0734124b17dbef4b0979a1499bd192997812b7554e4a",
+            "name": "sc2-storage-cpu-2b582b763214",
+            "root": "/var/jfsCache/sc2-storage-quiescence-cpu-20260922.4LzwSM/probe/fixed",
+            "receipt": "/var/jfsCache/sc2-storage-quiescence-cpu-20260922.4LzwSM/probe/fixed/run/storage-state.json",
+            "receipt_sha256": "2fcca72aa0cd7eaab1a2d0c32426697d6d0e60ce9857568879931d1ac87a5e82",
+            "proof": {
+              "command": [
+                "du",
+                "-sb",
+                "--null",
+                "--",
+                "/var/jfsCache/sc2-storage-quiescence-cpu-20260922.4LzwSM/probe/fixed/run"
+              ],
+              "roots": [
+                "/var/jfsCache/sc2-storage-quiescence-cpu-20260922.4LzwSM/probe/fixed/run"
+              ],
+              "started_at": 1790080968.5047748,
+              "deadline": 1790081088.5044706,
+              "limit": 1048576,
+              "bytes": 59,
+              "returncode": 0,
+              "status": "measured",
+              "stdout": {
+                "tail": "59\t/var/jfsCache/sc2-storage-quiescence-cpu-20260922.4LzwSM/probe/fixed/run\u0000",
+                "characters": 76,
+                "truncated": false
+              },
+              "stderr": {
+                "tail": "",
+                "characters": 0,
+                "truncated": false
+              },
+              "quiescence": {
+                "version": "owned-container-pause-v1",
+                "container_id": "605729c48092d0f50b8a0734124b17dbef4b0979a1499bd192997812b7554e4a",
+                "owner_root": "/var/jfsCache/sc2-storage-quiescence-cpu-20260922.4LzwSM/probe/fixed/run",
+                "pause_attempted": true,
+                "paused_verified": true,
+                "cleanup": "verified-unpaused",
+                "initial_state": {
+                  "Dead": false,
+                  "Error": "",
+                  "ExitCode": 0,
+                  "FinishedAt": "0001-01-01T00:00:00Z",
+                  "OOMKilled": false,
+                  "Paused": false,
+                  "Pid": 703889,
+                  "Restarting": false,
+                  "Running": true,
+                  "StartedAt": "2026-09-22T12:42:48.437167637Z",
+                  "Status": "running"
+                },
+                "paused_at": 1790080968.5563388,
+                "resumed_at": 1790080968.670582,
+                "final_state": {
+                  "Dead": false,
+                  "Error": "",
+                  "ExitCode": 0,
+                  "FinishedAt": "0001-01-01T00:00:00Z",
+                  "OOMKilled": false,
+                  "Paused": false,
+                  "Pid": 703889,
+                  "Restarting": false,
+                  "Running": true,
+                  "StartedAt": "2026-09-22T12:42:48.437167637Z",
+                  "Status": "running"
+                }
+              },
+              "measured_at": 1790080968.628698,
+              "root_bytes": {
+                "/var/jfsCache/sc2-storage-quiescence-cpu-20260922.4LzwSM/probe/fixed/run": 59
+              },
+              "checked_at": 1790080968.6706166
+            },
+            "passed": true,
+            "final_state": {
+              "Dead": false,
+              "Error": "",
+              "ExitCode": 0,
+              "FinishedAt": "2026-09-22T12:42:48.681159146Z",
+              "OOMKilled": false,
+              "Paused": false,
+              "Pid": 0,
+              "Restarting": false,
+              "Running": false,
+              "StartedAt": "2026-09-22T12:42:48.437167637Z",
+              "Status": "exited"
+            },
+            "container_scope": {
+              "gpu_requests": null,
+              "mounts": [
+                {
+                  "Type": "bind",
+                  "Source": "/var/jfsCache/sc2-storage-quiescence-cpu-20260922.4LzwSM/probe/fixed",
+                  "Destination": "/fixture",
+                  "Mode": "",
+                  "RW": true,
+                  "Propagation": "rprivate"
+                }
+              ],
+              "image": "sha256:1a497d5721f89bb2e98c0273c4b1495f8fdc6921d589650d090871c11b8d1649",
+              "network": "none"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "unit": {
+        "code_sha": "8d085dfd82c1f8efdf92442f4c2d2d8921581761",
+        "clean": true,
+        "started_at": 1790081176.37132,
+        "ended_at": 1790081177.145796,
+        "tests": 79,
+        "failures": 0,
+        "errors": 0,
+        "skips": 0,
+        "passed": true,
+        "modules": [
+          "test_storage_quiescent197",
+          "test_policy_credit_storage197",
+          "test_policy_credit_storage_coordination197",
+          "test_policy_credit_acceptance197",
+          "test_policy_credit_acceptance197_r3",
+          "test_qwen_seed_acceptance197",
+          "test_qwen_seed_acceptance197_r3",
+          "test_qwen_seed_acceptance197_r4",
+          "test_l7_precision_continuation197"
+        ],
+        "heavy_imports": [],
+        "log_sha256": "c0345c6252ae4cd120c8cfaa32477c06ece90ac90608f44a74a177415ba71131"
+      },
+      "probe_log_sha256": "57ccdc8c7a48d8bb116fb6af5d687137cff988ab7ef5ef8d9f949745c85942ef",
+      "probe": {
+        "passed": true,
+        "checked_at": 1790081177.7815857,
+        "heavy_imports": false,
+        "cases": [
+          {
+            "fixed": false,
+            "container_id": "b0a6921d1ed1f0167e372b343e2f35f89065c9b21c7e1d4c1a7144b0aaaeffc6",
+            "name": "sc2-storage-cpu-55fc9c09b8b4",
+            "root": "/var/jfsCache/sc2-storage-quiescence-cpu-20260922.4LzwSM/probe-final/baseline",
+            "receipt": "/var/jfsCache/sc2-storage-quiescence-cpu-20260922.4LzwSM/probe-final/baseline/run/storage-failure-8a16e50361fb4bfea38bfeeeecf18046.json",
+            "receipt_sha256": "7b92e21d6a13d30918c1a5263ee70630511af22836e5903917ab98ae16e2d62c",
+            "proof": {
+              "command": [
+                "du",
+                "-sb",
+                "--null",
+                "--",
+                "/var/jfsCache/sc2-storage-quiescence-cpu-20260922.4LzwSM/probe-final/baseline/run"
+              ],
+              "roots": [
+                "/var/jfsCache/sc2-storage-quiescence-cpu-20260922.4LzwSM/probe-final/baseline/run"
+              ],
+              "started_at": 1790081177.353783,
+              "deadline": 1790081297.3536282,
+              "limit": 1048576,
+              "bytes": null,
+              "returncode": 1,
+              "status": "measurement-failed",
+              "stdout": {
+                "tail": "59\t/var/jfsCache/sc2-storage-quiescence-cpu-20260922.4LzwSM/probe-final/baseline/run\u0000",
+                "characters": 85,
+                "truncated": false
+              },
+              "stderr": {
+                "tail": "du: cannot access '/var/jfsCache/sc2-storage-quiescence-cpu-20260922.4LzwSM/probe-final/baseline/run/compiler.ptx': No such file or directory\n",
+                "characters": 142,
+                "truncated": false
+              },
+              "error_type": "ValueError",
+              "error": "du failed or emitted diagnostics; partial totals are not trusted",
+              "checked_at": 1790081177.3757036
+            },
+            "passed": true,
+            "final_state": {
+              "Dead": false,
+              "Error": "",
+              "ExitCode": 0,
+              "FinishedAt": "2026-09-22T12:46:17.398905759Z",
+              "OOMKilled": false,
+              "Paused": false,
+              "Pid": 0,
+              "Restarting": false,
+              "Running": false,
+              "StartedAt": "2026-09-22T12:46:17.295535722Z",
+              "Status": "exited"
+            },
+            "container_scope": {
+              "gpu_requests": null,
+              "mounts": [
+                {
+                  "Type": "bind",
+                  "Source": "/var/jfsCache/sc2-storage-quiescence-cpu-20260922.4LzwSM/probe-final/baseline",
+                  "Destination": "/fixture",
+                  "Mode": "",
+                  "RW": true,
+                  "Propagation": "rprivate"
+                }
+              ],
+              "image": "sha256:1a497d5721f89bb2e98c0273c4b1495f8fdc6921d589650d090871c11b8d1649",
+              "network": "none"
+            }
+          },
+          {
+            "fixed": true,
+            "container_id": "065d3c94ee756f4cffcb6d89b72ddd5bbc040944a15b24f33754695bf0652d8d",
+            "name": "sc2-storage-cpu-4c2b95d18f29",
+            "root": "/var/jfsCache/sc2-storage-quiescence-cpu-20260922.4LzwSM/probe-final/fixed",
+            "receipt": "/var/jfsCache/sc2-storage-quiescence-cpu-20260922.4LzwSM/probe-final/fixed/run/storage-state.json",
+            "receipt_sha256": "09909d47b0f7e348bec556b79d7f8596c32ef895b07c0247d6f0b2b33fe33a21",
+            "proof": {
+              "command": [
+                "du",
+                "-sb",
+                "--null",
+                "--",
+                "/var/jfsCache/sc2-storage-quiescence-cpu-20260922.4LzwSM/probe-final/fixed/run"
+              ],
+              "roots": [
+                "/var/jfsCache/sc2-storage-quiescence-cpu-20260922.4LzwSM/probe-final/fixed/run"
+              ],
+              "started_at": 1790081177.5726388,
+              "deadline": 1790081297.572315,
+              "limit": 1048576,
+              "bytes": 71,
+              "returncode": 0,
+              "status": "measured",
+              "stdout": {
+                "tail": "71\t/var/jfsCache/sc2-storage-quiescence-cpu-20260922.4LzwSM/probe-final/fixed/run\u0000",
+                "characters": 82,
+                "truncated": false
+              },
+              "stderr": {
+                "tail": "",
+                "characters": 0,
+                "truncated": false
+              },
+              "quiescence": {
+                "version": "owned-container-pause-v1",
+                "container_id": "065d3c94ee756f4cffcb6d89b72ddd5bbc040944a15b24f33754695bf0652d8d",
+                "owner_root": "/var/jfsCache/sc2-storage-quiescence-cpu-20260922.4LzwSM/probe-final/fixed/run",
+                "pause_attempted": true,
+                "paused_verified": true,
+                "cleanup": "verified-unpaused",
+                "initial_state": {
+                  "Dead": false,
+                  "Error": "",
+                  "ExitCode": 0,
+                  "FinishedAt": "0001-01-01T00:00:00Z",
+                  "OOMKilled": false,
+                  "Paused": false,
+                  "Pid": 704635,
+                  "Restarting": false,
+                  "Running": true,
+                  "StartedAt": "2026-09-22T12:46:17.516655726Z",
+                  "Status": "running"
+                },
+                "paused_at": 1790081177.6138167,
+                "resumed_at": 1790081177.7252195,
+                "final_state": {
+                  "Dead": false,
+                  "Error": "",
+                  "ExitCode": 0,
+                  "FinishedAt": "0001-01-01T00:00:00Z",
+                  "OOMKilled": false,
+                  "Paused": false,
+                  "Pid": 704635,
+                  "Restarting": false,
+                  "Running": true,
+                  "StartedAt": "2026-09-22T12:46:17.516655726Z",
+                  "Status": "running"
+                }
+              },
+              "measured_at": 1790081177.6872072,
+              "root_bytes": {
+                "/var/jfsCache/sc2-storage-quiescence-cpu-20260922.4LzwSM/probe-final/fixed/run": 71
+              },
+              "checked_at": 1790081177.725253
+            },
+            "passed": true,
+            "final_state": {
+              "Dead": false,
+              "Error": "",
+              "ExitCode": 0,
+              "FinishedAt": "2026-09-22T12:46:17.736525761Z",
+              "OOMKilled": false,
+              "Paused": false,
+              "Pid": 0,
+              "Restarting": false,
+              "Running": false,
+              "StartedAt": "2026-09-22T12:46:17.516655726Z",
+              "Status": "exited"
+            },
+            "container_scope": {
+              "gpu_requests": null,
+              "mounts": [
+                {
+                  "Type": "bind",
+                  "Source": "/var/jfsCache/sc2-storage-quiescence-cpu-20260922.4LzwSM/probe-final/fixed",
+                  "Destination": "/fixture",
+                  "Mode": "",
+                  "RW": true,
+                  "Propagation": "rprivate"
+                }
+              ],
+              "image": "sha256:1a497d5721f89bb2e98c0273c4b1495f8fdc6921d589650d090871c11b8d1649",
+              "network": "none"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "invariants": [
+    "All storage roots remain inclusive; no ENOENT filter, path exclusion, retry, partial total, or last-good fallback.",
+    "Failure bytes remain null. Pause/unpause targets only a new owned immutable container ID.",
+    "Original experiment deployments, old failed outputs and model/SC2 assets untouched.",
+    "Four new tiny CPU fixture containers exited 0 and remain retained; no GPU requests/model or SC2 mounts.",
+    "Only synthetic compiler.ptx fixture files removed by their test writers; small receipts/logs and preparation retained."
+  ],
+  "limits": [
+    "Real GNU du independent-writer fixture validates this race mechanism, not the original compiler internals or GPU behavior.",
+    "No launcher uses the opt-in wrapper. A single host sampling owner and CPU-tested stage supervision must be implemented before GPU continuation.",
+    "Independent bounded recovery on supervisor loss remains required; finally alone cannot recover from SIGKILL/host or daemon loss.",
+    "Pause effects on SC2/Ray/NCCL timeouts and throughput are unverified; all elapsed time must count toward original deadlines.",
+    "No model quality, strategic learning, or production storage-size conclusion follows from these tiny fixture totals."
+  ],
+  "continuation_review": {
+    "gpu_authorized_this_round": false,
+    "original_spb_deadline": 1790247962.305692,
+    "original_suite_deadline": 1790420762.305692,
+    "accepted_qwen_eval_must_not_rerun": true,
+    "failed_spb_pre_accepted_games": 0,
+    "failed_spb_ppo": 0,
+    "interrupted_attempt_cost": "Unknown outcome of interrupted pre is not zero-cost; explicitly settle repeated-attempt allowance before any new RUN.",
+    "remaining": "Host-supervision integration, independent recovery CPU acceptance and operational-pause review; then separately authorize new RUN without resetting clocks."
+  }
+}

@@ -1,0 +1,310 @@
+{
+  "checked_at": "2026-09-27T21:44:55.445538+08:00",
+  "controller_sha": "5261ff5d6fee665fec78a97de4c5bfd9a79b4fc5",
+  "runtime_sha": "1c6cf60b111570ef13f9817d0b1b16fb774546f5",
+  "enqueue": {
+    "timestamp": 1790516402.0175464,
+    "beijing": "2026-09-27T21:40:02+08:00",
+    "socket": "sc2_qwen_l9l10same96_197_20260927_r2",
+    "session": "qwen_l9l10same96_197_r2",
+    "single_enqueue": true
+  },
+  "retained_acceptance": {
+    "passed": true,
+    "retained_games": 784,
+    "retained_updates": 96,
+    "terminal": {
+      "pre": "d0027c26892cee8f4bff2008b72df4b8ba3d30e928814ac80f2ca3e4489879af",
+      "train2": "3f1d7dc9cec0fe712785bb8fac0eec248e3db27ca4f6531da15e88f3c7930485",
+      "post": "4e1f9dbaa3caa955ef7ec62c35d401cf839005ceeb367587e93447a776a1ce61",
+      "train96": "37951982a4996f684b1f5e2ca8e81dae60b937b69760eed96c1f959bb96ff2ef"
+    },
+    "verifier_sha": "5261ff5d6fee665fec78a97de4c5bfd9a79b4fc5",
+    "old_failed_state_sha256": "b2cc71f6962ca568a90b1b06a5c08b90bedafa230f1b90138415b5d787d3d6bd",
+    "checked_at": 1790516404.2238293,
+    "inventory_count": 78,
+    "receipt_sha256": "f9cf19d822ef78bfea8a30dfdc503cc7e1cc51566a3aaab5cda53a21209ff7a4"
+  },
+  "queue": {
+    "phase": "failed",
+    "completed": [],
+    "retained_games": 784,
+    "retained_updates": 96,
+    "new_games": 800,
+    "new_updates": 96,
+    "deadline": 1790568708.224269,
+    "level": 9,
+    "arm_deadline": 1790525508.224269,
+    "part": "qwen-same/long",
+    "error_type": "FileExistsError",
+    "error": "[Errno 17] File exists: '/var/jfsCache/sc2-qwen-l9same96-197-20260927-r2/qwen-same/long/fsync-eval96'",
+    "finished_at": 1790516438.5371726
+  },
+  "dispatch": {
+    "start": 1790482308.224269,
+    "deadline": 1790525508.224269,
+    "suite_deadline": 1790568708.224269,
+    "gpu_hours": 96,
+    "clock_inherited": true,
+    "new_games": 8,
+    "new_updates": 0,
+    "resumed_at": 1790516404.7375185
+  },
+  "suite_dispatch": {
+    "start": 1790482308.224269,
+    "deadline": 1790568708.224269,
+    "gpu_hours": 192,
+    "resumed_at": 1790516404.2248132,
+    "clock_inherited": true
+  },
+  "host": {
+    "version": "host-guardian-v1",
+    "phase": "failed",
+    "completed": [],
+    "deadline": 1790525508.224269,
+    "learning_validated": false,
+    "started_at": 1790516437.8216574,
+    "error_type": "FileExistsError",
+    "error": "[Errno 17] File exists: '/var/jfsCache/sc2-qwen-l9same96-197-20260927-r2/qwen-same/long/fsync-eval96'",
+    "finished_at": 1790516438.536753
+  },
+  "gpu_preflight_host": {
+    "version": "host-guardian-v1",
+    "phase": "completed",
+    "completed": [
+      "gpu-preflight"
+    ],
+    "deadline": 1790525508.224269,
+    "learning_validated": false,
+    "started_at": 1790516404.7383828,
+    "stage": "gpu-preflight",
+    "container_id": "4ef0996c8aee36a782df0003218ae573dec3e137b3c64007e2b5989d4c8e23f1",
+    "exit_code": 0,
+    "finished_at": 1790516437.82052
+  },
+  "gpu_preflight": {
+    "passed": true,
+    "ranks": [
+      {
+        "rank": 0,
+        "visible_devices": "0",
+        "ray_gpu_ids": [
+          0
+        ],
+        "cuda_uuid": "40d97276-36a4-2cce-43ff-be66ca654177",
+        "master_port": 27885
+      },
+      {
+        "rank": 1,
+        "visible_devices": "1",
+        "ray_gpu_ids": [
+          1
+        ],
+        "cuda_uuid": "bea101a5-a727-20d0-2270-fb787dd6c7e0",
+        "master_port": 27953
+      },
+      {
+        "rank": 2,
+        "visible_devices": "2",
+        "ray_gpu_ids": [
+          2
+        ],
+        "cuda_uuid": "334e011d-8eb5-e72e-00a3-dcbd8aaf87e5",
+        "master_port": 22261
+      },
+      {
+        "rank": 3,
+        "visible_devices": "3",
+        "ray_gpu_ids": [
+          3
+        ],
+        "cuda_uuid": "a7707e1f-462b-7ed6-9d2c-97fe6c9acce4",
+        "master_port": 26548
+      },
+      {
+        "rank": 4,
+        "visible_devices": "5",
+        "ray_gpu_ids": [
+          5
+        ],
+        "cuda_uuid": "dd2c977f-d2f0-545a-dbfb-153f0a3b3c1b",
+        "master_port": 27020
+      },
+      {
+        "rank": 5,
+        "visible_devices": "4",
+        "ray_gpu_ids": [
+          4
+        ],
+        "cuda_uuid": "33ec7165-06e2-b141-97db-66711df3e176",
+        "master_port": 20046
+      },
+      {
+        "rank": 6,
+        "visible_devices": "6",
+        "ray_gpu_ids": [
+          6
+        ],
+        "cuda_uuid": "868e1fe3-a401-980d-e3fd-2fc4fb7d0e8f",
+        "master_port": 21821
+      },
+      {
+        "rank": 7,
+        "visible_devices": "7",
+        "ray_gpu_ids": [
+          7
+        ],
+        "cuda_uuid": "8347c82f-9c11-c3d9-37ab-016498436356",
+        "master_port": 20765
+      }
+    ],
+    "nccl_sums": [
+      28,
+      28,
+      28,
+      28,
+      28,
+      28,
+      28,
+      28
+    ],
+    "model_loaded": false,
+    "natural_games": 0,
+    "optimizer_updates": 0
+  },
+  "gpu_preflight_container": {
+    "id": "4ef0996c8aee36a782df0003218ae573dec3e137b3c64007e2b5989d4c8e23f1",
+    "name": "/sc2-qwen-l9same96-197-20260927-r2-long-gpu-preflight-eval96",
+    "state": {
+      "Status": "exited",
+      "Running": false,
+      "Paused": false,
+      "Restarting": false,
+      "OOMKilled": false,
+      "Dead": false,
+      "Pid": 0,
+      "ExitCode": 0,
+      "Error": "",
+      "StartedAt": "2026-09-27T13:40:05.567069989Z",
+      "FinishedAt": "2026-09-27T13:40:30.193214347Z"
+    },
+    "owner": "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r2/qwen-same/long",
+    "device_requests": [
+      {
+        "Driver": "",
+        "Count": -1,
+        "DeviceIDs": null,
+        "Capabilities": [
+          [
+            "gpu"
+          ]
+        ],
+        "Options": {}
+      }
+    ]
+  },
+  "absence_checks": {
+    "l9_eval_run_exists": false,
+    "l9_eval_entry_exists": false,
+    "l10_dispatch_exists": false,
+    "l10_pre_run_exists": false
+  },
+  "fsync_eval96": {
+    "exists": true,
+    "size": 6,
+    "sha256": "1d53cd1bbd1809fb51d21019287b0b99a4bc1221ed205d3b55f538c40ef3e90d"
+  },
+  "storage": {
+    "command": [
+      "du",
+      "-sb",
+      "--null",
+      "--",
+      "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r1",
+      "/var/jfsCache/sc2-qwen-l10same96-197-20260927-r1",
+      "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r2",
+      "/var/jfsCache/sc2-qwen-l10same96-197-20260927-r2",
+      "/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r1",
+      "/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r2"
+    ],
+    "roots": [
+      "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r1",
+      "/var/jfsCache/sc2-qwen-l10same96-197-20260927-r1",
+      "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r2",
+      "/var/jfsCache/sc2-qwen-l10same96-197-20260927-r2",
+      "/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r1",
+      "/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r2"
+    ],
+    "started_at": 1790516438.1196597,
+    "deadline": 1790525508.224269,
+    "limit": 549755813888,
+    "bytes": 201989208291,
+    "returncode": 0,
+    "status": "measured",
+    "stderr": {
+      "tail": "",
+      "characters": 0,
+      "truncated": false
+    },
+    "root_bytes": {
+      "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r1": 201913182001,
+      "/var/jfsCache/sc2-qwen-l10same96-197-20260927-r1": 25117991,
+      "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r2": 761932,
+      "/var/jfsCache/sc2-qwen-l10same96-197-20260927-r2": 689515,
+      "/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r1": 24621332,
+      "/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r2": 24835520
+    },
+    "checked_at": 1790516438.2155027
+  },
+  "gpus": {
+    "returncode": 0,
+    "stdout": "0, 0, 0\n1, 0, 0\n2, 0, 0\n3, 0, 0\n4, 0, 0\n5, 0, 0\n6, 0, 0\n7, 0, 0",
+    "stderr": ""
+  },
+  "compute_apps": {
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "queue_tmux": {
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "no server running on /tmp/tmux-0/sc2_qwen_l9l10same96_197_20260927_r2"
+  },
+  "exact_eval_containers": {
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "cause": {
+    "class": "controller admission naming collision",
+    "sequence": [
+      "initial arm admission calls m.admit(1, eval96)",
+      "GPU preflight calls m.admit(1, gpu-preflight) and completes",
+      "stage admission calls m.admit(1, eval96) again"
+    ],
+    "failure": "Exclusive creation of fsync-eval96 raises FileExistsError before docker create.",
+    "not_model_or_sc2_failure": true,
+    "local_reproduction": {
+      "passed": true,
+      "actual_admit_function": true,
+      "resource_checks_mocked": true,
+      "new_games": 0,
+      "server_actions": 0
+    },
+    "test_gap": "Existing queue unit tests mocked m.admit, so the real fsync interaction was not exercised."
+  },
+  "outcome": {
+    "phase": "failed",
+    "new_natural_games": 0,
+    "new_optimizer_updates": 0,
+    "l9_retained_updates": 96,
+    "l9_retained_games": 784,
+    "l9_final_eval_complete": false,
+    "l10_started": false,
+    "old_failed_state_preserved": true,
+    "no_retry_performed": true
+  },
+  "next_action": "Await explicit authorization for a new frozen RUN_ID; correct distinct admission receipt names and exercise real admission ordering before any dispatch. Preserve r1/r2 roots and count all new roots within unchanged arm/suite caps and deadlines. Never rerun retained L9 training.",
+  "queue_tail": "Traceback (most recent call last):\n  File \"/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r2/code/experiments/records/20260921-sc2-policy-credit-v1/qwen_l9l10_continue197.py\", line 324, in <module>\n    if __name__=='__main__':main()\n  File \"/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r2/code/experiments/records/20260921-sc2-policy-credit-v1/qwen_l9l10_continue197.py\", line 302, in main\n    if arg.mode=='queue': queue();return\n  File \"/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r2/code/experiments/records/20260921-sc2-policy-credit-v1/qwen_l9l10_continue197.py\", line 276, in queue\n    terminal=h.run_stages(cfg['stages'],lambda s:docker('stage',index,s),verify,\n  File \"/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r2/code/experiments/records/20260921-sc2-policy-credit-v1/host_stage197.py\", line 58, in run_stages\n    admit(stage)  # Caller must recheck resources/fsync for EACH stage.\n  File \"/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r2/code/experiments/records/20260921-sc2-policy-credit-v1/qwen_l9l10_continue197.py\", line 278, in <lambda>\n    admit=lambda s:m.admit(index,s,deadline))\n  File \"/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r2/code/experiments/records/20260921-sc2-policy-credit-v1/qwen_l9l10_same197.py\", line 384, in admit\n    with path.open('xb') as stream: stream.write(b'l9l10\\n'); stream.flush(); os.fsync(stream.fileno())\n  File \"/usr/lib/python3.10/pathlib.py\", line 1119, in open\n    return self._accessor.open(self, mode, buffering, encoding, errors,\nFileExistsError: [Errno 17] File exists: '/var/jfsCache/sc2-qwen-l9same96-197-20260927-r2/qwen-same/long/fsync-eval96'\n"
+}

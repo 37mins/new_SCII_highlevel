@@ -1,0 +1,564 @@
+{
+  "panel": {
+    "state": {
+      "phase": "completed",
+      "deadline": 1790014540.699252,
+      "original_deadline": 1790084602,
+      "completed": [
+        {
+          "arm": "original",
+          "batch": 0,
+          "games": 8
+        },
+        {
+          "arm": "D96",
+          "batch": 0,
+          "games": 8
+        },
+        {
+          "arm": "C96",
+          "batch": 0,
+          "games": 8
+        },
+        {
+          "arm": "original",
+          "batch": 1,
+          "games": 8
+        },
+        {
+          "arm": "D96",
+          "batch": 1,
+          "games": 8
+        },
+        {
+          "arm": "C96",
+          "batch": 1,
+          "games": 8
+        },
+        {
+          "arm": "original",
+          "batch": 2,
+          "games": 8
+        },
+        {
+          "arm": "D96",
+          "batch": 2,
+          "games": 8
+        },
+        {
+          "arm": "C96",
+          "batch": 2,
+          "games": 8
+        },
+        {
+          "arm": "original",
+          "batch": 3,
+          "games": 8
+        },
+        {
+          "arm": "D96",
+          "batch": 3,
+          "games": 8
+        },
+        {
+          "arm": "C96",
+          "batch": 3,
+          "games": 8
+        },
+        {
+          "arm": "original",
+          "batch": 4,
+          "games": 8
+        },
+        {
+          "arm": "D96",
+          "batch": 4,
+          "games": 8
+        },
+        {
+          "arm": "C96",
+          "batch": 4,
+          "games": 8
+        },
+        {
+          "arm": "original",
+          "batch": 5,
+          "games": 8
+        },
+        {
+          "arm": "D96",
+          "batch": 5,
+          "games": 8
+        },
+        {
+          "arm": "C96",
+          "batch": 5,
+          "games": 8
+        },
+        {
+          "arm": "original",
+          "batch": 6,
+          "games": 8
+        },
+        {
+          "arm": "D96",
+          "batch": 6,
+          "games": 8
+        },
+        {
+          "arm": "C96",
+          "batch": 6,
+          "games": 8
+        },
+        {
+          "arm": "original",
+          "batch": 7,
+          "games": 8
+        },
+        {
+          "arm": "D96",
+          "batch": 7,
+          "games": 8
+        },
+        {
+          "arm": "C96",
+          "batch": 7,
+          "games": 8
+        }
+      ],
+      "training_updates": 0,
+      "arm": "C96",
+      "batch": 7,
+      "run": "/var/jfsCache/sc2-panel197-20260921-r2/runs/b07-C96",
+      "exit_code": 0
+    },
+    "dispatch": {
+      "time": 1789971339.898231,
+      "gpu_snapshot": "0, 0, 0\n1, 0, 0\n2, 0, 0\n3, 0, 0\n4, 0, 0\n5, 0, 0\n6, 0, 0\n7, 0, 0"
+    },
+    "totals": {
+      "original": {
+        "games": 64,
+        "wins": 31,
+        "defeats": 33,
+        "ties": 0,
+        "valid": 78,
+        "evaluable": 681,
+        "win_rate": 0.484375,
+        "wilson95": [
+          0.3663355166543264,
+          0.6041839852141988
+        ],
+        "valid_fraction": 0.1145374449339207
+      },
+      "D96": {
+        "games": 64,
+        "wins": 28,
+        "defeats": 36,
+        "ties": 0,
+        "valid": 80,
+        "evaluable": 877,
+        "win_rate": 0.4375,
+        "wilson95": [
+          0.3229400970440308,
+          0.5591379104300699
+        ],
+        "valid_fraction": 0.09122006841505131
+      },
+      "C96": {
+        "games": 64,
+        "wins": 27,
+        "defeats": 37,
+        "ties": 0,
+        "valid": 21,
+        "evaluable": 837,
+        "win_rate": 0.421875,
+        "wilson95": [
+          0.30869782474345486,
+          0.5438996845991709
+        ],
+        "valid_fraction": 0.025089605734767026
+      }
+    },
+    "paired_vs_original": {
+      "D96": {
+        "better": 5,
+        "worse": 8,
+        "exact_mcnemar_p": 0.5810546875
+      },
+      "C96": {
+        "better": 4,
+        "worse": 8,
+        "exact_mcnemar_p": 0.3876953125
+      }
+    },
+    "rows": [
+      {
+        "tag": "b00-original",
+        "result_sha256": "d0866e13bd6a5741761e61b2447f56e7ecacdc9210a429963dec3a1d13be6205",
+        "wins": 5,
+        "defeats": 3,
+        "ties": 0,
+        "valid": 5,
+        "evaluable": 93
+      },
+      {
+        "tag": "b00-D96",
+        "result_sha256": "96ea59b1c08210eeecc4f28e4852d03ed3e1ec2de5fec655ca9c6c0ea4cb8882",
+        "wins": 6,
+        "defeats": 2,
+        "ties": 0,
+        "valid": 12,
+        "evaluable": 106
+      },
+      {
+        "tag": "b00-C96",
+        "result_sha256": "d04b6288f3902cf8df31d53909967fe3d3ffd986e9c8f0ab04165a4d9abf8c82",
+        "wins": 7,
+        "defeats": 1,
+        "ties": 0,
+        "valid": 4,
+        "evaluable": 93
+      },
+      {
+        "tag": "b01-original",
+        "result_sha256": "93244e444c475b368abdbb71de31c7d047aa6c6474b870cea1eb6387706bc8e5",
+        "wins": 5,
+        "defeats": 3,
+        "ties": 0,
+        "valid": 10,
+        "evaluable": 78
+      },
+      {
+        "tag": "b01-D96",
+        "result_sha256": "fc0804ba91c4d3f33c8c12d97b444837c8067e61dffd2d6bcaa1726892f7e82e",
+        "wins": 4,
+        "defeats": 4,
+        "ties": 0,
+        "valid": 7,
+        "evaluable": 102
+      },
+      {
+        "tag": "b01-C96",
+        "result_sha256": "aded51100ecfb9ad2ca5aa72c7cbfb803c67fbc559b19946f2f46f3d3403f5df",
+        "wins": 5,
+        "defeats": 3,
+        "ties": 0,
+        "valid": 4,
+        "evaluable": 96
+      },
+      {
+        "tag": "b02-original",
+        "result_sha256": "1c281c29107aa35b518ef46524f5ae478aeb14b9bef8a8bd0ecd628a31ee3988",
+        "wins": 4,
+        "defeats": 4,
+        "ties": 0,
+        "valid": 9,
+        "evaluable": 80
+      },
+      {
+        "tag": "b02-D96",
+        "result_sha256": "f89587e2dde79181bca299ea8e9d465d42afeb40322d1dd76c3faf4cc6b89b42",
+        "wins": 4,
+        "defeats": 4,
+        "ties": 0,
+        "valid": 10,
+        "evaluable": 106
+      },
+      {
+        "tag": "b02-C96",
+        "result_sha256": "f3c8be2d41fe805205b649a09dbe03e1138e7f7e0727721479d94eb93ae5260f",
+        "wins": 4,
+        "defeats": 4,
+        "ties": 0,
+        "valid": 2,
+        "evaluable": 100
+      },
+      {
+        "tag": "b03-original",
+        "result_sha256": "ec62c8ce781b6ec4ae9b5726c27f0d5d01fb6d0505b669f0fb254f26d97cad82",
+        "wins": 4,
+        "defeats": 4,
+        "ties": 0,
+        "valid": 13,
+        "evaluable": 79
+      },
+      {
+        "tag": "b03-D96",
+        "result_sha256": "362d73c0a90f52bc0f195d224d4fbbab97cc27bc121aef78df95080742761b81",
+        "wins": 3,
+        "defeats": 5,
+        "ties": 0,
+        "valid": 6,
+        "evaluable": 100
+      },
+      {
+        "tag": "b03-C96",
+        "result_sha256": "97660f5778ba934e9354835cccdbdfeac5a95008cc5cf4979ab9e6b1330df634",
+        "wins": 3,
+        "defeats": 5,
+        "ties": 0,
+        "valid": 2,
+        "evaluable": 102
+      },
+      {
+        "tag": "b04-original",
+        "result_sha256": "6b43856ce9546cd7a4b651dc6107538244589c2945d67a6163d39bdbb6a644b8",
+        "wins": 3,
+        "defeats": 5,
+        "ties": 0,
+        "valid": 13,
+        "evaluable": 83
+      },
+      {
+        "tag": "b04-D96",
+        "result_sha256": "37fe2a0be1c2aa4e55d3c603cfc02640ff9bb98f9d3dce8388e081a8ad432b97",
+        "wins": 3,
+        "defeats": 5,
+        "ties": 0,
+        "valid": 10,
+        "evaluable": 107
+      },
+      {
+        "tag": "b04-C96",
+        "result_sha256": "08f665184a50777a21685f59ac27f84375e7d180ca5de8856d9903701b9c1084",
+        "wins": 3,
+        "defeats": 5,
+        "ties": 0,
+        "valid": 3,
+        "evaluable": 110
+      },
+      {
+        "tag": "b05-original",
+        "result_sha256": "e88695219343bb7f2f2393a3ae1978218833c446721657e34b90fcd87872590d",
+        "wins": 3,
+        "defeats": 5,
+        "ties": 0,
+        "valid": 8,
+        "evaluable": 101
+      },
+      {
+        "tag": "b05-D96",
+        "result_sha256": "542a353d9700bf08590535473f8dba022d6b8cee86e2bb313cb15393acc45d8d",
+        "wins": 3,
+        "defeats": 5,
+        "ties": 0,
+        "valid": 16,
+        "evaluable": 131
+      },
+      {
+        "tag": "b05-C96",
+        "result_sha256": "72c42adec9a3bceacfe7a6a541ba4220ceab2e46b4fd6d76682a3799ed4e2d35",
+        "wins": 2,
+        "defeats": 6,
+        "ties": 0,
+        "valid": 2,
+        "evaluable": 115
+      },
+      {
+        "tag": "b06-original",
+        "result_sha256": "0887e515baf010acd3347dca9ebcb7bf64900b355d7324423ff2d642b6bdca73",
+        "wins": 4,
+        "defeats": 4,
+        "ties": 0,
+        "valid": 9,
+        "evaluable": 77
+      },
+      {
+        "tag": "b06-D96",
+        "result_sha256": "3118583e83ba6dc2bdb4401b2deba172f307f6b960bf6be267ced04e326bb709",
+        "wins": 3,
+        "defeats": 5,
+        "ties": 0,
+        "valid": 7,
+        "evaluable": 108
+      },
+      {
+        "tag": "b06-C96",
+        "result_sha256": "7df87cd3f9e3f8feb0453dfeb8d1298733e047d13ce4d37821935ed22c261e05",
+        "wins": 1,
+        "defeats": 7,
+        "ties": 0,
+        "valid": 1,
+        "evaluable": 109
+      },
+      {
+        "tag": "b07-original",
+        "result_sha256": "d35204c4096298b88d7962a3a515439cf4031c7ccf342cf04867ebdd0c535818",
+        "wins": 3,
+        "defeats": 5,
+        "ties": 0,
+        "valid": 11,
+        "evaluable": 90
+      },
+      {
+        "tag": "b07-D96",
+        "result_sha256": "ccf35363ef8a082149fce9b9ad0f1a87ed3e8bc6e157eaab50f685e484f2e0c2",
+        "wins": 2,
+        "defeats": 6,
+        "ties": 0,
+        "valid": 12,
+        "evaluable": 117
+      },
+      {
+        "tag": "b07-C96",
+        "result_sha256": "fcdab802ff9426eb7e4acdabdca7d6f2ba935fdeff9d4ed1c3b812249999c8f6",
+        "wins": 2,
+        "defeats": 6,
+        "ties": 0,
+        "valid": 3,
+        "evaluable": 112
+      }
+    ],
+    "completed_state_mtime": "2026-09-21T21:27:46.322596+08:00",
+    "last_result_ended_at": "2026-09-21T13:27:35.636958+00:00",
+    "checks": {
+      "all_24_result_done_acceptance_equal": true,
+      "all_status_completed_exit0": true,
+      "total_natural_games": 192,
+      "training_updates": 0,
+      "all_numeric_result_fields_finite": true,
+      "all_source_commit": "7236c37b116fd8fbe15db09ccbdcd2e740e4e840",
+      "all_dirty": false,
+      "all_world_size": 8,
+      "all_8_batches_evaluation_seed_lists_equal_across_arms": true,
+      "all_24_checkpoint_evaluation_receipts_val_only_and_zero_updates": true,
+      "all_D96_C96_receipts_loaded_step96_and_returned": true,
+      "all_original_receipts_step0_no_checkpoint_restore": true
+    }
+  },
+  "spb": {
+    "state": {
+      "phase": "failed",
+      "completed": [],
+      "deadline": 1790004477.601518,
+      "stage": "pre",
+      "run": "/var/jfsCache/sc2-policy-credit197-20260921-r2/runs/pre",
+      "error": "pre exit1; no retry or successor"
+    },
+    "queue": {
+      "phase": "failed",
+      "error": "Acceptance failed, container exit1; no retry"
+    },
+    "dispatch": {
+      "start": 1789997277.601518,
+      "deadline": 1790004477.601518,
+      "resource_check": "eight empty GPUs, no compute PIDs, >=600GiB RAM, >=140GiB disk, fsync passed"
+    },
+    "result": {
+      "status": "failed",
+      "ended_at": "2026-09-21T13:30:13.370457+00:00",
+      "mode": "evaluation",
+      "process_exit_code": 1,
+      "training_updates": 0,
+      "metrics": {},
+      "metrics_finite": false,
+      "response_record_count": 0,
+      "evaluable_action_count": 0,
+      "valid_evaluable_action_count": 0,
+      "replays": {},
+      "console_sha256": "0e9f5a0b1cbafb17793ce93a0f43a60f268723b14976c3f81da74a4a7ce3d1ef",
+      "episode_outcomes": {
+        "trajectories": 0,
+        "natural_games": 0,
+        "wins": 0,
+        "defeats": 0,
+        "ties": 0,
+        "truncated": 0,
+        "natural_win_rate": null,
+        "outcomes": []
+      },
+      "natural_match_completed": false,
+      "termination_evidence": null
+    },
+    "result_equals_done": true,
+    "result_sha256": "2bc7086c8e8542ec7cc328bd61e8a9a083de335500338a98ed2fb1a3328504c6",
+    "manifest": {
+      "source_commit": "f211c0e94603468992baa514f00aaee5fd7780d6",
+      "dirty": false,
+      "world_size": 8,
+      "model_id": "Panyuqi/SpikingBrain-2.0-instruct",
+      "model_revision": "sha256:de52e8ef993afc763f9d4fb498e8d8302ef0bc13bd7dfd53c6ae5f77f43698b5",
+      "model_manifest_sha256": "40d6f1417568d5fda1107cdafd66c7441a679b03fb148851c8f226ecc9cf884c"
+    },
+    "files": [
+      "preflight.log",
+      "model_preparation.json",
+      "manifest.json",
+      "effective_config.json",
+      "console.log",
+      "paired_seed_selection.json",
+      "checkpoint_evaluation.json",
+      "evaluation_seeds.jsonl",
+      "game-7200-boundaries.jsonl",
+      "game-7203-boundaries.jsonl",
+      "game-7201-boundaries.jsonl",
+      "game-7207-boundaries.jsonl",
+      "game-7202-boundaries.jsonl",
+      "game-7204-boundaries.jsonl",
+      "game-7205-boundaries.jsonl",
+      "game-7206-boundaries.jsonl",
+      "sampling-rank4.json",
+      "sampling-rank0.json",
+      "sampling-rank1.json",
+      "sampling-rank5.json",
+      "sampling-rank7.json",
+      "sampling-rank2.json",
+      "sampling-rank3.json",
+      "sampling-rank6.json",
+      "result.json",
+      ".done"
+    ],
+    "failure": {
+      "classification": "generation support integration failure before first model answer/PPO",
+      "message": "SC2 action support EOS/PAD/budget differs between generation and PPO",
+      "callsite": "verl/workers/rollout/hf_rollout.py:172",
+      "raiser": "verl/utils/sc2_action_support.py:142",
+      "mismatched_component": "not established by this bounded-log audit",
+      "source_log": "/var/jfsCache/sc2-policy-credit197-20260921-r2/runs/pre/console.log",
+      "bounded_tail_bytes": 100000
+    },
+    "evaluation_seeds": [
+      605183188,
+      1075501356,
+      2084414326,
+      2203880230,
+      3000371298,
+      949752300,
+      3225036469,
+      2823708076
+    ],
+    "checkpoint_evaluation": {
+      "checkpoint": null,
+      "loaded_global_step": 0,
+      "checkpoint_load_returned": false,
+      "val_only": true,
+      "optimizer_updates": 0
+    }
+  },
+  "qwen": {
+    "queue": {
+      "phase": "failed",
+      "completed": [],
+      "first_dispatch_by": 1790028940.699252,
+      "error": "SpB repair acceptance failed; Qwen successors blocked"
+    },
+    "dispatched": false
+  },
+  "observed_at": "2026-09-21T21:49:36.961894+08:00",
+  "asset": {
+    "root": "/var/jfsCache/sc2-qwen-instruct2507-cdbee75-20260921-r1",
+    "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+    "local_transfer_exit": 0,
+    "verification_receipt_sha256": "6c2018e8f8a1b7b56ede8e605eacc13875d92cef76b2cb8a63e085dce6596b68",
+    "verification_items_ok": 12,
+    "FAILED_exit_present": false,
+    "verification_method": "existing authorized receiver sha256sum receipt; no new weight reads",
+    "registered_and_receiver_manifest_sha256": "c82106ca091f4797af1217cca7578618bb2a5cd7c4136ca0d2d06c0a77ed00a7"
+  },
+  "monitor": {
+    "id": "197",
+    "deleteStatus": "deleted",
+    "reason": "panel completed; SpB failed; Qwen successors blocked; no retry authorization; pending Level7 proposal not dispatched"
+  }
+}

@@ -1,0 +1,875 @@
+{
+  "observed_at": "2026-09-24T02:15:46.503005+08:00",
+  "read_only": true,
+  "files": {
+    "deployment.json": {
+      "exists": true,
+      "bytes": 1177,
+      "sha256": "4fc0d11ba6f5fb2520d495c3054047badb17b0c2b65c0110ad3871114252a7f8"
+    },
+    "queue-state.json": {
+      "exists": true,
+      "bytes": 186,
+      "sha256": "7c0a259b9e0aabd9ceffaf5c930a41b82313bcd5cec803c9430937a1568f9c8a"
+    },
+    "dispatch.json": {
+      "exists": true,
+      "bytes": 128,
+      "sha256": "d24fbfb655ecc422d9fd47e4cd9fad89e19e0edecb041222a1af4a5b2d42dff7"
+    },
+    "predecessor-acceptance.json": {
+      "exists": true,
+      "bytes": 179,
+      "sha256": "b6453b8c6e448272675ea1cc199c89a3f222b5008b014996fcf820d84caf028c"
+    },
+    "storage-state.json": {
+      "exists": true,
+      "bytes": 1439,
+      "sha256": "f3fe4df180b46e1294dce3227ed6494f774a948d6445b8763e3deafd3af70939"
+    },
+    "storage-failure.json": {
+      "exists": false
+    },
+    "spb-random/short/host-supervision/state.json": {
+      "exists": true,
+      "bytes": 377,
+      "sha256": "a127523b1ff690b26136f2929fdd31cf3e677294d8f6e60ff3ea74db56070313"
+    },
+    "spb-random/short/state.json": {
+      "exists": true,
+      "bytes": 377,
+      "sha256": "a127523b1ff690b26136f2929fdd31cf3e677294d8f6e60ff3ea74db56070313"
+    },
+    "spb-random/long/host-supervision/state.json": {
+      "exists": true,
+      "bytes": 296,
+      "sha256": "d07d2c2e6d42da72933e2025857af4831b8430f40b9d7ac4647c3eb4555a5197"
+    },
+    "spb-random/long/state.json": {
+      "exists": false
+    },
+    "spb-random/long/dispatch.json": {
+      "exists": true,
+      "bytes": 102,
+      "sha256": "5a807b33377531186a4e18dbc7afcf3863cfaed92835d2dedd3ace152d88adf9"
+    },
+    "spb-random/long/parent-readiness.json": {
+      "exists": true,
+      "bytes": 179,
+      "sha256": "92c12a45678d52b4f0902643aac19c7da37110f4596d42352b468b83ce1c0d1d"
+    },
+    "spb-random/long/resume-contract.json": {
+      "exists": true,
+      "bytes": 2308,
+      "sha256": "37b797f181a1532f8c13c38bbf419f3e7e9169ea0727c35ce0dbf1eadafbbb7d"
+    },
+    "spb-random/long/cpu/parent-small-state.json": {
+      "exists": true,
+      "bytes": 1362,
+      "sha256": "ed8c419898d82c84e6742e1112834b1221427d9ed2322517ede7e53c36034891"
+    },
+    "spb-random/short/runs/post/result.json": {
+      "exists": true,
+      "bytes": 5196,
+      "sha256": "4dedb5f136e5e4cf471576f7709bb600a0530b510ad169a3462d9db80cd4ae62"
+    },
+    "spb-random/short/runs/post/.done": {
+      "exists": true,
+      "bytes": 5196,
+      "sha256": "4dedb5f136e5e4cf471576f7709bb600a0530b510ad169a3462d9db80cd4ae62"
+    },
+    "spb-random/short/acceptance-post.json": {
+      "exists": true,
+      "bytes": 5821,
+      "sha256": "e0ef155d184eaf3879d0dc92b9e0e82d6842ec69e06bfff741deea491278c0c2"
+    },
+    "spb-random/short/runs/post/manifest.json": {
+      "exists": true,
+      "bytes": 3047,
+      "sha256": "95184866e444ea0436b2ef90568ca2ff39f6cb7eec577c585b90c855dbb24c72"
+    },
+    "spb-random/short/host-supervision/post-guardian.json": {
+      "exists": true,
+      "bytes": 10686,
+      "sha256": "347a9f820b2e22a8504f43bec5d56fe2054e010d467b191eb1c4a228fcd68475"
+    },
+    "spb-random/short/admission-post.json": {
+      "exists": true,
+      "bytes": 180,
+      "sha256": "26dcc6f8dbddcf04aeef1abcd0e4fe1db2fb891381ee3357b949dd1cac3a4868"
+    },
+    "spb-random/short/runs/post/evaluation_seeds.jsonl": {
+      "exists": true,
+      "bytes": 143,
+      "sha256": "ffaf9953b3c4fc78b2a0f30c67357504f6a6b8e014c3b0adc2db12e87afdad90"
+    },
+    "spb-random/short/runs/post/training_seeds.jsonl": {
+      "exists": false
+    },
+    "spb-random/short/runs/post/checkpoint_evaluation.json": {
+      "exists": true,
+      "bytes": 574,
+      "sha256": "4f6caa3dff00947035a535c01f2fb6556482218fbef239349ad8d74816ec1fad"
+    },
+    "spb-random/short/runs/post/checkpoints/resume_state.json": {
+      "exists": false
+    },
+    "spb-random/short/runs/post/metrics.json": {
+      "exists": false
+    },
+    "spb-random/short/runs/post/checkpoints/sc2_policy_credit_audit.jsonl": {
+      "exists": false
+    },
+    "spb-random/short/runs/post/sampling-rank0.json": {
+      "exists": true,
+      "bytes": 220,
+      "sha256": "3147b32c434c4156b57ba96ce00a812b90d3c4b63f7320b784a2a273e6919cbf"
+    },
+    "spb-random/short/runs/pre/sampling-rank0.json": {
+      "exists": true,
+      "bytes": 220,
+      "sha256": "b50cee5fd352ab06194727adcccc830284ab703efe17e06b09ed93e2ed0b68ab"
+    },
+    "spb-random/short/runs/post/sampling-rank1.json": {
+      "exists": true,
+      "bytes": 220,
+      "sha256": "bf580b9900cbfb13d2f60f88cb977e35a88ddd73d7c7f44b940f6b79a2b83a71"
+    },
+    "spb-random/short/runs/pre/sampling-rank1.json": {
+      "exists": true,
+      "bytes": 220,
+      "sha256": "7e2a0652ee2b819db3e6073a561722a299b83d33132cc4242dc078617a91fea6"
+    },
+    "spb-random/short/runs/post/sampling-rank2.json": {
+      "exists": true,
+      "bytes": 220,
+      "sha256": "5be7fd66047c39ce6c4099d2b17f0aeeb41ccd95ff04d375da82ae40de9e0085"
+    },
+    "spb-random/short/runs/pre/sampling-rank2.json": {
+      "exists": true,
+      "bytes": 220,
+      "sha256": "e50683fb0098cbd594a4d666a9e32d523950322cac0994273ac18e676fa1abde"
+    },
+    "spb-random/short/runs/post/sampling-rank3.json": {
+      "exists": true,
+      "bytes": 220,
+      "sha256": "2a9c0f1193edbb80b55baa8d37a9d0b38e5513afacea72d828a546dead94d24b"
+    },
+    "spb-random/short/runs/pre/sampling-rank3.json": {
+      "exists": true,
+      "bytes": 220,
+      "sha256": "bf13aa3924114988142d1386ae70119f5d19931323e0f09a88dbbbf45c2f21e2"
+    },
+    "spb-random/short/runs/post/sampling-rank4.json": {
+      "exists": true,
+      "bytes": 220,
+      "sha256": "56abc500f195bb974d67c5913a377a399cb1c56e53d355e3827fb72cc0aef9c3"
+    },
+    "spb-random/short/runs/pre/sampling-rank4.json": {
+      "exists": true,
+      "bytes": 220,
+      "sha256": "43fe879faec67ee0a5e53578fb823d3bfd6fe9ee014b24bdb6b1c2d3d2d1b27d"
+    },
+    "spb-random/short/runs/post/sampling-rank5.json": {
+      "exists": true,
+      "bytes": 220,
+      "sha256": "c3bb284e495fe4ca953cfe2d61c22d35356a75f341936d976d8065d4cf615380"
+    },
+    "spb-random/short/runs/pre/sampling-rank5.json": {
+      "exists": true,
+      "bytes": 220,
+      "sha256": "4e290b695fe2ad8ef9a912a16854c6d54042498c87fd47c4009bcad698848361"
+    },
+    "spb-random/short/runs/post/sampling-rank6.json": {
+      "exists": true,
+      "bytes": 220,
+      "sha256": "ed3aa549e180e7a8418cf3202cdb50baf0e18bcdf29260a5d02810e8b2b7e027"
+    },
+    "spb-random/short/runs/pre/sampling-rank6.json": {
+      "exists": true,
+      "bytes": 220,
+      "sha256": "6e451d070a860daef9539443fdb7c8c6405ec031242823360b01de36f3c5fc6a"
+    },
+    "spb-random/short/runs/post/sampling-rank7.json": {
+      "exists": true,
+      "bytes": 220,
+      "sha256": "34bec9a1e71c7c262b62d82adceb1138c69b9efb879a3689a81907deaceef35c"
+    },
+    "spb-random/short/runs/pre/sampling-rank7.json": {
+      "exists": true,
+      "bytes": 220,
+      "sha256": "9599b92e06eab7aa702abc0e02d234579b3b90d37a21f65695cadaa6660b58a1"
+    },
+    "spb-random/long/runs/train96/result.json": {
+      "exists": false
+    },
+    "spb-random/long/runs/train96/.done": {
+      "exists": false
+    },
+    "spb-random/long/acceptance-train96.json": {
+      "exists": false
+    },
+    "spb-random/long/runs/train96/manifest.json": {
+      "exists": true,
+      "bytes": 3046,
+      "sha256": "5422ae326074c24532d525ab7152f78a7256e3b1b5046305644b56fdc2e274d8"
+    },
+    "spb-random/long/host-supervision/train96-guardian.json": {
+      "exists": true,
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "spb-random/long/admission-train96.json": {
+      "exists": true,
+      "bytes": 180,
+      "sha256": "b5265b2f90cb98dab198c97696424a57ea31fe8f9d6772e3e46644aee6edfcaf"
+    },
+    "spb-random/long/runs/train96/evaluation_seeds.jsonl": {
+      "exists": false
+    },
+    "spb-random/long/runs/train96/training_seeds.jsonl": {
+      "exists": true,
+      "bytes": 121,
+      "sha256": "141bd8fddde053ce7c5d5ed7662ade103bc5d08a580de3a894a6a6bff649f635"
+    },
+    "spb-random/long/runs/train96/checkpoint_evaluation.json": {
+      "exists": false
+    },
+    "spb-random/long/runs/train96/checkpoints/resume_state.json": {
+      "exists": true,
+      "bytes": 289,
+      "sha256": "e860f7ca6ad5e1d66e7096a019aae751755615d1db1791f1071c34255bd51008"
+    },
+    "spb-random/long/runs/train96/checkpoints/sc2_policy_credit_audit.jsonl": {
+      "exists": false
+    }
+  },
+  "states": {
+    "deployment.json": {
+      "runtime_sha": "83f3530765babe048035524ddf1651291810818a",
+      "controller_sha": "83f3530765babe048035524ddf1651291810818a",
+      "controller_source": "/var/jfsCache/sc2-spb-l7random96-197-source-20260923-r1/code",
+      "orchestration_sha": "9a7b0faca5b145a891ad211f189121e4949f0eab",
+      "parts": [
+        "spb-random/short",
+        "spb-random/long"
+      ],
+      "predecessor": "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2",
+      "predecessor_sha": "34154283a8298ac4fbaab1c63770a6b81f7d375c",
+      "predecessor_deadline": 1790308720.0467553,
+      "first_dispatch_by": 1790312320.0467553,
+      "wall_seconds": 172800,
+      "gpu_hours": 384,
+      "output_limit_bytes": 1099511627776,
+      "storage_roots": [
+        "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1",
+        "/var/jfsCache/sc2-spb-l7random96-197-source-20260923-r1"
+      ],
+      "new_games": 792,
+      "new_updates": 96,
+      "short_included": true,
+      "no_retry": true,
+      "successors_authorized": false,
+      "authorization": "Sep23 user approved original SpB L7 per-game independent seed short+96 AFTER current Qwen nativeCP8 train+eval complete acceptance; 792new games/96PPO; <=48wallh/384GPUh/1TiB including short/loading/waits/CP/eval; no other arm or retry"
+    },
+    "queue-state.json": {
+      "phase": "running-unverified",
+      "completed": [
+        "spb-random/short"
+      ],
+      "first_dispatch_by": 1790312320.0467553,
+      "part": "spb-random/long",
+      "deadline": 1790356959.0174987
+    },
+    "dispatch.json": {
+      "start": 1790184159.0174987,
+      "deadline": 1790356959.0174987,
+      "gpu_hours": 384,
+      "new_games": 792,
+      "new_updates": 96
+    },
+    "predecessor-acceptance.json": {
+      "passed": true,
+      "root": "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2",
+      "runtime_sha": "34154283a8298ac4fbaab1c63770a6b81f7d375c",
+      "checked_at": 1790184158.693586
+    },
+    "storage-state.json": {
+      "command": [
+        "du",
+        "-sb",
+        "--null",
+        "--",
+        "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1",
+        "/var/jfsCache/sc2-spb-l7random96-197-source-20260923-r1"
+      ],
+      "roots": [
+        "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1",
+        "/var/jfsCache/sc2-spb-l7random96-197-source-20260923-r1"
+      ],
+      "started_at": 1790187340.839901,
+      "deadline": 1790356959.0174987,
+      "limit": 1099511627776,
+      "bytes": 64643411659,
+      "returncode": 0,
+      "status": "measured",
+      "stdout": {
+        "tail": "64623462713\t/var/jfsCache/sc2-spb-l7random96-197-20260923-r1\u000019948946\t/var/jfsCache/sc2-spb-l7random96-197-source-20260923-r1\u0000",
+        "characters": 126,
+        "truncated": false
+      },
+      "stderr": {
+        "tail": "",
+        "characters": 0,
+        "truncated": false
+      },
+      "quiescence": {
+        "version": "host-guardian-v1",
+        "container_id": "40d5a3f43a41fffb0eb51ea9a1c816b118cddef0b151464946d0c663fc024217",
+        "owner_root": "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/spb-random/long",
+        "guardian_pid": 1825139,
+        "paused_verified": true,
+        "cleanup": "verified-unpaused",
+        "paused_at": 1790187340.8897457,
+        "mode": "paused",
+        "resumed_at": 1790187340.995859
+      },
+      "measured_at": 1790187340.9575884,
+      "root_bytes": {
+        "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1": 64623462713,
+        "/var/jfsCache/sc2-spb-l7random96-197-source-20260923-r1": 19948946
+      },
+      "checked_at": 1790187340.9960415
+    },
+    "storage-failure.json": null,
+    "spb-random/short/host-supervision/state.json": {
+      "version": "host-guardian-v1",
+      "phase": "completed",
+      "completed": [
+        "pre",
+        "train2",
+        "post"
+      ],
+      "deadline": 1790356959.0174987,
+      "learning_validated": false,
+      "started_at": 1790184159.0187504,
+      "stage": "post",
+      "container_id": "e7d857c5a6f3bf8ea0a9ee6e69d048fe6aa76a5994014a0c9a47221856c125ec",
+      "exit_code": 0,
+      "finished_at": 1790187107.128663
+    },
+    "spb-random/short/state.json": {
+      "version": "host-guardian-v1",
+      "phase": "completed",
+      "completed": [
+        "pre",
+        "train2",
+        "post"
+      ],
+      "deadline": 1790356959.0174987,
+      "learning_validated": false,
+      "started_at": 1790184159.0187504,
+      "stage": "post",
+      "container_id": "e7d857c5a6f3bf8ea0a9ee6e69d048fe6aa76a5994014a0c9a47221856c125ec",
+      "exit_code": 0,
+      "finished_at": 1790187107.128663
+    },
+    "spb-random/long/host-supervision/state.json": {
+      "version": "host-guardian-v1",
+      "phase": "running-unverified",
+      "completed": [],
+      "deadline": 1790356959.0174987,
+      "learning_validated": false,
+      "started_at": 1790187111.9027476,
+      "stage": "train96",
+      "container_id": "40d5a3f43a41fffb0eb51ea9a1c816b118cddef0b151464946d0c663fc024217"
+    },
+    "spb-random/long/state.json": null,
+    "spb-random/long/dispatch.json": {
+      "start": 1790184159.0174987,
+      "deadline": 1790356959.0174987,
+      "clock_shared_with_short": true
+    },
+    "spb-random/long/parent-readiness.json": {
+      "passed": true,
+      "actual_parent_verified": true,
+      "runtime_sha": "83f3530765babe048035524ddf1651291810818a",
+      "cuda_initialized": false,
+      "checked_at": 1790187111.022345
+    },
+    "spb-random/long/resume-contract.json": {
+      "version": "accepted-spb-random-full-state-prefix-v1",
+      "parent": "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/spb-random/short",
+      "checkpoint": "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/spb-random/short/runs/train2/checkpoints/global_step_2",
+      "parent_sha": "83f3530765babe048035524ddf1651291810818a",
+      "start_step": 2,
+      "target_step": 96,
+      "driver_rng_unavailable_accepted": false,
+      "files": {
+        "state.json": "a127523b1ff690b26136f2929fdd31cf3e677294d8f6e60ff3ea74db56070313",
+        "deployment.json": "35f51b3751d1cae59fd210eef3f0954f60b3bd171717f51d7d28a442d40781c2",
+        "cpu/train2/resolved_config.json": "fe0e3c00571eabc7e625ea192b55f6e360d5a6cb3d53c602085a81bada1fed5b",
+        "acceptance-pre.json": "ec43327f9ee9ff6b246c661093d6bdbb96c90a1a186d900d0ae007afd8690aff",
+        "runs/pre/result.json": "9f97422a7e26696f32bef02b190ae50334b1d83295350e77cdcd78c2f008a08f",
+        "runs/pre/.done": "9f97422a7e26696f32bef02b190ae50334b1d83295350e77cdcd78c2f008a08f",
+        "runs/pre/manifest.json": "d947d3e6251543b05ba6ff08fe272de7cb7a1d1bde4877d180cb8f785cb4fc86",
+        "acceptance-train2.json": "c7d66d947cf3d1d39e32b876bdbef835e2919e8c9dee41e92d01abd7e6556878",
+        "runs/train2/result.json": "e7ef23f23688b5abecbd456ecbd36502b8a212e657c6cf4cb682950afea83d9e",
+        "runs/train2/.done": "e7ef23f23688b5abecbd456ecbd36502b8a212e657c6cf4cb682950afea83d9e",
+        "runs/train2/manifest.json": "83335fae185105bed4ee9e415f8ef90827b45cd9757bcf245cc64a35b9e7a20f",
+        "acceptance-post.json": "e0ef155d184eaf3879d0dc92b9e0e82d6842ec69e06bfff741deea491278c0c2",
+        "runs/post/result.json": "4dedb5f136e5e4cf471576f7709bb600a0530b510ad169a3462d9db80cd4ae62",
+        "runs/post/.done": "4dedb5f136e5e4cf471576f7709bb600a0530b510ad169a3462d9db80cd4ae62",
+        "runs/post/manifest.json": "95184866e444ea0436b2ef90568ca2ff39f6cb7eec577c585b90c855dbb24c72",
+        "runs/train2/training_seeds.jsonl": "e6fd6d694811367de8b1023e20ba103d0cfbaab581ac1100ae78d4398007676f",
+        "runs/train2/episode_outcomes.jsonl": "1036ef5469a04dfc199ce9d208cfa3b84ef55c8ae697e0fcd603200775fe0a68",
+        "runs/train2/metrics.json": "0d8a88dbf93e344637040ab4bda40a8d74654196d9346b411c1f4d33f9fc5d0b",
+        "runs/train2/checkpoints/sc2_policy_credit_audit.jsonl": "e1419365ab24e7243f41fd7aec54d072d7a5876867741d8472962c2e770072ed"
+      }
+    },
+    "spb-random/long/cpu/parent-small-state.json": {
+      "rank_states": [
+        {
+          "rank": 0,
+          "last_epoch": 2,
+          "rng_keys": [
+            "cpu",
+            "cuda",
+            "numpy",
+            "random"
+          ]
+        },
+        {
+          "rank": 1,
+          "last_epoch": 2,
+          "rng_keys": [
+            "cpu",
+            "cuda",
+            "numpy",
+            "random"
+          ]
+        },
+        {
+          "rank": 2,
+          "last_epoch": 2,
+          "rng_keys": [
+            "cpu",
+            "cuda",
+            "numpy",
+            "random"
+          ]
+        },
+        {
+          "rank": 3,
+          "last_epoch": 2,
+          "rng_keys": [
+            "cpu",
+            "cuda",
+            "numpy",
+            "random"
+          ]
+        },
+        {
+          "rank": 4,
+          "last_epoch": 2,
+          "rng_keys": [
+            "cpu",
+            "cuda",
+            "numpy",
+            "random"
+          ]
+        },
+        {
+          "rank": 5,
+          "last_epoch": 2,
+          "rng_keys": [
+            "cpu",
+            "cuda",
+            "numpy",
+            "random"
+          ]
+        },
+        {
+          "rank": 6,
+          "last_epoch": 2,
+          "rng_keys": [
+            "cpu",
+            "cuda",
+            "numpy",
+            "random"
+          ]
+        },
+        {
+          "rank": 7,
+          "last_epoch": 2,
+          "rng_keys": [
+            "cpu",
+            "cuda",
+            "numpy",
+            "random"
+          ]
+        }
+      ],
+      "next_reset_index": 2,
+      "next_seeds": [
+        36,
+        17,
+        96,
+        12,
+        79,
+        32,
+        68,
+        90
+      ],
+      "native_driver_rng": true,
+      "cuda_initialized": false
+    }
+  },
+  "stages": {
+    "short/post": {
+      "result": {
+        "status": "completed",
+        "ended_at": "2026-09-23T18:11:32.012354+00:00",
+        "mode": "evaluation",
+        "process_exit_code": 0,
+        "training_updates": 0,
+        "metrics_finite": true,
+        "response_record_count": 80,
+        "metrics_precision": "binary64-v1",
+        "evaluable_action_count": 52,
+        "valid_evaluable_action_count": 52,
+        "console_sha256": "c35ee42248dcf3c94ec5f9e8a3a42aaa1f33b6bcce952dd310cd626869203445",
+        "natural_match_completed": true,
+        "termination_evidence": "game_result"
+      },
+      "outcomes": {
+        "trajectories": 8,
+        "natural_games": 8,
+        "wins": 4,
+        "defeats": 4,
+        "ties": 0,
+        "truncated": 0,
+        "natural_win_rate": 0.5
+      },
+      "done_matches_result": true,
+      "acceptance_result_matches": true,
+      "acceptance_evidence": {
+        "consumed_answers": 52,
+        "valid_consumed_answers": 52,
+        "parsed_plans": 52,
+        "validated_queue_entries": 583,
+        "validated_locally_queued_commands": 336,
+        "execution_scope": "local Depot/Marine commands, not production completion or causal wins"
+      },
+      "manifest": {
+        "model_id": "Panyuqi/SpikingBrain-2.0-instruct",
+        "model_revision": "sha256:de52e8ef993afc763f9d4fb498e8d8302ef0bc13bd7dfd53c6ae5f77f43698b5",
+        "source_commit": "83f3530765babe048035524ddf1651291810818a",
+        "dirty": false,
+        "world_size": 8,
+        "metrics_precision": "binary64-v1",
+        "mode": "evaluation",
+        "start_step": 0,
+        "target_steps": 1
+      },
+      "guardian": {
+        "version": "host-guardian-v1",
+        "container_id": "e7d857c5a6f3bf8ea0a9ee6e69d048fe6aa76a5994014a0c9a47221856c125ec",
+        "owner_root": "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/spb-random/short",
+        "deadline": 1790356959.0174987,
+        "lease_seconds": 45,
+        "phase": "completed",
+        "pause_attempted": true,
+        "started_at": 1790186435.0181906,
+        "initial_state": {
+          "Dead": false,
+          "Error": "",
+          "ExitCode": 0,
+          "FinishedAt": "0001-01-01T00:00:00Z",
+          "OOMKilled": false,
+          "Paused": false,
+          "Pid": 0,
+          "Restarting": false,
+          "Running": false,
+          "StartedAt": "0001-01-01T00:00:00Z",
+          "Status": "created"
+        },
+        "final_state": {
+          "Dead": false,
+          "Error": "",
+          "ExitCode": 0,
+          "FinishedAt": "2026-09-23T18:11:32.033176264Z",
+          "OOMKilled": false,
+          "Paused": false,
+          "Pid": 0,
+          "Restarting": false,
+          "Running": false,
+          "StartedAt": "2026-09-23T18:00:35.045487395Z",
+          "Status": "exited"
+        },
+        "finished_at": 1790187106.9632638
+      },
+      "container": {
+        "returncode": 0,
+        "data": {
+          "id": "e7d857c5a6f3bf8ea0a9ee6e69d048fe6aa76a5994014a0c9a47221856c125ec",
+          "owner": "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/spb-random/short",
+          "state": {
+            "Dead": false,
+            "Error": "",
+            "ExitCode": 0,
+            "FinishedAt": "2026-09-23T18:11:32.033176264Z",
+            "OOMKilled": false,
+            "Paused": false,
+            "Pid": 0,
+            "Restarting": false,
+            "Running": false,
+            "StartedAt": "2026-09-23T18:00:35.045487395Z",
+            "Status": "exited"
+          }
+        },
+        "error": ""
+      },
+      "admission": {
+        "passed": true,
+        "checked_at": 1790186434.9459085,
+        "deadline": 1790356959.0174987,
+        "eight_idle_gpus": true,
+        "ram_gib_min": 600,
+        "nvme_gib_min": 1084,
+        "fsync": true
+      },
+      "evaluation_seeds": [
+        {
+          "base_seed": 1000,
+          "reset_index": 0,
+          "seeds": [
+            605183188,
+            1075501356,
+            2084414326,
+            2203880230,
+            3000371298,
+            949752300,
+            3225036469,
+            2823708076
+          ]
+        }
+      ],
+      "training_seeds": null,
+      "checkpoint_evaluation.json": {
+        "checkpoint": "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/spb-random/short/runs/train2/checkpoints/global_step_2",
+        "loaded_global_step": 2,
+        "checkpoint_load_returned": true,
+        "val_only": true,
+        "optimizer_updates": 0,
+        "feedback": "0",
+        "temperature": 0.8,
+        "do_sample": true,
+        "games": 8,
+        "game_seeds": [
+          605183188,
+          1075501356,
+          2084414326,
+          2203880230,
+          3000371298,
+          949752300,
+          3225036469,
+          2823708076
+        ],
+        "answers": "online SpB; no replay or replacement",
+        "optimizer_loaded_by_existing_loader_but_not_updated": true
+      },
+      "checkpoints/resume_state.json": null,
+      "console_tail": {
+        "total_bytes": 1295865,
+        "tail_bytes": 1048576,
+        "matched_count": 26,
+        "lines": [
+          "(SC2Worker pid=2516) Combat result reward: {\"pid\": 7349, \"game_loop\": 17260, \"boundary\": \"terminal\", \"last_consumed_policy_action_id\": 10, \"killed_value\": 1650.0, \"lost_value\": 7850.0, \"scale\": 0.001, \"reward\": -4.025}",
+          "(TaskRunner pid=2336) step:2 - metrics_precision:binary64-v1 - val/text/test_score:-13.090500354766846 - val/text/tool_call_count/mean:0 - val/success_rate:0.5 - val/sc2_attack_ct:0.25 - val/sc2_action_valid:1 - val/sc2_semantic_action_valid:1 - val/sc2_semantic_action_evaluable:1 - val/sc2_projection_action_valid:1 - val/sc2_executor_action_valid:1 - val/sc2/episode_count:8 - val/sc2/no_policy_episode_count:0 - val/sc2/policy_decision_count:52"
+        ],
+        "read_limit_bytes": 1048576
+      },
+      "returned_ppo": [],
+      "audits": null,
+      "paired_rng": [
+        {
+          "rank": 0,
+          "all_hashes_match": true
+        },
+        {
+          "rank": 1,
+          "all_hashes_match": true
+        },
+        {
+          "rank": 2,
+          "all_hashes_match": true
+        },
+        {
+          "rank": 3,
+          "all_hashes_match": true
+        },
+        {
+          "rank": 4,
+          "all_hashes_match": true
+        },
+        {
+          "rank": 5,
+          "all_hashes_match": true
+        },
+        {
+          "rank": 6,
+          "all_hashes_match": true
+        },
+        {
+          "rank": 7,
+          "all_hashes_match": true
+        }
+      ]
+    },
+    "long/train96": {
+      "result": null,
+      "outcomes": null,
+      "done_matches_result": null,
+      "acceptance_result_matches": null,
+      "acceptance_evidence": null,
+      "manifest": {
+        "model_id": "Panyuqi/SpikingBrain-2.0-instruct",
+        "model_revision": "sha256:de52e8ef993afc763f9d4fb498e8d8302ef0bc13bd7dfd53c6ae5f77f43698b5",
+        "source_commit": "83f3530765babe048035524ddf1651291810818a",
+        "dirty": false,
+        "world_size": 8,
+        "metrics_precision": "binary64-v1",
+        "mode": "training",
+        "start_step": 2,
+        "target_steps": 96
+      },
+      "guardian": null,
+      "container": {
+        "returncode": 0,
+        "data": {
+          "id": "40d5a3f43a41fffb0eb51ea9a1c816b118cddef0b151464946d0c663fc024217",
+          "owner": "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/spb-random/long",
+          "state": {
+            "Dead": false,
+            "Error": "",
+            "ExitCode": 0,
+            "FinishedAt": "0001-01-01T00:00:00Z",
+            "OOMKilled": false,
+            "Paused": false,
+            "Pid": 1825200,
+            "Restarting": false,
+            "Running": true,
+            "StartedAt": "2026-09-23T18:11:52.44508979Z",
+            "Status": "running"
+          }
+        },
+        "error": ""
+      },
+      "admission": {
+        "passed": true,
+        "checked_at": 1790187112.3459792,
+        "deadline": 1790356959.0174987,
+        "eight_idle_gpus": true,
+        "ram_gib_min": 600,
+        "nvme_gib_min": 1084,
+        "fsync": true
+      },
+      "evaluation_seeds": null,
+      "training_seeds": [
+        {
+          "base_seed": 0,
+          "reset_index": 2,
+          "seed_protocol": "independent_uniform101",
+          "seeds": [
+            36,
+            17,
+            96,
+            12,
+            79,
+            32,
+            68,
+            90
+          ]
+        }
+      ],
+      "checkpoint_evaluation.json": null,
+      "checkpoints/resume_state.json": {
+        "from_checkpoint": "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/spb-random/short/runs/train2/checkpoints/global_step_2",
+        "global_step": 2,
+        "next_reset_index": 2,
+        "next_seeds": [
+          36,
+          17,
+          96,
+          12,
+          79,
+          32,
+          68,
+          90
+        ],
+        "source": "checkpoint",
+        "model_optimizer_dataloader_load_returned": true
+      },
+      "console_tail": {
+        "total_bytes": 100512,
+        "tail_bytes": 100512,
+        "matched_count": 12,
+        "lines": [
+          "(WorkerDict pid=4654) SC2_ACTION_SUPPORT {\"budget\": 192, \"canonical_tokenizations_only\": true, \"eos_token_id\": 151645, \"mode\": \"sc2-canonical-bo-support-v1\", \"pad_token_id\": 151643, \"tokenizer_sha256\": \"a63080b4b30dc861fe1b0e420c53a241304dc81aff3d9bb315e6e33e2a1ab794\"} [repeated 7x across cluster]",
+          "(WorkerDict pid=4459) SC2_NO_THINKING {\"blocked_counts\": {\"\": 2, \"<\": 7, \"</\": 7, \"</t\": 2, \"</th\": 13, \"</thi\": 4, \"</thin\": 276, \"<t\": 2, \"<th\": 13, \"<thi\": 4, \"<thin\": 276}, \"forbidden_prefixes\": [\"<think\", \"</think\"], \"mode\": \"sc2-no-thinking-v1\", \"support_mask_sha256\": \"63a9546dd5fb39a64c6e2a2ad13f31101aacaade9bac07258d0e415480181e0d\"} [repeated 7x across cluster]",
+          "(SC2Worker pid=2512) Combat result reward: {\"pid\": 7214, \"game_loop\": 0, \"boundary\": \"planner\", \"last_consumed_policy_action_id\": null, \"killed_value\": 0.0, \"lost_value\": 0.0, \"scale\": 0.001, \"reward\": 0.0}",
+          "(SC2Worker pid=2505) Combat result reward: {\"pid\": 7244, \"game_loop\": 0, \"boundary\": \"planner\", \"last_consumed_policy_action_id\": null, \"killed_value\": 0.0, \"lost_value\": 0.0, \"scale\": 0.001, \"reward\": 0.0}",
+          "(SC2Worker pid=2510) Combat result reward: {\"pid\": 7274, \"game_loop\": 0, \"boundary\": \"planner\", \"last_consumed_policy_action_id\": null, \"killed_value\": 0.0, \"lost_value\": 0.0, \"scale\": 0.001, \"reward\": 0.0}",
+          "(SC2Worker pid=2516) Combat result reward: {\"pid\": 7304, \"game_loop\": 0, \"boundary\": \"planner\", \"last_consumed_policy_action_id\": null, \"killed_value\": 0.0, \"lost_value\": 0.0, \"scale\": 0.001, \"reward\": 0.0}",
+          "(SC2Worker pid=2507) Combat result reward: {\"pid\": 7334, \"game_loop\": 0, \"boundary\": \"planner\", \"last_consumed_policy_action_id\": null, \"killed_value\": 0.0, \"lost_value\": 0.0, \"scale\": 0.001, \"reward\": 0.0}",
+          "(SC2Worker pid=2519) Combat result reward: {\"pid\": 7364, \"game_loop\": 0, \"boundary\": \"planner\", \"last_consumed_policy_action_id\": null, \"killed_value\": 0.0, \"lost_value\": 0.0, \"scale\": 0.001, \"reward\": 0.0}",
+          "(SC2Worker pid=2511) Combat result reward: {\"pid\": 7394, \"game_loop\": 0, \"boundary\": \"planner\", \"last_consumed_policy_action_id\": null, \"killed_value\": 0.0, \"lost_value\": 0.0, \"scale\": 0.001, \"reward\": 0.0}",
+          "(SC2Worker pid=2515) Combat result reward: {\"pid\": 7424, \"game_loop\": 0, \"boundary\": \"planner\", \"last_consumed_policy_action_id\": null, \"killed_value\": 0.0, \"lost_value\": 0.0, \"scale\": 0.001, \"reward\": 0.0}"
+        ],
+        "read_limit_bytes": 1048576
+      },
+      "returned_ppo": [],
+      "audits": null
+    }
+  },
+  "schema": "spb-random-short-complete-native-long-start-read-only-v1",
+  "root": "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1",
+  "ssh_alias": "sc2-a100-197",
+  "checks": {
+    "post_result_done_acceptance_match": true,
+    "exact_post_container_and_guardian_exit0": true,
+    "short_host_terminal_completed_exit0": true,
+    "native_cp2_cpu_parent_passed": true,
+    "actual_gpu_native_load_returned": true,
+    "seed_reset2_matches": true,
+    "all_eight_sc2_planner_boundaries_observed": true,
+    "deadline_shared_unchanged": true,
+    "monitor_full_verifier_rerun": false,
+    "large_checkpoint_contents_read": false
+  },
+  "prior_stage_evidence": [
+    "spb-random-pre-complete-20260924-013918.json",
+    "spb-random-train2-complete-20260924-020553.json"
+  ],
+  "notification_events": [
+    "SpB random post and complete short accepted",
+    "SpB random long started from own native CP2; actual restoration and first SC2 batch observed"
+  ],
+  "limitations": [
+    "Paired pre4/8 -> CP2post4/8 gives no demonstrated gain; eight pairs cannot establish stable learning or architecture superiority.",
+    "Post response_record_count80 is not the consumption denominator: only52 actual evaluable consumed answers,52 valid.",
+    "Long first resumed batch is global3/reset2. No returned long PPO, audit or terminal result observed; CPU readiness or SC2 startup is not PPO completion.",
+    "Prior GPU/SC2, short first PPO and train2 completion were already notified; do not repeat those events.",
+    "Original deadline,792-game/96-PPO/384GPUh/1TiB budgets unchanged. Empty running guardian and absent long/state are normal.",
+    "No full verifier rerun, complete log read, large checkpoint read, GPU diagnostic or server mutation. The frozen controller handled gates and dispatch; monitor only read small receipts and bounded tails."
+  ],
+  "actions": {
+    "server_mutation": false,
+    "duplicate_dispatch": false,
+    "automatic_repair_or_restart": false,
+    "gpu_diagnostics": false,
+    "checkpoint_contents_read": false,
+    "monitor_created_or_deleted": false
+  }
+}

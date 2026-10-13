@@ -1,0 +1,111 @@
+{
+  "checked_at": 1790391295.8373868,
+  "checked_at_beijing": "2026-09-26T10:54:55.837400+08:00",
+  "queue": {
+    "phase": "running-unverified",
+    "completed": [
+      "qwen-same/short"
+    ],
+    "retained_games": 24,
+    "retained_updates": 2,
+    "new_games": 768,
+    "new_updates": 94,
+    "deadline": 1790530922.7417548,
+    "part": "qwen-same/long"
+  },
+  "host": {
+    "version": "host-guardian-v1",
+    "phase": "running-unverified",
+    "completed": [],
+    "deadline": 1790530922.7417548,
+    "learning_validated": false,
+    "started_at": 1790390273.874901,
+    "stage": "train96",
+    "container_id": "91d0dbd99c166ea114df62af0e3d07ec3aa94cf3f59f5d4a86ea43d6ff4d986b"
+  },
+  "result": null,
+  "resume": {
+    "from_checkpoint": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/short/runs/train2/checkpoints/global_step_2",
+    "global_step": 2,
+    "next_reset_index": 2,
+    "next_seeds": [
+      53,
+      53,
+      53,
+      53,
+      53,
+      53,
+      53,
+      53
+    ],
+    "source": "checkpoint",
+    "model_optimizer_dataloader_load_returned": true
+  },
+  "metrics_count": 0,
+  "metrics_mtime": null,
+  "prefix_step_seconds": [
+    230.61075131967664,
+    215.07220206037164
+  ],
+  "dispatched_seed_batches": 4,
+  "container": {
+    "id": "91d0dbd99c166ea114df62af0e3d07ec3aa94cf3f59f5d4a86ea43d6ff4d986b",
+    "state": {
+      "Dead": false,
+      "Error": "",
+      "ExitCode": 0,
+      "FinishedAt": "0001-01-01T00:00:00Z",
+      "OOMKilled": false,
+      "Paused": false,
+      "Pid": 3308209,
+      "Restarting": false,
+      "Running": true,
+      "StartedAt": "2026-09-26T02:37:54.320353345Z",
+      "Status": "running"
+    },
+    "owner": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/long"
+  },
+  "storage": {
+    "bytes": 50156787273,
+    "limit": 1099511627776,
+    "checked_at": 1790391289.4469254,
+    "status": "measured",
+    "returncode": 0,
+    "deadline": 1790530922.7417548
+  },
+  "latest_returned": {
+    "checked_at": 1790391431.2686484,
+    "step": 6,
+    "metrics_precision": "binary64-v1",
+    "step_seconds": 248.2928063860163,
+    "update_actor_seconds": 20.608157953247428,
+    "grad_norm": 283.9210074742635,
+    "invalid_advantage_max": 0,
+    "success_rate": 0.625,
+    "seed_resets": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "currently_dispatched_global_step": 7,
+    "source": "last 512 KiB console.log tail; seed dispatch alone not counted as returned PPO"
+  },
+  "eta": {
+    "date_beijing": "2026-09-26",
+    "estimated_completion_window_beijing": [
+      "17:00",
+      "19:00"
+    ],
+    "scope": "training through96 plus checkpoint finalization, acceptance and8game eval96",
+    "approx_remaining_hours": [
+      6,
+      8
+    ],
+    "basis": "At10:57 returned global6, currentglobal7; latest step248.293seconds, initial train2 steps230.611/215.072sec. Latest-step remaining90steps about6.21h; allowance for checkpoint writes, variability, final loading/evaluation. Early estimate from few observed steps, not a guarantee.",
+    "hard_deadline_beijing": "2026-09-28 01:42:02.741755",
+    "hard_deadline_is_not_eta": true
+  },
+  "note": "Read-only ETA query. Running metrics.json is finalized at stage completion; absent metrics.json is not0updates. No server mutation, repeat dispatch, deletion or new experiment."
+}

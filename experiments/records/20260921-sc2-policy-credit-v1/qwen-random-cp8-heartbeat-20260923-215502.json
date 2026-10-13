@@ -1,0 +1,248 @@
+{
+  "checked_at": "2026-09-23T21:55:02.666858+08:00",
+  "root": "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2",
+  "runtime_sha": "34154283a8298ac4fbaab1c63770a6b81f7d375c",
+  "read_only": true,
+  "receipts": {
+    "queue-state.json": {
+      "phase": "running-unverified",
+      "stage": "train96",
+      "deadline": 1790308720.0467553
+    },
+    "state.json": null,
+    "dispatch.json": {
+      "start": 1790135920.0467653,
+      "resumed_at": 1790168798.9821274,
+      "deadline": 1790308720.0467553,
+      "suite_deadline": 1790420762.305692,
+      "original_clock_preserved": true,
+      "gpu_hours": 384,
+      "new_slots": 712
+    },
+    "host-supervision/state.json": {
+      "version": "host-guardian-v1",
+      "phase": "running-unverified",
+      "completed": [],
+      "deadline": 1790308720.0467553,
+      "learning_validated": false,
+      "started_at": 1790168798.0071752,
+      "stage": "train96",
+      "container_id": "fc2f74a4285c5e80660257f42bd1caa21ad1a0614699d680e74938f013106b06"
+    },
+    "host-supervision/train96-guardian.json": {
+      "precreated_terminal_slot": true,
+      "bytes": 0
+    },
+    "host-supervision/eval96-guardian.json": null,
+    "storage-state.json": {
+      "status": "measured",
+      "bytes": 200428630860,
+      "returncode": 0,
+      "stderr": {
+        "tail": "",
+        "characters": 0,
+        "truncated": false
+      },
+      "checked_at": 1790171740.1124055,
+      "limit": 1099511627776,
+      "deadline": 1790308720.0467553,
+      "root_count": 15,
+      "within_limit": true,
+      "stderr_empty": true
+    },
+    "storage-failure.json": null,
+    "suite-account/storage-state.json": {
+      "status": "measured",
+      "bytes": 1031747862730,
+      "returncode": 0,
+      "stderr": {
+        "tail": "",
+        "characters": 0,
+        "truncated": false
+      },
+      "checked_at": 1790171740.4879422,
+      "limit": 2199023255552,
+      "deadline": 1790420762.305692,
+      "root_count": 15,
+      "within_limit": true,
+      "stderr_empty": true
+    },
+    "suite-account/storage-failure.json": null,
+    "acceptance-train96.json": null,
+    "acceptance-eval96.json": null,
+    "runs/train96/result.json": null,
+    "runs/train96/.done": null,
+    "runs/eval96/result.json": null,
+    "runs/eval96/.done": null,
+    "runs/train96/checkpoints/resume_state.json": {
+      "from_checkpoint": "/var/jfsCache/sc2-l7-followup197-20260922-r4/qwen-random/long/runs/train96/checkpoints/global_step_8",
+      "global_step": 8,
+      "next_reset_index": 8,
+      "next_seeds": [
+        8,
+        24,
+        72,
+        28,
+        30,
+        18,
+        69,
+        57
+      ],
+      "source": "checkpoint",
+      "model_optimizer_dataloader_load_returned": true
+    }
+  },
+  "manifest": {
+    "source_commit": "34154283a8298ac4fbaab1c63770a6b81f7d375c",
+    "dirty": false,
+    "world_size": 8,
+    "metrics_precision": "binary64-v1",
+    "start_step": 8
+  },
+  "container_id": "fc2f74a4285c5e80660257f42bd1caa21ad1a0614699d680e74938f013106b06",
+  "container_state": {
+    "Status": "running",
+    "Running": true,
+    "Paused": false,
+    "Restarting": false,
+    "OOMKilled": false,
+    "Dead": false,
+    "Pid": 1523713,
+    "ExitCode": 0,
+    "Error": "",
+    "StartedAt": "2026-09-23T13:06:39.085218914Z",
+    "FinishedAt": "0001-01-01T00:00:00Z"
+  },
+  "seed_check": {
+    "count": 17,
+    "first_reset": 8,
+    "last_reset": 24,
+    "all_match_private_random0": true,
+    "latest": {
+      "base_seed": 0,
+      "reset_index": 24,
+      "seed_protocol": "independent_uniform101",
+      "seeds": [
+        2,
+        69,
+        54,
+        79,
+        12,
+        33,
+        8,
+        28
+      ]
+    }
+  },
+  "progress": {
+    "latest_returned_step": 24,
+    "returned_steps_in_bounded_tail": [
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24
+    ],
+    "new_completed_games": 128,
+    "new_wins": 112,
+    "consumed_answers": 406,
+    "valid_answers": 406,
+    "accepted_audits": 16,
+    "last_three_returned": [
+      {
+        "step": 22,
+        "actor/grad_norm": 0.06783426739275455,
+        "timing_s/update_actor": 10.918758051469922,
+        "episode/success_rate": 0.625,
+        "episode/valid_action_ratio": 1,
+        "policy_credit/invalid_advantage_max": 0
+      },
+      {
+        "step": 23,
+        "actor/grad_norm": 0.13936836536352834,
+        "timing_s/update_actor": 11.354924865067005,
+        "episode/success_rate": 1,
+        "episode/valid_action_ratio": 1,
+        "policy_credit/invalid_advantage_max": 0
+      },
+      {
+        "step": 24,
+        "actor/grad_norm": 81.25647123654683,
+        "timing_s/update_actor": 11.227515329606831,
+        "episode/success_rate": 0.75,
+        "episode/valid_action_ratio": 1,
+        "policy_credit/invalid_advantage_max": 0
+      }
+    ],
+    "final_metrics_present": false,
+    "actual_update_evidence": {
+      "steps9_to14": "qwen-random-cp8-first-ppo-20260923.json: returned_ppo",
+      "steps15_to24": "this snapshot bounded console tail",
+      "merged_completed_steps": "9..24 (16 returned PPO phases); audits alone are not update evidence"
+    }
+  },
+  "checkpoints": [
+    {
+      "step": 16,
+      "required_files": 26,
+      "all_nonempty": true,
+      "missing": [],
+      "inventory_sha256": "302ecf11b396a5924a2d47fc69ab8c5b74a148f9be2ae162de6f6aef1de0de6f"
+    },
+    {
+      "step": 24,
+      "required_files": 26,
+      "all_nonempty": true,
+      "missing": [],
+      "inventory_sha256": "302ecf11b396a5924a2d47fc69ab8c5b74a148f9be2ae162de6f6aef1de0de6f"
+    }
+  ],
+  "console_tail": {
+    "total_bytes": 7252235,
+    "offset": 3057931,
+    "bytes_read": 4194304,
+    "sha256": "649cf9c9213ced2097c58d3e9e57a840ed82a6399ebab44e7d37b506da5f94af"
+  },
+  "small_receipt_sha256": {
+    "deployment.json": "0d40bcf2feac7c5415cdcf9e53f3c7452eaa387ca53a17c8d9db601c045fef84",
+    "queue-state.json": "bef692ae73ff470ad9b6f68016db6066700ede4ff40bbe68a9a1c7a0513ed821",
+    "dispatch.json": "b030683436d5602875191413fdbc5c6120d4e9fc0855c45d0fab550af5652e42",
+    "host-supervision/state.json": "320003d824465cd1a3886b11eb84312d94226448829b88c292090f66554d3d72",
+    "host-supervision/train96-guardian.json": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "storage-state.json": "816c46689a2b74e77f4765e1e01114cb28e2ebc09f3ec20be1a78bad8597ca92",
+    "suite-account/storage-state.json": "8df59a5ced83b29afb423a17aa150925e5eeba2a531c975e4d4f6918d1d2458b",
+    "runs/train96/checkpoints/resume_state.json": "b3683a40c940b53d44773c4371a04ecd0c70be6aff5cbe53abf8a6c87af27031",
+    "runs/train96/manifest.json": "06bd9fbe5f38b0c0bc86add64b0ba5533eca4d4115574c59380859c4beb347cb",
+    "runs/train96/training_seeds.jsonl": "967a52d515d5cc6cc8b81c1971008e312f60f5376df9408cb39bcc4a71437e6c",
+    "runs/train96/checkpoints/sc2_policy_credit_audit.jsonl": "0fba95383d59ab5ae42f63630278ea3f81e548fe11e494edd14642f0dd839324",
+    "runs/train96/episode_outcomes.jsonl": "09753ca0ecb5a1384babf8e06d381dde12f7c6ae97c2af9ec4c7c4d1f511563f"
+  },
+  "schema": "qwen-native-cp8-readonly-heartbeat-v1",
+  "storage_rechecked_at": "2026-09-23T21:55:43.926156+08:00",
+  "monitor": {
+    "id": "197-qwen-cp8",
+    "action": "keep existing monitor; no create/update/delete",
+    "notification_events": [],
+    "healthy_progress_quiet": true
+  },
+  "actions": {
+    "remote_mutations": false,
+    "gpu_diagnostics": false,
+    "checkpoint_contents_read": false,
+    "new_dispatch": false,
+    "rerun": false,
+    "budget_or_deadline_change": false
+  },
+  "collection_notes": [
+    "First read-only collector stopped parsing the known precreated zero-byte guardian terminal slot. It was then explicitly represented as an empty running-stage terminal slot; not an experiment failure or retry.",
+    "Storage stderr is structured metadata. A naive object-truthiness field was corrected by rereading the existing small receipts: characters=0/tail empty. No du invocation or measurement retry.",
+    "Returned console evidence covers steps15..24; previous committed receipt supplies steps9..14. Final stage metrics/result/.done remain absent, so no terminal completion claim.",
+    "Checkpoint inventory hash covers name/size metadata only, not checkpoint contents; native CP8 load was already proven separately.",
+    "Training wins/legality/gradients do not establish strategic learning, generalization or architecture advantage. Original CP2 non-bitwise ancestry remains."
+  ]
+}

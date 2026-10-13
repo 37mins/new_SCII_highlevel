@@ -1,0 +1,559 @@
+{
+  "observed_at": "2026-09-25T09:48:36.843798+08:00",
+  "parts": {
+    "short": {
+      "root": "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/short",
+      "runtime_sha": "9cb291ea5f50de205c5d88371e08ce229b7d9d04",
+      "state": {
+        "version": "host-guardian-v1",
+        "phase": "completed",
+        "completed": [
+          "pre",
+          "train2",
+          "post"
+        ],
+        "deadline": 1790247962.305692,
+        "learning_validated": false,
+        "started_at": 1790085600.1374924,
+        "stage": "post",
+        "container_id": "6c5189bf07ddc2281baa2af7d764403947f507314acb808a6b816ca5182cad15",
+        "exit_code": 0,
+        "finished_at": 1790088306.8589077
+      },
+      "host": {
+        "version": "host-guardian-v1",
+        "phase": "completed",
+        "completed": [
+          "pre",
+          "train2",
+          "post"
+        ],
+        "deadline": 1790247962.305692,
+        "learning_validated": false,
+        "started_at": 1790085600.1374924,
+        "stage": "post",
+        "container_id": "6c5189bf07ddc2281baa2af7d764403947f507314acb808a6b816ca5182cad15",
+        "exit_code": 0,
+        "finished_at": 1790088306.8589077
+      },
+      "checkpoint": "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/short/runs/train2/checkpoints/global_step_2",
+      "files": {
+        "data.pt": {
+          "exists": true,
+          "bytes": 1947,
+          "recorded": {
+            "bytes": 1947,
+            "sha256": null
+          }
+        },
+        "sc2_state.pt": {
+          "exists": true,
+          "bytes": 30007,
+          "recorded": {
+            "bytes": 30007,
+            "sha256": null
+          }
+        },
+        "actor/model_world_size_8_rank_0.pt": {
+          "exists": true,
+          "bytes": 2778173291,
+          "recorded": {
+            "bytes": 2778173291,
+            "sha256": "40221b4ce3bbbd075cef3492173329cffcac1a29a9c56d296fe6402fdd69c319"
+          }
+        },
+        "actor/model_world_size_8_rank_1.pt": {
+          "exists": true,
+          "bytes": 2778173291,
+          "recorded": {
+            "bytes": 2778173291,
+            "sha256": "40cefdf089a8fdf75eba9533a1d4d51b4a2907ab5ce150e1906825ce463bf43f"
+          }
+        },
+        "actor/model_world_size_8_rank_2.pt": {
+          "exists": true,
+          "bytes": 2778173291,
+          "recorded": {
+            "bytes": 2778173291,
+            "sha256": "a30b0d4a1f9e0ae867beb1286aff99d053951b46cb1ffda7fd17b473e259ec15"
+          }
+        },
+        "actor/model_world_size_8_rank_3.pt": {
+          "exists": true,
+          "bytes": 2778173291,
+          "recorded": {
+            "bytes": 2778173291,
+            "sha256": "9bb19b5f4aa5bf0e6e9e5f4c3ca093138b8f205bb418547eb5857ec05c425497"
+          }
+        },
+        "actor/model_world_size_8_rank_4.pt": {
+          "exists": true,
+          "bytes": 2777907051,
+          "recorded": {
+            "bytes": 2777907051,
+            "sha256": "69a05894baa30ba8cfd3a42f3500c41bc9ee996aa54eef7f5bae9559aa1a5701"
+          }
+        },
+        "actor/model_world_size_8_rank_5.pt": {
+          "exists": true,
+          "bytes": 2777907051,
+          "recorded": {
+            "bytes": 2777907051,
+            "sha256": "47d941dd08fdacef75b819c3bf0b27d42def6c90941515603f0682573d25430b"
+          }
+        },
+        "actor/model_world_size_8_rank_6.pt": {
+          "exists": true,
+          "bytes": 2777907051,
+          "recorded": {
+            "bytes": 2777907051,
+            "sha256": "a870b94b8d8af9d07893d61584d8990165cbfdcf8b8bc105ac63aafe4027dbb1"
+          }
+        },
+        "actor/model_world_size_8_rank_7.pt": {
+          "exists": true,
+          "bytes": 2777907051,
+          "recorded": {
+            "bytes": 2777907051,
+            "sha256": "fb42d253803dea54eda013a702a3e9b3569fa0bf83201204efb13988fcc75475"
+          }
+        },
+        "actor/optim_world_size_8_rank_0.pt": {
+          "exists": true,
+          "bytes": 5166248083,
+          "recorded": {
+            "bytes": 5166248083,
+            "sha256": null
+          }
+        },
+        "actor/optim_world_size_8_rank_1.pt": {
+          "exists": true,
+          "bytes": 5166248083,
+          "recorded": {
+            "bytes": 5166248083,
+            "sha256": null
+          }
+        },
+        "actor/optim_world_size_8_rank_2.pt": {
+          "exists": true,
+          "bytes": 5166248083,
+          "recorded": {
+            "bytes": 5166248083,
+            "sha256": null
+          }
+        },
+        "actor/optim_world_size_8_rank_3.pt": {
+          "exists": true,
+          "bytes": 5166248083,
+          "recorded": {
+            "bytes": 5166248083,
+            "sha256": null
+          }
+        },
+        "actor/optim_world_size_8_rank_4.pt": {
+          "exists": true,
+          "bytes": 5166248083,
+          "recorded": {
+            "bytes": 5166248083,
+            "sha256": null
+          }
+        },
+        "actor/optim_world_size_8_rank_5.pt": {
+          "exists": true,
+          "bytes": 5166248083,
+          "recorded": {
+            "bytes": 5166248083,
+            "sha256": null
+          }
+        },
+        "actor/optim_world_size_8_rank_6.pt": {
+          "exists": true,
+          "bytes": 5166248083,
+          "recorded": {
+            "bytes": 5166248083,
+            "sha256": null
+          }
+        },
+        "actor/optim_world_size_8_rank_7.pt": {
+          "exists": true,
+          "bytes": 5166248083,
+          "recorded": {
+            "bytes": 5166248083,
+            "sha256": null
+          }
+        },
+        "actor/extra_state_world_size_8_rank_0.pt": {
+          "exists": true,
+          "bytes": 15141,
+          "recorded": {
+            "bytes": 15141,
+            "sha256": null
+          }
+        },
+        "actor/extra_state_world_size_8_rank_1.pt": {
+          "exists": true,
+          "bytes": 15141,
+          "recorded": {
+            "bytes": 15141,
+            "sha256": null
+          }
+        },
+        "actor/extra_state_world_size_8_rank_2.pt": {
+          "exists": true,
+          "bytes": 15141,
+          "recorded": {
+            "bytes": 15141,
+            "sha256": null
+          }
+        },
+        "actor/extra_state_world_size_8_rank_3.pt": {
+          "exists": true,
+          "bytes": 15077,
+          "recorded": {
+            "bytes": 15077,
+            "sha256": null
+          }
+        },
+        "actor/extra_state_world_size_8_rank_4.pt": {
+          "exists": true,
+          "bytes": 15141,
+          "recorded": {
+            "bytes": 15141,
+            "sha256": null
+          }
+        },
+        "actor/extra_state_world_size_8_rank_5.pt": {
+          "exists": true,
+          "bytes": 15205,
+          "recorded": {
+            "bytes": 15205,
+            "sha256": null
+          }
+        },
+        "actor/extra_state_world_size_8_rank_6.pt": {
+          "exists": true,
+          "bytes": 15077,
+          "recorded": {
+            "bytes": 15077,
+            "sha256": null
+          }
+        },
+        "actor/extra_state_world_size_8_rank_7.pt": {
+          "exists": true,
+          "bytes": 15141,
+          "recorded": {
+            "bytes": 15141,
+            "sha256": null
+          }
+        }
+      },
+      "guardians": {
+        "pre": {
+          "container_id": "78b96b5af660c06804e8ab56e19942eb973b7de760b89f746d125d890a3ee249",
+          "owner_root": "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/short",
+          "phase": "completed",
+          "deadline": 1790247962.305692,
+          "final_state": {
+            "Dead": false,
+            "Error": "",
+            "ExitCode": 0,
+            "FinishedAt": "2026-09-22T14:09:34.99271665Z",
+            "OOMKilled": false,
+            "Paused": false,
+            "Pid": 0,
+            "Restarting": false,
+            "Running": false,
+            "StartedAt": "2026-09-22T14:00:00.641838172Z",
+            "Status": "exited"
+          }
+        },
+        "train2": {
+          "container_id": "2a3e64503973b35ee514f12bcdf60b39bce7522157187d128aba25588c1c00de",
+          "owner_root": "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/short",
+          "phase": "completed",
+          "deadline": 1790247962.305692,
+          "final_state": {
+            "Dead": false,
+            "Error": "",
+            "ExitCode": 0,
+            "FinishedAt": "2026-09-22T14:32:37.158708625Z",
+            "OOMKilled": false,
+            "Paused": false,
+            "Pid": 0,
+            "Restarting": false,
+            "Running": false,
+            "StartedAt": "2026-09-22T14:09:43.007700012Z",
+            "Status": "exited"
+          }
+        },
+        "post": {
+          "container_id": "6c5189bf07ddc2281baa2af7d764403947f507314acb808a6b816ca5182cad15",
+          "owner_root": "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/short",
+          "phase": "completed",
+          "deadline": 1790247962.305692,
+          "final_state": {
+            "Dead": false,
+            "Error": "",
+            "ExitCode": 0,
+            "FinishedAt": "2026-09-22T14:44:51.521272672Z",
+            "OOMKilled": false,
+            "Paused": false,
+            "Pid": 0,
+            "Restarting": false,
+            "Running": false,
+            "StartedAt": "2026-09-22T14:32:47.292563665Z",
+            "Status": "exited"
+          }
+        }
+      }
+    },
+    "long": {
+      "root": "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long",
+      "runtime_sha": "9cb291ea5f50de205c5d88371e08ce229b7d9d04",
+      "state": {
+        "version": "host-guardian-v1",
+        "phase": "completed",
+        "completed": [
+          "train96",
+          "eval96"
+        ],
+        "deadline": 1790247962.305692,
+        "learning_validated": false,
+        "started_at": 1790088312.1763573,
+        "stage": "eval96",
+        "container_id": "c396f9a1acc91b80aa39df52502a237ed6b7319df6f609102f68910ab9e86e51",
+        "exit_code": 0,
+        "finished_at": 1790135917.4264796
+      },
+      "host": {
+        "version": "host-guardian-v1",
+        "phase": "completed",
+        "completed": [
+          "train96",
+          "eval96"
+        ],
+        "deadline": 1790247962.305692,
+        "learning_validated": false,
+        "started_at": 1790088312.1763573,
+        "stage": "eval96",
+        "container_id": "c396f9a1acc91b80aa39df52502a237ed6b7319df6f609102f68910ab9e86e51",
+        "exit_code": 0,
+        "finished_at": 1790135917.4264796
+      },
+      "checkpoint": "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long/runs/train96/checkpoints/global_step_8",
+      "files": {
+        "data.pt": {
+          "exists": true,
+          "bytes": 1947,
+          "recorded": null
+        },
+        "sc2_state.pt": {
+          "exists": true,
+          "bytes": 29943,
+          "recorded": null
+        },
+        "actor/model_world_size_8_rank_0.pt": {
+          "exists": true,
+          "bytes": 2778173291,
+          "recorded": null
+        },
+        "actor/model_world_size_8_rank_1.pt": {
+          "exists": true,
+          "bytes": 2778173291,
+          "recorded": null
+        },
+        "actor/model_world_size_8_rank_2.pt": {
+          "exists": true,
+          "bytes": 2778173291,
+          "recorded": null
+        },
+        "actor/model_world_size_8_rank_3.pt": {
+          "exists": true,
+          "bytes": 2778173291,
+          "recorded": null
+        },
+        "actor/model_world_size_8_rank_4.pt": {
+          "exists": true,
+          "bytes": 2777907051,
+          "recorded": null
+        },
+        "actor/model_world_size_8_rank_5.pt": {
+          "exists": true,
+          "bytes": 2777907051,
+          "recorded": null
+        },
+        "actor/model_world_size_8_rank_6.pt": {
+          "exists": true,
+          "bytes": 2777907051,
+          "recorded": null
+        },
+        "actor/model_world_size_8_rank_7.pt": {
+          "exists": true,
+          "bytes": 2777907051,
+          "recorded": null
+        },
+        "actor/optim_world_size_8_rank_0.pt": {
+          "exists": true,
+          "bytes": 5166248083,
+          "recorded": null
+        },
+        "actor/optim_world_size_8_rank_1.pt": {
+          "exists": true,
+          "bytes": 5166248083,
+          "recorded": null
+        },
+        "actor/optim_world_size_8_rank_2.pt": {
+          "exists": true,
+          "bytes": 5166248083,
+          "recorded": null
+        },
+        "actor/optim_world_size_8_rank_3.pt": {
+          "exists": true,
+          "bytes": 5166248083,
+          "recorded": null
+        },
+        "actor/optim_world_size_8_rank_4.pt": {
+          "exists": true,
+          "bytes": 5166248083,
+          "recorded": null
+        },
+        "actor/optim_world_size_8_rank_5.pt": {
+          "exists": true,
+          "bytes": 5166248083,
+          "recorded": null
+        },
+        "actor/optim_world_size_8_rank_6.pt": {
+          "exists": true,
+          "bytes": 5166248083,
+          "recorded": null
+        },
+        "actor/optim_world_size_8_rank_7.pt": {
+          "exists": true,
+          "bytes": 5166248083,
+          "recorded": null
+        },
+        "actor/extra_state_world_size_8_rank_0.pt": {
+          "exists": true,
+          "bytes": 15141,
+          "recorded": null
+        },
+        "actor/extra_state_world_size_8_rank_1.pt": {
+          "exists": true,
+          "bytes": 15141,
+          "recorded": null
+        },
+        "actor/extra_state_world_size_8_rank_2.pt": {
+          "exists": true,
+          "bytes": 15141,
+          "recorded": null
+        },
+        "actor/extra_state_world_size_8_rank_3.pt": {
+          "exists": true,
+          "bytes": 15077,
+          "recorded": null
+        },
+        "actor/extra_state_world_size_8_rank_4.pt": {
+          "exists": true,
+          "bytes": 15141,
+          "recorded": null
+        },
+        "actor/extra_state_world_size_8_rank_5.pt": {
+          "exists": true,
+          "bytes": 15205,
+          "recorded": null
+        },
+        "actor/extra_state_world_size_8_rank_6.pt": {
+          "exists": true,
+          "bytes": 15077,
+          "recorded": null
+        },
+        "actor/extra_state_world_size_8_rank_7.pt": {
+          "exists": true,
+          "bytes": 15141,
+          "recorded": null
+        }
+      },
+      "guardians": {
+        "train96": {
+          "container_id": "6eab1fd728b6efe0309c2e139fa8b865f7c2a53d30bba4ae637064c74d6780e4",
+          "owner_root": "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long",
+          "phase": "completed",
+          "deadline": 1790247962.305692,
+          "final_state": {
+            "Dead": false,
+            "Error": "",
+            "ExitCode": 0,
+            "FinishedAt": "2026-09-23T03:45:47.272672921Z",
+            "OOMKilled": false,
+            "Paused": false,
+            "Pid": 0,
+            "Restarting": false,
+            "Running": false,
+            "StartedAt": "2026-09-22T14:45:12.924428977Z",
+            "Status": "exited"
+          }
+        },
+        "eval96": {
+          "container_id": "c396f9a1acc91b80aa39df52502a237ed6b7319df6f609102f68910ab9e86e51",
+          "owner_root": "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long",
+          "phase": "completed",
+          "deadline": 1790247962.305692,
+          "final_state": {
+            "Dead": false,
+            "Error": "",
+            "ExitCode": 0,
+            "FinishedAt": "2026-09-23T03:58:36.165349083Z",
+            "OOMKilled": false,
+            "Paused": false,
+            "Pid": 0,
+            "Restarting": false,
+            "Running": false,
+            "StartedAt": "2026-09-23T03:46:00.661846311Z",
+            "Status": "exited"
+          }
+        }
+      }
+    }
+  },
+  "receipt_sha256": {
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/short/deployment.json": "1a53bcb178eabe6b5c65680cbe3a1410356cd9a0a5820052aa2ceaf8b557aa98",
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/short/state.json": "867678ba82b45dd44261ca3ad70f93aff8ace443e286bdaac0a399f6ee816ed5",
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/short/host-supervision/state.json": "867678ba82b45dd44261ca3ad70f93aff8ace443e286bdaac0a399f6ee816ed5",
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/short/runs/train2/result.json": "bd50704d5ccbf9ec2ef450c7df42b686a1bf464a36f1152f8a1cf42a73ed416b",
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/short/host-supervision/pre-guardian.json": "0d22386f2c4a1bfea1382ef865099996375b94548472033914a87b13b4a5d0e3",
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/short/runs/pre/result.json": "1414a677bd328654f195d09f12d169db5110da5733ba00f22255553461e5dbff",
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/short/runs/pre/.done": "1414a677bd328654f195d09f12d169db5110da5733ba00f22255553461e5dbff",
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/short/acceptance-pre.json": "076b54cc70cc544e5e9f964afcd3ce1690581e253fab2421fd10d3eb023acdcb",
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/short/host-supervision/train2-guardian.json": "67a00b41d3eead130be9ce2d6c93d8401b04407bc8dc71cfdccfacfdf2dfcfb1",
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/short/runs/train2/.done": "bd50704d5ccbf9ec2ef450c7df42b686a1bf464a36f1152f8a1cf42a73ed416b",
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/short/acceptance-train2.json": "b9dfc08618355cf03c5933962419e908b9cd35d807fe559270f01ec58a2aae18",
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/short/host-supervision/post-guardian.json": "92a1e272e68ae50d9d933dae60dd3c4a24c8077125790bb6124cd0a6f78de603",
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/short/runs/post/result.json": "248b869d75b80ed805fda813850cd950c02177a9361705c64bba7566d2389bd8",
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/short/runs/post/.done": "248b869d75b80ed805fda813850cd950c02177a9361705c64bba7566d2389bd8",
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/short/acceptance-post.json": "e987b77304ae77669670456f539b91c32eec73647c3cd834349a51755df6599a",
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long/deployment.json": "9f271a1d83fc1d1ae9ae7377deaa7c926330818d1e23579bb4882ef52c991e90",
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long/state.json": "a654151d3b1bad3526a235c38977aeb51bd63c6092637a03c089feea92b284b9",
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long/host-supervision/state.json": "a654151d3b1bad3526a235c38977aeb51bd63c6092637a03c089feea92b284b9",
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long/runs/train96/result.json": "e325b05be02e52696477191b922db4329badf4731fcfbf6203542657aca6f74e",
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long/host-supervision/train96-guardian.json": "52acfc74ed4daf9b6a9e2e1fb2ceb53f83693471501929eb2f6ab975ccd2dcaf",
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long/runs/train96/.done": "e325b05be02e52696477191b922db4329badf4731fcfbf6203542657aca6f74e",
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long/acceptance-train96.json": "0b678ca3eb9c9a024dbfaadd61e0d13fc3056269573b19b993ccc65d851f098d",
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long/host-supervision/eval96-guardian.json": "935aa5b5095f6e2cc265d31ee3ebcda423e6456198fe6dff5ad64f6c26282a5d",
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long/runs/eval96/result.json": "5a5e655deb3fb96bcfb018b65b3650e69f27926e07d8b082e279e2ce665728e3",
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long/runs/eval96/.done": "5a5e655deb3fb96bcfb018b65b3650e69f27926e07d8b082e279e2ce665728e3",
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long/acceptance-eval96.json": "571aa81dba4711b14305c8d7a66c3c53837435db1f263551c21219a9b92cda74"
+  },
+  "health": {
+    "date": "2026-09-25T09:48:36+08:00",
+    "hostname": "k8s-a-gpu01",
+    "gpu": "0, NVIDIA A100-SXM4-80GB, 0, 0\n1, NVIDIA A100-SXM4-80GB, 0, 0\n2, NVIDIA A100-SXM4-80GB, 0, 0\n3, NVIDIA A100-SXM4-80GB, 0, 0\n4, NVIDIA A100-SXM4-80GB, 0, 0\n5, NVIDIA A100-SXM4-80GB, 0, 0\n6, NVIDIA A100-SXM4-80GB, 0, 0\n7, NVIDIA A100-SXM4-80GB, 0, 0",
+    "compute": "",
+    "free_nvme": 1350780776448,
+    "memory_available_kib": 796806200,
+    "containers": "62a197a64abc new_scii_spb2_stageguard_v1_20260815 Up 5 weeks\n2542e9ed108b new_scii_spb2_runtime_v1_20260815 Up 5 weeks\n269b6d79d3b4 new_scii_clean_core_20260815 Up 5 weeks\n9c608a58d0be sc2_spb2_l7_env_20260814 Up 5 weeks"
+  },
+  "new_roots_exist": {
+    "/var/jfsCache/sc2-spb-early128-197-20260925-r1": false,
+    "/var/jfsCache/sc2-spb-early128-197-source-20260925-r1": false
+  }
+}

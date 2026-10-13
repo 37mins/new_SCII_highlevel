@@ -1,0 +1,14 @@
+{
+  "schema": "spb-early128-local-tests-v1",
+  "scope": "synthetic no-GPU code gates before actual Linux CPU/host tests and launch",
+  "command": "PYTHONPATH=/private/tmp/sc2-qwen-native-testdeps-20260924:tests:scripts:. /Users/yangjinyue/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -B -m unittest test_spb_early128197 test_l7_matrix256197 test_qwen_heldout128197 test_host_stage197 test_storage_quiescent197 test_policy_credit_storage197 test_policy_credit_storage_coordination197",
+  "tests_run": 115,
+  "passed": 111,
+  "skipped": 4,
+  "skip_reason": "Linux GNU du platform-only tests; actual Linux host must pass zero skips before queue",
+  "new_early_checkpoint_tests": 22,
+  "first_local_attempt": "One test incorrectly expected only 2 reused pair references after both new arms existed; implementation correctly added the third new-arm reference. Assertion corrected to check exact two reused references; rerun successful.",
+  "actual_gpu_or_game_evidence": false,
+  "remote_gpu_launch_authorized": true,
+  "server_writes_at_this_test": false
+}

@@ -1,0 +1,85 @@
+{
+  "observed_at_beijing": "2026-09-22T00:28:11+08:00",
+  "run_root": "/var/jfsCache/sc2-policy-credit197-20260921-r4",
+  "runtime_sha": "ce8b938341cd5b881b4dea8446ad570ed7509f78",
+  "controller_sha": "e87b23f33cf5b93fc4c63ffc11ee70645ff743cd",
+  "deadline": 1790013459.1373603,
+  "verification": {
+    "result_equals_done_equals_acceptance_result": true,
+    "dirty": false,
+    "world_size": 8,
+    "exit_code": 0,
+    "start_step": 0,
+    "last_global_step": 2,
+    "completed_steps": 2,
+    "metrics_finite": true,
+    "natural_games": 16,
+    "truncated_games": 0,
+    "wins": 15,
+    "defeats": 1,
+    "checkpoint_complete": true,
+    "checkpoint_files_size_verified": 25,
+    "checkpoint_contents_read": false,
+    "training_seeds": [[2732,2732,2732,2732,2732,2732,2732,2732],[43567,43567,43567,43567,43567,43567,43567,43567]],
+    "train_ended_at": "2026-09-21T16:24:22.098375+00:00",
+    "accepted_at": 1790007884.6081784
+  },
+  "ppo": {
+    "steps": [1,2],
+    "grad_norm": [1.368,65.487],
+    "pre_update_audits": [
+      {"pending_global_step":1,"real_answers":44,"valid_answers":44,"valid_ratio":1.0,"min_valid_ratio":0.5,"decision":"accept"},
+      {"pending_global_step":2,"real_answers":37,"valid_answers":37,"valid_ratio":1.0,"min_valid_ratio":0.5,"decision":"accept"}
+    ],
+    "invalid_tokens": [0,0],
+    "invalid_positive_tokens_removed": [0,0],
+    "invalid_advantage_max": [0,0]
+  },
+  "action_evidence": {
+    "consumed_answers":81,
+    "valid_consumed_answers":81,
+    "parsed_plans":81,
+    "validated_queue_entries":1236,
+    "validated_locally_queued_commands":781,
+    "execution_scope":"local Depot/Marine commands, not production completion or causal wins"
+  },
+  "post_snapshot": {
+    "accepted":false,
+    "result_present":false,
+    "done_present":false,
+    "checkpoint":"/var/jfsCache/sc2-policy-credit197-20260921-r4/runs/train2/checkpoints/global_step_2",
+    "loaded_global_step":2,
+    "checkpoint_load_returned":true,
+    "val_only":true,
+    "optimizer_updates":0,
+    "world_size":8,
+    "dirty":false,
+    "game_seeds":[605183188,1075501356,2084414326,2203880230,3000371298,949752300,3225036469,2823708076]
+  },
+  "storage_snapshot": {
+    "checked_at":1790008081.001781,
+    "total_bytes":64339139444,
+    "cap_bytes":137438953472,
+    "measurement_exit_code":0,
+    "stderr_empty":true,
+    "roots":["/var/jfsCache/sc2-policy-credit197-20260921-r4","/var/jfsCache/sc2-policy-credit197-source-20260921-r4"]
+  },
+  "qwen_snapshot": {
+    "root":"/var/jfsCache/sc2-qwen-seeds197-20260922-r3",
+    "phase":"waiting-predecessor",
+    "completed":[],
+    "first_dispatch_by":1790028940.699252
+  },
+  "small_file_sha256": {
+    "runs/train2/result.json":"7b2bd7108bbc0b38c32df88f547cac626f63e42b0e6419176392608571dbcd98",
+    "runs/train2/.done":"7b2bd7108bbc0b38c32df88f547cac626f63e42b0e6419176392608571dbcd98",
+    "runs/train2/metrics.json":"12b782bc5b9bbbc6fe3e13cc19d45b6c4b621cda896032e85c9b4e2e82426e19",
+    "runs/train2/manifest.json":"7c6d1046d9701c8ea47e9d2d2430b829e0ff10248807696e50d94c73aa2aece8",
+    "runs/train2/training_seeds.jsonl":"97d791a118053df54f2d4627e0e585b27d574c41feb3459dd8c1ea575748d27c",
+    "runs/train2/checkpoints/sc2_policy_credit_audit.jsonl":"1f5400f715ef9c54339f55f983df024dab53f4856270729814c5305426e3f429",
+    "acceptance-train2.json":"b95a012ad5e0982e48db0df9a9214cfd774f42c98ebc7d36f00501effe48051f"
+  },
+  "train_console_sha256":"4e57c52d6f6103725490c340a87535be182ecc09dc16768d0f57856a82ae319c",
+  "notification_events":["first_actual_ppo","train2_completed"],
+  "limitations":["Two PPO steps and a small training win count do not demonstrate strategic learning or architecture superiority.","No invalid tokens were sampled; the invalid-credit correction branch was not exercised by this sample.","Post completion remains pending; no successor gate bypass is authorized."]
+}

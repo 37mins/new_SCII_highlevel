@@ -1,0 +1,244 @@
+{
+  "checked_at": "2026-09-28T18:38:11.002460+08:00",
+  "status": "training-and-selection-accepted-primary-in-progress",
+  "run_id": "sc2-qwen-l8random96-197-20260928-r3",
+  "runtime_sha": "ad81511b270f782420208ac8a6f305a141e8042b",
+  "query_scope": "Only sc2-a100-197; small state/result/done/acceptance/seed/metric/guardian JSON and exact Docker inspect; no weights/full console, no remote writes/restart/deletion.",
+  "training_summary": {
+    "ppo_updates": 96,
+    "games": 768,
+    "wins": 575,
+    "valid_consumed_answers": 3566,
+    "last8_wins": 47,
+    "last8_games": 64,
+    "gradient_min": 0.0000023715061843176954,
+    "gradient_max": 154.26373351365328,
+    "actor_update_seconds": 1686.76542729605
+  },
+  "training_completed_at_epoch": 1790580815.8774211,
+  "diagnostic_wins": [
+    {
+      "step": 0,
+      "wins": 6,
+      "games": 8,
+      "updates": 0
+    },
+    {
+      "step": 2,
+      "wins": 6,
+      "games": 8,
+      "updates": 0
+    },
+    {
+      "step": 96,
+      "wins": 6,
+      "games": 8,
+      "updates": 0
+    }
+  ],
+  "selection": {
+    "state": {
+      "version": "host-guardian-v1",
+      "phase": "completed",
+      "completed": [
+        "b00-cp2",
+        "b01-cp2",
+        "b02-cp2",
+        "b03-cp2",
+        "b00-cp32",
+        "b01-cp32",
+        "b02-cp32",
+        "b03-cp32",
+        "b00-cp64",
+        "b01-cp64",
+        "b02-cp64",
+        "b03-cp64",
+        "b00-cp96",
+        "b01-cp96",
+        "b02-cp96",
+        "b03-cp96"
+      ],
+      "deadline": 1790595216.5217776,
+      "learning_validated": false,
+      "started_at": 1790580849.7361894,
+      "stage": "b03-cp96",
+      "container_id": "c07c57e03075eaef25e48c56ec2bcb7e99fd8b7d897a93330904b0ad31c7adc2",
+      "exit_code": 0,
+      "finished_at": 1790585823.2483969
+    },
+    "best": 2,
+    "scored": [
+      {
+        "step": 2,
+        "wins": 22,
+        "games": 32
+      },
+      {
+        "step": 32,
+        "wins": 22,
+        "games": 32
+      },
+      {
+        "step": 64,
+        "wins": 22,
+        "games": 32
+      },
+      {
+        "step": 96,
+        "wins": 22,
+        "games": 32
+      }
+    ],
+    "seed_sha256": "0f47acf2c792395cb17d73d678bbe8ad618b2c89c1ff5a4d85733465fa2a372c",
+    "test_used": false
+  },
+  "primary": {
+    "snapshot": "2026-09-28T18:38:11.002460+08:00",
+    "completed_stages": 16,
+    "completed_games": 128,
+    "total_games": 192,
+    "current_stage": "b05-original",
+    "container_id": "1dadce14fccf7ae067a07378181947656785cb8c13dcb5cbe64b0839360d34fc",
+    "deadline": 1790607428.465348,
+    "complete": false,
+    "do_not_compare_unbalanced_partial_arms": true
+  },
+  "health_snapshot": {
+    "checked_at_epoch": 1790591487.8070521,
+    "containers": [
+      {
+        "id": "21bb5e0d36740e80eccc9c24a4c4bb0db5e063cb810f452e792eaec9e3dfc7a5",
+        "name": "/sc2-qwen-l8random96-197-20260928-r3-long-eval96",
+        "state": {
+          "Status": "exited",
+          "Running": false,
+          "Paused": false,
+          "Restarting": false,
+          "OOMKilled": false,
+          "Dead": false,
+          "Pid": 0,
+          "ExitCode": 0,
+          "Error": "",
+          "StartedAt": "2026-09-28T07:28:36.026575799Z",
+          "FinishedAt": "2026-09-28T07:33:21.227803258Z"
+        },
+        "owner": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/long"
+      },
+      {
+        "id": "3a0a3f00111a5d8f6c95218e8e98906feb2e75042a539f338a365175febda7b7",
+        "name": "/sc2-qwen-l8random96-197-20260928-r3-short-post",
+        "state": {
+          "Status": "exited",
+          "Running": false,
+          "Paused": false,
+          "Restarting": false,
+          "OOMKilled": false,
+          "Dead": false,
+          "Pid": 0,
+          "ExitCode": 0,
+          "Error": "",
+          "StartedAt": "2026-09-28T02:04:13.674974862Z",
+          "FinishedAt": "2026-09-28T02:11:53.331143494Z"
+        },
+        "owner": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/short"
+      },
+      {
+        "id": "82b4903d50cc61c1b9fd23709b2a79eacac6ddc2937d88ed85bb21a167e6fbc4",
+        "name": "/sc2-qwen-l8random-paired192-197-20260928-r3-b05-random96",
+        "state": {
+          "Status": "running",
+          "Running": true,
+          "Paused": false,
+          "Restarting": false,
+          "OOMKilled": false,
+          "Dead": false,
+          "Pid": 1887927,
+          "ExitCode": 0,
+          "Error": "",
+          "StartedAt": "2026-09-28T10:28:32.188585585Z",
+          "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "owner": "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3"
+      },
+      {
+        "id": "c07c57e03075eaef25e48c56ec2bcb7e99fd8b7d897a93330904b0ad31c7adc2",
+        "name": "/sc2-qwen-l8random96-197-20260928-r3-select-b03-cp96",
+        "state": {
+          "Status": "exited",
+          "Running": false,
+          "Paused": false,
+          "Restarting": false,
+          "OOMKilled": false,
+          "Dead": false,
+          "Pid": 0,
+          "ExitCode": 0,
+          "Error": "",
+          "StartedAt": "2026-09-28T08:52:30.599651202Z",
+          "FinishedAt": "2026-09-28T08:56:50.543591615Z"
+        },
+        "owner": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection"
+      }
+    ],
+    "gpu_rows": [
+      "0, 12526, 96",
+      "1, 12670, 96",
+      "2, 12670, 96",
+      "3, 12670, 96",
+      "4, 12670, 97",
+      "5, 12670, 96",
+      "6, 12670, 96",
+      "7, 12526, 95"
+    ],
+    "storage": {
+      "bytes": 152998449540,
+      "limit": 309237645312,
+      "returncode": 0,
+      "stderr": "",
+      "checked_at_epoch": 1790591486.806193
+    },
+    "storage_failures": {
+      "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/train-storage": {},
+      "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/suite-storage": {},
+      "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/selection-storage": {},
+      "/var/jfsCache/sc2-qwen-l8random-paired192-197-20260928-r3/eval-storage": {}
+    }
+  },
+  "retention": {
+    "removed": [
+      32
+    ],
+    "retained": [
+      2,
+      64,
+      96
+    ],
+    "best": 2,
+    "bytes_removed": 49843591036,
+    "target": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3/qwen-random/long/runs/train96/checkpoints/global_step_32",
+    "irreversible": true,
+    "executed_by": "Previously approved frozen queue, not this read-only turn",
+    "completed_at_epoch": 1790585827.4420114,
+    "old_artifacts_deleted": false
+  },
+  "curve": {
+    "data": "qwen-l8random-r3-curve-20260928-1838-data.json",
+    "collector": "collect-l8random-curve.py",
+    "plotter": "plot-l8random-curve.mjs",
+    "data_sha256": "6af5a38b70f16450ec3e891c73c1a78f7ecc29ef96b7142bb1bedcee41b08ded",
+    "png_path": "/Users/yangjinyue/.codex/visualizations/2026/09/03/01a06605-4e2f-7052-925a-e3bf70ef2b4b/l8-qwen-random96-20260928-1838.png",
+    "png_sha256": "8dab468e8b21d62edd04aa50928d76e4144633a0bc637b9d9f6e8b0f856236eb",
+    "training_points": 96,
+    "rolling_window": 8,
+    "rolling_start_step": 8,
+    "independent_validation_points": [
+      2,
+      32,
+      64,
+      96
+    ],
+    "primary_results_plotted": false,
+    "visual_checked": true
+  },
+  "interpretation": "96 returned PPO/768 natural games, accepted; train575/768 (74.87%). Independent validation32 ties22/32 at every checkpoint, no observed improvement across checkpoints on that set. This does not establish architecture advantage or final same/random benefit; paired64 primary incomplete.",
+  "eta": "Based on completed primary batches, roughly one more hour from18:38; approximately19:30–20:00 Beijing if pace holds, not a deadline or guarantee."
+}

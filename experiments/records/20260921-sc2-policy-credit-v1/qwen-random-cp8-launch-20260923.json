@@ -1,0 +1,369 @@
+{
+  "checked_at": 1790168838.4345148,
+  "files": {
+    "deployment.json": {
+      "runtime_sha": "34154283a8298ac4fbaab1c63770a6b81f7d375c",
+      "controller_sha": "34154283a8298ac4fbaab1c63770a6b81f7d375c",
+      "controller_source": "/var/jfsCache/sc2-qwen-random-cp8-197-source-20260923-r2/code",
+      "start_step": 8,
+      "target_step": 96,
+      "games": [
+        704,
+        8
+      ],
+      "updates": [
+        88,
+        0
+      ],
+      "deadline": 1790308720.0467553,
+      "suite_deadline": 1790420762.305692,
+      "cumulative_suite_slots": 1608,
+      "added_slots_approved": 48,
+      "accounts": [
+        {
+          "roots": [
+            "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2",
+            "/var/jfsCache/sc2-qwen-random-cp8-197-source-20260923-r2",
+            "/var/jfsCache/sc2-l7-followup197-20260922-r4/qwen-random",
+            "/var/jfsCache/sc2-l7-followup197-source-20260922-r4",
+            "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-random",
+            "/var/jfsCache/sc2-l7-followup197-20260922-r1",
+            "/var/jfsCache/sc2-l7-followup197-source-20260922-r1",
+            "/var/jfsCache/sc2-l7-followup197-20260922-r2",
+            "/var/jfsCache/sc2-l7-followup197-source-20260922-r2",
+            "/var/jfsCache/sc2-l7-followup197-20260922-r3",
+            "/var/jfsCache/sc2-l7-followup197-source-20260922-r3",
+            "/var/jfsCache/sc2-storage-quiescence-cpu-20260922.4LzwSM",
+            "/var/jfsCache/sc2-host-supervision-cpu-20260922.7lJiIO",
+            "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r1",
+            "/var/jfsCache/sc2-qwen-random-cp8-197-source-20260923-r1"
+          ],
+          "receipt_root": "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2",
+          "limit": 1099511627776,
+          "deadline": 1790308720.0467553
+        },
+        {
+          "roots": [
+            "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2",
+            "/var/jfsCache/sc2-qwen-random-cp8-197-source-20260923-r2",
+            "/var/jfsCache/sc2-l7-followup197-20260922-r4",
+            "/var/jfsCache/sc2-l7-followup197-source-20260922-r4",
+            "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-random",
+            "/var/jfsCache/sc2-l7-followup197-20260922-r1",
+            "/var/jfsCache/sc2-l7-followup197-source-20260922-r1",
+            "/var/jfsCache/sc2-l7-followup197-20260922-r2",
+            "/var/jfsCache/sc2-l7-followup197-source-20260922-r2",
+            "/var/jfsCache/sc2-l7-followup197-20260922-r3",
+            "/var/jfsCache/sc2-l7-followup197-source-20260922-r3",
+            "/var/jfsCache/sc2-storage-quiescence-cpu-20260922.4LzwSM",
+            "/var/jfsCache/sc2-host-supervision-cpu-20260922.7lJiIO",
+            "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r1",
+            "/var/jfsCache/sc2-qwen-random-cp8-197-source-20260923-r1"
+          ],
+          "receipt_root": "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2/suite-account",
+          "limit": 2199023255552,
+          "deadline": 1790420762.305692
+        }
+      ]
+    },
+    "resume-contract.json": {
+      "sha256": "d5dff9cf546e53339bdb5234fce43914e0b4313099e53614eefc5c31edc4019f",
+      "version": "recovered-qwen-random-native-cp8-v1",
+      "checkpoint": "/var/jfsCache/sc2-l7-followup197-20260922-r4/qwen-random/long/runs/train96/checkpoints/global_step_8",
+      "start_step": 8,
+      "target_step": 96,
+      "small_file_count": 23,
+      "checkpoint_file_count": 26
+    },
+    "readiness.json": {
+      "passed": true,
+      "runtime_sha": "34154283a8298ac4fbaab1c63770a6b81f7d375c",
+      "cuda_initialized": false,
+      "actual_parent_verified": true,
+      "actual_entries_and_hydra_configs": true,
+      "checked_at": 1790168741.5904021
+    },
+    "regressions.json": {
+      "passed": true,
+      "tests": 236,
+      "skips": 0,
+      "cuda_initialized": false,
+      "runtime_sha": "34154283a8298ac4fbaab1c63770a6b81f7d375c",
+      "checked_at": 1790168753.4383068
+    },
+    "host-regressions.json": {
+      "passed": true,
+      "tests": 71,
+      "skips": 0,
+      "runtime_sha": "34154283a8298ac4fbaab1c63770a6b81f7d375c",
+      "host_only": true,
+      "checked_at": 1790168737.2488067
+    },
+    "cpu/parent-small-state.json": {
+      "passed": true,
+      "global_step": 8,
+      "rank_states": [
+        {
+          "rank": 0,
+          "scheduler_last_epoch": 8,
+          "rng_keys": [
+            "cpu",
+            "cuda",
+            "numpy",
+            "random"
+          ]
+        },
+        {
+          "rank": 1,
+          "scheduler_last_epoch": 8,
+          "rng_keys": [
+            "cpu",
+            "cuda",
+            "numpy",
+            "random"
+          ]
+        },
+        {
+          "rank": 2,
+          "scheduler_last_epoch": 8,
+          "rng_keys": [
+            "cpu",
+            "cuda",
+            "numpy",
+            "random"
+          ]
+        },
+        {
+          "rank": 3,
+          "scheduler_last_epoch": 8,
+          "rng_keys": [
+            "cpu",
+            "cuda",
+            "numpy",
+            "random"
+          ]
+        },
+        {
+          "rank": 4,
+          "scheduler_last_epoch": 8,
+          "rng_keys": [
+            "cpu",
+            "cuda",
+            "numpy",
+            "random"
+          ]
+        },
+        {
+          "rank": 5,
+          "scheduler_last_epoch": 8,
+          "rng_keys": [
+            "cpu",
+            "cuda",
+            "numpy",
+            "random"
+          ]
+        },
+        {
+          "rank": 6,
+          "scheduler_last_epoch": 8,
+          "rng_keys": [
+            "cpu",
+            "cuda",
+            "numpy",
+            "random"
+          ]
+        },
+        {
+          "rank": 7,
+          "scheduler_last_epoch": 8,
+          "rng_keys": [
+            "cpu",
+            "cuda",
+            "numpy",
+            "random"
+          ]
+        }
+      ],
+      "environments": [
+        {
+          "kind": "train_env",
+          "reset_index": 8,
+          "episode_reset_index": 7,
+          "seed_protocol": "independent_uniform101"
+        },
+        {
+          "kind": "val_env",
+          "reset_index": 0,
+          "episode_reset_index": -1,
+          "seed_protocol": "validation"
+        }
+      ],
+      "driver_rng_restored_on_cpu": true,
+      "next_seeds": [
+        8,
+        24,
+        72,
+        28,
+        30,
+        18,
+        69,
+        57
+      ],
+      "cuda_initialized": false
+    },
+    "dispatch.json": {
+      "start": 1790135920.0467653,
+      "resumed_at": 1790168798.9821274,
+      "deadline": 1790308720.0467553,
+      "suite_deadline": 1790420762.305692,
+      "original_clock_preserved": true,
+      "gpu_hours": 384,
+      "new_slots": 712
+    },
+    "queue-state.json": {
+      "phase": "running-unverified",
+      "stage": "train96",
+      "deadline": 1790308720.0467553
+    },
+    "host-supervision/state.json": {
+      "version": "host-guardian-v1",
+      "phase": "running-unverified",
+      "completed": [],
+      "deadline": 1790308720.0467553,
+      "learning_validated": false,
+      "started_at": 1790168798.0071752,
+      "stage": "train96",
+      "container_id": "fc2f74a4285c5e80660257f42bd1caa21ad1a0614699d680e74938f013106b06"
+    },
+    "admission-train96.json": {
+      "passed": true,
+      "checked_at": 1790168798.981788,
+      "deadline": 1790308720.0467553,
+      "eight_idle_gpus": true,
+      "ram_gib_min": 600,
+      "nvme_gib_min": 1084,
+      "fsync": true
+    },
+    "storage-state.json": {
+      "bytes": 100362720935,
+      "returncode": 0,
+      "status": "measured",
+      "deadline": 1790308720.0467553,
+      "limit": 1099511627776,
+      "root_bytes": {
+        "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2": 16282730,
+        "/var/jfsCache/sc2-qwen-random-cp8-197-source-20260923-r2": 19301509,
+        "/var/jfsCache/sc2-l7-followup197-20260922-r4/qwen-random": 50089508934,
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r4": 22366358,
+        "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-random": 49949049988,
+        "/var/jfsCache/sc2-l7-followup197-20260922-r1": 14859086,
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r1": 39986975,
+        "/var/jfsCache/sc2-l7-followup197-20260922-r2": 15022348,
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r2": 21701753,
+        "/var/jfsCache/sc2-l7-followup197-20260922-r3": 46541029,
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r3": 33174944,
+        "/var/jfsCache/sc2-storage-quiescence-cpu-20260922.4LzwSM": 29973103,
+        "/var/jfsCache/sc2-host-supervision-cpu-20260922.7lJiIO": 30160896,
+        "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r1": 15495726,
+        "/var/jfsCache/sc2-qwen-random-cp8-197-source-20260923-r1": 19295556
+      },
+      "checked_at": 1790168830.9271977,
+      "stderr_empty": true
+    },
+    "suite-account/storage-state.json": {
+      "bytes": 931681952800,
+      "returncode": 0,
+      "status": "measured",
+      "deadline": 1790420762.305692,
+      "limit": 2199023255552,
+      "root_bytes": {
+        "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2": 16282731,
+        "/var/jfsCache/sc2-qwen-random-cp8-197-source-20260923-r2": 19301509,
+        "/var/jfsCache/sc2-l7-followup197-20260922-r4": 881408740798,
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r4": 22366358,
+        "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-random": 49949049988,
+        "/var/jfsCache/sc2-l7-followup197-20260922-r1": 14859086,
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r1": 39986975,
+        "/var/jfsCache/sc2-l7-followup197-20260922-r2": 15022348,
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r2": 21701753,
+        "/var/jfsCache/sc2-l7-followup197-20260922-r3": 46541029,
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r3": 33174944,
+        "/var/jfsCache/sc2-storage-quiescence-cpu-20260922.4LzwSM": 29973103,
+        "/var/jfsCache/sc2-host-supervision-cpu-20260922.7lJiIO": 30160896,
+        "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r1": 15495726,
+        "/var/jfsCache/sc2-qwen-random-cp8-197-source-20260923-r1": 19295556
+      },
+      "checked_at": 1790168831.3224022,
+      "stderr_empty": true
+    },
+    "runs/train96/manifest.json": {
+      "source_commit": "34154283a8298ac4fbaab1c63770a6b81f7d375c",
+      "dirty": false,
+      "world_size": 8,
+      "metrics_precision": "binary64-v1",
+      "run_id": null
+    },
+    "runs/train96/checkpoints/resume_state.json": null
+  },
+  "container": {
+    "Id": "fc2f74a4285c5e80660257f42bd1caa21ad1a0614699d680e74938f013106b06",
+    "State": {
+      "Dead": false,
+      "Error": "",
+      "ExitCode": 0,
+      "FinishedAt": "0001-01-01T00:00:00Z",
+      "OOMKilled": false,
+      "Paused": false,
+      "Pid": 1523713,
+      "Restarting": false,
+      "Running": true,
+      "StartedAt": "2026-09-23T13:06:39.085218914Z",
+      "Status": "running"
+    },
+    "GPU": [
+      {
+        "Capabilities": [
+          [
+            "gpu"
+          ]
+        ],
+        "Count": -1,
+        "DeviceIDs": null,
+        "Driver": "",
+        "Options": {}
+      }
+    ]
+  },
+  "version": "cp8-continuation-launch-v1",
+  "ssh_alias": "sc2-a100-197",
+  "root": "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2",
+  "scope": "Only Qwen Level7 independent-seed own native CP8 ->96 +8 paired zero-update evaluation",
+  "cpu_containers": [
+    {
+      "name": "sc2-qwen-random-cp8-197-20260923-r2-cpu",
+      "id": "6b2ad3ea350bb33b6c9b9e153396e34432aff7bc50b2de46331a4604f4d01fdd",
+      "exit_code": 0,
+      "device_requests": null
+    },
+    {
+      "name": "sc2-qwen-random-cp8-197-20260923-r2-regressions",
+      "id": "1d304e51b60fe5fb08251d482ad2ddc7695ed869d4c9bde25201edd2cb102572",
+      "exit_code": 0,
+      "device_requests": null
+    }
+  ],
+  "retained_cpu_failure": {
+    "root": "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r1",
+    "runtime_sha": "592cd3a01b594527f9c68a73f9331f612079f123",
+    "native_cpu_and_hydra_passed": true,
+    "regressions_passed": false,
+    "reason": "Host-only Guardian tests incorrectly invoked in CPU container; host protection rejected and fixture thread blocked; exact GPU-request-null container stopped",
+    "container_id": "24139b92a62da745424939f3418d14dc83a6eeadfe58326783f454320d63e48b",
+    "exit_after_owned_stop": 137,
+    "gpu_dispatch": false
+  },
+  "notified_events": [
+    "single_dispatch"
+  ],
+  "actual_gpu_restore_verified": false
+}

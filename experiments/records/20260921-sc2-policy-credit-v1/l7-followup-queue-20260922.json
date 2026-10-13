@@ -1,0 +1,368 @@
+{
+  "checked_at": "2026-09-22T15:16:32.001331+08:00",
+  "monitor": {
+    "id": "197-qwen-l7-seed96",
+    "name": "197 L7 Qwen→SpB→随机seed",
+    "status": "ACTIVE",
+    "interval_minutes": 10,
+    "updated_in_place": true,
+    "duplicate_created": false,
+    "healthy_progress_quiet": true,
+    "stop_after": "Current Qwen and both new arms completed, or terminal failure handed off without further authorization"
+  },
+  "root": "/var/jfsCache/sc2-l7-followup197-20260922-r2",
+  "runtime_sha": "e95b9cb425e1d25c4c2c006bb674fb66e8f6dc95",
+  "queue": {
+    "phase": "waiting-predecessor",
+    "completed": [],
+    "first_dispatch_by": 1790230726.5133374
+  },
+  "suite_dispatch_exists": false,
+  "parts": {
+    "spb-same/short": {
+      "readiness": {
+        "passed": true,
+        "runtime_sha": "e95b9cb425e1d25c4c2c006bb674fb66e8f6dc95",
+        "cuda_initialized": false,
+        "actual_entries_and_hydra_configs": true,
+        "actual_parent_verified": true,
+        "deferred_gate": null,
+        "checked_at": 1790061168.2298365
+      },
+      "stages": [
+        "pre",
+        "train2",
+        "post"
+      ],
+      "model_kind": "spb",
+      "difficulty": "VeryHard",
+      "protocol": "same_uniform101",
+      "dispatch_exists": false,
+      "state": null
+    },
+    "spb-same/long": {
+      "readiness": {
+        "passed": true,
+        "runtime_sha": "e95b9cb425e1d25c4c2c006bb674fb66e8f6dc95",
+        "cuda_initialized": false,
+        "actual_entries_and_hydra_configs": true,
+        "actual_parent_verified": false,
+        "deferred_gate": "SpB actual CP2 and accepted prefix required before long GPU",
+        "checked_at": 1790061174.6718364
+      },
+      "stages": [
+        "train96",
+        "eval96"
+      ],
+      "model_kind": "spb",
+      "difficulty": "VeryHard",
+      "protocol": "same_uniform101",
+      "dispatch_exists": false,
+      "state": null
+    },
+    "qwen-random/long": {
+      "readiness": {
+        "passed": true,
+        "runtime_sha": "e95b9cb425e1d25c4c2c006bb674fb66e8f6dc95",
+        "cuda_initialized": false,
+        "actual_entries_and_hydra_configs": true,
+        "actual_parent_verified": true,
+        "deferred_gate": null,
+        "checked_at": 1790061181.5515397
+      },
+      "stages": [
+        "train96",
+        "eval96"
+      ],
+      "model_kind": "qwen",
+      "difficulty": "VeryHard",
+      "protocol": "independent_uniform101",
+      "dispatch_exists": false,
+      "state": null
+    }
+  },
+  "regressions": {
+    "passed": true,
+    "tests": 190,
+    "skips": 0,
+    "cuda_initialized": false,
+    "runtime_sha": "e95b9cb425e1d25c4c2c006bb674fb66e8f6dc95",
+    "checked_at": 1790061212.9611268
+  },
+  "random_parent_cpu": {
+    "rank_states": [
+      {
+        "rank": 0,
+        "last_epoch": 2,
+        "rng_keys": [
+          "cpu",
+          "cuda",
+          "numpy",
+          "random"
+        ]
+      },
+      {
+        "rank": 1,
+        "last_epoch": 2,
+        "rng_keys": [
+          "cpu",
+          "cuda",
+          "numpy",
+          "random"
+        ]
+      },
+      {
+        "rank": 2,
+        "last_epoch": 2,
+        "rng_keys": [
+          "cpu",
+          "cuda",
+          "numpy",
+          "random"
+        ]
+      },
+      {
+        "rank": 3,
+        "last_epoch": 2,
+        "rng_keys": [
+          "cpu",
+          "cuda",
+          "numpy",
+          "random"
+        ]
+      },
+      {
+        "rank": 4,
+        "last_epoch": 2,
+        "rng_keys": [
+          "cpu",
+          "cuda",
+          "numpy",
+          "random"
+        ]
+      },
+      {
+        "rank": 5,
+        "last_epoch": 2,
+        "rng_keys": [
+          "cpu",
+          "cuda",
+          "numpy",
+          "random"
+        ]
+      },
+      {
+        "rank": 6,
+        "last_epoch": 2,
+        "rng_keys": [
+          "cpu",
+          "cuda",
+          "numpy",
+          "random"
+        ]
+      },
+      {
+        "rank": 7,
+        "last_epoch": 2,
+        "rng_keys": [
+          "cpu",
+          "cuda",
+          "numpy",
+          "random"
+        ]
+      }
+    ],
+    "next_reset_index": 2,
+    "next_seeds": [
+      36,
+      17,
+      96,
+      12,
+      79,
+      32,
+      68,
+      90
+    ],
+    "native_driver_rng": false,
+    "cuda_initialized": false
+  },
+  "containers": {
+    "sc2-l7-followup197-20260922-r2-spb-same-short-cpu-cpu": {
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-09-22T07:12:36.532126474Z",
+        "FinishedAt": "2026-09-22T07:12:49.085601662Z"
+      },
+      "device_requests": null
+    },
+    "sc2-l7-followup197-20260922-r2-spb-same-long-cpu-cpu": {
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-09-22T07:12:49.663648851Z",
+        "FinishedAt": "2026-09-22T07:12:55.359694574Z"
+      },
+      "device_requests": null
+    },
+    "sc2-l7-followup197-20260922-r2-qwen-random-long-cpu-cpu": {
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-09-22T07:12:55.669776822Z",
+        "FinishedAt": "2026-09-22T07:13:02.332370678Z"
+      },
+      "device_requests": null
+    },
+    "sc2-l7-followup197-20260922-r2-spb-same-short-cpu-regressions": {
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-09-22T07:13:02.694895982Z",
+        "FinishedAt": "2026-09-22T07:13:34.009460916Z"
+      },
+      "device_requests": null
+    }
+  },
+  "current_predecessor": {
+    "root": "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1",
+    "queue": {
+      "phase": "dispatched",
+      "deadline": 1790227126.5133374
+    },
+    "state": {
+      "phase": "running-unverified",
+      "completed": [],
+      "deadline": 1790227126.5133374,
+      "stage": "train96",
+      "run": "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/runs/train96"
+    },
+    "last_completed_step_in_bounded_tail": 55,
+    "console_tail_bytes": 2097152,
+    "console_tail_sha256": "f8c8482e63a7567023eee7a266606dc3cd966039615b7665ef3ccef1c7e219a4",
+    "docker": {
+      "state": {
+        "Status": "running",
+        "Running": true,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 620504,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-09-22T05:18:46.570744204Z",
+        "FinishedAt": "0001-01-01T00:00:00Z"
+      },
+      "device_requests": [
+        {
+          "Driver": "",
+          "Count": -1,
+          "DeviceIDs": null,
+          "Capabilities": [
+            [
+              "gpu"
+            ]
+          ],
+          "Options": {}
+        }
+      ]
+    }
+  },
+  "receipt_sha256": {
+    "/var/jfsCache/sc2-l7-followup197-20260922-r2/spb-same/short/deployment.json": "8fa25a16e8da8958fb487b6ac71196d418bb42078a8bae114761ef9d9cbb4438",
+    "/var/jfsCache/sc2-l7-followup197-20260922-r2/spb-same/short/readiness.json": "d6569ec3975f01a30a913d54b7d15a508ddc2162f2a1ac22819b0db374bf3e2a",
+    "/var/jfsCache/sc2-l7-followup197-20260922-r2/spb-same/short/cpu/pre/effective_config.json": "932aedb39e0de93c1068a33d1395e4bbc47d255e62bf0e1ce84e51651615807e",
+    "/var/jfsCache/sc2-l7-followup197-20260922-r2/spb-same/short/cpu/pre/resolved_config.json": "1109a9694b723731ec0cbfcde7e8de0c143b3b7b79fb2bd9023eb616f4767d75",
+    "/var/jfsCache/sc2-l7-followup197-20260922-r2/spb-same/short/cpu/train2/effective_config.json": "f69355b93c72c15720934fff3496c7fe35c6fa54874863c755450a5c55fd05ad",
+    "/var/jfsCache/sc2-l7-followup197-20260922-r2/spb-same/short/cpu/train2/resolved_config.json": "cb0eabc486cb4222d5de5f94ba0e2bdaf2d51169d053307a030db6be0f9b4c01",
+    "/var/jfsCache/sc2-l7-followup197-20260922-r2/spb-same/short/cpu/post/effective_config.json": "9e0b38b7b20718fea0e6826be8c2882c1135d19cacf9abcc7803faa6d4e20d4a",
+    "/var/jfsCache/sc2-l7-followup197-20260922-r2/spb-same/short/cpu/post/resolved_config.json": "f91ff1e850b9c56d03e11a24e078792b5aa6ad11948f3a5ed42331f2f228f40c",
+    "/var/jfsCache/sc2-l7-followup197-20260922-r2/spb-same/long/deployment.json": "3b82aded4fd214fb02180a58bda56d91364abaa91accbb7dcf2a81a18a20fb98",
+    "/var/jfsCache/sc2-l7-followup197-20260922-r2/spb-same/long/readiness.json": "c556c7ef1ca5e5ab81248851c2afc29cabeadf467cf242b7180d06d37390f179",
+    "/var/jfsCache/sc2-l7-followup197-20260922-r2/spb-same/long/cpu/train96/effective_config.json": "ebe7fd7a585464e743e11fe5674a218142e72b0f64314737e02a78e34823e6df",
+    "/var/jfsCache/sc2-l7-followup197-20260922-r2/spb-same/long/cpu/train96/resolved_config.json": "daa8d1d29b5444d0c3d90ebba4b4ad3428de2f2f5d30c1dac24de6d9c2e899f8",
+    "/var/jfsCache/sc2-l7-followup197-20260922-r2/spb-same/long/cpu/eval96/effective_config.json": "45016a31e177093eb02c9ec26627e4c5c91c4b40ab532fbac38c688136dd27ef",
+    "/var/jfsCache/sc2-l7-followup197-20260922-r2/spb-same/long/cpu/eval96/resolved_config.json": "50ffcd5d3397e058a41b533df5f79d8e738cdef72541fee3a2323833e81f8c7d",
+    "/var/jfsCache/sc2-l7-followup197-20260922-r2/qwen-random/long/deployment.json": "9c90a1033d7dfe2c07fc3428337ca7c2e976a9f7466a7b7d637ce23b82c8375f",
+    "/var/jfsCache/sc2-l7-followup197-20260922-r2/qwen-random/long/readiness.json": "5be2117e7090c094937efd717abb1aa83df41f0642753bd7ebff7678ac03a974",
+    "/var/jfsCache/sc2-l7-followup197-20260922-r2/qwen-random/long/cpu/train96/effective_config.json": "ec72ba8b4249970a6f4a01afb0d4f8b9d8328992653a1ef5e601f27924e67ded",
+    "/var/jfsCache/sc2-l7-followup197-20260922-r2/qwen-random/long/cpu/train96/resolved_config.json": "3878b3fb4675459924db1c860313c7a7cde7df11817be4ee165cd0ea00474ae3",
+    "/var/jfsCache/sc2-l7-followup197-20260922-r2/qwen-random/long/cpu/eval96/effective_config.json": "a62624dac9b2dc2647c16e12fc887b9e4aa5827c9379ef641fcfc3b3df85643c",
+    "/var/jfsCache/sc2-l7-followup197-20260922-r2/qwen-random/long/cpu/eval96/resolved_config.json": "edb4d317b93b61fb05d38c287b3c8e39b98d6011a4050a0c5d7bb00aedf1d806",
+    "/var/jfsCache/sc2-l7-followup197-20260922-r2/deployment.json": "c3ef0795a92079eb7cfb3d62bb2906dc7dcb84cda29d23cbb029fa7b08f61345",
+    "/var/jfsCache/sc2-l7-followup197-20260922-r2/queue-state.json": "cf0171be90843d5345d935300b97cc4c94d19d55c08afce6d1c1e403abc2e03b",
+    "/var/jfsCache/sc2-l7-followup197-20260922-r2/spb-same/short/regressions.json": "7020aa939e6a2ee79c2511062fdcfd23191b846a765dbc3db59611dcdcdfea65",
+    "/var/jfsCache/sc2-l7-followup197-20260922-r2/qwen-random/long/cpu/parent-small-state.json": "2d43cacaa34c7a04ca18064e7f3a92dffa47cf2d9b003c98f914dd637da7080c",
+    "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/queue-state.json": "1c4b9a9d3a45a247cfdb7540ded61e7fa3874c66a26228c24326a8fb780ebefc",
+    "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/state.json": "2d582989f49012c69b0f525695da47423c2218f2ba9f75afaf56d33cc8a498e0"
+  },
+  "queued_once_at": "2026-09-22T15:14:50.880379+08:00",
+  "tmux": {
+    "socket": "sc2_l7_followup197_20260922_r2",
+    "session": "l7_followup197_r2"
+  },
+  "authorization": {
+    "scope": "Current Qwen same96 -> original SpB Level7 same short+96 -> accepted Qwen Level7 random ownCP2+96",
+    "max_new_arm_wall_hours": 48,
+    "max_new_arm_gpu_hours": 384,
+    "max_new_arm_gib": 1024,
+    "max_suite_wall_hours": 96,
+    "max_suite_gpu_hours": 768,
+    "max_suite_gib": 2048,
+    "spb_short_included": true,
+    "qwen_random_driver_rng_missing_accepted": true,
+    "no_extra_arms": true
+  },
+  "cpu_preparation_history": {
+    "candidate1_sha": "ba11e835b24f5d550b9de6b924ca297afe755d76",
+    "linux_tests": 189,
+    "skips": 0,
+    "cuda_initialized": false,
+    "short_config_passed": true,
+    "long_config_passed": false,
+    "failure": "exact per-stage SpB OUTPUT_DIR/model view relocation rejected by normalized protocol equality",
+    "gpu_dispatched": false,
+    "queued": false,
+    "retained_roots": [
+      "/var/jfsCache/sc2-l7-followup197-20260922-r1",
+      "/var/jfsCache/sc2-l7-followup197-source-20260922-r1"
+    ],
+    "counted_in_new_storage_limits": true
+  },
+  "limitations": [
+    "CPU acceptance is not GPU or learning acceptance",
+    "SpB full native CP2 acceptance is deferred until actual short completion",
+    "Qwen random restoration is non-bitwise",
+    "Mechanical legality and small paired win counts do not establish strategic learning",
+    "No running or frozen historical deployment changed"
+  ]
+}

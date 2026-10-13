@@ -1,0 +1,234 @@
+{
+  "observed_at": "2026-09-22T00:47:30.957991+08:00",
+  "spb_post": {
+    "root": "/var/jfsCache/sc2-policy-credit197-20260921-r4",
+    "stage": "post",
+    "result_done_acceptance_equal": true,
+    "ended_at": "2026-09-21T16:35:46.346670+00:00",
+    "accepted_at": 1790008548.760894,
+    "source_commit": "ce8b938341cd5b881b4dea8446ad570ed7509f78",
+    "dirty": false,
+    "world_size": 8,
+    "model_id": "Panyuqi/SpikingBrain-2.0-instruct",
+    "games": 8,
+    "truncated": 0,
+    "updates": 0,
+    "wins": 5,
+    "defeats": 3,
+    "evidence": {
+      "consumed_answers": 35,
+      "valid_consumed_answers": 35,
+      "parsed_plans": 35,
+      "validated_queue_entries": 636,
+      "validated_locally_queued_commands": 379,
+      "execution_scope": "local Depot/Marine commands, not production completion or causal wins"
+    },
+    "load": {
+      "checkpoint": "/var/jfsCache/sc2-policy-credit197-20260921-r4/runs/train2/checkpoints/global_step_2",
+      "loaded_global_step": 2,
+      "checkpoint_load_returned": true,
+      "val_only": true,
+      "optimizer_updates": 0,
+      "feedback": "0",
+      "temperature": 0.8,
+      "do_sample": true,
+      "games": 8,
+      "game_seeds": [
+        605183188,
+        1075501356,
+        2084414326,
+        2203880230,
+        3000371298,
+        949752300,
+        3225036469,
+        2823708076
+      ],
+      "answers": "online SpB; no replay or replacement",
+      "optimizer_loaded_by_existing_loader_but_not_updated": true
+    },
+    "rank_rng_verified": true,
+    "console_sha256": "7246cf4c25c466bd870a0850fc1bf8b27f2845fc8dc18da3cec5893c637a29e4",
+    "small_sha256": {
+      "result.json": "f4bf791995ca1d03bf861fff8c9d3341a2d8f5558dab4fcebb516cb3a888a817",
+      ".done": "f4bf791995ca1d03bf861fff8c9d3341a2d8f5558dab4fcebb516cb3a888a817",
+      "manifest.json": "2cc039c80a06f1cfe8fc0ef616bc7e3858a9e3c127432f49c5c077ca9d3f546b",
+      "checkpoint_evaluation.json": "2fe5ab21a2af8273c29bc79552f6099ddf8c74caa85f96eac647cd24141d0e7b",
+      "evaluation_seeds.jsonl": "ffaf9953b3c4fc78b2a0f30c67357504f6a6b8e014c3b0adc2db12e87afdad90"
+    },
+    "acceptance_sha256": "c6047ce77e82e4a2a3777dbaa497c4105dcee31a2191cbf6938033631cc22af7"
+  },
+  "qwen_l6_same_pre": {
+    "root": "/var/jfsCache/sc2-qwen-seeds197-20260922-r3/l6-same",
+    "stage": "pre",
+    "result_done_acceptance_equal": true,
+    "ended_at": "2026-09-21T16:41:33.336815+00:00",
+    "accepted_at": 1790008901.354256,
+    "source_commit": "019a8b3a60aa093d61fccfb4293625e300a2894e",
+    "dirty": false,
+    "world_size": 8,
+    "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+    "games": 8,
+    "truncated": 0,
+    "updates": 0,
+    "wins": 8,
+    "defeats": 0,
+    "evidence": {
+      "consumed_answers": 49,
+      "valid_consumed_answers": 49,
+      "parsed_plans": 49,
+      "validated_queue_entries": 769,
+      "validated_locally_queued_commands": 374,
+      "execution_scope": "local Depot/Marine commands, not production completion or causal wins"
+    },
+    "load": {
+      "checkpoint": null,
+      "loaded_global_step": 0,
+      "checkpoint_load_returned": false,
+      "val_only": true,
+      "optimizer_updates": 0,
+      "feedback": "0",
+      "temperature": 0.8,
+      "do_sample": true,
+      "games": 8,
+      "game_seeds": [
+        605183188,
+        1075501356,
+        2084414326,
+        2203880230,
+        3000371298,
+        949752300,
+        3225036469,
+        2823708076
+      ],
+      "answers": "online SpB; no replay or replacement",
+      "optimizer_loaded_by_existing_loader_but_not_updated": false
+    },
+    "rank_rng_verified": true,
+    "console_sha256": "81f2613df287d72f1e1e2038f0b96b1d40d2e983b7955556bce353d897020c5c",
+    "small_sha256": {
+      "result.json": "129ec8f21d404d4339ab0da34f1e7479e7e1227bf6f8f093f24edb16f1a00b55",
+      ".done": "129ec8f21d404d4339ab0da34f1e7479e7e1227bf6f8f093f24edb16f1a00b55",
+      "manifest.json": "b8454662e275175ea781494e5dd623755af3fbb066a6c2f7d17c4655ba6e9e61",
+      "checkpoint_evaluation.json": "bcf33641f0acbe82f4ba09d73b91e19322f04398528415687514472426f3ff01",
+      "evaluation_seeds.jsonl": "ffaf9953b3c4fc78b2a0f30c67357504f6a6b8e014c3b0adc2db12e87afdad90"
+    },
+    "acceptance_sha256": "a15905daafe17d15c9b25e0cf3d8ef32f1c6aeabb4014d67855160128cefd605"
+  },
+  "spb_paired_outcomes": {
+    "win_win": 5,
+    "win_loss": 1,
+    "loss_win": 0,
+    "loss_loss": 2
+  },
+  "spb_state": {
+    "phase": "completed",
+    "completed": [
+      "pre",
+      "train2",
+      "post"
+    ],
+    "deadline": 1790013459.1373603,
+    "stage": "post",
+    "run": "/var/jfsCache/sc2-policy-credit197-20260921-r4/runs/post",
+    "exit_code": 0,
+    "learning_validated": false
+  },
+  "spb_queue_state": {
+    "phase": "completed",
+    "exit_code": 0
+  },
+  "qwen_queue_state": {
+    "phase": "running-unverified",
+    "completed": [],
+    "first_dispatch_by": 1790028940.699252,
+    "arm": "l6-same",
+    "deadline": 1790037385.3296254,
+    "arm_deadline": 1790015785.3296254
+  },
+  "qwen_dispatch": {
+    "start": 1790008585.3296254,
+    "deadline": 1790037385.3296254,
+    "gpu_hours": 64
+  },
+  "qwen_arm_state": {
+    "phase": "running-unverified",
+    "completed": [
+      "pre"
+    ],
+    "deadline": 1790015785.3296254,
+    "stage": "train2",
+    "run": "/var/jfsCache/sc2-qwen-seeds197-20260922-r3/l6-same/runs/train2"
+  },
+  "qwen_train_metrics_present": false,
+  "qwen_train_audit_present": true,
+  "spb_storage": {
+    "checked_at": 1790008546.2117574,
+    "deadline": 1790013459.1373603,
+    "bytes": 64408946540,
+    "limit": 137438953472,
+    "returncode": 0,
+    "status": "measured",
+    "roots": [
+      "/var/jfsCache/sc2-policy-credit197-20260921-r4",
+      "/var/jfsCache/sc2-policy-credit197-source-20260921-r4"
+    ],
+    "stderr": {
+      "tail": "",
+      "characters": 0,
+      "truncated": false
+    }
+  },
+  "qwen_storage": {
+    "checked_at": 1790009246.854133,
+    "deadline": 1790037385.3296254,
+    "bytes": 9048077452,
+    "limit": 549755813888,
+    "returncode": 0,
+    "status": "measured",
+    "roots": [
+      "/var/jfsCache/sc2-qwen-seeds197-20260922-r3",
+      "/var/jfsCache/sc2-qwen-seeds197-source-20260922-r3",
+      "/var/jfsCache/sc2-qwen-instruct2507-cdbee75-20260921-r1",
+      "/var/jfsCache/sc2-qwen-instruct2507-cdbee75-20260921-r1-staging",
+      "/var/jfsCache/sc2-qwen-instruct2507-cdbee75-20260921-r1-direct-staging",
+      "/var/jfsCache/sc2-qwen-seeds197-20260921-r1",
+      "/var/jfsCache/sc2-qwen-seeds197-source-20260921-r1",
+      "/var/jfsCache/sc2-qwen-seeds197-20260921-r2",
+      "/var/jfsCache/sc2-qwen-seeds197-source-20260921-r2"
+    ],
+    "stderr": {
+      "tail": "",
+      "characters": 0,
+      "truncated": false
+    }
+  },
+  "descriptive_win_uncertainty": {
+    "method": "Wilson 95% marginal intervals; not a paired-difference interval or architecture test",
+    "spb_pre_6_of_8": [
+      0.409275,
+      0.928521
+    ],
+    "spb_post_5_of_8": [
+      0.305742,
+      0.863156
+    ],
+    "qwen_pre_8_of_8": [
+      0.675592,
+      1
+    ],
+    "spb_paired_change": -0.125
+  },
+  "notification_events": [
+    "spb_post_completed",
+    "spb_short_acceptance_completed",
+    "qwen_l6_same_first_actual_gpu_sc2",
+    "qwen_l6_same_pre_completed"
+  ],
+  "limitations": [
+    "Mechanical legality and two PPO steps are not proof of strategic learning.",
+    "SpB paired wins fell from 6/8 to 5/8; small sample cannot establish deterioration or improvement.",
+    "Qwen pre is zero-update; 8/8 wins do not establish architecture superiority.",
+    "Qwen train pre-update audit exists, but no completed PPO metric row was available at this snapshot.",
+    "The Qwen checkpoint_evaluation answers field retains a historical generic SpB label; frozen model manifest and read-only Qwen asset mount establish actual Qwen initialization."
+  ]
+}

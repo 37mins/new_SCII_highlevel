@@ -1,0 +1,594 @@
+{
+  "schema": "spb-l8random-r2-training-curve-v1",
+  "checked_at_beijing": "2026-09-30T10:11:40.735656+08:00",
+  "node": "sc2-a100-197",
+  "run_id": "sc2-spb-l8random96-197-20260929-r2",
+  "root": "/var/jfsCache/sc2-spb-l8random96-197-20260929-r2",
+  "runtime_sha": "12f3600ca8e6e8edabc460de70860baeef2b5146",
+  "strict_training_accepted": false,
+  "training_queue_phase": "failed",
+  "prior_returned_ppo_audit": "spb-l8random-r2-recovery-audit-20260930.json",
+  "rows": [
+    {
+      "step": 1,
+      "games": 8,
+      "wins": 1
+    },
+    {
+      "step": 2,
+      "games": 8,
+      "wins": 3
+    },
+    {
+      "step": 3,
+      "games": 8,
+      "wins": 2
+    },
+    {
+      "step": 4,
+      "games": 8,
+      "wins": 3
+    },
+    {
+      "step": 5,
+      "games": 8,
+      "wins": 6
+    },
+    {
+      "step": 6,
+      "games": 8,
+      "wins": 1
+    },
+    {
+      "step": 7,
+      "games": 8,
+      "wins": 2
+    },
+    {
+      "step": 8,
+      "games": 8,
+      "wins": 5
+    },
+    {
+      "step": 9,
+      "games": 8,
+      "wins": 6
+    },
+    {
+      "step": 10,
+      "games": 8,
+      "wins": 3
+    },
+    {
+      "step": 11,
+      "games": 8,
+      "wins": 3
+    },
+    {
+      "step": 12,
+      "games": 8,
+      "wins": 5
+    },
+    {
+      "step": 13,
+      "games": 8,
+      "wins": 5
+    },
+    {
+      "step": 14,
+      "games": 8,
+      "wins": 6
+    },
+    {
+      "step": 15,
+      "games": 8,
+      "wins": 4
+    },
+    {
+      "step": 16,
+      "games": 8,
+      "wins": 4
+    },
+    {
+      "step": 17,
+      "games": 8,
+      "wins": 7
+    },
+    {
+      "step": 18,
+      "games": 8,
+      "wins": 6
+    },
+    {
+      "step": 19,
+      "games": 8,
+      "wins": 6
+    },
+    {
+      "step": 20,
+      "games": 8,
+      "wins": 6
+    },
+    {
+      "step": 21,
+      "games": 8,
+      "wins": 7
+    },
+    {
+      "step": 22,
+      "games": 8,
+      "wins": 4
+    },
+    {
+      "step": 23,
+      "games": 8,
+      "wins": 6
+    },
+    {
+      "step": 24,
+      "games": 8,
+      "wins": 5
+    },
+    {
+      "step": 25,
+      "games": 8,
+      "wins": 3
+    },
+    {
+      "step": 26,
+      "games": 8,
+      "wins": 6
+    },
+    {
+      "step": 27,
+      "games": 8,
+      "wins": 4
+    },
+    {
+      "step": 28,
+      "games": 8,
+      "wins": 6
+    },
+    {
+      "step": 29,
+      "games": 8,
+      "wins": 8
+    },
+    {
+      "step": 30,
+      "games": 8,
+      "wins": 5
+    },
+    {
+      "step": 31,
+      "games": 8,
+      "wins": 5
+    },
+    {
+      "step": 32,
+      "games": 8,
+      "wins": 5
+    },
+    {
+      "step": 33,
+      "games": 8,
+      "wins": 8
+    },
+    {
+      "step": 34,
+      "games": 8,
+      "wins": 7
+    },
+    {
+      "step": 35,
+      "games": 8,
+      "wins": 5
+    },
+    {
+      "step": 36,
+      "games": 8,
+      "wins": 7
+    },
+    {
+      "step": 37,
+      "games": 8,
+      "wins": 7
+    },
+    {
+      "step": 38,
+      "games": 8,
+      "wins": 8
+    },
+    {
+      "step": 39,
+      "games": 8,
+      "wins": 5
+    },
+    {
+      "step": 40,
+      "games": 8,
+      "wins": 6
+    },
+    {
+      "step": 41,
+      "games": 8,
+      "wins": 7
+    },
+    {
+      "step": 42,
+      "games": 8,
+      "wins": 8
+    },
+    {
+      "step": 43,
+      "games": 8,
+      "wins": 7
+    },
+    {
+      "step": 44,
+      "games": 8,
+      "wins": 6
+    },
+    {
+      "step": 45,
+      "games": 8,
+      "wins": 6
+    },
+    {
+      "step": 46,
+      "games": 8,
+      "wins": 5
+    },
+    {
+      "step": 47,
+      "games": 8,
+      "wins": 5
+    },
+    {
+      "step": 48,
+      "games": 8,
+      "wins": 7
+    },
+    {
+      "step": 49,
+      "games": 8,
+      "wins": 7
+    },
+    {
+      "step": 50,
+      "games": 8,
+      "wins": 6
+    },
+    {
+      "step": 51,
+      "games": 8,
+      "wins": 7
+    },
+    {
+      "step": 52,
+      "games": 8,
+      "wins": 7
+    },
+    {
+      "step": 53,
+      "games": 8,
+      "wins": 7
+    },
+    {
+      "step": 54,
+      "games": 8,
+      "wins": 7
+    },
+    {
+      "step": 55,
+      "games": 8,
+      "wins": 3
+    },
+    {
+      "step": 56,
+      "games": 8,
+      "wins": 5
+    },
+    {
+      "step": 57,
+      "games": 8,
+      "wins": 7
+    },
+    {
+      "step": 58,
+      "games": 8,
+      "wins": 6
+    },
+    {
+      "step": 59,
+      "games": 8,
+      "wins": 6
+    },
+    {
+      "step": 60,
+      "games": 8,
+      "wins": 6
+    },
+    {
+      "step": 61,
+      "games": 8,
+      "wins": 4
+    },
+    {
+      "step": 62,
+      "games": 8,
+      "wins": 5
+    },
+    {
+      "step": 63,
+      "games": 8,
+      "wins": 5
+    },
+    {
+      "step": 64,
+      "games": 8,
+      "wins": 2
+    },
+    {
+      "step": 65,
+      "games": 8,
+      "wins": 2
+    },
+    {
+      "step": 66,
+      "games": 8,
+      "wins": 4
+    },
+    {
+      "step": 67,
+      "games": 8,
+      "wins": 4
+    },
+    {
+      "step": 68,
+      "games": 8,
+      "wins": 6
+    },
+    {
+      "step": 69,
+      "games": 8,
+      "wins": 6
+    },
+    {
+      "step": 70,
+      "games": 8,
+      "wins": 5
+    },
+    {
+      "step": 71,
+      "games": 8,
+      "wins": 8
+    },
+    {
+      "step": 72,
+      "games": 8,
+      "wins": 4
+    },
+    {
+      "step": 73,
+      "games": 8,
+      "wins": 4
+    },
+    {
+      "step": 74,
+      "games": 8,
+      "wins": 7
+    },
+    {
+      "step": 75,
+      "games": 8,
+      "wins": 3
+    },
+    {
+      "step": 76,
+      "games": 8,
+      "wins": 5
+    },
+    {
+      "step": 77,
+      "games": 8,
+      "wins": 3
+    },
+    {
+      "step": 78,
+      "games": 8,
+      "wins": 8
+    },
+    {
+      "step": 79,
+      "games": 8,
+      "wins": 7
+    },
+    {
+      "step": 80,
+      "games": 8,
+      "wins": 6
+    },
+    {
+      "step": 81,
+      "games": 8,
+      "wins": 5
+    },
+    {
+      "step": 82,
+      "games": 8,
+      "wins": 6
+    },
+    {
+      "step": 83,
+      "games": 8,
+      "wins": 3
+    },
+    {
+      "step": 84,
+      "games": 8,
+      "wins": 8
+    },
+    {
+      "step": 85,
+      "games": 8,
+      "wins": 8
+    },
+    {
+      "step": 86,
+      "games": 8,
+      "wins": 5
+    },
+    {
+      "step": 87,
+      "games": 8,
+      "wins": 5
+    },
+    {
+      "step": 88,
+      "games": 8,
+      "wins": 4
+    },
+    {
+      "step": 89,
+      "games": 8,
+      "wins": 3
+    },
+    {
+      "step": 90,
+      "games": 8,
+      "wins": 4
+    },
+    {
+      "step": 91,
+      "games": 8,
+      "wins": 8
+    },
+    {
+      "step": 92,
+      "games": 8,
+      "wins": 4
+    },
+    {
+      "step": 93,
+      "games": 8,
+      "wins": 5
+    },
+    {
+      "step": 94,
+      "games": 8,
+      "wins": 3
+    },
+    {
+      "step": 95,
+      "games": 8,
+      "wins": 3
+    },
+    {
+      "step": 96,
+      "games": 8,
+      "wins": 5
+    }
+  ],
+  "segments": [
+    {
+      "stage": "train2",
+      "first": 1,
+      "last": 2,
+      "games": 16,
+      "wins": 4,
+      "strict_stage_accepted": true
+    },
+    {
+      "stage": "train96",
+      "first": 3,
+      "last": 96,
+      "games": 752,
+      "wins": 499,
+      "strict_stage_accepted": false
+    }
+  ],
+  "training_summary": {
+    "returned_ppo_updates": 96,
+    "games": 768,
+    "wins": 503,
+    "last8_wins": 35,
+    "last8_games": 64,
+    "legal_audited_answers": 2758,
+    "audits": 96
+  },
+  "source_files": [
+    {
+      "path": "/var/jfsCache/sc2-spb-l8random96-197-20260929-r2/queue-state.json",
+      "bytes": 449,
+      "sha256": "b5acb3ba8bbd1b386c9304aecb94d391da28101f3f5e8c8d52def277f564c851"
+    },
+    {
+      "path": "/var/jfsCache/sc2-spb-l8random96-197-20260929-r2/spb-random/long/host-supervision/state.json",
+      "bytes": 516,
+      "sha256": "7a69496df92caf3f0b03440db4f3493934cec46e1a4748545794a4d05f32d0f0"
+    },
+    {
+      "path": "/var/jfsCache/sc2-spb-l8random96-197-20260929-r2/spb-random/short/runs/train2/manifest.json",
+      "bytes": 2943,
+      "sha256": "f48875f1ca48ea489547f717ddebaea7997a691a24834f6221b5c981e6281d3a"
+    },
+    {
+      "path": "/var/jfsCache/sc2-spb-l8random96-197-20260929-r2/spb-random/short/runs/train2/training_seeds.jsonl",
+      "bytes": 242,
+      "sha256": "e6fd6d694811367de8b1023e20ba103d0cfbaab581ac1100ae78d4398007676f"
+    },
+    {
+      "path": "/var/jfsCache/sc2-spb-l8random96-197-20260929-r2/spb-random/short/runs/train2/episode_outcomes.jsonl",
+      "bytes": 3659,
+      "sha256": "1048a751d4fac3f6c35286ec25391ab9a0fad4bc1f777492464e590a291b857f"
+    },
+    {
+      "path": "/var/jfsCache/sc2-spb-l8random96-197-20260929-r2/spb-random/short/runs/train2/checkpoints/sc2_policy_credit_audit.jsonl",
+      "bytes": 416,
+      "sha256": "a3cd40a1f0a589645154768c477efa9cb3cd328f1cc228a8ea8fc19312016039"
+    },
+    {
+      "path": "/var/jfsCache/sc2-spb-l8random96-197-20260929-r2/spb-random/short/runs/train2/result.json",
+      "bytes": 9507,
+      "sha256": "8c713ce86c9bd94197fb1a8f1a2b9086830224d9d1c9248afe02258d37058e9a"
+    },
+    {
+      "path": "/var/jfsCache/sc2-spb-l8random96-197-20260929-r2/spb-random/short/runs/train2/.done",
+      "bytes": 9507,
+      "sha256": "8c713ce86c9bd94197fb1a8f1a2b9086830224d9d1c9248afe02258d37058e9a"
+    },
+    {
+      "path": "/var/jfsCache/sc2-spb-l8random96-197-20260929-r2/spb-random/short/acceptance-train2.json",
+      "bytes": 15573,
+      "sha256": "7c920abad637d60f4f9dcd7f4297d7370744f2110310b1bc236829288cc315fa"
+    },
+    {
+      "path": "/var/jfsCache/sc2-spb-l8random96-197-20260929-r2/spb-random/long/runs/train96/manifest.json",
+      "bytes": 3046,
+      "sha256": "fe7c0d971d2b944152f7797f3e9b5893556a4594b39dca9c823bde1ec6cfdc18"
+    },
+    {
+      "path": "/var/jfsCache/sc2-spb-l8random96-197-20260929-r2/spb-random/long/runs/train96/training_seeds.jsonl",
+      "bytes": 11385,
+      "sha256": "25ec2090b83e1ce562139e88572d61fbda7b7c3907db96941ad3648a3ad9fd3f"
+    },
+    {
+      "path": "/var/jfsCache/sc2-spb-l8random96-197-20260929-r2/spb-random/long/runs/train96/episode_outcomes.jsonl",
+      "bytes": 173524,
+      "sha256": "fece2d25723234a79619be0748aedb8de49f253266d05e9ab08ae72b034b4fbd"
+    },
+    {
+      "path": "/var/jfsCache/sc2-spb-l8random96-197-20260929-r2/spb-random/long/runs/train96/checkpoints/sc2_policy_credit_audit.jsonl",
+      "bytes": 19639,
+      "sha256": "9687077ae42f1fa181ef61c05a2fc64d0bea8206a686846522feaa1b7f3d1a92"
+    }
+  ],
+  "limitations": [
+    "All96 actual returned PPO updates were verified by the cited earlier forensic audit.",
+    "This collection rechecks exact small-ledger hashes, natural outcomes, seed protocol and audits only.",
+    "Old long training remains failed/exit137; no final result/done/metrics, not strict accepted training.",
+    "Training batches have changing random scenes; rising training win rate is not fixed-seed learning evidence.",
+    "No evaluation outcomes, failed-r1 games, checkpoints or console payloads included."
+  ]
+}

@@ -1,0 +1,466 @@
+{
+  "checked_at": 1790608417.4003842,
+  "root": "/var/jfsCache/sc2-spb-l8random96-197-20260928-r1",
+  "files": {
+    "queue-state.json": {
+      "phase": "running-unverified",
+      "completed": [],
+      "new_games": 1048,
+      "new_updates": 96,
+      "part": "spb-random/short",
+      "deadline": 1790716328.2092705,
+      "component_deadline": 1790694728.2092705
+    },
+    "dispatch.json": {
+      "start": 1790608328.2092705,
+      "deadline": 1790694728.2092705,
+      "suite_deadline": 1790716328.2092705,
+      "gpu_hours": 192,
+      "suite_gpu_hours": 240,
+      "new_games": 920,
+      "new_updates": 96,
+      "includes_gpu_preflight": true
+    },
+    "predecessor-acceptance.json": {
+      "passed": true,
+      "root": "/var/jfsCache/sc2-qwen-l8random96-197-20260928-r3",
+      "runtime_sha": "ad81511b270f782420208ac8a6f305a141e8042b",
+      "controller_sha": "ad81511b270f782420208ac8a6f305a141e8042b",
+      "method": "accepted small terminal receipts and exact containers",
+      "checked_at": 1790608327.8710945
+    },
+    "suite-storage/storage-state.json": {
+      "command": [
+        "du",
+        "-sb",
+        "--null",
+        "--",
+        "/var/jfsCache/sc2-spb-l8random96-197-20260928-r1",
+        "/var/jfsCache/sc2-spb-l8random-paired128-197-20260928-r1",
+        "/var/jfsCache/sc2-spb-l8random96-197-source-20260928-r1"
+      ],
+      "roots": [
+        "/var/jfsCache/sc2-spb-l8random96-197-20260928-r1",
+        "/var/jfsCache/sc2-spb-l8random-paired128-197-20260928-r1",
+        "/var/jfsCache/sc2-spb-l8random96-197-source-20260928-r1"
+      ],
+      "started_at": 1790608408.099932,
+      "deadline": 1790694728.2092705,
+      "limit": 377957122048,
+      "bytes": 71400055,
+      "returncode": 0,
+      "status": "measured",
+      "stdout": {
+        "tail": "44679186\t/var/jfsCache/sc2-spb-l8random96-197-20260928-r1\u0000945240\t/var/jfsCache/sc2-spb-l8random-paired128-197-20260928-r1\u000025775629\t/var/jfsCache/sc2-spb-l8random96-197-source-20260928-r1\u0000",
+        "characters": 187,
+        "truncated": false
+      },
+      "stderr": {
+        "tail": "",
+        "characters": 0,
+        "truncated": false
+      },
+      "quiescence": {
+        "version": "host-guardian-v1",
+        "container_id": "d9e4c0ce158a382f2af1e2d74f3efb0d1ee0dfd6015bc29a1ed217bcf3f57d0f",
+        "owner_root": "/var/jfsCache/sc2-spb-l8random96-197-20260928-r1/spb-random/short",
+        "guardian_pid": 2061215,
+        "paused_verified": true,
+        "cleanup": "verified-unpaused",
+        "paused_at": 1790608408.145144,
+        "mode": "paused",
+        "resumed_at": 1790608408.1923242
+      },
+      "measured_at": 1790608408.1558833,
+      "root_bytes": {
+        "/var/jfsCache/sc2-spb-l8random96-197-20260928-r1": 44679186,
+        "/var/jfsCache/sc2-spb-l8random-paired128-197-20260928-r1": 945240,
+        "/var/jfsCache/sc2-spb-l8random96-197-source-20260928-r1": 25775629
+      },
+      "checked_at": 1790608408.1924815
+    },
+    "spb-random/short/dispatch.json": {
+      "start": 1790608328.2092705,
+      "deadline": 1790694728.2092705,
+      "clock_shared": true
+    },
+    "spb-random/short/host-supervision/state.json": {
+      "version": "host-guardian-v1",
+      "phase": "running-unverified",
+      "completed": [],
+      "deadline": 1790694728.2092705,
+      "learning_validated": false,
+      "started_at": 1790608360.1206398,
+      "stage": "pre",
+      "container_id": "d9e4c0ce158a382f2af1e2d74f3efb0d1ee0dfd6015bc29a1ed217bcf3f57d0f"
+    },
+    "spb-random/short/gpu-preflight-supervision/state.json": {
+      "version": "host-guardian-v1",
+      "phase": "completed",
+      "completed": [
+        "gpu-preflight"
+      ],
+      "deadline": 1790694728.2092705,
+      "learning_validated": false,
+      "started_at": 1790608328.2098525,
+      "stage": "gpu-preflight",
+      "container_id": "d11dd4fa579f82f0cb0d17f6152ffb000b7a8666b45b8126c2b8a379e65b1980",
+      "exit_code": 0,
+      "finished_at": 1790608360.1194837
+    },
+    "spb-random/short/gpu-preflight/gpu-preflight.json": {
+      "passed": true,
+      "ranks": [
+        {
+          "rank": 0,
+          "visible_devices": "0",
+          "ray_gpu_ids": [
+            0
+          ],
+          "cuda_uuid": "40d97276-36a4-2cce-43ff-be66ca654177",
+          "master_port": 25102
+        },
+        {
+          "rank": 1,
+          "visible_devices": "1",
+          "ray_gpu_ids": [
+            1
+          ],
+          "cuda_uuid": "bea101a5-a727-20d0-2270-fb787dd6c7e0",
+          "master_port": 23365
+        },
+        {
+          "rank": 2,
+          "visible_devices": "2",
+          "ray_gpu_ids": [
+            2
+          ],
+          "cuda_uuid": "334e011d-8eb5-e72e-00a3-dcbd8aaf87e5",
+          "master_port": 24343
+        },
+        {
+          "rank": 3,
+          "visible_devices": "4",
+          "ray_gpu_ids": [
+            4
+          ],
+          "cuda_uuid": "33ec7165-06e2-b141-97db-66711df3e176",
+          "master_port": 26213
+        },
+        {
+          "rank": 4,
+          "visible_devices": "3",
+          "ray_gpu_ids": [
+            3
+          ],
+          "cuda_uuid": "a7707e1f-462b-7ed6-9d2c-97fe6c9acce4",
+          "master_port": 22570
+        },
+        {
+          "rank": 5,
+          "visible_devices": "5",
+          "ray_gpu_ids": [
+            5
+          ],
+          "cuda_uuid": "dd2c977f-d2f0-545a-dbfb-153f0a3b3c1b",
+          "master_port": 29683
+        },
+        {
+          "rank": 6,
+          "visible_devices": "6",
+          "ray_gpu_ids": [
+            6
+          ],
+          "cuda_uuid": "868e1fe3-a401-980d-e3fd-2fc4fb7d0e8f",
+          "master_port": 26762
+        },
+        {
+          "rank": 7,
+          "visible_devices": "7",
+          "ray_gpu_ids": [
+            7
+          ],
+          "cuda_uuid": "8347c82f-9c11-c3d9-37ab-016498436356",
+          "master_port": 22556
+        }
+      ],
+      "nccl_sums": [
+        28,
+        28,
+        28,
+        28,
+        28,
+        28,
+        28,
+        28
+      ],
+      "model_loaded": false,
+      "natural_games": 0,
+      "optimizer_updates": 0,
+      "runtime_environment": {
+        "resolved_config_sha256": "020af1cc20bcd93a6f45b25b296698cdeddde2187c335bf88057624024fad875",
+        "env_var_names": [
+          "PYTHONPATH",
+          "RAY_TMPDIR",
+          "SC2PATH",
+          "SC2_ACCEPTANCE_STAGE",
+          "SC2_ACCEPT_TIMEOUT",
+          "SC2_AI_BUILD",
+          "SC2_ATTACK_ENGAGED_RETARGET_IDLE_ONLY",
+          "SC2_ATTACK_OPTION_ACCOUNT_ISSUED",
+          "SC2_ATTACK_ORDER_POSITION",
+          "SC2_ATTACK_TARGET_UNITS_FIRST",
+          "SC2_AUTO_TRAIN_MARINES",
+          "SC2_BO_ADDRESS",
+          "SC2_CLARIFY_BO_QUOTA",
+          "SC2_COMBAT_REWARD_SCALE",
+          "SC2_COMMAND_TRACE_DIR",
+          "SC2_DIFFICULTY",
+          "SC2_ENABLE_AIR_OPTIONS",
+          "SC2_ENABLE_NEWEXEC_MICRO",
+          "SC2_ENV_SEED",
+          "SC2_EPISODE_OUTCOME_LOG",
+          "SC2_EVAL_SEEDS_LOG_PATH",
+          "SC2_EXECUTION_FAILURE_FEEDBACK",
+          "SC2_EXPECTED_DIFFICULTY",
+          "SC2_FAIL_FAST_ON_ENV_ERROR",
+          "SC2_FIRST_LLM_ATTACK_MIN_UNITS",
+          "SC2_FIXED_BO_PREFIX_LIMIT",
+          "SC2_HOOLIGAN_STRUCTURE_FOCUS",
+          "SC2_L8_RENDEZVOUS_LOW_PORT",
+          "SC2_LLM_ATTACK_MIN_UNITS",
+          "SC2_MAX_FORCED_ATTACKS",
+          "SC2_MAX_STEPS",
+          "SC2_NEWEXEC_BASIC_HOOLIGAN",
+          "SC2_NEWEXEC_DEFENSE_MICRO",
+          "SC2_NEWEXEC_FIGHT_MICRO",
+          "SC2_NEWEXEC_HOOLIGAN_ALLY_POWER_RADIUS",
+          "SC2_NEWEXEC_HOOLIGAN_BIO",
+          "SC2_NEWEXEC_HOOLIGAN_RETREAT",
+          "SC2_NEWEXEC_REQUIRE_TECH_UNIT",
+          "SC2_NEWEXEC_SPECIAL_ABILITIES",
+          "SC2_ORIGINAL_BO_SEGMENT",
+          "SC2_ORIGINAL_GAME_SEEDS",
+          "SC2_PLANNER_PROTOCOL",
+          "SC2_PLAN_BULLET_MAX",
+          "SC2_PLAN_SEGMENT_MAX",
+          "SC2_PRESERVE_VALID_BO",
+          "SC2_PRE_ACTION_TERMINAL_DRAIN_TIMEOUT",
+          "SC2_REINFORCEMENT_MIN_UNITS",
+          "SC2_REINFORCEMENT_TIMER",
+          "SC2_RESET_CONCURRENCY",
+          "SC2_RESET_RETRIES",
+          "SC2_ROLLOUT_N",
+          "SC2_RUNTIME_LOG_ROOT",
+          "SC2_SEED_PYTHON_RANDOM",
+          "SC2_STEP_SHAPING_MODE",
+          "SC2_STRATEGY_PROFILE",
+          "SC2_TERMINAL_ACK_TIMEOUT",
+          "SC2_TRAIN_SEEDS_LOG_PATH",
+          "SC2_TRAIN_SEED_PROTOCOL",
+          "TMPDIR"
+        ],
+        "overridden_env_vars": [
+          "RAY_TMPDIR",
+          "TMPDIR"
+        ],
+        "worker_process_setup_hook": "l7_followup_hook.install",
+        "stage": "train2",
+        "required_worker_module": "refinery_order_eval"
+      }
+    },
+    "spb-random/short/runs/pre/manifest.json": {
+      "schema_version": 1,
+      "status": "running",
+      "started_at": "2026-09-28T15:13:07.316225+00:00",
+      "source_commit": "f7497ab5a1876a5e899f3e620758850c996212d6",
+      "dirty": false,
+      "formal": true,
+      "model_id": "Panyuqi/SpikingBrain-2.0-instruct",
+      "model_revision": "sha256:de52e8ef993afc763f9d4fb498e8d8302ef0bc13bd7dfd53c6ae5f77f43698b5",
+      "model_source": "/assets/spb",
+      "model_manifest_sha256": "40d6f1417568d5fda1107cdafd66c7441a679b03fb148851c8f226ecc9cf884c",
+      "bo_profile": "canonical",
+      "episode_api": "gymnasium-v0.26",
+      "metrics_precision": "binary64-v1",
+      "bo_path": "/var/jfsCache/sc2-spb-l8random96-197-20260928-r1/runtime/agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/knowledge/BO/replay_observations_Flat128_d4_TvT_Macro_g2_Result.Victory_twobase.json",
+      "bo_sha256": "304b1f4ff12fe30c5e6d5f7b8eaef8ed6823ca65afed3a3706cae10e3639c494",
+      "mode": "evaluation",
+      "source_files_sha256": {
+        "configs/spikingbrain2-level5.env": "b34497add5894a01d87338686ba28a9cc7ea9ef86dd62e1d98814b1e898e021e",
+        "configs/system-v1.env": "f99583a73de679b3c11845e7037bbee5629750126241dd8b156206d2734f61a7",
+        "scripts/train_sc2.sh": "c9df070916cb3be0e5732520491bc84ffe09dfe5e0c478cc0a3f74526f27f104",
+        "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/agents/planner.py": "01cc3ac5d6c4c0aebec9817d2cead58d6ddadfa5811eaa048c331fb4054f77d4",
+        "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/players/script_player.py": "89ed4006cf35af238b0962409bd5a183780d8676af5a49af35422d3077030069",
+        "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/players/llm_player.py": "2134b0d02b9b506554ef613facee90c99976fc64f098a1688f4ad3f26d8d0cc2",
+        "agent_system/sc2_episode.py": "882aa88c609100a70892e6479d2e1c48e71c039073b4dbec7267a46e306fff27",
+        "agent_system/environments/env_package/sc2_online_restored/envSC2.py": "f6a1b7eebb470089f548ab96e957cb1c00ad487e4702690385fae8d4b9898a5f",
+        "agent_system/environments/strategic_sc2_env_manager_v2.py": "5592b763164fd64f0c98c5b55380326b8bbe16465404cbce2b21b9aff2ed1a6a",
+        "scripts/run_record.py": "35cce3357733772470ae50f8196ada4cc9a0066cf706d2cf50534dea3ae37541",
+        "verl/utils/logger/aggregate_logger.py": "822439e09abc53f188ffbfce2a360388590be8aa13bee31182e69fe1e9421bd8"
+      },
+      "target_steps": 1,
+      "sc2_signal_max_batches": 0,
+      "start_step": 0,
+      "sc2_checkpoint_resume": false,
+      "training_goal_global_steps": 2,
+      "resume_from_path": null,
+      "host": "d9e4c0ce158a",
+      "python": "3.12.11",
+      "gpu_selection": "0,1,2,3,4,5,6,7",
+      "world_size": 8,
+      "container_image_id": "sha256:1a497d5721f89bb2e98c0273c4b1495f8fdc6921d589650d090871c11b8d1649",
+      "versions": {
+        "torch": "2.7.1+cu128",
+        "transformers": "4.55.2",
+        "ray": "2.48.0",
+        "gymnasium": "1.2.3",
+        "flash-attn": "2.6.3",
+        "flash-linear-attention": "0.4.0",
+        "moba": "1.0.0"
+      }
+    }
+  },
+  "containers": [
+    {
+      "id": "d11dd4fa579f82f0cb0d17f6152ffb000b7a8666b45b8126c2b8a379e65b1980",
+      "name": "/sc2-spb-l8random96-197-20260928-r1-short-gpu-preflight-train2",
+      "state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-09-28T15:12:27.066346554Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-09-28T15:12:08.686139478Z",
+        "Status": "exited"
+      },
+      "labels": {
+        "clean-core.base-image-id": "sha256:3a773ade07540703574ec33410e31f46799814daa65a23ade9510589546c54f9",
+        "clean-core.spikingbrain-commit": "02561132682c2a66925bb0df9f6a1d3f9e816723",
+        "maintainer": "NVIDIA CORPORATION <cudatools@nvidia.com>",
+        "org.opencontainers.image.ref.name": "ubuntu",
+        "org.opencontainers.image.title": "Clean Core SpikingBrain runtime",
+        "org.opencontainers.image.version": "22.04",
+        "sc2.acceptance.root": "/var/jfsCache/sc2-spb-l8random96-197-20260928-r1/spb-random/short"
+      },
+      "devices": [
+        {
+          "Capabilities": [
+            [
+              "gpu"
+            ]
+          ],
+          "Count": -1,
+          "DeviceIDs": null,
+          "Driver": "",
+          "Options": {}
+        }
+      ]
+    },
+    {
+      "id": "d9e4c0ce158a382f2af1e2d74f3efb0d1ee0dfd6015bc29a1ed217bcf3f57d0f",
+      "name": "/sc2-spb-l8random96-197-20260928-r1-short-pre",
+      "state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "0001-01-01T00:00:00Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 2061271,
+        "Restarting": false,
+        "Running": true,
+        "StartedAt": "2026-09-28T15:12:40.582737584Z",
+        "Status": "running"
+      },
+      "labels": {
+        "clean-core.base-image-id": "sha256:3a773ade07540703574ec33410e31f46799814daa65a23ade9510589546c54f9",
+        "clean-core.spikingbrain-commit": "02561132682c2a66925bb0df9f6a1d3f9e816723",
+        "maintainer": "NVIDIA CORPORATION <cudatools@nvidia.com>",
+        "org.opencontainers.image.ref.name": "ubuntu",
+        "org.opencontainers.image.title": "Clean Core SpikingBrain runtime",
+        "org.opencontainers.image.version": "22.04",
+        "sc2.acceptance.root": "/var/jfsCache/sc2-spb-l8random96-197-20260928-r1/spb-random/short"
+      },
+      "devices": [
+        {
+          "Capabilities": [
+            [
+              "gpu"
+            ]
+          ],
+          "Count": -1,
+          "DeviceIDs": null,
+          "Driver": "",
+          "Options": {}
+        }
+      ]
+    }
+  ],
+  "last_startup_observation": {
+    "checked_at": 1790608490.2040696,
+    "queue": {
+      "phase": "running-unverified",
+      "completed": [],
+      "new_games": 1048,
+      "new_updates": 96,
+      "part": "spb-random/short",
+      "deadline": 1790716328.2092705,
+      "component_deadline": 1790694728.2092705
+    },
+    "terminal_files": {
+      "runs/pre/result.json": false,
+      "runs/pre/.done": false,
+      "acceptance-pre.json": false,
+      "host-supervision/failure.json": false
+    }
+  },
+  "runtime_sha": "f7497ab5a1876a5e899f3e620758850c996212d6",
+  "queue_submission": {
+    "submitted_once": true,
+    "submitted_at": 1790608327.376903,
+    "socket": "sc2_spb_l8random96_197_20260928_r1",
+    "session": "spb_l8random96_197_r1"
+  },
+  "startup_evidence": {
+    "source": "spb-random/short/pre-entry.log",
+    "read_mode": "bounded tail 14000 bytes; not full log",
+    "excerpts": [
+      "(WorkerDict pid=4654) SC2_ACTION_SUPPORT {\"budget\": 192, \"canonical_tokenizations_only\": true, \"eos_token_id\": 151645, \"mode\": \"sc2-canonical-bo-support-v1\", \"pad_token_id\": 151643, \"tokenizer_sha256\": \"a63080b4b30dc861fe1b0e420c53a241304dc81aff3d9bb315e6e33e2a1ab794\"} [repeated 7x across cluster]",
+      "(WorkerDict pid=4654) SC2_NO_THINKING {\"blocked_counts\": {\"\": 2, \"<\": 7, \"</\": 7, \"</t\": 2, \"</th\": 13, \"</thi\": 4, \"</thin\": 276, \"<t\": 2, \"<th\": 13, \"<thi\": 4, \"<thin\": 276}, \"forbidden_prefixes\": [\"<think\", \"</think\"], \"mode\": \"sc2-no-thinking-v1\", \"support_mask_sha256\": \"63a9546dd5fb39a64c6e2a2ad13f31101aacaade9bac07258d0e415480181e0d\"} [repeated 7x across cluster]",
+      "(WorkerDict pid=4459) SSESWAMoBAForCausalLM contains 5.17B parameters",
+      "(TaskRunner pid=2337) Feedback checkpoint evaluation: {\"checkpoint\": null, \"loaded_global_step\": 0, \"checkpoint_load_returned\": false, \"val_only\": true, \"optimizer_updates\": 0, \"feedback\": \"0\", \"temperature\": 0.8, \"do_sample\": true, \"games\": 8, \"game_seeds\": [605183188, 1075501356, 2084414326, 2203880230, 3000371298, 949752300, 3225036469, 2823708076], \"answers\": \"online SpB; no replay or replacement\", \"optimizer_loaded_by_existing_loader_but_not_updated\": false}",
+      "(TaskRunner pid=2337) SC2 validation seed record: {'base_seed': 1000, 'reset_index': 0, 'seeds': [605183188, 1075501356, 2084414326, 2203880230, 3000371298, 949752300, 3225036469, 2823708076]}",
+      "(SC2Worker pid=2515) Acquired SC2 reset slot 0/1.",
+      "(SC2Worker pid=2515) 2026-09-28 08:14:45.302 | INFO     | sc2.controller:create_game:44 - Players: Bot LLMPlayer(Terran), Computer CheatVision(Terran, Air)",
+      "(SC2Worker pid=2515) 2026-09-28 08:14:49.332 | INFO     | sc2.protocol:_execute:120 - Client status changed to Status.in_game (was None)",
+      "(SC2Worker pid=2515) Generate new plan... [0]",
+      "(SC2Worker pid=2515) Combat result reward: {\"pid\": 7189, \"game_loop\": 0, \"boundary\": \"planner\", \"last_consumed_policy_action_id\": null, \"killed_value\": 0.0, \"lost_value\": 0.0, \"scale\": 0.001, \"reward\": 0.0}",
+      "(SC2Worker pid=2514) Acquired SC2 reset slot 0/1."
+    ],
+    "training_updates_observed": 0
+  },
+  "scope": {
+    "train_and_selection_games": 920,
+    "primary_games": 128,
+    "total_games": 1048,
+    "total_ppo": 96,
+    "no_old_deletion": true,
+    "no_retry": true,
+    "no_cp192": true
+  },
+  "interpretation": {
+    "gpu_probe_is_not_ppo": true,
+    "pre_is_zero_update": true,
+    "short_not_yet_accepted": true,
+    "long_requires_own_full_native_cp2": true,
+    "guardian_running_empty_terminal_slot_is_normal": true,
+    "mfu_unsupported": "Log says SSESWAMoBA is unsupported by the MFU estimator; an MFU zero is not zero GPU use or invalid-answer rate.",
+    "historical_log_player_label": "Qwen3-30B is a reused SC2 display/path label; actual manifest/model class identify original SpB.",
+    "timestamps": "Use host epoch/container UTC for schedule; SC2 log local timestamps are not used as Beijing time."
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "observed_at_beijing": "2026-09-25T23:14:35+08:00",
+  "status": "r3 failed at zero-game GPU preflight; no formal evaluation stage dispatched",
+  "authorization": "One r3 attempt of the remaining 64 games, 4h/32GPUh from first dispatch, six roots/32GiB, no automatic retry",
+  "branch": "codex/fix-sc2-startup-port-race",
+  "runtime_sha": "0c49f2b033b8fd8c257320148bbbece948701110",
+  "github_remote_sha_verified": "0c49f2b033b8fd8c257320148bbbece948701110",
+  "host": "sc2-a100-197",
+  "root": "/var/jfsCache/sc2-qwen-l8-pilot96-197-20260925-r3",
+  "source_parent": "/var/jfsCache/sc2-qwen-l8-pilot96-197-source-20260925-r3",
+  "dispatch_start_epoch": 1790349096.2894135,
+  "fixed_deadline_epoch": 1790363496.2894135,
+  "scope": {
+    "retained_r1_accepted_games": 32,
+    "r2_new_games": 0,
+    "r3_declared_games": 64,
+    "r3_new_games": 0,
+    "r3_optimizer_updates": 0,
+    "r3_accepted_stages": [],
+    "formal_stage_container_created": false
+  },
+  "preflight": {
+    "container_id": "19ddf7e1c5cf0c5b146fb5a11b234b5e1e1d95a283ac20b7929598ae14afe495",
+    "owner": "/var/jfsCache/sc2-qwen-l8-pilot96-197-20260925-r3",
+    "terminal": "exited1",
+    "oom_killed": false,
+    "gpu_device_request_count": -1,
+    "started_utc": "2026-09-25T15:11:36.739165024Z",
+    "finished_utc": "2026-09-25T15:11:38.182886843Z",
+    "proof_present": false,
+    "container_log_driver": "none",
+    "bounded_ray_artifacts": "session directory and node_ip_address.json only; no Ray log file"
+  },
+  "cpu_preflight": {
+    "real_launcher_hydra_stages": 8,
+    "container_tests": 86,
+    "host_tests": 71,
+    "skips": 0,
+    "cuda_initialized": false,
+    "cpu_container_exit_codes": [0, 0],
+    "cpu_device_requests": null
+  },
+  "failure_analysis": {
+    "direct_observation": "GPU preflight container exited1 before a result; terminal recorder correctly blocked all game stages",
+    "confirmed_cpu_reproduction": "The same long _temp_dir prefix in the no-GPU runtime causes Ray OSError: AF_UNIX path length cannot exceed 107 bytes at plasma_store socket preparation",
+    "short_path_control": "The same no-GPU image initializes Ray with /tmp/raydiag successfully",
+    "inference": "Long Ray _temp_dir is the cause of the preflight exit, based on matching early session files and the exact CPU reproduction; original GPU stderr was unavailable because log-driver=none and no entry redirect",
+    "not_proven": "Whether the deferred-port change resolves r2's NCCL duplicate-GPU failure in the real evaluation stage"
+  },
+  "terminal_sha256": {
+    "deployment.json": "01293cde103df32e3f71261035f2df2217b41c836371f5521bfc0c308708e8c5",
+    "dispatch.json": "ef13049c5e034a45aad67f10cdd7cb7d973ea38f35d71ccb93bdaaaaa182b72c",
+    "queue-state.json": "766b014a427cd8d44feeec72ba71118873515684fdc3d8d7c2243a88894adf9f",
+    "gpu-preflight-supervision/state.json": "a9d8e7f77560cad1744234d6763e6be3f9eccb16337878b9776ee7fab23c413f",
+    "gpu-preflight-supervision/gpu-preflight-guardian.json": "a8c7485589d3a328a6249731305e1e3b5e9ad38c115fe420357f9e3b3fb37d6f"
+  },
+  "storage": {
+    "latest_direct_gnu_du_eight_or_six_root_bytes_at_r3_terminal": 226411464,
+    "counted_roots": 6,
+    "limit_bytes": 34359738368,
+    "du_return_code": 0,
+    "du_stderr_empty": true,
+    "storage_failure_receipts": 0
+  },
+  "gpu_after_failure": "2026-09-25 23:14:35 Beijing: all eight host GPUs 0 MiB/0% utilization; no compute app returned",
+  "actions": "No r1/r2 root changed; no r3 restart or formal game-stage dispatch; no deletion, L8 PPO training or automatic retry"
+}

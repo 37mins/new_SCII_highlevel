@@ -1,0 +1,156 @@
+{
+  "schema": "qwen-l7same-fresh197-cpu-readiness-v1",
+  "prepared": {
+    "observed_at": "2026-09-24T14:06:03.089295+08:00",
+    "source_sha": "5228e9acc7698c69bdcce9af30aa5a7570829a19",
+    "source_clean": true,
+    "no_alternates": true,
+    "prepared": true,
+    "root": "/var/jfsCache/sc2-qwen-l7same96-197-20260924-r1",
+    "source": "/var/jfsCache/sc2-qwen-l7same96-197-source-20260924-r1/code",
+    "parts": [
+      "qwen-same/short",
+      "qwen-same/long"
+    ],
+    "storage_roots": [
+      "/var/jfsCache/sc2-qwen-l7same96-197-20260924-r1",
+      "/var/jfsCache/sc2-qwen-l7same96-197-source-20260924-r1"
+    ],
+    "budget": {
+      "wall_seconds": 172800,
+      "gpu_hours": 384,
+      "output_limit_bytes": 1099511627776,
+      "new_games": 792,
+      "new_updates": 96,
+      "first_dispatch_by": 1790360559.0174987
+    },
+    "dispatch_exists": false,
+    "queue_exists": false
+  },
+  "server_cpu": {
+    "event": "all_cpu_gates_passed",
+    "observed_at": "2026-09-24T14:09:00.156760+08:00",
+    "proofs": {
+      "host-regressions.json": {
+        "passed": true,
+        "tests": 71,
+        "skips": 0,
+        "cuda_initialized": false,
+        "host_only": true,
+        "runtime_sha": "5228e9acc7698c69bdcce9af30aa5a7570829a19",
+        "checked_at": 1790230109.4943902
+      },
+      "qwen-same/short/readiness.json": {
+        "passed": true,
+        "runtime_sha": "5228e9acc7698c69bdcce9af30aa5a7570829a19",
+        "cuda_initialized": false,
+        "actual_entries_and_hydra_configs": true,
+        "actual_parent_verified": true,
+        "deferred_gate": null,
+        "checked_at": 1790230114.691846
+      },
+      "qwen-same/long/readiness.json": {
+        "passed": true,
+        "runtime_sha": "5228e9acc7698c69bdcce9af30aa5a7570829a19",
+        "cuda_initialized": false,
+        "actual_entries_and_hydra_configs": true,
+        "actual_parent_verified": false,
+        "deferred_gate": "SpB actual CP2 and accepted prefix required before long GPU",
+        "checked_at": 1790230120.3526068
+      },
+      "qwen-same/short/regressions.json": {
+        "passed": true,
+        "tests": 285,
+        "skips": 0,
+        "cuda_initialized": false,
+        "host_only": false,
+        "runtime_sha": "5228e9acc7698c69bdcce9af30aa5a7570829a19",
+        "checked_at": 1790230138.8524258,
+        "fresh_qwen_tests": 24
+      }
+    },
+    "containers": [
+      {
+        "id": "00060a51781a6159dd5ba947dadfaa78e9cfaf483c158826b91de9467a2aa6fe",
+        "name": "/sc2-qwen-l7same96-197-20260924-r1-short-cpu",
+        "state": {
+          "Dead": false,
+          "Error": "",
+          "ExitCode": 0,
+          "FinishedAt": "2026-09-24T06:08:35.341278234Z",
+          "OOMKilled": false,
+          "Paused": false,
+          "Pid": 0,
+          "Restarting": false,
+          "Running": false,
+          "StartedAt": "2026-09-24T06:08:29.662535081Z",
+          "Status": "exited"
+        },
+        "device_requests": null
+      },
+      {
+        "id": "983df27988f700835fb4fe7437855620c015d42e970fb256c84120d5f91256f3",
+        "name": "/sc2-qwen-l7same96-197-20260924-r1-long-cpu",
+        "state": {
+          "Dead": false,
+          "Error": "",
+          "ExitCode": 0,
+          "FinishedAt": "2026-09-24T06:08:41.052917055Z",
+          "OOMKilled": false,
+          "Paused": false,
+          "Pid": 0,
+          "Restarting": false,
+          "Running": false,
+          "StartedAt": "2026-09-24T06:08:35.706349016Z",
+          "Status": "exited"
+        },
+        "device_requests": null
+      },
+      {
+        "id": "873804c3c716c568a6dfe319781a5241fc08f544b2b331fd4c601f5d4702ac32",
+        "name": "/sc2-qwen-l7same96-197-20260924-r1-short-regressions",
+        "state": {
+          "Dead": false,
+          "Error": "",
+          "ExitCode": 0,
+          "FinishedAt": "2026-09-24T06:08:59.901524495Z",
+          "OOMKilled": false,
+          "Paused": false,
+          "Pid": 0,
+          "Restarting": false,
+          "Running": false,
+          "StartedAt": "2026-09-24T06:08:41.398841059Z",
+          "Status": "exited"
+        },
+        "device_requests": null
+      }
+    ],
+    "dispatch_exists": false,
+    "queue_exists": false
+  },
+  "remote_source_verification": {
+    "sha": "5228e9acc7698c69bdcce9af30aa5a7570829a19",
+    "origin": "https://github.com/CeraveNew/new_SCII.git",
+    "branch": "codex/fix-sc2-startup-port-race",
+    "push_completed": true,
+    "independent_check": "git -c http.version=HTTP/1.1 push --dry-run --porcelain origin 5228e9acc7698c69bdcce9af30aa5a7570829a19:refs/heads/codex/fix-sc2-startup-port-race",
+    "independent_check_exit_code": 0,
+    "independent_check_result": "= full-SHA:refs/heads/codex/fix-sc2-startup-port-race [up to date]",
+    "note": "Read-only dry-run Git ref comparison confirmed exact full SHA after push; separate ls-remote attempts failed TLS. No TLS verification disabled; no force push."
+  },
+  "local_validation": {
+    "tests": 86,
+    "skips": 0,
+    "source_hashes": 34,
+    "server_gpu_proof": false
+  },
+  "bundle": {
+    "sha256": "413224c7b95b95f73a3edd6e2b9e94397eebcd459331b315189c24abb3a46b43",
+    "remote_path": "/var/jfsCache/sc2-qwen-l7same96-197-source-20260924-r1/candidate.bundle"
+  },
+  "limitations": [
+    "CPU proofs are not GPU/SC2/PPO success.",
+    "Long readiness actual_parent_verified=false intentionally defers own future native Qwen CP2. Its reused helper deferred_gate text says SpB; actual Qwen full-state contract/model/paths are authoritative; frozen receipt not rewritten.",
+    "Historical Qwen same strict failed remains failed. This is a new repetition with native CP2 and startup timing differences, not bitwise repair."
+  ]
+}

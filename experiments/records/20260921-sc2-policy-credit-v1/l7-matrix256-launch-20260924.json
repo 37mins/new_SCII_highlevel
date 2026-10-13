@@ -1,0 +1,434 @@
+{
+  "schema": "l7-matrix256197-launch-v1",
+  "submitted": {
+    "submitted_at": "2026-09-24T23:57:41.773794+08:00",
+    "queue_submitted_once": true,
+    "source_sha": "72068c693266dcf74ed8d0d2eb984f834ca8a030",
+    "root": "/var/jfsCache/sc2-l7-matrix256-197-20260924-r1",
+    "socket": "sc2_l7_matrix256_197_20260924_r1",
+    "session": "l7_matrix256_197_r1",
+    "new_games": 256,
+    "new_updates": 0,
+    "wall_seconds": 28800,
+    "gpu_hours": 64,
+    "output_limit_bytes": 34359738368
+  },
+  "observed_at": "2026-09-24T23:59:48.910648+08:00",
+  "runtime_sha": "72068c693266dcf74ed8d0d2eb984f834ca8a030",
+  "queue": {
+    "phase": "running-unverified",
+    "completed": [],
+    "new_games": 256,
+    "new_updates": 0,
+    "deadline": 1790294262.5049803
+  },
+  "dispatch": {
+    "start": 1790265462.5049803,
+    "deadline": 1790294262.5049803,
+    "gpu_hours": 64,
+    "new_games": 256,
+    "new_updates": 0
+  },
+  "host": {
+    "version": "host-guardian-v1",
+    "phase": "running-unverified",
+    "completed": [],
+    "deadline": 1790294262.5049803,
+    "learning_validated": false,
+    "started_at": 1790265462.505787,
+    "stage": "b00-spb-original",
+    "container_id": "3a292eb6fe0b1407bf07f51334f17c1b959c40d3fddca1800c9f03a036ae6f95"
+  },
+  "deadline_beijing": "2026-09-25T07:57:42.504+08:00",
+  "cpu": {
+    "host": {
+      "passed": true,
+      "tests": 71,
+      "skips": 0,
+      "cuda_initialized": false,
+      "host_only": true,
+      "runtime_sha": "72068c693266dcf74ed8d0d2eb984f834ca8a030",
+      "checked_at": 1790265285.235965
+    },
+    "launchers": {
+      "passed": true,
+      "runtime_sha": "72068c693266dcf74ed8d0d2eb984f834ca8a030",
+      "stages": [
+        "b00-spb-original",
+        "b00-spb-same",
+        "b00-spb-random",
+        "b00-qwen-random",
+        "b01-spb-same",
+        "b01-spb-random",
+        "b01-qwen-random",
+        "b01-spb-original",
+        "b02-spb-random",
+        "b02-qwen-random",
+        "b02-spb-original",
+        "b02-spb-same",
+        "b03-qwen-random",
+        "b03-spb-original",
+        "b03-spb-same",
+        "b03-spb-random",
+        "b04-spb-original",
+        "b04-spb-same",
+        "b04-spb-random",
+        "b04-qwen-random",
+        "b05-spb-same",
+        "b05-spb-random",
+        "b05-qwen-random",
+        "b05-spb-original",
+        "b06-spb-random",
+        "b06-qwen-random",
+        "b06-spb-original",
+        "b06-spb-same",
+        "b07-qwen-random",
+        "b07-spb-original",
+        "b07-spb-same",
+        "b07-spb-random"
+      ],
+      "actual_entries_and_hydra_configs": true,
+      "cuda_initialized": false,
+      "checked_at": 1790265367.2627907
+    },
+    "regressions": {
+      "passed": true,
+      "tests": 93,
+      "skips": 0,
+      "cuda_initialized": false,
+      "runtime_sha": "72068c693266dcf74ed8d0d2eb984f834ca8a030",
+      "checked_at": 1790265383.146707
+    },
+    "system_source_hashes_ok": 34
+  },
+  "parent_preparation": {
+    "passed": true,
+    "proof_sha256": "daf02eef4bd8b255db3713b19dc84123d5f36245bd32cb972f09b2734e465b21",
+    "checked_at": 1790265284.2039492,
+    "roots": {
+      "qwen-random": "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2",
+      "spb-same": "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long",
+      "spb-random": "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/spb-random/long"
+    },
+    "checkpoint_contents_read": false
+  },
+  "parent_admission": {
+    "passed": true,
+    "proof_sha256": "daf02eef4bd8b255db3713b19dc84123d5f36245bd32cb972f09b2734e465b21",
+    "checked_at": 1790265462.1897972,
+    "roots": {
+      "qwen-random": "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2",
+      "spb-same": "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long",
+      "spb-random": "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/spb-random/long"
+    },
+    "checkpoint_contents_read": false
+  },
+  "predecessor_acceptance": {
+    "passed": true,
+    "runtime_sha": "b19b3a2c2d767f20ea71bd16225eee0183cb2fb7",
+    "receipt_sha256": {
+      "runs/b00-original/result.json": "1e2f12193b55365ced7b91c2f6343c92aa2ee730471dc6363a3913a3c387890c",
+      "runs/b00-original/.done": "1e2f12193b55365ced7b91c2f6343c92aa2ee730471dc6363a3913a3c387890c",
+      "acceptance-b00-original.json": "bdde4d5740184dea73670851ef17d35a60e461cf7597905f6f2cf76eaa6883bd",
+      "host-supervision/b00-original-guardian.json": "cac303aab741ab70c8e4a08ce16c41b446c776f5c968280abc65aec36bdbad46",
+      "runs/b00-cp96/result.json": "5fda3caeb94bac286318daf4c27fe979e08364b86647cbb68f9ade43bd96f436",
+      "runs/b00-cp96/.done": "5fda3caeb94bac286318daf4c27fe979e08364b86647cbb68f9ade43bd96f436",
+      "acceptance-b00-cp96.json": "55a12d74200be7a144469fc7a39b521a7bc7a36994d15ba69a68af3487f245d9",
+      "host-supervision/b00-cp96-guardian.json": "1dfaf0e188ff307ae846ea93307f70177070d7c49d9e91afec5d0416cfbdfe3d",
+      "runs/b01-cp96/result.json": "ae2dd21f5e4c10428acf7f4976e01a5ea15cb646846faf36410caa442b85c14c",
+      "runs/b01-cp96/.done": "ae2dd21f5e4c10428acf7f4976e01a5ea15cb646846faf36410caa442b85c14c",
+      "acceptance-b01-cp96.json": "631d3a5644ec41804dfa33e18b369654f8284ff45c1ba035f9e999d62735b011",
+      "host-supervision/b01-cp96-guardian.json": "25dda1c4aaae3a429cf49bdd91c4e7bf0943bdf67f7303b53d970a0a943627d6",
+      "runs/b01-original/result.json": "4b01e48dfd5e5e7e28617c61cd78f079c2e95aeef2b65742cc34d8cd1564e589",
+      "runs/b01-original/.done": "4b01e48dfd5e5e7e28617c61cd78f079c2e95aeef2b65742cc34d8cd1564e589",
+      "acceptance-b01-original.json": "9b722fd3c2b25fe7502bd55a76a33a9b1365d8d9f79a564746be6f61ff6c6583",
+      "host-supervision/b01-original-guardian.json": "2ff8233c45e523d66ce8e533e7a21ed03a7d381b568d493b911f07f892fcc0ab",
+      "runs/b02-original/result.json": "f5dde413ba2cfe32aad512b0c08335325eae35ba56186425bfcceaa51422478e",
+      "runs/b02-original/.done": "f5dde413ba2cfe32aad512b0c08335325eae35ba56186425bfcceaa51422478e",
+      "acceptance-b02-original.json": "54703fe9a0fedb11bad016cb6b8ac65b967bd5b0470d700cf1d6e93cb946ccee",
+      "host-supervision/b02-original-guardian.json": "e3cf24a958f9b8c502c153731c780367355471f5efade15c35e8b924163f0502",
+      "runs/b02-cp96/result.json": "db482e75edf1c5dc71777e37cc64b3156d8168ebffb0dac282ff0355b16edf34",
+      "runs/b02-cp96/.done": "db482e75edf1c5dc71777e37cc64b3156d8168ebffb0dac282ff0355b16edf34",
+      "acceptance-b02-cp96.json": "d42ade91f2929b4ea396228954837d37babe398e9c7599871de64bcd5aebc6fb",
+      "host-supervision/b02-cp96-guardian.json": "698ea3e62fb2d10c1caa53120e35d56cd2bac0ec30afb781c5184cd05ee0ec7a",
+      "runs/b03-cp96/result.json": "95243d06fbca038d01f44a86014176fa5f1fcd193e7d7ea1ca98603b382010d1",
+      "runs/b03-cp96/.done": "95243d06fbca038d01f44a86014176fa5f1fcd193e7d7ea1ca98603b382010d1",
+      "acceptance-b03-cp96.json": "8cfc213b4bd3b8310c2c7a108bf06841da3a134165f728a83fd616b418d7a741",
+      "host-supervision/b03-cp96-guardian.json": "6f06fa3feedea569a7eef86b0d728f6bc3d7c5d9070221c2bb546780c58b98da",
+      "runs/b03-original/result.json": "778d518fbebf80b3585b72ec1d1431cbfa5b20cb6e78c1eaf3b82dca1cfb8d3a",
+      "runs/b03-original/.done": "778d518fbebf80b3585b72ec1d1431cbfa5b20cb6e78c1eaf3b82dca1cfb8d3a",
+      "acceptance-b03-original.json": "0e76623d4a4943bf95e6e006d6b79d7c953f33732fc0c1eac8d7365e1b7415c9",
+      "host-supervision/b03-original-guardian.json": "e1e9d845a3fb9ef78a8eb62f3b28ee7a101f745ff503dd048272dc25ad40c4a9",
+      "runs/b04-original/result.json": "50ee00572c98708540fa8868741e92633c4793627b87734e0178ec603fc2793b",
+      "runs/b04-original/.done": "50ee00572c98708540fa8868741e92633c4793627b87734e0178ec603fc2793b",
+      "acceptance-b04-original.json": "ce385586152b56d85e7cf9bdc60ec674c6f53d5b193a222283529d24fa5725a4",
+      "host-supervision/b04-original-guardian.json": "4fdf5e9f554841100a85b8ddbd119054e96733ffd1f6c834dc417011a740c9b9",
+      "runs/b04-cp96/result.json": "2b1bee31ffdc9475948da2396b7fb94a60bf3d4a3392e97fca5d56cb7d55a9ad",
+      "runs/b04-cp96/.done": "2b1bee31ffdc9475948da2396b7fb94a60bf3d4a3392e97fca5d56cb7d55a9ad",
+      "acceptance-b04-cp96.json": "6bb60d0ef31d617a8263791083e8ae6fa73494351d0d09451d0c70385cbf79ca",
+      "host-supervision/b04-cp96-guardian.json": "3bccb09ee82f068272e66561956e0e4153279fd626e8d342bc20e49d28e2a632",
+      "runs/b05-cp96/result.json": "03aafe9feb58e61039e4b9def594d4ee83795d5b70cb045fa538d94f28b1a2bb",
+      "runs/b05-cp96/.done": "03aafe9feb58e61039e4b9def594d4ee83795d5b70cb045fa538d94f28b1a2bb",
+      "acceptance-b05-cp96.json": "e85d36d801000f9a6889b2d58754a2bf09a482899ebc17d914b0d8487b261edc",
+      "host-supervision/b05-cp96-guardian.json": "e2f869ab5f0abab0c47289a4e6dbbbb0f8c440da6e54612c171e8c4adac158e5",
+      "runs/b05-original/result.json": "615208307f62cd1cd407f0184b4f2b2ad55d6808a8387efef65143f24ee1cceb",
+      "runs/b05-original/.done": "615208307f62cd1cd407f0184b4f2b2ad55d6808a8387efef65143f24ee1cceb",
+      "acceptance-b05-original.json": "eb7071b9c5355b55e287ce343c378428c0cad18b2e92107691c1fcfb73200fbc",
+      "host-supervision/b05-original-guardian.json": "ba8ad214c790a5dd9eee799438fae9edadec34929fd878c0d6a42ef530ef0350",
+      "runs/b06-original/result.json": "ba2102c9d54934bad44d3602764bbfbc58a1ceec0609396f9cf61f8b01200a33",
+      "runs/b06-original/.done": "ba2102c9d54934bad44d3602764bbfbc58a1ceec0609396f9cf61f8b01200a33",
+      "acceptance-b06-original.json": "a5959e4fbb0db1caa502d32192d6b359d3d68ecc5c142f7fcbf0dffec2d9d7f8",
+      "host-supervision/b06-original-guardian.json": "897de1758d4a41d6fca8e4859bfeb074d0b52bc16e9a3b45f3272bfdaa59cc6f",
+      "runs/b06-cp96/result.json": "81329204863e33ac744b2bca00496f0108c1ed464d6ab092b8c7c8798fa616b5",
+      "runs/b06-cp96/.done": "81329204863e33ac744b2bca00496f0108c1ed464d6ab092b8c7c8798fa616b5",
+      "acceptance-b06-cp96.json": "9c367352649dbb22d6c7b1acc40d63c7316a788c1bf19fb7a611d112bf9ac7d4",
+      "host-supervision/b06-cp96-guardian.json": "f7fb9812548fb91d4acce3b3981df5e215b8657d57866fd55ce21e9233a78312",
+      "runs/b07-cp96/result.json": "bd266856726ba31b461ab43753625746514b7b8e4747c80d44480998ed840ba3",
+      "runs/b07-cp96/.done": "bd266856726ba31b461ab43753625746514b7b8e4747c80d44480998ed840ba3",
+      "acceptance-b07-cp96.json": "28db4283eeb8fca61bfb07c465cc573c87b4d88e63eedbb33657e8b9b1215d8b",
+      "host-supervision/b07-cp96-guardian.json": "50d19c5fde5a876880ec23b113633d81a972c395e650ba3a70f362be7c0a65c0",
+      "runs/b07-original/result.json": "5785c52b05eddcc1ce00e886f8c1a1b7368b24bd74543808254bfc67ce858191",
+      "runs/b07-original/.done": "5785c52b05eddcc1ce00e886f8c1a1b7368b24bd74543808254bfc67ce858191",
+      "acceptance-b07-original.json": "0d9078ef21409b22d78c845e2af7edd80b50e07e86e6e2875dbb49652280645a",
+      "host-supervision/b07-original-guardian.json": "1a5ad98fe1006276e91d71999c9222703fd1d53c9bb8a2645277617f5933df44"
+    },
+    "checked_at": 1790265462.0635667,
+    "full_logs_reread": false
+  },
+  "containers": [
+    {
+      "id": "fc5195b21fb8269d80d1b17becd49f068a2c1b9be1fbcaca1de56226daa564e2",
+      "name": "/sc2-l7-matrix256-197-20260924-r1-cpu",
+      "owner": "/var/jfsCache/sc2-l7-matrix256-197-20260924-r1",
+      "state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-09-24T15:56:07.897223387Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-09-24T15:55:49.361317773Z",
+        "Status": "exited"
+      },
+      "device_requests": null
+    },
+    {
+      "id": "0a2020cc3054b7fec41d80819af1478439f7d610e8d360dcbeec1da1e63fec2d",
+      "name": "/sc2-l7-matrix256-197-20260924-r1-regressions",
+      "owner": "/var/jfsCache/sc2-l7-matrix256-197-20260924-r1",
+      "state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-09-24T15:56:24.065582971Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-09-24T15:56:08.20083514Z",
+        "Status": "exited"
+      },
+      "device_requests": null
+    },
+    {
+      "id": "3a292eb6fe0b1407bf07f51334f17c1b959c40d3fddca1800c9f03a036ae6f95",
+      "name": "/sc2-l7-matrix256-197-20260924-r1-b00-spb-original",
+      "owner": "/var/jfsCache/sc2-l7-matrix256-197-20260924-r1",
+      "state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "0001-01-01T00:00:00Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 2484920,
+        "Restarting": false,
+        "Running": true,
+        "StartedAt": "2026-09-24T15:57:42.939234617Z",
+        "Status": "running"
+      },
+      "device_requests": [
+        {
+          "Capabilities": [
+            [
+              "gpu"
+            ]
+          ],
+          "Count": -1,
+          "DeviceIDs": null,
+          "Driver": "",
+          "Options": {}
+        }
+      ]
+    }
+  ],
+  "first_manifest": {
+    "schema_version": 1,
+    "status": "running",
+    "started_at": "2026-09-24T15:58:05.796011+00:00",
+    "source_commit": "72068c693266dcf74ed8d0d2eb984f834ca8a030",
+    "dirty": false,
+    "formal": true,
+    "model_id": "Panyuqi/SpikingBrain-2.0-instruct",
+    "model_revision": "sha256:de52e8ef993afc763f9d4fb498e8d8302ef0bc13bd7dfd53c6ae5f77f43698b5",
+    "model_source": "/assets/spb",
+    "model_manifest_sha256": "40d6f1417568d5fda1107cdafd66c7441a679b03fb148851c8f226ecc9cf884c",
+    "bo_profile": "canonical",
+    "episode_api": "gymnasium-v0.26",
+    "metrics_precision": "binary64-v1",
+    "bo_path": "/var/jfsCache/sc2-l7-matrix256-197-20260924-r1/runtime/agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/knowledge/BO/replay_observations_Flat128_d4_TvT_Macro_g2_Result.Victory_twobase.json",
+    "bo_sha256": "304b1f4ff12fe30c5e6d5f7b8eaef8ed6823ca65afed3a3706cae10e3639c494",
+    "mode": "evaluation",
+    "source_files_sha256": {
+      "configs/spikingbrain2-level5.env": "b34497add5894a01d87338686ba28a9cc7ea9ef86dd62e1d98814b1e898e021e",
+      "configs/system-v1.env": "f99583a73de679b3c11845e7037bbee5629750126241dd8b156206d2734f61a7",
+      "scripts/train_sc2.sh": "c9df070916cb3be0e5732520491bc84ffe09dfe5e0c478cc0a3f74526f27f104",
+      "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/agents/planner.py": "01cc3ac5d6c4c0aebec9817d2cead58d6ddadfa5811eaa048c331fb4054f77d4",
+      "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/players/script_player.py": "89ed4006cf35af238b0962409bd5a183780d8676af5a49af35422d3077030069",
+      "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/players/llm_player.py": "2134b0d02b9b506554ef613facee90c99976fc64f098a1688f4ad3f26d8d0cc2",
+      "agent_system/sc2_episode.py": "882aa88c609100a70892e6479d2e1c48e71c039073b4dbec7267a46e306fff27",
+      "agent_system/environments/env_package/sc2_online_restored/envSC2.py": "f6a1b7eebb470089f548ab96e957cb1c00ad487e4702690385fae8d4b9898a5f",
+      "agent_system/environments/strategic_sc2_env_manager_v2.py": "5592b763164fd64f0c98c5b55380326b8bbe16465404cbce2b21b9aff2ed1a6a",
+      "scripts/run_record.py": "35cce3357733772470ae50f8196ada4cc9a0066cf706d2cf50534dea3ae37541",
+      "verl/utils/logger/aggregate_logger.py": "822439e09abc53f188ffbfce2a360388590be8aa13bee31182e69fe1e9421bd8"
+    },
+    "target_steps": 1,
+    "sc2_signal_max_batches": 0,
+    "start_step": 0,
+    "sc2_checkpoint_resume": false,
+    "training_goal_global_steps": 96,
+    "resume_from_path": null,
+    "host": "3a292eb6fe0b",
+    "python": "3.12.11",
+    "gpu_selection": "0,1,2,3,4,5,6,7",
+    "world_size": 8,
+    "container_image_id": "sha256:1a497d5721f89bb2e98c0273c4b1495f8fdc6921d589650d090871c11b8d1649",
+    "versions": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.55.2",
+      "ray": "2.48.0",
+      "gymnasium": "1.2.3",
+      "flash-attn": "2.6.3",
+      "flash-linear-attention": "0.4.0",
+      "moba": "1.0.0"
+    }
+  },
+  "first_actual_evaluation": {
+    "checkpoint": null,
+    "loaded_global_step": 0,
+    "checkpoint_load_returned": false,
+    "val_only": true,
+    "optimizer_updates": 0,
+    "feedback": "0",
+    "temperature": 0.8,
+    "do_sample": true,
+    "games": 8,
+    "game_seeds": [
+      65648715,
+      3519458032,
+      4034442911,
+      2837899169,
+      3924150504,
+      2347007475,
+      2710453253,
+      3012843628
+    ],
+    "answers": "online spb; no replay or replacement",
+    "optimizer_loaded_by_existing_loader_but_not_updated": false
+  },
+  "first_result": {
+    "exists": false
+  },
+  "guardian_slot": {
+    "exists": true,
+    "bytes": 0,
+    "terminal_slot_empty": true
+  },
+  "storage": {
+    "command": [
+      "du",
+      "-sb",
+      "--null",
+      "--",
+      "/var/jfsCache/sc2-l7-matrix256-197-20260924-r1",
+      "/var/jfsCache/sc2-l7-matrix256-197-source-20260924-r1"
+    ],
+    "roots": [
+      "/var/jfsCache/sc2-l7-matrix256-197-20260924-r1",
+      "/var/jfsCache/sc2-l7-matrix256-197-source-20260924-r1"
+    ],
+    "started_at": 1790265584.584588,
+    "deadline": 1790294262.5049803,
+    "limit": 34359738368,
+    "bytes": 65753639,
+    "returncode": 0,
+    "status": "measured",
+    "stdout": {
+      "tail": "38122350\t/var/jfsCache/sc2-l7-matrix256-197-20260924-r1\u000027631289\t/var/jfsCache/sc2-l7-matrix256-197-source-20260924-r1\u0000",
+      "characters": 119,
+      "truncated": false
+    },
+    "stderr": {
+      "tail": "",
+      "characters": 0,
+      "truncated": false
+    },
+    "quiescence": {
+      "version": "host-guardian-v1",
+      "container_id": "3a292eb6fe0b1407bf07f51334f17c1b959c40d3fddca1800c9f03a036ae6f95",
+      "owner_root": "/var/jfsCache/sc2-l7-matrix256-197-20260924-r1",
+      "guardian_pid": 2484862,
+      "paused_verified": true,
+      "cleanup": "verified-unpaused",
+      "paused_at": 1790265584.6348085,
+      "mode": "paused",
+      "resumed_at": 1790265584.677768
+    },
+    "measured_at": 1790265584.6431458,
+    "root_bytes": {
+      "/var/jfsCache/sc2-l7-matrix256-197-20260924-r1": 38122350,
+      "/var/jfsCache/sc2-l7-matrix256-197-source-20260924-r1": 27631289
+    },
+    "checked_at": 1790265584.6779132
+  },
+  "failure": {
+    "exists": false
+  },
+  "bounded_log_evidence": [
+    "(WorkerDict pid=4654) SC2_ACTION_SUPPORT {\"budget\": 192, \"canonical_tokenizations_only\": true, \"eos_token_id\": 151645, \"mode\": \"sc2-canonical-bo-support-v1\", \"pad_token_id\": 151643, \"tokenizer_sha256\": \"a63080b4b30dc861fe1b0e420c53a241304dc81aff3d9bb315e6e33e2a1ab794\"} [repeated 7x across cluster]",
+    "(WorkerDict pid=4654) SC2_NO_THINKING {\"blocked_counts\": {\"\": 2, \"<\": 7, \"</\": 7, \"</t\": 2, \"</th\": 13, \"</thi\": 4, \"</thin\": 276, \"<t\": 2, \"<th\": 13, \"<thi\": 4, \"<thin\": 276}, \"forbidden_prefixes\": [\"<think\", \"</think\"], \"mode\": \"sc2-no-thinking-v1\", \"support_mask_sha256\": \"63a9546dd5fb39a64c6e2a2ad13f31101aacaade9bac07258d0e415480181e0d\"} [repeated 7x across cluster]",
+    "(TaskRunner pid=2336) Feedback checkpoint evaluation: {\"checkpoint\": null, \"loaded_global_step\": 0, \"checkpoint_load_returned\": false, \"val_only\": true, \"optimizer_updates\": 0, \"feedback\": \"0\", \"temperature\": 0.8, \"do_sample\": true, \"games\": 8, \"game_seeds\": [65648715, 3519458032, 4034442911, 2837899169, 3924150504, 2347007475, 2710453253, 3012843628], \"answers\": \"online spb; no replay or replacement\", \"optimizer_loaded_by_existing_loader_but_not_updated\": false}",
+    "(TaskRunner pid=2336) SC2 validation seed record: {'base_seed': 1000, 'reset_index': 0, 'seeds': [65648715, 3519458032, 4034442911, 2837899169, 3924150504, 2347007475, 2710453253, 3012843628]}",
+    "(SC2Worker pid=2513) Acquired SC2 reset slot 0/1.",
+    "(SC2Worker pid=2513) 2026-09-24 08:59:46.757 | INFO     | sc2.controller:create_game:43 - Map:     Flat128",
+    "(SC2Worker pid=2513) 2026-09-24 08:59:46.757 | INFO     | sc2.controller:create_game:44 - Players: Bot LLMPlayer(Terran), Computer VeryHard(Terran, Air)",
+    "(SC2Worker pid=2513) 2026-09-24 08:59:46.759 | INFO     | sc2.protocol:_execute:120 - Client status changed to Status.init_game (was Status.launched)"
+  ],
+  "receipt_sha256": {
+    "deployment.json": "2b6fad48eff51673496bcd1be90fd906acf6f9381bb5719c54bc7a599f7da008",
+    "host-regressions.json": "6ad5d5fffb3aad2973bb8e52b0247e5445d2b5a24b16921c7de62b383c13ddc0",
+    "readiness.json": "d25e62f09a0710f25de3045e4080783781b4e34bedefe5b7b797600f843c26a4",
+    "regressions.json": "400297e1574a485368c44145637991b6c9b939ca06edc2c7ebcfc3cc582ca14d",
+    "parent-acceptance.json": "8acd2aecc5ce396a2e7fdbd8fb6d4f83d2481664cd5a4d83903c4875abf3e106",
+    "parent-admission.json": "aa2f8e65713fd856b69dfe9f12fdde9390ca27f131af7564e51d3398e346b064",
+    "predecessor-acceptance.json": "ce63338cc92097324a1f30e8f493243ba19989a02733216dab3e6a8659325d31",
+    "queue-state.json": "319064aff77883e5b7475b2d1aae466d2be91f1a4b089304d95f67832910b4d6",
+    "dispatch.json": "91ddfc7aacc5a1ecb59edc868eb18d2a1ac17e79307220400e31c227a97b2a90",
+    "host-supervision/state.json": "feec4947b68f68560029dbee25c66ca936ce2b2b9d8111c4c41993c8a6ae3623",
+    "storage-state.json": "a3f0e7c6d229286d270648e7185b046a75ea0ea3a2c0335c3040fb392e0a3bb2",
+    "runs/b00-spb-original/manifest.json": "a5db41d104cead74e478d526dd805539e8537176e0346e6ace6e6dd35a7c3e0f",
+    "runs/b00-spb-original/checkpoint_evaluation.json": "e4a36b58607e8a0da27a1a7908ae50d6260d5b71dcffcd16dd23291bf7466dd2",
+    "host-supervision/b00-spb-original-guardian.json": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "limitations": [
+    "CPU tests and initial GPU/SC2 startup do not establish completed games or valid final comparison.",
+    "No new PPO updates; predecessor and parents preserved; no restart or duplicate dispatch.",
+    "Guardian empty terminal slot while running is normal.",
+    "No new heartbeat; server-side one-shot queue independently runs and stops descendants on failure."
+  ],
+  "monitoring_actions": "Read-only small states/manifests/load proof and bounded tails; no large checkpoint contents or full logs."
+}

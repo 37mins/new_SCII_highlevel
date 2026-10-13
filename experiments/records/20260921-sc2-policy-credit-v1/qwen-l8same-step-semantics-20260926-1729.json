@@ -1,0 +1,329 @@
+{
+  "checked_at_beijing": "2026-09-26T17:29:45.882816+08:00",
+  "hostname": "k8s-a-gpu01",
+  "host_terminal": {
+    "version": "host-guardian-v1",
+    "phase": "completed",
+    "completed": [
+      "train96",
+      "eval96"
+    ],
+    "deadline": 1790530922.7417548,
+    "learning_validated": false,
+    "started_at": 1790390273.874901,
+    "stage": "eval96",
+    "container_id": "193875937dca94d8175d7509cb91ee07574cb4b92855bdc7fa4d37196adafdfe",
+    "exit_code": 0,
+    "finished_at": 1790412730.4998167
+  },
+  "train96_container_state": {
+    "Status": "exited",
+    "Running": false,
+    "Paused": false,
+    "Restarting": false,
+    "OOMKilled": false,
+    "Dead": false,
+    "Pid": 0,
+    "ExitCode": 0,
+    "Error": "",
+    "StartedAt": "2026-09-26T02:37:54.320353345Z",
+    "FinishedAt": "2026-09-26T08:46:15.332834527Z"
+  },
+  "parts": {
+    "train2": {
+      "manifest": {
+        "source_commit": "eef0f049bb09b7a51188ae67a6c35436a3bf055f",
+        "started_at": "2026-09-25T17:49:48.131227+00:00",
+        "start_step": 0,
+        "target_steps": 2,
+        "world_size": 8,
+        "mode": "training",
+        "metrics_precision": "binary64-v1"
+      },
+      "effective_selected": {
+        "algorithm.adv_estimator": "gigpo",
+        "data.train_batch_size": "1",
+        "env.rollout.n": "8",
+        "env.max_steps": "0",
+        "actor_rollout_ref.rollout.n": "1",
+        "actor_rollout_ref.actor.ppo_mini_batch_size": "8",
+        "actor_rollout_ref.actor.ppo_micro_batch_size_per_gpu": "1",
+        "actor_rollout_ref.actor.ppo_epochs": null,
+        "actor_rollout_ref.model.lora_rank": null,
+        "actor_rollout_ref.actor.optim.lr": "1e-6",
+        "data.max_prompt_length": "4096",
+        "data.max_response_length": "192",
+        "trainer.total_training_steps": "2",
+        "trainer.total_epochs": "2",
+        "trainer.n_gpus_per_node": "8",
+        "trainer.nnodes": "1"
+      },
+      "timing": {
+        "timing_s/step": {
+          "count": 2,
+          "sum": 445.6829533800483,
+          "mean": 222.84147669002414,
+          "min": 215.07220206037164,
+          "max": 230.61075131967664
+        },
+        "timing_s/gen": {
+          "count": 2,
+          "sum": 364.1090937079862,
+          "mean": 182.0545468539931,
+          "min": 181.1711161667481,
+          "max": 182.93797754123807
+        },
+        "timing_s/update_actor": {
+          "count": 2,
+          "sum": 45.08112286403775,
+          "mean": 22.540561432018876,
+          "min": 17.048331038095057,
+          "max": 28.032791825942695
+        },
+        "timing_s/ref": {
+          "count": 2,
+          "sum": 15.550224668346345,
+          "mean": 7.775112334173173,
+          "min": 4.642847529612482,
+          "max": 10.907377138733864
+        },
+        "timing_s/save_checkpoint": {
+          "count": 1,
+          "sum": 7.019995124079287,
+          "mean": 7.019995124079287,
+          "min": 7.019995124079287,
+          "max": 7.019995124079287
+        },
+        "episode/length/mean": {
+          "count": 2,
+          "sum": 12,
+          "mean": 6,
+          "min": 4.375,
+          "max": 7.625
+        },
+        "response_length/mean": {
+          "count": 2,
+          "sum": 76.11249923706055,
+          "mean": 38.05624961853027,
+          "min": 30.5625,
+          "max": 45.54999923706055
+        }
+      }
+    },
+    "train96": {
+      "manifest": {
+        "source_commit": "eef0f049bb09b7a51188ae67a6c35436a3bf055f",
+        "started_at": "2026-09-26T02:38:03.277588+00:00",
+        "start_step": 2,
+        "target_steps": 96,
+        "world_size": 8,
+        "mode": "training",
+        "metrics_precision": "binary64-v1"
+      },
+      "effective_selected": {
+        "algorithm.adv_estimator": "gigpo",
+        "data.train_batch_size": "1",
+        "env.rollout.n": "8",
+        "env.max_steps": "0",
+        "actor_rollout_ref.rollout.n": "1",
+        "actor_rollout_ref.actor.ppo_mini_batch_size": "8",
+        "actor_rollout_ref.actor.ppo_micro_batch_size_per_gpu": "1",
+        "actor_rollout_ref.actor.ppo_epochs": null,
+        "actor_rollout_ref.model.lora_rank": null,
+        "actor_rollout_ref.actor.optim.lr": "1e-6",
+        "data.max_prompt_length": "4096",
+        "data.max_response_length": "192",
+        "trainer.total_training_steps": "96",
+        "trainer.total_epochs": "96",
+        "trainer.n_gpus_per_node": "8",
+        "trainer.nnodes": "1"
+      },
+      "timing": {
+        "timing_s/step": {
+          "count": 94,
+          "sum": 21951.79594774358,
+          "mean": 233.5297441249317,
+          "min": 129.72452286072075,
+          "max": 411.9643317461014
+        },
+        "timing_s/gen": {
+          "count": 94,
+          "sum": 17908.94217365049,
+          "mean": 190.5206614218137,
+          "min": 112.55399925075471,
+          "max": 347.3009737525135
+        },
+        "timing_s/update_actor": {
+          "count": 94,
+          "sum": 2524.0902447514236,
+          "mean": 26.852023880334293,
+          "min": 10.878763717599213,
+          "max": 51.32315719965845
+        },
+        "timing_s/ref": {
+          "count": 94,
+          "sum": 692.6073025958613,
+          "mean": 7.368162793572992,
+          "min": 2.831932836212218,
+          "max": 14.327313884161413
+        },
+        "timing_s/save_checkpoint": {
+          "count": 12,
+          "sum": 83.78956913668662,
+          "mean": 6.982464094723885,
+          "min": 6.502796305343509,
+          "max": 7.717248948290944
+        },
+        "episode/length/mean": {
+          "count": 94,
+          "sum": 730.25,
+          "mean": 7.7686170212765955,
+          "min": 3,
+          "max": 16
+        },
+        "response_length/mean": {
+          "count": 94,
+          "sum": 3421.332056045532,
+          "mean": 36.397149532399276,
+          "min": 26.274999618530273,
+          "max": 58.775001525878906
+        }
+      }
+    }
+  },
+  "all96_timing": {
+    "timing_s/step": {
+      "count": 96,
+      "sum": 22397.478901123628,
+      "mean": 233.30707188670445,
+      "min": 129.72452286072075,
+      "max": 411.9643317461014
+    },
+    "timing_s/gen": {
+      "count": 96,
+      "sum": 18273.051267358474,
+      "mean": 190.3442840349841,
+      "min": 112.55399925075471,
+      "max": 347.3009737525135
+    },
+    "timing_s/update_actor": {
+      "count": 96,
+      "sum": 2569.1713676154613,
+      "mean": 26.76220174599439,
+      "min": 10.878763717599213,
+      "max": 51.32315719965845
+    },
+    "timing_s/ref": {
+      "count": 96,
+      "sum": 708.1575272642076,
+      "mean": 7.3766409090021625,
+      "min": 2.831932836212218,
+      "max": 14.327313884161413
+    },
+    "timing_s/save_checkpoint": {
+      "count": 13,
+      "sum": 90.80956426076591,
+      "mean": 6.985351096981993,
+      "min": 6.502796305343509,
+      "max": 7.717248948290944
+    },
+    "episode/length/mean": {
+      "count": 96,
+      "sum": 742.25,
+      "mean": 7.731770833333333,
+      "min": 3,
+      "max": 16
+    },
+    "response_length/mean": {
+      "count": 96,
+      "sum": 3497.444555282593,
+      "mean": 36.43171411752701,
+      "min": 26.274999618530273,
+      "max": 58.775001525878906
+    }
+  },
+  "resolved_train96_selected": {
+    "ppo_epochs": 1,
+    "lora_rank": 0,
+    "use_dynamic_bsz": false,
+    "mini_batch": 8,
+    "micro_batch": 1
+  },
+  "source_files": [
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/long/host-supervision/state.json",
+      "bytes": 371,
+      "sha256": "79f3f513b34cbd3f23a089a7778b76ae1e15b34baf3c73f4987d117509e6a421"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/short/runs/train2/manifest.json",
+      "bytes": 2915,
+      "sha256": "ab2f125ab149890820e89123ffa6a2c40787c952459bf34f5f5ec1b67e62d60d"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/short/runs/train2/effective_config.json",
+      "bytes": 24561,
+      "sha256": "cd271102688b44c7aaa593f4f2e319907d796248904b5ded858f5a19d2898f3d"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/short/runs/train2/metrics.json",
+      "bytes": 5742,
+      "sha256": "db09b2be10ce34cffed4c73cc75ab02504df66d5b937e8cf4e76df6c97ff13a8"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/long/runs/train96/manifest.json",
+      "bytes": 3016,
+      "sha256": "8b4eea62b5997297189ee3ce18ed2217b4107cbc01cf9d07ef105868a94d4348"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/long/runs/train96/effective_config.json",
+      "bytes": 25235,
+      "sha256": "92db43fe39a674d756cf240b9d09abd51c1445d1ca4b24d377a5e1825ab13770"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/long/runs/train96/metrics.json",
+      "bytes": 268736,
+      "sha256": "112012f2bb45addaa93176b71ae0dbc7fce3a0165bf8c2d1d59df6d2b5d9a78f"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/long/cpu/train96/resolved_config.json",
+      "bytes": 15563,
+      "sha256": "7790ed3409702fe17ed09cbdd1ea16a6f9ed607be485b3bf5addf1774b7e1336"
+    }
+  ],
+  "scope": "Read-only small configuration and metrics; no server writes, full logs or checkpoint reads.",
+  "counting_convention": {
+    "outer_rl_iterations": 96,
+    "natural_training_games": 768,
+    "games_per_iteration": 8,
+    "each_iteration": "Collect eight natural SC2 games, flatten their multiple consumed model-decision rows, then execute PPO minibatches. No claim of exactly 96 AdamW steps.",
+    "ppo_epochs_per_collected_batch": 1,
+    "global_minibatch_decision_rows": 8,
+    "microbatch_per_gpu": 1,
+    "world_size": 8,
+    "max_response_tokens": 192,
+    "scope_of_long": "Long relative to the two-iteration acceptance prefix; not 96 passes over a large fixed dataset.",
+    "training_iteration_time_seconds": 22397.478901123628,
+    "long_container_elapsed_seconds": 22101.012,
+    "hard_budget_hours": 48,
+    "hard_budget_is_not_required_runtime": true
+  },
+  "frozen_code_evidence": [
+    {
+      "sha": "eef0f049bb09b7a51188ae67a6c35436a3bf055f",
+      "path": "verl/trainer/ppo/ray_trainer.py",
+      "lines": "1306 collect; 1483-1485 update_actor; 1532-1544 log/increment/check total step target"
+    },
+    {
+      "sha": "eef0f049bb09b7a51188ae67a6c35436a3bf055f",
+      "path": "verl/workers/actor/dp_actor.py",
+      "lines": "348 update_policy; 369-383 minibatches/ppo_epochs; 502 optimizer step"
+    },
+    {
+      "sha": "eef0f049bb09b7a51188ae67a6c35436a3bf055f",
+      "path": "verl/trainer/config/ppo_trainer.yaml",
+      "lines": "37 lora_rank=0; 64 ppo_epochs=1"
+    }
+  ],
+  "comparison_note": "Prior archived L7 timing receipt reports the same mini/micro/ppo_epochs settings. Observed mean outer-step time: old Qwen same 141.19s (94 rows), Qwen random 170.02s (88 rows), SpB random 275.71s (94 rows). Current L8 mean233.31s is not faster than all earlier Qwen runs. Different scenario/model/startup/response populations are not a controlled speed comparison; older Qwen strict gradient-precision failure remains unchanged."
+}

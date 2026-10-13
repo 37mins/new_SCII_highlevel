@@ -1,0 +1,618 @@
+{
+  "schema_version": 1,
+  "checked_at_beijing": "2026-09-30T08:30:15.627530+08:00",
+  "scope": "failed-run recovery eligibility audit, not experiment acceptance or GPU dispatch",
+  "audit_script_sha256": "ff59e09280c05c0a36683f0c287a133932b6827ab0777d984c35ceb32196ea9e",
+  "cpu_audit_source_sha": "d1900c26c88311a9a0cea49adda0d1abbd8f96ac",
+  "tests": {
+    "local_reader_tests": 8,
+    "passed": 8
+  },
+  "host": {
+    "checked_at": 1790728300.1515894,
+    "source_sha": "12f3600ca8e6e8edabc460de70860baeef2b5146",
+    "mode": "host",
+    "diagnostic_only": true,
+    "run_writes": false,
+    "result": {
+      "queue_phase": "failed",
+      "strict_training_accepted": false,
+      "stages": {
+        "train2": {
+          "returned": {
+            "source_bytes": 2725023,
+            "source_mtime_ns": 1790650104479881700,
+            "selected_bytes": 4993,
+            "selected_rows_sha256": "8483b0be222f9379f316721cb7618c0298c6d028929c70eb40021b4e115f4359",
+            "access": "bounded server-side streaming scan; only PPO projections returned; no full-log download",
+            "summary": {
+              "count": 2,
+              "first_step": 1,
+              "last_step": 2,
+              "exact_contiguous_steps": true,
+              "all_parsed_metrics_finite": true,
+              "gradient_min": 49.18828909737723,
+              "gradient_max": 67.89785984584263,
+              "update_actor_seconds_min": 74.7262354157865,
+              "update_actor_seconds_max": 180.26258269697428,
+              "invalid_advantage_max": 0,
+              "valid_action_ratio_min": 1
+            },
+            "first_and_last": [
+              {
+                "step": 1,
+                "actor/grad_norm": 49.18828909737723,
+                "timing_s/update_actor": 180.26258269697428,
+                "policy_credit/invalid_advantage_max": 0,
+                "episode/valid_action_ratio": 1,
+                "episode/success_rate": 0.125,
+                "training/global_step": 1
+              },
+              {
+                "step": 2,
+                "actor/grad_norm": 67.89785984584263,
+                "timing_s/update_actor": 74.7262354157865,
+                "policy_credit/invalid_advantage_max": 0,
+                "episode/valid_action_ratio": 1,
+                "episode/success_rate": 0.375,
+                "training/global_step": 2
+              }
+            ]
+          },
+          "audits": 2,
+          "legal_answers": 100,
+          "seed_batches": 2,
+          "natural_games": 16,
+          "wins": 4,
+          "terminal_files": {
+            "result.json": true,
+            ".done": true,
+            "metrics.json": true
+          },
+          "small_evidence_sha256": {
+            "manifest.json": "f48875f1ca48ea489547f717ddebaea7997a691a24834f6221b5c981e6281d3a",
+            "training_seeds.jsonl": "e6fd6d694811367de8b1023e20ba103d0cfbaab581ac1100ae78d4398007676f",
+            "episode_outcomes.jsonl": "1048a751d4fac3f6c35286ec25391ab9a0fad4bc1f777492464e590a291b857f",
+            "checkpoints/sc2_policy_credit_audit.jsonl": "a3cd40a1f0a589645154768c477efa9cb3cd328f1cc228a8ea8fc19312016039"
+          }
+        },
+        "train96": {
+          "returned": {
+            "source_bytes": 89134791,
+            "source_mtime_ns": 1790679172333116200,
+            "selected_bytes": 230395,
+            "selected_rows_sha256": "95a9771c5178b34628a24eaac8c13160baec0f3bd54edd276ef991fa24e8eac8",
+            "access": "bounded server-side streaming scan; only PPO projections returned; no full-log download",
+            "summary": {
+              "count": 94,
+              "first_step": 3,
+              "last_step": 96,
+              "exact_contiguous_steps": true,
+              "all_parsed_metrics_finite": true,
+              "gradient_min": 0.37493400772412616,
+              "gradient_max": 287.0314712524414,
+              "update_actor_seconds_min": 6.3330759750679135,
+              "update_actor_seconds_max": 159.01566474698484,
+              "invalid_advantage_max": 0,
+              "valid_action_ratio_min": 1
+            },
+            "first_and_last": [
+              {
+                "step": 3,
+                "actor/grad_norm": 112.1432487487793,
+                "timing_s/update_actor": 159.01566474698484,
+                "policy_credit/invalid_advantage_max": 0,
+                "episode/valid_action_ratio": 1,
+                "episode/success_rate": 0.25,
+                "training/global_step": 3
+              },
+              {
+                "step": 96,
+                "actor/grad_norm": 55.61417531967163,
+                "timing_s/update_actor": 8.437246065586805,
+                "policy_credit/invalid_advantage_max": 0,
+                "episode/valid_action_ratio": 1,
+                "episode/success_rate": 0.625,
+                "training/global_step": 96
+              }
+            ]
+          },
+          "audits": 94,
+          "legal_answers": 2658,
+          "seed_batches": 94,
+          "natural_games": 752,
+          "wins": 499,
+          "terminal_files": {
+            "result.json": false,
+            ".done": false,
+            "metrics.json": false
+          },
+          "small_evidence_sha256": {
+            "manifest.json": "fe7c0d971d2b944152f7797f3e9b5893556a4594b39dca9c823bde1ec6cfdc18",
+            "training_seeds.jsonl": "25ec2090b83e1ce562139e88572d61fbda7b7c3907db96941ad3648a3ad9fd3f",
+            "episode_outcomes.jsonl": "fece2d25723234a79619be0748aedb8de49f253266d05e9ab08ae72b034b4fbd",
+            "checkpoints/sc2_policy_credit_audit.jsonl": "9687077ae42f1fa181ef61c05a2fc64d0bea8206a686846522feaa1b7f3d1a92"
+          }
+        }
+      },
+      "checkpoints": {
+        "2": {
+          "path": "/var/jfsCache/sc2-spb-l8random96-197-20260929-r2/spb-random/short/runs/train2/checkpoints/global_step_2",
+          "bytes": 63554459242,
+          "required_files": {
+            "data.pt": 1947,
+            "sc2_state.pt": 30135,
+            "actor/model_world_size_8_rank_0.pt": 2778173291,
+            "actor/model_world_size_8_rank_1.pt": 2778173291,
+            "actor/model_world_size_8_rank_2.pt": 2778173291,
+            "actor/model_world_size_8_rank_3.pt": 2778173291,
+            "actor/model_world_size_8_rank_4.pt": 2777907051,
+            "actor/model_world_size_8_rank_5.pt": 2777907051,
+            "actor/model_world_size_8_rank_6.pt": 2777907051,
+            "actor/model_world_size_8_rank_7.pt": 2777907051,
+            "actor/optim_world_size_8_rank_0.pt": 5166248083,
+            "actor/optim_world_size_8_rank_1.pt": 5166248083,
+            "actor/optim_world_size_8_rank_2.pt": 5166248083,
+            "actor/optim_world_size_8_rank_3.pt": 5166248083,
+            "actor/optim_world_size_8_rank_4.pt": 5166248083,
+            "actor/optim_world_size_8_rank_5.pt": 5166248083,
+            "actor/optim_world_size_8_rank_6.pt": 5166248083,
+            "actor/optim_world_size_8_rank_7.pt": 5166248083,
+            "actor/extra_state_world_size_8_rank_0.pt": 15205,
+            "actor/extra_state_world_size_8_rank_1.pt": 15141,
+            "actor/extra_state_world_size_8_rank_2.pt": 15205,
+            "actor/extra_state_world_size_8_rank_3.pt": 15141,
+            "actor/extra_state_world_size_8_rank_4.pt": 15141,
+            "actor/extra_state_world_size_8_rank_5.pt": 15077,
+            "actor/extra_state_world_size_8_rank_6.pt": 15141,
+            "actor/extra_state_world_size_8_rank_7.pt": 15077
+          },
+          "model_optimizer_content_checked": false
+        },
+        "32": {
+          "path": "/var/jfsCache/sc2-spb-l8random96-197-20260929-r2/spb-random/long/runs/train96/checkpoints/global_step_32",
+          "bytes": 63554459178,
+          "required_files": {
+            "data.pt": 1947,
+            "sc2_state.pt": 30071,
+            "actor/model_world_size_8_rank_0.pt": 2778173291,
+            "actor/model_world_size_8_rank_1.pt": 2778173291,
+            "actor/model_world_size_8_rank_2.pt": 2778173291,
+            "actor/model_world_size_8_rank_3.pt": 2778173291,
+            "actor/model_world_size_8_rank_4.pt": 2777907051,
+            "actor/model_world_size_8_rank_5.pt": 2777907051,
+            "actor/model_world_size_8_rank_6.pt": 2777907051,
+            "actor/model_world_size_8_rank_7.pt": 2777907051,
+            "actor/optim_world_size_8_rank_0.pt": 5166248083,
+            "actor/optim_world_size_8_rank_1.pt": 5166248083,
+            "actor/optim_world_size_8_rank_2.pt": 5166248083,
+            "actor/optim_world_size_8_rank_3.pt": 5166248083,
+            "actor/optim_world_size_8_rank_4.pt": 5166248083,
+            "actor/optim_world_size_8_rank_5.pt": 5166248083,
+            "actor/optim_world_size_8_rank_6.pt": 5166248083,
+            "actor/optim_world_size_8_rank_7.pt": 5166248083,
+            "actor/extra_state_world_size_8_rank_0.pt": 15205,
+            "actor/extra_state_world_size_8_rank_1.pt": 15141,
+            "actor/extra_state_world_size_8_rank_2.pt": 15205,
+            "actor/extra_state_world_size_8_rank_3.pt": 15141,
+            "actor/extra_state_world_size_8_rank_4.pt": 15141,
+            "actor/extra_state_world_size_8_rank_5.pt": 15077,
+            "actor/extra_state_world_size_8_rank_6.pt": 15141,
+            "actor/extra_state_world_size_8_rank_7.pt": 15077
+          },
+          "model_optimizer_content_checked": false
+        },
+        "64": {
+          "path": "/var/jfsCache/sc2-spb-l8random96-197-20260929-r2/spb-random/long/runs/train96/checkpoints/global_step_64",
+          "bytes": 63554459178,
+          "required_files": {
+            "data.pt": 1947,
+            "sc2_state.pt": 30071,
+            "actor/model_world_size_8_rank_0.pt": 2778173291,
+            "actor/model_world_size_8_rank_1.pt": 2778173291,
+            "actor/model_world_size_8_rank_2.pt": 2778173291,
+            "actor/model_world_size_8_rank_3.pt": 2778173291,
+            "actor/model_world_size_8_rank_4.pt": 2777907051,
+            "actor/model_world_size_8_rank_5.pt": 2777907051,
+            "actor/model_world_size_8_rank_6.pt": 2777907051,
+            "actor/model_world_size_8_rank_7.pt": 2777907051,
+            "actor/optim_world_size_8_rank_0.pt": 5166248083,
+            "actor/optim_world_size_8_rank_1.pt": 5166248083,
+            "actor/optim_world_size_8_rank_2.pt": 5166248083,
+            "actor/optim_world_size_8_rank_3.pt": 5166248083,
+            "actor/optim_world_size_8_rank_4.pt": 5166248083,
+            "actor/optim_world_size_8_rank_5.pt": 5166248083,
+            "actor/optim_world_size_8_rank_6.pt": 5166248083,
+            "actor/optim_world_size_8_rank_7.pt": 5166248083,
+            "actor/extra_state_world_size_8_rank_0.pt": 15205,
+            "actor/extra_state_world_size_8_rank_1.pt": 15141,
+            "actor/extra_state_world_size_8_rank_2.pt": 15205,
+            "actor/extra_state_world_size_8_rank_3.pt": 15141,
+            "actor/extra_state_world_size_8_rank_4.pt": 15141,
+            "actor/extra_state_world_size_8_rank_5.pt": 15077,
+            "actor/extra_state_world_size_8_rank_6.pt": 15141,
+            "actor/extra_state_world_size_8_rank_7.pt": 15077
+          },
+          "model_optimizer_content_checked": false
+        },
+        "96": {
+          "path": "/var/jfsCache/sc2-spb-l8random96-197-20260929-r2/spb-random/long/runs/train96/checkpoints/global_step_96",
+          "bytes": 63554459114,
+          "required_files": {
+            "data.pt": 1947,
+            "sc2_state.pt": 30007,
+            "actor/model_world_size_8_rank_0.pt": 2778173291,
+            "actor/model_world_size_8_rank_1.pt": 2778173291,
+            "actor/model_world_size_8_rank_2.pt": 2778173291,
+            "actor/model_world_size_8_rank_3.pt": 2778173291,
+            "actor/model_world_size_8_rank_4.pt": 2777907051,
+            "actor/model_world_size_8_rank_5.pt": 2777907051,
+            "actor/model_world_size_8_rank_6.pt": 2777907051,
+            "actor/model_world_size_8_rank_7.pt": 2777907051,
+            "actor/optim_world_size_8_rank_0.pt": 5166248083,
+            "actor/optim_world_size_8_rank_1.pt": 5166248083,
+            "actor/optim_world_size_8_rank_2.pt": 5166248083,
+            "actor/optim_world_size_8_rank_3.pt": 5166248083,
+            "actor/optim_world_size_8_rank_4.pt": 5166248083,
+            "actor/optim_world_size_8_rank_5.pt": 5166248083,
+            "actor/optim_world_size_8_rank_6.pt": 5166248083,
+            "actor/optim_world_size_8_rank_7.pt": 5166248083,
+            "actor/extra_state_world_size_8_rank_0.pt": 15205,
+            "actor/extra_state_world_size_8_rank_1.pt": 15141,
+            "actor/extra_state_world_size_8_rank_2.pt": 15205,
+            "actor/extra_state_world_size_8_rank_3.pt": 15141,
+            "actor/extra_state_world_size_8_rank_4.pt": 15141,
+            "actor/extra_state_world_size_8_rank_5.pt": 15077,
+            "actor/extra_state_world_size_8_rank_6.pt": 15141,
+            "actor/extra_state_world_size_8_rank_7.pt": 15077
+          },
+          "model_optimizer_content_checked": false
+        }
+      },
+      "accepted_short_prefix": {
+        "terminal_agreement": true,
+        "contract_files_matched": 19,
+        "contract_sha256": "bbdff26926768def9f08b5164384e6f1dd32b1bb35715f6785b3f5ee36064b54"
+      },
+      "native_cp2_load_receipt": {
+        "from_checkpoint": "/var/jfsCache/sc2-spb-l8random96-197-20260929-r2/spb-random/short/runs/train2/checkpoints/global_step_2",
+        "global_step": 2,
+        "next_reset_index": 2,
+        "next_seeds": [
+          36,
+          17,
+          96,
+          12,
+          79,
+          32,
+          68,
+          90
+        ],
+        "source": "checkpoint",
+        "model_optimizer_dataloader_load_returned": true
+      }
+    }
+  },
+  "small_state": {
+    "checked_at": 1790728172.9078684,
+    "source_sha": "12f3600ca8e6e8edabc460de70860baeef2b5146",
+    "mode": "small",
+    "diagnostic_only": true,
+    "run_writes": false,
+    "result": {
+      "passed": true,
+      "cuda_initialized": false,
+      "checkpoints": {
+        "2": {
+          "global_step": 2,
+          "train_reset_index": 2,
+          "driver_rng_valid": true,
+          "rank_rng_states": 8,
+          "scheduler_epochs": 2,
+          "small_file_sha256": {
+            "sc2_state.pt": "956bff3ea0db146e28fac33a190c87e04ac9cbe2990240917f2a4c687d272253",
+            "actor/extra_state_world_size_8_rank_0.pt": "4a4c5e18f5da3113e755aab9d9dc4218dd9591b5e8798ea2fe8636c588c6b1f7",
+            "actor/extra_state_world_size_8_rank_1.pt": "0c7dc2ba362656161d3be0fe15dd88dc9f43882d7dc785b14ebfc4c3d6910309",
+            "actor/extra_state_world_size_8_rank_2.pt": "2ff841fbef0d96c5c0683a5ae5c69fe3218156b3797e218783ad4722e49296e8",
+            "actor/extra_state_world_size_8_rank_3.pt": "edc299c9d93c391a164a53cec6d058c8e0026e98b46a3a0c37eff24176691d01",
+            "actor/extra_state_world_size_8_rank_4.pt": "4c763ec9ffbb30132f1e88c766ce983ba7fcce72e37563e880f4d8314bfb457f",
+            "actor/extra_state_world_size_8_rank_5.pt": "7e6db35d9f01982276f47870228b2155494535df0e21bf786c26d69d9696b47c",
+            "actor/extra_state_world_size_8_rank_6.pt": "406ef92387d95513ada7cad806eb2743b9d9d4f77943e4e72534c140dc8b5842",
+            "actor/extra_state_world_size_8_rank_7.pt": "2d3a77337871540ce336adf3a36f13b0886513e802ef685e27e57505182bce19",
+            "data.pt": "04d84705c2e913fdf221faf070bf7415dc60439daa0163b152468463157bb9df"
+          }
+        },
+        "32": {
+          "global_step": 32,
+          "train_reset_index": 32,
+          "driver_rng_valid": true,
+          "rank_rng_states": 8,
+          "scheduler_epochs": 32,
+          "small_file_sha256": {
+            "sc2_state.pt": "6d4a4fbcfbc6ee8622d18d539413c91c57e6b2738300b9ec2c28e981a96b898f",
+            "actor/extra_state_world_size_8_rank_0.pt": "d3e4fcb51be7af37b09d7765b3c6201310840bc93e9761db406fb54b38f90b87",
+            "actor/extra_state_world_size_8_rank_1.pt": "36ea6b01166cf8949e9854a58302317f7a120261d27eb5aefe1e53e79972f425",
+            "actor/extra_state_world_size_8_rank_2.pt": "96d720a7e24bf088a8dc4576f14fa7da9ffe99f4d87ea8b6cce075278eaa3e54",
+            "actor/extra_state_world_size_8_rank_3.pt": "e3e0c363790dec6c75c085b8ee78e0488cccd716777508dfddfd73b87bdd59d9",
+            "actor/extra_state_world_size_8_rank_4.pt": "39a238e70086f0704a250f392a96f2f69654b4432081e92b2123d4b5b00a4d30",
+            "actor/extra_state_world_size_8_rank_5.pt": "73664e2a500536de663f7d7d82056379827700ed18bfb724b7fca40ddd10fb53",
+            "actor/extra_state_world_size_8_rank_6.pt": "0e4b5421e4dbe7d83b1cc97152acf8d4888ef6bc4edc3eb725bc8eac1b1f19ce",
+            "actor/extra_state_world_size_8_rank_7.pt": "9a2b87da9590b44f031e7e55379e9582d4331c54cb220b0a42616c7867a604c7",
+            "data.pt": "93c5849d0483294a868a2e9b3aabaa20ed804491971bbd2cfcbb986cb714079c"
+          }
+        },
+        "64": {
+          "global_step": 64,
+          "train_reset_index": 64,
+          "driver_rng_valid": true,
+          "rank_rng_states": 8,
+          "scheduler_epochs": 64,
+          "small_file_sha256": {
+            "sc2_state.pt": "8d1eaad6681236b63c9db4b0468a7d49557c2dad21c06ac97babb744f1ce29a4",
+            "actor/extra_state_world_size_8_rank_0.pt": "9f7cdff0948f29511a2a279878a7b1db395b72e8f4cb81b027d14069e2909956",
+            "actor/extra_state_world_size_8_rank_1.pt": "0542bca4791173d66ac611dc27056a41a67f8c93672b9503d0b82dc2cd6b0a95",
+            "actor/extra_state_world_size_8_rank_2.pt": "788fccd77ec8f3d90481d424dc17bb002e8378dd7357c26ce03b11d414e54df7",
+            "actor/extra_state_world_size_8_rank_3.pt": "e67a1d36706bd6b33be21789cb7328a42088bc304c99bf0b9b002433f4e73052",
+            "actor/extra_state_world_size_8_rank_4.pt": "60f74c3c759454b2e1a71917fd4d037756057f8ee5f597bc587f0537be586260",
+            "actor/extra_state_world_size_8_rank_5.pt": "25a6ce7ed50cf4ef6f9aa83394224b9945bea4014f96daf3e6748da5588867a6",
+            "actor/extra_state_world_size_8_rank_6.pt": "02ecb1c5cc788d65c9d3e2e107ff0346c0ba101d9204d05a90f73455600c726d",
+            "actor/extra_state_world_size_8_rank_7.pt": "974c4ac78911be457212d948a53b9911c3a22d9559affaa3004d2616b7750f2c",
+            "data.pt": "ae1175a0efafbabced419aad941c1eb6303b11b20f01ea14635de1abfc0fdd43"
+          }
+        },
+        "96": {
+          "global_step": 96,
+          "train_reset_index": 96,
+          "driver_rng_valid": true,
+          "rank_rng_states": 8,
+          "scheduler_epochs": 96,
+          "small_file_sha256": {
+            "sc2_state.pt": "5cba055eaaa32d7d5af7265a2e92e9f0a639e39fa8ef11f14090b2d0d6237fbf",
+            "actor/extra_state_world_size_8_rank_0.pt": "3becd7413f1c3fe0163a032a6a48318c888bcbff2109fe02618205aa0a7ef2c6",
+            "actor/extra_state_world_size_8_rank_1.pt": "41bb3ea070aa8daea52a0261fde586f7286f898861d752ad6e605a0a0aefc974",
+            "actor/extra_state_world_size_8_rank_2.pt": "1cd0ae10fd38d0cdfa882f82d815de9ddd2efd5eb716c8c34e33dc7184ec1c8d",
+            "actor/extra_state_world_size_8_rank_3.pt": "b4c2f90566b259657ec2a05388e3875f1f31cb11deb05ea40bc9c1992c8c83d4",
+            "actor/extra_state_world_size_8_rank_4.pt": "eac6a92e2565e08f9bb216d0e245db269fcd817843eee67c8e44aa9fc6a0b7aa",
+            "actor/extra_state_world_size_8_rank_5.pt": "a88705613a76e32a0b3f5fc649ae684d88fd984a8cbb309066822085e273318d",
+            "actor/extra_state_world_size_8_rank_6.pt": "b58b756f21d4fab2cbcae8aa55b5a45769592652bf83ffdfb4edffcbbd24bf0b",
+            "actor/extra_state_world_size_8_rank_7.pt": "fe69f2bc93a2d3cf92dda954a6d76f01ea6f6d1ffe40c7d9812f9e67f258b239",
+            "data.pt": "1e4d32131195d34a7fe70705df08487e8330cf8f4945dda371345f068f6d9053"
+          }
+        }
+      },
+      "model_optimizer_tensors_loaded": false,
+      "strict_training_accepted": false
+    }
+  },
+  "resources": {
+    "checked_at": 1790728215.627517,
+    "checked_at_beijing": "2026-09-30T08:30:15.627530+08:00",
+    "short_durations": {
+      "pre": {
+        "status": "completed",
+        "process_exit_code": 0,
+        "started_at": "2026-09-29T02:12:00.252290+00:00",
+        "ended_at": "2026-09-29T02:22:44.390391+00:00",
+        "training_updates": 0,
+        "completed_steps": null
+      },
+      "train2": {
+        "status": "completed",
+        "process_exit_code": 0,
+        "started_at": "2026-09-29T02:23:13.243101+00:00",
+        "ended_at": "2026-09-29T02:48:38.642892+00:00",
+        "training_updates": null,
+        "completed_steps": 2
+      },
+      "post": {
+        "status": "completed",
+        "process_exit_code": 0,
+        "started_at": "2026-09-29T02:49:35.624909+00:00",
+        "ended_at": "2026-09-29T02:57:06.792647+00:00",
+        "training_updates": 0,
+        "completed_steps": null
+      }
+    },
+    "cpu_container": {
+      "returncode": 0,
+      "stdout": "\"5a7db0ff0f7e2a1a4344889365b94886f41b976d3d53efd418e5de6ba9749723\" {\"Dead\":false,\"Error\":\"\",\"ExitCode\":0,\"FinishedAt\":\"2026-09-30T00:29:33.178262342Z\",\"OOMKilled\":false,\"Paused\":false,\"Pid\":0,\"Restarting\":false,\"Running\":false,\"StartedAt\":\"2026-09-30T00:29:30.978367949Z\",\"Status\":\"exited\"} null [] [{\"Destination\":\"/var/jfsCache/sc2-spb-l8random96-197-20260929-r2\",\"Mode\":\"\",\"Propagation\":\"rprivate\",\"RW\":false,\"Source\":\"/var/jfsCache/sc2-spb-l8random96-197-20260929-r2\",\"Type\":\"bind\"},{\"Destination\":\"/var/jfsCache/sc2-spb-l8random96-197-source-20260929-r2/code\",\"Mode\":\"\",\"Propagation\":\"rprivate\",\"RW\":false,\"Source\":\"/var/jfsCache/sc2-spb-l8random96-197-source-20260929-r2/code\",\"Type\":\"bind\"}]\n",
+      "stderr": ""
+    },
+    "gpu": {
+      "returncode": 0,
+      "stdout": "0, 0 %, 0 MiB\n1, 0 %, 0 MiB\n2, 0 %, 0 MiB\n3, 0 %, 0 MiB\n4, 0 %, 0 MiB\n5, 0 %, 0 MiB\n6, 0 %, 0 MiB\n7, 0 %, 0 MiB\n",
+      "stderr": ""
+    },
+    "disk": {
+      "returncode": 0,
+      "stdout": "Filesystem         1B-blocks          Used    Available Use% Mounted on\n/dev/nvme0n1   7679364128768 6877362880512 802001248256  90% /var/jfsCache\n",
+      "stderr": ""
+    },
+    "dispatch": {
+      "start": 1790647863.2781556,
+      "deadline": 1790734263.2781556,
+      "suite_deadline": 1790755863.2781556,
+      "gpu_hours": 192,
+      "suite_gpu_hours": 240,
+      "new_games": 920,
+      "new_updates": 96,
+      "includes_gpu_preflight": true
+    },
+    "queue": {
+      "phase": "failed",
+      "completed": [
+        "spb-random/short"
+      ],
+      "new_games": 1048,
+      "new_updates": 96,
+      "part": "spb-random/long",
+      "deadline": 1790755863.2781556,
+      "component_deadline": 1790734263.2781556,
+      "error_type": "RuntimeError",
+      "error": "Storage batch failed; no retry; /var/jfsCache/sc2-spb-l8random96-197-20260929-r2/suite-storage/storage-failure-ece870d8286143a7803930c67bccf2ab.json",
+      "finished_at": 1790679199.4458046
+    }
+  },
+  "seed_contract": {
+    "runtime_sha": "12f3600ca8e6e8edabc460de70860baeef2b5146",
+    "seed_sha256": "7a2d619653c24c1ad40b50e9a9aea00a3b264885b70c02b5aff519a7547baebd",
+    "eval_seeds": [
+      208764042,
+      4033831095,
+      4273283954,
+      3286156970,
+      4222622236,
+      2828046710,
+      3821897171,
+      2801178166,
+      4159820916,
+      2397134230,
+      2295537531,
+      1085176974,
+      888413657,
+      1864623588,
+      1821246725,
+      4288245617,
+      1928083807,
+      1606439848,
+      1750180001,
+      2157129030,
+      3845869480,
+      2583316505,
+      1044797244,
+      499463978,
+      1185563293,
+      3466613764,
+      3939152471,
+      3446644127,
+      3079316308,
+      2907693452,
+      3583644975,
+      963713801,
+      2410879157,
+      2855928203,
+      2339311949,
+      2425639993,
+      1084325355,
+      4154416030,
+      3145046334,
+      2615958828,
+      2949091419,
+      3347882770,
+      49608851,
+      2923560418,
+      2207328776,
+      3771748923,
+      2500500153,
+      631587272,
+      2564915539,
+      564610756,
+      512751299,
+      1177360828,
+      667732584,
+      3070107292,
+      2889412589,
+      1274792528,
+      1974511954,
+      4088181271,
+      890353330,
+      556409708,
+      3673009292,
+      602393243,
+      777611869,
+      3056685215
+    ],
+    "selection_seeds": [
+      1676024359,
+      3311359371,
+      1803677045,
+      815351849,
+      1041855993,
+      1414892806,
+      1208799724,
+      3570661004,
+      1987344794,
+      766069959,
+      1101924832,
+      695227373,
+      3425665911,
+      3829899699,
+      1620930396,
+      1292716698,
+      1926059137,
+      3984229549,
+      2604737463,
+      515375665,
+      2592848477,
+      1342102133,
+      3206101674,
+      242255854,
+      224364611,
+      2434082538,
+      3912059029,
+      920478274,
+      2851824023,
+      3927879658,
+      1918684695,
+      1027136304
+    ],
+    "selection_sha256": "0f47acf2c792395cb17d73d678bbe8ad618b2c89c1ff5a4d85733465fa2a372c",
+    "saved_steps": [
+      2,
+      32,
+      64,
+      96
+    ],
+    "retention": {
+      "latest": 2,
+      "protected": [
+        2,
+        96
+      ],
+      "best_metric": "validation32 wins",
+      "tie": "earlier step",
+      "no_training_or_test_selection": true,
+      "prune_after_selection": true
+    }
+  },
+  "fresh_stopped_root_storage": {
+    "exit_code": 0,
+    "stderr_empty": true,
+    "roots": {
+      "/var/jfsCache/sc2-spb-l8random96-197-20260928-r1": 64432989310,
+      "/var/jfsCache/sc2-spb-l8random-paired128-197-20260928-r1": 945239,
+      "/var/jfsCache/sc2-spb-l8random96-197-source-20260928-r1": 25775629,
+      "/var/jfsCache/sc2-spb-l8random96-197-20260929-r2": 258839390914,
+      "/var/jfsCache/sc2-spb-l8random-paired128-197-20260929-r2": 946270,
+      "/var/jfsCache/sc2-spb-l8random96-197-source-20260929-r2": 25798865,
+      "/var/jfsCache/sc2-terminal-storage-cpu-20260929-r1": 22867,
+      "/var/jfsCache/sc2-terminal-storage-cpu-source-20260929-r1": 42033665
+    },
+    "total_bytes": 323367902759,
+    "limit_bytes": 377957122048,
+    "deadline_seconds": 15,
+    "attempts": 1
+  },
+  "authorization": {
+    "gpu_dispatch": false,
+    "new_gpu_budget_approved": false,
+    "checkpoint_adoption_approved": false,
+    "old_failed_run_modified": false,
+    "deleted_checkpoints": 0
+  },
+  "remaining": {
+    "games": 264,
+    "ppo_updates": 0,
+    "diagnostic_cp96_games": 8,
+    "selection_games": 128,
+    "primary_games": 128
+  },
+  "limitations": [
+    "96 returned PPO rows and native small states passed forensic checks, not original strict run acceptance.",
+    "Model/optimizer shard contents were not read or loaded; GPU loading and terminal-drain GPU behavior remain unverified.",
+    "Long result/.done/acceptance remain absent and queue/guardian remain failed.",
+    "No full command-trace or consumed-answer re-verification; original audit rows and returned valid ratio are consistent.",
+    "No large log or checkpoint downloaded; a bounded server-side console scan extracted metric rows.",
+    "Remaining 264 games require a distinct approved failed-run artifact adoption contract and renewed run budget; original deadlines unchanged."
+  ]
+}

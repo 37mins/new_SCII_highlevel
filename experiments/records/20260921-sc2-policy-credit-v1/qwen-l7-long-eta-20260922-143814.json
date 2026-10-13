@@ -1,0 +1,596 @@
+{
+  "checked_at": "2026-09-22T14:38:14.928013+08:00",
+  "root": "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1",
+  "runtime_sha": "279d5496464de29e14c64924ccb829147351efbd",
+  "summary": {
+    "last_step": 38,
+    "remaining_steps": 58,
+    "games": 304,
+    "wins": 248,
+    "last8_wins": 56,
+    "real_answers": 2004,
+    "valid_answers": 2004,
+    "unique_training_seeds": 34,
+    "all_win_batches": 31,
+    "all_loss_batches": 7
+  },
+  "eta_inputs": {
+    "recent_steps": [
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38
+    ],
+    "recent_step_seconds": [
+      97.412,
+      111.239,
+      120.977,
+      95.124,
+      96.331,
+      154.168,
+      95.389,
+      94.804
+    ],
+    "recent_mean_seconds": 108.1805,
+    "remaining_train_seconds_at_recent_mean": 6274.469,
+    "wall_mean_seconds_since_dispatch": 132.4559632142385,
+    "note": "Descriptive extrapolation; excludes future slow scenarios and separately estimated final-load/eval overhead. Not a deadline."
+  },
+  "eta_report": {
+    "remaining_wall_hours_estimate": [
+      2,
+      3
+    ],
+    "approximate_finish_beijing": [
+      "2026-09-22T16:40:00+08:00",
+      "2026-09-22T17:40:00+08:00"
+    ],
+    "includes": "remaining training, checkpoint overhead, final loading and paired evaluation",
+    "condition": "Recent throughput continues without long scenarios or infrastructure failure; not a guarantee or deadline extension."
+  },
+  "rows": [
+    {
+      "step": 1,
+      "seed": 49,
+      "wins": 8,
+      "games": 8,
+      "real_answers": 54,
+      "valid_answers": 54
+    },
+    {
+      "step": 2,
+      "seed": 97,
+      "wins": 0,
+      "games": 8,
+      "real_answers": 70,
+      "valid_answers": 70
+    },
+    {
+      "step": 3,
+      "seed": 53,
+      "wins": 8,
+      "games": 8,
+      "real_answers": 55,
+      "valid_answers": 55
+    },
+    {
+      "step": 4,
+      "seed": 5,
+      "wins": 8,
+      "games": 8,
+      "real_answers": 80,
+      "valid_answers": 80
+    },
+    {
+      "step": 5,
+      "seed": 33,
+      "wins": 8,
+      "games": 8,
+      "real_answers": 64,
+      "valid_answers": 64
+    },
+    {
+      "step": 6,
+      "seed": 65,
+      "wins": 8,
+      "games": 8,
+      "real_answers": 64,
+      "valid_answers": 64
+    },
+    {
+      "step": 7,
+      "seed": 62,
+      "wins": 8,
+      "games": 8,
+      "real_answers": 64,
+      "valid_answers": 64
+    },
+    {
+      "step": 8,
+      "seed": 51,
+      "wins": 8,
+      "games": 8,
+      "real_answers": 69,
+      "valid_answers": 69
+    },
+    {
+      "step": 9,
+      "seed": 100,
+      "wins": 8,
+      "games": 8,
+      "real_answers": 64,
+      "valid_answers": 64
+    },
+    {
+      "step": 10,
+      "seed": 38,
+      "wins": 8,
+      "games": 8,
+      "real_answers": 64,
+      "valid_answers": 64
+    },
+    {
+      "step": 11,
+      "seed": 61,
+      "wins": 8,
+      "games": 8,
+      "real_answers": 64,
+      "valid_answers": 64
+    },
+    {
+      "step": 12,
+      "seed": 45,
+      "wins": 0,
+      "games": 8,
+      "real_answers": 72,
+      "valid_answers": 72
+    },
+    {
+      "step": 13,
+      "seed": 74,
+      "wins": 8,
+      "games": 8,
+      "real_answers": 64,
+      "valid_answers": 64
+    },
+    {
+      "step": 14,
+      "seed": 27,
+      "wins": 8,
+      "games": 8,
+      "real_answers": 64,
+      "valid_answers": 64
+    },
+    {
+      "step": 15,
+      "seed": 64,
+      "wins": 8,
+      "games": 8,
+      "real_answers": 64,
+      "valid_answers": 64
+    },
+    {
+      "step": 16,
+      "seed": 17,
+      "wins": 8,
+      "games": 8,
+      "real_answers": 64,
+      "valid_answers": 64
+    },
+    {
+      "step": 17,
+      "seed": 36,
+      "wins": 8,
+      "games": 8,
+      "real_answers": 64,
+      "valid_answers": 64
+    },
+    {
+      "step": 18,
+      "seed": 17,
+      "wins": 8,
+      "games": 8,
+      "real_answers": 55,
+      "valid_answers": 55
+    },
+    {
+      "step": 19,
+      "seed": 96,
+      "wins": 0,
+      "games": 8,
+      "real_answers": 60,
+      "valid_answers": 60
+    },
+    {
+      "step": 20,
+      "seed": 12,
+      "wins": 8,
+      "games": 8,
+      "real_answers": 40,
+      "valid_answers": 40
+    },
+    {
+      "step": 21,
+      "seed": 79,
+      "wins": 0,
+      "games": 8,
+      "real_answers": 48,
+      "valid_answers": 48
+    },
+    {
+      "step": 22,
+      "seed": 32,
+      "wins": 0,
+      "games": 8,
+      "real_answers": 40,
+      "valid_answers": 40
+    },
+    {
+      "step": 23,
+      "seed": 68,
+      "wins": 8,
+      "games": 8,
+      "real_answers": 40,
+      "valid_answers": 40
+    },
+    {
+      "step": 24,
+      "seed": 90,
+      "wins": 8,
+      "games": 8,
+      "real_answers": 40,
+      "valid_answers": 40
+    },
+    {
+      "step": 25,
+      "seed": 77,
+      "wins": 8,
+      "games": 8,
+      "real_answers": 40,
+      "valid_answers": 40
+    },
+    {
+      "step": 26,
+      "seed": 18,
+      "wins": 8,
+      "games": 8,
+      "real_answers": 52,
+      "valid_answers": 52
+    },
+    {
+      "step": 27,
+      "seed": 39,
+      "wins": 8,
+      "games": 8,
+      "real_answers": 40,
+      "valid_answers": 40
+    },
+    {
+      "step": 28,
+      "seed": 12,
+      "wins": 8,
+      "games": 8,
+      "real_answers": 40,
+      "valid_answers": 40
+    },
+    {
+      "step": 29,
+      "seed": 93,
+      "wins": 0,
+      "games": 8,
+      "real_answers": 40,
+      "valid_answers": 40
+    },
+    {
+      "step": 30,
+      "seed": 9,
+      "wins": 8,
+      "games": 8,
+      "real_answers": 40,
+      "valid_answers": 40
+    },
+    {
+      "step": 31,
+      "seed": 87,
+      "wins": 8,
+      "games": 8,
+      "real_answers": 40,
+      "valid_answers": 40
+    },
+    {
+      "step": 32,
+      "seed": 42,
+      "wins": 8,
+      "games": 8,
+      "real_answers": 40,
+      "valid_answers": 40
+    },
+    {
+      "step": 33,
+      "seed": 60,
+      "wins": 8,
+      "games": 8,
+      "real_answers": 37,
+      "valid_answers": 37
+    },
+    {
+      "step": 34,
+      "seed": 71,
+      "wins": 8,
+      "games": 8,
+      "real_answers": 40,
+      "valid_answers": 40
+    },
+    {
+      "step": 35,
+      "seed": 12,
+      "wins": 8,
+      "games": 8,
+      "real_answers": 40,
+      "valid_answers": 40
+    },
+    {
+      "step": 36,
+      "seed": 45,
+      "wins": 0,
+      "games": 8,
+      "real_answers": 48,
+      "valid_answers": 48
+    },
+    {
+      "step": 37,
+      "seed": 55,
+      "wins": 8,
+      "games": 8,
+      "real_answers": 40,
+      "valid_answers": 40
+    },
+    {
+      "step": 38,
+      "seed": 40,
+      "wins": 8,
+      "games": 8,
+      "real_answers": 40,
+      "valid_answers": 40
+    }
+  ],
+  "recent_metrics": {
+    "31": {
+      "timing_s/step": 97.412,
+      "timing_s/update_actor": 17.04,
+      "actor/grad_norm": 0.005,
+      "episode/success_rate": 1,
+      "critic/advantages/min": 0,
+      "critic/advantages/max": 0
+    },
+    "32": {
+      "timing_s/step": 111.239,
+      "timing_s/update_actor": 17.045,
+      "actor/grad_norm": 0.004,
+      "episode/success_rate": 1,
+      "critic/advantages/min": 0,
+      "critic/advantages/max": 0
+    },
+    "33": {
+      "timing_s/step": 120.977,
+      "timing_s/update_actor": 17.759,
+      "actor/grad_norm": 0.037,
+      "episode/success_rate": 1,
+      "critic/advantages/min": 0,
+      "critic/advantages/max": 0
+    },
+    "34": {
+      "timing_s/step": 95.124,
+      "timing_s/update_actor": 17.128,
+      "actor/grad_norm": 0.003,
+      "episode/success_rate": 1,
+      "critic/advantages/min": 0,
+      "critic/advantages/max": 0
+    },
+    "35": {
+      "timing_s/step": 96.331,
+      "timing_s/update_actor": 17.065,
+      "actor/grad_norm": 0.002,
+      "episode/success_rate": 1,
+      "critic/advantages/min": 0,
+      "critic/advantages/max": 0
+    },
+    "36": {
+      "timing_s/step": 154.168,
+      "timing_s/update_actor": 20.137,
+      "actor/grad_norm": 0.002,
+      "episode/success_rate": 0,
+      "critic/advantages/min": 0,
+      "critic/advantages/max": 0
+    },
+    "37": {
+      "timing_s/step": 95.389,
+      "timing_s/update_actor": 17.061,
+      "actor/grad_norm": 0.003,
+      "episode/success_rate": 1,
+      "critic/advantages/min": 0,
+      "critic/advantages/max": 0
+    },
+    "38": {
+      "timing_s/step": 94.804,
+      "timing_s/update_actor": 17.271,
+      "actor/grad_norm": 0.004,
+      "episode/success_rate": 1,
+      "critic/advantages/min": 0,
+      "critic/advantages/max": 0
+    }
+  },
+  "checkpoints": [
+    {
+      "step": 8,
+      "required_files": 26
+    },
+    {
+      "step": 16,
+      "required_files": 26
+    },
+    {
+      "step": 24,
+      "required_files": 26
+    },
+    {
+      "step": 32,
+      "required_files": 26
+    }
+  ],
+  "container_state": {
+    "Status": "running",
+    "Running": true,
+    "Paused": false,
+    "Restarting": false,
+    "OOMKilled": false,
+    "Dead": false,
+    "Pid": 620504,
+    "ExitCode": 0,
+    "Error": "",
+    "StartedAt": "2026-09-22T05:18:46.570744204Z",
+    "FinishedAt": "0001-01-01T00:00:00Z"
+  },
+  "state": {
+    "phase": "running-unverified",
+    "completed": [],
+    "deadline": 1790227126.5133374,
+    "stage": "train96",
+    "run": "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/runs/train96"
+  },
+  "queue": {
+    "phase": "dispatched",
+    "deadline": 1790227126.5133374
+  },
+  "dispatch": {
+    "command": [
+      "docker",
+      "run",
+      "-v",
+      "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-same:/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-same:ro",
+      "-v",
+      "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/runtime:/var/jfsCache/sc2-qwen-seeds197-20260922-r4/runtime:ro",
+      "--name",
+      "sc2-qwen-l7same96-197-20260922-r1",
+      "--label",
+      "sc2.acceptance.root=/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1",
+      "--shm-size",
+      "128g",
+      "--entrypoint",
+      "/runtime/bin/python",
+      "-v",
+      "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1:/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1",
+      "-v",
+      "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/tmp:/tmp",
+      "-v",
+      "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/runtime:/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/runtime:ro",
+      "-v",
+      "/var/jfsCache/sc2-qwen-l7same96-197-source-20260922-r1:/var/jfsCache/sc2-qwen-l7same96-197-source-20260922-r1:ro",
+      "-v",
+      "/var/jfsCache/sc2-c197-eval96-20260920-r1/orchestration:/var/jfsCache/sc2-c197-eval96-20260920-r1/orchestration:ro",
+      "-v",
+      "/data/yangjinyue/new-scii-spb2-system-baseline/envs/spb2-stageguard-r1:/runtime:ro",
+      "-v",
+      "/var/jfsCache/sc2-qwen-instruct2507-cdbee75-20260921-r1/model:/assets/qwen:ro",
+      "-v",
+      "/data/yangjinyue/sc2-spb2-level7-20260814/StarCraftII:/assets/StarCraftII:ro",
+      "-v",
+      "/var/jfsCache/sc2-c197-20260919-r1/dependencies:/var/jfsCache/sc2-c197-20260919-r1/dependencies:ro",
+      "-w",
+      "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/runtime",
+      "-e",
+      "PYTHONDONTWRITEBYTECODE=1",
+      "-e",
+      "PYTHONPATH=/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/runtime:/var/jfsCache/sc2-qwen-l7same96-197-source-20260922-r1/code/experiments/records/20260921-sc2-policy-credit-v1:/var/jfsCache/sc2-c197-20260919-r1/dependencies:/runtime/lib/python3.12/site-packages",
+      "-e",
+      "CONTAINER_IMAGE_ID=sha256:1a497d5721f89bb2e98c0273c4b1495f8fdc6921d589650d090871c11b8d1649",
+      "--gpus",
+      "all",
+      "sha256:1a497d5721f89bb2e98c0273c4b1495f8fdc6921d589650d090871c11b8d1649",
+      "-B",
+      "/var/jfsCache/sc2-qwen-l7same96-197-source-20260922-r1/code/experiments/records/20260921-sc2-policy-credit-v1/qwen_l7_long197.py",
+      "execute"
+    ],
+    "start": 1790054326.5133374,
+    "deadline": 1790227126.5133374,
+    "resource_check": "eight empty GPUs/no compute PIDs, >=600GiB RAM, >=1084GiB NVMe, fsync passed"
+  },
+  "storage": {
+    "command": [
+      "du",
+      "-sb",
+      "--null",
+      "--",
+      "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1",
+      "/var/jfsCache/sc2-qwen-l7same96-197-source-20260922-r1",
+      "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-same"
+    ],
+    "roots": [
+      "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1",
+      "/var/jfsCache/sc2-qwen-l7same96-197-source-20260922-r1",
+      "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-same"
+    ],
+    "started_at": 1790059086.8462982,
+    "deadline": 1790227126.5133374,
+    "limit": 1099511627776,
+    "bytes": 250221769343,
+    "returncode": 0,
+    "status": "measured",
+    "stdout": {
+      "tail": "200205616158\t/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1\u000051041532\t/var/jfsCache/sc2-qwen-l7same96-197-source-20260922-r1\u000049965111653\t/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-same\u0000",
+      "characters": 189,
+      "truncated": false
+    },
+    "stderr": {
+      "tail": "",
+      "characters": 0,
+      "truncated": false
+    },
+    "root_bytes": {
+      "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1": 200205616158,
+      "/var/jfsCache/sc2-qwen-l7same96-197-source-20260922-r1": 51041532,
+      "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-same": 49965111653
+    },
+    "checked_at": 1790059086.9487321
+  },
+  "storage_failure": null,
+  "train_result": null,
+  "eval_result": null,
+  "console_tail": {
+    "bytes_read": 2097152,
+    "file_bytes": 9579095,
+    "start": 7481943,
+    "sha256": "8cf70934ddc3d659dfa0b8994d5ec2c20dde1bae470f4c46f8666a785ddd9bb4"
+  },
+  "receipt_sha256": {
+    "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/runs/train96/manifest.json": "37f11ed07e95948921a8d0231ffd87291a6f5b54f3c72fb201b56990ee7cdc8c",
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-same/runs/train2/training_seeds.jsonl": "c7225e901aea10a4a2bfdd18f5ce95214e57d5a21c2d0960e263de06c6910283",
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-same/runs/train2/episode_outcomes.jsonl": "355d1759c0ab52bb2d55de26d9a26ff6ed20c97c7c4e84b412e4b8efbec9d208",
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-same/runs/train2/checkpoints/sc2_policy_credit_audit.jsonl": "0668a487dde9c64d853b329fa353bcb9d261cf06fd971e6b0896ccb9ece7b59f",
+    "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/runs/train96/training_seeds.jsonl": "693939ddb08f2bb2b0d28725f140ab6467f30d2395c52cb644af72777d1eacb9",
+    "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/runs/train96/episode_outcomes.jsonl": "0fbfaefc7e5804d84381222ae1c046c0bb6e5ee891e4e4f2197a563e210aeec1",
+    "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/runs/train96/checkpoints/sc2_policy_credit_audit.jsonl": "ed68e773226173251164ea8ceb090dc0a7bc38c54a318f8c07e7bd0e4b8b9081",
+    "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/dispatch.json": "086a0afa0129b84bbd3c3c21834458edd1c3108c86962848a592c5820c68ee9e",
+    "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/state.json": "2d582989f49012c69b0f525695da47423c2218f2ba9f75afaf56d33cc8a498e0",
+    "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/queue-state.json": "1c4b9a9d3a45a247cfdb7540ded61e7fa3874c66a26228c24326a8fb780ebefc",
+    "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/storage-state.json": "7d76261081afd07d2bcddbfd1e48926c0bec79981f037f63196c27e07b733a92"
+  },
+  "inspection": "Read-only SSH sc2-a100-197; each small receipt at most1MiB, console last2MiB, all outcome/seed/audit rows cross-checked through last returned PPO. Required checkpoint file stat only. No GPU diagnostics or remote writes.",
+  "seed_change_proposal": {
+    "status": "awaiting explicit successor budget/order approval; not queued or dispatched",
+    "current_run": "retain immutable same-seed protocol",
+    "candidate": "extend accepted r4 l7-random ownCP2 to96, never same-arm weights",
+    "new_training_games": 752,
+    "final_eval_games": 8,
+    "wall_hours_cap": 48,
+    "gpu_hours_cap": 384,
+    "storage_TiB_cap": 1,
+    "seed_sampling": "private Random0, per-game independent draws0..100 with replacement; preserve prior random prefix",
+    "restore": "new verification required; missing driver RNG would mean non-bitwise continuation requiring acceptance",
+    "limitation": "mixed-seed UID retains scenario-difficulty confounding; no claim of unbiased policy advantage"
+  }
+}

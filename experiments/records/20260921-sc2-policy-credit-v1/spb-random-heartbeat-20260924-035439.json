@@ -1,0 +1,607 @@
+{
+  "schema": "spb-random-long-read-only-heartbeat-v2",
+  "observed_at": "2026-09-24T03:54:39.333553+08:00",
+  "read_only": true,
+  "ssh_alias": "sc2-a100-197",
+  "root": "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1",
+  "runtime_sha": "83f3530765babe048035524ddf1651291810818a",
+  "prior_evidence": "spb-random-heartbeat-20260924-034455.json",
+  "file_hashes": {
+    "changed": {
+      "storage-state.json": {
+        "exists": true,
+        "bytes": 1443,
+        "sha256": "ad82b484372de9fd43102360fa01684e71e72d7fe313733022bf33e6d62e0119"
+      },
+      "spb-random/long/runs/train96/training_seeds.jsonl": {
+        "exists": true,
+        "bytes": 1329,
+        "sha256": "66d4c3f919e8cd5dc825d92bfbcd3b04a051ec963620e2edbead62f96531b9dc"
+      },
+      "spb-random/long/runs/train96/episode_outcomes.jsonl": {
+        "exists": true,
+        "bytes": 19494,
+        "sha256": "62b3263059c9f94e63df8c36d9a495f4ee05fc7904bb131833d59af0839c29cf"
+      },
+      "spb-random/long/runs/train96/checkpoints/sc2_policy_credit_audit.jsonl": {
+        "exists": true,
+        "bytes": 2083,
+        "sha256": "0c490f7d7eaf03701bd813c135304b32dab3982efdbd135fd0b75346c3a5b8b9"
+      }
+    },
+    "unchanged_files": [
+      "deployment.json",
+      "queue-state.json",
+      "dispatch.json",
+      "predecessor-acceptance.json",
+      "storage-failure.json",
+      "spb-random/short/host-supervision/state.json",
+      "spb-random/short/state.json",
+      "spb-random/long/host-supervision/state.json",
+      "spb-random/long/state.json",
+      "spb-random/long/dispatch.json",
+      "spb-random/long/parent-readiness.json",
+      "spb-random/long/resume-contract.json",
+      "spb-random/long/cpu/parent-small-state.json",
+      "spb-random/long/runs/train96/result.json",
+      "spb-random/long/runs/train96/.done",
+      "spb-random/long/acceptance-train96.json",
+      "spb-random/long/runs/train96/manifest.json",
+      "spb-random/long/host-supervision/train96-guardian.json",
+      "spb-random/long/admission-train96.json",
+      "spb-random/long/runs/train96/evaluation_seeds.jsonl",
+      "spb-random/long/runs/train96/checkpoint_evaluation.json",
+      "spb-random/long/runs/train96/checkpoints/resume_state.json"
+    ],
+    "unchanged_hash_reference": "spb-random-heartbeat-20260924-034455.json"
+  },
+  "queue": {
+    "phase": "running-unverified",
+    "completed": [
+      "spb-random/short"
+    ],
+    "first_dispatch_by": 1790312320.0467553,
+    "part": "spb-random/long",
+    "deadline": 1790356959.0174987
+  },
+  "host": {
+    "version": "host-guardian-v1",
+    "phase": "running-unverified",
+    "completed": [],
+    "deadline": 1790356959.0174987,
+    "learning_validated": false,
+    "started_at": 1790187111.9027476,
+    "stage": "train96",
+    "container_id": "40d5a3f43a41fffb0eb51ea9a1c816b118cddef0b151464946d0c663fc024217"
+  },
+  "container": {
+    "returncode": 0,
+    "data": {
+      "id": "40d5a3f43a41fffb0eb51ea9a1c816b118cddef0b151464946d0c663fc024217",
+      "owner": "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/spb-random/long",
+      "state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "0001-01-01T00:00:00Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 1825200,
+        "Restarting": false,
+        "Running": true,
+        "StartedAt": "2026-09-23T18:11:52.44508979Z",
+        "Status": "running"
+      }
+    },
+    "error": ""
+  },
+  "dispatch": {
+    "start": 1790184159.0174987,
+    "deadline": 1790356959.0174987,
+    "clock_shared_with_short": true
+  },
+  "progress": {
+    "last_returned_global_step": 12,
+    "returned_long_ppo": 10,
+    "including_short_ppo": 12,
+    "returned_metrics": [
+      {
+        "step": 11,
+        "actor/grad_norm": 32.77345339457194,
+        "timing_s/update_actor": 16.85329226963222,
+        "episode/success_rate": 0.875,
+        "episode/valid_action_ratio": 1,
+        "policy_credit/invalid_advantage_max": 0,
+        "timing_s/step": 345.45728749781847
+      },
+      {
+        "step": 12,
+        "actor/grad_norm": 72.65222549438477,
+        "timing_s/update_actor": 26.081840057857335,
+        "episode/success_rate": 0.5,
+        "episode/valid_action_ratio": 1,
+        "policy_credit/invalid_advantage_max": 0,
+        "timing_s/step": 398.43309459183365
+      }
+    ],
+    "prior_returned_steps_3_11_evidence": "spb-random-heartbeat-20260924-034455.json",
+    "completed_long_games": 80,
+    "completed_long_wins": 43,
+    "consumed_answers_valid": 312,
+    "consumed_answers_total": 312,
+    "batch_summaries": [
+      {
+        "reset_index": 2,
+        "global_step": 3,
+        "closed_games": 8,
+        "wins": 1,
+        "defeats": 7,
+        "all_natural": true
+      },
+      {
+        "reset_index": 3,
+        "global_step": 4,
+        "closed_games": 8,
+        "wins": 3,
+        "defeats": 5,
+        "all_natural": true
+      },
+      {
+        "reset_index": 4,
+        "global_step": 5,
+        "closed_games": 8,
+        "wins": 6,
+        "defeats": 2,
+        "all_natural": true
+      },
+      {
+        "reset_index": 5,
+        "global_step": 6,
+        "closed_games": 8,
+        "wins": 3,
+        "defeats": 5,
+        "all_natural": true
+      },
+      {
+        "reset_index": 6,
+        "global_step": 7,
+        "closed_games": 8,
+        "wins": 5,
+        "defeats": 3,
+        "all_natural": true
+      },
+      {
+        "reset_index": 7,
+        "global_step": 8,
+        "closed_games": 8,
+        "wins": 5,
+        "defeats": 3,
+        "all_natural": true
+      },
+      {
+        "reset_index": 8,
+        "global_step": 9,
+        "closed_games": 8,
+        "wins": 6,
+        "defeats": 2,
+        "all_natural": true
+      },
+      {
+        "reset_index": 9,
+        "global_step": 10,
+        "closed_games": 8,
+        "wins": 3,
+        "defeats": 5,
+        "all_natural": true
+      },
+      {
+        "reset_index": 10,
+        "global_step": 11,
+        "closed_games": 8,
+        "wins": 7,
+        "defeats": 1,
+        "all_natural": true
+      },
+      {
+        "reset_index": 11,
+        "global_step": 12,
+        "closed_games": 8,
+        "wins": 4,
+        "defeats": 4,
+        "all_natural": true
+      },
+      {
+        "reset_index": 12,
+        "global_step": 13,
+        "closed_games": 5,
+        "wins": 3,
+        "defeats": 2,
+        "all_natural": true
+      }
+    ],
+    "audits": [
+      {
+        "real_answers": 62,
+        "valid_answers": 62,
+        "valid_ratio": 1,
+        "min_valid_ratio": 0.5,
+        "decision": "accept",
+        "reason": "validity_floor_passed",
+        "pending_global_step": 3,
+        "optimizer_updates_for_this_batch": 0
+      },
+      {
+        "real_answers": 40,
+        "valid_answers": 40,
+        "valid_ratio": 1,
+        "min_valid_ratio": 0.5,
+        "decision": "accept",
+        "reason": "validity_floor_passed",
+        "pending_global_step": 4,
+        "optimizer_updates_for_this_batch": 0
+      },
+      {
+        "real_answers": 27,
+        "valid_answers": 27,
+        "valid_ratio": 1,
+        "min_valid_ratio": 0.5,
+        "decision": "accept",
+        "reason": "validity_floor_passed",
+        "pending_global_step": 5,
+        "optimizer_updates_for_this_batch": 0
+      },
+      {
+        "real_answers": 32,
+        "valid_answers": 32,
+        "valid_ratio": 1,
+        "min_valid_ratio": 0.5,
+        "decision": "accept",
+        "reason": "validity_floor_passed",
+        "pending_global_step": 6,
+        "optimizer_updates_for_this_batch": 0
+      },
+      {
+        "real_answers": 31,
+        "valid_answers": 31,
+        "valid_ratio": 1,
+        "min_valid_ratio": 0.5,
+        "decision": "accept",
+        "reason": "validity_floor_passed",
+        "pending_global_step": 7,
+        "optimizer_updates_for_this_batch": 0
+      },
+      {
+        "real_answers": 26,
+        "valid_answers": 26,
+        "valid_ratio": 1,
+        "min_valid_ratio": 0.5,
+        "decision": "accept",
+        "reason": "validity_floor_passed",
+        "pending_global_step": 8,
+        "optimizer_updates_for_this_batch": 0
+      },
+      {
+        "real_answers": 22,
+        "valid_answers": 22,
+        "valid_ratio": 1,
+        "min_valid_ratio": 0.5,
+        "decision": "accept",
+        "reason": "validity_floor_passed",
+        "pending_global_step": 9,
+        "optimizer_updates_for_this_batch": 0
+      },
+      {
+        "real_answers": 30,
+        "valid_answers": 30,
+        "valid_ratio": 1,
+        "min_valid_ratio": 0.5,
+        "decision": "accept",
+        "reason": "validity_floor_passed",
+        "pending_global_step": 10,
+        "optimizer_updates_for_this_batch": 0
+      },
+      {
+        "real_answers": 20,
+        "valid_answers": 20,
+        "valid_ratio": 1,
+        "min_valid_ratio": 0.5,
+        "decision": "accept",
+        "reason": "validity_floor_passed",
+        "pending_global_step": 11,
+        "optimizer_updates_for_this_batch": 0
+      },
+      {
+        "real_answers": 22,
+        "valid_answers": 22,
+        "valid_ratio": 1,
+        "min_valid_ratio": 0.5,
+        "decision": "accept",
+        "reason": "validity_floor_passed",
+        "pending_global_step": 12,
+        "optimizer_updates_for_this_batch": 0
+      }
+    ],
+    "seed_batches": [
+      {
+        "base_seed": 0,
+        "reset_index": 2,
+        "seed_protocol": "independent_uniform101",
+        "seeds": [
+          36,
+          17,
+          96,
+          12,
+          79,
+          32,
+          68,
+          90
+        ]
+      },
+      {
+        "base_seed": 0,
+        "reset_index": 3,
+        "seed_protocol": "independent_uniform101",
+        "seeds": [
+          77,
+          18,
+          39,
+          12,
+          93,
+          9,
+          87,
+          42
+        ]
+      },
+      {
+        "base_seed": 0,
+        "reset_index": 4,
+        "seed_protocol": "independent_uniform101",
+        "seeds": [
+          60,
+          71,
+          12,
+          45,
+          55,
+          40,
+          78,
+          81
+        ]
+      },
+      {
+        "base_seed": 0,
+        "reset_index": 5,
+        "seed_protocol": "independent_uniform101",
+        "seeds": [
+          26,
+          70,
+          61,
+          56,
+          66,
+          33,
+          7,
+          70
+        ]
+      },
+      {
+        "base_seed": 0,
+        "reset_index": 6,
+        "seed_protocol": "independent_uniform101",
+        "seeds": [
+          1,
+          11,
+          92,
+          51,
+          90,
+          100,
+          85,
+          80
+        ]
+      },
+      {
+        "base_seed": 0,
+        "reset_index": 7,
+        "seed_protocol": "independent_uniform101",
+        "seeds": [
+          0,
+          78,
+          63,
+          42,
+          31,
+          93,
+          41,
+          90
+        ]
+      },
+      {
+        "base_seed": 0,
+        "reset_index": 8,
+        "seed_protocol": "independent_uniform101",
+        "seeds": [
+          8,
+          24,
+          72,
+          28,
+          30,
+          18,
+          69,
+          57
+        ]
+      },
+      {
+        "base_seed": 0,
+        "reset_index": 9,
+        "seed_protocol": "independent_uniform101",
+        "seeds": [
+          11,
+          10,
+          40,
+          65,
+          62,
+          13,
+          38,
+          70
+        ]
+      },
+      {
+        "base_seed": 0,
+        "reset_index": 10,
+        "seed_protocol": "independent_uniform101",
+        "seeds": [
+          37,
+          90,
+          15,
+          70,
+          42,
+          69,
+          26,
+          77
+        ]
+      },
+      {
+        "base_seed": 0,
+        "reset_index": 11,
+        "seed_protocol": "independent_uniform101",
+        "seeds": [
+          70,
+          75,
+          36,
+          56,
+          11,
+          76,
+          49,
+          40
+        ]
+      },
+      {
+        "base_seed": 0,
+        "reset_index": 12,
+        "seed_protocol": "independent_uniform101",
+        "seeds": [
+          73,
+          30,
+          37,
+          23,
+          24,
+          23,
+          4,
+          78
+        ]
+      }
+    ],
+    "seed_checks": [
+      {
+        "reset_index": 2,
+        "matches": true
+      },
+      {
+        "reset_index": 3,
+        "matches": true
+      },
+      {
+        "reset_index": 4,
+        "matches": true
+      },
+      {
+        "reset_index": 5,
+        "matches": true
+      },
+      {
+        "reset_index": 6,
+        "matches": true
+      },
+      {
+        "reset_index": 7,
+        "matches": true
+      },
+      {
+        "reset_index": 8,
+        "matches": true
+      },
+      {
+        "reset_index": 9,
+        "matches": true
+      },
+      {
+        "reset_index": 10,
+        "matches": true
+      },
+      {
+        "reset_index": 11,
+        "matches": true
+      },
+      {
+        "reset_index": 12,
+        "matches": true
+      }
+    ],
+    "checkpoint_inventory": [
+      {
+        "step": 8,
+        "required": 26,
+        "nonempty": 26,
+        "contents_read": false
+      }
+    ],
+    "stage_result_exists": false,
+    "stage_acceptance_exists": false
+  },
+  "storage": {
+    "bytes": 129559988464,
+    "limit": 1099511627776,
+    "roots": [
+      "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1",
+      "/var/jfsCache/sc2-spb-l7random96-197-source-20260923-r1"
+    ],
+    "deadline": 1790356959.0174987,
+    "returncode": 0,
+    "status": "measured",
+    "stderr": {
+      "tail": "",
+      "characters": 0,
+      "truncated": false
+    },
+    "checked_at": 1790193266.9141977,
+    "quiescence": {
+      "version": "host-guardian-v1",
+      "container_id": "40d5a3f43a41fffb0eb51ea9a1c816b118cddef0b151464946d0c663fc024217",
+      "owner_root": "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/spb-random/long",
+      "guardian_pid": 1825139,
+      "paused_verified": true,
+      "cleanup": "verified-unpaused",
+      "paused_at": 1790193266.7374723,
+      "mode": "paused",
+      "resumed_at": 1790193266.914015
+    },
+    "failure_exists": false
+  },
+  "bounded_log": {
+    "total_bytes": 11054870,
+    "tail_bytes": 2097152,
+    "full_log_read": false,
+    "extracted_returned_steps": [
+      11,
+      12
+    ],
+    "last_boundary_lines": [
+      "(SC2Worker pid=2515) Combat result reward: {\"pid\": 58639, \"game_loop\": 9632, \"boundary\": \"terminal\", \"last_consumed_policy_action_id\": 3, \"killed_value\": 5975.0, \"lost_value\": 400.0, \"scale\": 0.001, \"reward\": 5.4750000000000005}",
+      "(SC2Worker pid=2512) Combat result reward: {\"pid\": 58489, \"game_loop\": 15600, \"boundary\": \"planner\", \"last_consumed_policy_action_id\": 3, \"killed_value\": 2625.0, \"lost_value\": 2500.0, \"scale\": 0.001, \"reward\": -0.725}"
+    ]
+  },
+  "actions": {
+    "server_mutation": false,
+    "automatic_retry_or_repair": false,
+    "duplicate_dispatch": false,
+    "large_checkpoint_read": false,
+    "gpu_diagnostics": false,
+    "monitor_changed": false
+  },
+  "notification_events": [],
+  "interpretation": "Healthy continuation: prior returned steps3–11 plus current11–12 establish ten resumed PPO phases,80natural games/43wins and312/312 audited consumed answers valid. Reset12 has5closed games/3wins pendingglobal13 and excluded from completed-PPO totals. CP8 has26required nonempty entries by stat only; contents unread. No stage terminal. Stable native-parent/manifest/deployment hashes unchanged. First SpB GPU/SC2/PPO and short completion already notified; retain sole monitor and unchanged budget/deadline, with no learning-gain claim.",
+  "validation": {
+    "evidence_assertions_passed": true,
+    "model_tests_run": false,
+    "documentation_only": true,
+    "branch": "codex/fix-sc2-startup-port-race",
+    "base_commit": "655221ff21513e06df3e0cd4cd2458cddf99ece0"
+  }
+}

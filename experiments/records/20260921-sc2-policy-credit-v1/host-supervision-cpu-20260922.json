@@ -1,0 +1,726 @@
+{
+  "version": "host-supervision-cpu-acceptance-v1",
+  "branch": "codex/fix-quiescent-storage",
+  "authorization": "User accepted CPU-only host integration/loss recovery. No GPU continuation, old failed restart, experiment prepare/queue, budget extension or monitor.",
+  "base_sha": "7305c46ae5d6b5996a643237af291c76f73f5a37",
+  "tested_source_sha": "398eb99731be4f15b86caf546d07a3add433b0a8",
+  "server": "sc2-a100-197",
+  "stage": "/var/jfsCache/sc2-host-supervision-cpu-20260922.7lJiIO",
+  "checked_at_beijing": "2026-09-22T21:20:15+08:00",
+  "local": {
+    "tests": 100,
+    "passed": 96,
+    "linux_only_skips": 4
+  },
+  "final_linux_unit": {
+    "code_sha": "398eb99731be4f15b86caf546d07a3add433b0a8",
+    "clean": true,
+    "started_at": 1790083207.0871563,
+    "ended_at": 1790083207.9007387,
+    "tests": 100,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0,
+    "passed": true,
+    "heavy_imports": [],
+    "modules": [
+      "test_host_stage197",
+      "test_storage_quiescent197",
+      "test_policy_credit_storage197",
+      "test_policy_credit_storage_coordination197",
+      "test_policy_credit_acceptance197",
+      "test_policy_credit_acceptance197_r3",
+      "test_qwen_seed_acceptance197",
+      "test_qwen_seed_acceptance197_r4",
+      "test_qwen_seed_acceptance197_r3",
+      "test_l7_precision_continuation197"
+    ],
+    "log_sha256": "acdaa4af05b08482ba7dcb9433aefd9965b36ef0b2cf15ce891db4fd802bd6cb"
+  },
+  "commands": {
+    "unit": "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=tests python3 -m unittest test_host_stage197 test_storage_quiescent197 test_policy_credit_storage197 test_policy_credit_storage_coordination197 test_policy_credit_acceptance197 test_policy_credit_acceptance197_r3 test_qwen_seed_acceptance197 test_qwen_seed_acceptance197_r4 test_qwen_seed_acceptance197_r3 test_l7_precision_continuation197 -q",
+    "probe": "python3 -B tests/host_supervision_probe197.py NEW_EMPTY_CPU_FIXTURE_ROOT"
+  },
+  "final_probe": {
+    "passed": true,
+    "returncode": 0,
+    "log_sha256": "5d76b922373828854befd5c2145f92702bd92b48b4d39dd95a66218bb0813735",
+    "heavy_imports": false,
+    "scenarios": [
+      {
+        "name": "three-stages",
+        "passed": true,
+        "created": [
+          "pre",
+          "train2",
+          "post"
+        ],
+        "verified": [
+          "pre",
+          "train2",
+          "post"
+        ],
+        "state": {
+          "version": "host-guardian-v1",
+          "phase": "completed",
+          "completed": [
+            "pre",
+            "train2",
+            "post"
+          ],
+          "deadline": 1790083327.9626288,
+          "learning_validated": false,
+          "started_at": 1790083207.962828,
+          "stage": "post",
+          "container_id": "e3dd8e9d81d81978d8cb1b51c382bbaa2696e838eaa06d4b973560031ae51ba9",
+          "exit_code": 0,
+          "finished_at": 1790083209.7539856
+        },
+        "guardians": [
+          {
+            "container_id": "e3dd8e9d81d81978d8cb1b51c382bbaa2696e838eaa06d4b973560031ae51ba9",
+            "owner_root": "/var/jfsCache/sc2-host-supervision-cpu-20260922.7lJiIO/probe2/normal",
+            "phase": "completed",
+            "deadline": 1790083327.9626288,
+            "lease_seconds": 45,
+            "started_at": 1790083209.232501,
+            "finished_at": 1790083209.7429566,
+            "pause_attempted": true,
+            "pause_ack_count": 3,
+            "exited_zero_settlements": [
+              {
+                "op": "pause",
+                "at": 1790083209.6917212,
+                "pause_command_error": "Owned-container command failed: pause: Error response from daemon: cannot pause container e3dd8e9d81d81978d8cb1b51c382bbaa2696e838eaa06d4b973560031ae51ba9: OCI runtime pause failed: container not running\n",
+                "quiescence": "exited-zero"
+              }
+            ],
+            "final_state": {
+              "Dead": false,
+              "Error": "",
+              "ExitCode": 0,
+              "FinishedAt": "2026-09-22T13:20:09.672677949Z",
+              "OOMKilled": false,
+              "Paused": false,
+              "Pid": 0,
+              "Restarting": false,
+              "Running": false,
+              "StartedAt": "2026-09-22T13:20:09.259153234Z",
+              "Status": "exited"
+            }
+          },
+          {
+            "container_id": "f9fcec9b2934cbe9fc27b786e835c3f7db45ad2334b1946f709171c119251653",
+            "owner_root": "/var/jfsCache/sc2-host-supervision-cpu-20260922.7lJiIO/probe2/normal",
+            "phase": "completed",
+            "deadline": 1790083327.9626288,
+            "lease_seconds": 45,
+            "started_at": 1790083208.0417113,
+            "finished_at": 1790083208.5563781,
+            "pause_attempted": true,
+            "pause_ack_count": 3,
+            "exited_zero_settlements": [
+              {
+                "op": "pause",
+                "at": 1790083208.5041752,
+                "pause_command_error": "Owned-container command failed: pause: Error response from daemon: cannot pause container f9fcec9b2934cbe9fc27b786e835c3f7db45ad2334b1946f709171c119251653: OCI runtime pause failed: container not running\n",
+                "quiescence": "exited-zero"
+              }
+            ],
+            "final_state": {
+              "Dead": false,
+              "Error": "",
+              "ExitCode": 0,
+              "FinishedAt": "2026-09-22T13:20:08.482849788Z",
+              "OOMKilled": false,
+              "Paused": false,
+              "Pid": 0,
+              "Restarting": false,
+              "Running": false,
+              "StartedAt": "2026-09-22T13:20:08.066919915Z",
+              "Status": "exited"
+            }
+          },
+          {
+            "container_id": "c15c5ba4f85686b17574240a7d7292c53df950e351a9526bf41ddfbc9ca41794",
+            "owner_root": "/var/jfsCache/sc2-host-supervision-cpu-20260922.7lJiIO/probe2/normal",
+            "phase": "completed",
+            "deadline": 1790083327.9626288,
+            "lease_seconds": 45,
+            "started_at": 1790083208.6363056,
+            "finished_at": 1790083209.146414,
+            "pause_attempted": true,
+            "pause_ack_count": 3,
+            "exited_zero_settlements": [
+              {
+                "op": "pause",
+                "at": 1790083209.097985,
+                "pause_command_error": "Owned-container command failed: pause: Error response from daemon: cannot pause container c15c5ba4f85686b17574240a7d7292c53df950e351a9526bf41ddfbc9ca41794: OCI runtime pause failed: read /sys/fs/cgroup/system.slice/docker-c15c5ba4f85686b17574240a7d7292c53df950e351a9526bf41ddfbc9ca41794.scope/cgroup.events: no such device\n",
+                "quiescence": "exited-zero"
+              }
+            ],
+            "final_state": {
+              "Dead": false,
+              "Error": "",
+              "ExitCode": 0,
+              "FinishedAt": "2026-09-22T13:20:09.078217344Z",
+              "OOMKilled": false,
+              "Paused": false,
+              "Pid": 0,
+              "Restarting": false,
+              "Running": false,
+              "StartedAt": "2026-09-22T13:20:08.661547378Z",
+              "Status": "exited"
+            }
+          }
+        ]
+      },
+      {
+        "name": "stage-failure",
+        "passed": true,
+        "created": [
+          "pre",
+          "train2"
+        ],
+        "verified": [
+          "pre"
+        ],
+        "state": {
+          "version": "host-guardian-v1",
+          "phase": "failed",
+          "completed": [
+            "pre"
+          ],
+          "deadline": 1790083329.8207862,
+          "learning_validated": false,
+          "started_at": 1790083209.8209252,
+          "stage": "train2",
+          "container_id": "440bd99413c4cca908797587878674324d568fd1b5057e58c42d7896942fbecb",
+          "error_type": "RuntimeError",
+          "error": "Storage measurement failed; no retry; /var/jfsCache/sc2-host-supervision-cpu-20260922.7lJiIO/probe2/stage-failure/storage-failure-a74bbe24d79b4306a5e4960515c5865c.json",
+          "finished_at": 1790083211.0437658
+        },
+        "guardians": [
+          {
+            "container_id": "3012e2d8608a11619eacb8d96d543bdb798d21646118818eec3a74954043ec66",
+            "owner_root": "/var/jfsCache/sc2-host-supervision-cpu-20260922.7lJiIO/probe2/stage-failure",
+            "phase": "completed",
+            "deadline": 1790083329.8207862,
+            "lease_seconds": 45,
+            "started_at": 1790083209.893455,
+            "finished_at": 1790083210.431141,
+            "pause_attempted": true,
+            "pause_ack_count": 4,
+            "exited_zero_settlements": [
+              {
+                "op": "resume",
+                "at": 1790083210.3817933,
+                "quiescence": "exited-zero"
+              }
+            ],
+            "final_state": {
+              "Dead": false,
+              "Error": "",
+              "ExitCode": 0,
+              "FinishedAt": "2026-09-22T13:20:10.3589369Z",
+              "OOMKilled": false,
+              "Paused": false,
+              "Pid": 0,
+              "Restarting": false,
+              "Running": false,
+              "StartedAt": "2026-09-22T13:20:09.919731253Z",
+              "Status": "exited"
+            }
+          },
+          {
+            "container_id": "440bd99413c4cca908797587878674324d568fd1b5057e58c42d7896942fbecb",
+            "owner_root": "/var/jfsCache/sc2-host-supervision-cpu-20260922.7lJiIO/probe2/stage-failure",
+            "phase": "failed",
+            "deadline": 1790083329.8207862,
+            "lease_seconds": 45,
+            "started_at": 1790083210.5111067,
+            "finished_at": 1790083211.0008576,
+            "pause_attempted": true,
+            "pause_ack_count": 3,
+            "exited_zero_settlements": [],
+            "error_type": "RuntimeError",
+            "error": "Pause not verified; measurement forbidden",
+            "recovery": {
+              "errors": [],
+              "state": {
+                "Dead": false,
+                "Error": "",
+                "ExitCode": 7,
+                "FinishedAt": "2026-09-22T13:20:10.946636658Z",
+                "OOMKilled": false,
+                "Paused": false,
+                "Pid": 0,
+                "Restarting": false,
+                "Running": false,
+                "StartedAt": "2026-09-22T13:20:10.534959469Z",
+                "Status": "exited"
+              },
+              "stopped_verified": true
+            }
+          }
+        ]
+      },
+      {
+        "name": "supervisor-killed",
+        "passed": true,
+        "supervisor_returncode": -9,
+        "guardians": [
+          {
+            "container_id": "08b64f66e51e5b7f5b5a4ae7d0075768d6f37c074e4ffbd14758477cf22167b1",
+            "owner_root": "/var/jfsCache/sc2-host-supervision-cpu-20260922.7lJiIO/probe2/supervisor-killed",
+            "phase": "failed",
+            "deadline": 1790083301.186241,
+            "lease_seconds": 1,
+            "started_at": 1790083211.2235637,
+            "finished_at": 1790083211.4668925,
+            "pause_attempted": true,
+            "pause_ack_count": 1,
+            "exited_zero_settlements": [],
+            "error_type": "EOFError",
+            "error": "Supervisor disconnected",
+            "recovery": {
+              "errors": [],
+              "state": {
+                "Dead": false,
+                "Error": "",
+                "ExitCode": 0,
+                "FinishedAt": "2026-09-22T13:20:11.436334206Z",
+                "OOMKilled": false,
+                "Paused": false,
+                "Pid": 0,
+                "Restarting": false,
+                "Running": false,
+                "StartedAt": "2026-09-22T13:20:11.250141273Z",
+                "Status": "exited"
+              },
+              "stopped_verified": true
+            }
+          }
+        ]
+      },
+      {
+        "name": "pause-expired",
+        "passed": true,
+        "supervisor_returncode": 2,
+        "guardians": [
+          {
+            "container_id": "7261b136334d4e0b2f15965e220424372c8b87d9a35533d19d02a6b691043c69",
+            "owner_root": "/var/jfsCache/sc2-host-supervision-cpu-20260922.7lJiIO/probe2/pause-expired",
+            "phase": "failed",
+            "deadline": 1790083301.6348321,
+            "lease_seconds": 1,
+            "started_at": 1790083211.6724892,
+            "finished_at": 1790083212.10829,
+            "pause_attempted": true,
+            "pause_ack_count": 1,
+            "exited_zero_settlements": [],
+            "error_type": "TimeoutError",
+            "error": "timed out",
+            "recovery": {
+              "errors": [],
+              "state": {
+                "Dead": false,
+                "Error": "",
+                "ExitCode": 0,
+                "FinishedAt": "2026-09-22T13:20:12.077647882Z",
+                "OOMKilled": false,
+                "Paused": false,
+                "Pid": 0,
+                "Restarting": false,
+                "Running": false,
+                "StartedAt": "2026-09-22T13:20:11.698704315Z",
+                "Status": "exited"
+              },
+              "stopped_verified": true
+            }
+          }
+        ]
+      },
+      {
+        "name": "lease-expired",
+        "passed": true,
+        "supervisor_returncode": 2,
+        "guardians": [
+          {
+            "container_id": "acc501215f579af913e87f80e5e9ceab9c34f74ed0c68fdcfaff3ba5470cbbb4",
+            "owner_root": "/var/jfsCache/sc2-host-supervision-cpu-20260922.7lJiIO/probe2/lease-expired",
+            "phase": "failed",
+            "deadline": 1790083303.0254397,
+            "lease_seconds": 1,
+            "started_at": 1790083213.062786,
+            "finished_at": 1790083214.2182376,
+            "pause_attempted": false,
+            "pause_ack_count": 0,
+            "exited_zero_settlements": [],
+            "error_type": "TimeoutError",
+            "error": "timed out",
+            "recovery": {
+              "errors": [],
+              "state": {
+                "Dead": false,
+                "Error": "",
+                "ExitCode": 0,
+                "FinishedAt": "2026-09-22T13:20:14.187782311Z",
+                "OOMKilled": false,
+                "Paused": false,
+                "Pid": 0,
+                "Restarting": false,
+                "Running": false,
+                "StartedAt": "2026-09-22T13:20:13.0866181Z",
+                "Status": "exited"
+              },
+              "stopped_verified": true
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "retained_failures": {
+    "initial_bundle_fetch": "Bundle advertised HEAD, not refs/heads/codex/fix-quiescent-storage; same-SHA ref corrected before any CPU/container test.",
+    "first_source_sha": "0b73605ba5b57b09ae8905c14d2fbf47f2460ac1",
+    "unit": {
+      "code_sha": "0b73605ba5b57b09ae8905c14d2fbf47f2460ac1",
+      "clean": true,
+      "started_at": 1790082948.3739026,
+      "ended_at": 1790082949.1877308,
+      "tests": 98,
+      "failures": 0,
+      "errors": 0,
+      "skips": 0,
+      "passed": true,
+      "heavy_imports": [],
+      "modules": [
+        "test_host_stage197",
+        "test_storage_quiescent197",
+        "test_policy_credit_storage197",
+        "test_policy_credit_storage_coordination197",
+        "test_policy_credit_acceptance197",
+        "test_policy_credit_acceptance197_r3",
+        "test_qwen_seed_acceptance197",
+        "test_qwen_seed_acceptance197_r4",
+        "test_qwen_seed_acceptance197_r3",
+        "test_l7_precision_continuation197"
+      ],
+      "log_sha256": "76b2e7ac9c9cfe54300991ca6ecb2af8c6c13731f20420abe7ffa4084ae28ff6"
+    },
+    "probe_returncode": 1,
+    "probe_log_sha256": "8be44477e64943c990ca322d312256b036a05b05a61c8ade05ea1e5fe127ee5d",
+    "mechanism": "Normal container exit immediately after unpause rejected as Resume not verified; terminal failure receipt contended with supervisor-held storage lock. Fixed by clean exited0 settlement and create-once/same-inode terminal publication. Added two regression tests; initial fixtures/logs preserved."
+  },
+  "source_warning": "Git reported a nested alternate store depth warning. Required source/fixtures resolved and selected tests ran with zero skips; this is not a claim that all historical objects are available. Future frozen source preparation must materialize every required object.",
+  "artifacts": {
+    "unit.json": {
+      "bytes": 736,
+      "sha256": "64abf9a47d7c37ccfb56ddfa5d072f6094fc48850219764584148a2054d935b1"
+    },
+    "probe.log": {
+      "bytes": 2459,
+      "sha256": "8be44477e64943c990ca322d312256b036a05b05a61c8ade05ea1e5fe127ee5d"
+    },
+    "verification.json": {
+      "bytes": 2817,
+      "sha256": "b970601ded4b9c700573a52ffcf12a77c8160a7d5b1fc011b9b6dbcc61e43cc5"
+    },
+    "unit2.json": {
+      "bytes": 737,
+      "sha256": "799ae5c320491513cc9639f7d9f30526c567b127a3af97eb4deb0ea5928e44cb"
+    },
+    "unit2.log": {
+      "bytes": 12942,
+      "sha256": "acdaa4af05b08482ba7dcb9433aefd9965b36ef0b2cf15ce891db4fd802bd6cb"
+    },
+    "probe2.log": {
+      "bytes": 20024,
+      "sha256": "5d76b922373828854befd5c2145f92702bd92b48b4d39dd95a66218bb0813735"
+    },
+    "verification2.json": {
+      "bytes": 34672,
+      "sha256": "6cb53eebca39ad21ab8397e818aaa9ce781043e41c0c69f1d50e91342de0a34f"
+    },
+    "probe2/result.json": {
+      "bytes": 32426,
+      "sha256": "6830075ff767ffd0eccc3e97e9c15433daf8db9fd5b0e429132714cd22e722b3"
+    },
+    "probe2/normal/control/post-guardian.json": {
+      "bytes": 2026,
+      "sha256": "f9466236420fd9f5ecfba7f3bff935b37d52314625e7c424ad6a9e1654cb018f"
+    },
+    "probe2/normal/control/pre-guardian.json": {
+      "bytes": 2028,
+      "sha256": "4d93a663b0bf0fc32e053ae516aae13b2874e17bc3194b4fd30b80609ab4775e"
+    },
+    "probe2/normal/control/train2-guardian.json": {
+      "bytes": 2144,
+      "sha256": "8644a85063c539064140f7c88904c82b0d40fe60f3ff095df1e923e75cc02e87"
+    },
+    "probe2/stage-failure/control/pre-guardian.json": {
+      "bytes": 1864,
+      "sha256": "09d73bd46b31217976908b5a42b795636ec2a62a0a39461c4c3f9851698663d9"
+    },
+    "probe2/stage-failure/control/train2-guardian.json": {
+      "bytes": 1773,
+      "sha256": "6df83807d39205819d06628c8f0fdef23ee302dbb77839b8f2a1942a2815fec2"
+    },
+    "probe2/lease-expired/guardian.json": {
+      "bytes": 1033,
+      "sha256": "2362ed5dae9e8a594c2f664bf0f14175911f35367236982131d6d08c7494012b"
+    },
+    "probe2/pause-expired/guardian.json": {
+      "bytes": 1100,
+      "sha256": "2cdf9793c3c5feb8d33cffa7e16d3593388431d48575f33f65023016b41a6e6a"
+    },
+    "probe2/supervisor-killed/guardian.json": {
+      "bytes": 1115,
+      "sha256": "b06e4445ff47c65bcfefb4001bdac44e368ed38f0d78599a24ae4847986b7ff2"
+    }
+  },
+  "retained_cpu_containers": [
+    {
+      "id": "08b64f66e51e5b7f5b5a4ae7d0075768d6f37c074e4ffbd14758477cf22167b1",
+      "state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-09-22T13:20:11.436334206Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-09-22T13:20:11.250141273Z",
+        "Status": "exited"
+      },
+      "gpu_requests": null,
+      "owner": "/var/jfsCache/sc2-host-supervision-cpu-20260922.7lJiIO/probe2/supervisor-killed"
+    },
+    {
+      "id": "2cc0d3ca60bfaa570785ec6f1b0007a2b10366514cd028e9b02700219f572a18",
+      "state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-09-22T13:15:51.648133698Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-09-22T13:15:51.21225709Z",
+        "Status": "exited"
+      },
+      "gpu_requests": null,
+      "owner": "/var/jfsCache/sc2-host-supervision-cpu-20260922.7lJiIO/probe/stage-failure"
+    },
+    {
+      "id": "3012e2d8608a11619eacb8d96d543bdb798d21646118818eec3a74954043ec66",
+      "state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-09-22T13:20:10.3589369Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-09-22T13:20:09.919731253Z",
+        "Status": "exited"
+      },
+      "gpu_requests": null,
+      "owner": "/var/jfsCache/sc2-host-supervision-cpu-20260922.7lJiIO/probe2/stage-failure"
+    },
+    {
+      "id": "440bd99413c4cca908797587878674324d568fd1b5057e58c42d7896942fbecb",
+      "state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 7,
+        "FinishedAt": "2026-09-22T13:20:10.946636658Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-09-22T13:20:10.534959469Z",
+        "Status": "exited"
+      },
+      "gpu_requests": null,
+      "owner": "/var/jfsCache/sc2-host-supervision-cpu-20260922.7lJiIO/probe2/stage-failure"
+    },
+    {
+      "id": "4c82b6fdea18ef30344680b56b17340a0b94295e40ee6ebfc52ec0101c764d37",
+      "state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-09-22T13:15:50.965513819Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-09-22T13:15:50.54856461Z",
+        "Status": "exited"
+      },
+      "gpu_requests": null,
+      "owner": "/var/jfsCache/sc2-host-supervision-cpu-20260922.7lJiIO/probe/normal"
+    },
+    {
+      "id": "7261b136334d4e0b2f15965e220424372c8b87d9a35533d19d02a6b691043c69",
+      "state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-09-22T13:20:12.077647882Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-09-22T13:20:11.698704315Z",
+        "Status": "exited"
+      },
+      "gpu_requests": null,
+      "owner": "/var/jfsCache/sc2-host-supervision-cpu-20260922.7lJiIO/probe2/pause-expired"
+    },
+    {
+      "id": "997ca567c5a4c4be7a92a6740309fdd4fd7cee53cd7f4fbeca68efdf3f139194",
+      "state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-09-22T13:15:50.364229786Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-09-22T13:15:49.94550875Z",
+        "Status": "exited"
+      },
+      "gpu_requests": null,
+      "owner": "/var/jfsCache/sc2-host-supervision-cpu-20260922.7lJiIO/probe/normal"
+    },
+    {
+      "id": "a842a4790b370140650a707e77b4e9b9129383bffc99beb19b2f12dfa7e5bede",
+      "state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-09-22T13:15:49.769019719Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-09-22T13:15:49.355083205Z",
+        "Status": "exited"
+      },
+      "gpu_requests": null,
+      "owner": "/var/jfsCache/sc2-host-supervision-cpu-20260922.7lJiIO/probe/normal"
+    },
+    {
+      "id": "acc501215f579af913e87f80e5e9ceab9c34f74ed0c68fdcfaff3ba5470cbbb4",
+      "state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-09-22T13:20:14.187782311Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-09-22T13:20:13.0866181Z",
+        "Status": "exited"
+      },
+      "gpu_requests": null,
+      "owner": "/var/jfsCache/sc2-host-supervision-cpu-20260922.7lJiIO/probe2/lease-expired"
+    },
+    {
+      "id": "c15c5ba4f85686b17574240a7d7292c53df950e351a9526bf41ddfbc9ca41794",
+      "state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-09-22T13:20:09.078217344Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-09-22T13:20:08.661547378Z",
+        "Status": "exited"
+      },
+      "gpu_requests": null,
+      "owner": "/var/jfsCache/sc2-host-supervision-cpu-20260922.7lJiIO/probe2/normal"
+    },
+    {
+      "id": "e3dd8e9d81d81978d8cb1b51c382bbaa2696e838eaa06d4b973560031ae51ba9",
+      "state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-09-22T13:20:09.672677949Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-09-22T13:20:09.259153234Z",
+        "Status": "exited"
+      },
+      "gpu_requests": null,
+      "owner": "/var/jfsCache/sc2-host-supervision-cpu-20260922.7lJiIO/probe2/normal"
+    },
+    {
+      "id": "f9fcec9b2934cbe9fc27b786e835c3f7db45ad2334b1946f709171c119251653",
+      "state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-09-22T13:20:08.482849788Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-09-22T13:20:08.066919915Z",
+        "Status": "exited"
+      },
+      "gpu_requests": null,
+      "owner": "/var/jfsCache/sc2-host-supervision-cpu-20260922.7lJiIO/probe2/normal"
+    }
+  ],
+  "scope": {
+    "gpu_requests": 0,
+    "sc2_games": 0,
+    "ppo_updates": 0,
+    "production_queue_modified": false,
+    "failed_run_restarted": false,
+    "pipeline": "Real independent guardian, strict GNU du, Docker create/start/pause/resume/stop/inspect and stage sequencing exercised on synthetic CPU fixtures.",
+    "model_launchers": "Adapter command preservation and no-inner-watchdog tested in unit tests. New production deployment's actual launcher/Hydra preflight remains required before any future GPU dispatch.",
+    "cpu_pause_effect": "No SC2/Ray/NCCL timing/equivalence evidence; no learning conclusion."
+  },
+  "invariants": [
+    "Inclusive accounting/error policy preserved, no measurement retries, excluded paths, partial totals or last-good fallback.",
+    "All 12 newly created CPU fixtures are retained, exited, unpaused and had DeviceRequests=null. One intended exit7 tests failure blocking.",
+    "Only exact newly-created CPU fixture supervisor PID was SIGKILLed; old experimental containers/deployments and other users untouched.",
+    "Own paused container was restored and stopped independently on supervisor SIGKILL, pause expiry and lease expiry.",
+    "Stage exit0 still requires original verifier before next stage, with unchanged deadline recheck.",
+    "No new GPU experiment or automation was started."
+  ],
+  "remaining": [
+    "No guarantee during simultaneous host/guardian/daemon loss; operator recovery required. Historical GPU stop timeout not claimed fixed.",
+    "New authorized RUN/deployment, per-stage resource/fsync admission, exact all-writer/mount/accounting audit and actual launcher/Hydra preflight still required before GPU.",
+    "Retain original SpB deadline1790247962.305692 and suite1790420762.305692. No clock reset.",
+    "Interrupted SpB pre dispatched eight slots but has no accepted natural outcomes. Repeating pre needs explicit accounting/interaction-allowance decision, not a zero-cost retry.",
+    "Accepted Qwen CP96 eval must not be rerun; Qwen-random must retain its own accepted CP2 lineage."
+  ]
+}

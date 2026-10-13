@@ -1,0 +1,145 @@
+{
+  "schema": "sc2-user-gpu-usage-readonly-v1",
+  "observed_at": "2026-09-24T11:45:37.908761+08:00",
+  "node_alias": "sc2-a100-197",
+  "read_only": true,
+  "gpus": [
+    {
+      "index": 0,
+      "name": "NVIDIA A100-SXM4-80GB",
+      "utilization_percent": 0,
+      "memory_used_mib": 0,
+      "memory_total_mib": 81920,
+      "temperature_c": 26,
+      "power_w": 59.04
+    },
+    {
+      "index": 1,
+      "name": "NVIDIA A100-SXM4-80GB",
+      "utilization_percent": 0,
+      "memory_used_mib": 0,
+      "memory_total_mib": 81920,
+      "temperature_c": 25,
+      "power_w": 58.22
+    },
+    {
+      "index": 2,
+      "name": "NVIDIA A100-SXM4-80GB",
+      "utilization_percent": 0,
+      "memory_used_mib": 0,
+      "memory_total_mib": 81920,
+      "temperature_c": 27,
+      "power_w": 61.31
+    },
+    {
+      "index": 3,
+      "name": "NVIDIA A100-SXM4-80GB",
+      "utilization_percent": 0,
+      "memory_used_mib": 0,
+      "memory_total_mib": 81920,
+      "temperature_c": 26,
+      "power_w": 62.51
+    },
+    {
+      "index": 4,
+      "name": "NVIDIA A100-SXM4-80GB",
+      "utilization_percent": 0,
+      "memory_used_mib": 0,
+      "memory_total_mib": 81920,
+      "temperature_c": 25,
+      "power_w": 62.24
+    },
+    {
+      "index": 5,
+      "name": "NVIDIA A100-SXM4-80GB",
+      "utilization_percent": 0,
+      "memory_used_mib": 0,
+      "memory_total_mib": 81920,
+      "temperature_c": 25,
+      "power_w": 57.67
+    },
+    {
+      "index": 6,
+      "name": "NVIDIA A100-SXM4-80GB",
+      "utilization_percent": 0,
+      "memory_used_mib": 0,
+      "memory_total_mib": 81920,
+      "temperature_c": 25,
+      "power_w": 62.91
+    },
+    {
+      "index": 7,
+      "name": "NVIDIA A100-SXM4-80GB",
+      "utilization_percent": 0,
+      "memory_used_mib": 0,
+      "memory_total_mib": 81920,
+      "temperature_c": 26,
+      "power_w": 58.16
+    }
+  ],
+  "compute_process_count": 0,
+  "available_ram_bytes": 814412070912,
+  "free_nvme_bytes": 869850742784,
+  "required_free_nvme_bytes": 1163936137216,
+  "disk_deficit_bytes": 294085394432,
+  "running_container_count": 4,
+  "states": {
+    "queue-state.json": {
+      "exists": true,
+      "fields": {
+        "phase": "running-unverified",
+        "completed": [
+          "spb-random/short"
+        ],
+        "part": "spb-random/long",
+        "deadline": 1790356959.0174987
+      }
+    },
+    "dispatch.json": {
+      "exists": true,
+      "fields": {
+        "deadline": 1790356959.0174987,
+        "start": 1790184159.0174987
+      }
+    },
+    "spb-random/long/host-supervision/state.json": {
+      "exists": true,
+      "fields": {
+        "phase": "stage-completed",
+        "completed": [
+          "train96"
+        ],
+        "stage": "train96",
+        "deadline": 1790356959.0174987
+      }
+    },
+    "spb-random/long/admission-eval96.json": {
+      "exists": false
+    },
+    "failure.json": {
+      "exists": false
+    },
+    "storage-failure.json": {
+      "exists": false
+    }
+  },
+  "eval96_run_exists": false,
+  "conclusions": {
+    "all_eight_gpus_idle": true,
+    "ram_gate_600_gib_passed": true,
+    "disk_gate_1084_gib_passed": false,
+    "spb_train96_already_accepted_final_eval_not_started": true,
+    "server_not_empty_running_container_count": 4,
+    "new_qwen_same_budget_approved_no_prepare_queue_dispatch": true
+  },
+  "actions": {
+    "read_only": true,
+    "fsync_write_test": false,
+    "server_mutation": false,
+    "stopped_process": false,
+    "changed_admission_threshold": false,
+    "cleanup_or_migration": false,
+    "new_experiment_dispatch": false
+  },
+  "validation": "Read-only nvidia-smi for all GPU indices and compute processes, /proc/meminfo, filesystem free bytes, exact SpB queue/host/admission paths. Parsed JSON; no model tests. No GPU UUID, host address, credentials, full logs or checkpoint content exported."
+}

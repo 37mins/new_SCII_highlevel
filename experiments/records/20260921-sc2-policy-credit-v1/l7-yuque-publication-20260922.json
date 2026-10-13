@@ -1,0 +1,25 @@
+{
+  "verified_at": "2026-09-22T23:19:03+08:00",
+  "url": "https://www.yuque.com/yangdage-mu30r/nsahpp/io9ul989o6qkposx",
+  "title": "SCII日志",
+  "browser": "Safari",
+  "operation": "Append dated experiment report, click 更新, verify published reading mode",
+  "section": "2026-09-22｜Level7 修复协议、Qwen 96步结果与 SpB 续训",
+  "verification": {
+    "reading_mode_edit_button_visible": true,
+    "appended_heading_visible": true,
+    "training_count_609_of_768_visible": true,
+    "seed_count_63_and_batches_89_of_96_visible": true,
+    "cp96_5_of_8_table_visible": true,
+    "source_report_link_visible": true,
+    "previous_c96_text_and_chart_preserved": true,
+    "screenshot_layout_checked": true,
+    "permissions_changed": false,
+    "existing_content_replaced": false
+  },
+  "source_report": "l7-results-interpretation-20260922.md",
+  "snapshot": "l7-settings-analysis-20260922-2307.json",
+  "content_scope": "Experiment model/configuration, counts, interpretation and source SHAs only. No model weights, secrets, full logs, or internal server paths published in the new Yuque section.",
+  "authority": "User requested publishing experiment results and analysis, then supplied this exact Yuque destination and Safari.",
+  "status": "published-and-verified"
+}

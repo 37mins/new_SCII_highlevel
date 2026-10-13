@@ -1,0 +1,150 @@
+{
+  "checked_at_beijing": "2026-09-22T13:23:53+08:00",
+  "status": "running; first actual resumed PPO completed; terminal acceptance pending",
+  "root": "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1",
+  "source": "/var/jfsCache/sc2-qwen-l7same96-197-source-20260922-r1/code",
+  "runtime_and_controller_sha": "279d5496464de29e14c64924ccb829147351efbd",
+  "orchestration_sha": "9a7b0faca5b145a891ad211f189121e4949f0eab",
+  "container": "sc2-qwen-l7same96-197-20260922-r1",
+  "socket": "sc2_qwen_l7same96_197_20260922_r1",
+  "session": "qwen_l7same96_197_r1",
+  "dispatch": {
+    "start": 1790054326.5133374,
+    "deadline": 1790227126.5133374,
+    "start_beijing": "2026-09-22T13:18:46.513337+08:00",
+    "deadline_beijing": "2026-09-24T13:18:46.513337+08:00",
+    "resource_check": "eight empty GPUs/no compute PIDs, >=600GiB RAM, >=1084GiB NVMe, fsync passed",
+    "queue_phase": "dispatched",
+    "single_enqueue": true,
+    "container_running_at_132238": true
+  },
+  "limits": {
+    "new_ppo_updates": 94,
+    "new_training_games": 752,
+    "final_paired_evaluation_games": 8,
+    "final_evaluation_updates": 0,
+    "wall_seconds_including_all_stages": 172800,
+    "gpu_hours": 384,
+    "storage_bytes": 1099511627776,
+    "storage_roots": [
+      "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1",
+      "/var/jfsCache/sc2-qwen-l7same96-197-source-20260922-r1",
+      "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-same"
+    ],
+    "retries_authorized": false,
+    "successors_authorized": false
+  },
+  "cpu": {
+    "regression_entry": "qwen_l7_long197.py regressions",
+    "regression_tests": 171,
+    "regression_skips": 0,
+    "regression_passed": true,
+    "preflight_entry": "qwen_l7_long197.py cpu",
+    "actual_dry_run_and_hydra_stages": ["train96", "eval96"],
+    "registered_source_hashes_passed": 32,
+    "cuda_initialized": false,
+    "both_cpu_containers_exit_code": 0,
+    "both_cpu_containers_device_requests": null,
+    "parent_small_state": {
+      "ranks_checked": [0, 1, 2, 3, 4, 5, 6, 7],
+      "all_scheduler_last_epoch": 2,
+      "all_rng_keys": ["cpu", "cuda", "numpy", "random"],
+      "next_reset_index": 2,
+      "episode_reset_index": 1,
+      "next_step_index": 18,
+      "next_seeds": [53, 53, 53, 53, 53, 53, 53, 53],
+      "driver_rng": "unavailable; accepted non-bitwise continuation"
+    }
+  },
+  "actual_run": {
+    "manifest_dirty": false,
+    "manifest_formal": true,
+    "world_size": 8,
+    "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+    "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+    "start_step": 2,
+    "target_steps": 96,
+    "sc2_checkpoint_resume": true,
+    "resume_state": {
+      "from_checkpoint": "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-same/runs/train2/checkpoints/global_step_2",
+      "global_step": 2,
+      "next_reset_index": 2,
+      "next_seeds": [53, 53, 53, 53, 53, 53, 53, 53],
+      "source": "verified legacy ledger; driver RNG unavailable, not bitwise replay",
+      "model_optimizer_dataloader_load_returned": true
+    },
+    "first_seed_record": {
+      "base_seed": 0,
+      "reset_index": 2,
+      "seed_protocol": "same_uniform101",
+      "seeds": [53, 53, 53, 53, 53, 53, 53, 53]
+    },
+    "worker_action_support_banner": {
+      "mode": "sc2-canonical-bo-support-v1",
+      "budget": 192,
+      "canonical_tokenizations_only": true,
+      "eos_token_id": 151645,
+      "pad_token_id": 151643,
+      "tokenizer_sha256": "a63080b4b30dc861fe1b0e420c53a241304dc81aff3d9bb315e6e33e2a1ab794"
+    },
+    "worker_no_thinking_mask_sha256": "63a9546dd5fb39a64c6e2a2ad13f31101aacaade9bac07258d0e415480181e0d",
+    "first_batch": {
+      "reset_index": 2,
+      "natural_games": 8,
+      "truncated_games": 0,
+      "victories": 8,
+      "real_consumed_answers": 55,
+      "valid_consumed_answers": 55,
+      "pre_update_gate": "accept",
+      "pre_update_audit_alone_proves_ppo": false
+    },
+    "completed_ppo_console_evidence": {
+      "global_step": 3,
+      "source": "runs/train96/console.log bounded tail, after update_actor returned",
+      "reported_precision": "console values rounded to three decimals; not exact raw metrics",
+      "actor/grad_norm": 0.164,
+      "timing_s/update_actor": 23.622,
+      "timing_s/step": 180.592,
+      "episode/valid_action_ratio": 1.0,
+      "policy_credit/invalid_advantage_max": 0.0,
+      "actor/pg_loss": 0.0,
+      "actor/kl_loss": 0.032,
+      "critic/advantages/min": "-0.000",
+      "critic/advantages/max": "-0.000",
+      "critic/score/min": 26.475,
+      "critic/score/max": 26.475,
+      "note": "Actual PPO returned, but this batch's rounded environment advantage is near zero. Nonzero gradient or eight wins is not evidence of strategic learning."
+    }
+  },
+  "storage_snapshot": {
+    "checked_at": 1790054552.8163247,
+    "status": "measured",
+    "bytes": 50049006377,
+    "returncode": 0,
+    "stderr": ""
+  },
+  "small_receipt_sha256": {
+    "deployment.json": "53271d11a63de9718ddc8678b4409955dcc67432e67b188dbf48885279935743",
+    "dispatch.json": "086a0afa0129b84bbd3c3c21834458edd1c3108c86962848a592c5820c68ee9e",
+    "readiness.json": "ae0ce46b94b39645bd07da211d5d08616b90738224ae3965c2c1334e8d9364b9",
+    "regressions.json": "199f7261a89c5666aa1ac73963e379337d26da4250ca073740cdf28842ef553e",
+    "resume-contract.json": "e93da5921867652310434593b9a27af5d4a9dcd8249b91f53d4e6a7b0facd7e0",
+    "cpu/parent-small-state.json": "6b656ebd197f3d0baed248a7d5998e76466fa421f867b8dba7ec567dc90c3688",
+    "runs/train96/manifest.json": "37f11ed07e95948921a8d0231ffd87291a6f5b54f3c72fb201b56990ee7cdc8c",
+    "runs/train96/checkpoints/resume_state.json": "dd8f08d7f28fd617f58e59a726a36e56c44c705b00225bdafe8e5ea990d4d0fe"
+  },
+  "monitor": {
+    "id": "197-qwen-l7-seed96",
+    "status": "ACTIVE",
+    "interval_minutes": 10,
+    "notified_events": ["first_gpu_and_sc2", "actual_step2_load_returned", "first_resumed_ppo_step3"],
+    "next_events": ["stage_completion", "failure_or_gate_conclusion", "required_user_decision"],
+    "healthy_progress_quiet": true
+  },
+  "limitations": [
+    "Accepted missing driver RNG means non-bitwise continuation; old checkpoint unchanged.",
+    "Constrained response legality does not establish strategic learning.",
+    "Training difficulty varies across step seeds; eight final paired seeds are small-sample evidence.",
+    "No terminal train96 or eval96 acceptance yet."
+  ]
+}

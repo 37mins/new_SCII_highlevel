@@ -1,0 +1,108 @@
+{
+  "checked_at_beijing": "2026-09-22T16:54:49.796228+08:00",
+  "automation_id": "197-qwen-l7-seed96",
+  "current": {
+    "root": "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1",
+    "runtime_sha": "279d5496464de29e14c64924ccb829147351efbd",
+    "manifest_clean": true,
+    "world_size": 8,
+    "queue": {
+      "phase": "dispatched",
+      "deadline": 1790227126.5133374
+    },
+    "state": {
+      "phase": "running-unverified",
+      "completed": [],
+      "deadline": 1790227126.5133374,
+      "stage": "train96",
+      "run": "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/runs/train96"
+    },
+    "completed_ppo_step": 93,
+    "rounded_returned_ppo": [
+      {
+        "step": 91,
+        "grad_norm": 0.133,
+        "update_actor_seconds": 17.062,
+        "valid_action_ratio": 1,
+        "invalid_advantage_max": 0,
+        "training_success_rate": 0
+      },
+      {
+        "step": 92,
+        "grad_norm": 0,
+        "update_actor_seconds": 7.784,
+        "valid_action_ratio": 1,
+        "invalid_advantage_max": 0,
+        "training_success_rate": 1
+      },
+      {
+        "step": 93,
+        "grad_norm": 0.004,
+        "update_actor_seconds": 13.964,
+        "valid_action_ratio": 1,
+        "invalid_advantage_max": 0,
+        "training_success_rate": 1
+      }
+    ],
+    "gradient_precision_note": "Step92 grad_norm is 0.000 at three-decimal console precision: not proof of exact zero or positive raw gradient. Raw positive-gradient terminal gate remains pending and unchanged.",
+    "console_tail": {
+      "bytes": 2097152,
+      "sha256": "804f0b6e95462d3f6ea92e3a842f529ec63c62205ff523836134bcfa7eda541a"
+    },
+    "checkpoint_steps": [
+      8,
+      16,
+      24,
+      32,
+      40,
+      48,
+      56,
+      64,
+      72,
+      80,
+      88
+    ],
+    "required_nonempty_files_each": 26,
+    "cp_inspection": "filename/stat only, including sc2_state.pt; no checkpoint contents read",
+    "terminal_results_present": false,
+    "container_running": true,
+    "storage": {
+      "checked_at": 1790067281.7457428,
+      "bytes": 600372220104,
+      "limit": 1099511627776,
+      "returncode": 0,
+      "stderr": "",
+      "roots": [
+        "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1",
+        "/var/jfsCache/sc2-qwen-l7same96-197-source-20260922-r1",
+        "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-same"
+      ],
+      "failure_receipt_present": false
+    }
+  },
+  "followup": {
+    "root": "/var/jfsCache/sc2-l7-followup197-20260922-r2",
+    "runtime_sha": "e95b9cb425e1d25c4c2c006bb674fb66e8f6dc95",
+    "queue": {
+      "phase": "waiting-predecessor",
+      "completed": [],
+      "first_dispatch_by": 1790230726.5133374
+    },
+    "suite_dispatch_present": false,
+    "part_dispatches_present": [],
+    "gpu_containers_present": []
+  },
+  "both_dedicated_tmux_sessions_live": true,
+  "receipt_sha256": {
+    "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/queue-state.json": "1c4b9a9d3a45a247cfdb7540ded61e7fa3874c66a26228c24326a8fb780ebefc",
+    "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/state.json": "2d582989f49012c69b0f525695da47423c2218f2ba9f75afaf56d33cc8a498e0",
+    "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/dispatch.json": "086a0afa0129b84bbd3c3c21834458edd1c3108c86962848a592c5820c68ee9e",
+    "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/storage-state.json": "8494694ef9cfac1717169b44d162efcd883ba36b0d7d2deeacdd53ab53d22d9a",
+    "/var/jfsCache/sc2-l7-followup197-20260922-r2/queue-state.json": "cf0171be90843d5345d935300b97cc4c94d19d55c08afce6d1c1e403abc2e03b",
+    "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/runs/train96/manifest.json": "37f11ed07e95948921a8d0231ffd87291a6f5b54f3c72fb201b56990ee7cdc8c"
+  },
+  "verification": "JSON/runtime/clock/finite returned-PPO/stat-only CP/queue/liveness checks passed; no model tests or final acceptance.",
+  "remote_actions": "Read-only small receipts, owned-container state, CP stat and 2MiB log tail. No GPU diagnostics, launch/retry, frozen edits, budget change or deletion.",
+  "decision": "DONT_NOTIFY: normal progress and expected predecessor wait; no new stage completion, failure or user decision.",
+  "limitations": "Constrained answer legality and varying same-seed training wins do not establish strategic learning. Full-precision positive-gradient and all final acceptance gates remain mandatory."
+}

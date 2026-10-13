@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-09-22T17:45:41+08:00",
+  "task": "CPU-only metric precision repair and no-retraining proposal",
+  "branch": "codex/fix-invalid-policy-credit",
+  "base_sha": "e441e0ba0d3dc68e87bd18154b526e5c299b49f2",
+  "python": "3.9.6",
+  "metrics_precision": "binary64-v1",
+  "source_sha256": {
+    "scripts/run_record.py": "35cce3357733772470ae50f8196ada4cc9a0066cf706d2cf50534dea3ae37541",
+    "verl/utils/logger/aggregate_logger.py": "822439e09abc53f188ffbfce2a360388590be8aa13bee31182e69fe1e9421bd8"
+  },
+  "tests": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=tests python3 -m unittest test_metric_precision test_system_release test_signal_sampling_record test_policy_credit_acceptance197 test_qwen_l7_long197 -v",
+    "passed": 69,
+    "skipped": 0,
+    "exit_code": 0,
+    "duration_seconds": 2.281,
+    "new_precision_tests": 14,
+    "roundtrip_binary64_values": 206,
+    "source_freeze_command": "shasum -a 256 -c configs/system-v1.sha256",
+    "source_freeze_entries_passed": 34
+  },
+  "unchanged_strict_gates_tested": [
+    "finite gradient strictly greater than zero",
+    "invalid advantage nonpositive",
+    "evaluation has zero training updates"
+  ],
+  "historical_raw_gradient_unknown_steps": [7, 9, 10, 56, 65, 92],
+  "historical_terminal_acceptance": "failed, unchanged",
+  "old_result_or_deployment_rewritten": false,
+  "gpu_validation": false,
+  "ssh_calls": 0,
+  "gpu_dispatches": 0,
+  "training_updates": 0,
+  "queue_restarts": 0,
+  "monitors_created": 0,
+  "continuation_proposal": "metric-precision-fix.md",
+  "continuation_authorization": "pending separate approval; CPU approval is not GPU or revised predecessor acceptance authorization"
+}

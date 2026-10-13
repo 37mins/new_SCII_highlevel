@@ -1,0 +1,48 @@
+{
+  "document_url": "https://www.yuque.com/yangdage-mu30r/nsahpp/io9ul989o6qkposx",
+  "existing_document_title": "SCII日志",
+  "body_title": "SCII 项目进展与实验总览",
+  "verification_completed_by": "2026-09-23T23:41:19+08:00",
+  "status_snapshot_at": "2026-09-23T23:06:52.490178+08:00",
+  "request": "Reorganize the whole existing article and add project versions mapped to GitHub commits; user agreed to leave Safari undisturbed during editing.",
+  "source_markdown": "yuque-project-overview-20260923.md",
+  "source_sha256": "9c427774db49a37155c2cdae4f34d40e557f49ca8ae0f6797d510e70ad6459c1",
+  "source_bytes": 24484,
+  "original_backup": {
+    "path": "/private/tmp/sc2-yuque-before-reorganize-20260923.md",
+    "bytes": 35386,
+    "sha256": "2fdafca084d49dd4f1feb6bb1fc3b5ab5d2f124e1a46de91d061a6b21bc18719",
+    "method": "Yuque native Copy Markdown, TextEdit local save; nonempty file and complete content checked before replacement",
+    "uploaded_to_git": false
+  },
+  "publication": {
+    "method": "Safari native CUA; replace body with formatted HTML derived from source read through TextEdit UI, preserve title and access settings, click Update",
+    "published_reading_view_verified": true,
+    "edit_button_after_publish": true,
+    "native_copy_markdown_readback_verified": true,
+    "all_23_heading_texts_present": true,
+    "eight_top_level_sections": true,
+    "seven_source_tables_rendered": true,
+    "unique_commit_links_read_back": 27,
+    "all_five_original_image_urls_retained": true,
+    "old_sft_work_opening_removed": true,
+    "historical_failed_training_and_current_waiting_queue_present": true,
+    "visual_checks": ["opening hierarchy and four-arm status table", "SpB result table and caveats", "SpB original curve placement and current queue section"],
+    "sharing_permissions_changed": false
+  },
+  "validation": {
+    "git_cat_file_existing_commit_objects": 27,
+    "git_cat_file_existing_immutable_blob_links": 9,
+    "all_five_image_urls_match_original_export": true,
+    "source_has_no_server_internal_root_or_credentials": true,
+    "tests": "Python3 regex/hash/git-object documentation checks; no model/GPU tests required for documentation-only edit",
+    "initial_node_validation_unavailable": "node not on shell PATH; equivalent Python3 documentation validation succeeded",
+    "remote_before": "8e9b327ebe662bacbcfa3d708c381b5616f939ec",
+    "remote_v1_0_0_peeled_commit": "df1cbb0a648da70d3835ca82612b3ba5fd1ab605",
+    "historical_baseline_tag_remote_absence_disclosed": true
+  },
+  "experiment_mutations": [],
+  "automation_mutations": [],
+  "branch": "codex/fix-sc2-startup-port-race",
+  "git_sync": "This atomic documentation/evidence commit is to be pushed to the authorized origin branch; remote SHA equality checked after push, not inferred from this pre-commit receipt."
+}

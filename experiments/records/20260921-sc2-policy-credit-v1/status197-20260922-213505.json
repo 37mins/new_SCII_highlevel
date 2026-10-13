@@ -1,0 +1,172 @@
+{
+  "schema": "read-only-experiment-status-v1",
+  "source_head": "3c8ef66242360e83a522926f05f90b021e7c7323",
+  "branch": "codex/fix-quiescent-storage",
+  "github_sync": {
+    "status": "blocked_by_security_review_before_execution",
+    "destination": "https://github.com/CeraveNew/new_SCII.git",
+    "reason": "Review requested explicit approval to send this internal experiment status evidence to the configured remote; no push attempted after rejection.",
+    "local_evidence_retained": true
+  },
+  "request": "正在跑什么实验？之前的实验续排上了吗",
+  "scope": "Only node197 task-owned small states and exact container states; no GPU diagnostic or changes.",
+  "observation": {
+    "checked_at": "2026-09-22T21:35:05.393784+08:00",
+    "files": {
+      "/var/jfsCache/sc2-qwen-l7eval96-197-20260922-r1/queue-state.json": {
+        "sha256": "5618e531c57b6355ec31990bb19d632e57b7a5f7aa77ccde70bdf157879ebca9",
+        "data": {
+          "phase": "completed",
+          "exit_code": 0,
+          "deadline": 1790227126.5133374,
+          "historical_terminal_acceptance": "failed, unchanged"
+        }
+      },
+      "/var/jfsCache/sc2-qwen-l7eval96-197-20260922-r1/state.json": {
+        "sha256": "3a6f7b816edb68c0492ccdfedd60a56b6d07bf8316b91d6a4d24c344c6ee5dde",
+        "data": {
+          "phase": "completed",
+          "completed": [
+            "eval96"
+          ],
+          "deadline": 1790227126.5133374,
+          "stage": "eval96",
+          "run": "/var/jfsCache/sc2-qwen-l7eval96-197-20260922-r1/runs/eval96",
+          "exit_code": 0,
+          "learning_validated": false
+        }
+      },
+      "/var/jfsCache/sc2-l7-followup197-20260922-r3/queue-state.json": {
+        "sha256": "013a5a572442be138c77f7288398f496a54b7263613f49ccb291baf7537bfd0d",
+        "data": {
+          "phase": "failed",
+          "completed": [],
+          "first_dispatch_by": 1790230726.5133374,
+          "part": "spb-same/short",
+          "deadline": 1790420762.305692,
+          "arm_deadline": 1790247962.305692,
+          "error": "Storage measurement failed; no retry; /var/jfsCache/sc2-l7-followup197-20260922-r3/storage-failure-d62266c12536492d97f0482a33359865.json"
+        }
+      },
+      "/var/jfsCache/sc2-l7-followup197-20260922-r3/state.json": {
+        "status": "absent"
+      },
+      "/var/jfsCache/sc2-l7-followup197-20260922-r3/spb-same/short/state.json": {
+        "sha256": "0b36f0b787385dd13e551d2b288d4add0dc4781446b681f3d88f2bba25913c8c",
+        "data": {
+          "phase": "failed",
+          "completed": [],
+          "deadline": 1790247962.305692,
+          "stage": "pre",
+          "run": "/var/jfsCache/sc2-l7-followup197-20260922-r3/spb-same/short/runs/pre",
+          "error": "Storage measurement failed; no retry; /var/jfsCache/sc2-l7-followup197-20260922-r3/storage-failure-fff4897390524ede897caf4bd3b34cb9.json"
+        }
+      },
+      "/var/jfsCache/sc2-l7-followup197-20260922-r3/spb-same/short/dispatch.json": {
+        "sha256": "9c1d2b6e0f5b90d17eb018e7111a1f82867d54cad1488f6e860096ffc88eb0d7",
+        "data": {
+          "start": 1790075162.305692,
+          "deadline": 1790247962.305692,
+          "command_omitted": true
+        }
+      },
+      "/var/jfsCache/sc2-l7-followup197-20260922-r3/spb-same/long/dispatch.json": {
+        "status": "absent"
+      },
+      "/var/jfsCache/sc2-l7-followup197-20260922-r3/qwen-random/long/dispatch.json": {
+        "status": "absent"
+      }
+    },
+    "containers": {
+      "sc2-qwen-l7same96-197-20260922-r1": {
+        "exit_code": 0,
+        "state": {
+          "Status": "exited",
+          "Running": false,
+          "Paused": false,
+          "Restarting": false,
+          "OOMKilled": false,
+          "Dead": false,
+          "Pid": 0,
+          "ExitCode": 1,
+          "Error": "",
+          "StartedAt": "2026-09-22T05:18:46.570744204Z",
+          "FinishedAt": "2026-09-22T09:02:34.156418053Z"
+        },
+        "stderr": ""
+      },
+      "sc2-qwen-l7eval96-197-20260922-r1": {
+        "exit_code": 0,
+        "state": {
+          "Status": "exited",
+          "Running": false,
+          "Paused": false,
+          "Restarting": false,
+          "OOMKilled": false,
+          "Dead": false,
+          "Pid": 0,
+          "ExitCode": 0,
+          "Error": "",
+          "StartedAt": "2026-09-22T11:00:00.979307015Z",
+          "FinishedAt": "2026-09-22T11:05:21.648455653Z"
+        },
+        "stderr": ""
+      },
+      "sc2-l7-followup197-20260922-r3-spb-same-short": {
+        "exit_code": 0,
+        "state": {
+          "Status": "exited",
+          "Running": false,
+          "Paused": false,
+          "Restarting": false,
+          "OOMKilled": false,
+          "Dead": false,
+          "Pid": 0,
+          "ExitCode": 1,
+          "Error": "",
+          "StartedAt": "2026-09-22T11:06:02.351196285Z",
+          "FinishedAt": "2026-09-22T11:08:37.465595808Z"
+        },
+        "stderr": ""
+      },
+      "sc2-l7-followup197-20260922-r3-spb-same-long": {
+        "exit_code": 1,
+        "state": null,
+        "stderr": "error: no such object: sc2-l7-followup197-20260922-r3-spb-same-long"
+      },
+      "sc2-l7-followup197-20260922-r3-qwen-random-long": {
+        "exit_code": 1,
+        "state": null,
+        "stderr": "error: no such object: sc2-l7-followup197-20260922-r3-qwen-random-long"
+      }
+    },
+    "active_task_containers": {
+      "sc2-l7-followup197": {
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "sc2-qwen-l7": {
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    }
+  },
+  "conclusion": {
+    "task_gpu_experiment_running": false,
+    "old_followup_queue": "failed; not an active waiting queue",
+    "spb_ppo_started": false,
+    "spb_long_dispatched": false,
+    "qwen_random_long_dispatched": false,
+    "repair_status": "CPU only: 100 Linux tests and five real CPU-container lifecycle scenarios passed, see host-supervision-cpu-20260922.json",
+    "production_replacement": "No new deployment or queue authorized/executed by this status request",
+    "pending_decision": "New RUN continuation and eight additional dispatched interaction slots (1560 cumulative including failed pre), with original wall/GPU limits and absolute deadlines unchanged; no accepted evaluation rerun."
+  },
+  "actions": {
+    "remote_read_only": true,
+    "gpu_dispatches": 0,
+    "queue_changes": 0,
+    "old_artifacts_modified": false
+  }
+}

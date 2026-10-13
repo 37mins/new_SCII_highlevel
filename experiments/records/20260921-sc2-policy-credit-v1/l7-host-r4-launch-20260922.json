@@ -1,0 +1,368 @@
+{
+  "schema": "l7-host-r4-launch-v1",
+  "authorization": {
+    "request": "快按方案续排实验",
+    "github": "User explicitly approved code/config/small evidence push to CeraveNew/new_SCII codex/fix-quiescent-storage",
+    "max_cumulative_dispatch_slots": 1560,
+    "new_program_games": 1552,
+    "prior_interrupted_pre_slots": 8,
+    "budgets_and_deadlines_unchanged": true
+  },
+  "branch": "codex/fix-quiescent-storage",
+  "runtime_sha": "9cb291ea5f50de205c5d88371e08ce229b7d9d04",
+  "queue": {
+    "queued_once": true,
+    "time": 1790085599.5505352,
+    "socket": "sc2_l7_followup197_20260922_r4",
+    "session": "l7_followup197_r4"
+  },
+  "preflight": {
+    "checked_at": 1790085599.2818928,
+    "sha": "9cb291ea5f50de205c5d88371e08ce229b7d9d04",
+    "readiness": {
+      "spb-same/short": {
+        "passed": true,
+        "runtime_sha": "9cb291ea5f50de205c5d88371e08ce229b7d9d04",
+        "cuda_initialized": false,
+        "actual_entries_and_hydra_configs": true,
+        "actual_parent_verified": true,
+        "deferred_gate": null,
+        "checked_at": 1790085514.5695086
+      },
+      "spb-same/long": {
+        "passed": true,
+        "runtime_sha": "9cb291ea5f50de205c5d88371e08ce229b7d9d04",
+        "cuda_initialized": false,
+        "actual_entries_and_hydra_configs": true,
+        "actual_parent_verified": false,
+        "deferred_gate": "SpB actual CP2 and accepted prefix required before long GPU",
+        "checked_at": 1790085520.2211368
+      },
+      "qwen-random/long": {
+        "passed": true,
+        "runtime_sha": "9cb291ea5f50de205c5d88371e08ce229b7d9d04",
+        "cuda_initialized": false,
+        "actual_entries_and_hydra_configs": true,
+        "actual_parent_verified": true,
+        "deferred_gate": null,
+        "checked_at": 1790085525.8360946
+      }
+    },
+    "cpu_containers": [
+      {
+        "name": "/sc2-l7-followup197-20260922-r4-qwen-random-long-cpu-cpu",
+        "state": {
+          "Status": "exited",
+          "Running": false,
+          "Paused": false,
+          "Restarting": false,
+          "OOMKilled": false,
+          "Dead": false,
+          "Pid": 0,
+          "ExitCode": 0,
+          "Error": "",
+          "StartedAt": "2026-09-22T13:58:41.152717028Z",
+          "FinishedAt": "2026-09-22T13:58:46.486967817Z"
+        },
+        "gpu": null
+      },
+      {
+        "name": "/sc2-l7-followup197-20260922-r4-spb-same-long-cpu-cpu",
+        "state": {
+          "Status": "exited",
+          "Running": false,
+          "Paused": false,
+          "Restarting": false,
+          "OOMKilled": false,
+          "Dead": false,
+          "Pid": 0,
+          "ExitCode": 0,
+          "Error": "",
+          "StartedAt": "2026-09-22T13:58:35.485424645Z",
+          "FinishedAt": "2026-09-22T13:58:40.917758122Z"
+        },
+        "gpu": null
+      },
+      {
+        "name": "/sc2-l7-followup197-20260922-r4-spb-same-short-cpu-cpu",
+        "state": {
+          "Status": "exited",
+          "Running": false,
+          "Paused": false,
+          "Restarting": false,
+          "OOMKilled": false,
+          "Dead": false,
+          "Pid": 0,
+          "ExitCode": 0,
+          "Error": "",
+          "StartedAt": "2026-09-22T13:58:29.458219507Z",
+          "FinishedAt": "2026-09-22T13:58:35.220329079Z"
+        },
+        "gpu": null
+      },
+      {
+        "name": "/sc2-l7-followup197-20260922-r4-spb-same-short-cpu-regressions",
+        "state": {
+          "Status": "exited",
+          "Running": false,
+          "Paused": false,
+          "Restarting": false,
+          "OOMKilled": false,
+          "Dead": false,
+          "Pid": 0,
+          "ExitCode": 0,
+          "Error": "",
+          "StartedAt": "2026-09-22T13:58:12.384106399Z",
+          "FinishedAt": "2026-09-22T13:58:29.225106826Z"
+        },
+        "gpu": null
+      }
+    ],
+    "regressions.json": {
+      "passed": true,
+      "tests": 214,
+      "skips": 0,
+      "cuda_initialized": false,
+      "runtime_sha": "9cb291ea5f50de205c5d88371e08ce229b7d9d04",
+      "checked_at": 1790085508.210906
+    },
+    "host-regressions.json": {
+      "passed": true,
+      "tests": 71,
+      "skips": 0,
+      "runtime_sha": "9cb291ea5f50de205c5d88371e08ce229b7d9d04",
+      "checked_at": 1790085435.0119166
+    },
+    "training_core_diff": "",
+    "predecessor_accepted": true
+  },
+  "actual": {
+    "checked_at": "2026-09-22T22:03:15.478546+08:00",
+    "receipts": {
+      "queue-state.json": {
+        "sha256": "4d8ae8f93eee86aea41dd5e8964d563d611317107d126c8cb8964a96c629b189",
+        "data": {
+          "phase": "running-unverified",
+          "completed": [],
+          "deadline": 1790420762.305692,
+          "original_start": 1790075162.305692,
+          "spb_deadline": 1790247962.305692,
+          "part": "spb-same/short",
+          "arm_deadline": 1790247962.305692
+        }
+      },
+      "dispatch.json": {
+        "sha256": "7670b428454112f47e30ef69cdd66d08292a74645bf5021c1f77b8b8656dd74c",
+        "data": {
+          "start": 1790075162.305692,
+          "resumed_at": 1790085599.7561057,
+          "deadline": 1790420762.305692,
+          "original_clock_preserved": true,
+          "gpu_hours": 768
+        }
+      },
+      "storage-state.json": {
+        "sha256": "46a651fe777b19f784cecebcf58f014fef3aa308374e562d347d5d7e5e1b5df1",
+        "data": {
+          "roots": [
+            "/var/jfsCache/sc2-l7-followup197-20260922-r4",
+            "/var/jfsCache/sc2-l7-followup197-source-20260922-r4",
+            "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-random",
+            "/var/jfsCache/sc2-l7-followup197-20260922-r1",
+            "/var/jfsCache/sc2-l7-followup197-source-20260922-r1",
+            "/var/jfsCache/sc2-l7-followup197-20260922-r2",
+            "/var/jfsCache/sc2-l7-followup197-source-20260922-r2",
+            "/var/jfsCache/sc2-l7-followup197-20260922-r3",
+            "/var/jfsCache/sc2-l7-followup197-source-20260922-r3",
+            "/var/jfsCache/sc2-storage-quiescence-cpu-20260922.4LzwSM",
+            "/var/jfsCache/sc2-host-supervision-cpu-20260922.7lJiIO"
+          ],
+          "deadline": 1790420762.305692,
+          "limit": 2199023255552,
+          "bytes": 50268978045,
+          "returncode": 0,
+          "status": "measured",
+          "quiescence": {
+            "version": "host-guardian-v1",
+            "container_id": "78b96b5af660c06804e8ab56e19942eb973b7de760b89f746d125d890a3ee249",
+            "owner_root": "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/short",
+            "guardian_pid": 715988,
+            "paused_verified": true,
+            "cleanup": "verified-unpaused",
+            "paused_at": 1790085784.7362094,
+            "mode": "paused",
+            "resumed_at": 1790085784.816023
+          },
+          "checked_at": 1790085784.8162014
+        },
+        "stderr": {
+          "tail": "",
+          "characters": 0,
+          "truncated": false
+        }
+      },
+      "spb-same/short/host-supervision/state.json": {
+        "sha256": "32aff6c970172b7c636d2684017c368eddcf18b21fa60c507ec82376042a385a",
+        "data": {
+          "version": "host-guardian-v1",
+          "phase": "running-unverified",
+          "completed": [],
+          "deadline": 1790247962.305692,
+          "learning_validated": false,
+          "started_at": 1790085600.1374924,
+          "stage": "pre",
+          "container_id": "78b96b5af660c06804e8ab56e19942eb973b7de760b89f746d125d890a3ee249"
+        }
+      },
+      "spb-same/short/host-supervision/pre-guardian.json": {
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text": ""
+      },
+      "spb-same/short/state.json": {
+        "status": "absent"
+      },
+      "spb-same/short/acceptance-pre.json": {
+        "status": "absent"
+      },
+      "spb-same/short/admission-pre.json": {
+        "sha256": "5a3677ba457a51133112bf4669504e9f5b6183537cd338617cca3ea8dfb5d7a7",
+        "data": {
+          "passed": true,
+          "checked_at": 1790085600.5414412,
+          "deadline": 1790247962.305692,
+          "eight_idle_gpus": true,
+          "ram_gib_min": 600,
+          "nvme_gib_min": 1084,
+          "fsync": true
+        }
+      },
+      "spb-same/short/runs/pre/result.json": {
+        "status": "absent"
+      },
+      "spb-same/short/runs/pre/.done": {
+        "status": "absent"
+      },
+      "spb-same/short/runs/pre/evaluation_seeds.jsonl": {
+        "sha256": "ffaf9953b3c4fc78b2a0f30c67357504f6a6b8e014c3b0adc2db12e87afdad90",
+        "data": {
+          "base_seed": 1000,
+          "reset_index": 0,
+          "seeds": [
+            605183188,
+            1075501356,
+            2084414326,
+            2203880230,
+            3000371298,
+            949752300,
+            3225036469,
+            2823708076
+          ]
+        }
+      }
+    },
+    "log_evidence": {
+      "spb-same/short/runs/pre/console.log": {
+        "total_bytes": 65672,
+        "tail_sha256": "df5486a2171cbd55ddcd2a7ec9f07cb0c2cdc1ae9484b226e9337020b752da79",
+        "read_bytes": 65672,
+        "selected": [
+          "(WorkerDict pid=4459) SSESWAMoBAForCausalLM contains 5.17B parameters",
+          "(WorkerDict pid=4459) NCCL version 2.26.2+cuda12.2",
+          "(WorkerDict pid=4459) SC2_ACTION_SUPPORT {\"budget\": 192, \"canonical_tokenizations_only\": true, \"eos_token_id\": 151645, \"mode\": \"sc2-canonical-bo-support-v1\", \"pad_token_id\": 151643, \"tokenizer_sha256\": \"a63080b4b30dc861fe1b0e420c53a241304dc81aff3d9bb315e6e33e2a1ab794\"}",
+          "(WorkerDict pid=4653) SC2_NO_THINKING {\"blocked_counts\": {\"\": 2, \"<\": 7, \"</\": 7, \"</t\": 2, \"</th\": 13, \"</thi\": 4, \"</thin\": 276, \"<t\": 2, \"<th\": 13, \"<thi\": 4, \"<thin\": 276}, \"forbidden_prefixes\": [\"<think\", \"</think\"], \"mode\": \"sc2-no-thinking-v1\", \"support_mask_sha256\": \"63a9546dd5fb39a64c6e2a2ad13f31101aacaade9bac07258d0e415480181e0d\"}",
+          "(WorkerDict pid=4648) SC2_ACTION_SUPPORT {\"budget\": 192, \"canonical_tokenizations_only\": true, \"eos_token_id\": 151645, \"mode\": \"sc2-canonical-bo-support-v1\", \"pad_token_id\": 151643, \"tokenizer_sha256\": \"a63080b4b30dc861fe1b0e420c53a241304dc81aff3d9bb315e6e33e2a1ab794\"} [repeated 7x across cluster]",
+          "(WorkerDict pid=4648) SC2_NO_THINKING {\"blocked_counts\": {\"\": 2, \"<\": 7, \"</\": 7, \"</t\": 2, \"</th\": 13, \"</thi\": 4, \"</thin\": 276, \"<t\": 2, \"<th\": 13, \"<thi\": 4, \"<thin\": 276}, \"forbidden_prefixes\": [\"<think\", \"</think\"], \"mode\": \"sc2-no-thinking-v1\", \"support_mask_sha256\": \"63a9546dd5fb39a64c6e2a2ad13f31101aacaade9bac07258d0e415480181e0d\"} [repeated 7x across cluster]",
+          "(WorkerDict pid=4459) SSESWAMoBAForCausalLM contains 5.17B parameters",
+          "(SC2Worker pid=2505) Combat result reward: {\"pid\": 7196, \"game_loop\": 0, \"boundary\": \"planner\", \"last_consumed_policy_action_id\": null, \"killed_value\": 0.0, \"lost_value\": 0.0, \"scale\": 0.001, \"reward\": 0.0}"
+        ],
+        "last_lines": [
+          "(SC2Worker pid=2505) Generate new plan... [0]",
+          "(SC2Worker pid=2505) Step shaping reward off: 0.000",
+          "(SC2Worker pid=2505) Combat result reward: {\"pid\": 7196, \"game_loop\": 0, \"boundary\": \"planner\", \"last_consumed_policy_action_id\": null, \"killed_value\": 0.0, \"lost_value\": 0.0, \"scale\": 0.001, \"reward\": 0.0}",
+          "(WorkerDict pid=4459) Handoff paired sampling: {\"rank\": 0, \"seed\": 0, \"pid\": 4459, \"cpu_rng_sha256\": \"1ccf17250133dec5e96478acd63e13d728d0dbbabb30389415a302c6f872f81f\", \"cuda_rng_sha256\": \"374708fff7719dd5979ec875d56cd2286f6d3cf7ec317a3b25632aab28ec37bb\"}",
+          "(WorkerDict pid=4459) `generation_config` default values have been modified to match model-specific defaults: {'bos_token_id': 151643, 'eos_token_id': 151645}. If this is not desired, please set these values explicitly.",
+          "(WorkerDict pid=4459) ",
+          "Loading checkpoint shards:  91%|█████████ | 10/11 [00:09<00:00,  1.15it/s] [repeated 39x across cluster]",
+          "(WorkerDict pid=4459) ",
+          "Loading checkpoint shards: 100%|██████████| 11/11 [00:09<00:00,  1.26it/s]",
+          "Loading checkpoint shards: 100%|██████████| 11/11 [00:09<00:00,  1.14it/s] [repeated 7x across cluster]"
+        ]
+      },
+      "spb-same/short/pre-entry.log": {
+        "total_bytes": 71320,
+        "tail_sha256": "a43da5e2eb6a4dc66d6aed5528da7e3c1745735dd0b3bbf404702e64c024778c",
+        "read_bytes": 71320,
+        "selected": [
+          "(WorkerDict pid=4459) SSESWAMoBAForCausalLM contains 5.17B parameters",
+          "(WorkerDict pid=4459) NCCL version 2.26.2+cuda12.2",
+          "(WorkerDict pid=4459) SC2_ACTION_SUPPORT {\"budget\": 192, \"canonical_tokenizations_only\": true, \"eos_token_id\": 151645, \"mode\": \"sc2-canonical-bo-support-v1\", \"pad_token_id\": 151643, \"tokenizer_sha256\": \"a63080b4b30dc861fe1b0e420c53a241304dc81aff3d9bb315e6e33e2a1ab794\"}",
+          "(WorkerDict pid=4653) SC2_NO_THINKING {\"blocked_counts\": {\"\": 2, \"<\": 7, \"</\": 7, \"</t\": 2, \"</th\": 13, \"</thi\": 4, \"</thin\": 276, \"<t\": 2, \"<th\": 13, \"<thi\": 4, \"<thin\": 276}, \"forbidden_prefixes\": [\"<think\", \"</think\"], \"mode\": \"sc2-no-thinking-v1\", \"support_mask_sha256\": \"63a9546dd5fb39a64c6e2a2ad13f31101aacaade9bac07258d0e415480181e0d\"}",
+          "(WorkerDict pid=4648) SC2_ACTION_SUPPORT {\"budget\": 192, \"canonical_tokenizations_only\": true, \"eos_token_id\": 151645, \"mode\": \"sc2-canonical-bo-support-v1\", \"pad_token_id\": 151643, \"tokenizer_sha256\": \"a63080b4b30dc861fe1b0e420c53a241304dc81aff3d9bb315e6e33e2a1ab794\"} [repeated 7x across cluster]",
+          "(WorkerDict pid=4648) SC2_NO_THINKING {\"blocked_counts\": {\"\": 2, \"<\": 7, \"</\": 7, \"</t\": 2, \"</th\": 13, \"</thi\": 4, \"</thin\": 276, \"<t\": 2, \"<th\": 13, \"<thi\": 4, \"<thin\": 276}, \"forbidden_prefixes\": [\"<think\", \"</think\"], \"mode\": \"sc2-no-thinking-v1\", \"support_mask_sha256\": \"63a9546dd5fb39a64c6e2a2ad13f31101aacaade9bac07258d0e415480181e0d\"} [repeated 7x across cluster]",
+          "(WorkerDict pid=4459) SSESWAMoBAForCausalLM contains 5.17B parameters",
+          "(SC2Worker pid=2505) Combat result reward: {\"pid\": 7196, \"game_loop\": 0, \"boundary\": \"planner\", \"last_consumed_policy_action_id\": null, \"killed_value\": 0.0, \"lost_value\": 0.0, \"scale\": 0.001, \"reward\": 0.0}"
+        ],
+        "last_lines": [
+          "(SC2Worker pid=2505) Generate new plan... [0]",
+          "(SC2Worker pid=2505) Step shaping reward off: 0.000",
+          "(SC2Worker pid=2505) Combat result reward: {\"pid\": 7196, \"game_loop\": 0, \"boundary\": \"planner\", \"last_consumed_policy_action_id\": null, \"killed_value\": 0.0, \"lost_value\": 0.0, \"scale\": 0.001, \"reward\": 0.0}",
+          "(WorkerDict pid=4459) Handoff paired sampling: {\"rank\": 0, \"seed\": 0, \"pid\": 4459, \"cpu_rng_sha256\": \"1ccf17250133dec5e96478acd63e13d728d0dbbabb30389415a302c6f872f81f\", \"cuda_rng_sha256\": \"374708fff7719dd5979ec875d56cd2286f6d3cf7ec317a3b25632aab28ec37bb\"}",
+          "(WorkerDict pid=4459) `generation_config` default values have been modified to match model-specific defaults: {'bos_token_id': 151643, 'eos_token_id': 151645}. If this is not desired, please set these values explicitly.",
+          "(WorkerDict pid=4459) ",
+          "Loading checkpoint shards:  91%|█████████ | 10/11 [00:09<00:00,  1.15it/s] [repeated 39x across cluster]",
+          "(WorkerDict pid=4459) ",
+          "Loading checkpoint shards: 100%|██████████| 11/11 [00:09<00:00,  1.26it/s]",
+          "Loading checkpoint shards: 100%|██████████| 11/11 [00:09<00:00,  1.14it/s] [repeated 7x across cluster]"
+        ]
+      },
+      "queue.log": {
+        "total_bytes": 0,
+        "tail_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "read_bytes": 0,
+        "selected": [],
+        "last_lines": []
+      }
+    },
+    "container": {
+      "returncode": 0,
+      "state": {
+        "Status": "running",
+        "Running": true,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 716047,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-09-22T14:00:00.641838172Z",
+        "FinishedAt": "0001-01-01T00:00:00Z"
+      },
+      "stderr": ""
+    }
+  },
+  "interpretation": {
+    "spb_original_model_worker_and_nccl": true,
+    "sc2_planner_boundary_started": true,
+    "pre_zero_update_evaluation": true,
+    "actual_ppo_observed": false,
+    "stage_completed": false,
+    "spb_same_long_and_qwen_random_long_queued": true,
+    "successors_require_full_acceptance": true,
+    "storage_sample_exit0_and_pause_resume_confirmed": true,
+    "operational_timing_or_learning_equivalence_proven": false
+  },
+  "monitor": {
+    "id": "197-l7-r4",
+    "interval_minutes": 10,
+    "only_one": true,
+    "first_gpu_sc2_event_notified_this_turn": true,
+    "first_ppo_event_not_notified": true
+  },
+  "limits": [
+    "SpB native CP2 readiness must be actual before long; current conditional false is not bypassed.",
+    "Qwen-random resumes own accepted CP2 with previously accepted missing driver RNG, non-bitwise.",
+    "Strict binary64-positive-gradient, invalid-credit, natural-game, completeCP, seed/action/RNG gates unchanged.",
+    "No claim that historical GPU stop timeout, host/daemon-loss recovery or strategy learning is solved."
+  ]
+}

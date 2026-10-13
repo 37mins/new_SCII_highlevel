@@ -1,0 +1,918 @@
+{
+  "schema": "l7-host-stage-transition-v1",
+  "checked_at": "2026-09-23T12:17:42.427902+08:00",
+  "ssh_alias": "sc2-a100-197",
+  "root": "/var/jfsCache/sc2-l7-followup197-20260922-r4",
+  "source_sha": "9cb291ea5f50de205c5d88371e08ce229b7d9d04",
+  "remote_mutations": [],
+  "queue": {
+    "phase": "running-unverified",
+    "completed": [
+      "spb-same/short",
+      "spb-same/long"
+    ],
+    "deadline": 1790420762.305692,
+    "original_start": 1790075162.305692,
+    "spb_deadline": 1790247962.305692,
+    "part": "qwen-random/long",
+    "arm_deadline": 1790308720.0467553
+  },
+  "spb": {
+    "state": {
+      "version": "host-guardian-v1",
+      "phase": "completed",
+      "completed": [
+        "train96",
+        "eval96"
+      ],
+      "deadline": 1790247962.305692,
+      "learning_validated": false,
+      "started_at": 1790088312.1763573,
+      "stage": "eval96",
+      "container_id": "c396f9a1acc91b80aa39df52502a237ed6b7319df6f609102f68910ab9e86e51",
+      "exit_code": 0,
+      "finished_at": 1790135917.4264796
+    },
+    "host_state": {
+      "version": "host-guardian-v1",
+      "phase": "completed",
+      "completed": [
+        "train96",
+        "eval96"
+      ],
+      "deadline": 1790247962.305692,
+      "learning_validated": false,
+      "started_at": 1790088312.1763573,
+      "stage": "eval96",
+      "container_id": "c396f9a1acc91b80aa39df52502a237ed6b7319df6f609102f68910ab9e86e51",
+      "exit_code": 0,
+      "finished_at": 1790135917.4264796
+    },
+    "train": {
+      "status": "completed",
+      "ended_at": "2026-09-23T03:45:25.222453+00:00",
+      "process_exit_code": 0,
+      "completed_steps": 94,
+      "start_step": 2,
+      "last_global_step": 96,
+      "metrics_finite": true,
+      "metrics_precision": "binary64-v1",
+      "checkpoint_complete": true,
+      "empty_policy_batches": [],
+      "episode_outcomes": {
+        "trajectories": 752,
+        "natural_games": 752,
+        "wins": 440,
+        "defeats": 312,
+        "ties": 0,
+        "truncated": 0,
+        "natural_win_rate": 0.5851063829787234
+      },
+      "result_done_equal": true,
+      "console_sha256": "911d45b782327f58100b7c1e32e683fa867ab48e1c2502280bec75f0a034fb67"
+    },
+    "eval": {
+      "status": "completed",
+      "ended_at": "2026-09-23T03:58:36.145054+00:00",
+      "mode": "evaluation",
+      "process_exit_code": 0,
+      "training_updates": 0,
+      "metrics_finite": true,
+      "response_record_count": 80,
+      "metrics_precision": "binary64-v1",
+      "evaluable_action_count": 33,
+      "valid_evaluable_action_count": 33,
+      "console_sha256": "9a131b61438684257fa16d31161f01bf98c57ebea2d1215af5ea2edf84a27b26",
+      "natural_match_completed": true,
+      "termination_evidence": "game_result",
+      "episode_outcomes": {
+        "trajectories": 8,
+        "natural_games": 8,
+        "wins": 2,
+        "defeats": 6,
+        "ties": 0,
+        "truncated": 0,
+        "natural_win_rate": 0.25
+      },
+      "result_done_equal": true
+    },
+    "acceptance_train96": {
+      "checked_at": 1790135158.1136067,
+      "result_matches": true,
+      "evidence": {
+        "consumed_answers": 11210,
+        "valid_consumed_answers": 11210,
+        "parsed_plans": 11210,
+        "validated_queue_entries": 52087,
+        "validated_locally_queued_commands": 34702,
+        "execution_scope": "local Depot/Marine commands, not production completion or causal wins",
+        "resume": {
+          "from_checkpoint": "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/short/runs/train2/checkpoints/global_step_2",
+          "global_step": 2,
+          "next_reset_index": 2,
+          "next_seeds": [
+            53,
+            53,
+            53,
+            53,
+            53,
+            53,
+            53,
+            53
+          ],
+          "source": "checkpoint",
+          "model_optimizer_dataloader_load_returned": true
+        },
+        "ppo_updates": 94,
+        "checkpoints": [
+          8,
+          16,
+          24,
+          32,
+          40,
+          48,
+          56,
+          64,
+          72,
+          80,
+          88,
+          96
+        ]
+      }
+    },
+    "acceptance_eval96": {
+      "checked_at": 1790135916.922987,
+      "result_matches": true,
+      "evidence": {
+        "consumed_answers": 33,
+        "valid_consumed_answers": 33,
+        "parsed_plans": 33,
+        "validated_queue_entries": 666,
+        "validated_locally_queued_commands": 377,
+        "execution_scope": "local Depot/Marine commands, not production completion or causal wins"
+      }
+    },
+    "manifest_train96": {
+      "source_commit": "9cb291ea5f50de205c5d88371e08ce229b7d9d04",
+      "dirty": false,
+      "world_size": 8,
+      "start_step": 2,
+      "metrics_precision": "binary64-v1"
+    },
+    "manifest_eval96": {
+      "source_commit": "9cb291ea5f50de205c5d88371e08ce229b7d9d04",
+      "dirty": false,
+      "world_size": 8,
+      "start_step": 0,
+      "metrics_precision": "binary64-v1"
+    },
+    "updates": {
+      "returned_metrics": 94,
+      "audits": 94,
+      "positive_finite_gradients": true,
+      "invalid_advantage_nonpositive": true,
+      "min_grad": 0.21455786563456059,
+      "max_grad": 131.23414001464843,
+      "consumed": 11210,
+      "valid": 11210
+    },
+    "seed_all_94_verified": true,
+    "resume": {
+      "from_checkpoint": "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/short/runs/train2/checkpoints/global_step_2",
+      "global_step": 2,
+      "next_reset_index": 2,
+      "next_seeds": [
+        53,
+        53,
+        53,
+        53,
+        53,
+        53,
+        53,
+        53
+      ],
+      "source": "checkpoint",
+      "model_optimizer_dataloader_load_returned": true
+    },
+    "checkpoint_inventory": [
+      {
+        "step": 8,
+        "required_file_count": 26,
+        "all_nonempty": true,
+        "total_required_bytes": 63554458986
+      },
+      {
+        "step": 16,
+        "required_file_count": 26,
+        "all_nonempty": true,
+        "total_required_bytes": 63554459050
+      },
+      {
+        "step": 24,
+        "required_file_count": 26,
+        "all_nonempty": true,
+        "total_required_bytes": 63554458986
+      },
+      {
+        "step": 32,
+        "required_file_count": 26,
+        "all_nonempty": true,
+        "total_required_bytes": 63554458986
+      },
+      {
+        "step": 40,
+        "required_file_count": 26,
+        "all_nonempty": true,
+        "total_required_bytes": 63554459050
+      },
+      {
+        "step": 48,
+        "required_file_count": 26,
+        "all_nonempty": true,
+        "total_required_bytes": 63554459050
+      },
+      {
+        "step": 56,
+        "required_file_count": 26,
+        "all_nonempty": true,
+        "total_required_bytes": 63554459050
+      },
+      {
+        "step": 64,
+        "required_file_count": 26,
+        "all_nonempty": true,
+        "total_required_bytes": 63554459050
+      },
+      {
+        "step": 72,
+        "required_file_count": 26,
+        "all_nonempty": true,
+        "total_required_bytes": 63554458986
+      },
+      {
+        "step": 80,
+        "required_file_count": 26,
+        "all_nonempty": true,
+        "total_required_bytes": 63554459050
+      },
+      {
+        "step": 88,
+        "required_file_count": 26,
+        "all_nonempty": true,
+        "total_required_bytes": 63554459050
+      },
+      {
+        "step": 96,
+        "required_file_count": 26,
+        "all_nonempty": true,
+        "total_required_bytes": 63554458986
+      }
+    ],
+    "eval_load": {
+      "checkpoint": "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long/runs/train96/checkpoints/global_step_96",
+      "loaded_global_step": 96,
+      "checkpoint_load_returned": true,
+      "val_only": true,
+      "optimizer_updates": 0,
+      "feedback": "0",
+      "temperature": 0.8,
+      "do_sample": true,
+      "games": 8,
+      "game_seeds": [
+        605183188,
+        1075501356,
+        2084414326,
+        2203880230,
+        3000371298,
+        949752300,
+        3225036469,
+        2823708076
+      ],
+      "answers": "online SpB; no replay or replacement",
+      "optimizer_loaded_by_existing_loader_but_not_updated": true
+    },
+    "eval_seeds": [
+      {
+        "base_seed": 1000,
+        "reset_index": 0,
+        "seeds": [
+          605183188,
+          1075501356,
+          2084414326,
+          2203880230,
+          3000371298,
+          949752300,
+          3225036469,
+          2823708076
+        ]
+      }
+    ],
+    "paired_rng": [
+      {
+        "rank": 0,
+        "matched": true
+      },
+      {
+        "rank": 1,
+        "matched": true
+      },
+      {
+        "rank": 2,
+        "matched": true
+      },
+      {
+        "rank": 3,
+        "matched": true
+      },
+      {
+        "rank": 4,
+        "matched": true
+      },
+      {
+        "rank": 5,
+        "matched": true
+      },
+      {
+        "rank": 6,
+        "matched": true
+      },
+      {
+        "rank": 7,
+        "matched": true
+      }
+    ],
+    "pre_outcomes": {
+      "trajectories": 8,
+      "natural_games": 8,
+      "wins": 4,
+      "defeats": 4,
+      "ties": 0,
+      "truncated": 0,
+      "natural_win_rate": 0.5
+    },
+    "post_outcomes": {
+      "trajectories": 8,
+      "natural_games": 8,
+      "wins": 3,
+      "defeats": 5,
+      "ties": 0,
+      "truncated": 0,
+      "natural_win_rate": 0.375
+    },
+    "short_train_outcomes": {
+      "trajectories": 16,
+      "natural_games": 16,
+      "wins": 5,
+      "defeats": 11,
+      "ties": 0,
+      "truncated": 0,
+      "natural_win_rate": 0.3125
+    },
+    "total_training": {
+      "ppo_outer_steps": 96,
+      "natural_games": 768,
+      "wins": 445,
+      "defeats": 323,
+      "win_rate": 0.5794270833333334
+    },
+    "guardian_train96": {
+      "status": "oversize-not-read",
+      "bytes": 1070614
+    },
+    "guardian_eval96": {
+      "version": "host-guardian-v1",
+      "container_id": "c396f9a1acc91b80aa39df52502a237ed6b7319df6f609102f68910ab9e86e51",
+      "owner_root": "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long",
+      "deadline": 1790247962.305692,
+      "phase": "completed",
+      "final_state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-09-23T03:58:36.165349083Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-09-23T03:46:00.661846311Z",
+        "Status": "exited"
+      },
+      "finished_at": 1790135916.3932953
+    }
+  },
+  "qwen": {
+    "dispatch": {
+      "start": 1790135920.0467653,
+      "resumed_at": 1790135920.0467653,
+      "deadline": 1790308720.0467553,
+      "host_supervision": true
+    },
+    "host_state": {
+      "version": "host-guardian-v1",
+      "phase": "running-unverified",
+      "completed": [],
+      "deadline": 1790308720.0467553,
+      "learning_validated": false,
+      "started_at": 1790135920.0564756,
+      "stage": "train96",
+      "container_id": "26aefed6c64033fba70d5f8668ef5c714ec35ed134402ab0cf8658d1e89bbf37"
+    },
+    "admission": {
+      "passed": true,
+      "checked_at": 1790135920.9212165,
+      "deadline": 1790308720.0467553,
+      "eight_idle_gpus": true,
+      "ram_gib_min": 600,
+      "nvme_gib_min": 1084,
+      "fsync": true
+    },
+    "manifest": {
+      "source_commit": "9cb291ea5f50de205c5d88371e08ce229b7d9d04",
+      "dirty": false,
+      "world_size": 8,
+      "start_step": 2,
+      "metrics_precision": "binary64-v1"
+    },
+    "resume": {
+      "from_checkpoint": "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-random/runs/train2/checkpoints/global_step_2",
+      "global_step": 2,
+      "next_reset_index": 2,
+      "next_seeds": [
+        36,
+        17,
+        96,
+        12,
+        79,
+        32,
+        68,
+        90
+      ],
+      "source": "verified legacy ledger; driver RNG unavailable, not bitwise replay",
+      "model_optimizer_dataloader_load_returned": true
+    },
+    "storage_failure": null,
+    "result": null,
+    "seed_ledger": {
+      "rows": 8,
+      "first": {
+        "base_seed": 0,
+        "reset_index": 2,
+        "seed_protocol": "independent_uniform101",
+        "seeds": [
+          36,
+          17,
+          96,
+          12,
+          79,
+          32,
+          68,
+          90
+        ]
+      },
+      "last": {
+        "base_seed": 0,
+        "reset_index": 9,
+        "seed_protocol": "independent_uniform101",
+        "seeds": [
+          11,
+          10,
+          40,
+          65,
+          62,
+          13,
+          38,
+          70
+        ]
+      }
+    },
+    "audits": {
+      "rows": 7,
+      "first": {
+        "real_answers": 61,
+        "valid_answers": 61,
+        "valid_ratio": 1,
+        "min_valid_ratio": 0.5,
+        "decision": "accept",
+        "reason": "validity_floor_passed",
+        "pending_global_step": 3,
+        "optimizer_updates_for_this_batch": 0
+      },
+      "last": {
+        "real_answers": 31,
+        "valid_answers": 31,
+        "valid_ratio": 1,
+        "min_valid_ratio": 0.5,
+        "decision": "accept",
+        "reason": "validity_floor_passed",
+        "pending_global_step": 9,
+        "optimizer_updates_for_this_batch": 0
+      }
+    },
+    "console": {
+      "bytes": 3746785,
+      "read_bytes": 3746785,
+      "tail_sha256": "a68b89d2a4e382ac1cc631911fab4b9ba14a58ad7fae7cf6d2593e70161ea3cc",
+      "support_banners": [
+        "(WorkerDict pid=4458) SC2_ACTION_SUPPORT {\"budget\": 192, \"canonical_tokenizations_only\": true, \"eos_token_id\": 151645, \"mode\": \"sc2-canonical-bo-support-v1\", \"pad_token_id\": 151643, \"tokenizer_sha256\": \"a63080b4b30dc861fe1b0e420c53a241304dc81aff3d9bb315e6e33e2a1ab794\"}",
+        "(WorkerDict pid=4458) SC2_NO_THINKING {\"blocked_counts\": {\"\": 2, \"<\": 7, \"</\": 7, \"</t\": 2, \"</th\": 13, \"</thi\": 4, \"</thin\": 276, \"<t\": 2, \"<th\": 13, \"<thi\": 4, \"<thin\": 276}, \"forbidden_prefixes\": [\"<think\", \"</think\"], \"mode\": \"sc2-no-thinking-v1\", \"support_mask_sha256\": \"63a9546dd5fb39a64c6e2a2ad13f31101aacaade9bac07258d0e415480181e0d\"}",
+        "(WorkerDict pid=4647) SC2_ACTION_SUPPORT {\"budget\": 192, \"canonical_tokenizations_only\": true, \"eos_token_id\": 151645, \"mode\": \"sc2-canonical-bo-support-v1\", \"pad_token_id\": 151643, \"tokenizer_sha256\": \"a63080b4b30dc861fe1b0e420c53a241304dc81aff3d9bb315e6e33e2a1ab794\"} [repeated 7x across cluster]",
+        "(WorkerDict pid=4653) SC2_NO_THINKING {\"blocked_counts\": {\"\": 2, \"<\": 7, \"</\": 7, \"</t\": 2, \"</th\": 13, \"</thi\": 4, \"</thin\": 276, \"<t\": 2, \"<th\": 13, \"<thi\": 4, \"<thin\": 276}, \"forbidden_prefixes\": [\"<think\", \"</think\"], \"mode\": \"sc2-no-thinking-v1\", \"support_mask_sha256\": \"63a9546dd5fb39a64c6e2a2ad13f31101aacaade9bac07258d0e415480181e0d\"} [repeated 7x across cluster]"
+      ],
+      "returned_step_line": "(TaskRunner pid=2334) step:9 - metrics_precision:binary64-v1 - global_seqlen/min:4225 - global_seqlen/max:4409 - global_seqlen/minmax_diff:184 - global_seqlen/balanced_min:4309 - global_seqlen/balanced_max:4325 - global_seqlen/mean:4319.375 - actor/entropy_loss:0.011531470343470573 - episode/valid_action_ratio:1 - policy_credit/invalid_positive_tokens_removed:0 - policy_credit/invalid_tokens:0 - policy_credit/invalid_advantage_max:0 - actor/kl_loss:0.16461064404723791 - actor/kl_coef:0.01 - actor/pg_loss:-0.0055480338633060455 - actor/pg_clipfrac:0.0058575939037837088 - actor/ppo_kl:0.011210126233357265 - actor/pg_clipfrac_lower:0 - actor/grad_norm:40.516203656792641 - perf/mfu/actor:0.029974383161099065 - perf/max_memory_allocated_gb:20.517569541931152 - perf/max_memory_reserved_gb:30.0625 - perf/cpu_memory_used_gb:70.755725860595703 - actor/lr:9.9999999999999995e-07 - training/global_step:9 - training/epoch:7 - critic/score/mean:11.633594512939453 - critic/score/max:27.149999618530273 - critic/score/min:-52.349998474121094 - critic/rewards/mean:11.633594512939453 - critic/rewards/max:27.149999618530273 - critic/rewards/min:-52.349998474121094 - critic/advantages/mean:-0.60335135459899902 - critic/advantages/max:13.587498664855957 - critic/advantages/min:-80.306770324707031 - critic/returns/mean:-0.60335135459899902 - critic/returns/max:13.587498664855957 - critic/returns/min:-80.306770324707031 - response_length/mean:41.46875 - response_length/max:112 - response_length/min:27 - response_length/clip_ratio:0 - prompt_length/mean:1038.375 - prompt_length/max:1093 - prompt_length/min:994 - prompt_length/clip_ratio:0 - episode/reward/mean:16.484375 - episode/reward/max:27.149999618530273 - episode/reward/min:-52.349998474121094 - episode/length/mean:3.875 - episode/length/max:6 - episode/length/min:3 - episode/tool_call_count/mean:0 - episode/success_rate:0.875 - timing_s/gen:137.33669342473149 - timing_s/reward:0.011791711673140526 - timing_s/old_log_prob:4.301422574557364 - timing_s/ref:4.0410958100110292 - timing_s/adv:0.002945982851088047 - timing_s/update_actor:13.972992777824402 - timing_s/step:159.67478521354496 - timing_per_token_ms/update_actor:0.4043696361691333 - timing_per_token_ms/adv:8.5254893679295247e-05 - timing_per_token_ms/gen:103.49411712489186 - timing_per_token_ms/ref:0.11694677499670175 - perf/total_num_tokens:34555 - perf/time_per_step:159.67478521354496 - perf/throughput:27.051077565085674",
+      "next_sc2_boundary": "(SC2Worker pid=2516) Combat result reward: {\"pid\": 9349, \"game_loop\": 0, \"boundary\": \"planner\", \"last_consumed_policy_action_id\": null, \"killed_value\": 0.0, \"lost_value\": 0.0, \"scale\": 0.001, \"reward\": 0.0}"
+    },
+    "completed_global_step": 9,
+    "new_ppo_outer_steps": 7,
+    "first_gpu_restore_sc2_and_actual_ppo_observed": true,
+    "deadline_beijing": "2026-09-25T11:58:40+08:00",
+    "deadline_is_limit_not_eta": true
+  },
+  "containers": {
+    "sc2-l7-followup197-20260922-r4-spb-same-long-train96": {
+      "rc": 0,
+      "stderr": "",
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-09-22T14:45:12.924428977Z",
+        "FinishedAt": "2026-09-23T03:45:47.272672921Z"
+      }
+    },
+    "sc2-l7-followup197-20260922-r4-spb-same-long-eval96": {
+      "rc": 0,
+      "stderr": "",
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-09-23T03:46:00.661846311Z",
+        "FinishedAt": "2026-09-23T03:58:36.165349083Z"
+      }
+    },
+    "sc2-l7-followup197-20260922-r4-qwen-random-long-train96": {
+      "rc": 0,
+      "stderr": "",
+      "state": {
+        "Status": "running",
+        "Running": true,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 1449008,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-09-23T03:58:41.048790247Z",
+        "FinishedAt": "0001-01-01T00:00:00Z"
+      }
+    }
+  },
+  "storage": {
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/storage-state.json": {
+      "checked_at": 1790137054.9573765,
+      "bytes": 931524833788,
+      "limit": 2199023255552,
+      "roots": [
+        "/var/jfsCache/sc2-l7-followup197-20260922-r4",
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r4",
+        "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-random",
+        "/var/jfsCache/sc2-l7-followup197-20260922-r1",
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r1",
+        "/var/jfsCache/sc2-l7-followup197-20260922-r2",
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r2",
+        "/var/jfsCache/sc2-l7-followup197-20260922-r3",
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r3",
+        "/var/jfsCache/sc2-storage-quiescence-cpu-20260922.4LzwSM",
+        "/var/jfsCache/sc2-host-supervision-cpu-20260922.7lJiIO"
+      ],
+      "root_bytes": {
+        "/var/jfsCache/sc2-l7-followup197-20260922-r4": 881321997308,
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r4": 22366358,
+        "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-random": 49949049988,
+        "/var/jfsCache/sc2-l7-followup197-20260922-r1": 14859086,
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r1": 39986975,
+        "/var/jfsCache/sc2-l7-followup197-20260922-r2": 15022348,
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r2": 21701753,
+        "/var/jfsCache/sc2-l7-followup197-20260922-r3": 46541029,
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r3": 33174944,
+        "/var/jfsCache/sc2-storage-quiescence-cpu-20260922.4LzwSM": 29973103,
+        "/var/jfsCache/sc2-host-supervision-cpu-20260922.7lJiIO": 30160896
+      },
+      "returncode": 0,
+      "stderr": {
+        "tail": "",
+        "characters": 0,
+        "truncated": false
+      },
+      "deadline": 1790420762.305692
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long/storage-state.json": {
+      "checked_at": 1790135917.1707602,
+      "bytes": 831558020600,
+      "limit": 1099511627776,
+      "roots": [
+        "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same",
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r4",
+        "/var/jfsCache/sc2-l7-followup197-20260922-r1",
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r1",
+        "/var/jfsCache/sc2-l7-followup197-20260922-r2",
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r2",
+        "/var/jfsCache/sc2-l7-followup197-20260922-r3",
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r3",
+        "/var/jfsCache/sc2-storage-quiescence-cpu-20260922.4LzwSM",
+        "/var/jfsCache/sc2-host-supervision-cpu-20260922.7lJiIO"
+      ],
+      "root_bytes": {
+        "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same": 831304234108,
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r4": 22366358,
+        "/var/jfsCache/sc2-l7-followup197-20260922-r1": 14859086,
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r1": 39986975,
+        "/var/jfsCache/sc2-l7-followup197-20260922-r2": 15022348,
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r2": 21701753,
+        "/var/jfsCache/sc2-l7-followup197-20260922-r3": 46541029,
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r3": 33174944,
+        "/var/jfsCache/sc2-storage-quiescence-cpu-20260922.4LzwSM": 29973103,
+        "/var/jfsCache/sc2-host-supervision-cpu-20260922.7lJiIO": 30160896
+      },
+      "returncode": 0,
+      "stderr": {
+        "tail": "",
+        "characters": 0,
+        "truncated": false
+      },
+      "deadline": 1790247962.305692
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/qwen-random/long/storage-state.json": {
+      "checked_at": 1790137054.6042542,
+      "bytes": 100205602987,
+      "limit": 1099511627776,
+      "roots": [
+        "/var/jfsCache/sc2-l7-followup197-20260922-r4/qwen-random",
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r4",
+        "/var/jfsCache/sc2-l7-followup197-20260922-r1",
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r1",
+        "/var/jfsCache/sc2-l7-followup197-20260922-r2",
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r2",
+        "/var/jfsCache/sc2-l7-followup197-20260922-r3",
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r3",
+        "/var/jfsCache/sc2-storage-quiescence-cpu-20260922.4LzwSM",
+        "/var/jfsCache/sc2-host-supervision-cpu-20260922.7lJiIO",
+        "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-random"
+      ],
+      "root_bytes": {
+        "/var/jfsCache/sc2-l7-followup197-20260922-r4/qwen-random": 50002766507,
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r4": 22366358,
+        "/var/jfsCache/sc2-l7-followup197-20260922-r1": 14859086,
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r1": 39986975,
+        "/var/jfsCache/sc2-l7-followup197-20260922-r2": 15022348,
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r2": 21701753,
+        "/var/jfsCache/sc2-l7-followup197-20260922-r3": 46541029,
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r3": 33174944,
+        "/var/jfsCache/sc2-storage-quiescence-cpu-20260922.4LzwSM": 29973103,
+        "/var/jfsCache/sc2-host-supervision-cpu-20260922.7lJiIO": 30160896,
+        "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-random": 49949049988
+      },
+      "returncode": 0,
+      "stderr": {
+        "tail": "",
+        "characters": 0,
+        "truncated": false
+      },
+      "deadline": 1790308720.0467553
+    }
+  },
+  "receipt_hashes": {
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long/state.json": {
+      "bytes": 371,
+      "sha256": "a654151d3b1bad3526a235c38977aeb51bd63c6092637a03c089feea92b284b9"
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long/host-supervision/state.json": {
+      "bytes": 371,
+      "sha256": "a654151d3b1bad3526a235c38977aeb51bd63c6092637a03c089feea92b284b9"
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long/runs/train96/result.json": {
+      "bytes": 251122,
+      "sha256": "e325b05be02e52696477191b922db4329badf4731fcfbf6203542657aca6f74e"
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long/runs/train96/.done": {
+      "bytes": 251122,
+      "sha256": "e325b05be02e52696477191b922db4329badf4731fcfbf6203542657aca6f74e"
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long/runs/eval96/result.json": {
+      "bytes": 5198,
+      "sha256": "5a5e655deb3fb96bcfb018b65b3650e69f27926e07d8b082e279e2ce665728e3"
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long/runs/eval96/.done": {
+      "bytes": 5198,
+      "sha256": "5a5e655deb3fb96bcfb018b65b3650e69f27926e07d8b082e279e2ce665728e3"
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long/acceptance-train96.json": {
+      "bytes": 270360,
+      "sha256": "0b678ca3eb9c9a024dbfaadd61e0d13fc3056269573b19b993ccc65d851f098d"
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long/runs/train96/manifest.json": {
+      "bytes": 3036,
+      "sha256": "72d486827c24ead8ea997c081ba4d10462f0a91a1ad2c9598316cbf9f842e0ae"
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long/acceptance-eval96.json": {
+      "bytes": 5822,
+      "sha256": "571aa81dba4711b14305c8d7a66c3c53837435db1f263551c21219a9b92cda74"
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long/host-supervision/eval96-guardian.json": {
+      "bytes": 18057,
+      "sha256": "935aa5b5095f6e2cc265d31ee3ebcda423e6456198fe6dff5ad64f6c26282a5d"
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long/runs/eval96/manifest.json": {
+      "bytes": 3039,
+      "sha256": "4fb91034b22ab8aaca89fe0532ee6138ffe3166b3df7e034dd60d46b01898865"
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long/runs/train96/metrics.json": {
+      "bytes": 268254,
+      "sha256": "c12d9d2089e13537b5287bceb7a5a3919d385d11e09b387240aa7ee33559e6f7"
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long/runs/train96/checkpoints/sc2_policy_credit_audit.jsonl": {
+      "bytes": 19781,
+      "sha256": "d94b840c67c83bb0ce2700c7bfc4b4edadbdb7180114967edbb0513a2986f69b"
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long/runs/train96/training_seeds.jsonl": {
+      "bytes": 10770,
+      "sha256": "4db86eab6b1945772139a586d16b50fbd6ec756936e8450a3bac8eee5ba8a660"
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long/runs/train96/checkpoints/resume_state.json": {
+      "bytes": 283,
+      "sha256": "ffa9f44740ad3eff3c127929d2c898e3e0eb3ac17fe49e671ad3f86679c6ca93"
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long/runs/eval96/checkpoint_evaluation.json": {
+      "bytes": 570,
+      "sha256": "7c6c541cb075e04a9cb783c85e23720fd2c76c1cfd1216275be1946985d826aa"
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long/runs/eval96/evaluation_seeds.jsonl": {
+      "bytes": 143,
+      "sha256": "ffaf9953b3c4fc78b2a0f30c67357504f6a6b8e014c3b0adc2db12e87afdad90"
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long/runs/eval96/sampling-rank0.json": {
+      "bytes": 220,
+      "sha256": "d3d937fa8407516730fbf201af2102764c200c1e9b5073b10a4a368f4a01a1f7"
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/short/runs/post/sampling-rank0.json": {
+      "bytes": 220,
+      "sha256": "a212112563dc6ff5ef4133095ec863550fe1c8e65bee5ee19d3ee2c98c071313"
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long/runs/eval96/sampling-rank1.json": {
+      "bytes": 220,
+      "sha256": "4efe2b7c2f824d373acd9cf658d9b6d135aa9bdbe6d00afba1216c21d916153e"
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/short/runs/post/sampling-rank1.json": {
+      "bytes": 220,
+      "sha256": "2abe2cfe3a45ac46f170724159d31873a157977902aaa4e2ad1494b4bc60c1a8"
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long/runs/eval96/sampling-rank2.json": {
+      "bytes": 220,
+      "sha256": "1d8591bfb00f1982b1ed71f5df8267a175c3d4d6c8b855913fd6d2b7a2523532"
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/short/runs/post/sampling-rank2.json": {
+      "bytes": 220,
+      "sha256": "a090cdbf999f1f68823c0c56be3f31bed40e7c7c8766eb3a4970bee5c5a56542"
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long/runs/eval96/sampling-rank3.json": {
+      "bytes": 220,
+      "sha256": "3114da11267236c48388db2f86889f4f4f3792f631927e61a8c71a05205906fb"
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/short/runs/post/sampling-rank3.json": {
+      "bytes": 220,
+      "sha256": "978f3ea90ea75c5b3c9cf6d67daf9fa9d30cd390d91ce8f368ce7af7fd13be37"
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long/runs/eval96/sampling-rank4.json": {
+      "bytes": 220,
+      "sha256": "56d2fd605af2f31ef99716ac996177a466f29a3010d58a90fa2dea70263819fa"
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/short/runs/post/sampling-rank4.json": {
+      "bytes": 220,
+      "sha256": "88265c4c01b8e59bc6f0871c8076c30f08a325c21a69fd605aee70b946577fc1"
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long/runs/eval96/sampling-rank5.json": {
+      "bytes": 220,
+      "sha256": "7bd14e412d3e60cec65f2e5181082b957d31bff41fcd7edcca3a3ece93ed8595"
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/short/runs/post/sampling-rank5.json": {
+      "bytes": 220,
+      "sha256": "070fd388b4b8b4eedfb36e60148dba4a9400bf04877da5385e8e673e9c64ac19"
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long/runs/eval96/sampling-rank6.json": {
+      "bytes": 220,
+      "sha256": "b0c200655a6d1b72c55f7f5a96f16e594886a327e170a6cabc65206e5d00e6b0"
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/short/runs/post/sampling-rank6.json": {
+      "bytes": 220,
+      "sha256": "34b06b5e09ee89a3865bfb2d1f1a9312713126c6de8a36d4995025e6c6368bdc"
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long/runs/eval96/sampling-rank7.json": {
+      "bytes": 220,
+      "sha256": "325340b92ddffbc79ac0f201e55db24032dc7d5477bff00eb6bcb41c022f37c0"
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/short/runs/post/sampling-rank7.json": {
+      "bytes": 220,
+      "sha256": "8455ee36ca72a3f870849281ddee75a46503ce338234ff468ee74a48dcc4081e"
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/short/runs/pre/result.json": {
+      "bytes": 5197,
+      "sha256": "1414a677bd328654f195d09f12d169db5110da5733ba00f22255553461e5dbff"
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/short/runs/pre/.done": {
+      "bytes": 5197,
+      "sha256": "1414a677bd328654f195d09f12d169db5110da5733ba00f22255553461e5dbff"
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/short/runs/post/result.json": {
+      "bytes": 5211,
+      "sha256": "248b869d75b80ed805fda813850cd950c02177a9361705c64bba7566d2389bd8"
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/short/runs/post/.done": {
+      "bytes": 5211,
+      "sha256": "248b869d75b80ed805fda813850cd950c02177a9361705c64bba7566d2389bd8"
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/short/runs/train2/result.json": {
+      "bytes": 9511,
+      "sha256": "bd50704d5ccbf9ec2ef450c7df42b686a1bf464a36f1152f8a1cf42a73ed416b"
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/short/runs/train2/.done": {
+      "bytes": 9511,
+      "sha256": "bd50704d5ccbf9ec2ef450c7df42b686a1bf464a36f1152f8a1cf42a73ed416b"
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/queue-state.json": {
+      "bytes": 276,
+      "sha256": "e18deea089895f0421a15d7dca97e3817896796c08965002f8537271d2722388"
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/qwen-random/long/dispatch.json": {
+      "bytes": 131,
+      "sha256": "93de9be668e10918509171b2a3a10047ef7edea3de31916b4800087d42c8fd2a"
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/qwen-random/long/host-supervision/state.json": {
+      "bytes": 296,
+      "sha256": "e05f2b1e9c68d9af8a1bae4fb997ae2a4b7ab070fe299b3c9d2b5b11e90b5073"
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/qwen-random/long/admission-train96.json": {
+      "bytes": 180,
+      "sha256": "82e4afeffc4f9dd7fee32875a86e5c7ac54a4b70d7158676c0e810721360fe7a"
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/qwen-random/long/runs/train96/manifest.json": {
+      "bytes": 3003,
+      "sha256": "d969e1ca70fc9aeee40166f123c1d6aaa46ae5dda6c652547b23d94c78d2360c"
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/qwen-random/long/runs/train96/checkpoints/resume_state.json": {
+      "bytes": 333,
+      "sha256": "f2ce26da67af2e2edb375796dfd42aff412c835645e258b69b36488381fc92aa"
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/qwen-random/long/runs/train96/training_seeds.jsonl": {
+      "bytes": 964,
+      "sha256": "ba32327e9dabd431acf52d79cf4e4a9c6f6a222071f4364012e3cd2f2f950b4d"
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/qwen-random/long/runs/train96/checkpoints/sc2_policy_credit_audit.jsonl": {
+      "bytes": 1456,
+      "sha256": "f32aeda773fb2c9eddec0748b4424809f690a324f299b1238546404f80a7cab8"
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/storage-state.json": {
+      "bytes": 3656,
+      "sha256": "7f547a8a6bdf96c6883da840754255b4ae8f6856ef942907dd787926eeb1175c"
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long/storage-state.json": {
+      "bytes": 2968,
+      "sha256": "0b63899980c0bd256d31b6d2f98c9dbc8c3b08127966ee74aaf00b8725a5dfaa"
+    },
+    "/var/jfsCache/sc2-l7-followup197-20260922-r4/qwen-random/long/storage-state.json": {
+      "bytes": 3702,
+      "sha256": "c7ae4426f8775ab866cedd37e4f7a04a6235257ef083f069c2ca1f7b173ecc69"
+    }
+  },
+  "notification_events": [
+    "spb_long_train96_completed",
+    "spb_eval96_completed",
+    "qwen_random_first_actual_gpu_restore_sc2",
+    "qwen_random_first_actual_ppo"
+  ],
+  "interpretation": [
+    "SpB CP2 3/8 to CP96 2/8 is no demonstrated gain; only 8 paired games cannot establish stable degradation.",
+    "100% consumed-answer legality is constrained mechanically, not evidence of strategy learning.",
+    "Qwen random mixed-seed UID retains scenario difficulty confound; legacy parent driver RNG is unavailable and resume is not bitwise.",
+    "SpB-random remains planned, length/budget pending; no extra dispatch.",
+    "Existing old Qwen same96 gradient gaps and all old failed runs remain unchanged."
+  ],
+  "collection_notes": [
+    "Only bounded read-only small receipts, existing storage receipts, <=4MiB log tail and checkpoint file-name/stat inventory; no tensor reads or new GPU diagnostics.",
+    "First collector attempt assumed eval-only natural_match_completed field in train result and failed locally; second refused a 1,070,614-byte guardian file above its 1MiB cap. Corrected read-only collector uses natural outcome/truncation fields and skips that oversized guardian. These are monitor collection errors, not experiment failures/retries.",
+    "No runtime tests rerun or frozen deployments modified; terminal acceptance, result=.done and exited0 containers verified."
+  ]
+}

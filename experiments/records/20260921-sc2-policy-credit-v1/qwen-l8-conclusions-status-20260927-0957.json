@@ -1,0 +1,219 @@
+{
+  "checked_at_beijing": "2026-09-27T09:56:55.780439+08:00",
+  "purpose": "User asks for L8 scientific conclusions; read-only server check, no new experiment or mutation.",
+  "run_root": "/var/jfsCache/sc2-qwen-l8-common192-197-20260927-r1",
+  "runtime_sha": "e01594ecd3ea7b43d2296b371fd340f9d575ab3a",
+  "queue": {
+    "phase": "running-unverified",
+    "completed": [],
+    "new_games": 192,
+    "new_updates": 0,
+    "deadline": 1790495189.9456112
+  },
+  "host": {
+    "version": "host-guardian-v1",
+    "phase": "running-unverified",
+    "completed": [
+      "b00-original"
+    ],
+    "deadline": 1790495189.9456112,
+    "learning_validated": false,
+    "started_at": 1790473621.310089,
+    "stage": "b00-cp96",
+    "container_id": "74e48b8f62a71055979cb37d724064800566df86de320ea2f595cc5703b5a389"
+  },
+  "dispatch": {
+    "start": 1790473589.9456112,
+    "deadline": 1790495189.9456112,
+    "gpu_hours": 48,
+    "new_games": 192,
+    "new_updates": 0,
+    "includes_gpu_preflight": true
+  },
+  "accepted_stages": [
+    {
+      "stage": "b00-original",
+      "games": 8,
+      "wins": 6,
+      "defeats": 2,
+      "ties": 0,
+      "truncated": 0,
+      "updates": 0,
+      "consumed": 54,
+      "valid": 54
+    }
+  ],
+  "first_stage": {
+    "stage": "b00-original",
+    "result_done_acceptance_equal": true,
+    "result_sha256": "b2b55ea9f0e94292b57dd8b57c8f7c907ff7844f0703c12201fbf23dc60607f0",
+    "acceptance_sha256": "46677fd70887b9e372ce956cd03fcb45b35c27011cbd4f4d64150cf2202f2277",
+    "container": {
+      "id": "9f438f2d0ebdc8459fda03d3bf60a0fd4df28ac16688d958085da6ec16d52c75",
+      "owner": "/var/jfsCache/sc2-qwen-l8-common192-197-20260927-r1",
+      "state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-09-27T01:53:10.585929012Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-09-27T01:47:01.74050901Z",
+        "Status": "exited"
+      }
+    },
+    "guardian_completed": true,
+    "clean_world8_binary64": true,
+    "load": {
+      "checkpoint": null,
+      "loaded_global_step": 0,
+      "checkpoint_load_returned": false,
+      "val_only": true,
+      "optimizer_updates": 0,
+      "feedback": "0",
+      "temperature": 0.8,
+      "do_sample": true,
+      "games": 8,
+      "game_seeds": [
+        3891768967,
+        1026095769,
+        2089620454,
+        1345181480,
+        4261733069,
+        517441573,
+        306282740,
+        332998533
+      ],
+      "answers": "online Qwen L8; no replay or replacement",
+      "optimizer_loaded_by_existing_loader_but_not_updated": false
+    },
+    "seeds": [
+      3891768967,
+      1026095769,
+      2089620454,
+      1345181480,
+      4261733069,
+      517441573,
+      306282740,
+      332998533
+    ],
+    "rng": [
+      {
+        "rank": 0,
+        "seed": 0,
+        "cpu_rng_sha256": "1ccf17250133dec5e96478acd63e13d728d0dbbabb30389415a302c6f872f81f",
+        "cuda_rng_sha256": "374708fff7719dd5979ec875d56cd2286f6d3cf7ec317a3b25632aab28ec37bb"
+      },
+      {
+        "rank": 1,
+        "seed": 1,
+        "cpu_rng_sha256": "f5defda135ec2e0d1513e6979390f58397d31a904d5f6540f8b88ae64d1decc1",
+        "cuda_rng_sha256": "4cbbd8ca5215b8d161aec181a74b694f4e24b001d5b081dc0030ed797a8973e0"
+      },
+      {
+        "rank": 2,
+        "seed": 2,
+        "cpu_rng_sha256": "0f9cd7b642a3f8f641c5e992f17138b2d094db4d56cc2329b3be2c794ddc79ad",
+        "cuda_rng_sha256": "b1535c7783ea8829b6b0cf67704539798b4d16c39bf0bfe09494c5d9f12eee30"
+      },
+      {
+        "rank": 3,
+        "seed": 3,
+        "cpu_rng_sha256": "76fe321e2dc1dfdec62a274bcedbeea2727be2e2972f97e728e07e0345c21ede",
+        "cuda_rng_sha256": "59d5966c96af7ecad5c9d2918d6582d102b2c67f6b765ea28ac24371ab4f93be"
+      },
+      {
+        "rank": 4,
+        "seed": 4,
+        "cpu_rng_sha256": "de87e86bf2a7b448b35cba75c461560b4b6aa93e7843008c930221dee4551e0f",
+        "cuda_rng_sha256": "6b6f14e6af2627186bf8a55e474dcf6ef3f6ce81af560da871ec51eb670171a9"
+      },
+      {
+        "rank": 5,
+        "seed": 5,
+        "cpu_rng_sha256": "f4ef6f460154679cfe881f5d260e16f8ed904898fabc025c755a71e2692eb75c",
+        "cuda_rng_sha256": "966a28d35016032ee27b1860df4a9b16b6c007da76b2e4f94e7526e31c48959b"
+      },
+      {
+        "rank": 6,
+        "seed": 6,
+        "cpu_rng_sha256": "9e15eceb1ce9d2c2ffe7bcc8fa3155c1445def059cdd06b5429093164db849a7",
+        "cuda_rng_sha256": "5e9a5de4a59a7c3c9ba8846060ba77ab402e3088658aa705e1a64e796f6cd5cf"
+      },
+      {
+        "rank": 7,
+        "seed": 7,
+        "cpu_rng_sha256": "daf9268b18e87b0267a6ad240c6093eb98fe6f03872986bd31a497ba5ea2371a",
+        "cuda_rng_sha256": "76108f84396dc2d72ce275fdb0e0ef37b229b2898bf5a31d576fea11a766a42b"
+      }
+    ]
+  },
+  "current_model_eval": {
+    "checkpoint": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/long/runs/train96/checkpoints/global_step_96",
+    "loaded_global_step": 96,
+    "checkpoint_load_returned": true,
+    "val_only": true,
+    "optimizer_updates": 0,
+    "feedback": "0",
+    "temperature": 0.8,
+    "do_sample": true,
+    "games": 8,
+    "game_seeds": [
+      3891768967,
+      1026095769,
+      2089620454,
+      1345181480,
+      4261733069,
+      517441573,
+      306282740,
+      332998533
+    ],
+    "answers": "online Qwen L8; no replay or replacement",
+    "optimizer_loaded_by_existing_loader_but_not_updated": true
+  },
+  "storage": {
+    "bytes": 78509969,
+    "limit": 34359738368,
+    "roots": [
+      "/var/jfsCache/sc2-qwen-l8-common192-197-20260927-r1",
+      "/var/jfsCache/sc2-qwen-l8-common192-197-source-20260927-r1"
+    ],
+    "returncode": 0,
+    "stderr_empty": true
+  },
+  "failure_present": false,
+  "conclusions": {
+    "training": "Qwen L8 same has192 accepted actual PPO updates, two768-natural-game training blocks. Technical execution validated.",
+    "training_blocks": [
+      {
+        "steps": "1..96",
+        "wins": 441,
+        "games": 768,
+        "consumed_valid": 5938,
+        "consumed": 5938
+      },
+      {
+        "steps": "97..192",
+        "wins": 494,
+        "games": 768,
+        "consumed_valid": 5900,
+        "consumed": 5900
+      }
+    ],
+    "reused_evaluation": {
+      "games_per_arm": 8,
+      "original_wins": 6,
+      "cp96_wins": 5,
+      "cp192_wins": 5,
+      "cp192_vs_cp96_gains": 1,
+      "cp192_vs_cp96_losses": 1
+    },
+    "scientific": "No established net learning improvement. Different training seed schedules and within-step correlation prevent interpreting57.42%to64.32%training wins as a paired effect.",
+    "new_evaluation": "Only first original batch accepted6/8; CP96 batch0 actual load returned,0updates. Full64pairs/arm pending; partial wins cannot answer final comparison.",
+    "scope": "Not a completed L8 Qwen same/random/SpB architecture matrix; no causal architecture claim."
+  },
+  "actions": "Read small states/results/acceptance/load/RNG and exact container terminal only; no full logs/large CP reads, no launch/restart/deletion/server write."
+}

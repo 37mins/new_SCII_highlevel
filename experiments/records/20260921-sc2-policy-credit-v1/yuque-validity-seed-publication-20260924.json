@@ -1,0 +1,61 @@
+{
+  "schema": "sc2-yuque-analysis-publication-v1",
+  "verified_at": "2026-09-24T18:21:25+08:00",
+  "task": "User requested explanation of historical action-validity collapse and same/random within-step seed curve differences in the existing Yuque document",
+  "document": {
+    "title": "SCII日志",
+    "url": "https://www.yuque.com/yangdage-mu30r/nsahpp/io9ul989o6qkposx",
+    "section": "专题补充｜有效率归零与 same/random seed 曲线（2026-09-24）",
+    "placement": "After current evidence summary, before preserved September23 history",
+    "published": true,
+    "confirmation": "Update completed and editor changed to published reader with Edit button; new section and all subsection text visible; native Copy Markdown readback verified",
+    "access_permissions_changed": false
+  },
+  "source": {
+    "path": "yuque-validity-seed-analysis-20260924.md",
+    "bytes": 10825,
+    "sha256": "15765fcf0b3862975fe1cce7d8e149760e41254d813f91ff797b642162ac03a1",
+    "prior_evidence_commit": "f7ca1b629715d2648cdb882e175e1c62aeca276d",
+    "frozen_old_gigpo_commit": "7236c37b116fd8fbe15db09ccbdcd2e740e4e840",
+    "frozen_old_gigpo_sha256": "f135bd272518b49a58762da3474e2d4bc90906b053f1ae820d8fb05c2064148b",
+    "frozen_old_gigpo_equals_inspected_local_file": true
+  },
+  "backup": {
+    "method": "Native Yuque Copy Markdown then TextEdit save through UI; no hidden page API or credentials",
+    "before_local_path": "/private/tmp/sc2-yuque-before-seed-analysis-20260924.txt",
+    "before_bytes": 44375,
+    "before_sha256": "e9a055e5116dbd250b0bf8936de63909e8255e1983af7c37036dcf71b3affb34",
+    "after_local_path": "/private/tmp/sc2-yuque-after-seed-analysis-20260924.txt",
+    "after_bytes": 57208,
+    "after_sha256": "96dae257e8f33be5eafdd90e795beac7d6ff635a681fb23d54eb6045d9a1b814",
+    "full_backups_committed": false
+  },
+  "checks": {
+    "new_source_blocks": 31,
+    "all_blocks_present_after_normalizing_export_formatting": true,
+    "images_before": 5,
+    "images_after": 5,
+    "all_image_urls_and_order_unchanged": true,
+    "history_equal_after_normalizing_minus_typography_and_export_markup": true,
+    "history_byte_identical": false,
+    "history_byte_difference": "Hyphen-minus versus mathematical minus in existing numeric expressions; no changed values or conclusions",
+    "broken_current_conclusion_repaired": true,
+    "stale_spb_eval_pending_sentence_repaired": true,
+    "published_render_inspected": true,
+    "qwen_same_96_batches_recounted": {
+      "all_win": 71,
+      "all_loss": 18,
+      "mixed": 7
+    },
+    "verification_scope": "Document readback, existing aggregate-data checks, frozen-source hash equality and git diff whitespace check; no new model tests or GPU claims"
+  },
+  "boundaries": {
+    "unique_cause_of_collapse_claimed": false,
+    "same_seed_learning_or_random_seed_failure_claimed": false,
+    "proposed_controls_are_new_experiment_authorization": false,
+    "server_access": false,
+    "experiment_or_automation_mutations": false,
+    "weights_secrets_or_full_logs_uploaded": false,
+    "preexisting_other_doc_issues": "Existing current-chart placeholders retained; no graph creation or repair claimed in this explanation task"
+  }
+}

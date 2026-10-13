@@ -1,0 +1,1377 @@
+{
+  "schema": "sc2-fresh-qwen-same-completion-v1",
+  "checked_at": "2026-09-24T21:47:12.883391+08:00",
+  "stages": {
+    "pre": {
+      "result_done_acceptance_equal": true,
+      "manifest_clean_frozen_sha_world8_binary64": true,
+      "ended_at": "2026-09-24T06:21:52.336493+00:00"
+    },
+    "train2": {
+      "result_done_acceptance_equal": true,
+      "manifest_clean_frozen_sha_world8_binary64": true,
+      "ended_at": "2026-09-24T06:30:25.127951+00:00"
+    },
+    "post": {
+      "result_done_acceptance_equal": true,
+      "manifest_clean_frozen_sha_world8_binary64": true,
+      "ended_at": "2026-09-24T06:36:37.220486+00:00"
+    },
+    "train96": {
+      "result_done_acceptance_equal": true,
+      "manifest_clean_frozen_sha_world8_binary64": true,
+      "ended_at": "2026-09-24T10:41:13.307224+00:00"
+    },
+    "eval96": {
+      "result_done_acceptance_equal": true,
+      "manifest_clean_frozen_sha_world8_binary64": true,
+      "ended_at": "2026-09-24T10:45:38.090032+00:00"
+    }
+  },
+  "training_summary": {
+    "returned_ppo_updates": 96,
+    "all_96_gradients_finite_positive": true,
+    "gradient_min": 0.00046481854042212944,
+    "gradient_max": 316.423760005406,
+    "all_96_update_actor_seconds_positive": true,
+    "update_actor_seconds_min": 13.955949160270393,
+    "invalid_advantage_max": 0,
+    "audits": 96,
+    "training_games": 768,
+    "training_wins": 660,
+    "all_natural": true,
+    "seed_resets_verified": "0..95",
+    "real_answers": 3289,
+    "valid_answers": 3289,
+    "checkpoints": [
+      {
+        "global_step": 2,
+        "nonempty_required_files": 26
+      },
+      {
+        "global_step": 8,
+        "nonempty_required_files": 26
+      },
+      {
+        "global_step": 16,
+        "nonempty_required_files": 26
+      },
+      {
+        "global_step": 24,
+        "nonempty_required_files": 26
+      },
+      {
+        "global_step": 32,
+        "nonempty_required_files": 26
+      },
+      {
+        "global_step": 40,
+        "nonempty_required_files": 26
+      },
+      {
+        "global_step": 48,
+        "nonempty_required_files": 26
+      },
+      {
+        "global_step": 56,
+        "nonempty_required_files": 26
+      },
+      {
+        "global_step": 64,
+        "nonempty_required_files": 26
+      },
+      {
+        "global_step": 72,
+        "nonempty_required_files": 26
+      },
+      {
+        "global_step": 80,
+        "nonempty_required_files": 26
+      },
+      {
+        "global_step": 88,
+        "nonempty_required_files": 26
+      },
+      {
+        "global_step": 96,
+        "nonempty_required_files": 26
+      }
+    ]
+  },
+  "eval96_load": {
+    "checkpoint": "/var/jfsCache/sc2-qwen-l7same96-197-20260924-r1/qwen-same/long/runs/train96/checkpoints/global_step_96",
+    "loaded_global_step": 96,
+    "checkpoint_load_returned": true,
+    "val_only": true,
+    "optimizer_updates": 0,
+    "feedback": "0",
+    "temperature": 0.8,
+    "do_sample": true,
+    "games": 8,
+    "game_seeds": [
+      605183188,
+      1075501356,
+      2084414326,
+      2203880230,
+      3000371298,
+      949752300,
+      3225036469,
+      2823708076
+    ],
+    "answers": "online SpB; no replay or replacement",
+    "optimizer_loaded_by_existing_loader_but_not_updated": true
+  },
+  "paired_rng": [
+    {
+      "rank": 0,
+      "seed": 0,
+      "cpu_rng_sha256": "1ccf17250133dec5e96478acd63e13d728d0dbbabb30389415a302c6f872f81f",
+      "cuda_rng_sha256": "374708fff7719dd5979ec875d56cd2286f6d3cf7ec317a3b25632aab28ec37bb"
+    },
+    {
+      "rank": 1,
+      "seed": 1,
+      "cpu_rng_sha256": "f5defda135ec2e0d1513e6979390f58397d31a904d5f6540f8b88ae64d1decc1",
+      "cuda_rng_sha256": "4cbbd8ca5215b8d161aec181a74b694f4e24b001d5b081dc0030ed797a8973e0"
+    },
+    {
+      "rank": 2,
+      "seed": 2,
+      "cpu_rng_sha256": "0f9cd7b642a3f8f641c5e992f17138b2d094db4d56cc2329b3be2c794ddc79ad",
+      "cuda_rng_sha256": "b1535c7783ea8829b6b0cf67704539798b4d16c39bf0bfe09494c5d9f12eee30"
+    },
+    {
+      "rank": 3,
+      "seed": 3,
+      "cpu_rng_sha256": "76fe321e2dc1dfdec62a274bcedbeea2727be2e2972f97e728e07e0345c21ede",
+      "cuda_rng_sha256": "59d5966c96af7ecad5c9d2918d6582d102b2c67f6b765ea28ac24371ab4f93be"
+    },
+    {
+      "rank": 4,
+      "seed": 4,
+      "cpu_rng_sha256": "de87e86bf2a7b448b35cba75c461560b4b6aa93e7843008c930221dee4551e0f",
+      "cuda_rng_sha256": "6b6f14e6af2627186bf8a55e474dcf6ef3f6ce81af560da871ec51eb670171a9"
+    },
+    {
+      "rank": 5,
+      "seed": 5,
+      "cpu_rng_sha256": "f4ef6f460154679cfe881f5d260e16f8ed904898fabc025c755a71e2692eb75c",
+      "cuda_rng_sha256": "966a28d35016032ee27b1860df4a9b16b6c007da76b2e4f94e7526e31c48959b"
+    },
+    {
+      "rank": 6,
+      "seed": 6,
+      "cpu_rng_sha256": "9e15eceb1ce9d2c2ffe7bcc8fa3155c1445def059cdd06b5429093164db849a7",
+      "cuda_rng_sha256": "5e9a5de4a59a7c3c9ba8846060ba77ab402e3088658aa705e1a64e796f6cd5cf"
+    },
+    {
+      "rank": 7,
+      "seed": 7,
+      "cpu_rng_sha256": "daf9268b18e87b0267a6ad240c6093eb98fe6f03872986bd31a497ba5ea2371a",
+      "cuda_rng_sha256": "76108f84396dc2d72ce275fdb0e0ef37b229b2898bf5a31d576fea11a766a42b"
+    }
+  ],
+  "paired_eval_outcomes": [
+    {
+      "env_index": 0,
+      "post": "Defeat",
+      "eval96": "Victory"
+    },
+    {
+      "env_index": 1,
+      "post": "Defeat",
+      "eval96": "Victory"
+    },
+    {
+      "env_index": 2,
+      "post": "Victory",
+      "eval96": "Victory"
+    },
+    {
+      "env_index": 3,
+      "post": "Victory",
+      "eval96": "Victory"
+    },
+    {
+      "env_index": 4,
+      "post": "Victory",
+      "eval96": "Victory"
+    },
+    {
+      "env_index": 5,
+      "post": "Victory",
+      "eval96": "Victory"
+    },
+    {
+      "env_index": 6,
+      "post": "Victory",
+      "eval96": "Victory"
+    },
+    {
+      "env_index": 7,
+      "post": "Victory",
+      "eval96": "Victory"
+    }
+  ],
+  "evaluation_seeds": [
+    605183188,
+    1075501356,
+    2084414326,
+    2203880230,
+    3000371298,
+    949752300,
+    3225036469,
+    2823708076
+  ],
+  "receipt_sha256": {
+    "qwen-same/short/runs/pre/result.json": "b1b882f30e50d7fceee39cad727f8198f2ccdd8cbb50315041530d6404f4ac07",
+    "qwen-same/short/runs/pre/manifest.json": "86d2962c579203c4e03f217177d299997026954b25fd53d5faae13ff8e64cce0",
+    "qwen-same/short/acceptance-pre.json": "5883930c6018443a7949ae82740aa8251bcb1bf5272efe87e3ee4c493153e4fa",
+    "qwen-same/short/runs/pre/.done": "b1b882f30e50d7fceee39cad727f8198f2ccdd8cbb50315041530d6404f4ac07",
+    "qwen-same/short/runs/train2/result.json": "77dcf3fd26ba06f21486a43f93f07b23d88fd7e781677de7bcaf7744b7f3e8db",
+    "qwen-same/short/runs/train2/manifest.json": "3fadef5b2e61629be920a0e478cac8b1c3cb2d7bd74aa3e8d991fdc1a3a32b05",
+    "qwen-same/short/acceptance-train2.json": "833619a9e3d8b46d1124e8498d61b9ebb5721220371a7e19282da72198354957",
+    "qwen-same/short/runs/train2/.done": "77dcf3fd26ba06f21486a43f93f07b23d88fd7e781677de7bcaf7744b7f3e8db",
+    "qwen-same/short/runs/post/result.json": "84550938e18ce18f7c71b57662836e273f3126e9c02fd0843e1d419868409ef0",
+    "qwen-same/short/runs/post/manifest.json": "a6ae40767af87329a3dc67eb91e5aa25ba6bf63e20bb95d155a10607bb0616b0",
+    "qwen-same/short/acceptance-post.json": "70dac02935b7e0624da03c076e7a72d6994ff0151c44ca467a1ba108d3ec0c98",
+    "qwen-same/short/runs/post/.done": "84550938e18ce18f7c71b57662836e273f3126e9c02fd0843e1d419868409ef0",
+    "qwen-same/long/runs/train96/result.json": "74a8be74d140d455a6c1177c3a7268e25286008e3893fc135201ce048da06bb4",
+    "qwen-same/long/runs/train96/manifest.json": "47efd02e3b8f821d9635183dd40b97a65cd2baa1448f0481a0a3596e5ca4db66",
+    "qwen-same/long/acceptance-train96.json": "3f66e1dbe5d592c52b7c79cc3a148a24f228e5567b708ce1089d0323919e68c2",
+    "qwen-same/long/runs/train96/.done": "74a8be74d140d455a6c1177c3a7268e25286008e3893fc135201ce048da06bb4",
+    "qwen-same/long/runs/eval96/result.json": "ff2a9413ba89020495c54463f8f06f011be19836622742b00eb276537efee420",
+    "qwen-same/long/runs/eval96/manifest.json": "8efaf8a926bbcb53478a0d63aa090d08b59ce6118225dbec0af255270f26f582",
+    "qwen-same/long/acceptance-eval96.json": "bd2a8891ba250084129c5cb931b8a4b80754576bb1735e5fd3f17eb84dacf1e5",
+    "qwen-same/long/runs/eval96/.done": "ff2a9413ba89020495c54463f8f06f011be19836622742b00eb276537efee420",
+    "qwen-same/short/runs/train2/metrics.json": "c87fb5b55beb1d86c8126bb7f681376d59c4354adb9b893268a791bca371f49f",
+    "qwen-same/short/runs/train2/checkpoints/sc2_policy_credit_audit.jsonl": "fd217d27a28143f2738530c83ca7478a3d220d9a2e9e5376d4346ca3167101b8",
+    "qwen-same/short/runs/train2/training_seeds.jsonl": "c7225e901aea10a4a2bfdd18f5ce95214e57d5a21c2d0960e263de06c6910283",
+    "qwen-same/short/runs/train2/episode_outcomes.jsonl": "cac9b5f406e0d27e334e6ee57baa5d1e649946ea7bd360887bce57419c5285c2",
+    "qwen-same/long/runs/train96/metrics.json": "39d9daf16d00e6e0025c5a1ea775de237079ec7a3e632d993789755f18910bc6",
+    "qwen-same/long/runs/train96/checkpoints/sc2_policy_credit_audit.jsonl": "0a97c5755e36d183d33e7f3d9f9f7e0cbb9aa722df7c4d0cfbc6f0cee7459ffe",
+    "qwen-same/long/runs/train96/training_seeds.jsonl": "4db86eab6b1945772139a586d16b50fbd6ec756936e8450a3bac8eee5ba8a660",
+    "qwen-same/long/runs/train96/episode_outcomes.jsonl": "f8fe6ce4c57b88b3a354bb9140982b966c10cea8dda0019a62e3e8dfef871708",
+    "qwen-same/short/runs/post/sampling-rank0.json": "8e871792661c8e76716df2ddf6e15b76f6308e3c8829eba7d71afc1c95fd3bc8",
+    "qwen-same/long/runs/eval96/sampling-rank0.json": "ec2a9fce570f57614e41badbae1d3c161de4347b6ec4087b7ea0d66e9e9131f1",
+    "qwen-same/short/runs/post/sampling-rank1.json": "d64bfc9410516baa554da04e3b957b6ef94009d067f4cac649be9f0875149644",
+    "qwen-same/long/runs/eval96/sampling-rank1.json": "9edca4cafe81974d897e14e070e0583b9f8cb2308e6366f541d7265104c0446b",
+    "qwen-same/short/runs/post/sampling-rank2.json": "73223a66539d49b0570e4002ca330ee74f46bfd014f29d49126971fb6c7c33e7",
+    "qwen-same/long/runs/eval96/sampling-rank2.json": "893fe8f6277e8f2c0b508616727bb6bd35375a24f7c270b38098d519ded2692f",
+    "qwen-same/short/runs/post/sampling-rank3.json": "9f1350c0ff7b6a994b3a492a838ff624f7567670e671ffaaa8ff6029149b076a",
+    "qwen-same/long/runs/eval96/sampling-rank3.json": "b8bfde211433ed5c5e09d170bb8254a7095786d0650cd70ac37a27757aab3cd9",
+    "qwen-same/short/runs/post/sampling-rank4.json": "4afd437a820c5631c925ffc2df769a5dff9b299223a85bb61e57e9a44e565f97",
+    "qwen-same/long/runs/eval96/sampling-rank4.json": "9efc5e81d6004690620a61e7d56418f063b2c677976547263a146cec17d7b6e7",
+    "qwen-same/short/runs/post/sampling-rank5.json": "02fb417813afa165b52829ef03ba4985d84d6aab9b193cce2596c83cd6f35504",
+    "qwen-same/long/runs/eval96/sampling-rank5.json": "aaebd2d98f528becd6e18a360e839f69fa798763c67b2730e9b731496e72e925",
+    "qwen-same/short/runs/post/sampling-rank6.json": "cac2aedcfde362eb021c51c7dd1f3d65b566a162f6340285bf53578ccdd1db38",
+    "qwen-same/long/runs/eval96/sampling-rank6.json": "ad034ef98247ce7f0bddcadec6eb8065024f1f9cc06c030f4e644d15513a0c4f",
+    "qwen-same/short/runs/post/sampling-rank7.json": "4a385e05ab5ae50627d1f6c69fb97b9fc088407dcd8a87579ebbbcb414994a7c",
+    "qwen-same/long/runs/eval96/sampling-rank7.json": "96c55afe9c422db9a9b0eeff10405d67cb0ac92f23499a711d3c098d80712fe6",
+    "qwen-same/short/runs/post/evaluation_seeds.jsonl": "ffaf9953b3c4fc78b2a0f30c67357504f6a6b8e014c3b0adc2db12e87afdad90",
+    "qwen-same/long/runs/eval96/evaluation_seeds.jsonl": "ffaf9953b3c4fc78b2a0f30c67357504f6a6b8e014c3b0adc2db12e87afdad90",
+    "qwen-same/long/runs/eval96/checkpoint_evaluation.json": "2efa5798adec2de2a2b9596f0589f88af7802f68501a75ffa353ba317ee4783b",
+    "qwen-same/short/runs/post/episode_outcomes.jsonl": "d6f0ebe9eb60c10a823d73a5ca0cc61c7560b091cc97047089f063e13add86c8",
+    "qwen-same/long/runs/eval96/episode_outcomes.jsonl": "597b6a153404f284e1abc38a8576640cc3dc42e88b84b41b4a4e2bfe57cfe2a5"
+  },
+  "host_snapshot": {
+    "checked_at": "2026-09-24T21:43:46.464578+08:00",
+    "root": "/var/jfsCache/sc2-qwen-l7same96-197-20260924-r1",
+    "receipts": {
+      "queue-state.json": {
+        "phase": "completed",
+        "completed": [
+          "qwen-same/short",
+          "qwen-same/long"
+        ],
+        "first_dispatch_by": 1790360559.0174987,
+        "part": "qwen-same/long",
+        "deadline": 1790403303.797456,
+        "exit_code": 0,
+        "learning_validated": false
+      },
+      "dispatch.json": {
+        "start": 1790230503.797456,
+        "deadline": 1790403303.797456,
+        "gpu_hours": 384,
+        "new_games": 792,
+        "new_updates": 96
+      },
+      "failure.json": null,
+      "storage-state.json": {
+        "command": [
+          "du",
+          "-sb",
+          "--null",
+          "--",
+          "/var/jfsCache/sc2-qwen-l7same96-197-20260924-r1",
+          "/var/jfsCache/sc2-qwen-l7same96-197-source-20260924-r1"
+        ],
+        "roots": [
+          "/var/jfsCache/sc2-qwen-l7same96-197-20260924-r1",
+          "/var/jfsCache/sc2-qwen-l7same96-197-source-20260924-r1"
+        ],
+        "started_at": 1790246751.786739,
+        "deadline": 1790403303.797456,
+        "limit": 1099511627776,
+        "bytes": 650241645040,
+        "returncode": 0,
+        "status": "measured",
+        "stdout": {
+          "tail": "650218378870\t/var/jfsCache/sc2-qwen-l7same96-197-20260924-r1\u000023266170\t/var/jfsCache/sc2-qwen-l7same96-197-source-20260924-r1\u0000",
+          "characters": 125,
+          "truncated": false
+        },
+        "stderr": {
+          "tail": "",
+          "characters": 0,
+          "truncated": false
+        },
+        "root_bytes": {
+          "/var/jfsCache/sc2-qwen-l7same96-197-20260924-r1": 650218378870,
+          "/var/jfsCache/sc2-qwen-l7same96-197-source-20260924-r1": 23266170
+        },
+        "checked_at": 1790246751.8869002
+      },
+      "storage-failure.json": null,
+      "qwen-same/short/state.json": {
+        "version": "host-guardian-v1",
+        "phase": "completed",
+        "completed": [
+          "pre",
+          "train2",
+          "post"
+        ],
+        "deadline": 1790403303.797456,
+        "learning_validated": false,
+        "started_at": 1790230503.7987063,
+        "stage": "post",
+        "container_id": "738de48fc1f46c3da4a9afa92b758d59016771b0aaf333fe3f427136906f46a4",
+        "exit_code": 0,
+        "finished_at": 1790231810.967072
+      },
+      "qwen-same/short/failure.json": null,
+      "qwen-same/short/host-supervision/state.json": {
+        "version": "host-guardian-v1",
+        "phase": "completed",
+        "completed": [
+          "pre",
+          "train2",
+          "post"
+        ],
+        "deadline": 1790403303.797456,
+        "learning_validated": false,
+        "started_at": 1790230503.7987063,
+        "stage": "post",
+        "container_id": "738de48fc1f46c3da4a9afa92b758d59016771b0aaf333fe3f427136906f46a4",
+        "exit_code": 0,
+        "finished_at": 1790231810.967072
+      },
+      "qwen-same/long/state.json": {
+        "version": "host-guardian-v1",
+        "phase": "completed",
+        "completed": [
+          "train96",
+          "eval96"
+        ],
+        "deadline": 1790403303.797456,
+        "learning_validated": false,
+        "started_at": 1790231815.6909914,
+        "stage": "eval96",
+        "container_id": "8afe8504331d9a012489710f2168285b3e0d8358cce6bc983cd6dc185532c31c",
+        "exit_code": 0,
+        "finished_at": 1790246751.887511
+      },
+      "qwen-same/long/failure.json": null,
+      "qwen-same/long/host-supervision/state.json": {
+        "version": "host-guardian-v1",
+        "phase": "completed",
+        "completed": [
+          "train96",
+          "eval96"
+        ],
+        "deadline": 1790403303.797456,
+        "learning_validated": false,
+        "started_at": 1790231815.6909914,
+        "stage": "eval96",
+        "container_id": "8afe8504331d9a012489710f2168285b3e0d8358cce6bc983cd6dc185532c31c",
+        "exit_code": 0,
+        "finished_at": 1790246751.887511
+      },
+      "qwen-same/short/acceptance-pre.json": {
+        "result": {
+          "status": "completed",
+          "ended_at": "2026-09-24T06:21:52.336493+00:00",
+          "mode": "evaluation",
+          "process_exit_code": 0,
+          "training_updates": 0,
+          "metrics": {
+            "val/text/test_score": 16.106250047683716,
+            "val/text/tool_call_count/mean": 0,
+            "val/success_rate": 0.875,
+            "val/sc2_attack_ct": 0,
+            "val/sc2_action_valid": 1,
+            "val/sc2_semantic_action_valid": 1,
+            "val/sc2_semantic_action_evaluable": 1,
+            "val/sc2_projection_action_valid": 1,
+            "val/sc2_executor_action_valid": 1,
+            "val/sc2/episode_count": 8,
+            "val/sc2/no_policy_episode_count": 0,
+            "val/sc2/policy_decision_count": 49
+          },
+          "metrics_finite": true,
+          "response_record_count": 72,
+          "metrics_precision": "binary64-v1",
+          "evaluable_action_count": 49,
+          "valid_evaluable_action_count": 49,
+          "replays": 8,
+          "console_sha256": "9030880bd2a6812fb64ab64f7030e628e3a1c043bf5e68d3f802d7608f79c7cb",
+          "episode_outcomes": {
+            "trajectories": 8,
+            "natural_games": 8,
+            "wins": 7,
+            "defeats": 1,
+            "ties": 0,
+            "truncated": 0,
+            "natural_win_rate": 0.875,
+            "outcomes": 8
+          },
+          "natural_match_completed": true,
+          "termination_evidence": "game_result"
+        },
+        "evidence": {
+          "consumed_answers": 49,
+          "valid_consumed_answers": 49,
+          "parsed_plans": 49,
+          "validated_queue_entries": 754,
+          "validated_locally_queued_commands": 521,
+          "execution_scope": "local Depot/Marine commands, not production completion or causal wins"
+        },
+        "checked_at": 1790230913.5269456
+      },
+      "qwen-same/short/runs/pre/result.json": {
+        "status": "completed",
+        "ended_at": "2026-09-24T06:21:52.336493+00:00",
+        "mode": "evaluation",
+        "process_exit_code": 0,
+        "training_updates": 0,
+        "metrics": {
+          "val/text/test_score": 16.106250047683716,
+          "val/text/tool_call_count/mean": 0,
+          "val/success_rate": 0.875,
+          "val/sc2_attack_ct": 0,
+          "val/sc2_action_valid": 1,
+          "val/sc2_semantic_action_valid": 1,
+          "val/sc2_semantic_action_evaluable": 1,
+          "val/sc2_projection_action_valid": 1,
+          "val/sc2_executor_action_valid": 1,
+          "val/sc2/episode_count": 8,
+          "val/sc2/no_policy_episode_count": 0,
+          "val/sc2/policy_decision_count": 49
+        },
+        "metrics_finite": true,
+        "response_record_count": 72,
+        "metrics_precision": "binary64-v1",
+        "evaluable_action_count": 49,
+        "valid_evaluable_action_count": 49,
+        "replays": 8,
+        "console_sha256": "9030880bd2a6812fb64ab64f7030e628e3a1c043bf5e68d3f802d7608f79c7cb",
+        "episode_outcomes": {
+          "trajectories": 8,
+          "natural_games": 8,
+          "wins": 7,
+          "defeats": 1,
+          "ties": 0,
+          "truncated": 0,
+          "natural_win_rate": 0.875,
+          "outcomes": 8
+        },
+        "natural_match_completed": true,
+        "termination_evidence": "game_result"
+      },
+      "qwen-same/short/runs/pre/.done": {
+        "status": "completed",
+        "ended_at": "2026-09-24T06:21:52.336493+00:00",
+        "mode": "evaluation",
+        "process_exit_code": 0,
+        "training_updates": 0,
+        "metrics": {
+          "val/text/test_score": 16.106250047683716,
+          "val/text/tool_call_count/mean": 0,
+          "val/success_rate": 0.875,
+          "val/sc2_attack_ct": 0,
+          "val/sc2_action_valid": 1,
+          "val/sc2_semantic_action_valid": 1,
+          "val/sc2_semantic_action_evaluable": 1,
+          "val/sc2_projection_action_valid": 1,
+          "val/sc2_executor_action_valid": 1,
+          "val/sc2/episode_count": 8,
+          "val/sc2/no_policy_episode_count": 0,
+          "val/sc2/policy_decision_count": 49
+        },
+        "metrics_finite": true,
+        "response_record_count": 72,
+        "metrics_precision": "binary64-v1",
+        "evaluable_action_count": 49,
+        "valid_evaluable_action_count": 49,
+        "replays": 8,
+        "console_sha256": "9030880bd2a6812fb64ab64f7030e628e3a1c043bf5e68d3f802d7608f79c7cb",
+        "episode_outcomes": {
+          "trajectories": 8,
+          "natural_games": 8,
+          "wins": 7,
+          "defeats": 1,
+          "ties": 0,
+          "truncated": 0,
+          "natural_win_rate": 0.875,
+          "outcomes": 8
+        },
+        "natural_match_completed": true,
+        "termination_evidence": "game_result"
+      },
+      "qwen-same/short/host-supervision/pre-guardian.json": {
+        "version": "host-guardian-v1",
+        "container_id": "761f502cd72635dadb63eb301e683b646b7f56dfd3b3ccc285f7ac91b4aaf46b",
+        "owner_root": "/var/jfsCache/sc2-qwen-l7same96-197-20260924-r1/qwen-same/short",
+        "deadline": 1790403303.797456,
+        "lease_seconds": 45,
+        "phase": "completed",
+        "events": {
+          "count": 110
+        },
+        "pause_attempted": true,
+        "started_at": 1790230504.1874764,
+        "initial_state": {
+          "Dead": false,
+          "Error": "",
+          "ExitCode": 0,
+          "FinishedAt": "0001-01-01T00:00:00Z",
+          "OOMKilled": false,
+          "Paused": false,
+          "Pid": 0,
+          "Restarting": false,
+          "Running": false,
+          "StartedAt": "0001-01-01T00:00:00Z",
+          "Status": "created"
+        },
+        "final_state": {
+          "Dead": false,
+          "Error": "",
+          "ExitCode": 0,
+          "FinishedAt": "2026-09-24T06:21:52.357646592Z",
+          "OOMKilled": false,
+          "Paused": false,
+          "Pid": 0,
+          "Restarting": false,
+          "Running": false,
+          "StartedAt": "2026-09-24T06:15:04.214956886Z",
+          "Status": "exited"
+        },
+        "finished_at": 1790230913.4641292
+      },
+      "qwen-same/short/acceptance-train2.json": {
+        "result": {
+          "status": "completed",
+          "ended_at": "2026-09-24T06:30:25.127951+00:00",
+          "process_exit_code": 0,
+          "completed_steps": 2,
+          "start_step": 0,
+          "last_global_step": 2,
+          "target_steps": 2,
+          "metrics_finite": true,
+          "metrics_precision": "binary64-v1",
+          "checkpoint_complete": true,
+          "checkpoint_files": 26,
+          "console_sha256": "f2c9efa768ba3458241d01068c039b181f4eaacee76d56bfcf3d3bd72d464a56",
+          "episode_outcomes": {
+            "trajectories": 16,
+            "natural_games": 16,
+            "wins": 8,
+            "defeats": 8,
+            "ties": 0,
+            "truncated": 0,
+            "natural_win_rate": 0.5,
+            "outcomes": 16
+          },
+          "empty_policy_batches": []
+        },
+        "evidence": {
+          "consumed_answers": 96,
+          "valid_consumed_answers": 96,
+          "parsed_plans": 96,
+          "validated_queue_entries": 1880,
+          "validated_locally_queued_commands": 845,
+          "execution_scope": "local Depot/Marine commands, not production completion or causal wins"
+        },
+        "checked_at": 1790231444.2935355
+      },
+      "qwen-same/short/runs/train2/result.json": {
+        "status": "completed",
+        "ended_at": "2026-09-24T06:30:25.127951+00:00",
+        "process_exit_code": 0,
+        "completed_steps": 2,
+        "start_step": 0,
+        "last_global_step": 2,
+        "target_steps": 2,
+        "metrics_finite": true,
+        "metrics_precision": "binary64-v1",
+        "checkpoint_complete": true,
+        "checkpoint_files": 26,
+        "console_sha256": "f2c9efa768ba3458241d01068c039b181f4eaacee76d56bfcf3d3bd72d464a56",
+        "episode_outcomes": {
+          "trajectories": 16,
+          "natural_games": 16,
+          "wins": 8,
+          "defeats": 8,
+          "ties": 0,
+          "truncated": 0,
+          "natural_win_rate": 0.5,
+          "outcomes": 16
+        },
+        "empty_policy_batches": []
+      },
+      "qwen-same/short/runs/train2/.done": {
+        "status": "completed",
+        "ended_at": "2026-09-24T06:30:25.127951+00:00",
+        "process_exit_code": 0,
+        "completed_steps": 2,
+        "start_step": 0,
+        "last_global_step": 2,
+        "target_steps": 2,
+        "metrics_finite": true,
+        "metrics_precision": "binary64-v1",
+        "checkpoint_complete": true,
+        "checkpoint_files": 26,
+        "console_sha256": "f2c9efa768ba3458241d01068c039b181f4eaacee76d56bfcf3d3bd72d464a56",
+        "episode_outcomes": {
+          "trajectories": 16,
+          "natural_games": 16,
+          "wins": 8,
+          "defeats": 8,
+          "ties": 0,
+          "truncated": 0,
+          "natural_win_rate": 0.5,
+          "outcomes": 16
+        },
+        "empty_policy_batches": []
+      },
+      "qwen-same/short/host-supervision/train2-guardian.json": {
+        "version": "host-guardian-v1",
+        "container_id": "2fc8071e13000a5bf55bf8fbc0b44cf4072590da4b0bf4afb0e21a6058b7239e",
+        "owner_root": "/var/jfsCache/sc2-qwen-l7same96-197-20260924-r1/qwen-same/short",
+        "deadline": 1790403303.797456,
+        "lease_seconds": 45,
+        "phase": "completed",
+        "events": {
+          "count": 142
+        },
+        "pause_attempted": true,
+        "started_at": 1790230913.942449,
+        "initial_state": {
+          "Dead": false,
+          "Error": "",
+          "ExitCode": 0,
+          "FinishedAt": "0001-01-01T00:00:00Z",
+          "OOMKilled": false,
+          "Paused": false,
+          "Pid": 0,
+          "Restarting": false,
+          "Running": false,
+          "StartedAt": "0001-01-01T00:00:00Z",
+          "Status": "created"
+        },
+        "final_state": {
+          "Dead": false,
+          "Error": "",
+          "ExitCode": 0,
+          "FinishedAt": "2026-09-24T06:30:42.180648611Z",
+          "OOMKilled": false,
+          "Paused": false,
+          "Pid": 0,
+          "Restarting": false,
+          "Running": false,
+          "StartedAt": "2026-09-24T06:21:53.968977382Z",
+          "Status": "exited"
+        },
+        "finished_at": 1790231444.2099786
+      },
+      "qwen-same/short/acceptance-post.json": {
+        "result": {
+          "status": "completed",
+          "ended_at": "2026-09-24T06:36:37.220486+00:00",
+          "mode": "evaluation",
+          "process_exit_code": 0,
+          "training_updates": 0,
+          "metrics": {
+            "val/text/test_score": 6.421875238418579,
+            "val/text/tool_call_count/mean": 0,
+            "val/success_rate": 0.75,
+            "val/sc2_attack_ct": 0.25,
+            "val/sc2_action_valid": 1,
+            "val/sc2_semantic_action_valid": 1,
+            "val/sc2_semantic_action_evaluable": 1,
+            "val/sc2_projection_action_valid": 1,
+            "val/sc2_executor_action_valid": 1,
+            "val/sc2/episode_count": 8,
+            "val/sc2/no_policy_episode_count": 0,
+            "val/sc2/policy_decision_count": 51
+          },
+          "metrics_finite": true,
+          "response_record_count": 64,
+          "metrics_precision": "binary64-v1",
+          "evaluable_action_count": 51,
+          "valid_evaluable_action_count": 51,
+          "replays": 8,
+          "console_sha256": "96665e01b4bb2e5e5f26453893261d6a2af96f4f450372f20fe2c5c499ff1a99",
+          "episode_outcomes": {
+            "trajectories": 8,
+            "natural_games": 8,
+            "wins": 6,
+            "defeats": 2,
+            "ties": 0,
+            "truncated": 0,
+            "natural_win_rate": 0.75,
+            "outcomes": 8
+          },
+          "natural_match_completed": true,
+          "termination_evidence": "game_result"
+        },
+        "evidence": {
+          "consumed_answers": 51,
+          "valid_consumed_answers": 51,
+          "parsed_plans": 51,
+          "validated_queue_entries": 909,
+          "validated_locally_queued_commands": 510,
+          "execution_scope": "local Depot/Marine commands, not production completion or causal wins"
+        },
+        "checked_at": 1790231810.953435
+      },
+      "qwen-same/short/runs/post/result.json": {
+        "status": "completed",
+        "ended_at": "2026-09-24T06:36:37.220486+00:00",
+        "mode": "evaluation",
+        "process_exit_code": 0,
+        "training_updates": 0,
+        "metrics": {
+          "val/text/test_score": 6.421875238418579,
+          "val/text/tool_call_count/mean": 0,
+          "val/success_rate": 0.75,
+          "val/sc2_attack_ct": 0.25,
+          "val/sc2_action_valid": 1,
+          "val/sc2_semantic_action_valid": 1,
+          "val/sc2_semantic_action_evaluable": 1,
+          "val/sc2_projection_action_valid": 1,
+          "val/sc2_executor_action_valid": 1,
+          "val/sc2/episode_count": 8,
+          "val/sc2/no_policy_episode_count": 0,
+          "val/sc2/policy_decision_count": 51
+        },
+        "metrics_finite": true,
+        "response_record_count": 64,
+        "metrics_precision": "binary64-v1",
+        "evaluable_action_count": 51,
+        "valid_evaluable_action_count": 51,
+        "replays": 8,
+        "console_sha256": "96665e01b4bb2e5e5f26453893261d6a2af96f4f450372f20fe2c5c499ff1a99",
+        "episode_outcomes": {
+          "trajectories": 8,
+          "natural_games": 8,
+          "wins": 6,
+          "defeats": 2,
+          "ties": 0,
+          "truncated": 0,
+          "natural_win_rate": 0.75,
+          "outcomes": 8
+        },
+        "natural_match_completed": true,
+        "termination_evidence": "game_result"
+      },
+      "qwen-same/short/runs/post/.done": {
+        "status": "completed",
+        "ended_at": "2026-09-24T06:36:37.220486+00:00",
+        "mode": "evaluation",
+        "process_exit_code": 0,
+        "training_updates": 0,
+        "metrics": {
+          "val/text/test_score": 6.421875238418579,
+          "val/text/tool_call_count/mean": 0,
+          "val/success_rate": 0.75,
+          "val/sc2_attack_ct": 0.25,
+          "val/sc2_action_valid": 1,
+          "val/sc2_semantic_action_valid": 1,
+          "val/sc2_semantic_action_evaluable": 1,
+          "val/sc2_projection_action_valid": 1,
+          "val/sc2_executor_action_valid": 1,
+          "val/sc2/episode_count": 8,
+          "val/sc2/no_policy_episode_count": 0,
+          "val/sc2/policy_decision_count": 51
+        },
+        "metrics_finite": true,
+        "response_record_count": 64,
+        "metrics_precision": "binary64-v1",
+        "evaluable_action_count": 51,
+        "valid_evaluable_action_count": 51,
+        "replays": 8,
+        "console_sha256": "96665e01b4bb2e5e5f26453893261d6a2af96f4f450372f20fe2c5c499ff1a99",
+        "episode_outcomes": {
+          "trajectories": 8,
+          "natural_games": 8,
+          "wins": 6,
+          "defeats": 2,
+          "ties": 0,
+          "truncated": 0,
+          "natural_win_rate": 0.75,
+          "outcomes": 8
+        },
+        "natural_match_completed": true,
+        "termination_evidence": "game_result"
+      },
+      "qwen-same/short/host-supervision/post-guardian.json": {
+        "version": "host-guardian-v1",
+        "container_id": "738de48fc1f46c3da4a9afa92b758d59016771b0aaf333fe3f427136906f46a4",
+        "owner_root": "/var/jfsCache/sc2-qwen-l7same96-197-20260924-r1/qwen-same/short",
+        "deadline": 1790403303.797456,
+        "lease_seconds": 45,
+        "phase": "completed",
+        "events": {
+          "count": 98
+        },
+        "pause_attempted": true,
+        "started_at": 1790231444.7101142,
+        "initial_state": {
+          "Dead": false,
+          "Error": "",
+          "ExitCode": 0,
+          "FinishedAt": "0001-01-01T00:00:00Z",
+          "OOMKilled": false,
+          "Paused": false,
+          "Pid": 0,
+          "Restarting": false,
+          "Running": false,
+          "StartedAt": "0001-01-01T00:00:00Z",
+          "Status": "created"
+        },
+        "final_state": {
+          "Dead": false,
+          "Error": "",
+          "ExitCode": 0,
+          "FinishedAt": "2026-09-24T06:36:37.240015038Z",
+          "OOMKilled": false,
+          "Paused": false,
+          "Pid": 0,
+          "Restarting": false,
+          "Running": false,
+          "StartedAt": "2026-09-24T06:30:44.737640021Z",
+          "Status": "exited"
+        },
+        "finished_at": 1790231810.8926234
+      },
+      "qwen-same/long/acceptance-train96.json": {
+        "result": {
+          "status": "completed",
+          "ended_at": "2026-09-24T10:41:13.307224+00:00",
+          "process_exit_code": 0,
+          "completed_steps": 94,
+          "start_step": 2,
+          "last_global_step": 96,
+          "target_steps": 96,
+          "metrics_finite": true,
+          "metrics_precision": "binary64-v1",
+          "checkpoint_complete": true,
+          "checkpoint_files": 26,
+          "console_sha256": "899c4b8a3c6200516ed6a05bc8f71678c9197d7d7f6039c220fe9b869af98e90",
+          "episode_outcomes": {
+            "trajectories": 752,
+            "natural_games": 752,
+            "wins": 652,
+            "defeats": 100,
+            "ties": 0,
+            "truncated": 0,
+            "natural_win_rate": 0.8670212765957447,
+            "outcomes": 752
+          },
+          "empty_policy_batches": []
+        },
+        "evidence": {
+          "consumed_answers": 3193,
+          "valid_consumed_answers": 3193,
+          "parsed_plans": 3193,
+          "validated_queue_entries": 74013,
+          "validated_locally_queued_commands": 42325,
+          "execution_scope": "local Depot/Marine commands, not production completion or causal wins",
+          "resume": {
+            "from_checkpoint": "/var/jfsCache/sc2-qwen-l7same96-197-20260924-r1/qwen-same/short/runs/train2/checkpoints/global_step_2",
+            "global_step": 2,
+            "next_reset_index": 2,
+            "next_seeds": [
+              53,
+              53,
+              53,
+              53,
+              53,
+              53,
+              53,
+              53
+            ],
+            "source": "checkpoint",
+            "model_optimizer_dataloader_load_returned": true
+          },
+          "ppo_updates": 94,
+          "checkpoints": {
+            "count": 12
+          }
+        },
+        "checked_at": 1790246503.3342636
+      },
+      "qwen-same/long/runs/train96/result.json": {
+        "status": "completed",
+        "ended_at": "2026-09-24T10:41:13.307224+00:00",
+        "process_exit_code": 0,
+        "completed_steps": 94,
+        "start_step": 2,
+        "last_global_step": 96,
+        "target_steps": 96,
+        "metrics_finite": true,
+        "metrics_precision": "binary64-v1",
+        "checkpoint_complete": true,
+        "checkpoint_files": 26,
+        "console_sha256": "899c4b8a3c6200516ed6a05bc8f71678c9197d7d7f6039c220fe9b869af98e90",
+        "episode_outcomes": {
+          "trajectories": 752,
+          "natural_games": 752,
+          "wins": 652,
+          "defeats": 100,
+          "ties": 0,
+          "truncated": 0,
+          "natural_win_rate": 0.8670212765957447,
+          "outcomes": 752
+        },
+        "empty_policy_batches": []
+      },
+      "qwen-same/long/runs/train96/.done": {
+        "status": "completed",
+        "ended_at": "2026-09-24T10:41:13.307224+00:00",
+        "process_exit_code": 0,
+        "completed_steps": 94,
+        "start_step": 2,
+        "last_global_step": 96,
+        "target_steps": 96,
+        "metrics_finite": true,
+        "metrics_precision": "binary64-v1",
+        "checkpoint_complete": true,
+        "checkpoint_files": 26,
+        "console_sha256": "899c4b8a3c6200516ed6a05bc8f71678c9197d7d7f6039c220fe9b869af98e90",
+        "episode_outcomes": {
+          "trajectories": 752,
+          "natural_games": 752,
+          "wins": 652,
+          "defeats": 100,
+          "ties": 0,
+          "truncated": 0,
+          "natural_win_rate": 0.8670212765957447,
+          "outcomes": 752
+        },
+        "empty_policy_batches": []
+      },
+      "qwen-same/long/host-supervision/train96-guardian.json": {
+        "version": "host-guardian-v1",
+        "container_id": "80abe03174c3b0b584e16b1d0aef48fb87f9f45390435b3cc57484a5dba1df9d",
+        "owner_root": "/var/jfsCache/sc2-qwen-l7same96-197-20260924-r1/qwen-same/long",
+        "deadline": 1790403303.797456,
+        "lease_seconds": 45,
+        "phase": "completed",
+        "events": {
+          "count": 3870
+        },
+        "pause_attempted": true,
+        "started_at": 1790231816.1257045,
+        "initial_state": {
+          "Dead": false,
+          "Error": "",
+          "ExitCode": 0,
+          "FinishedAt": "0001-01-01T00:00:00Z",
+          "OOMKilled": false,
+          "Paused": false,
+          "Pid": 0,
+          "Restarting": false,
+          "Running": false,
+          "StartedAt": "0001-01-01T00:00:00Z",
+          "Status": "created"
+        },
+        "final_state": {
+          "Dead": false,
+          "Error": "",
+          "ExitCode": 0,
+          "FinishedAt": "2026-09-24T10:41:30.211772936Z",
+          "OOMKilled": false,
+          "Paused": false,
+          "Pid": 0,
+          "Restarting": false,
+          "Running": false,
+          "StartedAt": "2026-09-24T06:36:56.15518741Z",
+          "Status": "exited"
+        },
+        "finished_at": 1790246500.2118912
+      },
+      "qwen-same/long/acceptance-eval96.json": {
+        "result": {
+          "status": "completed",
+          "ended_at": "2026-09-24T10:45:38.090032+00:00",
+          "mode": "evaluation",
+          "process_exit_code": 0,
+          "training_updates": 0,
+          "metrics": {
+            "val/text/test_score": 25.950000286102295,
+            "val/text/tool_call_count/mean": 0,
+            "val/success_rate": 1,
+            "val/sc2_attack_ct": 0,
+            "val/sc2_action_valid": 1,
+            "val/sc2_semantic_action_valid": 1,
+            "val/sc2_semantic_action_evaluable": 1,
+            "val/sc2_projection_action_valid": 1,
+            "val/sc2_executor_action_valid": 1,
+            "val/sc2/episode_count": 8,
+            "val/sc2/no_policy_episode_count": 0,
+            "val/sc2/policy_decision_count": 32
+          },
+          "metrics_finite": true,
+          "response_record_count": 32,
+          "metrics_precision": "binary64-v1",
+          "evaluable_action_count": 32,
+          "valid_evaluable_action_count": 32,
+          "replays": 8,
+          "console_sha256": "671778f305aee52da3b5962938c7a478001bdcee74df0899165ccc716a8209ed",
+          "episode_outcomes": {
+            "trajectories": 8,
+            "natural_games": 8,
+            "wins": 8,
+            "defeats": 0,
+            "ties": 0,
+            "truncated": 0,
+            "natural_win_rate": 1,
+            "outcomes": 8
+          },
+          "natural_match_completed": true,
+          "termination_evidence": "game_result"
+        },
+        "evidence": {
+          "consumed_answers": 32,
+          "valid_consumed_answers": 32,
+          "parsed_plans": 32,
+          "validated_queue_entries": 737,
+          "validated_locally_queued_commands": 456,
+          "execution_scope": "local Depot/Marine commands, not production completion or causal wins"
+        },
+        "checked_at": 1790246751.7861948
+      },
+      "qwen-same/long/runs/eval96/result.json": {
+        "status": "completed",
+        "ended_at": "2026-09-24T10:45:38.090032+00:00",
+        "mode": "evaluation",
+        "process_exit_code": 0,
+        "training_updates": 0,
+        "metrics": {
+          "val/text/test_score": 25.950000286102295,
+          "val/text/tool_call_count/mean": 0,
+          "val/success_rate": 1,
+          "val/sc2_attack_ct": 0,
+          "val/sc2_action_valid": 1,
+          "val/sc2_semantic_action_valid": 1,
+          "val/sc2_semantic_action_evaluable": 1,
+          "val/sc2_projection_action_valid": 1,
+          "val/sc2_executor_action_valid": 1,
+          "val/sc2/episode_count": 8,
+          "val/sc2/no_policy_episode_count": 0,
+          "val/sc2/policy_decision_count": 32
+        },
+        "metrics_finite": true,
+        "response_record_count": 32,
+        "metrics_precision": "binary64-v1",
+        "evaluable_action_count": 32,
+        "valid_evaluable_action_count": 32,
+        "replays": 8,
+        "console_sha256": "671778f305aee52da3b5962938c7a478001bdcee74df0899165ccc716a8209ed",
+        "episode_outcomes": {
+          "trajectories": 8,
+          "natural_games": 8,
+          "wins": 8,
+          "defeats": 0,
+          "ties": 0,
+          "truncated": 0,
+          "natural_win_rate": 1,
+          "outcomes": 8
+        },
+        "natural_match_completed": true,
+        "termination_evidence": "game_result"
+      },
+      "qwen-same/long/runs/eval96/.done": {
+        "status": "completed",
+        "ended_at": "2026-09-24T10:45:38.090032+00:00",
+        "mode": "evaluation",
+        "process_exit_code": 0,
+        "training_updates": 0,
+        "metrics": {
+          "val/text/test_score": 25.950000286102295,
+          "val/text/tool_call_count/mean": 0,
+          "val/success_rate": 1,
+          "val/sc2_attack_ct": 0,
+          "val/sc2_action_valid": 1,
+          "val/sc2_semantic_action_valid": 1,
+          "val/sc2_semantic_action_evaluable": 1,
+          "val/sc2_projection_action_valid": 1,
+          "val/sc2_executor_action_valid": 1,
+          "val/sc2/episode_count": 8,
+          "val/sc2/no_policy_episode_count": 0,
+          "val/sc2/policy_decision_count": 32
+        },
+        "metrics_finite": true,
+        "response_record_count": 32,
+        "metrics_precision": "binary64-v1",
+        "evaluable_action_count": 32,
+        "valid_evaluable_action_count": 32,
+        "replays": 8,
+        "console_sha256": "671778f305aee52da3b5962938c7a478001bdcee74df0899165ccc716a8209ed",
+        "episode_outcomes": {
+          "trajectories": 8,
+          "natural_games": 8,
+          "wins": 8,
+          "defeats": 0,
+          "ties": 0,
+          "truncated": 0,
+          "natural_win_rate": 1,
+          "outcomes": 8
+        },
+        "natural_match_completed": true,
+        "termination_evidence": "game_result"
+      },
+      "qwen-same/long/host-supervision/eval96-guardian.json": {
+        "version": "host-guardian-v1",
+        "container_id": "8afe8504331d9a012489710f2168285b3e0d8358cce6bc983cd6dc185532c31c",
+        "owner_root": "/var/jfsCache/sc2-qwen-l7same96-197-20260924-r1/qwen-same/long",
+        "deadline": 1790403303.797456,
+        "lease_seconds": 45,
+        "phase": "completed",
+        "events": {
+          "count": 66
+        },
+        "pause_attempted": true,
+        "started_at": 1790246504.0286412,
+        "initial_state": {
+          "Dead": false,
+          "Error": "",
+          "ExitCode": 0,
+          "FinishedAt": "0001-01-01T00:00:00Z",
+          "OOMKilled": false,
+          "Paused": false,
+          "Pid": 0,
+          "Restarting": false,
+          "Running": false,
+          "StartedAt": "0001-01-01T00:00:00Z",
+          "Status": "created"
+        },
+        "final_state": {
+          "Dead": false,
+          "Error": "",
+          "ExitCode": 0,
+          "FinishedAt": "2026-09-24T10:45:38.109667781Z",
+          "OOMKilled": false,
+          "Paused": false,
+          "Pid": 0,
+          "Restarting": false,
+          "Running": false,
+          "StartedAt": "2026-09-24T10:41:44.055439778Z",
+          "Status": "exited"
+        },
+        "finished_at": 1790246751.6422055
+      }
+    },
+    "containers": {
+      "pre": {
+        "returncode": 0,
+        "data": {
+          "id": "761f502cd72635dadb63eb301e683b646b7f56dfd3b3ccc285f7ac91b4aaf46b",
+          "state": {
+            "Dead": false,
+            "Error": "",
+            "ExitCode": 0,
+            "FinishedAt": "2026-09-24T06:21:52.357646592Z",
+            "OOMKilled": false,
+            "Paused": false,
+            "Pid": 0,
+            "Restarting": false,
+            "Running": false,
+            "StartedAt": "2026-09-24T06:15:04.214956886Z",
+            "Status": "exited"
+          },
+          "owner": {
+            "clean-core.base-image-id": "sha256:3a773ade07540703574ec33410e31f46799814daa65a23ade9510589546c54f9",
+            "clean-core.spikingbrain-commit": "02561132682c2a66925bb0df9f6a1d3f9e816723",
+            "maintainer": "NVIDIA CORPORATION <cudatools@nvidia.com>",
+            "org.opencontainers.image.ref.name": "ubuntu",
+            "org.opencontainers.image.title": "Clean Core SpikingBrain runtime",
+            "org.opencontainers.image.version": "22.04",
+            "sc2.acceptance.root": "/var/jfsCache/sc2-qwen-l7same96-197-20260924-r1/qwen-same/short"
+          }
+        },
+        "stderr": ""
+      },
+      "train2": {
+        "returncode": 0,
+        "data": {
+          "id": "2fc8071e13000a5bf55bf8fbc0b44cf4072590da4b0bf4afb0e21a6058b7239e",
+          "state": {
+            "Dead": false,
+            "Error": "",
+            "ExitCode": 0,
+            "FinishedAt": "2026-09-24T06:30:42.180648611Z",
+            "OOMKilled": false,
+            "Paused": false,
+            "Pid": 0,
+            "Restarting": false,
+            "Running": false,
+            "StartedAt": "2026-09-24T06:21:53.968977382Z",
+            "Status": "exited"
+          },
+          "owner": {
+            "clean-core.base-image-id": "sha256:3a773ade07540703574ec33410e31f46799814daa65a23ade9510589546c54f9",
+            "clean-core.spikingbrain-commit": "02561132682c2a66925bb0df9f6a1d3f9e816723",
+            "maintainer": "NVIDIA CORPORATION <cudatools@nvidia.com>",
+            "org.opencontainers.image.ref.name": "ubuntu",
+            "org.opencontainers.image.title": "Clean Core SpikingBrain runtime",
+            "org.opencontainers.image.version": "22.04",
+            "sc2.acceptance.root": "/var/jfsCache/sc2-qwen-l7same96-197-20260924-r1/qwen-same/short"
+          }
+        },
+        "stderr": ""
+      },
+      "post": {
+        "returncode": 0,
+        "data": {
+          "id": "738de48fc1f46c3da4a9afa92b758d59016771b0aaf333fe3f427136906f46a4",
+          "state": {
+            "Dead": false,
+            "Error": "",
+            "ExitCode": 0,
+            "FinishedAt": "2026-09-24T06:36:37.240015038Z",
+            "OOMKilled": false,
+            "Paused": false,
+            "Pid": 0,
+            "Restarting": false,
+            "Running": false,
+            "StartedAt": "2026-09-24T06:30:44.737640021Z",
+            "Status": "exited"
+          },
+          "owner": {
+            "clean-core.base-image-id": "sha256:3a773ade07540703574ec33410e31f46799814daa65a23ade9510589546c54f9",
+            "clean-core.spikingbrain-commit": "02561132682c2a66925bb0df9f6a1d3f9e816723",
+            "maintainer": "NVIDIA CORPORATION <cudatools@nvidia.com>",
+            "org.opencontainers.image.ref.name": "ubuntu",
+            "org.opencontainers.image.title": "Clean Core SpikingBrain runtime",
+            "org.opencontainers.image.version": "22.04",
+            "sc2.acceptance.root": "/var/jfsCache/sc2-qwen-l7same96-197-20260924-r1/qwen-same/short"
+          }
+        },
+        "stderr": ""
+      },
+      "train96": {
+        "returncode": 0,
+        "data": {
+          "id": "80abe03174c3b0b584e16b1d0aef48fb87f9f45390435b3cc57484a5dba1df9d",
+          "state": {
+            "Dead": false,
+            "Error": "",
+            "ExitCode": 0,
+            "FinishedAt": "2026-09-24T10:41:30.211772936Z",
+            "OOMKilled": false,
+            "Paused": false,
+            "Pid": 0,
+            "Restarting": false,
+            "Running": false,
+            "StartedAt": "2026-09-24T06:36:56.15518741Z",
+            "Status": "exited"
+          },
+          "owner": {
+            "clean-core.base-image-id": "sha256:3a773ade07540703574ec33410e31f46799814daa65a23ade9510589546c54f9",
+            "clean-core.spikingbrain-commit": "02561132682c2a66925bb0df9f6a1d3f9e816723",
+            "maintainer": "NVIDIA CORPORATION <cudatools@nvidia.com>",
+            "org.opencontainers.image.ref.name": "ubuntu",
+            "org.opencontainers.image.title": "Clean Core SpikingBrain runtime",
+            "org.opencontainers.image.version": "22.04",
+            "sc2.acceptance.root": "/var/jfsCache/sc2-qwen-l7same96-197-20260924-r1/qwen-same/long"
+          }
+        },
+        "stderr": ""
+      },
+      "eval96": {
+        "returncode": 0,
+        "data": {
+          "id": "8afe8504331d9a012489710f2168285b3e0d8358cce6bc983cd6dc185532c31c",
+          "state": {
+            "Dead": false,
+            "Error": "",
+            "ExitCode": 0,
+            "FinishedAt": "2026-09-24T10:45:38.109667781Z",
+            "OOMKilled": false,
+            "Paused": false,
+            "Pid": 0,
+            "Restarting": false,
+            "Running": false,
+            "StartedAt": "2026-09-24T10:41:44.055439778Z",
+            "Status": "exited"
+          },
+          "owner": {
+            "clean-core.base-image-id": "sha256:3a773ade07540703574ec33410e31f46799814daa65a23ade9510589546c54f9",
+            "clean-core.spikingbrain-commit": "02561132682c2a66925bb0df9f6a1d3f9e816723",
+            "maintainer": "NVIDIA CORPORATION <cudatools@nvidia.com>",
+            "org.opencontainers.image.ref.name": "ubuntu",
+            "org.opencontainers.image.title": "Clean Core SpikingBrain runtime",
+            "org.opencontainers.image.version": "22.04",
+            "sc2.acceptance.root": "/var/jfsCache/sc2-qwen-l7same96-197-20260924-r1/qwen-same/long"
+          }
+        },
+        "stderr": ""
+      }
+    },
+    "receipt_sha256": {
+      "queue-state.json": "add7d3cb6968576ae11e58851e097cdf4e2a21fba20caa6bd8b770add38b55fc",
+      "dispatch.json": "e64cbe3d5f90b046d15c348a9ec830f63e6f84ecb0309184f8111562531b82cb",
+      "storage-state.json": "392c191fcc4b5b2f75837a160c8221c06c48174c05e209a0dbeebc406268a121",
+      "qwen-same/short/state.json": "8aef51df25b73b08ebcb201890287f1ff3534dce230271caa9c55bc73fea6324",
+      "qwen-same/short/host-supervision/state.json": "8aef51df25b73b08ebcb201890287f1ff3534dce230271caa9c55bc73fea6324",
+      "qwen-same/long/state.json": "d73669643ba32185ad503543868b3fab23ca8792ad2770d8c8304cc5b6cb9c01",
+      "qwen-same/long/host-supervision/state.json": "d73669643ba32185ad503543868b3fab23ca8792ad2770d8c8304cc5b6cb9c01",
+      "qwen-same/short/acceptance-pre.json": "5883930c6018443a7949ae82740aa8251bcb1bf5272efe87e3ee4c493153e4fa",
+      "qwen-same/short/runs/pre/result.json": "b1b882f30e50d7fceee39cad727f8198f2ccdd8cbb50315041530d6404f4ac07",
+      "qwen-same/short/runs/pre/.done": "b1b882f30e50d7fceee39cad727f8198f2ccdd8cbb50315041530d6404f4ac07",
+      "qwen-same/short/host-supervision/pre-guardian.json": "763eb9f53b63040980ce156b2efb87b8025b47b5eea5b7e8ab676e1970cfd760",
+      "qwen-same/short/acceptance-train2.json": "833619a9e3d8b46d1124e8498d61b9ebb5721220371a7e19282da72198354957",
+      "qwen-same/short/runs/train2/result.json": "77dcf3fd26ba06f21486a43f93f07b23d88fd7e781677de7bcaf7744b7f3e8db",
+      "qwen-same/short/runs/train2/.done": "77dcf3fd26ba06f21486a43f93f07b23d88fd7e781677de7bcaf7744b7f3e8db",
+      "qwen-same/short/host-supervision/train2-guardian.json": "cc65760e56592611421eb87c5bc5e91600333645c60293cfdb3110d863641316",
+      "qwen-same/short/acceptance-post.json": "70dac02935b7e0624da03c076e7a72d6994ff0151c44ca467a1ba108d3ec0c98",
+      "qwen-same/short/runs/post/result.json": "84550938e18ce18f7c71b57662836e273f3126e9c02fd0843e1d419868409ef0",
+      "qwen-same/short/runs/post/.done": "84550938e18ce18f7c71b57662836e273f3126e9c02fd0843e1d419868409ef0",
+      "qwen-same/short/host-supervision/post-guardian.json": "cfc43c49c82bf96e6d560f0f568bd2db60df8410df2d72f2a981faf9356e7696",
+      "qwen-same/long/acceptance-train96.json": "3f66e1dbe5d592c52b7c79cc3a148a24f228e5567b708ce1089d0323919e68c2",
+      "qwen-same/long/runs/train96/result.json": "74a8be74d140d455a6c1177c3a7268e25286008e3893fc135201ce048da06bb4",
+      "qwen-same/long/runs/train96/.done": "74a8be74d140d455a6c1177c3a7268e25286008e3893fc135201ce048da06bb4",
+      "qwen-same/long/host-supervision/train96-guardian.json": "e20d9b3e1fe90685d786ada2466b84d1ab96d8827356d54f5ed5822497181c7d",
+      "qwen-same/long/acceptance-eval96.json": "bd2a8891ba250084129c5cb931b8a4b80754576bb1735e5fd3f17eb84dacf1e5",
+      "qwen-same/long/runs/eval96/result.json": "ff2a9413ba89020495c54463f8f06f011be19836622742b00eb276537efee420",
+      "qwen-same/long/runs/eval96/.done": "ff2a9413ba89020495c54463f8f06f011be19836622742b00eb276537efee420",
+      "qwen-same/long/host-supervision/eval96-guardian.json": "8f94c748d077b9435b12823d8a406af2d2f3688ac50ce2035a122c4cf66338c1"
+    }
+  },
+  "limitations": [
+    "Old Qwen same precision-gap strict failure and old random r4 failure remain unchanged.",
+    "Pre 7/8, CP2 post 6/8, CP96 eval 8/8 are eight reused paired seeds, not independent evidence of generalization or architecture advantage.",
+    "checkpoint_evaluation.answers contains inherited SpB observer wording; frozen manifest identifies Qwen.",
+    "13 checkpoint inventories verified by file metadata only; no large checkpoint payload read."
+  ],
+  "monitor": {
+    "id": "197-qwen-cp8",
+    "delete_status": "not_found",
+    "new_monitor_created": false
+  }
+}
+

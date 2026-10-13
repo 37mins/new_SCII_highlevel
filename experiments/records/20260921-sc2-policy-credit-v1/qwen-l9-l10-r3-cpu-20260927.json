@@ -1,0 +1,295 @@
+{
+  "checked_at": "2026-09-27T22:11:22.316386+08:00",
+  "controller_sha": "5152bbb74def8d0bd54d172c70bf18dfa2fed90a",
+  "runtime_sha": "1c6cf60b111570ef13f9817d0b1b16fb774546f5",
+  "host": {
+    "passed": true,
+    "tests": 71,
+    "skips": 0,
+    "cuda_initialized": false,
+    "host_only": true,
+    "runtime_sha": "1c6cf60b111570ef13f9817d0b1b16fb774546f5",
+    "checked_at": 1790517979.7576935,
+    "controller_sha": "5152bbb74def8d0bd54d172c70bf18dfa2fed90a"
+  },
+  "regressions": {
+    "passed": true,
+    "tests": 235,
+    "skips": 0,
+    "cuda_initialized": false,
+    "host_only": false,
+    "runtime_sha": "1c6cf60b111570ef13f9817d0b1b16fb774546f5",
+    "checked_at": 1790518098.9407415,
+    "controller_sha": "5152bbb74def8d0bd54d172c70bf18dfa2fed90a",
+    "continuation_tests": 23
+  },
+  "native_steps": [
+    {
+      "step": 32,
+      "driver_rng": true,
+      "rank_rng": 8,
+      "scheduler_step": 32,
+      "next_reset_index": 32
+    },
+    {
+      "step": 64,
+      "driver_rng": true,
+      "rank_rng": 8,
+      "scheduler_step": 64,
+      "next_reset_index": 64
+    },
+    {
+      "step": 96,
+      "driver_rng": true,
+      "rank_rng": 8,
+      "scheduler_step": 96,
+      "next_reset_index": 96
+    }
+  ],
+  "native_receipt_sha256": "d8653e94ce18e3af784426f384f3a0035226bd08ad54e329dfca383a93c6e32f",
+  "containers": [
+    {
+      "id": "7e618345802e48692831d3a9551b7bb3991d744c45fd0d04d401c184cb3d968d",
+      "name": "/sc2-qwen-l9same96-197-20260927-r3-short-regressions",
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-09-27T14:08:06.026578894Z",
+        "FinishedAt": "2026-09-27T14:08:20.140907935Z"
+      },
+      "devices": null
+    },
+    {
+      "id": "cf6008b1f9a1caaf09b94eb215bb60b1cca65d48efd493d1f687cdf7ab4a5c6c",
+      "name": "/sc2-qwen-l9same96-197-20260927-r3-short-cpu",
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-09-27T14:08:20.354429195Z",
+        "FinishedAt": "2026-09-27T14:08:25.050233364Z"
+      },
+      "devices": null
+    },
+    {
+      "id": "f0ea678d1e7706a003f3ec42826cec0dacb13034840098201321e379ad209eb7",
+      "name": "/sc2-qwen-l9same96-197-20260927-r3-long-cpu",
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-09-27T14:08:25.323351312Z",
+        "FinishedAt": "2026-09-27T14:08:30.258715853Z"
+      },
+      "devices": null
+    },
+    {
+      "id": "c15c64b50373a957fe51794b659d62104ba17ce577c07801f895c7ab2aebd52d",
+      "name": "/sc2-qwen-l10same96-197-20260927-r3-short-cpu",
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-09-27T14:08:30.497616645Z",
+        "FinishedAt": "2026-09-27T14:08:36.093099019Z"
+      },
+      "devices": null
+    },
+    {
+      "id": "c4c7a852c10eb435b2149ff8a2a0415195288987fde08d01a08798617c7118cc",
+      "name": "/sc2-qwen-l10same96-197-20260927-r3-long-cpu",
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-09-27T14:08:36.314764035Z",
+        "FinishedAt": "2026-09-27T14:08:41.553400209Z"
+      },
+      "devices": null
+    },
+    {
+      "id": "e777c8eb4cbc314cd6520c83da3f3a0ede2f24d5ff54ca4afb68c67db43183ab",
+      "name": "/sc2-qwen-l9same96-197-20260927-r3-long-cpu-hook-eval96",
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-09-27T14:08:41.786735047Z",
+        "FinishedAt": "2026-09-27T14:08:51.77384287Z"
+      },
+      "devices": null
+    },
+    {
+      "id": "ad556a99c7a6889e1aae83f671684defd1cf85fb42bec6b2cf88c9e349727342",
+      "name": "/sc2-qwen-l10same96-197-20260927-r3-short-cpu-hook-pre",
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-09-27T14:08:52.015382067Z",
+        "FinishedAt": "2026-09-27T14:09:02.00190969Z"
+      },
+      "devices": null
+    },
+    {
+      "id": "ad9e8da2f5562afa62c06161b1674aab8de48f3ba76d28b287c8c355b9ac908c",
+      "name": "/sc2-qwen-l10same96-197-20260927-r3-short-cpu-hook-train2",
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-09-27T14:09:02.23839194Z",
+        "FinishedAt": "2026-09-27T14:09:12.200407777Z"
+      },
+      "devices": null
+    },
+    {
+      "id": "86e210a51e2d25fd0b77c3468890b8de0329f15b97763a23beec98f6d5f6c7f8",
+      "name": "/sc2-qwen-l10same96-197-20260927-r3-long-cpu-hook-train96",
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-09-27T14:09:12.469209439Z",
+        "FinishedAt": "2026-09-27T14:09:22.676495457Z"
+      },
+      "devices": null
+    },
+    {
+      "id": "7ec02af5572da6397b6fbc8bdb096faf2d4837ad6cb0560c4c0532283d06699a",
+      "name": "/sc2-qwen-l9same96-197-20260927-r3-long-retained-cpu",
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-09-27T14:09:22.944549125Z",
+        "FinishedAt": "2026-09-27T14:09:24.719347262Z"
+      },
+      "devices": null
+    }
+  ],
+  "local_regression": {
+    "tests": 112,
+    "skips": 0,
+    "red_reproduction": "Before correction, the new real-admission full queue order test raised FileExistsError at the second fsync-eval96; after correction all112 passed.",
+    "coverage": "Real fsync/readback along all ten admission calls; external resource checks and Docker execution mocked only."
+  },
+  "native": {
+    "passed": true,
+    "cuda_initialized": false,
+    "steps": [
+      {
+        "step": 32,
+        "driver_rng": true,
+        "rank_rng": 8,
+        "scheduler_step": 32,
+        "next_reset_index": 32
+      },
+      {
+        "step": 64,
+        "driver_rng": true,
+        "rank_rng": 8,
+        "scheduler_step": 64,
+        "next_reset_index": 64
+      },
+      {
+        "step": 96,
+        "driver_rng": true,
+        "rank_rng": 8,
+        "scheduler_step": 96,
+        "next_reset_index": 96
+      }
+    ],
+    "runtime_sha": "1c6cf60b111570ef13f9817d0b1b16fb774546f5",
+    "checked_at": 1790518164.4566805,
+    "inventory_count": 78,
+    "receipt_sha256": "d8653e94ce18e3af784426f384f3a0035226bd08ad54e329dfca383a93c6e32f"
+  },
+  "actual_launcher_configs": 6,
+  "actual_parts": 4,
+  "actual_cpu_ray_hooks": [
+    {
+      "level": 9,
+      "part": "long",
+      "stage": "eval96"
+    },
+    {
+      "level": 10,
+      "part": "short",
+      "stage": "pre"
+    },
+    {
+      "level": 10,
+      "part": "short",
+      "stage": "train2"
+    },
+    {
+      "level": 10,
+      "part": "long",
+      "stage": "train96"
+    }
+  ],
+  "check_cpu_returned": true,
+  "no_gpu_or_game_claim_from_cpu": true
+}

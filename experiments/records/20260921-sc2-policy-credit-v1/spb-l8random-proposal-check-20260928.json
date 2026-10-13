@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "status": "planned_budget_pending",
+  "checked_at": "2026-09-28T22:24:53.248062+08:00",
+  "request": "Start L8 SpB random-seed 96-step RL from original SpB, not a checkpoint evaluation.",
+  "read_only": true,
+  "node": "sc2-a100-197",
+  "source_head": "7d40a2ec105163d5c47ebb18682b090f1dcb2826",
+  "previous_qwen_queue": {
+    "phase": "completed",
+    "completed": [
+      "qwen-random/short",
+      "qwen-random/long",
+      "selection32",
+      "paired64"
+    ],
+    "new_games": 1112,
+    "new_updates": 96,
+    "part": "paired64",
+    "deadline": 1790639115.4663188,
+    "component_deadline": 1790617515.4663188,
+    "exit_code": 0,
+    "learning_validated": false,
+    "finished_at": 1790594429.5263364
+  },
+  "previous_qwen_eval": {
+    "phase": "completed",
+    "exit_code": 0,
+    "finished_at": 1790594429.5257733
+  },
+  "gpu_rows": [
+    "0, NVIDIA A100-SXM4-80GB, 0, 0",
+    "1, NVIDIA A100-SXM4-80GB, 0, 0",
+    "2, NVIDIA A100-SXM4-80GB, 0, 0",
+    "3, NVIDIA A100-SXM4-80GB, 0, 0",
+    "4, NVIDIA A100-SXM4-80GB, 0, 0",
+    "5, NVIDIA A100-SXM4-80GB, 0, 0",
+    "6, NVIDIA A100-SXM4-80GB, 0, 0",
+    "7, NVIDIA A100-SXM4-80GB, 0, 0"
+  ],
+  "compute_apps": [],
+  "running_containers": [
+    "62a197a64abc5cb6f8f518d0140aa79ba8ea08a84ec813987e826743c651f88f new_scii_spb2_stageguard_v1_20260815 Up 6 weeks",
+    "2542e9ed108bfed2b63f002f8f8aca6270d5687fa4756a0527c33aaf84996ffb new_scii_spb2_runtime_v1_20260815 Up 6 weeks",
+    "269b6d79d3b404b75db2e48744d846e53fa15436397e9cd2db5ca3ad3c358cfd new_scii_clean_core_20260815 Up 6 weeks",
+    "9c608a58d0be6581247d4d62bb785dbd29a0d5847df99f7ca60caf05fb959373 sc2_spb2_l7_env_20260814 Up 6 weeks"
+  ],
+  "free_bytes": 831333736448,
+  "memory": {
+    "MemTotal": 946517544960,
+    "MemAvailable": 812322947072
+  },
+  "original_spb": {
+    "model_path": "/data/yangjinyue/sc2-spb2-level7-20260814/model",
+    "model_exists": true,
+    "historical_runtime": "83f3530765babe048035524ddf1651291810818a",
+    "model_id": "Panyuqi/SpikingBrain-2.0-instruct",
+    "model_revision": "sha256:de52e8ef993afc763f9d4fb498e8d8302ef0bc13bd7dfd53c6ae5f77f43698b5",
+    "model_manifest_sha256": "40d6f1417568d5fda1107cdafd66c7441a679b03fb148851c8f226ecc9cf884c"
+  },
+  "checkpoint_size_probe": {
+    "path": "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/spb-random/long/runs/train96/checkpoints/global_step_96",
+    "file_count": 36,
+    "total_bytes": 63570346205,
+    "four_checkpoint_bytes": 254281384820,
+    "method": "File metadata only in this exact checkpoint tree; no parameter or optimizer tensors read."
+  },
+  "proposed_roots_exist": {
+    "/var/jfsCache/sc2-spb-l8random96-197-20260928-r1": false,
+    "/var/jfsCache/sc2-spb-l8random-paired128-197-20260928-r1": false,
+    "/var/jfsCache/sc2-spb-l8random96-197-source-20260928-r1": false
+  },
+  "proposed_budget": {
+    "training_games": 768,
+    "diagnostic_games": 24,
+    "selection_games": 128,
+    "primary_games": 128,
+    "total_games": 1048,
+    "ppo_updates": 96,
+    "train_selection_wall_hours": 24,
+    "train_selection_gpu_hours": 192,
+    "primary_wall_hours": 6,
+    "primary_gpu_hours": 48,
+    "suite_wall_hours": 30,
+    "suite_gpu_hours": 240,
+    "train_selection_storage_gib": 320,
+    "primary_storage_gib": 32,
+    "suite_storage_gib": 352,
+    "train_free_disk_gib": 416,
+    "eval_free_disk_gib": 128,
+    "available_ram_gib": 600
+  },
+  "authority": "User requested starting this experiment; the new numeric resource budget and any own-run checkpoint pruning have not yet been confirmed.",
+  "actions": {
+    "server_writes": false,
+    "prepare": false,
+    "queue": false,
+    "gpu_dispatch": false,
+    "delete": false,
+    "stop": false
+  },
+  "limitations": [
+    "Snapshot is not a permanent resource reservation.",
+    "Model exists and historical manifest is recorded; new source/asset/Hydra/CPU/GPU admission is not yet performed.",
+    "This receipt is not evidence of a running SpB L8 experiment."
+  ]
+}

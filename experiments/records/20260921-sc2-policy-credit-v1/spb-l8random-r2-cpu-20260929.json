@@ -1,0 +1,673 @@
+{
+  "checked_at": 1790647807.4006784,
+  "checked_at_beijing": "2026-09-29T10:10:07.400692+08:00",
+  "preparation": {
+    "status": "passed",
+    "runtime_sha": "12f3600ca8e6e8edabc460de70860baeef2b5146",
+    "started_at": 1790647644.0854056,
+    "jobs": [
+      {
+        "label": "host-regressions",
+        "started_at": 1790647644.085412,
+        "exit_code": 0,
+        "finished_at": 1790647645.000252
+      },
+      {
+        "label": "host-lifecycle",
+        "started_at": 1790647645.0007458,
+        "exit_code": 0,
+        "finished_at": 1790647652.6243918
+      },
+      {
+        "label": "batch-churn",
+        "started_at": 1790647652.624931,
+        "exit_code": 0,
+        "finished_at": 1790647654.8917193
+      },
+      {
+        "label": "model-regressions",
+        "started_at": 1790647655.0025496,
+        "exit_code": 0,
+        "finished_at": 1790647671.285808,
+        "container_name": "sc2-spb-l8random96-197-20260929-r2-short-regressions",
+        "container_id": "de2b21e214dd28be8d3468829675bdd9b729bdc53268fb504fbb3f2c17bdfc3e",
+        "state": "exited",
+        "oom": false,
+        "device_requests": null
+      },
+      {
+        "label": "short-configs",
+        "started_at": 1790647671.4090307,
+        "exit_code": 0,
+        "finished_at": 1790647677.8307188,
+        "container_name": "sc2-spb-l8random96-197-20260929-r2-short-cpu",
+        "container_id": "dc821129b6ae1b1edd021f6b1d5c140584bd48f21379530ae240b24f82cd7664",
+        "state": "exited",
+        "oom": false,
+        "device_requests": null
+      },
+      {
+        "label": "long-configs",
+        "started_at": 1790647677.9551253,
+        "exit_code": 0,
+        "finished_at": 1790647683.7758384,
+        "container_name": "sc2-spb-l8random96-197-20260929-r2-long-cpu",
+        "container_id": "29c9a2336b6d27819ec692dda5367df773ea97d5e233e165f0107cee0797ac6e",
+        "state": "exited",
+        "oom": false,
+        "device_requests": null
+      },
+      {
+        "label": "primary-configs",
+        "started_at": 1790647683.8863454,
+        "exit_code": 0,
+        "finished_at": 1790647695.864433,
+        "container_name": "sc2-spb-l8random-paired128-197-20260929-r2-cpu",
+        "container_id": "62e1dfeb66d977abc14297dfb88847d2d49e0c0dcc2a06b308d2d4037e15de98",
+        "state": "exited",
+        "oom": false,
+        "device_requests": null
+      },
+      {
+        "label": "selection-configs",
+        "started_at": 1790647695.9761627,
+        "exit_code": 0,
+        "finished_at": 1790647707.904116,
+        "container_name": "sc2-spb-l8random96-197-20260929-r2-select-cpu",
+        "container_id": "dc5dcb59f31cf1f24dd4fe03fbbeb42f0f6045ca24e106a5ac33fd88b06276bc",
+        "state": "exited",
+        "oom": false,
+        "device_requests": null
+      },
+      {
+        "label": "train-hook-pre",
+        "started_at": 1790647708.0309038,
+        "exit_code": 0,
+        "finished_at": 1790647718.3073027,
+        "container_name": "sc2-spb-l8random96-197-20260929-r2-short-cpu-hook-pre",
+        "container_id": "c56d353308e2fa67f3cb8b78609f7b44facc6f60863f1d78152ed9ec7f696272",
+        "state": "exited",
+        "oom": false,
+        "device_requests": null
+      },
+      {
+        "label": "train-hook-train2",
+        "started_at": 1790647718.4315188,
+        "exit_code": 0,
+        "finished_at": 1790647728.857772,
+        "container_name": "sc2-spb-l8random96-197-20260929-r2-short-cpu-hook-train2",
+        "container_id": "5b8c40a06af502b003faa1ccbc9f6f84f441eff614d728b595030fcbb8f4cbf7",
+        "state": "exited",
+        "oom": false,
+        "device_requests": null
+      },
+      {
+        "label": "train-hook-train96",
+        "started_at": 1790647728.9833724,
+        "exit_code": 0,
+        "finished_at": 1790647739.5098143,
+        "container_name": "sc2-spb-l8random96-197-20260929-r2-long-cpu-hook-train96",
+        "container_id": "3aa2178720b9e8f7221a90a3c940b25617cf6405781d4adadc2f6999ea43ae22",
+        "state": "exited",
+        "oom": false,
+        "device_requests": null
+      },
+      {
+        "label": "primary-hook-b00-original",
+        "started_at": 1790647739.620551,
+        "exit_code": 0,
+        "finished_at": 1790647749.7466462,
+        "container_name": "sc2-spb-l8random-paired128-197-20260929-r2-cpu-hook-b00-original",
+        "container_id": "50a3efdaf69d4caf00d85370ab5c4159860dc1fbfb44126735647bce06af6f17",
+        "state": "exited",
+        "oom": false,
+        "device_requests": null
+      },
+      {
+        "label": "primary-hook-b00-random96",
+        "started_at": 1790647749.8573146,
+        "exit_code": 0,
+        "finished_at": 1790647760.3340535,
+        "container_name": "sc2-spb-l8random-paired128-197-20260929-r2-cpu-hook-b00-random96",
+        "container_id": "930285cca9439643cb1dc80dca49bdc94c5db0801873ffdb0a46b8ef04aba30c",
+        "state": "exited",
+        "oom": false,
+        "device_requests": null
+      },
+      {
+        "label": "selection-hook-b00-cp2",
+        "started_at": 1790647760.4449306,
+        "exit_code": 0,
+        "finished_at": 1790647770.6211467,
+        "container_name": "sc2-spb-l8random96-197-20260929-r2-select-cpu-hook-b00-cp2",
+        "container_id": "da4323be2e8932cf32542ed8fec66b477dfad5e9a6d15886f9f5edba01ef5291",
+        "state": "exited",
+        "oom": false,
+        "device_requests": null
+      },
+      {
+        "label": "selection-hook-b00-cp32",
+        "started_at": 1790647770.7340672,
+        "exit_code": 0,
+        "finished_at": 1790647780.759836,
+        "container_name": "sc2-spb-l8random96-197-20260929-r2-select-cpu-hook-b00-cp32",
+        "container_id": "78b396c827c8db9580e1fe7872d1df110fb3acbaaa793153d8b2f38f74f95b9b",
+        "state": "exited",
+        "oom": false,
+        "device_requests": null
+      },
+      {
+        "label": "selection-hook-b00-cp64",
+        "started_at": 1790647780.8733687,
+        "exit_code": 0,
+        "finished_at": 1790647791.1002946,
+        "container_name": "sc2-spb-l8random96-197-20260929-r2-select-cpu-hook-b00-cp64",
+        "container_id": "388346edf92653df2c3c7e7e770d0e86305a3d055bd63206e229c81025e80d2a",
+        "state": "exited",
+        "oom": false,
+        "device_requests": null
+      },
+      {
+        "label": "selection-hook-b00-cp96",
+        "started_at": 1790647791.2114565,
+        "exit_code": 0,
+        "finished_at": 1790647801.3374007,
+        "container_name": "sc2-spb-l8random96-197-20260929-r2-select-cpu-hook-b00-cp96",
+        "container_id": "18fddedda5e4726712fe7abd7c54b3fc39b70536eb05d0be2039b1965584d5fd",
+        "state": "exited",
+        "oom": false,
+        "device_requests": null
+      }
+    ],
+    "no_gpu": true,
+    "finished_at": 1790647801.5038083
+  },
+  "host_regressions": {
+    "passed": true,
+    "tests": 79,
+    "skips": 0,
+    "cuda_initialized": false,
+    "host_only": true,
+    "runtime_sha": "12f3600ca8e6e8edabc460de70860baeef2b5146",
+    "checked_at": 1790647644.9618266
+  },
+  "model_regressions": {
+    "passed": true,
+    "tests": 195,
+    "skips": 0,
+    "cuda_initialized": false,
+    "host_only": false,
+    "runtime_sha": "12f3600ca8e6e8edabc460de70860baeef2b5146",
+    "checked_at": 1790647670.024448
+  },
+  "storage_probes": {
+    "passed": true,
+    "runtime_sha": "12f3600ca8e6e8edabc460de70860baeef2b5146",
+    "checked_at": 1790647654.8921432,
+    "no_gpu": true,
+    "tests": [
+      "cpu-host-lifecycle",
+      "cpu-batch-churn"
+    ]
+  },
+  "batch_probe": {
+    "passed": true,
+    "checked_at": 1790647654.8399765,
+    "runtime_sha": "12f3600ca8e6e8edabc460de70860baeef2b5146",
+    "stage_state": {
+      "version": "host-guardian-v1",
+      "phase": "completed",
+      "completed": [
+        "churn"
+      ],
+      "deadline": 1790647772.6909063,
+      "learning_validated": false,
+      "started_at": 1790647652.6912277,
+      "stage": "churn",
+      "container_id": "e1b9e2f54708da89f36a4340feb8be2a224546ea43d7a57ad6460fc7ebc688d1",
+      "exit_code": 0,
+      "finished_at": 1790647654.8394454
+    },
+    "pause_count": 8,
+    "account_count": 4,
+    "container": {
+      "container_id": "e1b9e2f54708da89f36a4340feb8be2a224546ea43d7a57ad6460fc7ebc688d1",
+      "state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-09-29T02:07:34.757909391Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-09-29T02:07:32.800181513Z",
+        "Status": "exited"
+      },
+      "scope": {
+        "gpu_requests": null,
+        "mounts": [
+          {
+            "Type": "bind",
+            "Source": "/var/jfsCache/sc2-spb-l8random96-197-20260929-r2/cpu-batch-churn",
+            "Destination": "/fixture",
+            "Mode": "",
+            "RW": true,
+            "Propagation": "rprivate"
+          }
+        ],
+        "image": "sha256:1a497d5721f89bb2e98c0273c4b1495f8fdc6921d589650d090871c11b8d1649",
+        "network": "none"
+      }
+    },
+    "no_gpu": true,
+    "no_games": true,
+    "no_model": true,
+    "limit_bytes": 1073741824
+  },
+  "queue": null,
+  "dispatch": null,
+  "short_host": null,
+  "suite_storage": {
+    "command": [
+      "du",
+      "-sb",
+      "--null",
+      "--",
+      "/var/jfsCache/sc2-spb-l8random96-197-20260928-r1",
+      "/var/jfsCache/sc2-spb-l8random-paired128-197-20260928-r1",
+      "/var/jfsCache/sc2-spb-l8random96-197-source-20260928-r1",
+      "/var/jfsCache/sc2-spb-l8random96-197-20260929-r2",
+      "/var/jfsCache/sc2-spb-l8random-paired128-197-20260929-r2",
+      "/var/jfsCache/sc2-spb-l8random96-197-source-20260929-r2"
+    ],
+    "roots": [
+      "/var/jfsCache/sc2-spb-l8random96-197-20260928-r1",
+      "/var/jfsCache/sc2-spb-l8random-paired128-197-20260928-r1",
+      "/var/jfsCache/sc2-spb-l8random96-197-source-20260928-r1",
+      "/var/jfsCache/sc2-spb-l8random96-197-20260929-r2",
+      "/var/jfsCache/sc2-spb-l8random-paired128-197-20260929-r2",
+      "/var/jfsCache/sc2-spb-l8random96-197-source-20260929-r2"
+    ],
+    "deadline": 1790662043.9588387,
+    "limit": 377957122048,
+    "bytes": 64511195173,
+    "returncode": 0,
+    "stdout": {
+      "tail": "64432989310\t/var/jfsCache/sc2-spb-l8random96-197-20260928-r1\u0000945239\t/var/jfsCache/sc2-spb-l8random-paired128-197-20260928-r1\u000025775629\t/var/jfsCache/sc2-spb-l8random96-197-source-20260928-r1\u000025689636\t/var/jfsCache/sc2-spb-l8random96-197-20260929-r2\u00004649\t/var/jfsCache/sc2-spb-l8random-paired128-197-20260929-r2\u000025790710\t/var/jfsCache/sc2-spb-l8random96-197-source-20260929-r2\u0000",
+      "characters": 375,
+      "truncated": false
+    },
+    "stderr": {
+      "tail": "",
+      "characters": 0,
+      "truncated": false
+    },
+    "measured_at": 1790647644.0837507,
+    "root_bytes": {
+      "/var/jfsCache/sc2-spb-l8random96-197-20260928-r1": 64432989310,
+      "/var/jfsCache/sc2-spb-l8random-paired128-197-20260928-r1": 945239,
+      "/var/jfsCache/sc2-spb-l8random96-197-source-20260928-r1": 25775629,
+      "/var/jfsCache/sc2-spb-l8random96-197-20260929-r2": 25689636,
+      "/var/jfsCache/sc2-spb-l8random-paired128-197-20260929-r2": 4649,
+      "/var/jfsCache/sc2-spb-l8random96-197-source-20260929-r2": 25790710
+    },
+    "status": "measured",
+    "started_at": 1790647643.9588604,
+    "checked_at": 1790647644.083771,
+    "sampling_version": "single-pause-batch-v1",
+    "batch_accounts": 4
+  },
+  "lifecycle": {
+    "passed": true,
+    "heavy_imports": false,
+    "scenarios": [
+      {
+        "scenario": "three-stages",
+        "passed": true,
+        "containers": [
+          {
+            "container_id": "c719a724c90113d03e0817525da00c60ffea3e7def9b702bfe7389388c94b569",
+            "state": {
+              "Dead": false,
+              "Error": "",
+              "ExitCode": 0,
+              "FinishedAt": "2026-09-29T02:07:26.884207718Z",
+              "OOMKilled": false,
+              "Paused": false,
+              "Pid": 0,
+              "Restarting": false,
+              "Running": false,
+              "StartedAt": "2026-09-29T02:07:26.432812811Z",
+              "Status": "exited"
+            },
+            "scope": {
+              "gpu_requests": null,
+              "mounts": [
+                {
+                  "Type": "bind",
+                  "Source": "/var/jfsCache/sc2-spb-l8random96-197-20260929-r2/cpu-host-lifecycle/normal",
+                  "Destination": "/fixture",
+                  "Mode": "",
+                  "RW": true,
+                  "Propagation": "rprivate"
+                }
+              ],
+              "image": "sha256:1a497d5721f89bb2e98c0273c4b1495f8fdc6921d589650d090871c11b8d1649",
+              "network": "none"
+            }
+          },
+          {
+            "container_id": "abed27037a827201aaacda34205371b30008119981cff2eee81bb8f6cfe67830",
+            "state": {
+              "Dead": false,
+              "Error": "",
+              "ExitCode": 0,
+              "FinishedAt": "2026-09-29T02:07:25.591204316Z",
+              "OOMKilled": false,
+              "Paused": false,
+              "Pid": 0,
+              "Restarting": false,
+              "Running": false,
+              "StartedAt": "2026-09-29T02:07:25.170154754Z",
+              "Status": "exited"
+            },
+            "scope": {
+              "gpu_requests": null,
+              "mounts": [
+                {
+                  "Type": "bind",
+                  "Source": "/var/jfsCache/sc2-spb-l8random96-197-20260929-r2/cpu-host-lifecycle/normal",
+                  "Destination": "/fixture",
+                  "Mode": "",
+                  "RW": true,
+                  "Propagation": "rprivate"
+                }
+              ],
+              "image": "sha256:1a497d5721f89bb2e98c0273c4b1495f8fdc6921d589650d090871c11b8d1649",
+              "network": "none"
+            }
+          },
+          {
+            "container_id": "eaff109719c4f1f82eb77075d8ed2aa5d04fc3323d7575658cdf831b893e200a",
+            "state": {
+              "Dead": false,
+              "Error": "",
+              "ExitCode": 0,
+              "FinishedAt": "2026-09-29T02:07:26.247053088Z",
+              "OOMKilled": false,
+              "Paused": false,
+              "Pid": 0,
+              "Restarting": false,
+              "Running": false,
+              "StartedAt": "2026-09-29T02:07:25.826470749Z",
+              "Status": "exited"
+            },
+            "scope": {
+              "gpu_requests": null,
+              "mounts": [
+                {
+                  "Type": "bind",
+                  "Source": "/var/jfsCache/sc2-spb-l8random96-197-20260929-r2/cpu-host-lifecycle/normal",
+                  "Destination": "/fixture",
+                  "Mode": "",
+                  "RW": true,
+                  "Propagation": "rprivate"
+                }
+              ],
+              "image": "sha256:1a497d5721f89bb2e98c0273c4b1495f8fdc6921d589650d090871c11b8d1649",
+              "network": "none"
+            }
+          }
+        ]
+      },
+      {
+        "scenario": "stage-failure",
+        "passed": true,
+        "containers": [
+          {
+            "container_id": "55c41872a5228743064e329ebf3c916eb2805f89ff804e34531c73a03767ea35",
+            "state": {
+              "Dead": false,
+              "Error": "",
+              "ExitCode": 0,
+              "FinishedAt": "2026-09-29T02:07:27.565051292Z",
+              "OOMKilled": false,
+              "Paused": false,
+              "Pid": 0,
+              "Restarting": false,
+              "Running": false,
+              "StartedAt": "2026-09-29T02:07:27.142766097Z",
+              "Status": "exited"
+            },
+            "scope": {
+              "gpu_requests": null,
+              "mounts": [
+                {
+                  "Type": "bind",
+                  "Source": "/var/jfsCache/sc2-spb-l8random96-197-20260929-r2/cpu-host-lifecycle/stage-failure",
+                  "Destination": "/fixture",
+                  "Mode": "",
+                  "RW": true,
+                  "Propagation": "rprivate"
+                }
+              ],
+              "image": "sha256:1a497d5721f89bb2e98c0273c4b1495f8fdc6921d589650d090871c11b8d1649",
+              "network": "none"
+            }
+          },
+          {
+            "container_id": "889d12c994102673bd10083565ed96b53ebc02e38a0c741a88f448e0cc667282",
+            "state": {
+              "Dead": false,
+              "Error": "",
+              "ExitCode": 7,
+              "FinishedAt": "2026-09-29T02:07:28.163844306Z",
+              "OOMKilled": false,
+              "Paused": false,
+              "Pid": 0,
+              "Restarting": false,
+              "Running": false,
+              "StartedAt": "2026-09-29T02:07:27.751314454Z",
+              "Status": "exited"
+            },
+            "scope": {
+              "gpu_requests": null,
+              "mounts": [
+                {
+                  "Type": "bind",
+                  "Source": "/var/jfsCache/sc2-spb-l8random96-197-20260929-r2/cpu-host-lifecycle/stage-failure",
+                  "Destination": "/fixture",
+                  "Mode": "",
+                  "RW": true,
+                  "Propagation": "rprivate"
+                }
+              ],
+              "image": "sha256:1a497d5721f89bb2e98c0273c4b1495f8fdc6921d589650d090871c11b8d1649",
+              "network": "none"
+            }
+          }
+        ]
+      },
+      {
+        "scenario": "supervisor-killed",
+        "passed": true,
+        "containers": [
+          {
+            "container_id": "0b8b6bf73e28e514415c47317a49ffe2827bd0a95cff506d91aa2536276dd664",
+            "state": {
+              "Dead": false,
+              "Error": "",
+              "ExitCode": 0,
+              "FinishedAt": "2026-09-29T02:07:28.709378373Z",
+              "OOMKilled": false,
+              "Paused": false,
+              "Pid": 0,
+              "Restarting": false,
+              "Running": false,
+              "StartedAt": "2026-09-29T02:07:28.512983926Z",
+              "Status": "exited"
+            },
+            "scope": {
+              "gpu_requests": null,
+              "mounts": [
+                {
+                  "Type": "bind",
+                  "Source": "/var/jfsCache/sc2-spb-l8random96-197-20260929-r2/cpu-host-lifecycle/supervisor-killed",
+                  "Destination": "/fixture",
+                  "Mode": "",
+                  "RW": true,
+                  "Propagation": "rprivate"
+                }
+              ],
+              "image": "sha256:1a497d5721f89bb2e98c0273c4b1495f8fdc6921d589650d090871c11b8d1649",
+              "network": "none"
+            }
+          }
+        ]
+      },
+      {
+        "scenario": "pause-expired",
+        "passed": true,
+        "containers": [
+          {
+            "container_id": "4f109b76c93e58bbf1b8af873ebb056bed7db1315b989d39af7e1949b77e384a",
+            "state": {
+              "Dead": false,
+              "Error": "",
+              "ExitCode": 0,
+              "FinishedAt": "2026-09-29T02:07:29.362679803Z",
+              "OOMKilled": false,
+              "Paused": false,
+              "Pid": 0,
+              "Restarting": false,
+              "Running": false,
+              "StartedAt": "2026-09-29T02:07:28.983307799Z",
+              "Status": "exited"
+            },
+            "scope": {
+              "gpu_requests": null,
+              "mounts": [
+                {
+                  "Type": "bind",
+                  "Source": "/var/jfsCache/sc2-spb-l8random96-197-20260929-r2/cpu-host-lifecycle/pause-expired",
+                  "Destination": "/fixture",
+                  "Mode": "",
+                  "RW": true,
+                  "Propagation": "rprivate"
+                }
+              ],
+              "image": "sha256:1a497d5721f89bb2e98c0273c4b1495f8fdc6921d589650d090871c11b8d1649",
+              "network": "none"
+            }
+          }
+        ]
+      },
+      {
+        "scenario": "lease-expired",
+        "passed": true,
+        "containers": [
+          {
+            "container_id": "e639c2ffe9cb6b19ba5380545f31468bc7c2a69c951765fcbdc3dac0fe263479",
+            "state": {
+              "Dead": false,
+              "Error": "",
+              "ExitCode": 0,
+              "FinishedAt": "2026-09-29T02:07:31.516619602Z",
+              "OOMKilled": false,
+              "Paused": false,
+              "Pid": 0,
+              "Restarting": false,
+              "Running": false,
+              "StartedAt": "2026-09-29T02:07:30.393508763Z",
+              "Status": "exited"
+            },
+            "scope": {
+              "gpu_requests": null,
+              "mounts": [
+                {
+                  "Type": "bind",
+                  "Source": "/var/jfsCache/sc2-spb-l8random96-197-20260929-r2/cpu-host-lifecycle/lease-expired",
+                  "Destination": "/fixture",
+                  "Mode": "",
+                  "RW": true,
+                  "Propagation": "rprivate"
+                }
+              ],
+              "image": "sha256:1a497d5721f89bb2e98c0273c4b1495f8fdc6921d589650d090871c11b8d1649",
+              "network": "none"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "readiness": {
+    "short": {
+      "passed": true,
+      "runtime_sha": "12f3600ca8e6e8edabc460de70860baeef2b5146",
+      "cuda_initialized": false
+    },
+    "long": {
+      "passed": true,
+      "runtime_sha": "12f3600ca8e6e8edabc460de70860baeef2b5146",
+      "cuda_initialized": false
+    },
+    "selection": {
+      "passed": true,
+      "runtime_sha": "12f3600ca8e6e8edabc460de70860baeef2b5146",
+      "cuda_initialized": false,
+      "stages": [
+        "b00-cp2",
+        "b01-cp2",
+        "b02-cp2",
+        "b03-cp2",
+        "b00-cp32",
+        "b01-cp32",
+        "b02-cp32",
+        "b03-cp32",
+        "b00-cp64",
+        "b01-cp64",
+        "b02-cp64",
+        "b03-cp64",
+        "b00-cp96",
+        "b01-cp96",
+        "b02-cp96",
+        "b03-cp96"
+      ]
+    },
+    "primary": {
+      "passed": true,
+      "runtime_sha": "12f3600ca8e6e8edabc460de70860baeef2b5146",
+      "cuda_initialized": false,
+      "stages": [
+        "b00-original",
+        "b00-random96",
+        "b01-random96",
+        "b01-original",
+        "b02-original",
+        "b02-random96",
+        "b03-random96",
+        "b03-original",
+        "b04-original",
+        "b04-random96",
+        "b05-random96",
+        "b05-original",
+        "b06-original",
+        "b06-random96",
+        "b07-random96",
+        "b07-original"
+      ]
+    }
+  },
+  "local_tests": {
+    "command": "PYTHONPATH=/private/tmp/sc2-spb-l8-testdeps.nzp1NX:tests:. PYTHONDONTWRITEBYTECODE=1 python3 -B -m unittest test_storage_batch197 test_host_stage197 test_storage_quiescent197 test_policy_credit_storage197 test_policy_credit_storage_coordination197 test_spb_l8random197 test_qwen_l8random197 test_qwen_l8random_retention test_qwen_l7same_fresh197 test_spb_l7_random197 test_sc2_policy_resume -q",
+    "tests": 200,
+    "passed": 196,
+    "skipped": 4,
+    "skip_reason": "Linux-only strict GNU du fixtures; actual Linux host regression subsequently passed with zero skips."
+  },
+  "scope": "CPU admission only, no GPU/model games or PPO proof",
+  "runtime_sha": "12f3600ca8e6e8edabc460de70860baeef2b5146"
+}

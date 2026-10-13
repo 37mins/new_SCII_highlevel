@@ -1,0 +1,1392 @@
+{
+  "schema": "l7-r4-heartbeat-v1",
+  "checked_at": "2026-09-23T10:11:01.368252+08:00",
+  "inventory_checked_at": "2026-09-23T10:12:09.630481+08:00",
+  "automation_id": "197-l7-r4",
+  "root": "/var/jfsCache/sc2-l7-followup197-20260922-r4",
+  "expected_frozen_runtime": "9cb291ea5f50de205c5d88371e08ce229b7d9d04",
+  "previous_runtime_evidence": "l7-settings-analysis-20260922-2307.json",
+  "queue": {
+    "bytes": 251,
+    "sha256": "20f2926a344d24d48de5c5b1877bbf5889024d09eb3bbae70d09975f131e1088",
+    "data": {
+      "phase": "running-unverified",
+      "completed": [
+        "spb-same/short"
+      ],
+      "deadline": 1790420762.305692,
+      "original_start": 1790075162.305692,
+      "spb_deadline": 1790247962.305692,
+      "part": "spb-same/long",
+      "arm_deadline": 1790247962.305692
+    }
+  },
+  "dispatch": {
+    "bytes": 157,
+    "sha256": "7670b428454112f47e30ef69cdd66d08292a74645bf5021c1f77b8b8656dd74c",
+    "data": {
+      "start": 1790075162.305692,
+      "resumed_at": 1790085599.7561057,
+      "deadline": 1790420762.305692,
+      "original_clock_preserved": true,
+      "gpu_hours": 768
+    }
+  },
+  "host_state": {
+    "bytes": 295,
+    "sha256": "034195b42e7bf5bc0a3e621b0f9f22e6d83e18b32d62a4ca356b86ace34310b6",
+    "data": {
+      "version": "host-guardian-v1",
+      "phase": "running-unverified",
+      "completed": [],
+      "deadline": 1790247962.305692,
+      "learning_validated": false,
+      "started_at": 1790088312.1763573,
+      "stage": "train96",
+      "container_id": "6eab1fd728b6efe0309c2e139fa8b865f7c2a53d30bba4ae637064c74d6780e4"
+    }
+  },
+  "guardian": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "text": ""
+  },
+  "container": {
+    "name": "sc2-l7-followup197-20260922-r4-spb-same-long-train96",
+    "returncode": 0,
+    "stderr": "",
+    "state": {
+      "Status": "running",
+      "Running": true,
+      "Paused": false,
+      "Restarting": false,
+      "OOMKilled": false,
+      "Dead": false,
+      "Pid": 813153,
+      "ExitCode": 0,
+      "Error": "",
+      "StartedAt": "2026-09-22T14:45:12.924428977Z",
+      "FinishedAt": "0001-01-01T00:00:00Z"
+    }
+  },
+  "console": {
+    "total_bytes": 90175475,
+    "read_bytes": 1048576,
+    "tail_sha256": "434c76e1a1bcba2dda9b1fe3faf046d348b8b93a9889275ee107cac597bac358",
+    "completed_ppo_rows_in_bound": [
+      {
+        "step": 87,
+        "episode/valid_action_ratio": 1,
+        "policy_credit/invalid_advantage_max": 0,
+        "actor/grad_norm": 114.7850112915039,
+        "actor/lr": 0.000001,
+        "episode/success_rate": 0.75,
+        "timing_s/update_actor": 21.173691174015403,
+        "timing_s/step": 631.9897120064124
+      }
+    ]
+  },
+  "seed_ledger": {
+    "bytes": 9850,
+    "sha256": "f81d219ffb5a683e34a90390bbfb416e32fe04c95f1a4934e0fd334c63b40138",
+    "rows": 86,
+    "consecutive_reset_index": true,
+    "all_match_same_random0": true,
+    "last": {
+      "base_seed": 0,
+      "reset_index": 87,
+      "seed_protocol": "same_uniform101",
+      "seeds": [
+        77,
+        77,
+        77,
+        77,
+        77,
+        77,
+        77,
+        77
+      ]
+    }
+  },
+  "checkpoint_inventory": [
+    {
+      "checkpoint": "global_step_8",
+      "all_files_count": 36,
+      "required_files": [
+        {
+          "path": "data.pt",
+          "bytes": 1947
+        },
+        {
+          "path": "sc2_state.pt",
+          "bytes": 29943
+        },
+        {
+          "path": "actor/model_world_size_8_rank_0.pt",
+          "bytes": 2778173291
+        },
+        {
+          "path": "actor/model_world_size_8_rank_1.pt",
+          "bytes": 2778173291
+        },
+        {
+          "path": "actor/model_world_size_8_rank_2.pt",
+          "bytes": 2778173291
+        },
+        {
+          "path": "actor/model_world_size_8_rank_3.pt",
+          "bytes": 2778173291
+        },
+        {
+          "path": "actor/model_world_size_8_rank_4.pt",
+          "bytes": 2777907051
+        },
+        {
+          "path": "actor/model_world_size_8_rank_5.pt",
+          "bytes": 2777907051
+        },
+        {
+          "path": "actor/model_world_size_8_rank_6.pt",
+          "bytes": 2777907051
+        },
+        {
+          "path": "actor/model_world_size_8_rank_7.pt",
+          "bytes": 2777907051
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_0.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_1.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_2.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_3.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_4.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_5.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_6.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_7.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_0.pt",
+          "bytes": 15141
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_1.pt",
+          "bytes": 15141
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_2.pt",
+          "bytes": 15141
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_3.pt",
+          "bytes": 15077
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_4.pt",
+          "bytes": 15141
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_5.pt",
+          "bytes": 15205
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_6.pt",
+          "bytes": 15077
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_7.pt",
+          "bytes": 15141
+        }
+      ],
+      "all_26_required_nonempty": true,
+      "checkpoint_contents_not_read": true
+    },
+    {
+      "checkpoint": "global_step_16",
+      "all_files_count": 36,
+      "required_files": [
+        {
+          "path": "data.pt",
+          "bytes": 1947
+        },
+        {
+          "path": "sc2_state.pt",
+          "bytes": 30007
+        },
+        {
+          "path": "actor/model_world_size_8_rank_0.pt",
+          "bytes": 2778173291
+        },
+        {
+          "path": "actor/model_world_size_8_rank_1.pt",
+          "bytes": 2778173291
+        },
+        {
+          "path": "actor/model_world_size_8_rank_2.pt",
+          "bytes": 2778173291
+        },
+        {
+          "path": "actor/model_world_size_8_rank_3.pt",
+          "bytes": 2778173291
+        },
+        {
+          "path": "actor/model_world_size_8_rank_4.pt",
+          "bytes": 2777907051
+        },
+        {
+          "path": "actor/model_world_size_8_rank_5.pt",
+          "bytes": 2777907051
+        },
+        {
+          "path": "actor/model_world_size_8_rank_6.pt",
+          "bytes": 2777907051
+        },
+        {
+          "path": "actor/model_world_size_8_rank_7.pt",
+          "bytes": 2777907051
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_0.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_1.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_2.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_3.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_4.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_5.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_6.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_7.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_0.pt",
+          "bytes": 15141
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_1.pt",
+          "bytes": 15141
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_2.pt",
+          "bytes": 15141
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_3.pt",
+          "bytes": 15077
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_4.pt",
+          "bytes": 15141
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_5.pt",
+          "bytes": 15205
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_6.pt",
+          "bytes": 15077
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_7.pt",
+          "bytes": 15141
+        }
+      ],
+      "all_26_required_nonempty": true,
+      "checkpoint_contents_not_read": true
+    },
+    {
+      "checkpoint": "global_step_24",
+      "all_files_count": 36,
+      "required_files": [
+        {
+          "path": "data.pt",
+          "bytes": 1947
+        },
+        {
+          "path": "sc2_state.pt",
+          "bytes": 29943
+        },
+        {
+          "path": "actor/model_world_size_8_rank_0.pt",
+          "bytes": 2778173291
+        },
+        {
+          "path": "actor/model_world_size_8_rank_1.pt",
+          "bytes": 2778173291
+        },
+        {
+          "path": "actor/model_world_size_8_rank_2.pt",
+          "bytes": 2778173291
+        },
+        {
+          "path": "actor/model_world_size_8_rank_3.pt",
+          "bytes": 2778173291
+        },
+        {
+          "path": "actor/model_world_size_8_rank_4.pt",
+          "bytes": 2777907051
+        },
+        {
+          "path": "actor/model_world_size_8_rank_5.pt",
+          "bytes": 2777907051
+        },
+        {
+          "path": "actor/model_world_size_8_rank_6.pt",
+          "bytes": 2777907051
+        },
+        {
+          "path": "actor/model_world_size_8_rank_7.pt",
+          "bytes": 2777907051
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_0.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_1.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_2.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_3.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_4.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_5.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_6.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_7.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_0.pt",
+          "bytes": 15141
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_1.pt",
+          "bytes": 15141
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_2.pt",
+          "bytes": 15141
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_3.pt",
+          "bytes": 15077
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_4.pt",
+          "bytes": 15141
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_5.pt",
+          "bytes": 15205
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_6.pt",
+          "bytes": 15077
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_7.pt",
+          "bytes": 15141
+        }
+      ],
+      "all_26_required_nonempty": true,
+      "checkpoint_contents_not_read": true
+    },
+    {
+      "checkpoint": "global_step_32",
+      "all_files_count": 36,
+      "required_files": [
+        {
+          "path": "data.pt",
+          "bytes": 1947
+        },
+        {
+          "path": "sc2_state.pt",
+          "bytes": 29943
+        },
+        {
+          "path": "actor/model_world_size_8_rank_0.pt",
+          "bytes": 2778173291
+        },
+        {
+          "path": "actor/model_world_size_8_rank_1.pt",
+          "bytes": 2778173291
+        },
+        {
+          "path": "actor/model_world_size_8_rank_2.pt",
+          "bytes": 2778173291
+        },
+        {
+          "path": "actor/model_world_size_8_rank_3.pt",
+          "bytes": 2778173291
+        },
+        {
+          "path": "actor/model_world_size_8_rank_4.pt",
+          "bytes": 2777907051
+        },
+        {
+          "path": "actor/model_world_size_8_rank_5.pt",
+          "bytes": 2777907051
+        },
+        {
+          "path": "actor/model_world_size_8_rank_6.pt",
+          "bytes": 2777907051
+        },
+        {
+          "path": "actor/model_world_size_8_rank_7.pt",
+          "bytes": 2777907051
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_0.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_1.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_2.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_3.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_4.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_5.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_6.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_7.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_0.pt",
+          "bytes": 15141
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_1.pt",
+          "bytes": 15141
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_2.pt",
+          "bytes": 15141
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_3.pt",
+          "bytes": 15077
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_4.pt",
+          "bytes": 15141
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_5.pt",
+          "bytes": 15205
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_6.pt",
+          "bytes": 15077
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_7.pt",
+          "bytes": 15141
+        }
+      ],
+      "all_26_required_nonempty": true,
+      "checkpoint_contents_not_read": true
+    },
+    {
+      "checkpoint": "global_step_40",
+      "all_files_count": 36,
+      "required_files": [
+        {
+          "path": "data.pt",
+          "bytes": 1947
+        },
+        {
+          "path": "sc2_state.pt",
+          "bytes": 30007
+        },
+        {
+          "path": "actor/model_world_size_8_rank_0.pt",
+          "bytes": 2778173291
+        },
+        {
+          "path": "actor/model_world_size_8_rank_1.pt",
+          "bytes": 2778173291
+        },
+        {
+          "path": "actor/model_world_size_8_rank_2.pt",
+          "bytes": 2778173291
+        },
+        {
+          "path": "actor/model_world_size_8_rank_3.pt",
+          "bytes": 2778173291
+        },
+        {
+          "path": "actor/model_world_size_8_rank_4.pt",
+          "bytes": 2777907051
+        },
+        {
+          "path": "actor/model_world_size_8_rank_5.pt",
+          "bytes": 2777907051
+        },
+        {
+          "path": "actor/model_world_size_8_rank_6.pt",
+          "bytes": 2777907051
+        },
+        {
+          "path": "actor/model_world_size_8_rank_7.pt",
+          "bytes": 2777907051
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_0.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_1.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_2.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_3.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_4.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_5.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_6.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_7.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_0.pt",
+          "bytes": 15141
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_1.pt",
+          "bytes": 15141
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_2.pt",
+          "bytes": 15141
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_3.pt",
+          "bytes": 15077
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_4.pt",
+          "bytes": 15141
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_5.pt",
+          "bytes": 15205
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_6.pt",
+          "bytes": 15077
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_7.pt",
+          "bytes": 15141
+        }
+      ],
+      "all_26_required_nonempty": true,
+      "checkpoint_contents_not_read": true
+    },
+    {
+      "checkpoint": "global_step_48",
+      "all_files_count": 36,
+      "required_files": [
+        {
+          "path": "data.pt",
+          "bytes": 1947
+        },
+        {
+          "path": "sc2_state.pt",
+          "bytes": 30007
+        },
+        {
+          "path": "actor/model_world_size_8_rank_0.pt",
+          "bytes": 2778173291
+        },
+        {
+          "path": "actor/model_world_size_8_rank_1.pt",
+          "bytes": 2778173291
+        },
+        {
+          "path": "actor/model_world_size_8_rank_2.pt",
+          "bytes": 2778173291
+        },
+        {
+          "path": "actor/model_world_size_8_rank_3.pt",
+          "bytes": 2778173291
+        },
+        {
+          "path": "actor/model_world_size_8_rank_4.pt",
+          "bytes": 2777907051
+        },
+        {
+          "path": "actor/model_world_size_8_rank_5.pt",
+          "bytes": 2777907051
+        },
+        {
+          "path": "actor/model_world_size_8_rank_6.pt",
+          "bytes": 2777907051
+        },
+        {
+          "path": "actor/model_world_size_8_rank_7.pt",
+          "bytes": 2777907051
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_0.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_1.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_2.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_3.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_4.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_5.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_6.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_7.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_0.pt",
+          "bytes": 15141
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_1.pt",
+          "bytes": 15141
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_2.pt",
+          "bytes": 15141
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_3.pt",
+          "bytes": 15077
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_4.pt",
+          "bytes": 15141
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_5.pt",
+          "bytes": 15205
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_6.pt",
+          "bytes": 15077
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_7.pt",
+          "bytes": 15141
+        }
+      ],
+      "all_26_required_nonempty": true,
+      "checkpoint_contents_not_read": true
+    },
+    {
+      "checkpoint": "global_step_56",
+      "all_files_count": 36,
+      "required_files": [
+        {
+          "path": "data.pt",
+          "bytes": 1947
+        },
+        {
+          "path": "sc2_state.pt",
+          "bytes": 30007
+        },
+        {
+          "path": "actor/model_world_size_8_rank_0.pt",
+          "bytes": 2778173291
+        },
+        {
+          "path": "actor/model_world_size_8_rank_1.pt",
+          "bytes": 2778173291
+        },
+        {
+          "path": "actor/model_world_size_8_rank_2.pt",
+          "bytes": 2778173291
+        },
+        {
+          "path": "actor/model_world_size_8_rank_3.pt",
+          "bytes": 2778173291
+        },
+        {
+          "path": "actor/model_world_size_8_rank_4.pt",
+          "bytes": 2777907051
+        },
+        {
+          "path": "actor/model_world_size_8_rank_5.pt",
+          "bytes": 2777907051
+        },
+        {
+          "path": "actor/model_world_size_8_rank_6.pt",
+          "bytes": 2777907051
+        },
+        {
+          "path": "actor/model_world_size_8_rank_7.pt",
+          "bytes": 2777907051
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_0.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_1.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_2.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_3.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_4.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_5.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_6.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_7.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_0.pt",
+          "bytes": 15141
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_1.pt",
+          "bytes": 15141
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_2.pt",
+          "bytes": 15141
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_3.pt",
+          "bytes": 15077
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_4.pt",
+          "bytes": 15141
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_5.pt",
+          "bytes": 15205
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_6.pt",
+          "bytes": 15077
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_7.pt",
+          "bytes": 15141
+        }
+      ],
+      "all_26_required_nonempty": true,
+      "checkpoint_contents_not_read": true
+    },
+    {
+      "checkpoint": "global_step_64",
+      "all_files_count": 36,
+      "required_files": [
+        {
+          "path": "data.pt",
+          "bytes": 1947
+        },
+        {
+          "path": "sc2_state.pt",
+          "bytes": 30007
+        },
+        {
+          "path": "actor/model_world_size_8_rank_0.pt",
+          "bytes": 2778173291
+        },
+        {
+          "path": "actor/model_world_size_8_rank_1.pt",
+          "bytes": 2778173291
+        },
+        {
+          "path": "actor/model_world_size_8_rank_2.pt",
+          "bytes": 2778173291
+        },
+        {
+          "path": "actor/model_world_size_8_rank_3.pt",
+          "bytes": 2778173291
+        },
+        {
+          "path": "actor/model_world_size_8_rank_4.pt",
+          "bytes": 2777907051
+        },
+        {
+          "path": "actor/model_world_size_8_rank_5.pt",
+          "bytes": 2777907051
+        },
+        {
+          "path": "actor/model_world_size_8_rank_6.pt",
+          "bytes": 2777907051
+        },
+        {
+          "path": "actor/model_world_size_8_rank_7.pt",
+          "bytes": 2777907051
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_0.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_1.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_2.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_3.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_4.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_5.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_6.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_7.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_0.pt",
+          "bytes": 15141
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_1.pt",
+          "bytes": 15141
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_2.pt",
+          "bytes": 15141
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_3.pt",
+          "bytes": 15077
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_4.pt",
+          "bytes": 15141
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_5.pt",
+          "bytes": 15205
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_6.pt",
+          "bytes": 15077
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_7.pt",
+          "bytes": 15141
+        }
+      ],
+      "all_26_required_nonempty": true,
+      "checkpoint_contents_not_read": true
+    },
+    {
+      "checkpoint": "global_step_72",
+      "all_files_count": 36,
+      "required_files": [
+        {
+          "path": "data.pt",
+          "bytes": 1947
+        },
+        {
+          "path": "sc2_state.pt",
+          "bytes": 29943
+        },
+        {
+          "path": "actor/model_world_size_8_rank_0.pt",
+          "bytes": 2778173291
+        },
+        {
+          "path": "actor/model_world_size_8_rank_1.pt",
+          "bytes": 2778173291
+        },
+        {
+          "path": "actor/model_world_size_8_rank_2.pt",
+          "bytes": 2778173291
+        },
+        {
+          "path": "actor/model_world_size_8_rank_3.pt",
+          "bytes": 2778173291
+        },
+        {
+          "path": "actor/model_world_size_8_rank_4.pt",
+          "bytes": 2777907051
+        },
+        {
+          "path": "actor/model_world_size_8_rank_5.pt",
+          "bytes": 2777907051
+        },
+        {
+          "path": "actor/model_world_size_8_rank_6.pt",
+          "bytes": 2777907051
+        },
+        {
+          "path": "actor/model_world_size_8_rank_7.pt",
+          "bytes": 2777907051
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_0.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_1.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_2.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_3.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_4.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_5.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_6.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_7.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_0.pt",
+          "bytes": 15141
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_1.pt",
+          "bytes": 15141
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_2.pt",
+          "bytes": 15141
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_3.pt",
+          "bytes": 15077
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_4.pt",
+          "bytes": 15141
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_5.pt",
+          "bytes": 15205
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_6.pt",
+          "bytes": 15077
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_7.pt",
+          "bytes": 15141
+        }
+      ],
+      "all_26_required_nonempty": true,
+      "checkpoint_contents_not_read": true
+    },
+    {
+      "checkpoint": "global_step_80",
+      "all_files_count": 36,
+      "required_files": [
+        {
+          "path": "data.pt",
+          "bytes": 1947
+        },
+        {
+          "path": "sc2_state.pt",
+          "bytes": 30007
+        },
+        {
+          "path": "actor/model_world_size_8_rank_0.pt",
+          "bytes": 2778173291
+        },
+        {
+          "path": "actor/model_world_size_8_rank_1.pt",
+          "bytes": 2778173291
+        },
+        {
+          "path": "actor/model_world_size_8_rank_2.pt",
+          "bytes": 2778173291
+        },
+        {
+          "path": "actor/model_world_size_8_rank_3.pt",
+          "bytes": 2778173291
+        },
+        {
+          "path": "actor/model_world_size_8_rank_4.pt",
+          "bytes": 2777907051
+        },
+        {
+          "path": "actor/model_world_size_8_rank_5.pt",
+          "bytes": 2777907051
+        },
+        {
+          "path": "actor/model_world_size_8_rank_6.pt",
+          "bytes": 2777907051
+        },
+        {
+          "path": "actor/model_world_size_8_rank_7.pt",
+          "bytes": 2777907051
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_0.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_1.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_2.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_3.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_4.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_5.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_6.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/optim_world_size_8_rank_7.pt",
+          "bytes": 5166248083
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_0.pt",
+          "bytes": 15141
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_1.pt",
+          "bytes": 15141
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_2.pt",
+          "bytes": 15141
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_3.pt",
+          "bytes": 15077
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_4.pt",
+          "bytes": 15141
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_5.pt",
+          "bytes": 15205
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_6.pt",
+          "bytes": 15077
+        },
+        {
+          "path": "actor/extra_state_world_size_8_rank_7.pt",
+          "bytes": 15141
+        }
+      ],
+      "all_26_required_nonempty": true,
+      "checkpoint_contents_not_read": true
+    }
+  ],
+  "storage": {
+    "storage-state.json": {
+      "sha256": "0d584a15c2dcadc45d43b40071dbb8c96455ce188697558840adad9f64337741",
+      "checked_at": 1790129453.3998833,
+      "roots": [
+        "/var/jfsCache/sc2-l7-followup197-20260922-r4",
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r4",
+        "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-random",
+        "/var/jfsCache/sc2-l7-followup197-20260922-r1",
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r1",
+        "/var/jfsCache/sc2-l7-followup197-20260922-r2",
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r2",
+        "/var/jfsCache/sc2-l7-followup197-20260922-r3",
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r3",
+        "/var/jfsCache/sc2-storage-quiescence-cpu-20260922.4LzwSM",
+        "/var/jfsCache/sc2-host-supervision-cpu-20260922.7lJiIO"
+      ],
+      "root_bytes": {
+        "/var/jfsCache/sc2-l7-followup197-20260922-r4": 703809870677,
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r4": 22366358,
+        "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-random": 49949049988,
+        "/var/jfsCache/sc2-l7-followup197-20260922-r1": 14859086,
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r1": 39986975,
+        "/var/jfsCache/sc2-l7-followup197-20260922-r2": 15022348,
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r2": 21701753,
+        "/var/jfsCache/sc2-l7-followup197-20260922-r3": 46541029,
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r3": 33174944,
+        "/var/jfsCache/sc2-storage-quiescence-cpu-20260922.4LzwSM": 29973103,
+        "/var/jfsCache/sc2-host-supervision-cpu-20260922.7lJiIO": 30160896
+      },
+      "bytes": 754012707157,
+      "limit": 2199023255552,
+      "returncode": 0,
+      "status": "measured",
+      "stderr": {
+        "tail": "",
+        "characters": 0,
+        "truncated": false
+      },
+      "quiescence": {
+        "version": "host-guardian-v1",
+        "container_id": "6eab1fd728b6efe0309c2e139fa8b865f7c2a53d30bba4ae637064c74d6780e4",
+        "owner_root": "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long",
+        "guardian_pid": 813095,
+        "paused_verified": true,
+        "cleanup": "verified-unpaused",
+        "paused_at": 1790129453.1153202,
+        "mode": "paused",
+        "resumed_at": 1790129453.3996956
+      },
+      "deadline": 1790420762.305692,
+      "root_sum_matches": true,
+      "under_limit": true
+    },
+    "spb-same/long/storage-state.json": {
+      "sha256": "4ed0375829a9c916b7de30715c112b679907eaf1fe9ed49b60663f17ef48e1cf",
+      "checked_at": 1790129453.0646093,
+      "roots": [
+        "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same",
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r4",
+        "/var/jfsCache/sc2-l7-followup197-20260922-r1",
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r1",
+        "/var/jfsCache/sc2-l7-followup197-20260922-r2",
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r2",
+        "/var/jfsCache/sc2-l7-followup197-20260922-r3",
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r3",
+        "/var/jfsCache/sc2-storage-quiescence-cpu-20260922.4LzwSM",
+        "/var/jfsCache/sc2-host-supervision-cpu-20260922.7lJiIO"
+      ],
+      "root_bytes": {
+        "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same": 703794769599,
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r4": 22366358,
+        "/var/jfsCache/sc2-l7-followup197-20260922-r1": 14859086,
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r1": 39986975,
+        "/var/jfsCache/sc2-l7-followup197-20260922-r2": 15022348,
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r2": 21701753,
+        "/var/jfsCache/sc2-l7-followup197-20260922-r3": 46541029,
+        "/var/jfsCache/sc2-l7-followup197-source-20260922-r3": 33174944,
+        "/var/jfsCache/sc2-storage-quiescence-cpu-20260922.4LzwSM": 29973103,
+        "/var/jfsCache/sc2-host-supervision-cpu-20260922.7lJiIO": 30160896
+      },
+      "bytes": 704048556091,
+      "limit": 1099511627776,
+      "returncode": 0,
+      "status": "measured",
+      "stderr": {
+        "tail": "",
+        "characters": 0,
+        "truncated": false
+      },
+      "quiescence": {
+        "version": "host-guardian-v1",
+        "container_id": "6eab1fd728b6efe0309c2e139fa8b865f7c2a53d30bba4ae637064c74d6780e4",
+        "owner_root": "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long",
+        "guardian_pid": 813095,
+        "paused_verified": true,
+        "cleanup": "verified-unpaused",
+        "paused_at": 1790129452.787699,
+        "mode": "paused",
+        "resumed_at": 1790129453.0644286
+      },
+      "deadline": 1790247962.305692,
+      "root_sum_matches": true,
+      "under_limit": true
+    }
+  },
+  "terminal_and_successor_receipts": {
+    "storage-failure.json": {
+      "status": "absent"
+    },
+    "spb-same/long/state.json": {
+      "status": "absent"
+    },
+    "spb-same/long/storage-failure.json": {
+      "status": "absent"
+    },
+    "spb-same/long/acceptance-train96.json": {
+      "status": "absent"
+    },
+    "spb-same/long/runs/train96/result.json": {
+      "status": "absent"
+    },
+    "spb-same/long/runs/train96/.done": {
+      "status": "absent"
+    },
+    "spb-same/long/runs/eval96/result.json": {
+      "status": "absent"
+    },
+    "spb-same/long/runs/eval96/.done": {
+      "status": "absent"
+    },
+    "qwen-random/long/dispatch.json": {
+      "status": "absent"
+    },
+    "qwen-random/long/host-supervision/state.json": {
+      "status": "absent"
+    }
+  },
+  "outcome_ledger": {
+    "status": "oversize-not-read"
+  },
+  "decision": "DONT_NOTIFY",
+  "conclusions": [
+    "SpB L7 same train96 continues in its original exact running/unpaused container. Latest returned binary64-v1 console row proves global step87 completed; no claim that pending step88 has returned PPO.",
+    "Seed ledger has 86 dispatched batches, reset_index2..87, all exactly matching private Python Random0 same_uniform101. The pending last batch is77x8.",
+    "Checkpoints8..80 have all26 required nonempty filenames each; only names/sizes were checked. CP88/96 and final content/terminal verification remain pending.",
+    "Existing exact-root arm/suite measurements exit0 with empty stderr and owned pause/resume receipts. No storage failure receipts observed; this is a time-sensitive snapshot, not a permanent infrastructure-fix claim.",
+    "No train96 result/done/acceptance, eval96 result/done or Qwen-random long dispatch yet. Empty guardian slot and absent part terminal state are expected while the host stage is running.",
+    "No server writes, dispatch, retry, added GPU diagnostic, checkpoint content read, budget or deadline change. No new notification-worthy event; current progress does not establish learning or architecture advantage."
+  ],
+  "checks": {
+    "ssh_alias": "sc2-a100-197",
+    "max_small_file_bytes": 131072,
+    "console_tail_bytes": 1048576,
+    "container_check": "docker inspect .State only",
+    "inventory_check": "file names and stat sizes only",
+    "seed_check": "private Python Random(0) randint(0,100); exact reset_index and8identical entries",
+    "tests": "No training tests rerun; read-only evidence and local JSON/diff checks only."
+  }
+}

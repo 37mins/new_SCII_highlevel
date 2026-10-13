@@ -1,0 +1,63 @@
+{
+  "observed_at_beijing": "2026-09-25T23:48:21+08:00",
+  "status": "r4 failed at zero-game GPU preflight; no formal evaluation stage dispatched",
+  "authorization": "One r4 attempt of remaining 64 games, 4h/32GPUh from dispatch, eight roots/32GiB, no automatic retry",
+  "branch": "codex/fix-sc2-startup-port-race",
+  "runtime_sha": "707cfb945c2b5adb01ba3ec5666bf4767c44a85a",
+  "github_remote_sha_verified": "707cfb945c2b5adb01ba3ec5666bf4767c44a85a",
+  "host": "sc2-a100-197",
+  "root": "/var/jfsCache/sc2-qwen-l8-pilot96-197-20260925-r4",
+  "source_parent": "/var/jfsCache/sc2-qwen-l8-pilot96-197-source-20260925-r4",
+  "dispatch_start_epoch": 1790351154.465368,
+  "fixed_deadline_epoch": 1790365554.465368,
+  "scope": {
+    "retained_r1_accepted_games": 32,
+    "r2_new_games": 0,
+    "r3_new_games": 0,
+    "r4_declared_games": 64,
+    "r4_new_games": 0,
+    "r4_optimizer_updates": 0,
+    "r4_accepted_stages": [],
+    "formal_stage_container_created": false
+  },
+  "preflight": {
+    "container_id": "909ab84072fb816921686949244822dd32137c72d9c7ebea230c091379bb5845",
+    "owner": "/var/jfsCache/sc2-qwen-l8-pilot96-197-20260925-r4",
+    "terminal": "exited1",
+    "oom_killed": false,
+    "gpu_device_request_count": -1,
+    "proof_present": false,
+    "entry_log_bytes": 5169,
+    "entry_log_sha256": "9038f697aacc66858d45cd14fd6b785f838f82f76c3a5dd7c8a0420478cfc4b1"
+  },
+  "cpu_preflight": {
+    "real_launcher_hydra_stages": 8,
+    "container_tests": 79,
+    "host_tests": 71,
+    "skips": 0,
+    "cuda_initialized": false,
+    "cpu_container_exit_codes": [0, 0],
+    "cpu_device_requests": null
+  },
+  "failure_analysis": {
+    "direct_observation": "Ray local instance started; its worker setup hook raised ModuleNotFoundError: No module named 'feedback_eval' before GPU identity or NCCL, and the terminal recorder blocked all game stages",
+    "code_path_difference": "The probe invokes ray.init directly, whereas the real launcher run_qwen_seed_arm.sh exports EXTRA_PYTHONPATH including experiments/records/20260911-execution-failure-feedback-v1; the probe did not mirror that import path",
+    "scope_limit": "The short Ray socket path avoided the r3 AF_UNIX error; r2 duplicate-GPU behavior remains untested by r4, and a formal game stage was never run"
+  },
+  "terminal_sha256": {
+    "deployment.json": "f72d981390c57a924fcdb10e8639e81b50b3e5459bfffb654acdb428a033c9bd",
+    "dispatch.json": "0b198af7615f7efe6c290b620107fbb3a9a07b59057e475b2ee971b3abf516d7",
+    "queue-state.json": "f640f7f68edf2590cf642e70bf1907eff78dc52c07c2da2f271f694adc1ad087",
+    "gpu-preflight-supervision/state.json": "52fac0311b4d202a6cdbec30ea91513e0aa2e7f863e004fa6d188a76e0e30065",
+    "gpu-preflight-supervision/gpu-preflight-guardian.json": "580d990e5b27726d1f8558295348734fa3a3820660ed8a58f0e5dddb5651e8cf"
+  },
+  "storage": {
+    "direct_gnu_du_eight_root_bytes_at_terminal": 296865792,
+    "counted_roots": 8,
+    "limit_bytes": 34359738368,
+    "du_return_code": 0,
+    "du_stderr_empty": true
+  },
+  "gpu_after_failure": "2026-09-25 23:48:21 Beijing: all eight host GPUs 0 MiB/0% utilization; no compute app returned",
+  "actions": "No r1-r3 root changed; no r4 restart, game-stage dispatch, deletion, L8 PPO training or automatic retry"
+}

@@ -1,0 +1,356 @@
+{
+  "checked_at_beijing": "2026-09-27T09:22:08.423695+08:00",
+  "run_root": "/var/jfsCache/sc2-qwen-l8same192-197-20260926-r2",
+  "source_sha": "f0e1059aabd28cc5be259908e0955c2509d74a87",
+  "read_only": true,
+  "terminal": {
+    "version": "host-guardian-v1",
+    "phase": "completed",
+    "completed": [
+      "pre96",
+      "train192",
+      "eval192"
+    ],
+    "deadline": 1790463386.617149,
+    "learning_validated": false,
+    "started_at": 1790420217.9998558,
+    "stage": "eval192",
+    "container_id": "85e0fd140339c67795158565866d866bc86bd55365f78552fdf08ad21a119afb",
+    "exit_code": 0,
+    "finished_at": 1790440577.689231
+  },
+  "dispatch": {
+    "start": 1790420186.617149,
+    "deadline": 1790463386.617149,
+    "gpu_hours": 96,
+    "new_games": 784,
+    "new_updates": 96,
+    "includes_gpu_preflight": true
+  },
+  "finished_at_beijing": "2026-09-27T00:36:17.689231+08:00",
+  "elapsed_wall_seconds": 20391.072081804276,
+  "stages": {
+    "pre96": {
+      "result_done_acceptance_equal": true,
+      "result_sha256": "0577c8975c211900d6555a8ec25d3d2f28a577716810222d1c4729a9046a96c9",
+      "acceptance_sha256": "439c2aa4d98c31c582cf0701977d196debf1c793c7b72f1c7e76e4821b79bede",
+      "ended_at": "2026-09-26T11:02:30.796830+00:00",
+      "start_step": null,
+      "last_global_step": null,
+      "completed_steps": null,
+      "training_updates": 0,
+      "outcomes": {
+        "trajectories": 8,
+        "natural_games": 8,
+        "wins": 5,
+        "defeats": 3,
+        "ties": 0,
+        "truncated": 0,
+        "natural_win_rate": 0.625
+      },
+      "consumed_answers": 63,
+      "valid_consumed_answers": 63,
+      "container": {
+        "id": "bb0d3f1f5f9c4fa5753b082e270c23c83b0ef6cd4403b528c6c7c2ee2c01eff3",
+        "owner": "/var/jfsCache/sc2-qwen-l8same192-197-20260926-r2",
+        "state": {
+          "Dead": false,
+          "Error": "",
+          "ExitCode": 0,
+          "FinishedAt": "2026-09-26T11:02:30.816935578Z",
+          "OOMKilled": false,
+          "Paused": false,
+          "Pid": 0,
+          "Restarting": false,
+          "Running": false,
+          "StartedAt": "2026-09-26T10:56:58.43713756Z",
+          "Status": "exited"
+        }
+      },
+      "guardian_completed": true,
+      "clean_world8_binary64": true,
+      "checkpoint_load": {
+        "checkpoint": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/long/runs/train96/checkpoints/global_step_96",
+        "loaded_global_step": 96,
+        "checkpoint_load_returned": true,
+        "optimizer_updates": 0,
+        "game_seeds": [
+          605183188,
+          1075501356,
+          2084414326,
+          2203880230,
+          3000371298,
+          949752300,
+          3225036469,
+          2823708076
+        ]
+      }
+    },
+    "train192": {
+      "result_done_acceptance_equal": true,
+      "result_sha256": "903e3e026f4313ccd3e4930f8c41f5c50b9f1625e37e38724d98606c55b5c308",
+      "acceptance_sha256": "ba6dfe34190a01f96f6c73fdd3424211e8206843c2fdc1e36da1a0e91b3edb47",
+      "ended_at": "2026-09-26T16:29:38.964831+00:00",
+      "start_step": 96,
+      "last_global_step": 192,
+      "completed_steps": 96,
+      "training_updates": null,
+      "outcomes": {
+        "trajectories": 768,
+        "natural_games": 768,
+        "wins": 494,
+        "defeats": 274,
+        "ties": 0,
+        "truncated": 0,
+        "natural_win_rate": 0.6432291666666666
+      },
+      "consumed_answers": 5900,
+      "valid_consumed_answers": 5900,
+      "container": {
+        "id": "0522051abb01b34cecbdc24c04751a6f863633172629c659624f78c630509ba6",
+        "owner": "/var/jfsCache/sc2-qwen-l8same192-197-20260926-r2",
+        "state": {
+          "Dead": false,
+          "Error": "",
+          "ExitCode": 0,
+          "FinishedAt": "2026-09-26T16:29:56.001343427Z",
+          "OOMKilled": false,
+          "Paused": false,
+          "Pid": 0,
+          "Restarting": false,
+          "Running": false,
+          "StartedAt": "2026-09-26T11:02:32.54465246Z",
+          "Status": "exited"
+        }
+      },
+      "guardian_completed": true,
+      "clean_world8_binary64": true
+    },
+    "eval192": {
+      "result_done_acceptance_equal": true,
+      "result_sha256": "ea90886982b559a5caf0bdd41fcb8ae5cc6c6fd73ac58b9cf0edb5cfa6e6823d",
+      "acceptance_sha256": "e2632f62bef77611d62f7a83b756f1292d4ffe74344b0e2fc1e5e421e8b9fdd9",
+      "ended_at": "2026-09-26T16:36:14.615326+00:00",
+      "start_step": null,
+      "last_global_step": null,
+      "completed_steps": null,
+      "training_updates": 0,
+      "outcomes": {
+        "trajectories": 8,
+        "natural_games": 8,
+        "wins": 5,
+        "defeats": 3,
+        "ties": 0,
+        "truncated": 0,
+        "natural_win_rate": 0.625
+      },
+      "consumed_answers": 62,
+      "valid_consumed_answers": 62,
+      "container": {
+        "id": "85e0fd140339c67795158565866d866bc86bd55365f78552fdf08ad21a119afb",
+        "owner": "/var/jfsCache/sc2-qwen-l8same192-197-20260926-r2",
+        "state": {
+          "Dead": false,
+          "Error": "",
+          "ExitCode": 0,
+          "FinishedAt": "2026-09-26T16:36:14.634618908Z",
+          "OOMKilled": false,
+          "Paused": false,
+          "Pid": 0,
+          "Restarting": false,
+          "Running": false,
+          "StartedAt": "2026-09-26T16:30:10.3333389Z",
+          "Status": "exited"
+        }
+      },
+      "guardian_completed": true,
+      "clean_world8_binary64": true,
+      "checkpoint_load": {
+        "checkpoint": "/var/jfsCache/sc2-qwen-l8same192-197-20260926-r2/runs/train192/checkpoints/global_step_192",
+        "loaded_global_step": 192,
+        "checkpoint_load_returned": true,
+        "optimizer_updates": 0,
+        "game_seeds": [
+          605183188,
+          1075501356,
+          2084414326,
+          2203880230,
+          3000371298,
+          949752300,
+          3225036469,
+          2823708076
+        ]
+      }
+    }
+  },
+  "ppo": {
+    "returned_steps": 96,
+    "first_step": 97,
+    "last_step": 192,
+    "audit_count": 96,
+    "all_finite_positive_gradient_and_update_time": true,
+    "invalid_advantage_max": 0,
+    "gradient_min": 0.0006166982301302985,
+    "gradient_max": 25.135174117982388,
+    "update_actor_seconds_total": 2470.24737797305,
+    "seed_rows": 96,
+    "all_reset96_to191_seeds_match": true,
+    "small_evidence_sha256": {
+      "metrics.json": "6589a147a3c0854bbcac298d11f00d37c88488109ce87ed93d30ee01397d79e9",
+      "training_seeds.jsonl": "b524611ed5793f42dfbf9169f4da3650eba6e6f9cc6a712daf02d646f44fea18",
+      "checkpoints/sc2_policy_credit_audit.jsonl": "e323fb34c9c8709816c2c1610d30a8224c05c26cf8fb5c0a73d15b25c4fda4b0"
+    }
+  },
+  "native_resume": {
+    "from_checkpoint": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/long/runs/train96/checkpoints/global_step_96",
+    "global_step": 96,
+    "next_reset_index": 96,
+    "next_seeds": [
+      73,
+      73,
+      73,
+      73,
+      73,
+      73,
+      73,
+      73
+    ],
+    "source": "checkpoint",
+    "model_optimizer_dataloader_load_returned": true
+  },
+  "checkpoints": [
+    {
+      "step": 112,
+      "required_files": 26,
+      "required_bytes": 49827708138,
+      "sc2_state_present": true
+    },
+    {
+      "step": 128,
+      "required_files": 26,
+      "required_bytes": 49827708138,
+      "sc2_state_present": true
+    },
+    {
+      "step": 144,
+      "required_files": 26,
+      "required_bytes": 49827708138,
+      "sc2_state_present": true
+    },
+    {
+      "step": 160,
+      "required_files": 26,
+      "required_bytes": 49827708138,
+      "sc2_state_present": true
+    },
+    {
+      "step": 176,
+      "required_files": 26,
+      "required_bytes": 49827708138,
+      "sc2_state_present": true
+    },
+    {
+      "step": 192,
+      "required_files": 26,
+      "required_bytes": 49827708138,
+      "sc2_state_present": true
+    }
+  ],
+  "paired_evaluation": {
+    "pairs": [
+      {
+        "rank": 0,
+        "seed": 605183188,
+        "CP96": "Defeat",
+        "CP192": "Defeat",
+        "rank_cpu_cuda_rng_matched": true
+      },
+      {
+        "rank": 1,
+        "seed": 1075501356,
+        "CP96": "Defeat",
+        "CP192": "Victory",
+        "rank_cpu_cuda_rng_matched": true
+      },
+      {
+        "rank": 2,
+        "seed": 2084414326,
+        "CP96": "Victory",
+        "CP192": "Victory",
+        "rank_cpu_cuda_rng_matched": true
+      },
+      {
+        "rank": 3,
+        "seed": 2203880230,
+        "CP96": "Victory",
+        "CP192": "Victory",
+        "rank_cpu_cuda_rng_matched": true
+      },
+      {
+        "rank": 4,
+        "seed": 3000371298,
+        "CP96": "Defeat",
+        "CP192": "Defeat",
+        "rank_cpu_cuda_rng_matched": true
+      },
+      {
+        "rank": 5,
+        "seed": 949752300,
+        "CP96": "Victory",
+        "CP192": "Defeat",
+        "rank_cpu_cuda_rng_matched": true
+      },
+      {
+        "rank": 6,
+        "seed": 3225036469,
+        "CP96": "Victory",
+        "CP192": "Victory",
+        "rank_cpu_cuda_rng_matched": true
+      },
+      {
+        "rank": 7,
+        "seed": 2823708076,
+        "CP96": "Victory",
+        "CP192": "Victory",
+        "rank_cpu_cuda_rng_matched": true
+      }
+    ],
+    "gains": 1,
+    "losses": 1,
+    "pre_wins": 5,
+    "post_wins": 5,
+    "sample_size": 8,
+    "net_win_rate_change": 0,
+    "limitation": "Eight reused diagnostic seeds; no net improvement or generalization claim.",
+    "marginal_wilson95_descriptive": [
+      0.30574239460262737,
+      0.8631557141764026
+    ]
+  },
+  "storage": {
+    "roots": [
+      "/var/jfsCache/sc2-qwen-l8same192-197-20260926-r1",
+      "/var/jfsCache/sc2-qwen-l8same192-197-source-20260926-r1",
+      "/var/jfsCache/sc2-qwen-l8same192-197-20260926-r2",
+      "/var/jfsCache/sc2-qwen-l8same192-197-source-20260926-r2"
+    ],
+    "bytes": 301584380260,
+    "limit": 412316860416,
+    "returncode": 0,
+    "checked_at": 1790440577.6886241,
+    "gib": 280.8723414875567
+  },
+  "gpu_snapshot": [
+    "0, 0 MiB, 0 %",
+    "1, 0 MiB, 0 %",
+    "2, 0 MiB, 0 %",
+    "3, 0 MiB, 0 %",
+    "4, 0 MiB, 0 %",
+    "5, 0 MiB, 0 %",
+    "6, 0 MiB, 0 %",
+    "7, 0 MiB, 0 %"
+  ],
+  "gpu_compute_apps": [],
+  "checks_passed": true,
+  "actions": "No server writes, launch, restart, deletion, repair or automatic successor. Read only small receipts, metrics/audit/seed/RNG and checkpoint filename/stat inventory; no large checkpoints or full logs."
+}

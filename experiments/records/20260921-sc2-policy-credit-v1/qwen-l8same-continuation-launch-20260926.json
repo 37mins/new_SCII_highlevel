@@ -1,0 +1,904 @@
+{
+  "checked_at": 1790390008.0651712,
+  "checked_at_beijing": "2026-09-26T10:33:28.065189+08:00",
+  "node": "sc2-a100-197",
+  "controller_sha": "db60d075879750cabf30a38c555d1c3aaaf104c1",
+  "runtime_sha": "eef0f049bb09b7a51188ae67a6c35436a3bf055f",
+  "files": {
+    "deployment.json": {
+      "runtime_sha": "eef0f049bb09b7a51188ae67a6c35436a3bf055f",
+      "controller_sha": "db60d075879750cabf30a38c555d1c3aaaf104c1",
+      "controller_source": "/var/jfsCache/sc2-qwen-l8same96-197-source-20260926-r2/code",
+      "parts": [
+        "qwen-same/short",
+        "qwen-same/long"
+      ],
+      "original_start": 1790358122.7417548,
+      "deadline": 1790530922.7417548,
+      "wall_seconds": 172800,
+      "gpu_hours": 384,
+      "output_limit_bytes": 1099511627776,
+      "storage_roots": [
+        "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r1",
+        "/var/jfsCache/sc2-qwen-l8same96-197-source-20260926-r1",
+        "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2",
+        "/var/jfsCache/sc2-qwen-l8same96-197-source-20260926-r2"
+      ],
+      "retained_games": 24,
+      "retained_updates": 2,
+      "new_games": 768,
+      "new_updates": 94,
+      "no_retry": true,
+      "authorization": "Sep26 user explicitly permits corrected acceptance and controlled continuation after complete CP2 verification, retaining 24 games/2 PPO; only remaining768 games/94 PPO; original deadline and384GPUh/1TiB inclusive r1+r2; no deletion, replay, or automatic retry.",
+      "terminal": {
+        "pre": {
+          "container_id": "12382dde8901da405f082342eed2cccacbc6dd570fa14e82818c030b5575cd24",
+          "owner": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r1/qwen-same/short",
+          "exited0": true
+        },
+        "train2": {
+          "container_id": "1f31a19353dccd09dcc46618ff416dc55d37abbb3062f96b6d63c080f7c0fb21",
+          "owner": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r1/qwen-same/short",
+          "exited0": true
+        }
+      }
+    },
+    "dispatch.json": {
+      "start": 1790358122.7417548,
+      "deadline": 1790530922.7417548,
+      "resumed_at": 1790389931.2328393,
+      "gpu_hours": 384,
+      "clock_inherited": true,
+      "retained_games": 24,
+      "new_games": 768,
+      "new_updates": 94
+    },
+    "queue-state.json": {
+      "phase": "running-unverified",
+      "completed": [],
+      "retained_games": 24,
+      "retained_updates": 2,
+      "new_games": 768,
+      "new_updates": 94,
+      "deadline": 1790530922.7417548,
+      "part": "qwen-same/short"
+    },
+    "retained-acceptance.json": {
+      "passed": true,
+      "retained_games": 24,
+      "retained_updates": 2,
+      "terminal": {
+        "pre": {
+          "container_id": "12382dde8901da405f082342eed2cccacbc6dd570fa14e82818c030b5575cd24",
+          "owner": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r1/qwen-same/short",
+          "exited0": true
+        },
+        "train2": {
+          "container_id": "1f31a19353dccd09dcc46618ff416dc55d37abbb3062f96b6d63c080f7c0fb21",
+          "owner": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r1/qwen-same/short",
+          "exited0": true
+        }
+      },
+      "old_terminal_hashes": {
+        "queue-state.json": "d19250dd9003c7382d747e6c52d043a25bef53a93bf8eb16283ad25f2d7bb908",
+        "dispatch.json": "44a638f1c560f450e0fbcf9463159c6256ed898c025a0767c812baa1656729c4",
+        "qwen-same/short/host-supervision/state.json": "f18845c1829d048a60b36365ff048f2446004364ada3986b90da557cfc5430c8"
+      },
+      "verifier_sha": "db60d075879750cabf30a38c555d1c3aaaf104c1",
+      "checked_at": 1790389930.9154618
+    },
+    "host-regressions.json": {
+      "passed": true,
+      "tests": 71,
+      "skips": 0,
+      "cuda_initialized": false,
+      "host_only": true,
+      "runtime_sha": "eef0f049bb09b7a51188ae67a6c35436a3bf055f",
+      "checked_at": 1790389697.6374404
+    },
+    "storage-state.json": {
+      "command": [
+        "du",
+        "-sb",
+        "--null",
+        "--",
+        "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r1",
+        "/var/jfsCache/sc2-qwen-l8same96-197-source-20260926-r1",
+        "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2",
+        "/var/jfsCache/sc2-qwen-l8same96-197-source-20260926-r2"
+      ],
+      "roots": [
+        "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r1",
+        "/var/jfsCache/sc2-qwen-l8same96-197-source-20260926-r1",
+        "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2",
+        "/var/jfsCache/sc2-qwen-l8same96-197-source-20260926-r2"
+      ],
+      "started_at": 1790389994.1874177,
+      "deadline": 1790530922.7417548,
+      "limit": 1099511627776,
+      "bytes": 49998702356,
+      "returncode": 0,
+      "status": "measured",
+      "stdout": {
+        "tail": "49949523370\t/var/jfsCache/sc2-qwen-l8same96-197-20260926-r1\u000023956631\t/var/jfsCache/sc2-qwen-l8same96-197-source-20260926-r1\u00001169085\t/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2\u000024053270\t/var/jfsCache/sc2-qwen-l8same96-197-source-20260926-r2\u0000",
+        "characters": 244,
+        "truncated": false
+      },
+      "stderr": {
+        "tail": "",
+        "characters": 0,
+        "truncated": false
+      },
+      "quiescence": {
+        "version": "host-guardian-v1",
+        "container_id": "4873e0440e2659494bf293252ca554efd2eefe7c14f31d4a48224c5244e40d21",
+        "owner_root": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/short",
+        "guardian_pid": 3297676,
+        "paused_verified": true,
+        "cleanup": "verified-unpaused",
+        "paused_at": 1790389994.239918,
+        "mode": "paused",
+        "resumed_at": 1790389994.2841537
+      },
+      "measured_at": 1790389994.2556589,
+      "root_bytes": {
+        "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r1": 49949523370,
+        "/var/jfsCache/sc2-qwen-l8same96-197-source-20260926-r1": 23956631,
+        "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2": 1169085,
+        "/var/jfsCache/sc2-qwen-l8same96-197-source-20260926-r2": 24053270
+      },
+      "checked_at": 1790389994.2842555
+    },
+    "qwen-same/short/regressions.json": {
+      "passed": true,
+      "tests": 328,
+      "skips": 0,
+      "cuda_initialized": false,
+      "host_only": false,
+      "runtime_sha": "eef0f049bb09b7a51188ae67a6c35436a3bf055f",
+      "checked_at": 1790389725.9432685,
+      "l8_fresh_tests": 60,
+      "continuation_tests": 7
+    },
+    "qwen-same/short/prefix-readiness.json": {
+      "passed": true,
+      "cuda_initialized": false,
+      "global_step": 2,
+      "next_reset_index": 2,
+      "next_seeds": [
+        53,
+        53,
+        53,
+        53,
+        53,
+        53,
+        53,
+        53
+      ],
+      "ranks": [
+        {
+          "rank": 0,
+          "scheduler_epoch": 2,
+          "rng_keys": [
+            "cpu",
+            "cuda",
+            "numpy",
+            "random"
+          ]
+        },
+        {
+          "rank": 1,
+          "scheduler_epoch": 2,
+          "rng_keys": [
+            "cpu",
+            "cuda",
+            "numpy",
+            "random"
+          ]
+        },
+        {
+          "rank": 2,
+          "scheduler_epoch": 2,
+          "rng_keys": [
+            "cpu",
+            "cuda",
+            "numpy",
+            "random"
+          ]
+        },
+        {
+          "rank": 3,
+          "scheduler_epoch": 2,
+          "rng_keys": [
+            "cpu",
+            "cuda",
+            "numpy",
+            "random"
+          ]
+        },
+        {
+          "rank": 4,
+          "scheduler_epoch": 2,
+          "rng_keys": [
+            "cpu",
+            "cuda",
+            "numpy",
+            "random"
+          ]
+        },
+        {
+          "rank": 5,
+          "scheduler_epoch": 2,
+          "rng_keys": [
+            "cpu",
+            "cuda",
+            "numpy",
+            "random"
+          ]
+        },
+        {
+          "rank": 6,
+          "scheduler_epoch": 2,
+          "rng_keys": [
+            "cpu",
+            "cuda",
+            "numpy",
+            "random"
+          ]
+        },
+        {
+          "rank": 7,
+          "scheduler_epoch": 2,
+          "rng_keys": [
+            "cpu",
+            "cuda",
+            "numpy",
+            "random"
+          ]
+        }
+      ],
+      "native_driver_rng": true,
+      "dataloader_state_present": true,
+      "actual_gpu_load_not_yet_claimed": true,
+      "checked_at": 1790389729.1957223
+    },
+    "qwen-same/short/host-supervision/state.json": {
+      "version": "host-guardian-v1",
+      "phase": "running-unverified",
+      "completed": [],
+      "deadline": 1790530922.7417548,
+      "learning_validated": false,
+      "started_at": 1790389977.992387,
+      "stage": "post",
+      "container_id": "4873e0440e2659494bf293252ca554efd2eefe7c14f31d4a48224c5244e40d21"
+    },
+    "qwen-same/short/gpu-preflight-supervision/state.json": {
+      "version": "host-guardian-v1",
+      "phase": "completed",
+      "completed": [
+        "gpu-preflight"
+      ],
+      "deadline": 1790530922.7417548,
+      "learning_validated": false,
+      "started_at": 1790389931.233446,
+      "stage": "gpu-preflight",
+      "container_id": "341d3771c91bb87690145d128ad7e2ea1c12df52876ddebba4d997c19c36462d",
+      "exit_code": 0,
+      "finished_at": 1790389977.9913135
+    }
+  },
+  "cpu_hooks": [
+    {
+      "stage": "post",
+      "passed": true,
+      "model_loaded": false,
+      "natural_games": 0,
+      "optimizer_updates": 0,
+      "worker": {
+        "feedback_eval_loaded": true,
+        "required_module": "refinery_order_eval",
+        "required_module_loaded": true,
+        "sc2path": "/assets/StarCraftII",
+        "cuda_visible_devices": "",
+        "cuda_initialized": false,
+        "cuda_device_count": 0
+      },
+      "runtime_environment": {
+        "resolved_config_sha256": "7cce835c79476c94aa870219c0b6b088a3f24fc2a88d504c976ae5b3d9fa0d78",
+        "env_sha256": "d99749264992fd9e98c1e713cbb846ff75a7dc65bbd398f83dcd6f0f2e9dc4ec",
+        "overridden_env_vars": [
+          "RAY_TMPDIR",
+          "TMPDIR"
+        ],
+        "worker_process_setup_hook": "l7_followup_hook.install",
+        "stage": "post",
+        "required_worker_module": "refinery_order_eval"
+      }
+    },
+    {
+      "stage": "train96",
+      "passed": true,
+      "model_loaded": false,
+      "natural_games": 0,
+      "optimizer_updates": 0,
+      "worker": {
+        "feedback_eval_loaded": false,
+        "required_module": "refinery_order_eval",
+        "required_module_loaded": true,
+        "sc2path": "/assets/StarCraftII",
+        "cuda_visible_devices": "",
+        "cuda_initialized": false,
+        "cuda_device_count": 0
+      },
+      "runtime_environment": {
+        "resolved_config_sha256": "7790ed3409702fe17ed09cbdd1ea16a6f9ed607be485b3bf5addf1774b7e1336",
+        "env_sha256": "4b2a2555c2f7e45020779acd44ece96fda3959ea0528adc64e60bad837cbb4ad",
+        "overridden_env_vars": [
+          "RAY_TMPDIR",
+          "TMPDIR"
+        ],
+        "worker_process_setup_hook": "l7_followup_hook.install",
+        "stage": "train96",
+        "required_worker_module": "refinery_order_eval"
+      }
+    },
+    {
+      "stage": "eval96",
+      "passed": true,
+      "model_loaded": false,
+      "natural_games": 0,
+      "optimizer_updates": 0,
+      "worker": {
+        "feedback_eval_loaded": true,
+        "required_module": "refinery_order_eval",
+        "required_module_loaded": true,
+        "sc2path": "/assets/StarCraftII",
+        "cuda_visible_devices": "",
+        "cuda_initialized": false,
+        "cuda_device_count": 0
+      },
+      "runtime_environment": {
+        "resolved_config_sha256": "59509b701de6cae9284653966b056ef6a3548a979bb78c595a865320382c8e0b",
+        "env_sha256": "102429a71e3248a463c31211a36f21020d0e17586c34ab3693c55a455f7ca6a8",
+        "overridden_env_vars": [
+          "RAY_TMPDIR",
+          "TMPDIR"
+        ],
+        "worker_process_setup_hook": "l7_followup_hook.install",
+        "stage": "eval96",
+        "required_worker_module": "refinery_order_eval"
+      }
+    }
+  ],
+  "containers": [
+    {
+      "name": "sc2-qwen-l8same96-197-20260926-r2-short-cpu",
+      "returncode": 0,
+      "data": {
+        "id": "5ecb1079a8b70e1c3b31a1561853ff47028db80ac2f1bd5b20f75aa92c1d4ae3",
+        "state": {
+          "Dead": false,
+          "Error": "",
+          "ExitCode": 0,
+          "FinishedAt": "2026-09-26T02:28:22.769679427Z",
+          "OOMKilled": false,
+          "Paused": false,
+          "Pid": 0,
+          "Restarting": false,
+          "Running": false,
+          "StartedAt": "2026-09-26T02:28:17.780036429Z",
+          "Status": "exited"
+        },
+        "devices": null,
+        "owner": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/short"
+      }
+    },
+    {
+      "name": "sc2-qwen-l8same96-197-20260926-r2-long-cpu",
+      "returncode": 0,
+      "data": {
+        "id": "39a55835e27e461feedf72c271cd6217e7b23594a89748bd0cfd451f6f971bd9",
+        "state": {
+          "Dead": false,
+          "Error": "",
+          "ExitCode": 0,
+          "FinishedAt": "2026-09-26T02:28:28.327182382Z",
+          "OOMKilled": false,
+          "Paused": false,
+          "Pid": 0,
+          "Restarting": false,
+          "Running": false,
+          "StartedAt": "2026-09-26T02:28:23.119538865Z",
+          "Status": "exited"
+        },
+        "devices": null,
+        "owner": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/long"
+      }
+    },
+    {
+      "name": "sc2-qwen-l8same96-197-20260926-r2-short-regressions",
+      "returncode": 0,
+      "data": {
+        "id": "0640c4a56e6b4296517b53fd75adbd923f0a9bfd6f6b3cd1bd5f2253981daa64",
+        "state": {
+          "Dead": false,
+          "Error": "",
+          "ExitCode": 0,
+          "FinishedAt": "2026-09-26T02:28:47.33713876Z",
+          "OOMKilled": false,
+          "Paused": false,
+          "Pid": 0,
+          "Restarting": false,
+          "Running": false,
+          "StartedAt": "2026-09-26T02:28:28.667503997Z",
+          "Status": "exited"
+        },
+        "devices": null,
+        "owner": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/short"
+      }
+    },
+    {
+      "name": "sc2-qwen-l8same96-197-20260926-r2-short-prefix-cpu",
+      "returncode": 0,
+      "data": {
+        "id": "6161878cf9f8e32a1b3d2d6e0aba297714d5778f818fca797718a21c7370a562",
+        "state": {
+          "Dead": false,
+          "Error": "",
+          "ExitCode": 0,
+          "FinishedAt": "2026-09-26T02:28:49.422290222Z",
+          "OOMKilled": false,
+          "Paused": false,
+          "Pid": 0,
+          "Restarting": false,
+          "Running": false,
+          "StartedAt": "2026-09-26T02:28:47.723137345Z",
+          "Status": "exited"
+        },
+        "devices": null,
+        "owner": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/short"
+      }
+    },
+    {
+      "name": "sc2-qwen-l8same96-197-20260926-r2-short-cpu-hook-post",
+      "returncode": 0,
+      "data": {
+        "id": "df094050acb74aff85fc117585524dada02a82c7fabd16a62deaee45d21cbe4b",
+        "state": {
+          "Dead": false,
+          "Error": "",
+          "ExitCode": 0,
+          "FinishedAt": "2026-09-26T02:29:04.3675144Z",
+          "OOMKilled": false,
+          "Paused": false,
+          "Pid": 0,
+          "Restarting": false,
+          "Running": false,
+          "StartedAt": "2026-09-26T02:28:49.729561308Z",
+          "Status": "exited"
+        },
+        "devices": null,
+        "owner": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/short"
+      }
+    },
+    {
+      "name": "sc2-qwen-l8same96-197-20260926-r2-long-cpu-hook-train96",
+      "returncode": 0,
+      "data": {
+        "id": "9c09b2923ba3f28696e84083756f44e2d822992226858ed2ae7877b6fd67caf8",
+        "state": {
+          "Dead": false,
+          "Error": "",
+          "ExitCode": 0,
+          "FinishedAt": "2026-09-26T02:30:00.967878155Z",
+          "OOMKilled": false,
+          "Paused": false,
+          "Pid": 0,
+          "Restarting": false,
+          "Running": false,
+          "StartedAt": "2026-09-26T02:29:04.747509748Z",
+          "Status": "exited"
+        },
+        "devices": null,
+        "owner": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/long"
+      }
+    },
+    {
+      "name": "sc2-qwen-l8same96-197-20260926-r2-long-cpu-hook-eval96",
+      "returncode": 0,
+      "data": {
+        "id": "2a28b8d6c137af39c2d57f5530bd23f8c9a7900b0d04c44584001dcd764505dd",
+        "state": {
+          "Dead": false,
+          "Error": "",
+          "ExitCode": 0,
+          "FinishedAt": "2026-09-26T02:30:55.967784904Z",
+          "OOMKilled": false,
+          "Paused": false,
+          "Pid": 0,
+          "Restarting": false,
+          "Running": false,
+          "StartedAt": "2026-09-26T02:30:01.29310462Z",
+          "Status": "exited"
+        },
+        "devices": null,
+        "owner": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/long"
+      }
+    },
+    {
+      "name": "sc2-qwen-l8same96-197-20260926-r2-short-gpu-preflight-post",
+      "returncode": 0,
+      "data": {
+        "id": "341d3771c91bb87690145d128ad7e2ea1c12df52876ddebba4d997c19c36462d",
+        "state": {
+          "Dead": false,
+          "Error": "",
+          "ExitCode": 0,
+          "FinishedAt": "2026-09-26T02:32:45.573932314Z",
+          "OOMKilled": false,
+          "Paused": false,
+          "Pid": 0,
+          "Restarting": false,
+          "Running": false,
+          "StartedAt": "2026-09-26T02:32:11.675888801Z",
+          "Status": "exited"
+        },
+        "devices": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": -1,
+            "DeviceIDs": null,
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "owner": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/short"
+      }
+    },
+    {
+      "name": "sc2-qwen-l8same96-197-20260926-r2-short-post",
+      "returncode": 0,
+      "data": {
+        "id": "4873e0440e2659494bf293252ca554efd2eefe7c14f31d4a48224c5244e40d21",
+        "state": {
+          "Dead": false,
+          "Error": "",
+          "ExitCode": 0,
+          "FinishedAt": "0001-01-01T00:00:00Z",
+          "OOMKilled": false,
+          "Paused": false,
+          "Pid": 3297732,
+          "Restarting": false,
+          "Running": true,
+          "StartedAt": "2026-09-26T02:32:58.433491083Z",
+          "Status": "running"
+        },
+        "devices": [
+          {
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Count": -1,
+            "DeviceIDs": null,
+            "Driver": "",
+            "Options": {}
+          }
+        ],
+        "owner": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/short"
+      }
+    }
+  ],
+  "latest_post": {
+    "checked_at": 1790390113.4372957,
+    "checked_at_beijing": "2026-09-26T10:35:13.437310+08:00",
+    "manifest": {
+      "schema_version": 1,
+      "status": "running",
+      "started_at": "2026-09-26T02:33:07.285953+00:00",
+      "source_commit": "eef0f049bb09b7a51188ae67a6c35436a3bf055f",
+      "dirty": false,
+      "formal": true,
+      "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+      "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "model_source": "/assets/qwen",
+      "model_manifest_sha256": "c82106ca091f4797af1217cca7578618bb2a5cd7c4136ca0d2d06c0a77ed00a7",
+      "bo_profile": "canonical",
+      "episode_api": "gymnasium-v0.26",
+      "metrics_precision": "binary64-v1",
+      "bo_path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r1/runtime/agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/knowledge/BO/replay_observations_Flat128_d4_TvT_Macro_g2_Result.Victory_twobase.json",
+      "bo_sha256": "304b1f4ff12fe30c5e6d5f7b8eaef8ed6823ca65afed3a3706cae10e3639c494",
+      "mode": "evaluation",
+      "source_files_sha256": {
+        "configs/qwen3-4b-instruct-2507-level5.env": "faa88a45451d5c42003430fdf244775ca9f20b4ee4e2c0f49bd2b2d8c764957e",
+        "configs/system-v1.env": "f99583a73de679b3c11845e7037bbee5629750126241dd8b156206d2734f61a7",
+        "scripts/train_sc2.sh": "c9df070916cb3be0e5732520491bc84ffe09dfe5e0c478cc0a3f74526f27f104",
+        "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/agents/planner.py": "01cc3ac5d6c4c0aebec9817d2cead58d6ddadfa5811eaa048c331fb4054f77d4",
+        "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/players/script_player.py": "89ed4006cf35af238b0962409bd5a183780d8676af5a49af35422d3077030069",
+        "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/players/llm_player.py": "2134b0d02b9b506554ef613facee90c99976fc64f098a1688f4ad3f26d8d0cc2",
+        "agent_system/sc2_episode.py": "882aa88c609100a70892e6479d2e1c48e71c039073b4dbec7267a46e306fff27",
+        "agent_system/environments/env_package/sc2_online_restored/envSC2.py": "f6a1b7eebb470089f548ab96e957cb1c00ad487e4702690385fae8d4b9898a5f",
+        "agent_system/environments/strategic_sc2_env_manager_v2.py": "5592b763164fd64f0c98c5b55380326b8bbe16465404cbce2b21b9aff2ed1a6a",
+        "scripts/run_record.py": "35cce3357733772470ae50f8196ada4cc9a0066cf706d2cf50534dea3ae37541",
+        "verl/utils/logger/aggregate_logger.py": "822439e09abc53f188ffbfce2a360388590be8aa13bee31182e69fe1e9421bd8"
+      },
+      "target_steps": 1,
+      "sc2_signal_max_batches": 0,
+      "start_step": 0,
+      "sc2_checkpoint_resume": false,
+      "training_goal_global_steps": 2,
+      "resume_from_path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/short/runs/train2/checkpoints/global_step_2",
+      "host": "4873e0440e26",
+      "python": "3.12.11",
+      "gpu_selection": "0,1,2,3,4,5,6,7",
+      "world_size": 8,
+      "container_image_id": "sha256:1a497d5721f89bb2e98c0273c4b1495f8fdc6921d589650d090871c11b8d1649",
+      "versions": {
+        "torch": "2.7.1+cu128",
+        "transformers": "4.55.2",
+        "ray": "2.48.0",
+        "gymnasium": "1.2.3",
+        "flash-attn": "2.6.3",
+        "flash-linear-attention": "0.4.0",
+        "moba": "1.0.0"
+      }
+    },
+    "checkpoint_evaluation": {
+      "checkpoint": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/short/runs/train2/checkpoints/global_step_2",
+      "loaded_global_step": 2,
+      "checkpoint_load_returned": true,
+      "val_only": true,
+      "optimizer_updates": 0,
+      "feedback": "0",
+      "temperature": 0.8,
+      "do_sample": true,
+      "games": 8,
+      "game_seeds": [
+        605183188,
+        1075501356,
+        2084414326,
+        2203880230,
+        3000371298,
+        949752300,
+        3225036469,
+        2823708076
+      ],
+      "answers": "online SpB; no replay or replacement",
+      "optimizer_loaded_by_existing_loader_but_not_updated": true
+    },
+    "evaluation_seeds": [
+      {
+        "base_seed": 1000,
+        "reset_index": 0,
+        "seeds": [
+          605183188,
+          1075501356,
+          2084414326,
+          2203880230,
+          3000371298,
+          949752300,
+          3225036469,
+          2823708076
+        ]
+      }
+    ],
+    "result_present": false,
+    "done_present": false,
+    "console_tail_max_bytes": 131072,
+    "bounded_evidence": [
+      "(WorkerDict pid=4458) SC2_ACTION_SUPPORT {\"budget\": 192, \"canonical_tokenizations_only\": true, \"eos_token_id\": 151645, \"mode\": \"sc2-canonical-bo-support-v1\", \"pad_token_id\": 151643, \"tokenizer_sha256\": \"a63080b4b30dc861fe1b0e420c53a241304dc81aff3d9bb315e6e33e2a1ab794\"}",
+      "(WorkerDict pid=4653) SC2_NO_THINKING {\"blocked_counts\": {\"\": 2, \"<\": 7, \"</\": 7, \"</t\": 2, \"</th\": 13, \"</thi\": 4, \"</thin\": 276, \"<t\": 2, \"<th\": 13, \"<thi\": 4, \"<thin\": 276}, \"forbidden_prefixes\": [\"<think\", \"</think\"], \"mode\": \"sc2-no-thinking-v1\", \"support_mask_sha256\": \"63a9546dd5fb39a64c6e2a2ad13f31101aacaade9bac07258d0e415480181e0d\"}",
+      "(SC2Worker pid=2510) 2026-09-25 19:35:04.314 | INFO     | sc2.protocol:_execute:120 - Client status changed to Status.in_game (was None)",
+      "(SC2Worker pid=2510) Combat result reward: {\"pid\": 7222, \"game_loop\": 0, \"boundary\": \"planner\", \"last_consumed_policy_action_id\": null, \"killed_value\": 0.0, \"lost_value\": 0.0, \"scale\": 0.001, \"reward\": 0.0}",
+      "(SC2Worker pid=2507) 2026-09-25 19:35:10.768 | INFO     | sc2.protocol:_execute:120 - Client status changed to Status.in_game (was None)",
+      "(SC2Worker pid=2507) Combat result reward: {\"pid\": 7252, \"game_loop\": 0, \"boundary\": \"planner\", \"last_consumed_policy_action_id\": null, \"killed_value\": 0.0, \"lost_value\": 0.0, \"scale\": 0.001, \"reward\": 0.0}"
+    ],
+    "gpu_preflight": {
+      "passed": true,
+      "ranks": [
+        {
+          "rank": 0,
+          "visible_devices": "0",
+          "ray_gpu_ids": [
+            0
+          ],
+          "cuda_uuid": "40d97276-36a4-2cce-43ff-be66ca654177",
+          "master_port": 26734
+        },
+        {
+          "rank": 1,
+          "visible_devices": "1",
+          "ray_gpu_ids": [
+            1
+          ],
+          "cuda_uuid": "bea101a5-a727-20d0-2270-fb787dd6c7e0",
+          "master_port": 29561
+        },
+        {
+          "rank": 2,
+          "visible_devices": "2",
+          "ray_gpu_ids": [
+            2
+          ],
+          "cuda_uuid": "334e011d-8eb5-e72e-00a3-dcbd8aaf87e5",
+          "master_port": 24950
+        },
+        {
+          "rank": 3,
+          "visible_devices": "3",
+          "ray_gpu_ids": [
+            3
+          ],
+          "cuda_uuid": "a7707e1f-462b-7ed6-9d2c-97fe6c9acce4",
+          "master_port": 27723
+        },
+        {
+          "rank": 4,
+          "visible_devices": "4",
+          "ray_gpu_ids": [
+            4
+          ],
+          "cuda_uuid": "33ec7165-06e2-b141-97db-66711df3e176",
+          "master_port": 22677
+        },
+        {
+          "rank": 5,
+          "visible_devices": "5",
+          "ray_gpu_ids": [
+            5
+          ],
+          "cuda_uuid": "dd2c977f-d2f0-545a-dbfb-153f0a3b3c1b",
+          "master_port": 25578
+        },
+        {
+          "rank": 6,
+          "visible_devices": "6",
+          "ray_gpu_ids": [
+            6
+          ],
+          "cuda_uuid": "868e1fe3-a401-980d-e3fd-2fc4fb7d0e8f",
+          "master_port": 21603
+        },
+        {
+          "rank": 7,
+          "visible_devices": "7",
+          "ray_gpu_ids": [
+            7
+          ],
+          "cuda_uuid": "8347c82f-9c11-c3d9-37ab-016498436356",
+          "master_port": 22134
+        }
+      ],
+      "nccl_sums": [
+        28,
+        28,
+        28,
+        28,
+        28,
+        28,
+        28,
+        28
+      ],
+      "model_loaded": false,
+      "natural_games": 0,
+      "optimizer_updates": 0,
+      "runtime_environment": {
+        "resolved_config_sha256": "7cce835c79476c94aa870219c0b6b088a3f24fc2a88d504c976ae5b3d9fa0d78",
+        "env_sha256": "9bdb55ca0f848bfae3b8700d94742a8b143ce68547cbde5874f2202af2030d60",
+        "overridden_env_vars": [
+          "RAY_TMPDIR",
+          "TMPDIR"
+        ],
+        "worker_process_setup_hook": "l7_followup_hook.install",
+        "stage": "post",
+        "required_worker_module": "refinery_order_eval"
+      }
+    },
+    "queue": {
+      "phase": "running-unverified",
+      "completed": [],
+      "retained_games": 24,
+      "retained_updates": 2,
+      "new_games": 768,
+      "new_updates": 94,
+      "deadline": 1790530922.7417548,
+      "part": "qwen-same/short"
+    },
+    "host_supervision": {
+      "version": "host-guardian-v1",
+      "phase": "running-unverified",
+      "completed": [],
+      "deadline": 1790530922.7417548,
+      "learning_validated": false,
+      "started_at": 1790389977.992387,
+      "stage": "post",
+      "container_id": "4873e0440e2659494bf293252ca554efd2eefe7c14f31d4a48224c5244e40d21"
+    },
+    "storage": {
+      "command": [
+        "du",
+        "-sb",
+        "--null",
+        "--",
+        "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r1",
+        "/var/jfsCache/sc2-qwen-l8same96-197-source-20260926-r1",
+        "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2",
+        "/var/jfsCache/sc2-qwen-l8same96-197-source-20260926-r2"
+      ],
+      "roots": [
+        "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r1",
+        "/var/jfsCache/sc2-qwen-l8same96-197-source-20260926-r1",
+        "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2",
+        "/var/jfsCache/sc2-qwen-l8same96-197-source-20260926-r2"
+      ],
+      "started_at": 1790390100.1457593,
+      "deadline": 1790530922.7417548,
+      "limit": 1099511627776,
+      "bytes": 50000258269,
+      "returncode": 0,
+      "status": "measured",
+      "stdout": {
+        "tail": "49949523370\t/var/jfsCache/sc2-qwen-l8same96-197-20260926-r1\u000023956631\t/var/jfsCache/sc2-qwen-l8same96-197-source-20260926-r1\u00002724998\t/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2\u000024053270\t/var/jfsCache/sc2-qwen-l8same96-197-source-20260926-r2\u0000",
+        "characters": 244,
+        "truncated": false
+      },
+      "stderr": {
+        "tail": "",
+        "characters": 0,
+        "truncated": false
+      },
+      "quiescence": {
+        "version": "host-guardian-v1",
+        "container_id": "4873e0440e2659494bf293252ca554efd2eefe7c14f31d4a48224c5244e40d21",
+        "owner_root": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/short",
+        "guardian_pid": 3297676,
+        "paused_verified": true,
+        "cleanup": "verified-unpaused",
+        "paused_at": 1790390100.1966217,
+        "mode": "paused",
+        "resumed_at": 1790390100.247749
+      },
+      "measured_at": 1790390100.2137334,
+      "root_bytes": {
+        "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r1": 49949523370,
+        "/var/jfsCache/sc2-qwen-l8same96-197-source-20260926-r1": 23956631,
+        "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2": 2724998,
+        "/var/jfsCache/sc2-qwen-l8same96-197-source-20260926-r2": 24053270
+      },
+      "checked_at": 1790390100.2478619
+    }
+  },
+  "git_sync": {
+    "branch": "codex/fix-sc2-startup-port-race",
+    "remote": "CeraveNew/new_SCII",
+    "frozen_controller_sha": "db60d075879750cabf30a38c555d1c3aaaf104c1",
+    "push_succeeded": true,
+    "independent_exact_sha_dry_run": "[up to date]",
+    "tls_verification_disabled": false
+  },
+  "scope": {
+    "old_run_unchanged": true,
+    "old_host_failure_preserved": true,
+    "retained_games": 24,
+    "retained_updates": 2,
+    "remaining_games": 768,
+    "remaining_updates": 94,
+    "runtime_unchanged": true,
+    "new_controller_acceptance_only": true,
+    "actual_post_cp2_load_returned": true,
+    "new_ppo_not_yet_observed": true,
+    "learning_validated": false,
+    "historical_loader_label": "checkpoint_evaluation.answers says online SpB; manifest/model revision and actual launcher identify Qwen",
+    "remaining_stage_order": [
+      "post8",
+      "train96 step3..96",
+      "eval96 eight"
+    ],
+    "no_desktop_automation_created": true
+  }
+}

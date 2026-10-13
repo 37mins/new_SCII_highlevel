@@ -1,0 +1,463 @@
+{
+  "schema": "spb-early128197-launch-v1",
+  "submitted": {
+    "submitted_at": "2026-09-25T10:07:21.421919+08:00",
+    "queue_submitted_once": true,
+    "root": "/var/jfsCache/sc2-spb-early128-197-20260925-r1",
+    "source_sha": "c9dfd9a4603c98e5e73c4e5874c8be9950aecdf1",
+    "socket": "sc2_spb_early128_197_20260925_r1",
+    "session": "spb_early128_197_r1",
+    "new_games": 128,
+    "new_updates": 0,
+    "wall_seconds": 21600,
+    "gpu_hours": 48,
+    "output_limit_bytes": 34359738368,
+    "cpu": {
+      "readiness.json": {
+        "passed": true,
+        "runtime_sha": "c9dfd9a4603c98e5e73c4e5874c8be9950aecdf1",
+        "stages": [
+          "b00-cp2",
+          "b00-cp8",
+          "b01-cp8",
+          "b01-cp2",
+          "b02-cp2",
+          "b02-cp8",
+          "b03-cp8",
+          "b03-cp2",
+          "b04-cp2",
+          "b04-cp8",
+          "b05-cp8",
+          "b05-cp2",
+          "b06-cp2",
+          "b06-cp8",
+          "b07-cp8",
+          "b07-cp2"
+        ],
+        "actual_entries_and_hydra_configs": true,
+        "cuda_initialized": false,
+        "checked_at": 1790301988.837527
+      },
+      "regressions.json": {
+        "passed": true,
+        "tests": 115,
+        "skips": 0,
+        "cuda_initialized": false,
+        "host_only": false,
+        "runtime_sha": "c9dfd9a4603c98e5e73c4e5874c8be9950aecdf1",
+        "checked_at": 1790301993.5256336
+      },
+      "host-regressions.json": {
+        "passed": true,
+        "tests": 71,
+        "skips": 0,
+        "cuda_initialized": false,
+        "host_only": true,
+        "runtime_sha": "c9dfd9a4603c98e5e73c4e5874c8be9950aecdf1",
+        "checked_at": 1790301977.9122071
+      }
+    },
+    "cpu_containers": [
+      {
+        "id": "5be65cb9c5802aa286f04246682cb86d29ee05e689cd8528f98c993815c74fdc",
+        "name": "/sc2-spb-early128-197-20260925-r1-cpu",
+        "state": {
+          "Status": "exited",
+          "Running": false,
+          "Paused": false,
+          "Restarting": false,
+          "OOMKilled": false,
+          "Dead": false,
+          "Pid": 0,
+          "ExitCode": 0,
+          "Error": "",
+          "StartedAt": "2026-09-25T02:06:17.195986165Z",
+          "FinishedAt": "2026-09-25T02:06:29.584502355Z"
+        },
+        "device_requests": null
+      },
+      {
+        "id": "3c017096a926566e734bb9bf660fe54e836604807fd234fc72f745fe85b3f9d3",
+        "name": "/sc2-spb-early128-197-20260925-r1-regressions",
+        "state": {
+          "Status": "exited",
+          "Running": false,
+          "Paused": false,
+          "Restarting": false,
+          "OOMKilled": false,
+          "Dead": false,
+          "Pid": 0,
+          "ExitCode": 0,
+          "Error": "",
+          "StartedAt": "2026-09-25T02:06:17.228915572Z",
+          "FinishedAt": "2026-09-25T02:06:34.514464977Z"
+        },
+        "device_requests": null
+      }
+    ]
+  },
+  "source_remote_verification": {
+    "method": "git push then independent git ls-remote",
+    "sha": "c9dfd9a4603c98e5e73c4e5874c8be9950aecdf1",
+    "branch": "codex/fix-sc2-startup-port-race"
+  },
+  "observed_at": "2026-09-25T10:08:35.662450+08:00",
+  "queue": {
+    "phase": "running-unverified",
+    "completed": [],
+    "new_games": 128,
+    "new_updates": 0,
+    "deadline": 1790323642.4372141
+  },
+  "dispatch": {
+    "start": 1790302042.4372141,
+    "deadline": 1790323642.4372141,
+    "gpu_hours": 48,
+    "new_games": 128,
+    "new_updates": 0
+  },
+  "host": {
+    "version": "host-guardian-v1",
+    "phase": "running-unverified",
+    "completed": [],
+    "deadline": 1790323642.4372141,
+    "learning_validated": false,
+    "started_at": 1790302042.4380283,
+    "stage": "b00-cp2",
+    "container_id": "cc1b57af3067e4f0f6ca5a904299b7c5f6a610721a9955e37088468f572e6800"
+  },
+  "storage": {
+    "command": [
+      "du",
+      "-sb",
+      "--null",
+      "--",
+      "/var/jfsCache/sc2-spb-early128-197-20260925-r1",
+      "/var/jfsCache/sc2-spb-early128-197-source-20260925-r1"
+    ],
+    "roots": [
+      "/var/jfsCache/sc2-spb-early128-197-20260925-r1",
+      "/var/jfsCache/sc2-spb-early128-197-source-20260925-r1"
+    ],
+    "started_at": 1790302103.9528115,
+    "deadline": 1790323642.4372141,
+    "limit": 34359738368,
+    "bytes": 64779709,
+    "returncode": 0,
+    "status": "measured",
+    "stdout": {
+      "tail": "36881587\t/var/jfsCache/sc2-spb-early128-197-20260925-r1\u000027898122\t/var/jfsCache/sc2-spb-early128-197-source-20260925-r1\u0000",
+      "characters": 119,
+      "truncated": false
+    },
+    "stderr": {
+      "tail": "",
+      "characters": 0,
+      "truncated": false
+    },
+    "quiescence": {
+      "version": "host-guardian-v1",
+      "container_id": "cc1b57af3067e4f0f6ca5a904299b7c5f6a610721a9955e37088468f572e6800",
+      "owner_root": "/var/jfsCache/sc2-spb-early128-197-20260925-r1",
+      "guardian_pid": 2891134,
+      "paused_verified": true,
+      "cleanup": "verified-unpaused",
+      "paused_at": 1790302104.027345,
+      "mode": "paused",
+      "resumed_at": 1790302104.0679739
+    },
+    "measured_at": 1790302104.0348792,
+    "root_bytes": {
+      "/var/jfsCache/sc2-spb-early128-197-20260925-r1": 36881587,
+      "/var/jfsCache/sc2-spb-early128-197-source-20260925-r1": 27898122
+    },
+    "checked_at": 1790302104.0681136
+  },
+  "failure": null,
+  "predecessor": {
+    "passed": true,
+    "checked_at": 1790302042.1212215,
+    "parent_sha": "9cb291ea5f50de205c5d88371e08ce229b7d9d04",
+    "baseline_sha": "72068c693266dcf74ed8d0d2eb984f834ca8a030",
+    "parent_proof_sha256": "0579d480b6cb96cbd85388d6329faeac9987694da5209b3c309b8da11baff985",
+    "baseline_proof_sha256": "69e666b32f211a274a3270ba897e8ae197a8131f34f1fd0f847d7bd55c880624",
+    "checkpoint_contents_read": false,
+    "checkpoints": {
+      "cp2": "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/short/runs/train2/checkpoints/global_step_2",
+      "cp8": "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long/runs/train96/checkpoints/global_step_8"
+    },
+    "required_files_each": 26,
+    "limitation": "evaluation only; no historical legacy/native training equivalence claim"
+  },
+  "first_admission": {
+    "passed": true,
+    "checked_at": 1790302042.4368904,
+    "deadline": 1790309142.1795657,
+    "eight_idle_gpus": true,
+    "ram_gib_min": 600,
+    "nvme_gib_min": 128,
+    "fsync": true
+  },
+  "container": {
+    "id": "cc1b57af3067e4f0f6ca5a904299b7c5f6a610721a9955e37088468f572e6800",
+    "name": "/sc2-spb-early128-197-20260925-r1-b00-cp2",
+    "owner": "/var/jfsCache/sc2-spb-early128-197-20260925-r1",
+    "state": {
+      "Status": "running",
+      "Running": true,
+      "Paused": false,
+      "Restarting": false,
+      "OOMKilled": false,
+      "Dead": false,
+      "Pid": 2891190,
+      "ExitCode": 0,
+      "Error": "",
+      "StartedAt": "2026-09-25T02:07:22.850907535Z",
+      "FinishedAt": "0001-01-01T00:00:00Z"
+    },
+    "gpu_request": [
+      {
+        "Driver": "",
+        "Count": -1,
+        "DeviceIDs": null,
+        "Capabilities": [
+          [
+            "gpu"
+          ]
+        ],
+        "Options": {}
+      }
+    ]
+  },
+  "manifest": {
+    "schema_version": 1,
+    "status": "running",
+    "started_at": "2026-09-25T02:07:45.228721+00:00",
+    "source_commit": "c9dfd9a4603c98e5e73c4e5874c8be9950aecdf1",
+    "dirty": false,
+    "formal": true,
+    "model_id": "Panyuqi/SpikingBrain-2.0-instruct",
+    "model_revision": "sha256:de52e8ef993afc763f9d4fb498e8d8302ef0bc13bd7dfd53c6ae5f77f43698b5",
+    "model_source": "/assets/spb",
+    "model_manifest_sha256": "40d6f1417568d5fda1107cdafd66c7441a679b03fb148851c8f226ecc9cf884c",
+    "bo_profile": "canonical",
+    "episode_api": "gymnasium-v0.26",
+    "metrics_precision": "binary64-v1",
+    "bo_path": "/var/jfsCache/sc2-spb-early128-197-20260925-r1/runtime/agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/knowledge/BO/replay_observations_Flat128_d4_TvT_Macro_g2_Result.Victory_twobase.json",
+    "bo_sha256": "304b1f4ff12fe30c5e6d5f7b8eaef8ed6823ca65afed3a3706cae10e3639c494",
+    "mode": "evaluation",
+    "source_files_sha256": {
+      "configs/spikingbrain2-level5.env": "b34497add5894a01d87338686ba28a9cc7ea9ef86dd62e1d98814b1e898e021e",
+      "configs/system-v1.env": "f99583a73de679b3c11845e7037bbee5629750126241dd8b156206d2734f61a7",
+      "scripts/train_sc2.sh": "c9df070916cb3be0e5732520491bc84ffe09dfe5e0c478cc0a3f74526f27f104",
+      "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/agents/planner.py": "01cc3ac5d6c4c0aebec9817d2cead58d6ddadfa5811eaa048c331fb4054f77d4",
+      "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/players/script_player.py": "89ed4006cf35af238b0962409bd5a183780d8676af5a49af35422d3077030069",
+      "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/players/llm_player.py": "2134b0d02b9b506554ef613facee90c99976fc64f098a1688f4ad3f26d8d0cc2",
+      "agent_system/sc2_episode.py": "882aa88c609100a70892e6479d2e1c48e71c039073b4dbec7267a46e306fff27",
+      "agent_system/environments/env_package/sc2_online_restored/envSC2.py": "f6a1b7eebb470089f548ab96e957cb1c00ad487e4702690385fae8d4b9898a5f",
+      "agent_system/environments/strategic_sc2_env_manager_v2.py": "5592b763164fd64f0c98c5b55380326b8bbe16465404cbce2b21b9aff2ed1a6a",
+      "scripts/run_record.py": "35cce3357733772470ae50f8196ada4cc9a0066cf706d2cf50534dea3ae37541",
+      "verl/utils/logger/aggregate_logger.py": "822439e09abc53f188ffbfce2a360388590be8aa13bee31182e69fe1e9421bd8"
+    },
+    "target_steps": 1,
+    "sc2_signal_max_batches": 0,
+    "start_step": 0,
+    "sc2_checkpoint_resume": false,
+    "training_goal_global_steps": 96,
+    "resume_from_path": "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/short/runs/train2/checkpoints/global_step_2",
+    "host": "cc1b57af3067",
+    "python": "3.12.11",
+    "gpu_selection": "0,1,2,3,4,5,6,7",
+    "world_size": 8,
+    "container_image_id": "sha256:1a497d5721f89bb2e98c0273c4b1495f8fdc6921d589650d090871c11b8d1649",
+    "versions": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.55.2",
+      "ray": "2.48.0",
+      "gymnasium": "1.2.3",
+      "flash-attn": "2.6.3",
+      "flash-linear-attention": "0.4.0",
+      "moba": "1.0.0"
+    }
+  },
+  "load": null,
+  "result": null,
+  "done": null,
+  "guardian": {
+    "empty_running_slot": true
+  },
+  "files": [
+    {
+      "name": "preflight.log",
+      "bytes": 5713
+    },
+    {
+      "name": "model_preparation.json",
+      "bytes": 728
+    },
+    {
+      "name": "manifest.json",
+      "bytes": 3040
+    },
+    {
+      "name": "effective_config.json",
+      "bytes": 24494
+    },
+    {
+      "name": "console.log",
+      "bytes": 45130
+    },
+    {
+      "name": "paired_seed_selection.json",
+      "bytes": 298
+    }
+  ],
+  "startup_observation": "First exact GPU-all container running; clean world8 binary64-v1 evaluation manifest selects retained CP2. Original model shard loading seen in bounded entry tail; actual CP2 load-return/SC2 result not yet observed.",
+  "deadline_beijing": "2026-09-25T16:07:22.437214+08:00",
+  "estimated_completion_beijing": "2026-09-25 12:07–13:07, uncertain (2–3h after actual dispatch)",
+  "collector_note": "First read-only snapshot hit the expected empty running guardian terminal slot. Collector was corrected to represent empty slot as pending; no experiment retry, restart or server changes.",
+  "old_artifacts_changed": false,
+  "new_training_updates_authorized": 0,
+  "followup": {
+    "observed_at": "2026-09-25T10:10:15.709020+08:00",
+    "queue": {
+      "phase": "running-unverified",
+      "completed": [],
+      "new_games": 128,
+      "new_updates": 0,
+      "deadline": 1790323642.4372141
+    },
+    "host": {
+      "version": "host-guardian-v1",
+      "phase": "running-unverified",
+      "completed": [],
+      "deadline": 1790323642.4372141,
+      "learning_validated": false,
+      "started_at": 1790302042.4380283,
+      "stage": "b00-cp2",
+      "container_id": "cc1b57af3067e4f0f6ca5a904299b7c5f6a610721a9955e37088468f572e6800"
+    },
+    "container": {
+      "id": "cc1b57af3067e4f0f6ca5a904299b7c5f6a610721a9955e37088468f572e6800",
+      "name": "/sc2-spb-early128-197-20260925-r1-b00-cp2",
+      "owner": "/var/jfsCache/sc2-spb-early128-197-20260925-r1",
+      "state": {
+        "Status": "running",
+        "Running": true,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 2891190,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-09-25T02:07:22.850907535Z",
+        "FinishedAt": "0001-01-01T00:00:00Z"
+      },
+      "gpu_request": [
+        {
+          "Driver": "",
+          "Count": -1,
+          "DeviceIDs": null,
+          "Capabilities": [
+            [
+              "gpu"
+            ]
+          ],
+          "Options": {}
+        }
+      ]
+    },
+    "load": {
+      "checkpoint": "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/short/runs/train2/checkpoints/global_step_2",
+      "loaded_global_step": 2,
+      "checkpoint_load_returned": true,
+      "val_only": true,
+      "optimizer_updates": 0,
+      "feedback": "0",
+      "temperature": 0.8,
+      "do_sample": true,
+      "games": 8,
+      "game_seeds": [
+        65648715,
+        3519458032,
+        4034442911,
+        2837899169,
+        3924150504,
+        2347007475,
+        2710453253,
+        3012843628
+      ],
+      "answers": "online spb; no replay or replacement",
+      "optimizer_loaded_by_existing_loader_but_not_updated": true
+    },
+    "storage": {
+      "command": [
+        "du",
+        "-sb",
+        "--null",
+        "--",
+        "/var/jfsCache/sc2-spb-early128-197-20260925-r1",
+        "/var/jfsCache/sc2-spb-early128-197-source-20260925-r1"
+      ],
+      "roots": [
+        "/var/jfsCache/sc2-spb-early128-197-20260925-r1",
+        "/var/jfsCache/sc2-spb-early128-197-source-20260925-r1"
+      ],
+      "started_at": 1790302209.9434488,
+      "deadline": 1790323642.4372141,
+      "limit": 34359738368,
+      "bytes": 65941161,
+      "returncode": 0,
+      "status": "measured",
+      "stdout": {
+        "tail": "38043039\t/var/jfsCache/sc2-spb-early128-197-20260925-r1\u000027898122\t/var/jfsCache/sc2-spb-early128-197-source-20260925-r1\u0000",
+        "characters": 119,
+        "truncated": false
+      },
+      "stderr": {
+        "tail": "",
+        "characters": 0,
+        "truncated": false
+      },
+      "quiescence": {
+        "version": "host-guardian-v1",
+        "container_id": "cc1b57af3067e4f0f6ca5a904299b7c5f6a610721a9955e37088468f572e6800",
+        "owner_root": "/var/jfsCache/sc2-spb-early128-197-20260925-r1",
+        "guardian_pid": 2891134,
+        "paused_verified": true,
+        "cleanup": "verified-unpaused",
+        "paused_at": 1790302209.9916182,
+        "mode": "paused",
+        "resumed_at": 1790302210.033265
+      },
+      "measured_at": 1790302210.0000103,
+      "root_bytes": {
+        "/var/jfsCache/sc2-spb-early128-197-20260925-r1": 38043039,
+        "/var/jfsCache/sc2-spb-early128-197-source-20260925-r1": 27898122
+      },
+      "checked_at": 1790302210.033379
+    },
+    "failure": null,
+    "result": null,
+    "done": null,
+    "guardian": {
+      "empty_running_slot": true
+    },
+    "sc2_in_game_and_planner_observed": true,
+    "bounded_evidence": [
+      "(SC2Worker pid=2512) Combat result reward: {\"pid\": 7309, \"game_loop\": 0, \"boundary\": \"planner\", \"last_consumed_policy_action_id\": null, \"killed_value\": 0.0, \"lost_value\": 0.0, \"scale\": 0.001, \"reward\": 0.0}",
+      "(SC2Worker pid=2508) Acquired SC2 reset slot 0/1.",
+      "(SC2Worker pid=2508) 2026-09-24 19:10:05.762 | INFO     | sc2.controller:create_game:43 - Map:     Flat128",
+      "(SC2Worker pid=2508) 2026-09-24 19:10:05.762 | INFO     | sc2.controller:create_game:44 - Players: Bot LLMPlayer(Terran), Computer VeryHard(Terran, Air)",
+      "(SC2Worker pid=2508) 2026-09-24 19:10:09.731 | INFO     | sc2.protocol:_execute:120 - Client status changed to Status.in_game (was None)",
+      "(SC2Worker pid=2508) Generate new plan... [0]",
+      "(SC2Worker pid=2508) Combat result reward: {\"pid\": 7339, \"game_loop\": 0, \"boundary\": \"planner\", \"last_consumed_policy_action_id\": null, \"killed_value\": 0.0, \"lost_value\": 0.0, \"scale\": 0.001, \"reward\": 0.0}",
+      "(SC2Worker pid=2511) Acquired SC2 reset slot 0/1.",
+      "(SC2Worker pid=2511) 2026-09-24 19:10:12.274 | INFO     | sc2.controller:create_game:43 - Map:     Flat128",
+      "(SC2Worker pid=2511) 2026-09-24 19:10:12.274 | INFO     | sc2.controller:create_game:44 - Players: Bot LLMPlayer(Terran), Computer VeryHard(Terran, Air)"
+    ],
+    "sampling_rng_pair_verification": "Pending per-stage completion; frozen verifier requires match to both reused original and CP96.",
+    "legacy_player_label": "Qwen3-30B label in SC2 log paths is inherited executor naming, not model identity; manifest identifies SpikingBrain and actual load proves CP2."
+  }
+}

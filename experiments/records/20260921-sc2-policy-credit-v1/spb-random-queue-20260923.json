@@ -1,0 +1,409 @@
+{
+  "checked_at": 1790175516.1681712,
+  "root": "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1",
+  "source": "/var/jfsCache/sc2-spb-l7random96-197-source-20260923-r1/code",
+  "runtime_sha": "83f3530765babe048035524ddf1651291810818a",
+  "orchestration_sha": "9a7b0faca5b145a891ad211f189121e4949f0eab",
+  "new_games": 792,
+  "new_updates": 96,
+  "wall_seconds": 172800,
+  "gpu_hours": 384,
+  "output_limit_bytes": 1099511627776,
+  "first_dispatch_by": 1790312320.0467553,
+  "storage_roots": [
+    "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1",
+    "/var/jfsCache/sc2-spb-l7random96-197-source-20260923-r1"
+  ],
+  "queue": {
+    "phase": "waiting-predecessor",
+    "completed": [],
+    "first_dispatch_by": 1790312320.0467553
+  },
+  "dispatch_exists": false,
+  "host_regressions": {
+    "passed": true,
+    "tests": 71,
+    "skips": 0,
+    "cuda_initialized": false,
+    "host_only": true,
+    "runtime_sha": "83f3530765babe048035524ddf1651291810818a",
+    "checked_at": 1790175199.7668538
+  },
+  "model_regressions": {
+    "passed": true,
+    "tests": 261,
+    "skips": 0,
+    "cuda_initialized": false,
+    "host_only": false,
+    "runtime_sha": "83f3530765babe048035524ddf1651291810818a",
+    "checked_at": 1790175229.3549478
+  },
+  "storage": {
+    "command": [
+      "du",
+      "-sb",
+      "--null",
+      "--",
+      "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1",
+      "/var/jfsCache/sc2-spb-l7random96-197-source-20260923-r1"
+    ],
+    "roots": [
+      "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1",
+      "/var/jfsCache/sc2-spb-l7random96-197-source-20260923-r1"
+    ],
+    "started_at": 1790175295.8135605,
+    "deadline": 1790312320.0467553,
+    "limit": 1099511627776,
+    "bytes": 36091338,
+    "returncode": 0,
+    "status": "measured",
+    "stdout": {
+      "tail": "16142392\t/var/jfsCache/sc2-spb-l7random96-197-20260923-r1\u000019948946\t/var/jfsCache/sc2-spb-l7random96-197-source-20260923-r1\u0000",
+      "characters": 123,
+      "truncated": false
+    },
+    "stderr": {
+      "tail": "",
+      "characters": 0,
+      "truncated": false
+    },
+    "root_bytes": {
+      "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1": 16142392,
+      "/var/jfsCache/sc2-spb-l7random96-197-source-20260923-r1": 19948946
+    },
+    "checked_at": 1790175295.8192792
+  },
+  "parts": {
+    "short": {
+      "stages": [
+        "pre",
+        "train2",
+        "post"
+      ],
+      "games": [
+        8,
+        16,
+        8
+      ],
+      "updates": [
+        0,
+        2,
+        0
+      ],
+      "model_kind": "spb",
+      "host_asset_paths": {
+        "venv": "/data/yangjinyue/new-scii-spb2-system-baseline/envs/spb2-stageguard-r1",
+        "model": "/data/yangjinyue/sc2-spb2-level7-20260814/model",
+        "sc2": "/data/yangjinyue/sc2-spb2-level7-20260814/StarCraftII",
+        "image": "sha256:1a497d5721f89bb2e98c0273c4b1495f8fdc6921d589650d090871c11b8d1649"
+      },
+      "seed_protocol": "independent_uniform101",
+      "seed_group_mode": "mixed_seed_ablation",
+      "initial_training_seeds": [
+        [
+          49,
+          97,
+          53,
+          5,
+          33,
+          65,
+          62,
+          51
+        ],
+        [
+          100,
+          38,
+          61,
+          45,
+          74,
+          27,
+          64,
+          17
+        ],
+        [
+          36,
+          17,
+          96,
+          12,
+          79,
+          32,
+          68,
+          90
+        ]
+      ],
+      "eval_seeds": [
+        605183188,
+        1075501356,
+        2084414326,
+        2203880230,
+        3000371298,
+        949752300,
+        3225036469,
+        2823708076
+      ],
+      "readiness": {
+        "passed": true,
+        "runtime_sha": "83f3530765babe048035524ddf1651291810818a",
+        "cuda_initialized": false,
+        "actual_entries_and_hydra_configs": true,
+        "actual_parent_verified": true,
+        "deferred_gate": null,
+        "checked_at": 1790175205.2804682
+      },
+      "dispatch_exists": false,
+      "source_check_ok_count": 34,
+      "resolved": {
+        "pre": {
+          "sha256": "2d3b374fe82bf2d44cf09e193f1b4790a7ba6ed4b8304898323516ee3261015f",
+          "total_steps": 2,
+          "val_only": true,
+          "resume_mode": "disable",
+          "resume_from_path": null,
+          "no_legacy": true,
+          "reset_concurrency": "1",
+          "reset_retries": "1",
+          "train_seed_protocol": "independent_uniform101",
+          "lr": 0.000001,
+          "warmup_style": "constant",
+          "top_p": 1,
+          "response_length": 192,
+          "sc2_no_thinking": true,
+          "world_size": 8
+        },
+        "train2": {
+          "sha256": "fe0e3c00571eabc7e625ea192b55f6e360d5a6cb3d53c602085a81bada1fed5b",
+          "total_steps": 2,
+          "val_only": false,
+          "resume_mode": "disable",
+          "resume_from_path": null,
+          "no_legacy": true,
+          "reset_concurrency": "1",
+          "reset_retries": "1",
+          "train_seed_protocol": "independent_uniform101",
+          "lr": 0.000001,
+          "warmup_style": "constant",
+          "top_p": 1,
+          "response_length": 192,
+          "sc2_no_thinking": true,
+          "world_size": 8
+        },
+        "post": {
+          "sha256": "9bba5c3eb63b2a61f24abc01f9104be2e04aa1882c1c9574d98d6958a4f2c0e3",
+          "total_steps": 2,
+          "val_only": true,
+          "resume_mode": "resume_path",
+          "resume_from_path": "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/spb-random/short/runs/train2/checkpoints/global_step_2",
+          "no_legacy": true,
+          "reset_concurrency": "1",
+          "reset_retries": "1",
+          "train_seed_protocol": "independent_uniform101",
+          "lr": 0.000001,
+          "warmup_style": "constant",
+          "top_p": 1,
+          "response_length": 192,
+          "sc2_no_thinking": true,
+          "world_size": 8
+        }
+      }
+    },
+    "long": {
+      "stages": [
+        "train96",
+        "eval96"
+      ],
+      "games": [
+        752,
+        8
+      ],
+      "updates": [
+        94,
+        0
+      ],
+      "model_kind": "spb",
+      "host_asset_paths": {
+        "venv": "/data/yangjinyue/new-scii-spb2-system-baseline/envs/spb2-stageguard-r1",
+        "model": "/data/yangjinyue/sc2-spb2-level7-20260814/model",
+        "sc2": "/data/yangjinyue/sc2-spb2-level7-20260814/StarCraftII",
+        "image": "sha256:1a497d5721f89bb2e98c0273c4b1495f8fdc6921d589650d090871c11b8d1649"
+      },
+      "seed_protocol": "independent_uniform101",
+      "seed_group_mode": "mixed_seed_ablation",
+      "initial_training_seeds": [
+        [
+          49,
+          97,
+          53,
+          5,
+          33,
+          65,
+          62,
+          51
+        ],
+        [
+          100,
+          38,
+          61,
+          45,
+          74,
+          27,
+          64,
+          17
+        ],
+        [
+          36,
+          17,
+          96,
+          12,
+          79,
+          32,
+          68,
+          90
+        ]
+      ],
+      "eval_seeds": [
+        605183188,
+        1075501356,
+        2084414326,
+        2203880230,
+        3000371298,
+        949752300,
+        3225036469,
+        2823708076
+      ],
+      "readiness": {
+        "passed": true,
+        "runtime_sha": "83f3530765babe048035524ddf1651291810818a",
+        "cuda_initialized": false,
+        "actual_entries_and_hydra_configs": true,
+        "actual_parent_verified": false,
+        "deferred_gate": "SpB actual CP2 and accepted prefix required before long GPU",
+        "checked_at": 1790175211.0521488
+      },
+      "dispatch_exists": false,
+      "source_check_ok_count": 34,
+      "resolved": {
+        "train96": {
+          "sha256": "bbe0f0fc6ef10fae7a0e869fa87910a2ed59f7248fca150a5c0eb36ff28b5834",
+          "total_steps": 96,
+          "val_only": false,
+          "resume_mode": "resume_path",
+          "resume_from_path": "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/spb-random/short/runs/train2/checkpoints/global_step_2",
+          "no_legacy": true,
+          "reset_concurrency": "1",
+          "reset_retries": "1",
+          "train_seed_protocol": "independent_uniform101",
+          "lr": 0.000001,
+          "warmup_style": "constant",
+          "top_p": 1,
+          "response_length": 192,
+          "sc2_no_thinking": true,
+          "world_size": 8
+        },
+        "eval96": {
+          "sha256": "58e00e7d1b1584ee1703ae63dd14e8f87c1e925b45d1f2fc6193cf1d45dca691",
+          "total_steps": 96,
+          "val_only": true,
+          "resume_mode": "resume_path",
+          "resume_from_path": "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/spb-random/long/runs/train96/checkpoints/global_step_96",
+          "no_legacy": true,
+          "reset_concurrency": "1",
+          "reset_retries": "1",
+          "train_seed_protocol": "independent_uniform101",
+          "lr": 0.000001,
+          "warmup_style": "constant",
+          "top_p": 1,
+          "response_length": 192,
+          "sc2_no_thinking": true,
+          "world_size": 8
+        }
+      }
+    }
+  },
+  "cpu_containers": {
+    "short-cpu": {
+      "id": "23fb8574fd9b0f7478812ff8b47b5f3ec2b28ac9d3db79a7f80512e7b25da6d3",
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-09-23T14:53:19.905173878Z",
+        "FinishedAt": "2026-09-23T14:53:25.971252177Z"
+      },
+      "device_requests": null
+    },
+    "long-cpu": {
+      "id": "3a9f7fff9bcb0284ec439351c79a794c4ea2dd304ec34924982f9a29b4062b2c",
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-09-23T14:53:26.29472802Z",
+        "FinishedAt": "2026-09-23T14:53:31.749672584Z"
+      },
+      "device_requests": null
+    },
+    "short-regressions": {
+      "id": "deef5b1d678c3b282376e972b10345709979194e0356551c3926e95211953dd9",
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-09-23T14:53:32.07041082Z",
+        "FinishedAt": "2026-09-23T14:53:50.450183337Z"
+      },
+      "device_requests": null
+    }
+  },
+  "predecessor": {
+    "root": "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2",
+    "queue": {
+      "phase": "running-unverified",
+      "stage": "train96",
+      "deadline": 1790308720.0467553
+    },
+    "host": {
+      "version": "host-guardian-v1",
+      "phase": "running-unverified",
+      "completed": [],
+      "deadline": 1790308720.0467553,
+      "learning_validated": false,
+      "started_at": 1790168798.0071752,
+      "stage": "train96",
+      "container_id": "fc2f74a4285c5e80660257f42bd1caa21ad1a0614699d680e74938f013106b06"
+    },
+    "train_result_exists": false,
+    "eval_result_exists": false,
+    "last_returned_step": 47
+  },
+  "enqueued_at_beijing": "2026-09-23 22:56:00",
+  "tmux": {
+    "socket": "sc2_spb_l7random96_197_20260923_r1",
+    "session": "spb_l7random96_197_r1"
+  },
+  "monitor": {
+    "id": "197-qwen-cp8",
+    "updated": true,
+    "duplicate_created": false,
+    "interval_minutes": 10,
+    "scope": "Qwen native CP8 train+eval, then newly authorized original SpB random short+96+eval",
+    "healthy_progress_notifications": false
+  }
+}

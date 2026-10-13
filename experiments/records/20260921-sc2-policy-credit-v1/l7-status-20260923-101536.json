@@ -1,0 +1,207 @@
+{
+  "schema": "l7-r4-user-status-v1",
+  "checked_at": "2026-09-23T10:15:36.768958+08:00",
+  "root": "/var/jfsCache/sc2-l7-followup197-20260922-r4",
+  "runtime": "9cb291ea5f50de205c5d88371e08ce229b7d9d04",
+  "inventory_evidence": "l7-heartbeat-20260923-101101.json",
+  "queue": {
+    "bytes": 251,
+    "sha256": "20f2926a344d24d48de5c5b1877bbf5889024d09eb3bbae70d09975f131e1088",
+    "data": {
+      "phase": "running-unverified",
+      "completed": [
+        "spb-same/short"
+      ],
+      "deadline": 1790420762.305692,
+      "original_start": 1790075162.305692,
+      "spb_deadline": 1790247962.305692,
+      "part": "spb-same/long",
+      "arm_deadline": 1790247962.305692
+    }
+  },
+  "host_state": {
+    "bytes": 295,
+    "sha256": "034195b42e7bf5bc0a3e621b0f9f22e6d83e18b32d62a4ca356b86ace34310b6",
+    "data": {
+      "version": "host-guardian-v1",
+      "phase": "running-unverified",
+      "completed": [],
+      "deadline": 1790247962.305692,
+      "learning_validated": false,
+      "started_at": 1790088312.1763573,
+      "stage": "train96",
+      "container_id": "6eab1fd728b6efe0309c2e139fa8b865f7c2a53d30bba4ae637064c74d6780e4"
+    }
+  },
+  "container": {
+    "name": "sc2-l7-followup197-20260922-r4-spb-same-long-train96",
+    "returncode": 0,
+    "stderr": "",
+    "state": {
+      "Status": "running",
+      "Running": true,
+      "Paused": false,
+      "Restarting": false,
+      "OOMKilled": false,
+      "Dead": false,
+      "Pid": 813153,
+      "ExitCode": 0,
+      "Error": "",
+      "StartedAt": "2026-09-22T14:45:12.924428977Z",
+      "FinishedAt": "0001-01-01T00:00:00Z"
+    }
+  },
+  "console": {
+    "total_bytes": 90866447,
+    "read_bytes": 4194304,
+    "tail_sha256": "bec2c0fec94a74c559b603fd348e433b1a89e25557c3e97c0493aab236146c2a",
+    "returned_ppo_rows": [
+      {
+        "step": 85,
+        "episode/valid_action_ratio": 1,
+        "policy_credit/invalid_advantage_max": 0,
+        "actor/grad_norm": 16.07946491241455,
+        "actor/lr": 0.000001,
+        "episode/success_rate": 0.125,
+        "timing_s/update_actor": 11.664172606542706,
+        "timing_s/step": 728.213483357802
+      },
+      {
+        "step": 86,
+        "episode/valid_action_ratio": 1,
+        "policy_credit/invalid_advantage_max": 0,
+        "actor/grad_norm": 41.8472113609314,
+        "actor/lr": 0.000001,
+        "episode/success_rate": 0.375,
+        "timing_s/update_actor": 10.3077531484887,
+        "timing_s/step": 516.2238210299984
+      },
+      {
+        "step": 87,
+        "episode/valid_action_ratio": 1,
+        "policy_credit/invalid_advantage_max": 0,
+        "actor/grad_norm": 114.7850112915039,
+        "actor/lr": 0.000001,
+        "episode/success_rate": 0.75,
+        "timing_s/update_actor": 21.173691174015403,
+        "timing_s/step": 631.9897120064124
+      }
+    ]
+  },
+  "seed_ledger": {
+    "bytes": 9850,
+    "sha256": "f81d219ffb5a683e34a90390bbfb416e32fe04c95f1a4934e0fd334c63b40138",
+    "rows": 86,
+    "last": {
+      "base_seed": 0,
+      "reset_index": 87,
+      "seed_protocol": "same_uniform101",
+      "seeds": [
+        77,
+        77,
+        77,
+        77,
+        77,
+        77,
+        77,
+        77
+      ]
+    }
+  },
+  "stage_completion_receipts": {
+    "storage-failure.json": {
+      "status": "absent"
+    },
+    "spb-same/long/storage-failure.json": {
+      "status": "absent"
+    },
+    "spb-same/long/acceptance-train96.json": {
+      "status": "absent"
+    },
+    "spb-same/long/runs/train96/result.json": {
+      "status": "absent"
+    },
+    "spb-same/long/runs/train96/.done": {
+      "status": "absent"
+    },
+    "spb-same/long/runs/eval96/result.json": {
+      "status": "absent"
+    },
+    "spb-same/long/runs/eval96/.done": {
+      "status": "absent"
+    },
+    "qwen-random/long/dispatch.json": {
+      "status": "absent"
+    },
+    "qwen-random/long/host-supervision/state.json": {
+      "status": "absent"
+    }
+  },
+  "storage": {
+    "storage-state.json": {
+      "sha256": "219054b9bbd491942668fbc8b2e02d774d9572f76db5b24458885d23f550437d",
+      "checked_at": 1790129735.8461535,
+      "bytes": 754031761525,
+      "limit": 2199023255552,
+      "root_count": 11,
+      "returncode": 0,
+      "stderr": {
+        "tail": "",
+        "characters": 0,
+        "truncated": false
+      },
+      "quiescence": {
+        "version": "host-guardian-v1",
+        "container_id": "6eab1fd728b6efe0309c2e139fa8b865f7c2a53d30bba4ae637064c74d6780e4",
+        "owner_root": "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long",
+        "guardian_pid": 813095,
+        "paused_verified": true,
+        "cleanup": "verified-unpaused",
+        "paused_at": 1790129735.5608077,
+        "mode": "paused",
+        "resumed_at": 1790129735.8459547
+      },
+      "deadline": 1790420762.305692
+    },
+    "spb-same/long/storage-state.json": {
+      "sha256": "64e76fc20c423b53495e1ecd62c656e477007cc3d263a9153b9b94e48b13a691",
+      "checked_at": 1790129735.510676,
+      "bytes": 704067610455,
+      "limit": 1099511627776,
+      "root_count": 10,
+      "returncode": 0,
+      "stderr": {
+        "tail": "",
+        "characters": 0,
+        "truncated": false
+      },
+      "quiescence": {
+        "version": "host-guardian-v1",
+        "container_id": "6eab1fd728b6efe0309c2e139fa8b865f7c2a53d30bba4ae637064c74d6780e4",
+        "owner_root": "/var/jfsCache/sc2-l7-followup197-20260922-r4/spb-same/long",
+        "guardian_pid": 813095,
+        "paused_verified": true,
+        "cleanup": "verified-unpaused",
+        "paused_at": 1790129735.2315133,
+        "mode": "paused",
+        "resumed_at": 1790129735.5104988
+      },
+      "deadline": 1790247962.305692
+    }
+  },
+  "interpretation": {
+    "completed_global_step": 87,
+    "pending_step": 88,
+    "remaining_including_pending": 9,
+    "recent_three_mean_seconds_per_step": 625.4756721314043,
+    "rough_remaining_training_seconds": 5629.2810491826385,
+    "eta": "Conditional rough remaining1.5–2.5hours including CP/eval/acceptance, approximately September23 11:45–12:45Beijing. Only3recent steps used; current pending elapsed is not subtracted. Not a promise or deadline change.",
+    "current_legality": "Last3completed batches each valid_action_ratio1; do not substitute this for final all-run acceptance.",
+    "current_learning": "SpB final evaluation pending; recent training win fractions1/8,3/8,6/8 use different scenario seeds, so they do not independently establish an improving policy.",
+    "successor": "Qwen L7 per-game independent random ownCP2→96 remains in the existing queue, undispatched; requires complete SpB acceptance.",
+    "previous_qwen_same_result": "CP2 7/8→CP96 5/8paired; no demonstrated gain, too few pairs for stable-degradation conclusion; six original gradient evidence gaps remain.",
+    "additional_spb_random": "Planned record only. Length/additional budget confirmation pending, not enqueued.",
+    "boundaries": "Read-only status query; no server mutation, restart, extra experiment, weights read, GPU diagnostic or deadline change."
+  },
+  "validation": "Small receipt parsing; existing strict storage totals/gates; latest3binary64-v1 returned metric rows; local JSON/diff checks. No new model tests."
+}

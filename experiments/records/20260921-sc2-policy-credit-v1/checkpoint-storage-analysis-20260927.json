@@ -1,0 +1,240 @@
+{
+  "checked_at": "2026-09-27T22:44:25.564583+08:00",
+  "queue": {
+    "phase": "running-unverified",
+    "completed": [
+      "L9/qwen-same/long",
+      "L10/qwen-same/short"
+    ],
+    "retained_games": 784,
+    "retained_updates": 96,
+    "new_games": 800,
+    "new_updates": 96,
+    "deadline": 1790568708.224269,
+    "level": 10,
+    "arm_deadline": 1790561940.3084953,
+    "part": "qwen-same/long"
+  },
+  "short_host": {
+    "version": "host-guardian-v1",
+    "phase": "completed",
+    "completed": [
+      "pre",
+      "train2",
+      "post"
+    ],
+    "deadline": 1790561940.3084953,
+    "learning_validated": false,
+    "started_at": 1790518773.3676074,
+    "stage": "post",
+    "container_id": "78892323a9a0136a3c3a393da6f39a411be36feb56bdc80e8fe01d04be5028bc",
+    "exit_code": 0,
+    "finished_at": 1790520163.0973752
+  },
+  "long_host": {
+    "version": "host-guardian-v1",
+    "phase": "running-unverified",
+    "completed": [],
+    "deadline": 1790561940.3084953,
+    "learning_validated": false,
+    "started_at": 1790520167.7715538,
+    "stage": "train96",
+    "container_id": "5c6dad7a7beff07053574400d6bd5a090fbc92db1f77a0ff70abc0b1f723befd"
+  },
+  "dispatch": {
+    "start": 1790518740.3084953,
+    "deadline": 1790561940.3084953,
+    "suite_deadline": 1790568708.224269,
+    "gpu_hours": 96,
+    "clock_inherited": false,
+    "new_games": 792,
+    "new_updates": 96,
+    "resumed_at": 1790518740.3085077
+  },
+  "disk": {
+    "total": 7679364128768,
+    "used": 6870728122368,
+    "free": 808636006400
+  },
+  "memory_available": 759040540672,
+  "hostname": {
+    "returncode": 0,
+    "stdout": "k8s-a-gpu01\n",
+    "stderr": ""
+  },
+  "gpu": {
+    "returncode": 0,
+    "stdout": "0, 37, 8654\n1, 36, 8798\n2, 11, 8798\n3, 44, 8798\n4, 30, 8798\n5, 12, 8798\n6, 16, 8798\n7, 13, 8654\n",
+    "stderr": ""
+  },
+  "compute": {
+    "returncode": 0,
+    "stdout": "429770, ray::WorkerDict.actor_rollout_init_model, 8644 MiB\n429964, ray::WorkerDict.actor_rollout_init_model, 8788 MiB\n429965, ray::WorkerDict.actor_rollout_init_model, 8788 MiB\n429966, ray::WorkerDict.actor_rollout_init_model, 8788 MiB\n429967, ray::WorkerDict.actor_rollout_init_model, 8788 MiB\n429968, ray::WorkerDict.actor_rollout_init_model, 8788 MiB\n429969, ray::WorkerDict.actor_rollout_init_model, 8788 MiB\n429970, ray::WorkerDict.actor_rollout_init_model, 8644 MiB\n",
+    "stderr": ""
+  },
+  "containers": {
+    "returncode": 0,
+    "stdout": "5c6dad7a7bef sc2-qwen-l10same96-197-20260927-r3-long-train96 Up About a minute\n62a197a64abc new_scii_spb2_stageguard_v1_20260815 Up 6 weeks\n2542e9ed108b new_scii_spb2_runtime_v1_20260815 Up 6 weeks\n269b6d79d3b4 new_scii_clean_core_20260815 Up 6 weeks\n9c608a58d0be sc2_spb2_l7_env_20260814 Up 6 weeks\n",
+    "stderr": ""
+  },
+  "checkpoint": {
+    "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/long/runs/train96/checkpoints/global_step_96",
+    "files": [
+      {
+        "path": "data.pt",
+        "bytes": 1947
+      },
+      {
+        "path": "sc2_state.pt",
+        "bytes": 30007
+      },
+      {
+        "path": "actor/model_world_size_8_rank_2.pt",
+        "bytes": 2205943659
+      },
+      {
+        "path": "actor/model_world_size_8_rank_4.pt",
+        "bytes": 2205943659
+      },
+      {
+        "path": "actor/model_world_size_8_rank_6.pt",
+        "bytes": 2205943659
+      },
+      {
+        "path": "actor/model_world_size_8_rank_5.pt",
+        "bytes": 2205943659
+      },
+      {
+        "path": "actor/model_world_size_8_rank_0.pt",
+        "bytes": 2205943659
+      },
+      {
+        "path": "actor/model_world_size_8_rank_1.pt",
+        "bytes": 2205943659
+      },
+      {
+        "path": "actor/model_world_size_8_rank_3.pt",
+        "bytes": 2205943659
+      },
+      {
+        "path": "actor/model_world_size_8_rank_7.pt",
+        "bytes": 2205943659
+      },
+      {
+        "path": "actor/optim_world_size_8_rank_2.pt",
+        "bytes": 4022500763
+      },
+      {
+        "path": "actor/optim_world_size_8_rank_4.pt",
+        "bytes": 4022500763
+      },
+      {
+        "path": "actor/optim_world_size_8_rank_6.pt",
+        "bytes": 4022500763
+      },
+      {
+        "path": "actor/optim_world_size_8_rank_3.pt",
+        "bytes": 4022500763
+      },
+      {
+        "path": "actor/optim_world_size_8_rank_5.pt",
+        "bytes": 4022500763
+      },
+      {
+        "path": "actor/optim_world_size_8_rank_0.pt",
+        "bytes": 4022500763
+      },
+      {
+        "path": "actor/optim_world_size_8_rank_1.pt",
+        "bytes": 4022500763
+      },
+      {
+        "path": "actor/optim_world_size_8_rank_7.pt",
+        "bytes": 4022500763
+      },
+      {
+        "path": "actor/extra_state_world_size_8_rank_3.pt",
+        "bytes": 15013
+      },
+      {
+        "path": "actor/extra_state_world_size_8_rank_2.pt",
+        "bytes": 15077
+      },
+      {
+        "path": "actor/extra_state_world_size_8_rank_1.pt",
+        "bytes": 15141
+      },
+      {
+        "path": "actor/extra_state_world_size_8_rank_7.pt",
+        "bytes": 15077
+      },
+      {
+        "path": "actor/extra_state_world_size_8_rank_4.pt",
+        "bytes": 15141
+      },
+      {
+        "path": "actor/extra_state_world_size_8_rank_5.pt",
+        "bytes": 15141
+      },
+      {
+        "path": "actor/extra_state_world_size_8_rank_6.pt",
+        "bytes": 15077
+      },
+      {
+        "path": "actor/extra_state_world_size_8_rank_0.pt",
+        "bytes": 15141
+      },
+      {
+        "path": "actor/generation_config.json",
+        "bytes": 213
+      },
+      {
+        "path": "actor/config.json",
+        "bytes": 1542
+      },
+      {
+        "path": "actor/chat_template.jinja",
+        "bytes": 2630
+      },
+      {
+        "path": "actor/tokenizer_config.json",
+        "bytes": 5405
+      },
+      {
+        "path": "actor/special_tokens_map.json",
+        "bytes": 613
+      },
+      {
+        "path": "actor/added_tokens.json",
+        "bytes": 707
+      },
+      {
+        "path": "actor/vocab.json",
+        "bytes": 2776833
+      },
+      {
+        "path": "actor/merges.txt",
+        "bytes": 1671853
+      },
+      {
+        "path": "actor/tokenizer.json",
+        "bytes": 11422654
+      }
+    ]
+  },
+  "effective_config_type": "dict",
+  "effective_config_keys": [
+    "command",
+    "overrides"
+  ],
+  "frozen_checkpoint_source": {
+    "verl/utils/checkpoint/fsdp_checkpoint_manager.py": "8c552fae85be2a07fdbe4f24aae7c11a0dc2366ce2768dcefa05b993e34b8a03",
+    "verl/trainer/ppo/ray_trainer.py": "31200fc1170e54d39331be75bed81393fa9ae6c1b7f770e0f188164ce32c8bfc"
+  },
+  "scope": "Read-only file stat and frozen-source inspection; no large checkpoint payload read, no deletion or server changes.",
+  "breakdown_bytes": {
+    "model": 17647549272,
+    "optimizer": 32180006104,
+    "other": 16035212
+  }
+}

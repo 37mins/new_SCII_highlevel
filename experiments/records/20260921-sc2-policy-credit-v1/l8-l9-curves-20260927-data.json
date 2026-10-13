@@ -1,0 +1,2014 @@
+{
+  "schema": "sc2-l8-l9-curves-v1",
+  "checked_at_beijing": "2026-09-27T20:55:27.970168+08:00",
+  "node": "sc2-a100-197",
+  "l8": [
+    {
+      "run": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r1/qwen-same/short/runs/train2",
+      "runtime_sha": "eef0f049bb09b7a51188ae67a6c35436a3bf055f",
+      "first": 1,
+      "last": 2,
+      "rows": [
+        {
+          "step": 1,
+          "wins": 8,
+          "games": 8,
+          "seed": 49
+        },
+        {
+          "step": 2,
+          "wins": 0,
+          "games": 8,
+          "seed": 97
+        }
+      ],
+      "summary": {
+        "wins": 8,
+        "games": 16
+      },
+      "checks": {
+        "result_done_equal": true,
+        "process_exit_code": 0,
+        "metrics_precision": "binary64-v1",
+        "natural_batches": 2,
+        "exact_same_seed_rows": 2,
+        "returned_ppo_metrics": 2,
+        "finite_positive_gradient_and_update_time_rows": 2,
+        "valid_action_ratio_one_rows": 2,
+        "invalid_advantage_nonpositive_rows": 2
+      }
+    },
+    {
+      "run": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/long/runs/train96",
+      "runtime_sha": "eef0f049bb09b7a51188ae67a6c35436a3bf055f",
+      "first": 3,
+      "last": 96,
+      "rows": [
+        {
+          "step": 3,
+          "wins": 8,
+          "games": 8,
+          "seed": 53
+        },
+        {
+          "step": 4,
+          "wins": 0,
+          "games": 8,
+          "seed": 5
+        },
+        {
+          "step": 5,
+          "wins": 0,
+          "games": 8,
+          "seed": 33
+        },
+        {
+          "step": 6,
+          "wins": 5,
+          "games": 8,
+          "seed": 65
+        },
+        {
+          "step": 7,
+          "wins": 8,
+          "games": 8,
+          "seed": 62
+        },
+        {
+          "step": 8,
+          "wins": 8,
+          "games": 8,
+          "seed": 51
+        },
+        {
+          "step": 9,
+          "wins": 8,
+          "games": 8,
+          "seed": 100
+        },
+        {
+          "step": 10,
+          "wins": 8,
+          "games": 8,
+          "seed": 38
+        },
+        {
+          "step": 11,
+          "wins": 0,
+          "games": 8,
+          "seed": 61
+        },
+        {
+          "step": 12,
+          "wins": 8,
+          "games": 8,
+          "seed": 45
+        },
+        {
+          "step": 13,
+          "wins": 8,
+          "games": 8,
+          "seed": 74
+        },
+        {
+          "step": 14,
+          "wins": 8,
+          "games": 8,
+          "seed": 27
+        },
+        {
+          "step": 15,
+          "wins": 0,
+          "games": 8,
+          "seed": 64
+        },
+        {
+          "step": 16,
+          "wins": 8,
+          "games": 8,
+          "seed": 17
+        },
+        {
+          "step": 17,
+          "wins": 8,
+          "games": 8,
+          "seed": 36
+        },
+        {
+          "step": 18,
+          "wins": 8,
+          "games": 8,
+          "seed": 17
+        },
+        {
+          "step": 19,
+          "wins": 0,
+          "games": 8,
+          "seed": 96
+        },
+        {
+          "step": 20,
+          "wins": 6,
+          "games": 8,
+          "seed": 12
+        },
+        {
+          "step": 21,
+          "wins": 0,
+          "games": 8,
+          "seed": 79
+        },
+        {
+          "step": 22,
+          "wins": 0,
+          "games": 8,
+          "seed": 32
+        },
+        {
+          "step": 23,
+          "wins": 0,
+          "games": 8,
+          "seed": 68
+        },
+        {
+          "step": 24,
+          "wins": 8,
+          "games": 8,
+          "seed": 90
+        },
+        {
+          "step": 25,
+          "wins": 6,
+          "games": 8,
+          "seed": 77
+        },
+        {
+          "step": 26,
+          "wins": 8,
+          "games": 8,
+          "seed": 18
+        },
+        {
+          "step": 27,
+          "wins": 0,
+          "games": 8,
+          "seed": 39
+        },
+        {
+          "step": 28,
+          "wins": 8,
+          "games": 8,
+          "seed": 12
+        },
+        {
+          "step": 29,
+          "wins": 0,
+          "games": 8,
+          "seed": 93
+        },
+        {
+          "step": 30,
+          "wins": 0,
+          "games": 8,
+          "seed": 9
+        },
+        {
+          "step": 31,
+          "wins": 0,
+          "games": 8,
+          "seed": 87
+        },
+        {
+          "step": 32,
+          "wins": 8,
+          "games": 8,
+          "seed": 42
+        },
+        {
+          "step": 33,
+          "wins": 8,
+          "games": 8,
+          "seed": 60
+        },
+        {
+          "step": 34,
+          "wins": 0,
+          "games": 8,
+          "seed": 71
+        },
+        {
+          "step": 35,
+          "wins": 8,
+          "games": 8,
+          "seed": 12
+        },
+        {
+          "step": 36,
+          "wins": 8,
+          "games": 8,
+          "seed": 45
+        },
+        {
+          "step": 37,
+          "wins": 8,
+          "games": 8,
+          "seed": 55
+        },
+        {
+          "step": 38,
+          "wins": 0,
+          "games": 8,
+          "seed": 40
+        },
+        {
+          "step": 39,
+          "wins": 7,
+          "games": 8,
+          "seed": 78
+        },
+        {
+          "step": 40,
+          "wins": 8,
+          "games": 8,
+          "seed": 81
+        },
+        {
+          "step": 41,
+          "wins": 0,
+          "games": 8,
+          "seed": 26
+        },
+        {
+          "step": 42,
+          "wins": 8,
+          "games": 8,
+          "seed": 70
+        },
+        {
+          "step": 43,
+          "wins": 0,
+          "games": 8,
+          "seed": 61
+        },
+        {
+          "step": 44,
+          "wins": 0,
+          "games": 8,
+          "seed": 56
+        },
+        {
+          "step": 45,
+          "wins": 0,
+          "games": 8,
+          "seed": 66
+        },
+        {
+          "step": 46,
+          "wins": 0,
+          "games": 8,
+          "seed": 33
+        },
+        {
+          "step": 47,
+          "wins": 8,
+          "games": 8,
+          "seed": 7
+        },
+        {
+          "step": 48,
+          "wins": 8,
+          "games": 8,
+          "seed": 70
+        },
+        {
+          "step": 49,
+          "wins": 8,
+          "games": 8,
+          "seed": 1
+        },
+        {
+          "step": 50,
+          "wins": 8,
+          "games": 8,
+          "seed": 11
+        },
+        {
+          "step": 51,
+          "wins": 8,
+          "games": 8,
+          "seed": 92
+        },
+        {
+          "step": 52,
+          "wins": 8,
+          "games": 8,
+          "seed": 51
+        },
+        {
+          "step": 53,
+          "wins": 8,
+          "games": 8,
+          "seed": 90
+        },
+        {
+          "step": 54,
+          "wins": 0,
+          "games": 8,
+          "seed": 100
+        },
+        {
+          "step": 55,
+          "wins": 3,
+          "games": 8,
+          "seed": 85
+        },
+        {
+          "step": 56,
+          "wins": 0,
+          "games": 8,
+          "seed": 80
+        },
+        {
+          "step": 57,
+          "wins": 0,
+          "games": 8,
+          "seed": 0
+        },
+        {
+          "step": 58,
+          "wins": 8,
+          "games": 8,
+          "seed": 78
+        },
+        {
+          "step": 59,
+          "wins": 8,
+          "games": 8,
+          "seed": 63
+        },
+        {
+          "step": 60,
+          "wins": 8,
+          "games": 8,
+          "seed": 42
+        },
+        {
+          "step": 61,
+          "wins": 4,
+          "games": 8,
+          "seed": 31
+        },
+        {
+          "step": 62,
+          "wins": 0,
+          "games": 8,
+          "seed": 93
+        },
+        {
+          "step": 63,
+          "wins": 8,
+          "games": 8,
+          "seed": 41
+        },
+        {
+          "step": 64,
+          "wins": 3,
+          "games": 8,
+          "seed": 90
+        },
+        {
+          "step": 65,
+          "wins": 8,
+          "games": 8,
+          "seed": 8
+        },
+        {
+          "step": 66,
+          "wins": 8,
+          "games": 8,
+          "seed": 24
+        },
+        {
+          "step": 67,
+          "wins": 8,
+          "games": 8,
+          "seed": 72
+        },
+        {
+          "step": 68,
+          "wins": 0,
+          "games": 8,
+          "seed": 28
+        },
+        {
+          "step": 69,
+          "wins": 0,
+          "games": 8,
+          "seed": 30
+        },
+        {
+          "step": 70,
+          "wins": 8,
+          "games": 8,
+          "seed": 18
+        },
+        {
+          "step": 71,
+          "wins": 0,
+          "games": 8,
+          "seed": 69
+        },
+        {
+          "step": 72,
+          "wins": 0,
+          "games": 8,
+          "seed": 57
+        },
+        {
+          "step": 73,
+          "wins": 8,
+          "games": 8,
+          "seed": 11
+        },
+        {
+          "step": 74,
+          "wins": 8,
+          "games": 8,
+          "seed": 10
+        },
+        {
+          "step": 75,
+          "wins": 0,
+          "games": 8,
+          "seed": 40
+        },
+        {
+          "step": 76,
+          "wins": 0,
+          "games": 8,
+          "seed": 65
+        },
+        {
+          "step": 77,
+          "wins": 2,
+          "games": 8,
+          "seed": 62
+        },
+        {
+          "step": 78,
+          "wins": 5,
+          "games": 8,
+          "seed": 13
+        },
+        {
+          "step": 79,
+          "wins": 5,
+          "games": 8,
+          "seed": 38
+        },
+        {
+          "step": 80,
+          "wins": 8,
+          "games": 8,
+          "seed": 70
+        },
+        {
+          "step": 81,
+          "wins": 7,
+          "games": 8,
+          "seed": 37
+        },
+        {
+          "step": 82,
+          "wins": 5,
+          "games": 8,
+          "seed": 90
+        },
+        {
+          "step": 83,
+          "wins": 0,
+          "games": 8,
+          "seed": 15
+        },
+        {
+          "step": 84,
+          "wins": 8,
+          "games": 8,
+          "seed": 70
+        },
+        {
+          "step": 85,
+          "wins": 8,
+          "games": 8,
+          "seed": 42
+        },
+        {
+          "step": 86,
+          "wins": 0,
+          "games": 8,
+          "seed": 69
+        },
+        {
+          "step": 87,
+          "wins": 7,
+          "games": 8,
+          "seed": 26
+        },
+        {
+          "step": 88,
+          "wins": 8,
+          "games": 8,
+          "seed": 77
+        },
+        {
+          "step": 89,
+          "wins": 8,
+          "games": 8,
+          "seed": 70
+        },
+        {
+          "step": 90,
+          "wins": 0,
+          "games": 8,
+          "seed": 75
+        },
+        {
+          "step": 91,
+          "wins": 8,
+          "games": 8,
+          "seed": 36
+        },
+        {
+          "step": 92,
+          "wins": 0,
+          "games": 8,
+          "seed": 56
+        },
+        {
+          "step": 93,
+          "wins": 8,
+          "games": 8,
+          "seed": 11
+        },
+        {
+          "step": 94,
+          "wins": 0,
+          "games": 8,
+          "seed": 76
+        },
+        {
+          "step": 95,
+          "wins": 0,
+          "games": 8,
+          "seed": 49
+        },
+        {
+          "step": 96,
+          "wins": 8,
+          "games": 8,
+          "seed": 40
+        }
+      ],
+      "summary": {
+        "wins": 433,
+        "games": 752
+      },
+      "checks": {
+        "result_done_equal": true,
+        "process_exit_code": 0,
+        "metrics_precision": "binary64-v1",
+        "natural_batches": 94,
+        "exact_same_seed_rows": 94,
+        "returned_ppo_metrics": 94,
+        "finite_positive_gradient_and_update_time_rows": 94,
+        "valid_action_ratio_one_rows": 94,
+        "invalid_advantage_nonpositive_rows": 94
+      }
+    },
+    {
+      "run": "/var/jfsCache/sc2-qwen-l8same192-197-20260926-r2/runs/train192",
+      "runtime_sha": "f0e1059aabd28cc5be259908e0955c2509d74a87",
+      "first": 97,
+      "last": 192,
+      "rows": [
+        {
+          "step": 97,
+          "wins": 8,
+          "games": 8,
+          "seed": 73
+        },
+        {
+          "step": 98,
+          "wins": 8,
+          "games": 8,
+          "seed": 30
+        },
+        {
+          "step": 99,
+          "wins": 8,
+          "games": 8,
+          "seed": 37
+        },
+        {
+          "step": 100,
+          "wins": 8,
+          "games": 8,
+          "seed": 23
+        },
+        {
+          "step": 101,
+          "wins": 8,
+          "games": 8,
+          "seed": 24
+        },
+        {
+          "step": 102,
+          "wins": 8,
+          "games": 8,
+          "seed": 23
+        },
+        {
+          "step": 103,
+          "wins": 8,
+          "games": 8,
+          "seed": 4
+        },
+        {
+          "step": 104,
+          "wins": 8,
+          "games": 8,
+          "seed": 78
+        },
+        {
+          "step": 105,
+          "wins": 8,
+          "games": 8,
+          "seed": 84
+        },
+        {
+          "step": 106,
+          "wins": 8,
+          "games": 8,
+          "seed": 33
+        },
+        {
+          "step": 107,
+          "wins": 8,
+          "games": 8,
+          "seed": 60
+        },
+        {
+          "step": 108,
+          "wins": 8,
+          "games": 8,
+          "seed": 8
+        },
+        {
+          "step": 109,
+          "wins": 8,
+          "games": 8,
+          "seed": 11
+        },
+        {
+          "step": 110,
+          "wins": 3,
+          "games": 8,
+          "seed": 86
+        },
+        {
+          "step": 111,
+          "wins": 0,
+          "games": 8,
+          "seed": 96
+        },
+        {
+          "step": 112,
+          "wins": 0,
+          "games": 8,
+          "seed": 16
+        },
+        {
+          "step": 113,
+          "wins": 8,
+          "games": 8,
+          "seed": 19
+        },
+        {
+          "step": 114,
+          "wins": 8,
+          "games": 8,
+          "seed": 4
+        },
+        {
+          "step": 115,
+          "wins": 8,
+          "games": 8,
+          "seed": 10
+        },
+        {
+          "step": 116,
+          "wins": 0,
+          "games": 8,
+          "seed": 89
+        },
+        {
+          "step": 117,
+          "wins": 0,
+          "games": 8,
+          "seed": 69
+        },
+        {
+          "step": 118,
+          "wins": 0,
+          "games": 8,
+          "seed": 87
+        },
+        {
+          "step": 119,
+          "wins": 8,
+          "games": 8,
+          "seed": 50
+        },
+        {
+          "step": 120,
+          "wins": 0,
+          "games": 8,
+          "seed": 90
+        },
+        {
+          "step": 121,
+          "wins": 8,
+          "games": 8,
+          "seed": 67
+        },
+        {
+          "step": 122,
+          "wins": 0,
+          "games": 8,
+          "seed": 35
+        },
+        {
+          "step": 123,
+          "wins": 8,
+          "games": 8,
+          "seed": 66
+        },
+        {
+          "step": 124,
+          "wins": 8,
+          "games": 8,
+          "seed": 30
+        },
+        {
+          "step": 125,
+          "wins": 0,
+          "games": 8,
+          "seed": 27
+        },
+        {
+          "step": 126,
+          "wins": 0,
+          "games": 8,
+          "seed": 86
+        },
+        {
+          "step": 127,
+          "wins": 0,
+          "games": 8,
+          "seed": 75
+        },
+        {
+          "step": 128,
+          "wins": 8,
+          "games": 8,
+          "seed": 53
+        },
+        {
+          "step": 129,
+          "wins": 8,
+          "games": 8,
+          "seed": 74
+        },
+        {
+          "step": 130,
+          "wins": 0,
+          "games": 8,
+          "seed": 35
+        },
+        {
+          "step": 131,
+          "wins": 8,
+          "games": 8,
+          "seed": 57
+        },
+        {
+          "step": 132,
+          "wins": 8,
+          "games": 8,
+          "seed": 63
+        },
+        {
+          "step": 133,
+          "wins": 8,
+          "games": 8,
+          "seed": 84
+        },
+        {
+          "step": 134,
+          "wins": 8,
+          "games": 8,
+          "seed": 82
+        },
+        {
+          "step": 135,
+          "wins": 0,
+          "games": 8,
+          "seed": 89
+        },
+        {
+          "step": 136,
+          "wins": 0,
+          "games": 8,
+          "seed": 45
+        },
+        {
+          "step": 137,
+          "wins": 8,
+          "games": 8,
+          "seed": 10
+        },
+        {
+          "step": 138,
+          "wins": 8,
+          "games": 8,
+          "seed": 41
+        },
+        {
+          "step": 139,
+          "wins": 8,
+          "games": 8,
+          "seed": 78
+        },
+        {
+          "step": 140,
+          "wins": 8,
+          "games": 8,
+          "seed": 14
+        },
+        {
+          "step": 141,
+          "wins": 8,
+          "games": 8,
+          "seed": 62
+        },
+        {
+          "step": 142,
+          "wins": 0,
+          "games": 8,
+          "seed": 75
+        },
+        {
+          "step": 143,
+          "wins": 0,
+          "games": 8,
+          "seed": 80
+        },
+        {
+          "step": 144,
+          "wins": 8,
+          "games": 8,
+          "seed": 42
+        },
+        {
+          "step": 145,
+          "wins": 8,
+          "games": 8,
+          "seed": 24
+        },
+        {
+          "step": 146,
+          "wins": 8,
+          "games": 8,
+          "seed": 31
+        },
+        {
+          "step": 147,
+          "wins": 0,
+          "games": 8,
+          "seed": 2
+        },
+        {
+          "step": 148,
+          "wins": 0,
+          "games": 8,
+          "seed": 93
+        },
+        {
+          "step": 149,
+          "wins": 8,
+          "games": 8,
+          "seed": 34
+        },
+        {
+          "step": 150,
+          "wins": 8,
+          "games": 8,
+          "seed": 14
+        },
+        {
+          "step": 151,
+          "wins": 0,
+          "games": 8,
+          "seed": 90
+        },
+        {
+          "step": 152,
+          "wins": 8,
+          "games": 8,
+          "seed": 28
+        },
+        {
+          "step": 153,
+          "wins": 8,
+          "games": 8,
+          "seed": 47
+        },
+        {
+          "step": 154,
+          "wins": 0,
+          "games": 8,
+          "seed": 21
+        },
+        {
+          "step": 155,
+          "wins": 8,
+          "games": 8,
+          "seed": 42
+        },
+        {
+          "step": 156,
+          "wins": 0,
+          "games": 8,
+          "seed": 54
+        },
+        {
+          "step": 157,
+          "wins": 8,
+          "games": 8,
+          "seed": 7
+        },
+        {
+          "step": 158,
+          "wins": 8,
+          "games": 8,
+          "seed": 12
+        },
+        {
+          "step": 159,
+          "wins": 8,
+          "games": 8,
+          "seed": 100
+        },
+        {
+          "step": 160,
+          "wins": 8,
+          "games": 8,
+          "seed": 18
+        },
+        {
+          "step": 161,
+          "wins": 0,
+          "games": 8,
+          "seed": 89
+        },
+        {
+          "step": 162,
+          "wins": 5,
+          "games": 8,
+          "seed": 28
+        },
+        {
+          "step": 163,
+          "wins": 0,
+          "games": 8,
+          "seed": 5
+        },
+        {
+          "step": 164,
+          "wins": 8,
+          "games": 8,
+          "seed": 73
+        },
+        {
+          "step": 165,
+          "wins": 8,
+          "games": 8,
+          "seed": 81
+        },
+        {
+          "step": 166,
+          "wins": 8,
+          "games": 8,
+          "seed": 68
+        },
+        {
+          "step": 167,
+          "wins": 6,
+          "games": 8,
+          "seed": 77
+        },
+        {
+          "step": 168,
+          "wins": 0,
+          "games": 8,
+          "seed": 87
+        },
+        {
+          "step": 169,
+          "wins": 0,
+          "games": 8,
+          "seed": 9
+        },
+        {
+          "step": 170,
+          "wins": 0,
+          "games": 8,
+          "seed": 3
+        },
+        {
+          "step": 171,
+          "wins": 0,
+          "games": 8,
+          "seed": 15
+        },
+        {
+          "step": 172,
+          "wins": 8,
+          "games": 8,
+          "seed": 81
+        },
+        {
+          "step": 173,
+          "wins": 8,
+          "games": 8,
+          "seed": 24
+        },
+        {
+          "step": 174,
+          "wins": 8,
+          "games": 8,
+          "seed": 77
+        },
+        {
+          "step": 175,
+          "wins": 8,
+          "games": 8,
+          "seed": 73
+        },
+        {
+          "step": 176,
+          "wins": 0,
+          "games": 8,
+          "seed": 15
+        },
+        {
+          "step": 177,
+          "wins": 8,
+          "games": 8,
+          "seed": 50
+        },
+        {
+          "step": 178,
+          "wins": 8,
+          "games": 8,
+          "seed": 11
+        },
+        {
+          "step": 179,
+          "wins": 8,
+          "games": 8,
+          "seed": 47
+        },
+        {
+          "step": 180,
+          "wins": 8,
+          "games": 8,
+          "seed": 14
+        },
+        {
+          "step": 181,
+          "wins": 8,
+          "games": 8,
+          "seed": 4
+        },
+        {
+          "step": 182,
+          "wins": 8,
+          "games": 8,
+          "seed": 77
+        },
+        {
+          "step": 183,
+          "wins": 0,
+          "games": 8,
+          "seed": 2
+        },
+        {
+          "step": 184,
+          "wins": 8,
+          "games": 8,
+          "seed": 24
+        },
+        {
+          "step": 185,
+          "wins": 8,
+          "games": 8,
+          "seed": 23
+        },
+        {
+          "step": 186,
+          "wins": 0,
+          "games": 8,
+          "seed": 91
+        },
+        {
+          "step": 187,
+          "wins": 0,
+          "games": 8,
+          "seed": 15
+        },
+        {
+          "step": 188,
+          "wins": 0,
+          "games": 8,
+          "seed": 61
+        },
+        {
+          "step": 189,
+          "wins": 8,
+          "games": 8,
+          "seed": 26
+        },
+        {
+          "step": 190,
+          "wins": 0,
+          "games": 8,
+          "seed": 93
+        },
+        {
+          "step": 191,
+          "wins": 8,
+          "games": 8,
+          "seed": 7
+        },
+        {
+          "step": 192,
+          "wins": 0,
+          "games": 8,
+          "seed": 86
+        }
+      ],
+      "summary": {
+        "wins": 494,
+        "games": 768
+      },
+      "checks": {
+        "result_done_equal": true,
+        "process_exit_code": 0,
+        "metrics_precision": "binary64-v1",
+        "natural_batches": 96,
+        "exact_same_seed_rows": 96,
+        "returned_ppo_metrics": 96,
+        "finite_positive_gradient_and_update_time_rows": 96,
+        "valid_action_ratio_one_rows": 96,
+        "invalid_advantage_nonpositive_rows": 96
+      }
+    }
+  ],
+  "l9": [
+    {
+      "run": "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r1/qwen-same/short/runs/train2",
+      "runtime_sha": "1c6cf60b111570ef13f9817d0b1b16fb774546f5",
+      "first": 1,
+      "last": 2,
+      "rows": [
+        {
+          "step": 1,
+          "wins": 8,
+          "games": 8,
+          "seed": 49
+        },
+        {
+          "step": 2,
+          "wins": 8,
+          "games": 8,
+          "seed": 97
+        }
+      ],
+      "summary": {
+        "wins": 16,
+        "games": 16
+      },
+      "checks": {
+        "result_done_equal": true,
+        "process_exit_code": 0,
+        "metrics_precision": "binary64-v1",
+        "natural_batches": 2,
+        "exact_same_seed_rows": 2,
+        "returned_ppo_metrics": 2,
+        "finite_positive_gradient_and_update_time_rows": 2,
+        "valid_action_ratio_one_rows": 2,
+        "invalid_advantage_nonpositive_rows": 2
+      }
+    },
+    {
+      "run": "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r1/qwen-same/long/runs/train96",
+      "runtime_sha": "1c6cf60b111570ef13f9817d0b1b16fb774546f5",
+      "first": 3,
+      "last": 96,
+      "rows": [
+        {
+          "step": 3,
+          "wins": 0,
+          "games": 8,
+          "seed": 53
+        },
+        {
+          "step": 4,
+          "wins": 0,
+          "games": 8,
+          "seed": 5
+        },
+        {
+          "step": 5,
+          "wins": 0,
+          "games": 8,
+          "seed": 33
+        },
+        {
+          "step": 6,
+          "wins": 0,
+          "games": 8,
+          "seed": 65
+        },
+        {
+          "step": 7,
+          "wins": 0,
+          "games": 8,
+          "seed": 62
+        },
+        {
+          "step": 8,
+          "wins": 8,
+          "games": 8,
+          "seed": 51
+        },
+        {
+          "step": 9,
+          "wins": 0,
+          "games": 8,
+          "seed": 100
+        },
+        {
+          "step": 10,
+          "wins": 8,
+          "games": 8,
+          "seed": 38
+        },
+        {
+          "step": 11,
+          "wins": 0,
+          "games": 8,
+          "seed": 61
+        },
+        {
+          "step": 12,
+          "wins": 8,
+          "games": 8,
+          "seed": 45
+        },
+        {
+          "step": 13,
+          "wins": 8,
+          "games": 8,
+          "seed": 74
+        },
+        {
+          "step": 14,
+          "wins": 8,
+          "games": 8,
+          "seed": 27
+        },
+        {
+          "step": 15,
+          "wins": 3,
+          "games": 8,
+          "seed": 64
+        },
+        {
+          "step": 16,
+          "wins": 0,
+          "games": 8,
+          "seed": 17
+        },
+        {
+          "step": 17,
+          "wins": 8,
+          "games": 8,
+          "seed": 36
+        },
+        {
+          "step": 18,
+          "wins": 0,
+          "games": 8,
+          "seed": 17
+        },
+        {
+          "step": 19,
+          "wins": 0,
+          "games": 8,
+          "seed": 96
+        },
+        {
+          "step": 20,
+          "wins": 4,
+          "games": 8,
+          "seed": 12
+        },
+        {
+          "step": 21,
+          "wins": 0,
+          "games": 8,
+          "seed": 79
+        },
+        {
+          "step": 22,
+          "wins": 0,
+          "games": 8,
+          "seed": 32
+        },
+        {
+          "step": 23,
+          "wins": 0,
+          "games": 8,
+          "seed": 68
+        },
+        {
+          "step": 24,
+          "wins": 8,
+          "games": 8,
+          "seed": 90
+        },
+        {
+          "step": 25,
+          "wins": 8,
+          "games": 8,
+          "seed": 77
+        },
+        {
+          "step": 26,
+          "wins": 4,
+          "games": 8,
+          "seed": 18
+        },
+        {
+          "step": 27,
+          "wins": 8,
+          "games": 8,
+          "seed": 39
+        },
+        {
+          "step": 28,
+          "wins": 6,
+          "games": 8,
+          "seed": 12
+        },
+        {
+          "step": 29,
+          "wins": 0,
+          "games": 8,
+          "seed": 93
+        },
+        {
+          "step": 30,
+          "wins": 0,
+          "games": 8,
+          "seed": 9
+        },
+        {
+          "step": 31,
+          "wins": 0,
+          "games": 8,
+          "seed": 87
+        },
+        {
+          "step": 32,
+          "wins": 8,
+          "games": 8,
+          "seed": 42
+        },
+        {
+          "step": 33,
+          "wins": 0,
+          "games": 8,
+          "seed": 60
+        },
+        {
+          "step": 34,
+          "wins": 0,
+          "games": 8,
+          "seed": 71
+        },
+        {
+          "step": 35,
+          "wins": 0,
+          "games": 8,
+          "seed": 12
+        },
+        {
+          "step": 36,
+          "wins": 0,
+          "games": 8,
+          "seed": 45
+        },
+        {
+          "step": 37,
+          "wins": 8,
+          "games": 8,
+          "seed": 55
+        },
+        {
+          "step": 38,
+          "wins": 8,
+          "games": 8,
+          "seed": 40
+        },
+        {
+          "step": 39,
+          "wins": 8,
+          "games": 8,
+          "seed": 78
+        },
+        {
+          "step": 40,
+          "wins": 0,
+          "games": 8,
+          "seed": 81
+        },
+        {
+          "step": 41,
+          "wins": 0,
+          "games": 8,
+          "seed": 26
+        },
+        {
+          "step": 42,
+          "wins": 0,
+          "games": 8,
+          "seed": 70
+        },
+        {
+          "step": 43,
+          "wins": 0,
+          "games": 8,
+          "seed": 61
+        },
+        {
+          "step": 44,
+          "wins": 0,
+          "games": 8,
+          "seed": 56
+        },
+        {
+          "step": 45,
+          "wins": 0,
+          "games": 8,
+          "seed": 66
+        },
+        {
+          "step": 46,
+          "wins": 0,
+          "games": 8,
+          "seed": 33
+        },
+        {
+          "step": 47,
+          "wins": 0,
+          "games": 8,
+          "seed": 7
+        },
+        {
+          "step": 48,
+          "wins": 0,
+          "games": 8,
+          "seed": 70
+        },
+        {
+          "step": 49,
+          "wins": 0,
+          "games": 8,
+          "seed": 1
+        },
+        {
+          "step": 50,
+          "wins": 8,
+          "games": 8,
+          "seed": 11
+        },
+        {
+          "step": 51,
+          "wins": 0,
+          "games": 8,
+          "seed": 92
+        },
+        {
+          "step": 52,
+          "wins": 8,
+          "games": 8,
+          "seed": 51
+        },
+        {
+          "step": 53,
+          "wins": 8,
+          "games": 8,
+          "seed": 90
+        },
+        {
+          "step": 54,
+          "wins": 8,
+          "games": 8,
+          "seed": 100
+        },
+        {
+          "step": 55,
+          "wins": 0,
+          "games": 8,
+          "seed": 85
+        },
+        {
+          "step": 56,
+          "wins": 8,
+          "games": 8,
+          "seed": 80
+        },
+        {
+          "step": 57,
+          "wins": 0,
+          "games": 8,
+          "seed": 0
+        },
+        {
+          "step": 58,
+          "wins": 8,
+          "games": 8,
+          "seed": 78
+        },
+        {
+          "step": 59,
+          "wins": 8,
+          "games": 8,
+          "seed": 63
+        },
+        {
+          "step": 60,
+          "wins": 8,
+          "games": 8,
+          "seed": 42
+        },
+        {
+          "step": 61,
+          "wins": 0,
+          "games": 8,
+          "seed": 31
+        },
+        {
+          "step": 62,
+          "wins": 0,
+          "games": 8,
+          "seed": 93
+        },
+        {
+          "step": 63,
+          "wins": 0,
+          "games": 8,
+          "seed": 41
+        },
+        {
+          "step": 64,
+          "wins": 8,
+          "games": 8,
+          "seed": 90
+        },
+        {
+          "step": 65,
+          "wins": 0,
+          "games": 8,
+          "seed": 8
+        },
+        {
+          "step": 66,
+          "wins": 0,
+          "games": 8,
+          "seed": 24
+        },
+        {
+          "step": 67,
+          "wins": 8,
+          "games": 8,
+          "seed": 72
+        },
+        {
+          "step": 68,
+          "wins": 0,
+          "games": 8,
+          "seed": 28
+        },
+        {
+          "step": 69,
+          "wins": 0,
+          "games": 8,
+          "seed": 30
+        },
+        {
+          "step": 70,
+          "wins": 8,
+          "games": 8,
+          "seed": 18
+        },
+        {
+          "step": 71,
+          "wins": 0,
+          "games": 8,
+          "seed": 69
+        },
+        {
+          "step": 72,
+          "wins": 0,
+          "games": 8,
+          "seed": 57
+        },
+        {
+          "step": 73,
+          "wins": 8,
+          "games": 8,
+          "seed": 11
+        },
+        {
+          "step": 74,
+          "wins": 8,
+          "games": 8,
+          "seed": 10
+        },
+        {
+          "step": 75,
+          "wins": 8,
+          "games": 8,
+          "seed": 40
+        },
+        {
+          "step": 76,
+          "wins": 0,
+          "games": 8,
+          "seed": 65
+        },
+        {
+          "step": 77,
+          "wins": 8,
+          "games": 8,
+          "seed": 62
+        },
+        {
+          "step": 78,
+          "wins": 0,
+          "games": 8,
+          "seed": 13
+        },
+        {
+          "step": 79,
+          "wins": 0,
+          "games": 8,
+          "seed": 38
+        },
+        {
+          "step": 80,
+          "wins": 0,
+          "games": 8,
+          "seed": 70
+        },
+        {
+          "step": 81,
+          "wins": 8,
+          "games": 8,
+          "seed": 37
+        },
+        {
+          "step": 82,
+          "wins": 8,
+          "games": 8,
+          "seed": 90
+        },
+        {
+          "step": 83,
+          "wins": 0,
+          "games": 8,
+          "seed": 15
+        },
+        {
+          "step": 84,
+          "wins": 0,
+          "games": 8,
+          "seed": 70
+        },
+        {
+          "step": 85,
+          "wins": 8,
+          "games": 8,
+          "seed": 42
+        },
+        {
+          "step": 86,
+          "wins": 0,
+          "games": 8,
+          "seed": 69
+        },
+        {
+          "step": 87,
+          "wins": 0,
+          "games": 8,
+          "seed": 26
+        },
+        {
+          "step": 88,
+          "wins": 0,
+          "games": 8,
+          "seed": 77
+        },
+        {
+          "step": 89,
+          "wins": 0,
+          "games": 8,
+          "seed": 70
+        },
+        {
+          "step": 90,
+          "wins": 0,
+          "games": 8,
+          "seed": 75
+        },
+        {
+          "step": 91,
+          "wins": 8,
+          "games": 8,
+          "seed": 36
+        },
+        {
+          "step": 92,
+          "wins": 0,
+          "games": 8,
+          "seed": 56
+        },
+        {
+          "step": 93,
+          "wins": 8,
+          "games": 8,
+          "seed": 11
+        },
+        {
+          "step": 94,
+          "wins": 0,
+          "games": 8,
+          "seed": 76
+        },
+        {
+          "step": 95,
+          "wins": 0,
+          "games": 8,
+          "seed": 49
+        },
+        {
+          "step": 96,
+          "wins": 0,
+          "games": 8,
+          "seed": 40
+        }
+      ],
+      "summary": {
+        "wins": 281,
+        "games": 752
+      },
+      "checks": {
+        "result_done_equal": true,
+        "process_exit_code": 0,
+        "metrics_precision": "binary64-v1",
+        "natural_batches": 94,
+        "exact_same_seed_rows": 94,
+        "returned_ppo_metrics": 94,
+        "finite_positive_gradient_and_update_time_rows": 94,
+        "valid_action_ratio_one_rows": 94,
+        "invalid_advantage_nonpositive_rows": 94
+      }
+    }
+  ],
+  "source_files": [
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r1/qwen-same/short/runs/train2/metrics.json",
+      "bytes": 5742,
+      "sha256": "db09b2be10ce34cffed4c73cc75ab02504df66d5b937e8cf4e76df6c97ff13a8"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r1/qwen-same/short/runs/train2/result.json",
+      "bytes": 9502,
+      "sha256": "83e4a6adb869baf50196c4d6f2ceee6e861e0dcf20a7bc1f81ab7a6ff76d874d"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r1/qwen-same/short/runs/train2/.done",
+      "bytes": 9502,
+      "sha256": "83e4a6adb869baf50196c4d6f2ceee6e861e0dcf20a7bc1f81ab7a6ff76d874d"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r1/qwen-same/short/runs/train2/manifest.json",
+      "bytes": 2915,
+      "sha256": "ab2f125ab149890820e89123ffa6a2c40787c952459bf34f5f5ec1b67e62d60d"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r1/qwen-same/short/runs/train2/episode_outcomes.jsonl",
+      "bytes": 3656,
+      "sha256": "c4ee4e70bab4b2280278b64022bffb49aece8a2a866047312fb794587b33aa37"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r1/qwen-same/short/runs/train2/training_seeds.jsonl",
+      "bytes": 228,
+      "sha256": "c7225e901aea10a4a2bfdd18f5ce95214e57d5a21c2d0960e263de06c6910283"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/long/runs/train96/metrics.json",
+      "bytes": 268736,
+      "sha256": "112012f2bb45addaa93176b71ae0dbc7fce3a0165bf8c2d1d59df6d2b5d9a78f"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/long/runs/train96/result.json",
+      "bytes": 249660,
+      "sha256": "82497e308e402cca2db08164d4a748ed896cd9acc1bd119e93e4de71cb164d43"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/long/runs/train96/.done",
+      "bytes": 249660,
+      "sha256": "82497e308e402cca2db08164d4a748ed896cd9acc1bd119e93e4de71cb164d43"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/long/runs/train96/manifest.json",
+      "bytes": 3016,
+      "sha256": "8b4eea62b5997297189ee3ce18ed2217b4107cbc01cf9d07ef105868a94d4348"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/long/runs/train96/episode_outcomes.jsonl",
+      "bytes": 173844,
+      "sha256": "9ed4bc19d2fe1d7d6afac497e389a559468be118750ca6f26ee33b341c867bee"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/long/runs/train96/training_seeds.jsonl",
+      "bytes": 10770,
+      "sha256": "4db86eab6b1945772139a586d16b50fbd6ec756936e8450a3bac8eee5ba8a660"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same192-197-20260926-r2/runs/train192/metrics.json",
+      "bytes": 271252,
+      "sha256": "6589a147a3c0854bbcac298d11f00d37c88488109ce87ed93d30ee01397d79e9"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same192-197-20260926-r2/runs/train192/result.json",
+      "bytes": 256111,
+      "sha256": "903e3e026f4313ccd3e4930f8c41f5c50b9f1625e37e38724d98606c55b5c308"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same192-197-20260926-r2/runs/train192/.done",
+      "bytes": 256111,
+      "sha256": "903e3e026f4313ccd3e4930f8c41f5c50b9f1625e37e38724d98606c55b5c308"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same192-197-20260926-r2/runs/train192/manifest.json",
+      "bytes": 3021,
+      "sha256": "2a5687a54a95de30a014ebe6aa8c92168e1036d47ff98feda09cf8e85215d12c"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same192-197-20260926-r2/runs/train192/episode_outcomes.jsonl",
+      "bytes": 178746,
+      "sha256": "76ad83e6a046cc0eca41a357714ccb77a0d9ae2fc61d4a75f214ec664ec94953"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same192-197-20260926-r2/runs/train192/training_seeds.jsonl",
+      "bytes": 11052,
+      "sha256": "b524611ed5793f42dfbf9169f4da3650eba6e6f9cc6a712daf02d646f44fea18"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r1/qwen-same/short/runs/train2/metrics.json",
+      "bytes": 5768,
+      "sha256": "cdb90d581f7e2fc17a4a435bc6b7be5cfa2636b2610edd831a01445fdb362fff"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r1/qwen-same/short/runs/train2/result.json",
+      "bytes": 9503,
+      "sha256": "eabd0d1691b88204fd9c574d89e6cc90b9c5a7a733f630c160544a83a3282d8f"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r1/qwen-same/short/runs/train2/.done",
+      "bytes": 9503,
+      "sha256": "eabd0d1691b88204fd9c574d89e6cc90b9c5a7a733f630c160544a83a3282d8f"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r1/qwen-same/short/runs/train2/manifest.json",
+      "bytes": 2915,
+      "sha256": "202c0a7c0ff662dafc6660717c89799a874a322494fce8a4fa076a121a90e9a0"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r1/qwen-same/short/runs/train2/episode_outcomes.jsonl",
+      "bytes": 3656,
+      "sha256": "2df66d058e7d15cb4dfa6cf1c1f8f4e7c14beb13fc2aba3ccdb3f65c85a1f965"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r1/qwen-same/short/runs/train2/training_seeds.jsonl",
+      "bytes": 228,
+      "sha256": "c7225e901aea10a4a2bfdd18f5ce95214e57d5a21c2d0960e263de06c6910283"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r1/qwen-same/long/runs/train96/metrics.json",
+      "bytes": 268115,
+      "sha256": "59e94d10ceb69d9c1058a93736c6233f01c77b791ae4dda9d0539cc87ec0ad17"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r1/qwen-same/long/runs/train96/result.json",
+      "bytes": 251091,
+      "sha256": "3c0ffefcd326e939ff5706d891983c352570ba131275bf5100de5a5a9eed007b"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r1/qwen-same/long/runs/train96/.done",
+      "bytes": 251091,
+      "sha256": "3c0ffefcd326e939ff5706d891983c352570ba131275bf5100de5a5a9eed007b"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r1/qwen-same/long/runs/train96/manifest.json",
+      "bytes": 3016,
+      "sha256": "44aa19b017e305d37e3d38c452cd694429dd20142206348dd596e8b32801e379"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r1/qwen-same/long/runs/train96/episode_outcomes.jsonl",
+      "bytes": 175274,
+      "sha256": "a052973ddfe33c0b3d243be1c16cfe349ec727b417a7606c28b1b9eb0a893d9f"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r1/qwen-same/long/runs/train96/training_seeds.jsonl",
+      "bytes": 10770,
+      "sha256": "4db86eab6b1945772139a586d16b50fbd6ec756936e8450a3bac8eee5ba8a660"
+    }
+  ],
+  "acceptance": {
+    "l8": "completed; see existing completion receipts",
+    "l9": "failed host acceptance after train96 exit0; no eval96; L10 blocked"
+  },
+  "limitations": [
+    "Curve consistency checks do not replace strict acceptance.",
+    "Same seed within each eight-game batch; cross-step difficulty changes.",
+    "Training wins and positive gradients do not demonstrate learning.",
+    "L8 retained r1 prefix is not a reversal of historical r1 failure."
+  ]
+}

@@ -1,0 +1,825 @@
+{
+  "observed_at": "2026-09-24T13:45:54.723570+08:00",
+  "read_only": true,
+  "files": {
+    "queue-state.json": {
+      "exists": true,
+      "bytes": 249,
+      "sha256": "2283b7860731a77493899039657e4dbec9932d7ef0a11005eeaf158c7e9a12bf"
+    },
+    "dispatch.json": {
+      "exists": true,
+      "bytes": 128,
+      "sha256": "d24fbfb655ecc422d9fd47e4cd9fad89e19e0edecb041222a1af4a5b2d42dff7"
+    },
+    "storage-state.json": {
+      "exists": true,
+      "bytes": 985,
+      "sha256": "3eb3796d22daff99f59dad548e8936c97abdec513ebb8e5cb3c6291467936a30"
+    },
+    "storage-failure.json": {
+      "exists": false
+    },
+    "spb-random/long/host-supervision/state.json": {
+      "exists": true,
+      "bytes": 372,
+      "sha256": "b4b562f2badd4316aebd1cca8381c1006fe6f5786c662696435417f3fc77869f"
+    },
+    "spb-random/long/state.json": {
+      "exists": true,
+      "bytes": 372,
+      "sha256": "b4b562f2badd4316aebd1cca8381c1006fe6f5786c662696435417f3fc77869f"
+    },
+    "spb-random/long/admission-eval96.json": {
+      "exists": true,
+      "bytes": 179,
+      "sha256": "1b587217def7ee8f51c823c01ac860f81085b394a0edaa5de4801e915819116f"
+    },
+    "spb-random/long/runs/train96/result.json": {
+      "exists": true,
+      "bytes": 249366,
+      "sha256": "5feb66bd0bc24fae031e879db25e2df3d05fc5fbcb905549b521d100cb81f53b"
+    },
+    "spb-random/long/runs/train96/.done": {
+      "exists": true,
+      "bytes": 249366,
+      "sha256": "5feb66bd0bc24fae031e879db25e2df3d05fc5fbcb905549b521d100cb81f53b"
+    },
+    "spb-random/long/acceptance-train96.json": {
+      "exists": true,
+      "bytes": 268607,
+      "sha256": "49860fa66d7c291a6104770b5152ea73fbac780cdd7527d4b12133d5f29adf01"
+    },
+    "spb-random/long/runs/train96/manifest.json": {
+      "exists": true,
+      "bytes": 3046,
+      "sha256": "5422ae326074c24532d525ab7152f78a7256e3b1b5046305644b56fdc2e274d8"
+    },
+    "spb-random/long/host-supervision/train96-guardian.json": {
+      "exists": true,
+      "bytes": 378147,
+      "sha256": "09b6936d89dbba2f78bd4235c1ac5f3f4df13f41135be046ce1ec8848c57cd61"
+    },
+    "spb-random/long/runs/eval96/result.json": {
+      "exists": true,
+      "bytes": 5197,
+      "sha256": "614f184ebfb9a7e593d12ae0c82c8e9ecd25e065753bb7fecbb209fa4ebd0a2e"
+    },
+    "spb-random/long/runs/eval96/.done": {
+      "exists": true,
+      "bytes": 5197,
+      "sha256": "614f184ebfb9a7e593d12ae0c82c8e9ecd25e065753bb7fecbb209fa4ebd0a2e"
+    },
+    "spb-random/long/acceptance-eval96.json": {
+      "exists": true,
+      "bytes": 5822,
+      "sha256": "ddc7775b9dcad134a88ca86709b3933788cbafd1107ffeadcbebcb9a2df31867"
+    },
+    "spb-random/long/host-supervision/eval96-guardian.json": {
+      "exists": true,
+      "bytes": 8690,
+      "sha256": "50dc6b64f128ca787f72916d570d5392a1b2a8ee549d9f64ac9c74f7fbf1d202"
+    },
+    "spb-random/long/runs/eval96/manifest.json": {
+      "exists": true,
+      "bytes": 3049,
+      "sha256": "1b42fa3ca20fbbf7abb889ba200e7ef5095457b3898555cdc70f2ff572edc6e2"
+    },
+    "spb-random/long/runs/eval96/checkpoint_evaluation.json": {
+      "exists": true,
+      "bytes": 576,
+      "sha256": "b5f425fa0f2d6e09a7f65590bdffabb64cc60cc7dcfd5e5971c0925876f836a5"
+    },
+    "spb-random/long/runs/eval96/evaluation_seeds.jsonl": {
+      "exists": true,
+      "bytes": 143,
+      "sha256": "ffaf9953b3c4fc78b2a0f30c67357504f6a6b8e014c3b0adc2db12e87afdad90"
+    },
+    "spb-random/long/runs/eval96/metrics.json": {
+      "exists": false
+    },
+    "spb-random/long/runs/eval96/episode_outcomes.jsonl": {
+      "exists": true,
+      "bytes": 1824,
+      "sha256": "29dfbbc6159ecbc1f9d8b09c91d8894121a7a4c59f2ca65b63ca5e4660a95d43"
+    },
+    "spb-random/long/runs/eval96/checkpoints/resume_state.json": {
+      "exists": false
+    },
+    "spb-random/long/runs/eval96/sampling-rank0.json": {
+      "exists": true,
+      "bytes": 220,
+      "sha256": "1065485028cf208ece809ba552704448a7517097b2cf615d4cf8864a3e07ba04"
+    },
+    "spb-random/short/runs/post/sampling-rank0.json": {
+      "exists": true,
+      "bytes": 220,
+      "sha256": "3147b32c434c4156b57ba96ce00a812b90d3c4b63f7320b784a2a273e6919cbf"
+    },
+    "spb-random/long/runs/eval96/sampling-rank1.json": {
+      "exists": true,
+      "bytes": 220,
+      "sha256": "72f5400deb30cf2b5400809cdfcc73e3458377f0fca346cf997eabcab2b64ceb"
+    },
+    "spb-random/short/runs/post/sampling-rank1.json": {
+      "exists": true,
+      "bytes": 220,
+      "sha256": "bf580b9900cbfb13d2f60f88cb977e35a88ddd73d7c7f44b940f6b79a2b83a71"
+    },
+    "spb-random/long/runs/eval96/sampling-rank2.json": {
+      "exists": true,
+      "bytes": 220,
+      "sha256": "7e9dfeb8cf255f9bb336ca6d731c10a965092e36899bdf3ab33960148906e53c"
+    },
+    "spb-random/short/runs/post/sampling-rank2.json": {
+      "exists": true,
+      "bytes": 220,
+      "sha256": "5be7fd66047c39ce6c4099d2b17f0aeeb41ccd95ff04d375da82ae40de9e0085"
+    },
+    "spb-random/long/runs/eval96/sampling-rank3.json": {
+      "exists": true,
+      "bytes": 220,
+      "sha256": "6190b1b7ce642dbdff7ae32b90476e110d3c3dfcd4d13a5b42c0ae84f2e8656e"
+    },
+    "spb-random/short/runs/post/sampling-rank3.json": {
+      "exists": true,
+      "bytes": 220,
+      "sha256": "2a9c0f1193edbb80b55baa8d37a9d0b38e5513afacea72d828a546dead94d24b"
+    },
+    "spb-random/long/runs/eval96/sampling-rank4.json": {
+      "exists": true,
+      "bytes": 220,
+      "sha256": "db17c8d992e9e73c9ff7919fde57a6fb3b11ad8fdcaf4bdc32f1dd4ccfe08734"
+    },
+    "spb-random/short/runs/post/sampling-rank4.json": {
+      "exists": true,
+      "bytes": 220,
+      "sha256": "56abc500f195bb974d67c5913a377a399cb1c56e53d355e3827fb72cc0aef9c3"
+    },
+    "spb-random/long/runs/eval96/sampling-rank5.json": {
+      "exists": true,
+      "bytes": 220,
+      "sha256": "ec9b6dd93863e2cfa36daebccd5c0cd6f157d0af810567b4a6bce5b501358583"
+    },
+    "spb-random/short/runs/post/sampling-rank5.json": {
+      "exists": true,
+      "bytes": 220,
+      "sha256": "c3bb284e495fe4ca953cfe2d61c22d35356a75f341936d976d8065d4cf615380"
+    },
+    "spb-random/long/runs/eval96/sampling-rank6.json": {
+      "exists": true,
+      "bytes": 220,
+      "sha256": "6d142a0226156177b291d096b7b78ed4624800fe278d1ef927b570ce114679e9"
+    },
+    "spb-random/short/runs/post/sampling-rank6.json": {
+      "exists": true,
+      "bytes": 220,
+      "sha256": "ed3aa549e180e7a8418cf3202cdb50baf0e18bcdf29260a5d02810e8b2b7e027"
+    },
+    "spb-random/long/runs/eval96/sampling-rank7.json": {
+      "exists": true,
+      "bytes": 220,
+      "sha256": "7e0fe22442b363200257d8a6227b7af1f103b07492b935888a16594cff75f842"
+    },
+    "spb-random/short/runs/post/sampling-rank7.json": {
+      "exists": true,
+      "bytes": 220,
+      "sha256": "34bec9a1e71c7c262b62d82adceb1138c69b9efb879a3689a81907deaceef35c"
+    }
+  },
+  "states": {
+    "queue-state.json": {
+      "phase": "completed",
+      "completed": [
+        "spb-random/short",
+        "spb-random/long"
+      ],
+      "first_dispatch_by": 1790312320.0467553,
+      "part": "spb-random/long",
+      "deadline": 1790356959.0174987,
+      "exit_code": 0,
+      "learning_validated": false
+    },
+    "dispatch.json": {
+      "start": 1790184159.0174987,
+      "deadline": 1790356959.0174987,
+      "gpu_hours": 384,
+      "new_games": 792,
+      "new_updates": 96
+    },
+    "storage-state.json": {
+      "command": [
+        "du",
+        "-sb",
+        "--null",
+        "--",
+        "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1",
+        "/var/jfsCache/sc2-spb-l7random96-197-source-20260923-r1"
+      ],
+      "roots": [
+        "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1",
+        "/var/jfsCache/sc2-spb-l7random96-197-source-20260923-r1"
+      ],
+      "started_at": 1790228711.7416847,
+      "deadline": 1790356959.0174987,
+      "limit": 1099511627776,
+      "bytes": 831235996141,
+      "returncode": 0,
+      "status": "measured",
+      "stdout": {
+        "tail": "831216047195\t/var/jfsCache/sc2-spb-l7random96-197-20260923-r1\u000019948946\t/var/jfsCache/sc2-spb-l7random96-197-source-20260923-r1\u0000",
+        "characters": 127,
+        "truncated": false
+      },
+      "stderr": {
+        "tail": "",
+        "characters": 0,
+        "truncated": false
+      },
+      "root_bytes": {
+        "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1": 831216047195,
+        "/var/jfsCache/sc2-spb-l7random96-197-source-20260923-r1": 19948946
+      },
+      "checked_at": 1790228711.9818847
+    },
+    "storage-failure.json": null,
+    "spb-random/long/host-supervision/state.json": {
+      "version": "host-guardian-v1",
+      "phase": "completed",
+      "completed": [
+        "train96",
+        "eval96"
+      ],
+      "deadline": 1790356959.0174987,
+      "learning_validated": false,
+      "started_at": 1790187111.9027476,
+      "stage": "eval96",
+      "container_id": "a55875ca0978bc8a75233918251fa40e7851fb50c17a6104d7a2c3a34bf9e213",
+      "exit_code": 0,
+      "finished_at": 1790228711.9826033
+    },
+    "spb-random/long/state.json": {
+      "version": "host-guardian-v1",
+      "phase": "completed",
+      "completed": [
+        "train96",
+        "eval96"
+      ],
+      "deadline": 1790356959.0174987,
+      "learning_validated": false,
+      "started_at": 1790187111.9027476,
+      "stage": "eval96",
+      "container_id": "a55875ca0978bc8a75233918251fa40e7851fb50c17a6104d7a2c3a34bf9e213",
+      "exit_code": 0,
+      "finished_at": 1790228711.9826033
+    },
+    "spb-random/long/admission-eval96.json": {
+      "passed": true,
+      "checked_at": 1790228173.205792,
+      "deadline": 1790356959.0174987,
+      "eight_idle_gpus": true,
+      "ram_gib_min": 600,
+      "nvme_gib_min": 1084,
+      "fsync": true
+    }
+  },
+  "eval96": {
+    "run_directory_exists": true,
+    "result": {
+      "status": "completed",
+      "ended_at": "2026-09-24T05:45:08.714840+00:00",
+      "mode": "evaluation",
+      "process_exit_code": 0,
+      "training_updates": 0,
+      "metrics_finite": true,
+      "response_record_count": 40,
+      "metrics_precision": "binary64-v1",
+      "evaluable_action_count": 21,
+      "valid_evaluable_action_count": 21,
+      "console_sha256": "a4e67a7c9642a04071c682966d1f480db17325df9f4345783756ed4c891b59fd",
+      "natural_match_completed": true,
+      "termination_evidence": "game_result"
+    },
+    "result_outcomes": {
+      "trajectories": 8,
+      "natural_games": 8,
+      "wins": 5,
+      "defeats": 3,
+      "ties": 0,
+      "truncated": 0,
+      "natural_win_rate": 0.625,
+      "outcomes": [
+        {
+          "reset_index": 0,
+          "env_index": 0,
+          "decision_count": 2,
+          "step_index": 1,
+          "policy_decision_count": 2,
+          "terminated": true,
+          "truncated": false,
+          "game_result": "Victory",
+          "termination_reason": "game_result",
+          "outcome_reward": 20
+        },
+        {
+          "reset_index": 0,
+          "env_index": 1,
+          "decision_count": 2,
+          "step_index": 1,
+          "policy_decision_count": 2,
+          "terminated": true,
+          "truncated": false,
+          "game_result": "Defeat",
+          "termination_reason": "game_result",
+          "outcome_reward": -50
+        },
+        {
+          "reset_index": 0,
+          "env_index": 5,
+          "decision_count": 2,
+          "step_index": 1,
+          "policy_decision_count": 2,
+          "terminated": true,
+          "truncated": false,
+          "game_result": "Victory",
+          "termination_reason": "game_result",
+          "outcome_reward": 20
+        },
+        {
+          "reset_index": 0,
+          "env_index": 6,
+          "decision_count": 2,
+          "step_index": 1,
+          "policy_decision_count": 2,
+          "terminated": true,
+          "truncated": false,
+          "game_result": "Victory",
+          "termination_reason": "game_result",
+          "outcome_reward": 20
+        },
+        {
+          "reset_index": 0,
+          "env_index": 7,
+          "decision_count": 2,
+          "step_index": 1,
+          "policy_decision_count": 2,
+          "terminated": true,
+          "truncated": false,
+          "game_result": "Victory",
+          "termination_reason": "game_result",
+          "outcome_reward": 20
+        },
+        {
+          "reset_index": 0,
+          "env_index": 2,
+          "decision_count": 3,
+          "step_index": 2,
+          "policy_decision_count": 3,
+          "terminated": true,
+          "truncated": false,
+          "game_result": "Victory",
+          "termination_reason": "game_result",
+          "outcome_reward": 20
+        },
+        {
+          "reset_index": 0,
+          "env_index": 4,
+          "decision_count": 3,
+          "step_index": 2,
+          "policy_decision_count": 3,
+          "terminated": true,
+          "truncated": false,
+          "game_result": "Defeat",
+          "termination_reason": "game_result",
+          "outcome_reward": -50
+        },
+        {
+          "reset_index": 0,
+          "env_index": 3,
+          "decision_count": 5,
+          "step_index": 4,
+          "policy_decision_count": 5,
+          "terminated": true,
+          "truncated": false,
+          "game_result": "Defeat",
+          "termination_reason": "game_result",
+          "outcome_reward": -50
+        }
+      ]
+    },
+    "done_matches_result": true,
+    "acceptance_result_matches": true,
+    "acceptance_evidence": {
+      "consumed_answers": 21,
+      "valid_consumed_answers": 21,
+      "parsed_plans": 21,
+      "validated_queue_entries": 823,
+      "validated_locally_queued_commands": 569,
+      "execution_scope": "local Depot/Marine commands, not production completion or causal wins"
+    },
+    "manifest": {
+      "schema_version": 1,
+      "status": "running",
+      "started_at": "2026-09-24T05:36:36.808094+00:00",
+      "source_commit": "83f3530765babe048035524ddf1651291810818a",
+      "dirty": false,
+      "formal": true,
+      "model_id": "Panyuqi/SpikingBrain-2.0-instruct",
+      "model_revision": "sha256:de52e8ef993afc763f9d4fb498e8d8302ef0bc13bd7dfd53c6ae5f77f43698b5",
+      "model_source": "/assets/spb",
+      "model_manifest_sha256": "40d6f1417568d5fda1107cdafd66c7441a679b03fb148851c8f226ecc9cf884c",
+      "bo_profile": "canonical",
+      "episode_api": "gymnasium-v0.26",
+      "metrics_precision": "binary64-v1",
+      "bo_path": "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/runtime/agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/knowledge/BO/replay_observations_Flat128_d4_TvT_Macro_g2_Result.Victory_twobase.json",
+      "bo_sha256": "304b1f4ff12fe30c5e6d5f7b8eaef8ed6823ca65afed3a3706cae10e3639c494",
+      "mode": "evaluation",
+      "source_files_sha256": {
+        "configs/spikingbrain2-level5.env": "b34497add5894a01d87338686ba28a9cc7ea9ef86dd62e1d98814b1e898e021e",
+        "configs/system-v1.env": "f99583a73de679b3c11845e7037bbee5629750126241dd8b156206d2734f61a7",
+        "scripts/train_sc2.sh": "c9df070916cb3be0e5732520491bc84ffe09dfe5e0c478cc0a3f74526f27f104",
+        "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/agents/planner.py": "01cc3ac5d6c4c0aebec9817d2cead58d6ddadfa5811eaa048c331fb4054f77d4",
+        "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/players/script_player.py": "89ed4006cf35af238b0962409bd5a183780d8676af5a49af35422d3077030069",
+        "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/players/llm_player.py": "2134b0d02b9b506554ef613facee90c99976fc64f098a1688f4ad3f26d8d0cc2",
+        "agent_system/sc2_episode.py": "882aa88c609100a70892e6479d2e1c48e71c039073b4dbec7267a46e306fff27",
+        "agent_system/environments/env_package/sc2_online_restored/envSC2.py": "f6a1b7eebb470089f548ab96e957cb1c00ad487e4702690385fae8d4b9898a5f",
+        "agent_system/environments/strategic_sc2_env_manager_v2.py": "5592b763164fd64f0c98c5b55380326b8bbe16465404cbce2b21b9aff2ed1a6a",
+        "scripts/run_record.py": "35cce3357733772470ae50f8196ada4cc9a0066cf706d2cf50534dea3ae37541",
+        "verl/utils/logger/aggregate_logger.py": "822439e09abc53f188ffbfce2a360388590be8aa13bee31182e69fe1e9421bd8"
+      },
+      "target_steps": 1,
+      "sc2_signal_max_batches": 0,
+      "start_step": 0,
+      "sc2_checkpoint_resume": false,
+      "training_goal_global_steps": 96,
+      "resume_from_path": "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/spb-random/long/runs/train96/checkpoints/global_step_96",
+      "host": "a55875ca0978",
+      "python": "3.12.11",
+      "gpu_selection": "0,1,2,3,4,5,6,7",
+      "world_size": 8,
+      "container_image_id": "sha256:1a497d5721f89bb2e98c0273c4b1495f8fdc6921d589650d090871c11b8d1649",
+      "versions": {
+        "torch": "2.7.1+cu128",
+        "transformers": "4.55.2",
+        "ray": "2.48.0",
+        "gymnasium": "1.2.3",
+        "flash-attn": "2.6.3",
+        "flash-linear-attention": "0.4.0",
+        "moba": "1.0.0"
+      }
+    },
+    "guardian": {
+      "version": "host-guardian-v1",
+      "container_id": "a55875ca0978bc8a75233918251fa40e7851fb50c17a6104d7a2c3a34bf9e213",
+      "owner_root": "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/spb-random/long",
+      "deadline": 1790356959.0174987,
+      "lease_seconds": 45,
+      "phase": "completed",
+      "pause_attempted": true,
+      "started_at": 1790228173.2808971,
+      "initial_state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "0001-01-01T00:00:00Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "0001-01-01T00:00:00Z",
+        "Status": "created"
+      },
+      "final_state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-09-24T05:45:08.735231316Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-09-24T05:36:13.312600411Z",
+        "Status": "exited"
+      },
+      "finished_at": 1790228711.446483
+    },
+    "container": {
+      "returncode": 0,
+      "data": {
+        "id": "a55875ca0978bc8a75233918251fa40e7851fb50c17a6104d7a2c3a34bf9e213",
+        "owner": "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/spb-random/long",
+        "state": {
+          "Dead": false,
+          "Error": "",
+          "ExitCode": 0,
+          "FinishedAt": "2026-09-24T05:45:08.735231316Z",
+          "OOMKilled": false,
+          "Paused": false,
+          "Pid": 0,
+          "Restarting": false,
+          "Running": false,
+          "StartedAt": "2026-09-24T05:36:13.312600411Z",
+          "Status": "exited"
+        }
+      },
+      "error": ""
+    },
+    "checkpoint_evaluation.json": {
+      "checkpoint": "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/spb-random/long/runs/train96/checkpoints/global_step_96",
+      "loaded_global_step": 96,
+      "checkpoint_load_returned": true,
+      "val_only": true,
+      "optimizer_updates": 0,
+      "feedback": "0",
+      "temperature": 0.8,
+      "do_sample": true,
+      "games": 8,
+      "game_seeds": [
+        605183188,
+        1075501356,
+        2084414326,
+        2203880230,
+        3000371298,
+        949752300,
+        3225036469,
+        2823708076
+      ],
+      "answers": "online SpB; no replay or replacement",
+      "optimizer_loaded_by_existing_loader_but_not_updated": true
+    },
+    "evaluation_seeds.jsonl": [
+      {
+        "base_seed": 1000,
+        "reset_index": 0,
+        "seeds": [
+          605183188,
+          1075501356,
+          2084414326,
+          2203880230,
+          3000371298,
+          949752300,
+          3225036469,
+          2823708076
+        ]
+      }
+    ],
+    "metrics.json": null,
+    "episode_outcomes.jsonl": [
+      {
+        "reset_index": 0,
+        "env_index": 0,
+        "decision_count": 2,
+        "step_index": 1,
+        "policy_decision_count": 2,
+        "terminated": true,
+        "truncated": false,
+        "game_result": "Victory",
+        "termination_reason": "game_result",
+        "outcome_reward": 20
+      },
+      {
+        "reset_index": 0,
+        "env_index": 1,
+        "decision_count": 2,
+        "step_index": 1,
+        "policy_decision_count": 2,
+        "terminated": true,
+        "truncated": false,
+        "game_result": "Defeat",
+        "termination_reason": "game_result",
+        "outcome_reward": -50
+      },
+      {
+        "reset_index": 0,
+        "env_index": 5,
+        "decision_count": 2,
+        "step_index": 1,
+        "policy_decision_count": 2,
+        "terminated": true,
+        "truncated": false,
+        "game_result": "Victory",
+        "termination_reason": "game_result",
+        "outcome_reward": 20
+      },
+      {
+        "reset_index": 0,
+        "env_index": 6,
+        "decision_count": 2,
+        "step_index": 1,
+        "policy_decision_count": 2,
+        "terminated": true,
+        "truncated": false,
+        "game_result": "Victory",
+        "termination_reason": "game_result",
+        "outcome_reward": 20
+      },
+      {
+        "reset_index": 0,
+        "env_index": 7,
+        "decision_count": 2,
+        "step_index": 1,
+        "policy_decision_count": 2,
+        "terminated": true,
+        "truncated": false,
+        "game_result": "Victory",
+        "termination_reason": "game_result",
+        "outcome_reward": 20
+      },
+      {
+        "reset_index": 0,
+        "env_index": 2,
+        "decision_count": 3,
+        "step_index": 2,
+        "policy_decision_count": 3,
+        "terminated": true,
+        "truncated": false,
+        "game_result": "Victory",
+        "termination_reason": "game_result",
+        "outcome_reward": 20
+      },
+      {
+        "reset_index": 0,
+        "env_index": 4,
+        "decision_count": 3,
+        "step_index": 2,
+        "policy_decision_count": 3,
+        "terminated": true,
+        "truncated": false,
+        "game_result": "Defeat",
+        "termination_reason": "game_result",
+        "outcome_reward": -50
+      },
+      {
+        "reset_index": 0,
+        "env_index": 3,
+        "decision_count": 5,
+        "step_index": 4,
+        "policy_decision_count": 5,
+        "terminated": true,
+        "truncated": false,
+        "game_result": "Defeat",
+        "termination_reason": "game_result",
+        "outcome_reward": -50
+      }
+    ],
+    "checkpoints/resume_state.json": null,
+    "paired_rng": [
+      {
+        "rank": 0,
+        "current": {
+          "rank": 0,
+          "seed": 0,
+          "pid": 4458,
+          "cpu_rng_sha256": "1ccf17250133dec5e96478acd63e13d728d0dbbabb30389415a302c6f872f81f",
+          "cuda_rng_sha256": "374708fff7719dd5979ec875d56cd2286f6d3cf7ec317a3b25632aab28ec37bb"
+        },
+        "parent": {
+          "rank": 0,
+          "seed": 0,
+          "pid": 4457,
+          "cpu_rng_sha256": "1ccf17250133dec5e96478acd63e13d728d0dbbabb30389415a302c6f872f81f",
+          "cuda_rng_sha256": "374708fff7719dd5979ec875d56cd2286f6d3cf7ec317a3b25632aab28ec37bb"
+        },
+        "all_required_match": true
+      },
+      {
+        "rank": 1,
+        "current": {
+          "rank": 1,
+          "seed": 1,
+          "pid": 4647,
+          "cpu_rng_sha256": "f5defda135ec2e0d1513e6979390f58397d31a904d5f6540f8b88ae64d1decc1",
+          "cuda_rng_sha256": "4cbbd8ca5215b8d161aec181a74b694f4e24b001d5b081dc0030ed797a8973e0"
+        },
+        "parent": {
+          "rank": 1,
+          "seed": 1,
+          "pid": 4646,
+          "cpu_rng_sha256": "f5defda135ec2e0d1513e6979390f58397d31a904d5f6540f8b88ae64d1decc1",
+          "cuda_rng_sha256": "4cbbd8ca5215b8d161aec181a74b694f4e24b001d5b081dc0030ed797a8973e0"
+        },
+        "all_required_match": true
+      },
+      {
+        "rank": 2,
+        "current": {
+          "rank": 2,
+          "seed": 2,
+          "pid": 4648,
+          "cpu_rng_sha256": "0f9cd7b642a3f8f641c5e992f17138b2d094db4d56cc2329b3be2c794ddc79ad",
+          "cuda_rng_sha256": "b1535c7783ea8829b6b0cf67704539798b4d16c39bf0bfe09494c5d9f12eee30"
+        },
+        "parent": {
+          "rank": 2,
+          "seed": 2,
+          "pid": 4647,
+          "cpu_rng_sha256": "0f9cd7b642a3f8f641c5e992f17138b2d094db4d56cc2329b3be2c794ddc79ad",
+          "cuda_rng_sha256": "b1535c7783ea8829b6b0cf67704539798b4d16c39bf0bfe09494c5d9f12eee30"
+        },
+        "all_required_match": true
+      },
+      {
+        "rank": 3,
+        "current": {
+          "rank": 3,
+          "seed": 3,
+          "pid": 4649,
+          "cpu_rng_sha256": "76fe321e2dc1dfdec62a274bcedbeea2727be2e2972f97e728e07e0345c21ede",
+          "cuda_rng_sha256": "59d5966c96af7ecad5c9d2918d6582d102b2c67f6b765ea28ac24371ab4f93be"
+        },
+        "parent": {
+          "rank": 3,
+          "seed": 3,
+          "pid": 4648,
+          "cpu_rng_sha256": "76fe321e2dc1dfdec62a274bcedbeea2727be2e2972f97e728e07e0345c21ede",
+          "cuda_rng_sha256": "59d5966c96af7ecad5c9d2918d6582d102b2c67f6b765ea28ac24371ab4f93be"
+        },
+        "all_required_match": true
+      },
+      {
+        "rank": 4,
+        "current": {
+          "rank": 4,
+          "seed": 4,
+          "pid": 4650,
+          "cpu_rng_sha256": "de87e86bf2a7b448b35cba75c461560b4b6aa93e7843008c930221dee4551e0f",
+          "cuda_rng_sha256": "6b6f14e6af2627186bf8a55e474dcf6ef3f6ce81af560da871ec51eb670171a9"
+        },
+        "parent": {
+          "rank": 4,
+          "seed": 4,
+          "pid": 4649,
+          "cpu_rng_sha256": "de87e86bf2a7b448b35cba75c461560b4b6aa93e7843008c930221dee4551e0f",
+          "cuda_rng_sha256": "6b6f14e6af2627186bf8a55e474dcf6ef3f6ce81af560da871ec51eb670171a9"
+        },
+        "all_required_match": true
+      },
+      {
+        "rank": 5,
+        "current": {
+          "rank": 5,
+          "seed": 5,
+          "pid": 4651,
+          "cpu_rng_sha256": "f4ef6f460154679cfe881f5d260e16f8ed904898fabc025c755a71e2692eb75c",
+          "cuda_rng_sha256": "966a28d35016032ee27b1860df4a9b16b6c007da76b2e4f94e7526e31c48959b"
+        },
+        "parent": {
+          "rank": 5,
+          "seed": 5,
+          "pid": 4650,
+          "cpu_rng_sha256": "f4ef6f460154679cfe881f5d260e16f8ed904898fabc025c755a71e2692eb75c",
+          "cuda_rng_sha256": "966a28d35016032ee27b1860df4a9b16b6c007da76b2e4f94e7526e31c48959b"
+        },
+        "all_required_match": true
+      },
+      {
+        "rank": 6,
+        "current": {
+          "rank": 6,
+          "seed": 6,
+          "pid": 4652,
+          "cpu_rng_sha256": "9e15eceb1ce9d2c2ffe7bcc8fa3155c1445def059cdd06b5429093164db849a7",
+          "cuda_rng_sha256": "5e9a5de4a59a7c3c9ba8846060ba77ab402e3088658aa705e1a64e796f6cd5cf"
+        },
+        "parent": {
+          "rank": 6,
+          "seed": 6,
+          "pid": 4651,
+          "cpu_rng_sha256": "9e15eceb1ce9d2c2ffe7bcc8fa3155c1445def059cdd06b5429093164db849a7",
+          "cuda_rng_sha256": "5e9a5de4a59a7c3c9ba8846060ba77ab402e3088658aa705e1a64e796f6cd5cf"
+        },
+        "all_required_match": true
+      },
+      {
+        "rank": 7,
+        "current": {
+          "rank": 7,
+          "seed": 7,
+          "pid": 4653,
+          "cpu_rng_sha256": "daf9268b18e87b0267a6ad240c6093eb98fe6f03872986bd31a497ba5ea2371a",
+          "cuda_rng_sha256": "76108f84396dc2d72ce275fdb0e0ef37b229b2898bf5a31d576fea11a766a42b"
+        },
+        "parent": {
+          "rank": 7,
+          "seed": 7,
+          "pid": 4652,
+          "cpu_rng_sha256": "daf9268b18e87b0267a6ad240c6093eb98fe6f03872986bd31a497ba5ea2371a",
+          "cuda_rng_sha256": "76108f84396dc2d72ce275fdb0e0ef37b229b2898bf5a31d576fea11a766a42b"
+        },
+        "all_required_match": true
+      }
+    ]
+  },
+  "conclusion": {
+    "final_eval_games": 8,
+    "wins": 5,
+    "baseline_own_cp2_wins": 4,
+    "delta_wins": 1,
+    "learning_improvement_established": false,
+    "limitation": "n=8 paired reused evaluation; 4->5 alone is insufficient evidence of learning or architecture superiority.",
+    "new_qwen_authorized": true,
+    "new_qwen_dispatched": false
+  }
+}

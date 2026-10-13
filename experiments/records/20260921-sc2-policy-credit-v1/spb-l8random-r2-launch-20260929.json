@@ -1,0 +1,265 @@
+{
+  "checked_at": 1790648030.4705913,
+  "checked_at_beijing": "2026-09-29T10:13:50.470604+08:00",
+  "runtime_sha": "12f3600ca8e6e8edabc460de70860baeef2b5146",
+  "remote_code_verified_before_dispatch": true,
+  "queue_submission": {
+    "submitted_once": true,
+    "submitted_at_beijing": "2026-09-29T10:11:02+08:00",
+    "socket": "sc2_spb_l8random96_197_20260929_r2",
+    "session": "spb_l8random96_197_r2"
+  },
+  "queue": {
+    "phase": "running-unverified",
+    "completed": [],
+    "new_games": 1048,
+    "new_updates": 96,
+    "part": "spb-random/short",
+    "deadline": 1790755863.2781556,
+    "component_deadline": 1790734263.2781556
+  },
+  "dispatch": {
+    "start": 1790647863.2781556,
+    "deadline": 1790734263.2781556,
+    "suite_deadline": 1790755863.2781556,
+    "gpu_hours": 192,
+    "suite_gpu_hours": 240,
+    "new_games": 920,
+    "new_updates": 96,
+    "includes_gpu_preflight": true
+  },
+  "host_supervision": {
+    "version": "host-guardian-v1",
+    "phase": "running-unverified",
+    "completed": [],
+    "deadline": 1790734263.2781556,
+    "learning_validated": false,
+    "started_at": 1790647895.4268959,
+    "stage": "pre",
+    "container_id": "55f29d76bc766cc880c1a5160d2c4ef0db1bfb03fdfff9d666355a8a8734f2f0"
+  },
+  "gpu_probe": {
+    "passed": true,
+    "ranks": [
+      {
+        "rank": 0,
+        "visible_devices": "0",
+        "ray_gpu_ids": [
+          0
+        ],
+        "cuda_uuid": "40d97276-36a4-2cce-43ff-be66ca654177",
+        "master_port": 27024
+      },
+      {
+        "rank": 1,
+        "visible_devices": "1",
+        "ray_gpu_ids": [
+          1
+        ],
+        "cuda_uuid": "bea101a5-a727-20d0-2270-fb787dd6c7e0",
+        "master_port": 20255
+      },
+      {
+        "rank": 2,
+        "visible_devices": "2",
+        "ray_gpu_ids": [
+          2
+        ],
+        "cuda_uuid": "334e011d-8eb5-e72e-00a3-dcbd8aaf87e5",
+        "master_port": 24751
+      },
+      {
+        "rank": 3,
+        "visible_devices": "5",
+        "ray_gpu_ids": [
+          5
+        ],
+        "cuda_uuid": "dd2c977f-d2f0-545a-dbfb-153f0a3b3c1b",
+        "master_port": 24526
+      },
+      {
+        "rank": 4,
+        "visible_devices": "3",
+        "ray_gpu_ids": [
+          3
+        ],
+        "cuda_uuid": "a7707e1f-462b-7ed6-9d2c-97fe6c9acce4",
+        "master_port": 26689
+      },
+      {
+        "rank": 5,
+        "visible_devices": "4",
+        "ray_gpu_ids": [
+          4
+        ],
+        "cuda_uuid": "33ec7165-06e2-b141-97db-66711df3e176",
+        "master_port": 25362
+      },
+      {
+        "rank": 6,
+        "visible_devices": "6",
+        "ray_gpu_ids": [
+          6
+        ],
+        "cuda_uuid": "868e1fe3-a401-980d-e3fd-2fc4fb7d0e8f",
+        "master_port": 23500
+      },
+      {
+        "rank": 7,
+        "visible_devices": "7",
+        "ray_gpu_ids": [
+          7
+        ],
+        "cuda_uuid": "8347c82f-9c11-c3d9-37ab-016498436356",
+        "master_port": 27313
+      }
+    ],
+    "nccl_sums": [
+      28,
+      28,
+      28,
+      28,
+      28,
+      28,
+      28,
+      28
+    ],
+    "model_loaded": false,
+    "natural_games": 0,
+    "optimizer_updates": 0
+  },
+  "container": {
+    "id": "55f29d76bc766cc880c1a5160d2c4ef0db1bfb03fdfff9d666355a8a8734f2f0",
+    "name": "/sc2-spb-l8random96-197-20260929-r2-short-pre",
+    "state": {
+      "Dead": false,
+      "Error": "",
+      "ExitCode": 0,
+      "FinishedAt": "0001-01-01T00:00:00Z",
+      "OOMKilled": false,
+      "Paused": false,
+      "Pid": 2198677,
+      "Restarting": false,
+      "Running": true,
+      "StartedAt": "2026-09-29T02:11:36.067549626Z",
+      "Status": "running"
+    },
+    "owner": "/var/jfsCache/sc2-spb-l8random96-197-20260929-r2/spb-random/short",
+    "gpu_requests": [
+      {
+        "Capabilities": [
+          [
+            "gpu"
+          ]
+        ],
+        "Count": -1,
+        "DeviceIDs": null,
+        "Driver": "",
+        "Options": {}
+      }
+    ]
+  },
+  "pre_manifest": {
+    "source_commit": "12f3600ca8e6e8edabc460de70860baeef2b5146",
+    "dirty": false,
+    "world_size": 8,
+    "metrics_precision": "binary64-v1",
+    "model_revision": "sha256:de52e8ef993afc763f9d4fb498e8d8302ef0bc13bd7dfd53c6ae5f77f43698b5",
+    "model_manifest_sha256": "40d6f1417568d5fda1107cdafd66c7441a679b03fb148851c8f226ecc9cf884c"
+  },
+  "pre_terminal_exists": {
+    "result.json": false,
+    ".done": false
+  },
+  "startup_evidence": {
+    "read_mode": "bounded last14000 bytes of pre-entry.log; extracted markers only",
+    "markers": [
+      "\u001b[36m(SC2Worker pid=2513)\u001b[0m 2026-09-28 19:13:39.030 | INFO     | sc2.protocol:_execute:120 - Client status changed to Status.in_game (was None)",
+      "\u001b[36m(SC2Worker pid=2516)\u001b[0m 2026-09-28 19:13:45.497 | INFO     | sc2.protocol:_execute:120 - Client status changed to Status.in_game (was None)"
+    ],
+    "sc2_in_game_observed": true,
+    "first_returned_ppo_observed": false,
+    "phase": "pre zero-update diagnostics"
+  },
+  "suite_storage": {
+    "command": [
+      "du",
+      "-sb",
+      "--null",
+      "--",
+      "/var/jfsCache/sc2-spb-l8random96-197-20260928-r1",
+      "/var/jfsCache/sc2-spb-l8random-paired128-197-20260928-r1",
+      "/var/jfsCache/sc2-spb-l8random96-197-source-20260928-r1",
+      "/var/jfsCache/sc2-spb-l8random96-197-20260929-r2",
+      "/var/jfsCache/sc2-spb-l8random-paired128-197-20260929-r2",
+      "/var/jfsCache/sc2-spb-l8random96-197-source-20260929-r2"
+    ],
+    "roots": [
+      "/var/jfsCache/sc2-spb-l8random96-197-20260928-r1",
+      "/var/jfsCache/sc2-spb-l8random-paired128-197-20260928-r1",
+      "/var/jfsCache/sc2-spb-l8random96-197-source-20260928-r1",
+      "/var/jfsCache/sc2-spb-l8random96-197-20260929-r2",
+      "/var/jfsCache/sc2-spb-l8random-paired128-197-20260929-r2",
+      "/var/jfsCache/sc2-spb-l8random96-197-source-20260929-r2"
+    ],
+    "deadline": 1790734263.2781556,
+    "limit": 377957122048,
+    "bytes": 64540698052,
+    "returncode": 0,
+    "stdout": {
+      "tail": "64432989310\t/var/jfsCache/sc2-spb-l8random96-197-20260928-r1\u0000945239\t/var/jfsCache/sc2-spb-l8random-paired128-197-20260928-r1\u000025775629\t/var/jfsCache/sc2-spb-l8random96-197-source-20260928-r1\u000054245641\t/var/jfsCache/sc2-spb-l8random96-197-20260929-r2\u0000946273\t/var/jfsCache/sc2-spb-l8random-paired128-197-20260929-r2\u000025795960\t/var/jfsCache/sc2-spb-l8random96-197-source-20260929-r2\u0000",
+      "characters": 377,
+      "truncated": false
+    },
+    "stderr": {
+      "tail": "",
+      "characters": 0,
+      "truncated": false
+    },
+    "measured_at": 1790648018.9864972,
+    "root_bytes": {
+      "/var/jfsCache/sc2-spb-l8random96-197-20260928-r1": 64432989310,
+      "/var/jfsCache/sc2-spb-l8random-paired128-197-20260928-r1": 945239,
+      "/var/jfsCache/sc2-spb-l8random96-197-source-20260928-r1": 25775629,
+      "/var/jfsCache/sc2-spb-l8random96-197-20260929-r2": 54245641,
+      "/var/jfsCache/sc2-spb-l8random-paired128-197-20260929-r2": 946273,
+      "/var/jfsCache/sc2-spb-l8random96-197-source-20260929-r2": 25795960
+    },
+    "status": "measured",
+    "started_at": 1790648018.7960925,
+    "checked_at": 1790648019.0232258,
+    "sampling_version": "single-pause-batch-v1",
+    "batch_accounts": 4,
+    "quiescence": {
+      "version": "host-guardian-v1",
+      "container_id": "55f29d76bc766cc880c1a5160d2c4ef0db1bfb03fdfff9d666355a8a8734f2f0",
+      "owner_root": "/var/jfsCache/sc2-spb-l8random96-197-20260929-r2/spb-random/short",
+      "guardian_pid": 2198621,
+      "paused_verified": true,
+      "cleanup": "verified-unpaused",
+      "paused_at": 1790648018.8459837,
+      "mode": "paused",
+      "resumed_at": 1790648019.0231102
+    }
+  },
+  "authorization": {
+    "new_games": 1048,
+    "ppo_updates": 96,
+    "repeated_games": 24,
+    "cumulative_games": 1072,
+    "suite_hours": 30,
+    "suite_gpu_hours": 240,
+    "train_and_selection_hours": 24,
+    "old_plus_new_roots_gib": 352,
+    "old_failed_r1_preserved": true,
+    "old_clock_not_modified": true,
+    "no_automatic_retry": true,
+    "no_cp192": true
+  },
+  "limitations": [
+    "One verified pause per account batch mitigates repeated cgroup freezing; underlying kernel/container freeze failure is not proven impossible.",
+    "CPU and GPU mapping checks are not PPO or learning proof.",
+    "Short pre/train2/post and own complete native CP2 acceptance are required before long training.",
+    "Wall-clock ETA about22-26h is a rough extrapolation, not the hard cutoff."
+  ]
+}

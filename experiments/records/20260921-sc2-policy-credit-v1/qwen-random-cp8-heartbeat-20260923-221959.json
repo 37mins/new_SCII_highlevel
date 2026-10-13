@@ -1,0 +1,419 @@
+{
+  "observed_at": "2026-09-23T22:19:59.747301+08:00",
+  "root": "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2",
+  "read_only": true,
+  "files": {
+    "deployment.json": {
+      "exists": true,
+      "bytes": 13890,
+      "sha256": "0d40bcf2feac7c5415cdcf9e53f3c7452eaa387ca53a17c8d9db601c045fef84"
+    },
+    "queue-state.json": {
+      "exists": true,
+      "bytes": 91,
+      "sha256": "bef692ae73ff470ad9b6f68016db6066700ede4ff40bbe68a9a1c7a0513ed821"
+    },
+    "host-supervision/state.json": {
+      "exists": true,
+      "bytes": 296,
+      "sha256": "320003d824465cd1a3886b11eb84312d94226448829b88c292090f66554d3d72"
+    },
+    "host-supervision/train96-guardian.json": {
+      "exists": true,
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "empty_slot": true
+    },
+    "state.json": {
+      "exists": false
+    },
+    "acceptance.json": {
+      "exists": false
+    },
+    "storage-failure.json": {
+      "exists": false
+    },
+    "suite-account/storage-failure.json": {
+      "exists": false
+    },
+    "runs/train96/result.json": {
+      "exists": false
+    },
+    "runs/train96/.done": {
+      "exists": false
+    },
+    "runs/train96/acceptance.json": {
+      "exists": false
+    },
+    "runs/eval96/result.json": {
+      "exists": false
+    },
+    "runs/eval96/.done": {
+      "exists": false
+    },
+    "runs/eval96/acceptance.json": {
+      "exists": false
+    },
+    "storage-state.json": {
+      "exists": true,
+      "bytes": 4738,
+      "sha256": "a6e3d2bddda25e58ea37e19eb3b4ae4b2e3724a537313c0fd520ad542a2f9436"
+    },
+    "suite-account/storage-state.json": {
+      "exists": true,
+      "bytes": 4689,
+      "sha256": "db7bfc750c6dc60a65985f93a4517a18c839559288ec0a6357ef309790733834"
+    },
+    "runs/train96/manifest.json": {
+      "exists": true,
+      "bytes": 3017,
+      "sha256": "06bd9fbe5f38b0c0bc86add64b0ba5533eca4d4115574c59380859c4beb347cb"
+    },
+    "runs/train96/checkpoints/resume_state.json": {
+      "exists": true,
+      "bytes": 285,
+      "sha256": "b3683a40c940b53d44773c4371a04ecd0c70be6aff5cbe53abf8a6c87af27031"
+    },
+    "runs/train96/training_seeds.jsonl": {
+      "exists": true,
+      "bytes": 3151,
+      "sha256": "fcf080e663f0ff56c19def4280d527e1610b2af3d51fc0bb54ca5254f53d69cc"
+    },
+    "runs/train96/episode_outcomes.jsonl": {
+      "exists": true,
+      "bytes": 46080,
+      "sha256": "51fc30e197fdc336ad7483d8d9508994d724cdb4f98b74dc9c51acc5e5b3b36a"
+    },
+    "runs/train96/checkpoints/sc2_policy_credit_audit.jsonl": {
+      "exists": true,
+      "bytes": 5224,
+      "sha256": "b105728e90c91417cc80551c1b64eedc46263ab9de190bd02af5ee7b1e0262a4"
+    }
+  },
+  "checks": {
+    "deployment_identity": true,
+    "manifest": true,
+    "tail_ppo_metrics": true
+  },
+  "deployment": {
+    "runtime_sha": "34154283a8298ac4fbaab1c63770a6b81f7d375c",
+    "controller_sha": "34154283a8298ac4fbaab1c63770a6b81f7d375c",
+    "start_step": 8,
+    "target_step": 96,
+    "games": [
+      704,
+      8
+    ],
+    "updates": [
+      88,
+      0
+    ],
+    "deadline": 1790308720.0467553,
+    "suite_deadline": 1790420762.305692
+  },
+  "queue-state.json": {
+    "phase": "running-unverified",
+    "stage": "train96",
+    "deadline": 1790308720.0467553
+  },
+  "host-supervision/state.json": {
+    "version": "host-guardian-v1",
+    "phase": "running-unverified",
+    "completed": [],
+    "deadline": 1790308720.0467553,
+    "learning_validated": false,
+    "started_at": 1790168798.0071752,
+    "stage": "train96",
+    "container_id": "fc2f74a4285c5e80660257f42bd1caa21ad1a0614699d680e74938f013106b06"
+  },
+  "storage-state.json": {
+    "checked_at": 1790173188.5317569,
+    "bytes": 250479851439,
+    "limit": 1099511627776,
+    "deadline": 1790308720.0467553,
+    "status": "measured",
+    "returncode": 0,
+    "stderr": {
+      "tail": "",
+      "characters": 0,
+      "truncated": false
+    },
+    "roots_count": 15,
+    "roots_exact_deployment": true,
+    "within_limit": true
+  },
+  "suite-account/storage-state.json": {
+    "checked_at": 1790173188.922405,
+    "bytes": 1081799089795,
+    "limit": 2199023255552,
+    "deadline": 1790420762.305692,
+    "status": "measured",
+    "returncode": 0,
+    "stderr": {
+      "tail": "",
+      "characters": 0,
+      "truncated": false
+    },
+    "roots_count": 15,
+    "roots_exact_deployment": true,
+    "within_limit": true
+  },
+  "manifest": {
+    "source_commit": "34154283a8298ac4fbaab1c63770a6b81f7d375c",
+    "dirty": false,
+    "world_size": 8,
+    "metrics_precision": "binary64-v1"
+  },
+  "resume": {
+    "from_checkpoint": "/var/jfsCache/sc2-l7-followup197-20260922-r4/qwen-random/long/runs/train96/checkpoints/global_step_8",
+    "global_step": 8,
+    "next_reset_index": 8,
+    "next_seeds": [
+      8,
+      24,
+      72,
+      28,
+      30,
+      18,
+      69,
+      57
+    ],
+    "source": "checkpoint",
+    "model_optimizer_dataloader_load_returned": true
+  },
+  "console": {
+    "total_bytes": 11231672,
+    "offset": 7037368,
+    "bytes": 4194304,
+    "sha256": "75005afbac3d05eaa1ad22ff69d35ec57e2f3feacc26dc0bba1d5e2f1d146219",
+    "returned_steps": [
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33
+    ],
+    "latest": [
+      {
+        "step": 31,
+        "actor/grad_norm": 1.98588734040095,
+        "timing_s/update_actor": 14.305980700999498,
+        "episode/success_rate": 0.875,
+        "episode/valid_action_ratio": 1,
+        "policy_credit/invalid_advantage_max": 0
+      },
+      {
+        "step": 32,
+        "actor/grad_norm": 0.011255989782512188,
+        "timing_s/update_actor": 11.419283852912486,
+        "episode/success_rate": 0.875,
+        "episode/valid_action_ratio": 1,
+        "policy_credit/invalid_advantage_max": 0
+      },
+      {
+        "step": 33,
+        "actor/grad_norm": 0.0020409863985454044,
+        "timing_s/update_actor": 11.561318724416196,
+        "episode/success_rate": 1,
+        "episode/valid_action_ratio": 1,
+        "policy_credit/invalid_advantage_max": 0
+      }
+    ]
+  },
+  "seeds": {
+    "rows": 26,
+    "reset_indices": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33
+    ],
+    "all_match": true,
+    "last_batch": {
+      "base_seed": 0,
+      "reset_index": 33,
+      "seed_protocol": "independent_uniform101",
+      "seeds": [
+        97,
+        61,
+        45,
+        78,
+        36,
+        86,
+        45,
+        75
+      ]
+    }
+  },
+  "outcomes": {
+    "total_rows": 200,
+    "through_returned_step": 33,
+    "completed_rows": 200,
+    "wins": 172,
+    "all_natural": true,
+    "complete_reset_indices": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32
+    ],
+    "each_eight_unique_envs": true,
+    "in_progress_rows": 0
+  },
+  "audits": {
+    "rows": 25,
+    "returned_step_rows": 25,
+    "steps": [
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33
+    ],
+    "all_accept": true,
+    "real_answers": 630,
+    "valid_answers": 630
+  },
+  "checkpoint_inventories": [
+    {
+      "step": 16,
+      "required_files": 26,
+      "missing_or_empty": [],
+      "contents_read": false
+    },
+    {
+      "step": 24,
+      "required_files": 26,
+      "missing_or_empty": [],
+      "contents_read": false
+    },
+    {
+      "step": 32,
+      "required_files": 26,
+      "missing_or_empty": [],
+      "contents_read": false
+    }
+  ],
+  "container": {
+    "id": "fc2f74a4285c5e80660257f42bd1caa21ad1a0614699d680e74938f013106b06",
+    "returncode": 0,
+    "state": {
+      "Status": "running",
+      "Running": true,
+      "Paused": false,
+      "Restarting": false,
+      "OOMKilled": false,
+      "Dead": false,
+      "Pid": 1523713,
+      "ExitCode": 0,
+      "Error": "",
+      "StartedAt": "2026-09-23T13:06:39.085218914Z",
+      "FinishedAt": "0001-01-01T00:00:00Z"
+    },
+    "stderr": ""
+  },
+  "schema": "qwen-native-cp8-heartbeat-v1",
+  "provenance": {
+    "documentation_base_fully_read": "cebab2316b8834d2e8ed02fecff5aed6fb235546",
+    "latest_documentation_head": "4955575339347c08d83c37b06265978c63c50bc9",
+    "read_context": "AGENTS/README/startup/launch/GPU/first-PPO full contents retained from preceding monitoring work; current diff shows only README ETA addition, read before SSH.",
+    "prior_returned_ppo_evidence": [
+      "qwen-random-cp8-first-ppo-20260923.json",
+      "qwen-random-cp8-heartbeat-20260923-215502.json",
+      "qwen-random-cp8-status-20260923-220401.json",
+      "qwen-random-cp8-eta-20260923-221302.json"
+    ]
+  },
+  "interpretation": {
+    "completed_global_step": 33,
+    "new_returned_outer_ppo_phases": 25,
+    "proof": "Prior returned9–31 evidence plus current bounded console25–33. Pre-update audit alone is not proof.",
+    "terminal_acceptance": "pending",
+    "root_state_missing_and_empty_guardian": "Expected before stage terminal publication",
+    "next_seed_reset33": "Registration for step34, not completed34",
+    "learning_gain": "not established",
+    "checkpoint_inventory": "Names and positive file sizes only, no contents read",
+    "storage": "Current existing15-root receipts exactly match frozen deployment; measured/exit0/empty structured stderr; no active measurement or old-value fallback."
+  },
+  "actions": {
+    "ssh_alias": "sc2-a100-197",
+    "remote_writes": false,
+    "gpu_diagnostics": false,
+    "large_checkpoint_reads": false,
+    "dispatches": false,
+    "restarts": false,
+    "retries": false,
+    "monitor": "197-qwen-cp8 retained unchanged",
+    "new_notification_event": false,
+    "reason": "Healthy progress only; no stage completion/failure/decision. First GPU/native restore/SC2/PPO already notified.",
+    "small_receipt_limit_bytes": 1048576,
+    "console_tail_limit_bytes": 4194304
+  }
+}

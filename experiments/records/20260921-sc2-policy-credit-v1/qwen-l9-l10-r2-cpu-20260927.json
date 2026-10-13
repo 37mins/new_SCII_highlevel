@@ -1,0 +1,416 @@
+{
+  "checked_at": "2026-09-27T21:44:55.445538+08:00",
+  "controller_sha": "5261ff5d6fee665fec78a97de4c5bfd9a79b4fc5",
+  "runtime_sha": "1c6cf60b111570ef13f9817d0b1b16fb774546f5",
+  "status": "cpu_gates_passed_not_end_to_end_queue_acceptance",
+  "local_tests": {
+    "primary": 72,
+    "expanded": 108,
+    "skips": 0
+  },
+  "host_regressions": {
+    "passed": true,
+    "tests": 71,
+    "skips": 0,
+    "cuda_initialized": false,
+    "host_only": true,
+    "runtime_sha": "1c6cf60b111570ef13f9817d0b1b16fb774546f5",
+    "checked_at": 1790515699.790856,
+    "controller_sha": "5261ff5d6fee665fec78a97de4c5bfd9a79b4fc5"
+  },
+  "model_regressions": {
+    "passed": true,
+    "tests": 231,
+    "skips": 0,
+    "cuda_initialized": false,
+    "host_only": false,
+    "runtime_sha": "1c6cf60b111570ef13f9817d0b1b16fb774546f5",
+    "checked_at": 1790515771.6591244,
+    "controller_sha": "5261ff5d6fee665fec78a97de4c5bfd9a79b4fc5",
+    "continuation_tests": 19
+  },
+  "parts": [
+    {
+      "owner": "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r2/qwen-same/short",
+      "stages": [],
+      "readiness": {
+        "passed": true,
+        "runtime_sha": "1c6cf60b111570ef13f9817d0b1b16fb774546f5",
+        "cuda_initialized": false,
+        "actual_entries_and_hydra_configs": true,
+        "actual_parent_verified": true,
+        "deferred_gate": null,
+        "checked_at": 1790515888.6638794
+      },
+      "configs": []
+    },
+    {
+      "owner": "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r2/qwen-same/long",
+      "stages": [
+        "eval96"
+      ],
+      "readiness": {
+        "passed": true,
+        "runtime_sha": "1c6cf60b111570ef13f9817d0b1b16fb774546f5",
+        "cuda_initialized": false,
+        "actual_entries_and_hydra_configs": true,
+        "actual_parent_verified": false,
+        "deferred_gate": "SpB actual CP2 and accepted prefix required before long GPU",
+        "checked_at": 1790515893.999314
+      },
+      "configs": [
+        {
+          "stage": "eval96",
+          "sha256": "c61249f82318174a0deda6f9c210adbffa48b40ec69a2c126e1addde39dce3be"
+        }
+      ]
+    },
+    {
+      "owner": "/var/jfsCache/sc2-qwen-l10same96-197-20260927-r2/qwen-same/short",
+      "stages": [
+        "pre",
+        "train2",
+        "post"
+      ],
+      "readiness": {
+        "passed": true,
+        "runtime_sha": "1c6cf60b111570ef13f9817d0b1b16fb774546f5",
+        "cuda_initialized": false,
+        "actual_entries_and_hydra_configs": true,
+        "actual_parent_verified": true,
+        "deferred_gate": null,
+        "checked_at": 1790515899.9213374
+      },
+      "configs": [
+        {
+          "stage": "pre",
+          "sha256": "da3064b6b69435f4b0b81da8a3ba11641a0fc94a46df0d3bf834739b4065128e"
+        },
+        {
+          "stage": "train2",
+          "sha256": "001f0be83291f6f35e0339f75c2b8437233bdcdba83d6a567cf78751166a7050"
+        },
+        {
+          "stage": "post",
+          "sha256": "cf06c69de785371c90136b6a2630655fd3162c384f398f89e4d0424c33dd83c3"
+        }
+      ]
+    },
+    {
+      "owner": "/var/jfsCache/sc2-qwen-l10same96-197-20260927-r2/qwen-same/long",
+      "stages": [
+        "train96",
+        "eval96"
+      ],
+      "readiness": {
+        "passed": true,
+        "runtime_sha": "1c6cf60b111570ef13f9817d0b1b16fb774546f5",
+        "cuda_initialized": false,
+        "actual_entries_and_hydra_configs": true,
+        "actual_parent_verified": false,
+        "deferred_gate": "SpB actual CP2 and accepted prefix required before long GPU",
+        "checked_at": 1790515905.4748857
+      },
+      "configs": [
+        {
+          "stage": "train96",
+          "sha256": "f1b5ccb7855785a30dafa9f4520ba8cac3e9e3353b13c43148a9be723ec0d4c9"
+        },
+        {
+          "stage": "eval96",
+          "sha256": "16c4bc5949a1a19308e813e6e8c23c2e24703e1d4b342f84cb592ccb111dd51d"
+        }
+      ]
+    }
+  ],
+  "hooks": [
+    {
+      "path": "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r2/qwen-same/long/cpu/hook-eval96/cpu-hook-preflight.json",
+      "sha256": "2c500f788340a93df3d8b33c8b433dda66513ec449b35ead292e426044ad91b0",
+      "passed": true,
+      "worker": {
+        "feedback_eval_loaded": true,
+        "required_module": "refinery_order_eval",
+        "required_module_loaded": true,
+        "sc2path": "/assets/StarCraftII",
+        "cuda_visible_devices": "",
+        "cuda_initialized": false,
+        "cuda_device_count": 0
+      },
+      "model_loaded": false,
+      "natural_games": 0,
+      "optimizer_updates": 0
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l10same96-197-20260927-r2/qwen-same/short/cpu/hook-pre/cpu-hook-preflight.json",
+      "sha256": "2d0b7d8d984e2edf457f7e82e562881d284a59cc37c7df1ae43d47d166a743f3",
+      "passed": true,
+      "worker": {
+        "feedback_eval_loaded": true,
+        "required_module": "refinery_order_eval",
+        "required_module_loaded": true,
+        "sc2path": "/assets/StarCraftII",
+        "cuda_visible_devices": "",
+        "cuda_initialized": false,
+        "cuda_device_count": 0
+      },
+      "model_loaded": false,
+      "natural_games": 0,
+      "optimizer_updates": 0
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l10same96-197-20260927-r2/qwen-same/short/cpu/hook-train2/cpu-hook-preflight.json",
+      "sha256": "3180677015d14764f8b22dfcffa447bb28587ff8f6d483aa58c9f889c26effd1",
+      "passed": true,
+      "worker": {
+        "feedback_eval_loaded": true,
+        "required_module": "refinery_order_eval",
+        "required_module_loaded": true,
+        "sc2path": "/assets/StarCraftII",
+        "cuda_visible_devices": "",
+        "cuda_initialized": false,
+        "cuda_device_count": 0
+      },
+      "model_loaded": false,
+      "natural_games": 0,
+      "optimizer_updates": 0
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l10same96-197-20260927-r2/qwen-same/long/cpu/hook-train96/cpu-hook-preflight.json",
+      "sha256": "44c0ae782041586b461882ea6885ac252ea864e04ed29b151c8e37b12cd692fa",
+      "passed": true,
+      "worker": {
+        "feedback_eval_loaded": false,
+        "required_module": "refinery_order_eval",
+        "required_module_loaded": true,
+        "sc2path": "/assets/StarCraftII",
+        "cuda_visible_devices": "",
+        "cuda_initialized": false,
+        "cuda_device_count": 0
+      },
+      "model_loaded": false,
+      "natural_games": 0,
+      "optimizer_updates": 0
+    }
+  ],
+  "native_checkpoint_cpu": {
+    "passed": true,
+    "cuda_initialized": false,
+    "steps": [
+      {
+        "step": 32,
+        "driver_rng": true,
+        "rank_rng": 8,
+        "scheduler_step": 32,
+        "next_reset_index": 32
+      },
+      {
+        "step": 64,
+        "driver_rng": true,
+        "rank_rng": 8,
+        "scheduler_step": 64,
+        "next_reset_index": 64
+      },
+      {
+        "step": 96,
+        "driver_rng": true,
+        "rank_rng": 8,
+        "scheduler_step": 96,
+        "next_reset_index": 96
+      }
+    ],
+    "runtime_sha": "1c6cf60b111570ef13f9817d0b1b16fb774546f5",
+    "checked_at": 1790516306.1151495,
+    "inventory_count": 78,
+    "receipt_sha256": "ed0f1ff35f66120cfa11cc1bafed0203fdd6f879b65b03359dd75aaee3b318f7"
+  },
+  "containers": [
+    {
+      "id": "2666f3efaf958280e15b633df04651d8c0e295b979301f84466e988226b404cd",
+      "name": "/sc2-qwen-l9same96-197-20260927-r2-short-regressions",
+      "state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-09-27T13:29:32.890039163Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-09-27T13:29:18.517376234Z",
+        "Status": "exited"
+      },
+      "device_requests": null
+    },
+    {
+      "id": "918fd3da8f4fff6978268e71d9dc6ce0915f715fa58882732342d121c679be0b",
+      "name": "/sc2-qwen-l9same96-197-20260927-r2-short-cpu",
+      "state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-09-27T13:31:29.3916631Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-09-27T13:31:24.810221179Z",
+        "Status": "exited"
+      },
+      "device_requests": null
+    },
+    {
+      "id": "466b88d721e482ba8380ef6a3d23ef8d89e0083277cf71a5d62cde5400be234b",
+      "name": "/sc2-qwen-l9same96-197-20260927-r2-long-cpu",
+      "state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-09-27T13:31:34.733770356Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-09-27T13:31:29.722398908Z",
+        "Status": "exited"
+      },
+      "device_requests": null
+    },
+    {
+      "id": "58dd483d1c32e4803adfaadc318da90757fa44f14b7420f44237608354fed11d",
+      "name": "/sc2-qwen-l10same96-197-20260927-r2-short-cpu",
+      "state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-09-27T13:31:40.643564927Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-09-27T13:31:35.082895467Z",
+        "Status": "exited"
+      },
+      "device_requests": null
+    },
+    {
+      "id": "f5faaebb90faccd1495ce0518eae61590ee55e00e40a7467d0a890ff4fc7946d",
+      "name": "/sc2-qwen-l10same96-197-20260927-r2-long-cpu",
+      "state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-09-27T13:31:46.211680387Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-09-27T13:31:40.945496623Z",
+        "Status": "exited"
+      },
+      "device_requests": null
+    },
+    {
+      "id": "efa85dc7dc495f3a2121ad692f01fcb255efac959ce67321ba3c8e18c654590d",
+      "name": "/sc2-qwen-l9same96-197-20260927-r2-long-cpu-hook-eval96",
+      "state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-09-27T13:35:22.336014455Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-09-27T13:34:49.785920413Z",
+        "Status": "exited"
+      },
+      "device_requests": null
+    },
+    {
+      "id": "16d3bc49a09d4855695f8764f4315769e7c58a005f91426a4bc4a8fa5f6808af",
+      "name": "/sc2-qwen-l10same96-197-20260927-r2-short-cpu-hook-pre",
+      "state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-09-27T13:36:03.767583068Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-09-27T13:35:23.296754864Z",
+        "Status": "exited"
+      },
+      "device_requests": null
+    },
+    {
+      "id": "61d3b8f9f6e78149560ec3eaba0431d34b101112f40a03356558a1f757047015",
+      "name": "/sc2-qwen-l10same96-197-20260927-r2-short-cpu-hook-train2",
+      "state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-09-27T13:37:03.684377467Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-09-27T13:36:04.281303736Z",
+        "Status": "exited"
+      },
+      "device_requests": null
+    },
+    {
+      "id": "a210d49ad0c0165d5e7a0cd0ef20fd4f6f5682359150d422bcb3b085b4e8a197",
+      "name": "/sc2-qwen-l10same96-197-20260927-r2-long-cpu-hook-train96",
+      "state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-09-27T13:38:09.66962948Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-09-27T13:37:04.474388294Z",
+        "Status": "exited"
+      },
+      "device_requests": null
+    },
+    {
+      "id": "c56f3fe4c55a8ec46aa8e4743385bbaf122737dd82428f9b3cc97f1b0d51cc8d",
+      "name": "/sc2-qwen-l9same96-197-20260927-r2-long-retained-cpu",
+      "state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-09-27T13:38:26.38774101Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-09-27T13:38:10.193516376Z",
+        "Status": "exited"
+      },
+      "device_requests": null
+    }
+  ],
+  "evidence_path": "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r2/cpu-acceptance.json",
+  "limitations": [
+    "CPU success is not GPU/model/SC2/PPO success.",
+    "Queue tests mocked m.admit and missed duplicate admission fsync names.",
+    "Inherited readiness SpB wording is a legacy helper label; L9 eval-only uses the separate retained CP96 gate, while L10 long must still verify its future own CP2."
+  ],
+  "ssh_note": "An SSH connection closed before first hook dispatch; read-only inspection confirmed no hook containers/logs or GPU dispatch. The four actual hooks subsequently ran once, not a failed experiment retry."
+}

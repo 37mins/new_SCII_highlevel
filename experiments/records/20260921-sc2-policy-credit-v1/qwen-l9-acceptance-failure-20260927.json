@@ -1,0 +1,393 @@
+{
+  "schema": "l9-acceptance-failure-read-only-v1",
+  "status": {
+    "checked_at": "2026-09-27T20:49:26.444398+08:00",
+    "arms": {
+      "sc2-qwen-l9same96-197-20260927-r1": {
+        "queue-state.json": {
+          "phase": "failed",
+          "completed": [
+            "L9/qwen-same/short"
+          ],
+          "new_games": 1584,
+          "new_updates": 192,
+          "level": 9,
+          "deadline": 1790568708.224269,
+          "arm_deadline": 1790525508.224269,
+          "part": "qwen-same/long",
+          "error_type": "KeyError",
+          "error": "'checkpoints/global_step_32/data.pt'",
+          "finished_at": 1790512128.3039167
+        },
+        "dispatch.json": {
+          "start": 1790482308.224269,
+          "deadline": 1790525508.224269,
+          "suite_deadline": 1790568708.224269,
+          "gpu_hours": 96,
+          "new_games": 792,
+          "new_updates": 96,
+          "includes_gpu_preflight": true
+        },
+        "suite-dispatch.json": {
+          "start": 1790482308.224269,
+          "deadline": 1790568708.224269,
+          "gpu_hours": 192,
+          "new_games": 1584,
+          "new_updates": 192,
+          "includes_gpu_preflight": true
+        },
+        "arm-storage/storage-state.json": {
+          "command": [
+            "du",
+            "-sb",
+            "--null",
+            "--",
+            "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r1",
+            "/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r1"
+          ],
+          "roots": [
+            "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r1",
+            "/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r1"
+          ],
+          "started_at": 1790512126.3544471,
+          "deadline": 1790525508.224269,
+          "limit": 274877906944,
+          "bytes": 201937802807,
+          "returncode": 0,
+          "status": "measured",
+          "stdout": {
+            "tail": "201913181475\t/var/jfsCache/sc2-qwen-l9same96-197-20260927-r1\u000024621332\t/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r1\u0000",
+            "characters": 128,
+            "truncated": false
+          },
+          "stderr": {
+            "tail": "",
+            "characters": 0,
+            "truncated": false
+          },
+          "root_bytes": {
+            "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r1": 201913181475,
+            "/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r1": 24621332
+          },
+          "checked_at": 1790512126.4597642
+        },
+        "qwen-same/short/state.json": {
+          "version": "host-guardian-v1",
+          "phase": "completed",
+          "completed": [
+            "pre",
+            "train2",
+            "post"
+          ],
+          "deadline": 1790525508.224269,
+          "learning_validated": false,
+          "started_at": 1790482339.9966063,
+          "stage": "post",
+          "container_id": "4e1f9dbaa3caa955ef7ec62c35d401cf839005ceeb367587e93447a776a1ce61",
+          "exit_code": 0,
+          "finished_at": 1790483632.3282266
+        },
+        "qwen-same/short/host-supervision/state.json": {
+          "version": "host-guardian-v1",
+          "phase": "completed",
+          "completed": [
+            "pre",
+            "train2",
+            "post"
+          ],
+          "deadline": 1790525508.224269,
+          "learning_validated": false,
+          "started_at": 1790482339.9966063,
+          "stage": "post",
+          "container_id": "4e1f9dbaa3caa955ef7ec62c35d401cf839005ceeb367587e93447a776a1ce61",
+          "exit_code": 0,
+          "finished_at": 1790483632.3282266
+        },
+        "qwen-same/long/host-supervision/state.json": {
+          "version": "host-guardian-v1",
+          "phase": "failed",
+          "completed": [],
+          "deadline": 1790525508.224269,
+          "learning_validated": false,
+          "started_at": 1790483637.0522776,
+          "stage": "train96",
+          "container_id": "37951982a4996f684b1f5e2ca8e81dae60b937b69760eed96c1f959bb96ff2ef",
+          "error_type": "KeyError",
+          "error": "'checkpoints/global_step_32/data.pt'",
+          "finished_at": 1790512128.3020327
+        },
+        "qwen-same/long/parent-readiness.json": {
+          "passed": true,
+          "actual_parent_verified": true,
+          "runtime_sha": "1c6cf60b111570ef13f9817d0b1b16fb774546f5",
+          "cuda_initialized": false,
+          "checked_at": 1790483636.23013
+        },
+        "containers": [
+          {
+            "id": "4e1f9dbaa3caa955ef7ec62c35d401cf839005ceeb367587e93447a776a1ce61",
+            "name": "/sc2-qwen-l9same96-197-20260927-r1-short-post",
+            "state": {
+              "Dead": false,
+              "Error": "",
+              "ExitCode": 0,
+              "FinishedAt": "2026-09-27T04:33:37.183081198Z",
+              "OOMKilled": false,
+              "Paused": false,
+              "Pid": 0,
+              "Restarting": false,
+              "Running": false,
+              "StartedAt": "2026-09-27T04:28:43.534016678Z",
+              "Status": "exited"
+            },
+            "owner": "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r1/qwen-same/short"
+          },
+          {
+            "id": "37951982a4996f684b1f5e2ca8e81dae60b937b69760eed96c1f959bb96ff2ef",
+            "name": "/sc2-qwen-l9same96-197-20260927-r1-long-train96",
+            "state": {
+              "Dead": false,
+              "Error": "",
+              "ExitCode": 0,
+              "FinishedAt": "2026-09-27T12:28:32.910020633Z",
+              "OOMKilled": false,
+              "Paused": false,
+              "Pid": 0,
+              "Restarting": false,
+              "Running": false,
+              "StartedAt": "2026-09-27T04:33:57.537912681Z",
+              "Status": "exited"
+            },
+            "owner": "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r1/qwen-same/long"
+          }
+        ],
+        "log_tail": "Traceback (most recent call last):\n  File \"/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r1/code/experiments/records/20260921-sc2-policy-credit-v1/qwen_l9l10_same197.py\", line 452, in <module>\n    if __name__=='__main__': main()\n  File \"/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r1/code/experiments/records/20260921-sc2-policy-credit-v1/qwen_l9l10_same197.py\", line 430, in main\n    if arg.mode in ('prepare','queue'): globals()[arg.mode](); return\n  File \"/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r1/code/experiments/records/20260921-sc2-policy-credit-v1/qwen_l9l10_same197.py\", line 408, in queue\n    terminal = h.run_stages(cfg['stages'],lambda s:docker('stage',index,s),verify,\n  File \"/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r1/code/experiments/records/20260921-sc2-policy-credit-v1/host_stage197.py\", line 92, in run_stages\n    verify(stage)\n  File \"/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r1/code/experiments/records/20260921-sc2-policy-credit-v1/qwen_l9l10_same197.py\", line 282, in verify\n    if size<=0 or result['checkpoint_files'][rel]['bytes']!=size: raise RuntimeError('Incomplete native checkpoint')\nKeyError: 'checkpoints/global_step_32/data.pt'\n"
+      },
+      "sc2-qwen-l10same96-197-20260927-r1": {
+        "arm-storage/storage-state.json": {
+          "command": [
+            "du",
+            "-sb",
+            "--null",
+            "--",
+            "/var/jfsCache/sc2-qwen-l10same96-197-20260927-r1",
+            "/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r1"
+          ],
+          "roots": [
+            "/var/jfsCache/sc2-qwen-l10same96-197-20260927-r1",
+            "/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r1"
+          ],
+          "started_at": 1790512126.4602213,
+          "deadline": 1790525508.224269,
+          "limit": 274877906944,
+          "bytes": 49739777,
+          "returncode": 0,
+          "status": "measured",
+          "stdout": {
+            "tail": "25118445\t/var/jfsCache/sc2-qwen-l10same96-197-20260927-r1\u000024621332\t/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r1\u0000",
+            "characters": 125,
+            "truncated": false
+          },
+          "stderr": {
+            "tail": "",
+            "characters": 0,
+            "truncated": false
+          },
+          "root_bytes": {
+            "/var/jfsCache/sc2-qwen-l10same96-197-20260927-r1": 25118445,
+            "/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r1": 24621332
+          },
+          "checked_at": 1790512126.4668756
+        },
+        "containers": []
+      }
+    }
+  },
+  "checkpoint_and_gpu_diagnostic": {
+    "result_done_equal": true,
+    "result": {
+      "status": "completed",
+      "process_exit_code": 0,
+      "completed_steps": 94,
+      "last_global_step": 96,
+      "start_step": 2,
+      "checkpoint_complete": true,
+      "ended_at": "2026-09-27T12:28:15.683424+00:00"
+    },
+    "outcomes": {
+      "trajectories": 752,
+      "natural_games": 752,
+      "wins": 281,
+      "defeats": 471,
+      "ties": 0,
+      "truncated": 0,
+      "natural_win_rate": 0.37367021276595747
+    },
+    "checkpoint_keys": [
+      "checkpoints/global_step_96/data.pt",
+      "checkpoints/global_step_96/actor/model_world_size_8_rank_0.pt",
+      "checkpoints/global_step_96/actor/model_world_size_8_rank_1.pt",
+      "checkpoints/global_step_96/actor/model_world_size_8_rank_2.pt",
+      "checkpoints/global_step_96/actor/model_world_size_8_rank_3.pt",
+      "checkpoints/global_step_96/actor/model_world_size_8_rank_4.pt",
+      "checkpoints/global_step_96/actor/model_world_size_8_rank_5.pt",
+      "checkpoints/global_step_96/actor/model_world_size_8_rank_6.pt",
+      "checkpoints/global_step_96/actor/model_world_size_8_rank_7.pt",
+      "checkpoints/global_step_96/actor/optim_world_size_8_rank_0.pt",
+      "checkpoints/global_step_96/actor/optim_world_size_8_rank_1.pt",
+      "checkpoints/global_step_96/actor/optim_world_size_8_rank_2.pt",
+      "checkpoints/global_step_96/actor/optim_world_size_8_rank_3.pt",
+      "checkpoints/global_step_96/actor/optim_world_size_8_rank_4.pt",
+      "checkpoints/global_step_96/actor/optim_world_size_8_rank_5.pt",
+      "checkpoints/global_step_96/actor/optim_world_size_8_rank_6.pt",
+      "checkpoints/global_step_96/actor/optim_world_size_8_rank_7.pt",
+      "checkpoints/global_step_96/actor/extra_state_world_size_8_rank_0.pt",
+      "checkpoints/global_step_96/actor/extra_state_world_size_8_rank_1.pt",
+      "checkpoints/global_step_96/actor/extra_state_world_size_8_rank_2.pt",
+      "checkpoints/global_step_96/actor/extra_state_world_size_8_rank_3.pt",
+      "checkpoints/global_step_96/actor/extra_state_world_size_8_rank_4.pt",
+      "checkpoints/global_step_96/actor/extra_state_world_size_8_rank_5.pt",
+      "checkpoints/global_step_96/actor/extra_state_world_size_8_rank_6.pt",
+      "checkpoints/global_step_96/actor/extra_state_world_size_8_rank_7.pt",
+      "checkpoints/global_step_96/sc2_state.pt"
+    ],
+    "cp_inventories": {
+      "32": {
+        "data.pt": 1947,
+        "sc2_state.pt": 30007,
+        "actor/model_world_size_8_rank_7.pt": 2205943659,
+        "actor/model_world_size_8_rank_4.pt": 2205943659,
+        "actor/model_world_size_8_rank_5.pt": 2205943659,
+        "actor/model_world_size_8_rank_0.pt": 2205943659,
+        "actor/model_world_size_8_rank_6.pt": 2205943659,
+        "actor/model_world_size_8_rank_1.pt": 2205943659,
+        "actor/model_world_size_8_rank_2.pt": 2205943659,
+        "actor/model_world_size_8_rank_3.pt": 2205943659,
+        "actor/optim_world_size_8_rank_7.pt": 4022500763,
+        "actor/optim_world_size_8_rank_4.pt": 4022500763,
+        "actor/optim_world_size_8_rank_1.pt": 4022500763,
+        "actor/optim_world_size_8_rank_6.pt": 4022500763,
+        "actor/optim_world_size_8_rank_2.pt": 4022500763,
+        "actor/optim_world_size_8_rank_5.pt": 4022500763,
+        "actor/optim_world_size_8_rank_3.pt": 4022500763,
+        "actor/optim_world_size_8_rank_0.pt": 4022500763,
+        "actor/extra_state_world_size_8_rank_4.pt": 15077,
+        "actor/extra_state_world_size_8_rank_5.pt": 15077,
+        "actor/extra_state_world_size_8_rank_1.pt": 15141,
+        "actor/extra_state_world_size_8_rank_6.pt": 15141,
+        "actor/extra_state_world_size_8_rank_2.pt": 15269,
+        "actor/extra_state_world_size_8_rank_3.pt": 15205,
+        "actor/extra_state_world_size_8_rank_7.pt": 15141,
+        "actor/extra_state_world_size_8_rank_0.pt": 15141,
+        "actor/generation_config.json": 213,
+        "actor/config.json": 1542,
+        "actor/chat_template.jinja": 2630,
+        "actor/tokenizer_config.json": 5405,
+        "actor/special_tokens_map.json": 613,
+        "actor/added_tokens.json": 707,
+        "actor/vocab.json": 2776833,
+        "actor/merges.txt": 1671853,
+        "actor/tokenizer.json": 11422654
+      },
+      "64": {
+        "data.pt": 1947,
+        "sc2_state.pt": 30007,
+        "actor/model_world_size_8_rank_4.pt": 2205943659,
+        "actor/model_world_size_8_rank_7.pt": 2205943659,
+        "actor/model_world_size_8_rank_0.pt": 2205943659,
+        "actor/model_world_size_8_rank_5.pt": 2205943659,
+        "actor/model_world_size_8_rank_1.pt": 2205943659,
+        "actor/model_world_size_8_rank_3.pt": 2205943659,
+        "actor/model_world_size_8_rank_6.pt": 2205943659,
+        "actor/model_world_size_8_rank_2.pt": 2205943659,
+        "actor/optim_world_size_8_rank_6.pt": 4022500763,
+        "actor/optim_world_size_8_rank_2.pt": 4022500763,
+        "actor/optim_world_size_8_rank_3.pt": 4022500763,
+        "actor/optim_world_size_8_rank_1.pt": 4022500763,
+        "actor/optim_world_size_8_rank_4.pt": 4022500763,
+        "actor/optim_world_size_8_rank_7.pt": 4022500763,
+        "actor/optim_world_size_8_rank_0.pt": 4022500763,
+        "actor/optim_world_size_8_rank_5.pt": 4022500763,
+        "actor/extra_state_world_size_8_rank_6.pt": 15141,
+        "actor/extra_state_world_size_8_rank_2.pt": 15269,
+        "actor/extra_state_world_size_8_rank_3.pt": 15205,
+        "actor/extra_state_world_size_8_rank_1.pt": 15141,
+        "actor/extra_state_world_size_8_rank_4.pt": 15077,
+        "actor/extra_state_world_size_8_rank_5.pt": 15077,
+        "actor/extra_state_world_size_8_rank_7.pt": 15141,
+        "actor/extra_state_world_size_8_rank_0.pt": 15141,
+        "actor/generation_config.json": 213,
+        "actor/config.json": 1542,
+        "actor/chat_template.jinja": 2630,
+        "actor/tokenizer_config.json": 5405,
+        "actor/special_tokens_map.json": 613,
+        "actor/added_tokens.json": 707,
+        "actor/vocab.json": 2776833,
+        "actor/merges.txt": 1671853,
+        "actor/tokenizer.json": 11422654
+      },
+      "96": {
+        "data.pt": 1947,
+        "sc2_state.pt": 30007,
+        "actor/model_world_size_8_rank_4.pt": 2205943659,
+        "actor/model_world_size_8_rank_7.pt": 2205943659,
+        "actor/model_world_size_8_rank_5.pt": 2205943659,
+        "actor/model_world_size_8_rank_0.pt": 2205943659,
+        "actor/model_world_size_8_rank_6.pt": 2205943659,
+        "actor/model_world_size_8_rank_2.pt": 2205943659,
+        "actor/model_world_size_8_rank_3.pt": 2205943659,
+        "actor/model_world_size_8_rank_1.pt": 2205943659,
+        "actor/optim_world_size_8_rank_6.pt": 4022500763,
+        "actor/optim_world_size_8_rank_4.pt": 4022500763,
+        "actor/optim_world_size_8_rank_7.pt": 4022500763,
+        "actor/optim_world_size_8_rank_5.pt": 4022500763,
+        "actor/optim_world_size_8_rank_1.pt": 4022500763,
+        "actor/optim_world_size_8_rank_2.pt": 4022500763,
+        "actor/optim_world_size_8_rank_0.pt": 4022500763,
+        "actor/optim_world_size_8_rank_3.pt": 4022500763,
+        "actor/extra_state_world_size_8_rank_6.pt": 15141,
+        "actor/extra_state_world_size_8_rank_4.pt": 15077,
+        "actor/extra_state_world_size_8_rank_5.pt": 15077,
+        "actor/extra_state_world_size_8_rank_1.pt": 15141,
+        "actor/extra_state_world_size_8_rank_2.pt": 15269,
+        "actor/extra_state_world_size_8_rank_3.pt": 15205,
+        "actor/extra_state_world_size_8_rank_7.pt": 15141,
+        "actor/extra_state_world_size_8_rank_0.pt": 15141,
+        "actor/generation_config.json": 213,
+        "actor/config.json": 1542,
+        "actor/chat_template.jinja": 2630,
+        "actor/tokenizer_config.json": 5405,
+        "actor/special_tokens_map.json": 613,
+        "actor/added_tokens.json": 707,
+        "actor/vocab.json": 2776833,
+        "actor/merges.txt": 1671853,
+        "actor/tokenizer.json": 11422654
+      }
+    },
+    "gpu_query": "0, 0, 0\n1, 0, 0\n2, 0, 0\n3, 0, 0\n4, 0, 0\n5, 0, 0\n6, 0, 0\n7, 0, 0\n",
+    "gpu_compute_apps": "",
+    "required_files_per_checkpoint": {
+      "32": {
+        "required_count": 26,
+        "present_nonempty": 26,
+        "payloads_read": false
+      },
+      "64": {
+        "required_count": 26,
+        "present_nonempty": 26,
+        "payloads_read": false
+      },
+      "96": {
+        "required_count": 26,
+        "present_nonempty": 26,
+        "payloads_read": false
+      }
+    }
+  },
+  "diagnostic_collected_between_beijing": [
+    "2026-09-27T20:49:26+08:00",
+    "2026-09-27T20:55:28+08:00"
+  ],
+  "cause": "Frozen reporter lists final CP96 only; frozen L9 verifier indexes intermediate CP32 in that dictionary. Required CP32/64/96 files all present and nonempty by stat only, not payload-validated.",
+  "actions": "Read-only small ledgers, bounded queue error tail, exact container state, filename/stat checkpoint inventories and GPU snapshot. No fix/retry/dispatch/deletion; L9 strict acceptance remains failed and L10 blocked."
+}

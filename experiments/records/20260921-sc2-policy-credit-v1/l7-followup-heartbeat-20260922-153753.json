@@ -1,0 +1,274 @@
+{
+  "checked_at_beijing": "2026-09-22T15:37:53.676344+08:00",
+  "kind": "quiet read-only heartbeat",
+  "automation_id": "197-qwen-l7-seed96",
+  "current": {
+    "root": "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1",
+    "runtime_sha": "279d5496464de29e14c64924ccb829147351efbd",
+    "manifest": {
+      "source_commit": "279d5496464de29e14c64924ccb829147351efbd",
+      "dirty": false,
+      "formal": true,
+      "world_size": 8
+    },
+    "queue": {
+      "phase": "dispatched",
+      "deadline": 1790227126.5133374
+    },
+    "state": {
+      "phase": "running-unverified",
+      "completed": [],
+      "deadline": 1790227126.5133374,
+      "stage": "train96",
+      "run": "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/runs/train96"
+    },
+    "dispatch": {
+      "start": 1790054326.5133374,
+      "deadline": 1790227126.5133374
+    },
+    "last_completed_ppo_step": 62,
+    "latest_before_update_gate": {
+      "pending_global_step": 63,
+      "real_answers": 96,
+      "valid_answers": 96,
+      "decision": "accept",
+      "optimizer_updates_for_this_batch": 0,
+      "proves_completed_ppo": false
+    },
+    "recent_completed_ppo": [
+      {
+        "step": 60,
+        "grad_norm": 0.016,
+        "update_actor_seconds": 32.504,
+        "step_seconds": 154.526,
+        "valid_action_ratio": 1,
+        "invalid_advantage_max": 0,
+        "success_rate": 1,
+        "advantage_min": 0,
+        "advantage_max": 0
+      },
+      {
+        "step": 61,
+        "grad_norm": 0.059,
+        "update_actor_seconds": 35.601,
+        "step_seconds": 170.138,
+        "valid_action_ratio": 1,
+        "invalid_advantage_max": 0,
+        "success_rate": 1,
+        "advantage_min": 0,
+        "advantage_max": 0
+      },
+      {
+        "step": 62,
+        "grad_norm": 0.057,
+        "update_actor_seconds": 45.786,
+        "step_seconds": 227.813,
+        "valid_action_ratio": 1,
+        "invalid_advantage_max": 0,
+        "success_rate": 0,
+        "advantage_min": 0,
+        "advantage_max": 0
+      }
+    ],
+    "console_tail": {
+      "path": "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/runs/train96/console.log",
+      "bytes": 2097152,
+      "sha256": "d378c5ea6ff2195de2abf848383daf6d98f4745a53513f70e32441ffaf0a8483",
+      "values_rounded": true
+    },
+    "checkpoint_inventory": [
+      {
+        "step": 8,
+        "required_files": 26,
+        "all_required_nonempty": true,
+        "sc2_state_bytes": 30071,
+        "total_listed_files": 35,
+        "stat_only": true
+      },
+      {
+        "step": 16,
+        "required_files": 26,
+        "all_required_nonempty": true,
+        "sc2_state_bytes": 30071,
+        "total_listed_files": 35,
+        "stat_only": true
+      },
+      {
+        "step": 24,
+        "required_files": 26,
+        "all_required_nonempty": true,
+        "sc2_state_bytes": 30071,
+        "total_listed_files": 35,
+        "stat_only": true
+      },
+      {
+        "step": 32,
+        "required_files": 26,
+        "all_required_nonempty": true,
+        "sc2_state_bytes": 30071,
+        "total_listed_files": 35,
+        "stat_only": true
+      },
+      {
+        "step": 40,
+        "required_files": 26,
+        "all_required_nonempty": true,
+        "sc2_state_bytes": 30071,
+        "total_listed_files": 35,
+        "stat_only": true
+      },
+      {
+        "step": 48,
+        "required_files": 26,
+        "all_required_nonempty": true,
+        "sc2_state_bytes": 30071,
+        "total_listed_files": 35,
+        "stat_only": true
+      },
+      {
+        "step": 56,
+        "required_files": 26,
+        "all_required_nonempty": true,
+        "sc2_state_bytes": 30007,
+        "total_listed_files": 35,
+        "stat_only": true
+      }
+    ],
+    "train_result_present": false,
+    "train_done_present": false,
+    "eval_result_present": false,
+    "eval_done_present": false,
+    "storage": {
+      "command": [
+        "du",
+        "-sb",
+        "--null",
+        "--",
+        "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1",
+        "/var/jfsCache/sc2-qwen-l7same96-197-source-20260922-r1",
+        "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-same"
+      ],
+      "roots": [
+        "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1",
+        "/var/jfsCache/sc2-qwen-l7same96-197-source-20260922-r1",
+        "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-same"
+      ],
+      "started_at": 1790062671.4821374,
+      "deadline": 1790227126.5133374,
+      "limit": 1099511627776,
+      "bytes": 400304825661,
+      "returncode": 0,
+      "status": "measured",
+      "stdout": {
+        "tail": "350288672476\t/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1\u000051041532\t/var/jfsCache/sc2-qwen-l7same96-197-source-20260922-r1\u000049965111653\t/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-same\u0000",
+        "characters": 189,
+        "truncated": false
+      },
+      "stderr": {
+        "tail": "",
+        "characters": 0,
+        "truncated": false
+      },
+      "root_bytes": {
+        "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1": 350288672476,
+        "/var/jfsCache/sc2-qwen-l7same96-197-source-20260922-r1": 51041532,
+        "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-same": 49965111653
+      },
+      "checked_at": 1790062671.613898,
+      "storage_failure_present": false
+    }
+  },
+  "followup": {
+    "root": "/var/jfsCache/sc2-l7-followup197-20260922-r2",
+    "runtime_sha": "e95b9cb425e1d25c4c2c006bb674fb66e8f6dc95",
+    "queue": {
+      "phase": "waiting-predecessor",
+      "completed": [],
+      "first_dispatch_by": 1790230726.5133374
+    },
+    "suite_dispatch_present": false,
+    "parts_dispatch_present": {
+      "spb-same/short": false,
+      "spb-same/long": false,
+      "qwen-random/long": false
+    },
+    "stage_results_present": false,
+    "storage_failure_present": false
+  },
+  "docker": {
+    "sc2-qwen-l7same96-197-20260922-r1": {
+      "returncode": 0,
+      "state": {
+        "Status": "running",
+        "Running": true,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 620504,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-09-22T05:18:46.570744204Z",
+        "FinishedAt": "0001-01-01T00:00:00Z"
+      },
+      "stderr": ""
+    },
+    "sc2-l7-followup197-20260922-r2-spb-same-short": {
+      "returncode": 1,
+      "state": null,
+      "stderr": "error: no such object: sc2-l7-followup197-20260922-r2-spb-same-short"
+    },
+    "sc2-l7-followup197-20260922-r2-spb-same-long": {
+      "returncode": 1,
+      "state": null,
+      "stderr": "error: no such object: sc2-l7-followup197-20260922-r2-spb-same-long"
+    },
+    "sc2-l7-followup197-20260922-r2-qwen-random-long": {
+      "returncode": 1,
+      "state": null,
+      "stderr": "error: no such object: sc2-l7-followup197-20260922-r2-qwen-random-long"
+    }
+  },
+  "tmux": {
+    "sc2_qwen_l7same96_197_20260922_r1": {
+      "returncode": 0,
+      "sessions": "qwen_l7same96_197_r1",
+      "stderr": ""
+    },
+    "sc2_l7_followup197_20260922_r2": {
+      "returncode": 0,
+      "sessions": "l7_followup197_r2",
+      "stderr": ""
+    }
+  },
+  "receipt_sha256": {
+    "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/deployment.json": "53271d11a63de9718ddc8678b4409955dcc67432e67b188dbf48885279935743",
+    "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/queue-state.json": "1c4b9a9d3a45a247cfdb7540ded61e7fa3874c66a26228c24326a8fb780ebefc",
+    "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/state.json": "2d582989f49012c69b0f525695da47423c2218f2ba9f75afaf56d33cc8a498e0",
+    "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/dispatch.json": "086a0afa0129b84bbd3c3c21834458edd1c3108c86962848a592c5820c68ee9e",
+    "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/storage-state.json": "b30168616047685ad990f26fb4866193fddc0a3c3c289f391fad89b486b6d88a",
+    "/var/jfsCache/sc2-l7-followup197-20260922-r2/deployment.json": "c3ef0795a92079eb7cfb3d62bb2906dc7dcb84cda29d23cbb029fa7b08f61345",
+    "/var/jfsCache/sc2-l7-followup197-20260922-r2/queue-state.json": "cf0171be90843d5345d935300b97cc4c94d19d55c08afce6d1c1e403abc2e03b",
+    "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/runs/train96/manifest.json": "37f11ed07e95948921a8d0231ffd87291a6f5b54f3c72fb201b56990ee7cdc8c"
+  },
+  "conclusion": "Healthy current training and expected predecessor wait. No new first-GPU/PPO event, stage completion, failure or user decision. No terminal acceptance claimed; preserve unique monitor.",
+  "operations": {
+    "ssh_alias": "sc2-a100-197",
+    "remote_read_only": true,
+    "max_receipt_bytes": 1048576,
+    "max_console_tail_bytes": 2097152,
+    "large_checkpoint_contents_read": false,
+    "gpu_diagnostics": false,
+    "new_dispatch": false,
+    "retry": false,
+    "frozen_edits": false,
+    "budget_changes": false,
+    "artifact_deletions": false
+  },
+  "verification": "Small JSON parse, runtime/deadline match, recent returned PPO metrics finite, seven checkpoints each26required nonempty files by stat, no successor dispatch; local evidence and diff checks. No model/SC2 tests run.",
+  "limitations": [
+    "Step63 pre-update audit is not a completed PPO update.",
+    "Mechanical constrained legality and same-seed training wins do not establish learning; rounded zero advantages are not exact gradient measurements.",
+    "Checkpoint inventory alone does not establish terminal acceptance; final train/eval results remain absent."
+  ]
+}

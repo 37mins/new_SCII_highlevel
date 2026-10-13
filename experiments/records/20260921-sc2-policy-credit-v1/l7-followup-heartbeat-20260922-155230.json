@@ -1,0 +1,138 @@
+{
+  "checked_at_beijing": "2026-09-22T15:52:30.840716+08:00",
+  "automation_id": "197-qwen-l7-seed96",
+  "runtime_sha": "279d5496464de29e14c64924ccb829147351efbd",
+  "root": "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1",
+  "queue": {
+    "phase": "dispatched",
+    "deadline": 1790227126.5133374
+  },
+  "state": {
+    "phase": "running-unverified",
+    "completed": [],
+    "deadline": 1790227126.5133374,
+    "stage": "train96",
+    "run": "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/runs/train96"
+  },
+  "completed_ppo_step": 68,
+  "rounded_recent_returned_ppo": [
+    {
+      "step": 66,
+      "grad_norm": 0.002,
+      "update_actor_seconds": 33.722,
+      "valid_action_ratio": 1,
+      "invalid_advantage_max": 0
+    },
+    {
+      "step": 67,
+      "grad_norm": 0.002,
+      "update_actor_seconds": 29.531,
+      "valid_action_ratio": 1,
+      "invalid_advantage_max": 0
+    },
+    {
+      "step": 68,
+      "grad_norm": 0.003,
+      "update_actor_seconds": 29.483,
+      "valid_action_ratio": 1,
+      "invalid_advantage_max": 0
+    }
+  ],
+  "pending_gate": {
+    "real_answers": 88,
+    "valid_answers": 88,
+    "valid_ratio": 1,
+    "min_valid_ratio": 0.5,
+    "decision": "accept",
+    "reason": "validity_floor_passed",
+    "pending_global_step": 69,
+    "optimizer_updates_for_this_batch": 0
+  },
+  "pending_gate_is_completed_ppo": false,
+  "console_tail": {
+    "path": "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/runs/train96/console.log",
+    "bytes": 2097152,
+    "sha256": "aba80021b68a5241f201e0c0e8ed349b7c41c818990407b106419011fc0a9d73"
+  },
+  "checkpoints": {
+    "steps": [
+      8,
+      16,
+      24,
+      32,
+      40,
+      48,
+      56,
+      64
+    ],
+    "required_nonempty_files_each": 26,
+    "includes_sc2_state": true,
+    "stat_only": true
+  },
+  "terminal_results_present": false,
+  "storage": {
+    "checked_at": 1790063550.1651077,
+    "bytes": 450263282896,
+    "limit": 1099511627776,
+    "returncode": 0,
+    "stderr": "",
+    "roots": [
+      "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1",
+      "/var/jfsCache/sc2-qwen-l7same96-197-source-20260922-r1",
+      "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-same"
+    ],
+    "failure_receipt_present": false
+  },
+  "container": {
+    "Status": "running",
+    "Running": true,
+    "Paused": false,
+    "Restarting": false,
+    "OOMKilled": false,
+    "Dead": false,
+    "Pid": 620504,
+    "ExitCode": 0,
+    "Error": "",
+    "StartedAt": "2026-09-22T05:18:46.570744204Z",
+    "FinishedAt": "0001-01-01T00:00:00Z"
+  },
+  "followup": {
+    "root": "/var/jfsCache/sc2-l7-followup197-20260922-r2",
+    "runtime_sha": "e95b9cb425e1d25c4c2c006bb674fb66e8f6dc95",
+    "queue": {
+      "phase": "waiting-predecessor",
+      "completed": [],
+      "first_dispatch_by": 1790230726.5133374
+    },
+    "suite_dispatch_present": false,
+    "parts_dispatch_present": {
+      "spb-same/short": false,
+      "spb-same/long": false,
+      "qwen-random/long": false
+    },
+    "containers_exist": false
+  },
+  "tmux": {
+    "sc2_qwen_l7same96_197_20260922_r1": {
+      "returncode": 0,
+      "sessions": "qwen_l7same96_197_r1",
+      "stderr": ""
+    },
+    "sc2_l7_followup197_20260922_r2": {
+      "returncode": 0,
+      "sessions": "l7_followup197_r2",
+      "stderr": ""
+    }
+  },
+  "receipt_sha256": {
+    "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/queue-state.json": "1c4b9a9d3a45a247cfdb7540ded61e7fa3874c66a26228c24326a8fb780ebefc",
+    "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/state.json": "2d582989f49012c69b0f525695da47423c2218f2ba9f75afaf56d33cc8a498e0",
+    "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/dispatch.json": "086a0afa0129b84bbd3c3c21834458edd1c3108c86962848a592c5820c68ee9e",
+    "/var/jfsCache/sc2-qwen-l7same96-197-20260922-r1/storage-state.json": "c4ea14a66b6a5025e20f8064a7b6ab7d9210ff00a654c307f69883d632aa268c",
+    "/var/jfsCache/sc2-l7-followup197-20260922-r2/queue-state.json": "cf0171be90843d5345d935300b97cc4c94d19d55c08afce6d1c1e403abc2e03b"
+  },
+  "actions": "Read-only SSH197; no GPU diagnostics, large CP reads, runtime changes, dispatch, retry, budget change or deletion. Existing monitor retained.",
+  "verification": "JSON/runtime/clock/returned-PPO/stat-only CP/queue checks passed. No model or SC2 tests run.",
+  "decision": "DONT_NOTIFY; healthy progression and expected predecessor wait, no new stage completion/failure/decision.",
+  "limitations": "Rounded metrics and constrained legality do not establish learning. Step69 pre-update audit is not completion; no final train/eval acceptance claimed."
+}

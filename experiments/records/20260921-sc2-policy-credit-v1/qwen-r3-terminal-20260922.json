@@ -1,0 +1,286 @@
+{
+  "observed_at": "2026-09-21T17:22:17.170102+00:00",
+  "files": {
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r3/queue-state.json": {
+      "bytes": 345,
+      "sha256": "fa4819f3b06ce1a9955a2b78be4adabe55149546b4d09305b2abd4c22e5ea6dc",
+      "content": {
+        "phase": "failed",
+        "completed": [
+          "l6-same"
+        ],
+        "first_dispatch_by": 1790028940.699252,
+        "arm": "l6-random",
+        "deadline": 1790037385.3296254,
+        "arm_deadline": 1790016973.5412169,
+        "error": "Storage measurement failed; no retry; /var/jfsCache/sc2-qwen-seeds197-20260922-r3/storage-failure-ec082ddc64654c43ab7d6feb98560748.json"
+      }
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r3/dispatch.json": {
+      "bytes": 86,
+      "sha256": "6a6245db49b12517d818d4623eedffa057145c8ca692b6487e95c590f2488375",
+      "content": {
+        "start": 1790008585.3296254,
+        "deadline": 1790037385.3296254,
+        "gpu_hours": 64
+      }
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r3/storage-state.json": {
+      "bytes": 2781,
+      "sha256": "fd707101bc59da20689815f6184985d80b3fe2d56700220b6d94ae0b1d407a2e",
+      "content": {
+        "command": [
+          "du",
+          "-sb",
+          "--null",
+          "--",
+          "/var/jfsCache/sc2-qwen-seeds197-20260922-r3",
+          "/var/jfsCache/sc2-qwen-seeds197-source-20260922-r3",
+          "/var/jfsCache/sc2-qwen-instruct2507-cdbee75-20260921-r1",
+          "/var/jfsCache/sc2-qwen-instruct2507-cdbee75-20260921-r1-staging",
+          "/var/jfsCache/sc2-qwen-instruct2507-cdbee75-20260921-r1-direct-staging",
+          "/var/jfsCache/sc2-qwen-seeds197-20260921-r1",
+          "/var/jfsCache/sc2-qwen-seeds197-source-20260921-r1",
+          "/var/jfsCache/sc2-qwen-seeds197-20260921-r2",
+          "/var/jfsCache/sc2-qwen-seeds197-source-20260921-r2"
+        ],
+        "roots": [
+          "/var/jfsCache/sc2-qwen-seeds197-20260922-r3",
+          "/var/jfsCache/sc2-qwen-seeds197-source-20260922-r3",
+          "/var/jfsCache/sc2-qwen-instruct2507-cdbee75-20260921-r1",
+          "/var/jfsCache/sc2-qwen-instruct2507-cdbee75-20260921-r1-staging",
+          "/var/jfsCache/sc2-qwen-instruct2507-cdbee75-20260921-r1-direct-staging",
+          "/var/jfsCache/sc2-qwen-seeds197-20260921-r1",
+          "/var/jfsCache/sc2-qwen-seeds197-source-20260921-r1",
+          "/var/jfsCache/sc2-qwen-seeds197-20260921-r2",
+          "/var/jfsCache/sc2-qwen-seeds197-source-20260921-r2"
+        ],
+        "started_at": 1790010465.4806552,
+        "deadline": 1790037385.3296254,
+        "limit": 549755813888,
+        "bytes": 58977358212,
+        "returncode": 0,
+        "status": "measured",
+        "stdout": {
+          "tail": "50001598372\t/var/jfsCache/sc2-qwen-seeds197-20260922-r3\u000017809442\t/var/jfsCache/sc2-qwen-seeds197-source-20260922-r3\u00008060922654\t/var/jfsCache/sc2-qwen-instruct2507-cdbee75-20260921-r1\u0000833204067\t/var/jfsCache/sc2-qwen-instruct2507-cdbee75-20260921-r1-staging\u000025\t/var/jfsCache/sc2-qwen-instruct2507-cdbee75-20260921-r1-direct-staging\u000014046874\t/var/jfsCache/sc2-qwen-seeds197-20260921-r1\u000017571078\t/var/jfsCache/sc2-qwen-seeds197-source-20260921-r1\u000014627737\t/var/jfsCache/sc2-qwen-seeds197-20260921-r2\u000017577963\t/var/jfsCache/sc2-qwen-seeds197-source-20260921-r2\u0000",
+          "characters": 557,
+          "truncated": false
+        },
+        "stderr": {
+          "tail": "",
+          "characters": 0,
+          "truncated": false
+        },
+        "root_bytes": {
+          "/var/jfsCache/sc2-qwen-seeds197-20260922-r3": 50001598372,
+          "/var/jfsCache/sc2-qwen-seeds197-source-20260922-r3": 17809442,
+          "/var/jfsCache/sc2-qwen-instruct2507-cdbee75-20260921-r1": 8060922654,
+          "/var/jfsCache/sc2-qwen-instruct2507-cdbee75-20260921-r1-staging": 833204067,
+          "/var/jfsCache/sc2-qwen-instruct2507-cdbee75-20260921-r1-direct-staging": 25,
+          "/var/jfsCache/sc2-qwen-seeds197-20260921-r1": 14046874,
+          "/var/jfsCache/sc2-qwen-seeds197-source-20260921-r1": 17571078,
+          "/var/jfsCache/sc2-qwen-seeds197-20260921-r2": 14627737,
+          "/var/jfsCache/sc2-qwen-seeds197-source-20260921-r2": 17577963
+        },
+        "checked_at": 1790010465.5050054
+      }
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r3/storage-failure-ec082ddc64654c43ab7d6feb98560748.json": {
+      "bytes": 2403,
+      "sha256": "c8dc78d4c805d67a0796682bdeb51db5e543b2aa5928b2b057b1000a2c96121d",
+      "content": {
+        "command": [
+          "du",
+          "-sb",
+          "--null",
+          "--",
+          "/var/jfsCache/sc2-qwen-seeds197-20260922-r3",
+          "/var/jfsCache/sc2-qwen-seeds197-source-20260922-r3",
+          "/var/jfsCache/sc2-qwen-instruct2507-cdbee75-20260921-r1",
+          "/var/jfsCache/sc2-qwen-instruct2507-cdbee75-20260921-r1-staging",
+          "/var/jfsCache/sc2-qwen-instruct2507-cdbee75-20260921-r1-direct-staging",
+          "/var/jfsCache/sc2-qwen-seeds197-20260921-r1",
+          "/var/jfsCache/sc2-qwen-seeds197-source-20260921-r1",
+          "/var/jfsCache/sc2-qwen-seeds197-20260921-r2",
+          "/var/jfsCache/sc2-qwen-seeds197-source-20260921-r2"
+        ],
+        "roots": [
+          "/var/jfsCache/sc2-qwen-seeds197-20260922-r3",
+          "/var/jfsCache/sc2-qwen-seeds197-source-20260922-r3",
+          "/var/jfsCache/sc2-qwen-instruct2507-cdbee75-20260921-r1",
+          "/var/jfsCache/sc2-qwen-instruct2507-cdbee75-20260921-r1-staging",
+          "/var/jfsCache/sc2-qwen-instruct2507-cdbee75-20260921-r1-direct-staging",
+          "/var/jfsCache/sc2-qwen-seeds197-20260921-r1",
+          "/var/jfsCache/sc2-qwen-seeds197-source-20260921-r1",
+          "/var/jfsCache/sc2-qwen-seeds197-20260921-r2",
+          "/var/jfsCache/sc2-qwen-seeds197-source-20260921-r2"
+        ],
+        "started_at": 1790010480.5280666,
+        "deadline": 1790037385.3296254,
+        "limit": 549755813888,
+        "bytes": null,
+        "returncode": 1,
+        "status": "measurement-failed",
+        "stdout": {
+          "tail": "50008815670\t/var/jfsCache/sc2-qwen-seeds197-20260922-r3\u000017809442\t/var/jfsCache/sc2-qwen-seeds197-source-20260922-r3\u00008060922654\t/var/jfsCache/sc2-qwen-instruct2507-cdbee75-20260921-r1\u0000833204067\t/var/jfsCache/sc2-qwen-instruct2507-cdbee75-20260921-r1-staging\u000025\t/var/jfsCache/sc2-qwen-instruct2507-cdbee75-20260921-r1-direct-staging\u000014046874\t/var/jfsCache/sc2-qwen-seeds197-20260921-r1\u000017571078\t/var/jfsCache/sc2-qwen-seeds197-source-20260921-r1\u000014627737\t/var/jfsCache/sc2-qwen-seeds197-20260921-r2\u000017577963\t/var/jfsCache/sc2-qwen-seeds197-source-20260921-r2\u0000",
+          "characters": 557,
+          "truncated": false
+        },
+        "stderr": {
+          "tail": "du: cannot access '/var/jfsCache/sc2-qwen-seeds197-20260922-r3/l6-random/.storage-state.json.1555a950af464d808fa8ecb15e069242.tmp': No such file or directory\n",
+          "characters": 158,
+          "truncated": false
+        },
+        "error_type": "ValueError",
+        "error": "du failed or emitted diagnostics; partial totals are not trusted",
+        "checked_at": 1790010480.5519507
+      }
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r3/l6-random/state.json": {
+      "bytes": 200,
+      "sha256": "0c6467e5d0a6c92615bc33e0af3217d3e6f20774332737e44267d618da8236f2",
+      "content": {
+        "phase": "running-unverified",
+        "completed": [
+          "pre"
+        ],
+        "deadline": 1790016973.5412169,
+        "stage": "train2",
+        "run": "/var/jfsCache/sc2-qwen-seeds197-20260922-r3/l6-random/runs/train2"
+      }
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r3/l6-random/storage-state.json": {
+      "bytes": 972,
+      "sha256": "1f04cd511c550f70dfbe052e8467ca8e79bc92bd95a54381c18c57b3de4d78d7",
+      "content": {
+        "command": [
+          "du",
+          "-sb",
+          "--null",
+          "--",
+          "/var/jfsCache/sc2-qwen-seeds197-20260922-r3/l6-random",
+          "/var/jfsCache/sc2-qwen-seeds197-source-20260922-r3"
+        ],
+        "roots": [
+          "/var/jfsCache/sc2-qwen-seeds197-20260922-r3/l6-random",
+          "/var/jfsCache/sc2-qwen-seeds197-source-20260922-r3"
+        ],
+        "started_at": 1790010480.5220876,
+        "deadline": 1790016973.5412169,
+        "limit": 137438953472,
+        "bytes": 78249445,
+        "returncode": 0,
+        "status": "measured",
+        "stdout": {
+          "tail": "60440003\t/var/jfsCache/sc2-qwen-seeds197-20260922-r3/l6-random\u000017809442\t/var/jfsCache/sc2-qwen-seeds197-source-20260922-r3\u0000",
+          "characters": 123,
+          "truncated": false
+        },
+        "stderr": {
+          "tail": "",
+          "characters": 0,
+          "truncated": false
+        },
+        "root_bytes": {
+          "/var/jfsCache/sc2-qwen-seeds197-20260922-r3/l6-random": 60440003,
+          "/var/jfsCache/sc2-qwen-seeds197-source-20260922-r3": 17809442
+        },
+        "checked_at": 1790010480.5366156
+      }
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r3/l6-random/runs/train2/checkpoints/sc2_policy_credit_audit.jsonl": {
+      "bytes": 208,
+      "sha256": "ad33947db97dfd2b2fb03bff0ed33fb196d8b1ec68e8cc64e9fa8636f90950d9",
+      "content": {
+        "real_answers": 40,
+        "valid_answers": 40,
+        "valid_ratio": 1,
+        "min_valid_ratio": 0.5,
+        "decision": "accept",
+        "reason": "validity_floor_passed",
+        "pending_global_step": 1,
+        "optimizer_updates_for_this_batch": 0
+      }
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r3/l6-random/runs/train2/training_seeds.jsonl": {
+      "bytes": 242,
+      "sha256": "e6fd6d694811367de8b1023e20ba103d0cfbaab581ac1100ae78d4398007676f",
+      "content": "{\"base_seed\": 0, \"reset_index\": 0, \"seed_protocol\": \"independent_uniform101\", \"seeds\": [49, 97, 53, 5, 33, 65, 62, 51]}\n{\"base_seed\": 0, \"reset_index\": 1, \"seed_protocol\": \"independent_uniform101\", \"seeds\": [100, 38, 61, 45, 74, 27, 64, 17]}\n"
+    }
+  },
+  "absence": [
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r3/l6-random/runs/train2/metrics.json",
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r3/l6-random/runs/train2/result.json",
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r3/l6-random/runs/train2/.done",
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r3/l6-random/acceptance-train2.json",
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r3/l6-random/acceptance-post.json",
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r3/l7-same/dispatch.json",
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r3/l7-random/dispatch.json"
+  ],
+  "checkpoint_file_list": [
+    {
+      "path": "checkpoints/sc2_policy_credit_audit.jsonl",
+      "bytes": 208
+    }
+  ],
+  "/var/jfsCache/sc2-qwen-seeds197-20260922-r3/queue.log": {
+    "total_bytes": 2974,
+    "tail_bytes": 2974,
+    "tail": "Traceback (most recent call last):\n  File \"/var/jfsCache/sc2-qwen-seeds197-source-20260922-r3/code/experiments/records/20260921-sc2-policy-credit-v1/acceptance197.py\", line 108, in measure_budget\n    raise ValueError('du failed or emitted diagnostics; partial totals are not trusted')\nValueError: du failed or emitted diagnostics; partial totals are not trusted\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/var/jfsCache/sc2-qwen-seeds197-source-20260922-r3/code/experiments/records/20260921-sc2-policy-credit-v1/qwen_seed197.py\", line 282, in queue\n    budget(deadline)\n  File \"/var/jfsCache/sc2-qwen-seeds197-source-20260922-r3/code/experiments/records/20260921-sc2-policy-credit-v1/qwen_seed197.py\", line 210, in budget\n    engine.measure_budget([SUITE, SOURCE.parent, assets, *retained], SUITE, LIMIT, deadline,\n  File \"/var/jfsCache/sc2-qwen-seeds197-source-20260922-r3/code/experiments/records/20260921-sc2-policy-credit-v1/acceptance197.py\", line 130, in measure_budget\n    raise RuntimeError(f'Storage measurement failed; no retry; {receipt}') from exc\nRuntimeError: Storage measurement failed; no retry; /var/jfsCache/sc2-qwen-seeds197-20260922-r3/storage-failure-ec082ddc64654c43ab7d6feb98560748.json\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/var/jfsCache/sc2-qwen-seeds197-source-20260922-r3/code/experiments/records/20260921-sc2-policy-credit-v1/qwen_seed197_r3.py\", line 23, in <module>\n    q.main()\n  File \"/var/jfsCache/sc2-qwen-seeds197-source-20260922-r3/code/experiments/records/20260921-sc2-policy-credit-v1/qwen_seed197.py\", line 310, in main\n    globals()[args.mode]()\n  File \"/var/jfsCache/sc2-qwen-seeds197-source-20260922-r3/code/experiments/records/20260921-sc2-policy-credit-v1/qwen_seed197.py\", line 300, in queue\n    engine.stop_owned()\n  File \"/var/jfsCache/sc2-qwen-seeds197-source-20260922-r3/code/experiments/records/20260921-sc2-policy-credit-v1/acceptance197.py\", line 440, in stop_owned\n    cmd(['docker', 'stop', '--time', '10', CONTAINER])\n  File \"/var/jfsCache/sc2-qwen-seeds197-source-20260922-r3/code/experiments/records/20260921-sc2-policy-credit-v1/acceptance197.py\", line 54, in cmd\n    return sp.run(list(map(str, args)), text=True, capture_output=True,\n  File \"/usr/lib/python3.10/subprocess.py\", line 505, in run\n    stdout, stderr = process.communicate(input, timeout=timeout)\n  File \"/usr/lib/python3.10/subprocess.py\", line 1154, in communicate\n    stdout, stderr = self._communicate(input, endtime, timeout)\n  File \"/usr/lib/python3.10/subprocess.py\", line 2022, in _communicate\n    self._check_timeout(endtime, orig_timeout, stdout, stderr)\n  File \"/usr/lib/python3.10/subprocess.py\", line 1198, in _check_timeout\n    raise TimeoutExpired(\nsubprocess.TimeoutExpired: Command '['docker', 'stop', '--time', '10', 'sc2-qwen-seeds197-20260922-r3-l6-random']' timed out after 15 seconds\n"
+  },
+  "/var/jfsCache/sc2-qwen-seeds197-20260922-r3/l6-random/train2.log": {
+    "total_bytes": 964690,
+    "tail_bytes": 9000,
+    "tail": "player_Qwen3-30B] [INFO]: (2480) scout_discovery: 发现 SCV (Tag: 4348706817) 位于 (127, 44)\u001b[0m\u001b[32m [repeated 60x across cluster]\u001b[0m\n\u001b[36m(SC2Worker pid=9949)\u001b[0m 侦察单位 SCV (Tag: 4345823233) 已变为空闲, 寻找下一个目标...\u001b[32m [repeated 22x across cluster]\u001b[0m\n\u001b[36m(SC2Worker pid=9945)\u001b[0m [07:04] >>> Start Processing BO #33: marine <<<\u001b[32m [repeated 8x across cluster]\u001b[0m\n\u001b[36m(SC2Worker pid=9945)\u001b[0m Local BO ability fallback: marine -> BARRACKSTRAIN_MARINE\u001b[32m [repeated 8x across cluster]\u001b[0m\n\u001b[36m(SC2Worker pid=9945)\u001b[0m     -> Parsed Ability: BARRACKSTRAIN_MARINE\u001b[32m [repeated 8x across cluster]\u001b[0m\n\u001b[36m(SC2Worker pid=9945)\u001b[0m \u001b[92m2026-09-21 10:08:07 [default_player_Qwen3-30B] [INFO]: (2375) llm_decision_bo_map_33: ['BARRACKSTRAIN_MARINE']\u001b[0m\u001b[32m [repeated 14x across cluster]\u001b[0m\n\u001b[36m(SC2Worker pid=9945)\u001b[0m ================ iteration 2470 ================\u001b[32m [repeated 120x across cluster]\u001b[0m\n\u001b[36m(SC2Worker pid=9945)\u001b[0m \u001b[92m2026-09-21 10:08:08 [default_player_Qwen3-30B] [INFO]: (2470) iteration: 2470\u001b[0m\u001b[32m [repeated 120x across cluster]\u001b[0m\n\u001b[36m(SC2Worker pid=9945)\u001b[0m \u001b[92m2026-09-21 10:08:08 [default_player_Qwen3-30B] [INFO]: (2470) time_seconds: 441\u001b[0m\u001b[32m [repeated 120x across cluster]\u001b[0m\n\u001b[36m(SC2Worker pid=9945)\u001b[0m \u001b[92m2026-09-21 10:08:08 [default_player_Qwen3-30B] [INFO]: (2470) time_formatted: 07:21\u001b[0m\u001b[32m [repeated 120x across cluster]\u001b[0m\n\u001b[36m(SC2Worker pid=9945)\u001b[0m \u001b[92m2026-09-21 10:08:08 [default_player_Qwen3-30B] [INFO]: (2470) minerals: 380\u001b[0m\u001b[32m [repeated 120x across cluster]\u001b[0m\n\u001b[36m(SC2Worker pid=9945)\u001b[0m \u001b[92m2026-09-21 10:08:08 [default_player_Qwen3-30B] [INFO]: (2470) vespene: 0\u001b[0m\u001b[32m [repeated 120x across cluster]\u001b[0m\n\u001b[36m(SC2Worker pid=9945)\u001b[0m \u001b[92m2026-09-21 10:08:08 [default_player_Qwen3-30B] [INFO]: (2470) cumulative_minerals_collected: 4180.0\u001b[0m\u001b[32m [repeated 120x across cluster]\u001b[0m\n\u001b[36m(SC2Worker pid=9945)\u001b[0m \u001b[92m2026-09-21 10:08:08 [default_player_Qwen3-30B] [INFO]: (2470) cumulative_vespene_collected: 0.0\u001b[0m\u001b[32m [repeated 120x across cluster]\u001b[0m\n\u001b[36m(SC2Worker pid=9945)\u001b[0m \u001b[92m2026-09-21 10:08:08 [default_player_Qwen3-30B] [INFO]: (2470) unit_mineral_value: 2300\u001b[0m\u001b[32m [repeated 120x across cluster]\u001b[0m\n\u001b[36m(SC2Worker pid=9945)\u001b[0m \u001b[92m2026-09-21 10:08:08 [default_player_Qwen3-30B] [INFO]: (2470) unit_vespene_value: 0\u001b[0m\u001b[32m [repeated 120x across cluster]\u001b[0m\n\u001b[36m(SC2Worker pid=9945)\u001b[0m \u001b[92m2026-09-21 10:08:08 [default_player_Qwen3-30B] [INFO]: (2470) structure_mineral_value: 1400\u001b[0m\u001b[32m [repeated 120x across cluster]\u001b[0m\n\u001b[36m(SC2Worker pid=9945)\u001b[0m \u001b[92m2026-09-21 10:08:08 [default_player_Qwen3-30B] [INFO]: (2470) structure_vespene_value: 0\u001b[0m\u001b[32m [repeated 120x across cluster]\u001b[0m\n\u001b[36m(SC2Worker pid=9945)\u001b[0m \u001b[92m2026-09-21 10:08:08 [default_player_Qwen3-30B] [INFO]: (2470) cumulative_unit_value: 3400.0\u001b[0m\u001b[32m [repeated 120x across cluster]\u001b[0m\n\u001b[36m(SC2Worker pid=9945)\u001b[0m \u001b[92m2026-09-21 10:08:08 [default_player_Qwen3-30B] [INFO]: (2470) cumulative_structure_value: 1400.0\u001b[0m\u001b[32m [repeated 120x across cluster]\u001b[0m\n\u001b[36m(SC2Worker pid=9945)\u001b[0m \u001b[92m2026-09-21 10:08:08 [default_player_Qwen3-30B] [INFO]: (2470) supply_army: 35\u001b[0m\u001b[32m [repeated 120x across cluster]\u001b[0m\n\u001b[36m(SC2Worker pid=9945)\u001b[0m \u001b[92m2026-09-21 10:08:08 [default_player_Qwen3-30B] [INFO]: (2470) supply_workers: 12\u001b[0m\u001b[32m [repeated 120x across cluster]\u001b[0m\n\u001b[36m(SC2Worker pid=9945)\u001b[0m \u001b[92m2026-09-21 10:08:08 [default_player_Qwen3-30B] [INFO]: (2470) supply_left: 0\u001b[0m\u001b[32m [repeated 120x across cluster]\u001b[0m\n\u001b[36m(SC2Worker pid=9945)\u001b[0m \u001b[92m2026-09-21 10:08:08 [default_player_Qwen3-30B] [INFO]: (2470) n_structures: 9\u001b[0m\u001b[32m [repeated 120x across cluster]\u001b[0m\n\u001b[36m(SC2Worker pid=9945)\u001b[0m \u001b[92m2026-09-21 10:08:08 [default_player_Qwen3-30B] [INFO]: (2470) n_visible_enemy_units: 1\u001b[0m\u001b[32m [repeated 120x across cluster]\u001b[0m\n\u001b[36m(SC2Worker pid=9945)\u001b[0m \u001b[92m2026-09-21 10:08:08 [default_player_Qwen3-30B] [INFO]: (2470) n_visible_enemy_structures: 5\u001b[0m\u001b[32m [repeated 120x across cluster]\u001b[0m\n\u001b[36m(SC2Worker pid=9945)\u001b[0m \u001b[92m2026-09-21 10:08:08 [default_player_Qwen3-30B] [INFO]: (2470) n_unit_types: 2\u001b[0m\u001b[32m [repeated 120x across cluster]\u001b[0m\n\u001b[36m(SC2Worker pid=9945)\u001b[0m \u001b[92m2026-09-21 10:08:08 [default_player_Qwen3-30B] [INFO]: (2470) n_structure_types: 3\u001b[0m\u001b[32m [repeated 120x across cluster]\u001b[0m\n\u001b[36m(SC2Worker pid=9945)\u001b[0m \u001b[92m2026-09-21 10:08:07 [default_player_Qwen3-30B] [INFO]: (2374) llm_decision_final_action_32_2374: [{'action': 'BARRACKSTRAIN_MARINE', 'units': [553]}]\u001b[0m\u001b[32m [repeated 6x across cluster]\u001b[0m\n\u001b[36m(SC2Worker pid=9945)\u001b[0m [07:03] >>> BO #marine action condition <<<\u001b[32m [repeated 6x across cluster]\u001b[0m\n\u001b[36m(SC2Worker pid=9945)\u001b[0m     \"action\": \"BARRACKSTRAIN_MARINE\",\u001b[32m [repeated 6x across cluster]\u001b[0m\n\u001b[36m(SC2Worker pid=9945)\u001b[0m     -> [Wait] No unit capable of BARRACKSTRAIN_MARINE\u001b[32m [repeated 7x across cluster]\u001b[0m\n\u001b[36m(SC2Worker pid=9945)\u001b[0m     -> [Wait] Generated empty action for BARRACKSTRAIN_MARINE\u001b[32m [repeated 7x across cluster]\u001b[0m\n\u001b[36m(SC2Worker pid=9945)\u001b[0m Local executor fallback selected tag: 553\u001b[32m [repeated 6x across cluster]\u001b[0m\n\u001b[36m(SC2Worker pid=9945)\u001b[0m ## action_condition\u001b[32m [repeated 6x across cluster]\u001b[0m\n\u001b[36m(SC2Worker pid=9945)\u001b[0m {\u001b[32m [repeated 6x across cluster]\u001b[0m\n\u001b[36m(SC2Worker pid=9945)\u001b[0m     \"units\": [\u001b[32m [repeated 6x across cluster]\u001b[0m\n\u001b[36m(SC2Worker pid=9945)\u001b[0m     ]\u001b[32m [repeated 6x across cluster]\u001b[0m\n\u001b[36m(SC2Worker pid=9945)\u001b[0m }\u001b[32m [repeated 6x across cluster]\u001b[0m\n\u001b[36m(SC2Worker pid=9945)\u001b[0m [07:03] >>> BO #32 Completed/Skipped. <<<\u001b[32m [repeated 8x across cluster]\u001b[0m\n\u001b[36m(SC2Worker pid=9949)\u001b[0m 正在派遣 SCV (Tag: 4345823233) 侦察 (102, 21)\u001b[32m [repeated 22x across cluster]\u001b[0m\n\u001b[36m(SC2Worker pid=9949)\u001b[0m \u001b[92m2026-09-21 10:08:08 [default_player_Qwen3-30B] [INFO]: (2495) scouting: Dispatching SCV to (102, 21)\u001b[0m\u001b[32m [repeated 22x across cluster]\u001b[0m\n\u001b[36m(SC2Worker pid=9945)\u001b[0m \u001b[92m2026-09-21 10:08:04 [default_player_Qwen3-30B] [INFO]: (2247) launch_total_attack: 收到总攻发起指令！...\u001b[0m\n\u001b[36m(SC2Worker pid=9945)\u001b[0m \u001b[92m2026-09-21 10:08:04 [default_player_Qwen3-30B] [INFO]: (2247) launch_total_attack: 已创建总攻波次 4，状态: GATHERING，集结点: (81, 122)，最低出击: 5。\u001b[0m\n\u001b[36m(SC2Worker pid=9945)\u001b[0m Garrisoning Base 4344774657: Reassigned 2 units.\u001b[32m [repeated 3x across cluster]\u001b[0m\n\u001b[36m(SC2Worker pid=9949)\u001b[0m [Skip] BO #14 skipped after 11 attempts (Threshold: 10).\u001b[32m [repeated 2x across cluster]\u001b[0m\n\u001b[36m(SC2Worker pid=9949)\u001b[0m \u001b[92m2026-09-21 10:08:05 [default_player_Qwen3-30B] [INFO]: (2290) bo_skipped_14: {'reason': 'timeout', 'action': 'marine'}\u001b[0m\u001b[32m [repeated 2x across cluster]\u001b[0m\n\u001b[36m(SC2Worker pid=9954)\u001b[0m RES: \u001b[32m [repeated 5x across cluster]\u001b[0m\n\u001b[36m(SC2Worker pid=9954)\u001b[0m  Result.Victory\u001b[32m [repeated 5x across cluster]\u001b[0m\n\u001b[36m(SC2Worker pid=9954)\u001b[0m Plan format reward: 0.5\u001b[32m [repeated 5x across cluster]\u001b[0m\n\u001b[36m(SC2Worker pid=9954)\u001b[0m Result: Victory\u001b[32m [repeated 5x across cluster]\u001b[0m\n\u001b[36m(SC2Worker pid=9954)\u001b[0m Combat result reward: {\"pid\": 15092, \"game_loop\": 9240, \"boundary\": \"terminal\", \"last_consumed_policy_action_id\": 3, \"killed_value\": 7025.0, \"lost_value\": 100.0, \"scale\": 0.001, \"reward\": 6.875}\u001b[32m [repeated 5x across cluster]\u001b[0m\n\u001b[36m(SC2Worker pid=9954)\u001b[0m Terminal ack received.\u001b[32m [repeated 5x across cluster]\u001b[0m\n\u001b[36m(SC2Worker pid=9954)\u001b[0m Game end.\u001b[32m [repeated 5x across cluster]\u001b[0m\n\u001b[36m(SC2Worker pid=9945)\u001b[0m \u001b[92m2026-09-21 10:08:09 [default_player_Qwen3-30B] [INFO]: (2490) manage_total_attack_groups: 总攻波次 2: 锁定新目标 SupplyDepotLowered (Tag: 4373348353)，攻击位置: (133, 120)。\u001b[0m\u001b[32m [repeated 207x across cluster]\u001b[0m\n\u001b[36m(SC2Worker pid=9945)\u001b[0m \u001b[92m2026-09-21 10:08:09 [default_player_Qwen3-30B] [INFO]: (2484) manage_total_attack_groups: 总攻波次 2: 锁定新目标 Barracks (Tag: 4354998273)，攻击位置: (128, 120)。\u001b[0m\u001b[32m [repeated 50x across cluster]\u001b[0m\n\u001b[36m(SC2Worker pid=9949)\u001b[0m \n\u001b[36m(SC2Worker pid=9949)\u001b[0m \n\u001b[36m(SC2Worker pid=9951)\u001b[0m \u001b[92m2026-09-21 10:08:05 [default_player_Qwen3-30B] [INFO]: (2245) manage_total_attack_groups: 总攻波次 2: 锁定新目标 StarportTechLab (Tag: 4369940481)，攻击位置: (26, 13)。\u001b[0m\u001b[32m [repeated 2x across cluster]\u001b[0m\n\u001b[36m(SC2Worker pid=9945)\u001b[0m \u001b[92m2026-09-21 10:08:06 [default_player_Qwen3-30B] [INFO]: (2337) manage_total_attack_groups: 总攻波次 4: 集结完毕，发动进攻！\u001b[0m\n\u001b[36m(SC2Worker pid=9945)\u001b[0m \u001b[92m2026-09-21 10:08:06 [default_player_Qwen3-30B] [INFO]: (2337) ATTACK: Launch attack to (127.5, 125.5) with 10 units.\u001b[0m\n\u001b[36m(SC2Worker pid=9945)\u001b[0m \u001b[92m2026-09-21 10:08:10 [default_player_Qwen3-30B] [INFO]: (2539) manage_total_attack_groups: 总攻波次 4: 锁定新目标 OrbitalCommand (Tag: 4354211841)，攻击位置: (126, 102)。\u001b[0m\u001b[32m [repeated 89x across cluster]\u001b[0m\n"
+  },
+  "docker": {
+    "returncode": 0,
+    "state": {
+      "Status": "exited",
+      "Running": false,
+      "Paused": false,
+      "Restarting": false,
+      "OOMKilled": false,
+      "Dead": false,
+      "Pid": 0,
+      "ExitCode": 137,
+      "Error": "",
+      "StartedAt": "2026-09-21T16:56:13.58780031Z",
+      "FinishedAt": "2026-09-21T17:08:18.057006092Z"
+    },
+    "stderr": ""
+  },
+  "schema_version": 1,
+  "event": "qwen-r3-l6-random-storage-measurement-failure",
+  "frozen_runtime": "019a8b3a60aa093d61fccfb4293625e300a2894e",
+  "interpretation": {
+    "status": "failed",
+    "failure_time_beijing": "2026-09-22T01:08:00.551950+08:00",
+    "trigger": "GNU du exit 1: an l6-random .storage-state.json.<uuid>.tmp disappeared during traversal; bytes=null, partial stdout not trusted.",
+    "inference": "The missing path is a watchdog temporary state file. Its disappearance overlaps the child state publication, consistent with the frozen save() atomic os.replace and suite du traversal racing. This is distinct from the previously repaired shared-temp-name collision; not proof of the historical SpB r3 cause.",
+    "docker_terminal": "exited137 / OOMKilled=false at 01:08:18.057 Beijing; automatic controller docker stop call reported a 15-second timeout. Host terminal state overrides stale child running-unverified.",
+    "confirmed_completed_arm": "l6-same (all three stages, 32 games, 2 PPO), per qwen-r3-l6-same-complete-20260922.json",
+    "interrupted_arm": "l6-random: pre accepted; train2 not accepted, no result/.done/metrics/CP2. One pending step1 before-update audit accepted 40/40 answers. Completed PPO count is not established by these retained small records; do not label it zero or one.",
+    "successors": "l7-same and l7-random never dispatched; blocked by predecessor failure.",
+    "resource_accounting": "Previous successful totals are historical only, not substituted for this failed measurement. Original deadlines and all nine roots preserved.",
+    "no_actions": [
+      "No restart/retry/prepare/dispatch",
+      "No new du or GPU diagnostics",
+      "No weight/checkpoint contents read",
+      "No frozen source/run mutation",
+      "No old artifact deletion"
+    ],
+    "followup": "Request CPU-only repair/reproduction authorization; a new GPU attempt requires separate authority."
+  },
+  "monitor": {
+    "id": "197-spb-r4",
+    "action": "deleted",
+    "verified_tool_result": "deleteStatus=deleted",
+    "reason": "Terminal failure handoff; no authorized successor or automatic repair/retry"
+  },
+  "notification_events": [
+    "new Qwen r3 suite storage-measurement failure",
+    "l6-random terminal handoff and two Level7 arms blocked",
+    "unique monitor deletion and request for CPU-only repair direction"
+  ]
+}

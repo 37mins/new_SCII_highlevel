@@ -1,0 +1,634 @@
+{
+  "checked_at": 1790735915.332472,
+  "checked_at_beijing": "2026-09-30T10:38:35.332472+08:00",
+  "runtime_sha": "d6932869ac75a34d6a244c8879c76ab61982d88a",
+  "root": "/var/jfsCache/sc2-spb-l8random-recovery264-197-20260930-r1",
+  "host_state": {
+    "version": "host-guardian-v1",
+    "phase": "running-unverified",
+    "completed": [
+      "diagnostic-cp96",
+      "sel-b00-cp2",
+      "sel-b01-cp2",
+      "sel-b02-cp2",
+      "sel-b03-cp2",
+      "sel-b00-cp32",
+      "sel-b01-cp32",
+      "sel-b02-cp32",
+      "sel-b03-cp32",
+      "sel-b00-cp64"
+    ],
+    "deadline": 1790759506.6293833,
+    "learning_validated": false,
+    "started_at": 1790730739.7269616,
+    "stage": "sel-b01-cp64",
+    "container_id": "c0fe45c9fcadaa325b428037e1345b49c566da3fcc82dcf359eba8cab25f90b5"
+  },
+  "dispatch": {
+    "start": 1790730706.6293833,
+    "deadline": 1790759506.6293833,
+    "gpu_hours": 64,
+    "new_games": 264,
+    "new_updates": 0,
+    "includes_gpu_preflight": true
+  },
+  "accepted": [
+    {
+      "stage": "diagnostic-cp96",
+      "terminal_agreement": true,
+      "result": {
+        "status": "completed",
+        "ended_at": "2026-09-30T01:22:44.360889+00:00",
+        "process_exit_code": 0,
+        "training_updates": 0,
+        "metrics_finite": true,
+        "metrics_precision": "binary64-v1"
+      },
+      "outcomes": {
+        "natural_games": 8,
+        "wins": 5,
+        "defeats": 3,
+        "ties": 0,
+        "truncated": 0
+      },
+      "evidence": {
+        "consumed_answers": 29,
+        "valid_consumed_answers": 29
+      },
+      "guardian": {
+        "phase": "completed",
+        "container_id": "0141aeb141a545da48c44c4acc8e44043828f0c732c826aabe727215dbf26d7d",
+        "owner_root": "/var/jfsCache/sc2-spb-l8random-recovery264-197-20260930-r1",
+        "deadline": 1790759506.6293833,
+        "final_state": {
+          "Dead": false,
+          "Error": "",
+          "ExitCode": 0,
+          "FinishedAt": "2026-09-30T01:22:28.353836441Z",
+          "OOMKilled": false,
+          "Paused": false,
+          "Pid": 0,
+          "Restarting": false,
+          "Running": false,
+          "StartedAt": "2026-09-30T01:12:20.754027619Z",
+          "Status": "exited"
+        },
+        "error": null
+      },
+      "hashes": {
+        "acceptance-diagnostic-cp96.json": "f714dcc999e1f2bc28e2fe022c5c805b8b1dc2df1b8bdd2ed56f5c5716ffe1a8",
+        "runs/diagnostic-cp96/result.json": "e89de213159b925215d177bf312787d5248d1da5b4e769b2401a89849702d32c",
+        "runs/diagnostic-cp96/.done": "e89de213159b925215d177bf312787d5248d1da5b4e769b2401a89849702d32c",
+        "host-supervision/diagnostic-cp96-guardian.json": "1acbbbc80d366bb0463365e76d889fa7a9861393f93847b8671fb8a3d3010576"
+      }
+    },
+    {
+      "stage": "sel-b00-cp2",
+      "terminal_agreement": true,
+      "result": {
+        "status": "completed",
+        "ended_at": "2026-09-30T01:30:45.926633+00:00",
+        "process_exit_code": 0,
+        "training_updates": 0,
+        "metrics_finite": true,
+        "metrics_precision": "binary64-v1"
+      },
+      "outcomes": {
+        "natural_games": 8,
+        "wins": 5,
+        "defeats": 3,
+        "ties": 0,
+        "truncated": 0
+      },
+      "evidence": {
+        "consumed_answers": 24,
+        "valid_consumed_answers": 24
+      },
+      "guardian": {
+        "phase": "completed",
+        "container_id": "88853e5960975fccfc6a19005ffff4d56370dac80a30c00c8dab6b32c2a25ebb",
+        "owner_root": "/var/jfsCache/sc2-spb-l8random-recovery264-197-20260930-r1",
+        "deadline": 1790759506.6293833,
+        "final_state": {
+          "Dead": false,
+          "Error": "",
+          "ExitCode": 0,
+          "FinishedAt": "2026-09-30T01:30:40.679382296Z",
+          "OOMKilled": false,
+          "Paused": false,
+          "Pid": 0,
+          "Restarting": false,
+          "Running": false,
+          "StartedAt": "2026-09-30T01:22:46.148274661Z",
+          "Status": "exited"
+        },
+        "error": null
+      },
+      "hashes": {
+        "acceptance-sel-b00-cp2.json": "275b9208fc6e7ef34986f3c862931fd74dddfbf9dc0dbbd886b4ca197ab49d4b",
+        "runs/sel-b00-cp2/result.json": "cf57efcd45fd1239a000b469ae4795b060c191043e039d65aa434b9bb0f95a53",
+        "runs/sel-b00-cp2/.done": "cf57efcd45fd1239a000b469ae4795b060c191043e039d65aa434b9bb0f95a53",
+        "host-supervision/sel-b00-cp2-guardian.json": "58dc8ab59c23b3c82154e78a0c1d32722294e8ceb4df66660f9be314c01b7ce9"
+      }
+    },
+    {
+      "stage": "sel-b01-cp2",
+      "terminal_agreement": true,
+      "result": {
+        "status": "completed",
+        "ended_at": "2026-09-30T01:43:12.746233+00:00",
+        "process_exit_code": 0,
+        "training_updates": 0,
+        "metrics_finite": true,
+        "metrics_precision": "binary64-v1"
+      },
+      "outcomes": {
+        "natural_games": 8,
+        "wins": 1,
+        "defeats": 7,
+        "ties": 0,
+        "truncated": 0
+      },
+      "evidence": {
+        "consumed_answers": 29,
+        "valid_consumed_answers": 29
+      },
+      "guardian": {
+        "phase": "completed",
+        "container_id": "1896a0b0e41dfb8c4630fc97e292ec8649114c13da0639d5423247d7bb6e020e",
+        "owner_root": "/var/jfsCache/sc2-spb-l8random-recovery264-197-20260930-r1",
+        "deadline": 1790759506.6293833,
+        "final_state": {
+          "Dead": false,
+          "Error": "",
+          "ExitCode": 0,
+          "FinishedAt": "2026-09-30T01:43:05.603246225Z",
+          "OOMKilled": false,
+          "Paused": false,
+          "Pid": 0,
+          "Restarting": false,
+          "Running": false,
+          "StartedAt": "2026-09-30T01:30:47.688615955Z",
+          "Status": "exited"
+        },
+        "error": null
+      },
+      "hashes": {
+        "acceptance-sel-b01-cp2.json": "84e258c724948ff7f60b05b36ff2e1f3e08c3bb38d68e9cc26dc4a9f57145ab7",
+        "runs/sel-b01-cp2/result.json": "8eb2fe4ab2ef60ab738bb0784d7633860b03702ab37bfbb6fa608ecb1db4bd12",
+        "runs/sel-b01-cp2/.done": "8eb2fe4ab2ef60ab738bb0784d7633860b03702ab37bfbb6fa608ecb1db4bd12",
+        "host-supervision/sel-b01-cp2-guardian.json": "6e9f5c3e70b2dfd6f4a85e0ed448051a16226ea28f09c436f9b06b05e1b67020"
+      }
+    },
+    {
+      "stage": "sel-b02-cp2",
+      "terminal_agreement": true,
+      "result": {
+        "status": "completed",
+        "ended_at": "2026-09-30T01:51:51.197063+00:00",
+        "process_exit_code": 0,
+        "training_updates": 0,
+        "metrics_finite": true,
+        "metrics_precision": "binary64-v1"
+      },
+      "outcomes": {
+        "natural_games": 8,
+        "wins": 6,
+        "defeats": 2,
+        "ties": 0,
+        "truncated": 0
+      },
+      "evidence": {
+        "consumed_answers": 26,
+        "valid_consumed_answers": 26
+      },
+      "guardian": {
+        "phase": "completed",
+        "container_id": "b7ff2edc2a348a4f989c32ffa97b39e2cc22bfc447496ee6be6a90d3403c67cc",
+        "owner_root": "/var/jfsCache/sc2-spb-l8random-recovery264-197-20260930-r1",
+        "deadline": 1790759506.6293833,
+        "final_state": {
+          "Dead": false,
+          "Error": "",
+          "ExitCode": 0,
+          "FinishedAt": "2026-09-30T01:51:35.19149747Z",
+          "OOMKilled": false,
+          "Paused": false,
+          "Pid": 0,
+          "Restarting": false,
+          "Running": false,
+          "StartedAt": "2026-09-30T01:43:14.800464665Z",
+          "Status": "exited"
+        },
+        "error": null
+      },
+      "hashes": {
+        "acceptance-sel-b02-cp2.json": "d1ab7bd3b1cba628613654db16d55e4af2e3f5ae4e8c861d7c0a4ba76d9c95ea",
+        "runs/sel-b02-cp2/result.json": "cb81146c09aebe06a80f7c3aec1e31de01ff04a9412fee4472c77c841799a84f",
+        "runs/sel-b02-cp2/.done": "cb81146c09aebe06a80f7c3aec1e31de01ff04a9412fee4472c77c841799a84f",
+        "host-supervision/sel-b02-cp2-guardian.json": "294b9f357f3a9552d88f2a95a5ae3a7fe04a9f41c4280ba706d71299e20b1194"
+      }
+    },
+    {
+      "stage": "sel-b03-cp2",
+      "terminal_agreement": true,
+      "result": {
+        "status": "completed",
+        "ended_at": "2026-09-30T01:59:53.705652+00:00",
+        "process_exit_code": 0,
+        "training_updates": 0,
+        "metrics_finite": true,
+        "metrics_precision": "binary64-v1"
+      },
+      "outcomes": {
+        "natural_games": 8,
+        "wins": 4,
+        "defeats": 4,
+        "ties": 0,
+        "truncated": 0
+      },
+      "evidence": {
+        "consumed_answers": 29,
+        "valid_consumed_answers": 29
+      },
+      "guardian": {
+        "phase": "completed",
+        "container_id": "03370a3a2886bd86c096cc69026af7d5349c886f3cf174b4e269b06f8267396c",
+        "owner_root": "/var/jfsCache/sc2-spb-l8random-recovery264-197-20260930-r1",
+        "deadline": 1790759506.6293833,
+        "final_state": {
+          "Dead": false,
+          "Error": "",
+          "ExitCode": 0,
+          "FinishedAt": "2026-09-30T01:59:51.393148936Z",
+          "OOMKilled": false,
+          "Paused": false,
+          "Pid": 0,
+          "Restarting": false,
+          "Running": false,
+          "StartedAt": "2026-09-30T01:51:53.078024456Z",
+          "Status": "exited"
+        },
+        "error": null
+      },
+      "hashes": {
+        "acceptance-sel-b03-cp2.json": "986160e10972993d530cf08a4143c4e298caa2634660c7e867b7deaea57c7217",
+        "runs/sel-b03-cp2/result.json": "57009cdf614cdfa3d2c6ec0a7b9a69e5850c323944ed2b87c37ce38b4ee72711",
+        "runs/sel-b03-cp2/.done": "57009cdf614cdfa3d2c6ec0a7b9a69e5850c323944ed2b87c37ce38b4ee72711",
+        "host-supervision/sel-b03-cp2-guardian.json": "bdfdf5be7ec3c094efd2a406b6ff2c9648d08defed9b3258e8c87c2beb244cae"
+      }
+    },
+    {
+      "stage": "sel-b00-cp32",
+      "terminal_agreement": true,
+      "result": {
+        "status": "completed",
+        "ended_at": "2026-09-30T02:05:43.226761+00:00",
+        "process_exit_code": 0,
+        "training_updates": 0,
+        "metrics_finite": true,
+        "metrics_precision": "binary64-v1"
+      },
+      "outcomes": {
+        "natural_games": 8,
+        "wins": 8,
+        "defeats": 0,
+        "ties": 0,
+        "truncated": 0
+      },
+      "evidence": {
+        "consumed_answers": 24,
+        "valid_consumed_answers": 24
+      },
+      "guardian": {
+        "phase": "completed",
+        "container_id": "309bd26f979c68fc4ac4442dd499d2df19abe134e2289c25eeeac76d22bd61db",
+        "owner_root": "/var/jfsCache/sc2-spb-l8random-recovery264-197-20260930-r1",
+        "deadline": 1790759506.6293833,
+        "final_state": {
+          "Dead": false,
+          "Error": "",
+          "ExitCode": 0,
+          "FinishedAt": "2026-09-30T02:05:27.182429362Z",
+          "OOMKilled": false,
+          "Paused": false,
+          "Pid": 0,
+          "Restarting": false,
+          "Running": false,
+          "StartedAt": "2026-09-30T01:59:55.570074307Z",
+          "Status": "exited"
+        },
+        "error": null
+      },
+      "hashes": {
+        "acceptance-sel-b00-cp32.json": "339337fc02761752b7c1f7e78a32b4685610a26386f1a621582e1ebb612cc521",
+        "runs/sel-b00-cp32/result.json": "45d372b568a5ab79a6c4ac793782fea0358532d7f456d5fa678d31ae8db46173",
+        "runs/sel-b00-cp32/.done": "45d372b568a5ab79a6c4ac793782fea0358532d7f456d5fa678d31ae8db46173",
+        "host-supervision/sel-b00-cp32-guardian.json": "4d025bad2158ac6c7d7cd00dd9ee527c98a99fd963cafa4aa7292c583f28a571"
+      }
+    },
+    {
+      "stage": "sel-b01-cp32",
+      "terminal_agreement": true,
+      "result": {
+        "status": "completed",
+        "ended_at": "2026-09-30T02:12:31.995747+00:00",
+        "process_exit_code": 0,
+        "training_updates": 0,
+        "metrics_finite": true,
+        "metrics_precision": "binary64-v1"
+      },
+      "outcomes": {
+        "natural_games": 8,
+        "wins": 6,
+        "defeats": 2,
+        "ties": 0,
+        "truncated": 0
+      },
+      "evidence": {
+        "consumed_answers": 25,
+        "valid_consumed_answers": 25
+      },
+      "guardian": {
+        "phase": "completed",
+        "container_id": "e8a2dc4251b081811c68291da796622f159b08ef0864899c1e611600947ee8f6",
+        "owner_root": "/var/jfsCache/sc2-spb-l8random-recovery264-197-20260930-r1",
+        "deadline": 1790759506.6293833,
+        "final_state": {
+          "Dead": false,
+          "Error": "",
+          "ExitCode": 0,
+          "FinishedAt": "2026-09-30T02:12:15.947836334Z",
+          "OOMKilled": false,
+          "Paused": false,
+          "Pid": 0,
+          "Restarting": false,
+          "Running": false,
+          "StartedAt": "2026-09-30T02:05:45.115847468Z",
+          "Status": "exited"
+        },
+        "error": null
+      },
+      "hashes": {
+        "acceptance-sel-b01-cp32.json": "4056e4efd33fa20be41cbedc2f90926e91592f7ac58cd866611fde5d239eebcf",
+        "runs/sel-b01-cp32/result.json": "b91bea74c560dd457e9fe0bf0dc8b4152edb0e80a3db9f9bea4bc35dd9e58917",
+        "runs/sel-b01-cp32/.done": "b91bea74c560dd457e9fe0bf0dc8b4152edb0e80a3db9f9bea4bc35dd9e58917",
+        "host-supervision/sel-b01-cp32-guardian.json": "af5c4b169dde23a36fa2defa4d2bfd946a0227ec2cbd3e6a8d53769a7880727c"
+      }
+    },
+    {
+      "stage": "sel-b02-cp32",
+      "terminal_agreement": true,
+      "result": {
+        "status": "completed",
+        "ended_at": "2026-09-30T02:19:01.862200+00:00",
+        "process_exit_code": 0,
+        "training_updates": 0,
+        "metrics_finite": true,
+        "metrics_precision": "binary64-v1"
+      },
+      "outcomes": {
+        "natural_games": 8,
+        "wins": 6,
+        "defeats": 2,
+        "ties": 0,
+        "truncated": 0
+      },
+      "evidence": {
+        "consumed_answers": 26,
+        "valid_consumed_answers": 26
+      },
+      "guardian": {
+        "phase": "completed",
+        "container_id": "55405b05aaf6081b1d90d32f4881d8bd61f0f25ae3bc242f436d0de0b32b79b7",
+        "owner_root": "/var/jfsCache/sc2-spb-l8random-recovery264-197-20260930-r1",
+        "deadline": 1790759506.6293833,
+        "final_state": {
+          "Dead": false,
+          "Error": "",
+          "ExitCode": 0,
+          "FinishedAt": "2026-09-30T02:19:00.889005173Z",
+          "OOMKilled": false,
+          "Paused": false,
+          "Pid": 0,
+          "Restarting": false,
+          "Running": false,
+          "StartedAt": "2026-09-30T02:12:33.901843987Z",
+          "Status": "exited"
+        },
+        "error": null
+      },
+      "hashes": {
+        "acceptance-sel-b02-cp32.json": "3f97cd6c8fc8561a0d7a7ea313ecd60fa57ffce25f400207ae48e64776c4da0d",
+        "runs/sel-b02-cp32/result.json": "2d6a83cd2ec8a2602f31edbbbe234eccd88f59698bd8096bc57b8dc5e5f43708",
+        "runs/sel-b02-cp32/.done": "2d6a83cd2ec8a2602f31edbbbe234eccd88f59698bd8096bc57b8dc5e5f43708",
+        "host-supervision/sel-b02-cp32-guardian.json": "f4b7270d3f85876506975d0afc6fc4441fcc5a239169aa7078335916eabd6ce6"
+      }
+    },
+    {
+      "stage": "sel-b03-cp32",
+      "terminal_agreement": true,
+      "result": {
+        "status": "completed",
+        "ended_at": "2026-09-30T02:26:02.914164+00:00",
+        "process_exit_code": 0,
+        "training_updates": 0,
+        "metrics_finite": true,
+        "metrics_precision": "binary64-v1"
+      },
+      "outcomes": {
+        "natural_games": 8,
+        "wins": 5,
+        "defeats": 3,
+        "ties": 0,
+        "truncated": 0
+      },
+      "evidence": {
+        "consumed_answers": 25,
+        "valid_consumed_answers": 25
+      },
+      "guardian": {
+        "phase": "completed",
+        "container_id": "be9e69ad1ff01ec5aade18170a1494a465fbb1c1d9cd5a834243460ded52b10b",
+        "owner_root": "/var/jfsCache/sc2-spb-l8random-recovery264-197-20260930-r1",
+        "deadline": 1790759506.6293833,
+        "final_state": {
+          "Dead": false,
+          "Error": "",
+          "ExitCode": 0,
+          "FinishedAt": "2026-09-30T02:25:58.418715527Z",
+          "OOMKilled": false,
+          "Paused": false,
+          "Pid": 0,
+          "Restarting": false,
+          "Running": false,
+          "StartedAt": "2026-09-30T02:19:03.790039915Z",
+          "Status": "exited"
+        },
+        "error": null
+      },
+      "hashes": {
+        "acceptance-sel-b03-cp32.json": "0fcfb0b5933c1ef19abbd6c6068a3124f7112dde028c6c6d498b71565d166d3c",
+        "runs/sel-b03-cp32/result.json": "8bef495eb01f6709beae5daac075d0da2d3940ffd2b6143fb85a2c50b3f027c5",
+        "runs/sel-b03-cp32/.done": "8bef495eb01f6709beae5daac075d0da2d3940ffd2b6143fb85a2c50b3f027c5",
+        "host-supervision/sel-b03-cp32-guardian.json": "4c3091af3c6b96c561b01d52fe6cf0a9474a7ab3bb12cd1126c587be35d2bae6"
+      }
+    },
+    {
+      "stage": "sel-b00-cp64",
+      "terminal_agreement": true,
+      "result": {
+        "status": "completed",
+        "ended_at": "2026-09-30T02:36:56.478830+00:00",
+        "process_exit_code": 0,
+        "training_updates": 0,
+        "metrics_finite": true,
+        "metrics_precision": "binary64-v1"
+      },
+      "outcomes": {
+        "natural_games": 8,
+        "wins": 5,
+        "defeats": 3,
+        "ties": 0,
+        "truncated": 0
+      },
+      "evidence": {
+        "consumed_answers": 42,
+        "valid_consumed_answers": 42
+      },
+      "guardian": {
+        "phase": "completed",
+        "container_id": "8fa509390a9e978ba2d1b806b16ac2a83ac98fd9a8e8c357f2da2881d6b3d29e",
+        "owner_root": "/var/jfsCache/sc2-spb-l8random-recovery264-197-20260930-r1",
+        "deadline": 1790759506.6293833,
+        "final_state": {
+          "Dead": false,
+          "Error": "",
+          "ExitCode": 0,
+          "FinishedAt": "2026-09-30T02:36:52.468190427Z",
+          "OOMKilled": false,
+          "Paused": false,
+          "Pid": 0,
+          "Restarting": false,
+          "Running": false,
+          "StartedAt": "2026-09-30T02:26:04.86038095Z",
+          "Status": "exited"
+        },
+        "error": null
+      },
+      "hashes": {
+        "acceptance-sel-b00-cp64.json": "939b35755b672d7338feab484ff9bb6a500e5e233e124504e5871068e128fab1",
+        "runs/sel-b00-cp64/result.json": "f0992f36df2aa76e14d0a9f8ea1ed7e4e3fa4b1495f51b92ce3c9e9540e28901",
+        "runs/sel-b00-cp64/.done": "f0992f36df2aa76e14d0a9f8ea1ed7e4e3fa4b1495f51b92ce3c9e9540e28901",
+        "host-supervision/sel-b00-cp64-guardian.json": "5d2822237e1cf37e3049098119887d237b1337f8e6cc4337179816ed65ad0478"
+      }
+    }
+  ],
+  "storage": {
+    "new-storage": {
+      "roots": [
+        "/var/jfsCache/sc2-spb-l8random-recovery264-197-20260930-r1",
+        "/var/jfsCache/sc2-spb-l8random-recovery264-197-source-20260930-r1"
+      ],
+      "deadline": 1790759506.6293833,
+      "limit": 34359738368,
+      "bytes": 761785812,
+      "returncode": 0,
+      "stderr": {
+        "tail": "",
+        "characters": 0,
+        "truncated": false
+      },
+      "measured_at": 1790735912.056966,
+      "status": "measured",
+      "quiescence": {
+        "container_id": "c0fe45c9fcadaa325b428037e1345b49c566da3fcc82dcf359eba8cab25f90b5",
+        "cleanup": "verified-unpaused",
+        "mode": "paused",
+        "resumed_at": 1790735912.4499688
+      }
+    },
+    "suite-storage": {
+      "roots": [
+        "/var/jfsCache/sc2-spb-l8random96-197-20260928-r1",
+        "/var/jfsCache/sc2-spb-l8random-paired128-197-20260928-r1",
+        "/var/jfsCache/sc2-spb-l8random96-197-source-20260928-r1",
+        "/var/jfsCache/sc2-spb-l8random96-197-20260929-r2",
+        "/var/jfsCache/sc2-spb-l8random-paired128-197-20260929-r2",
+        "/var/jfsCache/sc2-spb-l8random96-197-source-20260929-r2",
+        "/var/jfsCache/sc2-terminal-storage-cpu-20260929-r1",
+        "/var/jfsCache/sc2-terminal-storage-cpu-source-20260929-r1",
+        "/var/jfsCache/sc2-spb-l8random-recovery264-197-20260930-r1",
+        "/var/jfsCache/sc2-spb-l8random-recovery264-197-source-20260930-r1"
+      ],
+      "deadline": 1790759506.6293833,
+      "limit": 377957122048,
+      "bytes": 324129688571,
+      "returncode": 0,
+      "stderr": {
+        "tail": "",
+        "characters": 0,
+        "truncated": false
+      },
+      "measured_at": 1790735912.4093175,
+      "status": "measured",
+      "quiescence": {
+        "container_id": "c0fe45c9fcadaa325b428037e1345b49c566da3fcc82dcf359eba8cab25f90b5",
+        "cleanup": "verified-unpaused",
+        "mode": "paused",
+        "resumed_at": 1790735912.4499688
+      }
+    }
+  },
+  "failures": {},
+  "current_container": {
+    "id": "c0fe45c9fcadaa325b428037e1345b49c566da3fcc82dcf359eba8cab25f90b5",
+    "returncode": 0,
+    "state": {
+      "Status": "running",
+      "Running": true,
+      "Paused": false,
+      "Restarting": false,
+      "OOMKilled": false,
+      "Dead": false,
+      "Pid": 2732830,
+      "ExitCode": 0,
+      "Error": "",
+      "StartedAt": "2026-09-30T02:36:58.447570744Z",
+      "FinishedAt": "0001-01-01T00:00:00Z"
+    },
+    "stderr": ""
+  },
+  "timing": {
+    "completed_batches": 10,
+    "remaining_batches_including_active": 23,
+    "minutes_per_completed_batch": [
+      10.962191760540009,
+      8.02609573205312,
+      12.446993335088093,
+      8.640847166379293,
+      8.041809817155203,
+      5.825351818402608,
+      6.812816433111826,
+      6.497774215539296,
+      7.017532734076182,
+      10.892744433879852
+    ],
+    "mean_minutes": 8.516415744622549,
+    "median_minutes": 8.033952774604161,
+    "linear_eta_epoch": 1790747569.1325576
+  },
+  "kind": "readonly_progress_and_eta_not_final_result",
+  "actions": {
+    "remote_mutations": false,
+    "checkpoint_reads": false,
+    "new_dispatch": false,
+    "new_budget_approved": false
+  },
+  "eta": {
+    "estimate_beijing": "2026-09-30 14:00–15:30",
+    "hard_deadline_beijing": "2026-09-30 17:11:46.629",
+    "basis": "10 accepted batches averaged 8.5164 minutes including initial dispatch and inter-stage time; 23 batches including active remain. Linear extrapolation ~13:52:49, conservative window accounts for original-model and scene duration changes; not guaranteed.",
+    "old_training_strict_status": "failed; recovery evaluation does not relabel it"
+  }
+}

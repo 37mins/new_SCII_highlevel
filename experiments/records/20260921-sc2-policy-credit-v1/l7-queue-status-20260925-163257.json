@@ -1,0 +1,20 @@
+{
+  "schema": "l7-readonly-queue-status-v1",
+  "observed_at": "2026-09-25T16:32:57+08:00",
+  "spb_early128": {
+    "queue_phase": "completed",
+    "completed_stages": 16,
+    "expected_stages": 16,
+    "natural_games": 128,
+    "updates": 0,
+    "exit_code": 0,
+    "finished_at": "2026-09-25T13:27:41+08:00"
+  },
+  "qwen_l8": {
+    "status": "proposal-only",
+    "authorized": false,
+    "queued": false,
+    "evidence": "No L8 output root in the bounded recent sc2 root listing and no running sc2-named project container in docker ps at observation time."
+  },
+  "action": "read-only query; no server mutation, launch, retry, or resource-gate change"
+}

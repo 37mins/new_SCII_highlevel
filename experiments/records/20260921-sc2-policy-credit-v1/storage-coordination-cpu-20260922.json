@@ -1,0 +1,187 @@
+{
+  "staging": "/var/jfsCache/sc2-storage-coordination-cpu-20260922.bE413S",
+  "files": {
+    "result-01.json": {
+      "sha256": "70c2d24f8da65632c97764cc70f69112bd508f278c75466c51a36796f985d75e",
+      "content": {
+        "source_sha": "217a1f4ccace44078c0d277f12d5f6c6beacc0a6",
+        "started_at": "2026-09-22T02:18:04.918644+00:00",
+        "ended_at": "2026-09-22T02:18:05.763682+00:00",
+        "python": "3.10.12 (main, Nov 20 2023, 15:14:05) [GCC 11.4.0]",
+        "test_modules": [
+          "test_policy_credit_acceptance197",
+          "test_policy_credit_acceptance197_r3",
+          "test_policy_credit_storage197",
+          "test_policy_credit_storage_coordination197",
+          "test_qwen_seed_acceptance197",
+          "test_qwen_seed_acceptance197_r3"
+        ],
+        "tests": 46,
+        "failures": 0,
+        "errors": 0,
+        "skips": 0,
+        "heavy_modules_loaded": [],
+        "successful": true,
+        "log_sha256": "e3c375f6c6785cc3c99e853199078505d4a354f6d7b4c848022e9092755904cf",
+        "gpu_experiment_dispatched": false
+      }
+    },
+    "result-02.json": {
+      "sha256": "4101d356326beafc7b87b1b64df0d889ce388d5482e3e16c6de3f67b94a344f5",
+      "content": {
+        "source_sha": "35f1705b76b4e561d8b32bd94f2ad8dca0c2a418",
+        "started_at": "2026-09-22T02:21:37.655558+00:00",
+        "ended_at": "2026-09-22T02:21:38.376934+00:00",
+        "python": "3.10.12 (main, Nov 20 2023, 15:14:05) [GCC 11.4.0]",
+        "test_modules": [
+          "test_policy_credit_acceptance197",
+          "test_policy_credit_acceptance197_r3",
+          "test_policy_credit_storage197",
+          "test_policy_credit_storage_coordination197",
+          "test_qwen_seed_acceptance197",
+          "test_qwen_seed_acceptance197_r3"
+        ],
+        "tests": 49,
+        "failures": 0,
+        "errors": 0,
+        "skips": 0,
+        "heavy_modules_loaded": [],
+        "successful": true,
+        "log_sha256": "9a1fb96b2e2effcf85b7d569df0b3537ffefe49336c50bde7030739cdc88df59",
+        "gpu_experiment_dispatched": false
+      }
+    },
+    "bind-check.json": {
+      "sha256": "085893a46f91403091c86043acbef009252e4036d5feed3ba67bc65741f153a6",
+      "content": {
+        "checked_at": "2026-09-22T02:22:19.657964+00:00",
+        "container": "sc2-storage-coordination-cpu-20260922-be413s",
+        "source_sha": "35f1705b76b4e561d8b32bd94f2ad8dca0c2a418",
+        "blocked": {
+          "blocked_by_host": true,
+          "inode": 4690105215
+        },
+        "stdout": {
+          "acquired_after_release": true,
+          "heavy_modules_loaded": []
+        },
+        "stderr": "",
+        "inspection": {
+          "state": {
+            "Status": "exited",
+            "Running": false,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 0,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-09-22T02:22:19.496096295Z",
+            "FinishedAt": "2026-09-22T02:22:19.625238052Z"
+          },
+          "gpu_requests": null
+        },
+        "cpu_limit": 1,
+        "memory_limit_bytes": 268435456,
+        "network": "none",
+        "model_or_sc2_mounted": false
+      }
+    },
+    "regressions-01.log": {
+      "sha256": "e3c375f6c6785cc3c99e853199078505d4a354f6d7b4c848022e9092755904cf",
+      "bytes": 7460
+    },
+    "regressions-02.log": {
+      "sha256": "9a1fb96b2e2effcf85b7d569df0b3537ffefe49336c50bde7030739cdc88df59",
+      "bytes": 7891
+    }
+  },
+  "final_worktree_status": "",
+  "schema_version": 1,
+  "authorization": "User approved CPU-only reproduction, repair and validation; no GPU experiment retry/queue/dispatch.",
+  "local_result": {
+    "tests": 49,
+    "passed": 45,
+    "linux_only_skips": 4,
+    "errors": 0,
+    "failures": 0
+  },
+  "historical_reproduction": {
+    "command": [
+      "du",
+      "-sb",
+      "--null",
+      "--",
+      "/var/jfsCache/sc2-storage-coordination-cpu-20260922.bE413S/tmpwz5ja2l2/suite",
+      "/var/jfsCache/sc2-storage-coordination-cpu-20260922.bE413S/tmpwz5ja2l2/source"
+    ],
+    "roots": [
+      "/var/jfsCache/sc2-storage-coordination-cpu-20260922.bE413S/tmpwz5ja2l2/suite",
+      "/var/jfsCache/sc2-storage-coordination-cpu-20260922.bE413S/tmpwz5ja2l2/source"
+    ],
+    "started_at": 1790043697.8959527,
+    "deadline": 1790043817.8959515,
+    "limit": 1048576,
+    "bytes": null,
+    "returncode": 1,
+    "status": "measurement-failed",
+    "stdout": {
+      "tail": "128\t/var/jfsCache/sc2-storage-coordination-cpu-20260922.bE413S/tmpwz5ja2l2/suite\u00006\t/var/jfsCache/sc2-storage-coordination-cpu-20260922.bE413S/tmpwz5ja2l2/source\u0000",
+      "characters": 161,
+      "truncated": false
+    },
+    "stderr": {
+      "tail": "du: cannot access '/var/jfsCache/sc2-storage-coordination-cpu-20260922.bE413S/tmpwz5ja2l2/suite/arm/.storage-state.json.60a8632b780d40dd88fe2cb78c2c5759.tmp': No such file or directory\n",
+      "characters": 185,
+      "truncated": false
+    },
+    "error_type": "ValueError",
+    "error": "du failed or emitted diagnostics; partial totals are not trusted",
+    "checked_at": 1790043697.9082832
+  },
+  "coordinated_measurement": {
+    "command": [
+      "du",
+      "-sb",
+      "--null",
+      "--",
+      "/var/jfsCache/sc2-storage-coordination-cpu-20260922.bE413S/tmpjj8t40qa/suite",
+      "/var/jfsCache/sc2-storage-coordination-cpu-20260922.bE413S/tmpjj8t40qa/source"
+    ],
+    "roots": [
+      "/var/jfsCache/sc2-storage-coordination-cpu-20260922.bE413S/tmpjj8t40qa/suite",
+      "/var/jfsCache/sc2-storage-coordination-cpu-20260922.bE413S/tmpjj8t40qa/source"
+    ],
+    "started_at": 1790043697.742381,
+    "deadline": 1790043817.7423797,
+    "limit": 1048576,
+    "bytes": 121,
+    "returncode": 0,
+    "status": "measured",
+    "stdout": {
+      "tail": "111\t/var/jfsCache/sc2-storage-coordination-cpu-20260922.bE413S/tmpjj8t40qa/suite\u000010\t/var/jfsCache/sc2-storage-coordination-cpu-20260922.bE413S/tmpjj8t40qa/source\u0000",
+      "characters": 162,
+      "truncated": false
+    },
+    "stderr": {
+      "tail": "",
+      "characters": 0,
+      "truncated": false
+    },
+    "root_bytes": {
+      "/var/jfsCache/sc2-storage-coordination-cpu-20260922.bE413S/tmpjj8t40qa/suite": 111,
+      "/var/jfsCache/sc2-storage-coordination-cpu-20260922.bE413S/tmpjj8t40qa/source": 10
+    },
+    "checked_at": 1790043697.844441
+  },
+  "actual_host_entrypoint": "cd /var/jfsCache/sc2-storage-coordination-cpu-20260922.bE413S/code-final && TMPDIR=/var/jfsCache/sc2-storage-coordination-cpu-20260922.bE413S timeout 45s python3 -B -",
+  "actual_host_stdin_runner": "unittest.defaultTestLoader.loadTestsFromNames(result-02.json.test_modules); unittest.TextTestRunner(verbosity=2); exclusive new regressions-02.log/result-02.json. Asserts exact clean source SHA, no skips and no torch/ray/transformers/pysc2/sc2 imports.",
+  "container_image": "sha256:1a497d5721f89bb2e98c0273c4b1495f8fdc6921d589650d090871c11b8d1649",
+  "limits": [
+    "Only controller metadata publication is coordinated; no atomic snapshot of every training/SC2/Ray file is claimed.",
+    "Uncoordinated traversal failures still stop; no suppressed errors, omitted roots, stale-total fallback or measurement retry.",
+    "Docker stop-client timeout remains a distinct unresolved operational observation.",
+    "No formal GPU/SC2 run, new queue, monitor or long training; frozen failed experiments and all prior evidence unchanged."
+  ]
+}

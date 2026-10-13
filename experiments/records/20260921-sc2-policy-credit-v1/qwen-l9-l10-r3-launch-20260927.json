@@ -1,0 +1,816 @@
+{
+  "checked_at": "2026-09-27T22:20:19.458933+08:00",
+  "server": "sc2-a100-197",
+  "controller_sha": "5152bbb74def8d0bd54d172c70bf18dfa2fed90a",
+  "runtime_sha": "1c6cf60b111570ef13f9817d0b1b16fb774546f5",
+  "authorization": "User explicitly allowed one r3 admission-repair continuation: retained L9 training plus only eval8, then fresh L10; no new budget/deadline, deletion or automatic retry.",
+  "scope": {
+    "retained_games": 784,
+    "retained_updates": 96,
+    "new_authorized_games": 800,
+    "new_authorized_updates": 96,
+    "l9_new_games": 8,
+    "l9_new_updates": 0,
+    "l10_planned_games": 792,
+    "l10_planned_updates": 96,
+    "old_failed_states_preserved": true
+  },
+  "enqueue": {
+    "at": 1790518282.3185332,
+    "beijing": "2026-09-27T22:11:22.318533+08:00",
+    "single_dispatch": true,
+    "socket": "sc2_qwen_l9l10same96_197_20260927_r3",
+    "session": "qwen_l9l10same96_197_r3",
+    "command": "qwen_l9l10_continue197.py queue"
+  },
+  "source_backed_up_before_launch": {
+    "branch": "codex/fix-sc2-startup-port-race",
+    "push_succeeded": true,
+    "independent_ls_remote_matched": "5152bbb74def8d0bd54d172c70bf18dfa2fed90a"
+  },
+  "cpu_receipt": "qwen-l9-l10-r3-cpu-20260927.json",
+  "retained_acceptance": {
+    "passed": true,
+    "retained_games": 784,
+    "retained_updates": 96,
+    "terminal": {
+      "pre": "d0027c26892cee8f4bff2008b72df4b8ba3d30e928814ac80f2ca3e4489879af",
+      "train2": "3f1d7dc9cec0fe712785bb8fac0eec248e3db27ca4f6531da15e88f3c7930485",
+      "post": "4e1f9dbaa3caa955ef7ec62c35d401cf839005ceeb367587e93447a776a1ce61",
+      "train96": "37951982a4996f684b1f5e2ca8e81dae60b937b69760eed96c1f959bb96ff2ef"
+    },
+    "prior_failure": {
+      "passed": true,
+      "failed_queue_sha256": "a09da000772196ec6f921ae030ff3c870cd2ca3a184f9c12e07fc85e740c92e5",
+      "gpu_preflight_id": "4ef0996c8aee36a782df0003218ae573dec3e137b3c64007e2b5989d4c8e23f1",
+      "retained_acceptance_sha256": "f9cf19d822ef78bfea8a30dfdc503cc7e1cc51566a3aaab5cda53a21209ff7a4",
+      "new_games": 0,
+      "new_updates": 0
+    },
+    "verifier_sha": "5152bbb74def8d0bd54d172c70bf18dfa2fed90a",
+    "old_failed_state_sha256": "b2cc71f6962ca568a90b1b06a5c08b90bedafa230f1b90138415b5d787d3d6bd",
+    "checked_at": 1790518284.5368874,
+    "inventory_count": 78,
+    "receipt_sha256": "c9f8fca36270b9ed81215593bbc54adcfade5012da72d7402a85c4a111c85426"
+  },
+  "admission_proofs": {
+    "arm": {
+      "passed": true,
+      "stage": "eval96",
+      "receipt_name": "arm",
+      "deadline": 1790525508.224269,
+      "checked_at": 1790518285.061059,
+      "eight_idle_gpus": true,
+      "ram_gib_min": 600,
+      "nvme_gib_min": 128,
+      "fsync": true
+    },
+    "eval96": {
+      "passed": true,
+      "stage": "eval96",
+      "receipt_name": "eval96",
+      "deadline": 1790525508.224269,
+      "checked_at": 1790518318.7291996,
+      "eight_idle_gpus": true,
+      "ram_gib_min": 600,
+      "nvme_gib_min": 128,
+      "fsync": true
+    }
+  },
+  "l9": {
+    "status": "completed",
+    "evaluation_wilson95": {
+      "wins": 3,
+      "games": 8,
+      "lower": 0.13684428582359742,
+      "upper": 0.6942576053973727,
+      "scope": "Descriptive binomial Wilson interval only; reused diagnostic seeds do not establish generalization or a paired training effect."
+    },
+    "arm": {
+      "phase": "completed",
+      "exit_code": 0,
+      "deadline": 1790525508.224269,
+      "retained_acceptance": "c9f8fca36270b9ed81215593bbc54adcfade5012da72d7402a85c4a111c85426",
+      "newly_executed": [
+        "eval96"
+      ],
+      "learning_validated": false,
+      "finished_at": 1790518739.7556505
+    },
+    "host": {
+      "version": "host-guardian-v1",
+      "phase": "completed",
+      "completed": [
+        "eval96"
+      ],
+      "deadline": 1790525508.224269,
+      "learning_validated": false,
+      "started_at": 1790518317.991524,
+      "stage": "eval96",
+      "container_id": "db89a044643fb16eef47d1e7d0fd078be7674b55747320c87893b3e415019eeb",
+      "exit_code": 0,
+      "finished_at": 1790518739.75468
+    },
+    "guardian": {
+      "version": "host-guardian-v1",
+      "container_id": "db89a044643fb16eef47d1e7d0fd078be7674b55747320c87893b3e415019eeb",
+      "owner_root": "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r3/qwen-same/long",
+      "deadline": 1790525508.224269,
+      "lease_seconds": 45,
+      "phase": "completed",
+      "started_at": 1790518318.8025048,
+      "initial_state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "0001-01-01T00:00:00Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "0001-01-01T00:00:00Z",
+        "Status": "created"
+      },
+      "final_state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-09-27T14:18:58.703609578Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-09-27T14:11:58.831849148Z",
+        "Status": "exited"
+      },
+      "finished_at": 1790518739.2531767
+    },
+    "container": {
+      "id": "db89a044643fb16eef47d1e7d0fd078be7674b55747320c87893b3e415019eeb",
+      "name": "/sc2-qwen-l9same96-197-20260927-r3-long-eval96",
+      "owner": "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r3/qwen-same/long",
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-09-27T14:11:58.831849148Z",
+        "FinishedAt": "2026-09-27T14:18:58.703609578Z"
+      }
+    },
+    "gpu_preflight": {
+      "proof": {
+        "passed": true,
+        "ranks": [
+          {
+            "rank": 0,
+            "visible_devices": "0",
+            "ray_gpu_ids": [
+              0
+            ],
+            "cuda_uuid": "40d97276-36a4-2cce-43ff-be66ca654177",
+            "master_port": 28982
+          },
+          {
+            "rank": 1,
+            "visible_devices": "1",
+            "ray_gpu_ids": [
+              1
+            ],
+            "cuda_uuid": "bea101a5-a727-20d0-2270-fb787dd6c7e0",
+            "master_port": 20031
+          },
+          {
+            "rank": 2,
+            "visible_devices": "2",
+            "ray_gpu_ids": [
+              2
+            ],
+            "cuda_uuid": "334e011d-8eb5-e72e-00a3-dcbd8aaf87e5",
+            "master_port": 20971
+          },
+          {
+            "rank": 3,
+            "visible_devices": "3",
+            "ray_gpu_ids": [
+              3
+            ],
+            "cuda_uuid": "a7707e1f-462b-7ed6-9d2c-97fe6c9acce4",
+            "master_port": 23364
+          },
+          {
+            "rank": 4,
+            "visible_devices": "4",
+            "ray_gpu_ids": [
+              4
+            ],
+            "cuda_uuid": "33ec7165-06e2-b141-97db-66711df3e176",
+            "master_port": 29185
+          },
+          {
+            "rank": 5,
+            "visible_devices": "5",
+            "ray_gpu_ids": [
+              5
+            ],
+            "cuda_uuid": "dd2c977f-d2f0-545a-dbfb-153f0a3b3c1b",
+            "master_port": 22146
+          },
+          {
+            "rank": 6,
+            "visible_devices": "6",
+            "ray_gpu_ids": [
+              6
+            ],
+            "cuda_uuid": "868e1fe3-a401-980d-e3fd-2fc4fb7d0e8f",
+            "master_port": 24460
+          },
+          {
+            "rank": 7,
+            "visible_devices": "7",
+            "ray_gpu_ids": [
+              7
+            ],
+            "cuda_uuid": "8347c82f-9c11-c3d9-37ab-016498436356",
+            "master_port": 21646
+          }
+        ],
+        "nccl_sums": [
+          28,
+          28,
+          28,
+          28,
+          28,
+          28,
+          28,
+          28
+        ],
+        "model_loaded": false,
+        "natural_games": 0,
+        "optimizer_updates": 0,
+        "runtime_environment": {
+          "resolved_config_sha256": "35f15735a89924a40da9680681d6632389abc6e2748aaa8b254b161563f6d986",
+          "env_sha256": "bd53e5f6070f49bc175c899a7fac9c93e75a890496b46aa7710c40c796012cdf",
+          "env_var_names": [
+            "PYTHONPATH",
+            "RAY_TMPDIR",
+            "SC2PATH",
+            "SC2_ACCEPTANCE_STAGE",
+            "SC2_ACCEPT_TIMEOUT",
+            "SC2_AI_BUILD",
+            "SC2_ATTACK_ENGAGED_RETARGET_IDLE_ONLY",
+            "SC2_ATTACK_OPTION_ACCOUNT_ISSUED",
+            "SC2_ATTACK_ORDER_POSITION",
+            "SC2_ATTACK_TARGET_UNITS_FIRST",
+            "SC2_AUTO_TRAIN_MARINES",
+            "SC2_BO_ADDRESS",
+            "SC2_CLARIFY_BO_QUOTA",
+            "SC2_COMBAT_REWARD_SCALE",
+            "SC2_COMMAND_TRACE_DIR",
+            "SC2_DIFFICULTY",
+            "SC2_ENABLE_AIR_OPTIONS",
+            "SC2_ENABLE_NEWEXEC_MICRO",
+            "SC2_ENV_SEED",
+            "SC2_EPISODE_OUTCOME_LOG",
+            "SC2_EVAL_SEEDS_LOG_PATH",
+            "SC2_EXECUTION_FAILURE_FEEDBACK",
+            "SC2_EXPECTED_DIFFICULTY",
+            "SC2_FAIL_FAST_ON_ENV_ERROR",
+            "SC2_FIRST_LLM_ATTACK_MIN_UNITS",
+            "SC2_FIXED_BO_PREFIX_LIMIT",
+            "SC2_HOOLIGAN_STRUCTURE_FOCUS",
+            "SC2_L8_RENDEZVOUS_LOW_PORT",
+            "SC2_LLM_ATTACK_MIN_UNITS",
+            "SC2_MAX_FORCED_ATTACKS",
+            "SC2_MAX_STEPS",
+            "SC2_NEWEXEC_BASIC_HOOLIGAN",
+            "SC2_NEWEXEC_DEFENSE_MICRO",
+            "SC2_NEWEXEC_FIGHT_MICRO",
+            "SC2_NEWEXEC_HOOLIGAN_ALLY_POWER_RADIUS",
+            "SC2_NEWEXEC_HOOLIGAN_BIO",
+            "SC2_NEWEXEC_HOOLIGAN_RETREAT",
+            "SC2_NEWEXEC_REQUIRE_TECH_UNIT",
+            "SC2_NEWEXEC_SPECIAL_ABILITIES",
+            "SC2_ORIGINAL_BO_SEGMENT",
+            "SC2_ORIGINAL_GAME_SEEDS",
+            "SC2_PLANNER_PROTOCOL",
+            "SC2_PLAN_BULLET_MAX",
+            "SC2_PLAN_SEGMENT_MAX",
+            "SC2_PRESERVE_VALID_BO",
+            "SC2_PRE_ACTION_TERMINAL_DRAIN_TIMEOUT",
+            "SC2_REINFORCEMENT_MIN_UNITS",
+            "SC2_REINFORCEMENT_TIMER",
+            "SC2_RESET_CONCURRENCY",
+            "SC2_RESET_RETRIES",
+            "SC2_ROLLOUT_N",
+            "SC2_RUNTIME_LOG_ROOT",
+            "SC2_SEED_PYTHON_RANDOM",
+            "SC2_STEP_SHAPING_MODE",
+            "SC2_STRATEGY_PROFILE",
+            "SC2_TERMINAL_ACK_TIMEOUT",
+            "SC2_TRAIN_SEEDS_LOG_PATH",
+            "SC2_TRAIN_SEED_PROTOCOL",
+            "TMPDIR"
+          ],
+          "overridden_env_vars": [
+            "RAY_TMPDIR",
+            "TMPDIR"
+          ],
+          "worker_process_setup_hook": "l7_followup_hook.install",
+          "stage": "eval96",
+          "required_worker_module": "refinery_order_eval"
+        }
+      },
+      "host": {
+        "version": "host-guardian-v1",
+        "phase": "completed",
+        "completed": [
+          "gpu-preflight"
+        ],
+        "deadline": 1790525508.224269,
+        "learning_validated": false,
+        "started_at": 1790518285.0623953,
+        "stage": "gpu-preflight",
+        "container_id": "4b33995b505641a4469e11eadd1041f941fbe2857c2e212e6cb57ffee452aac8",
+        "exit_code": 0,
+        "finished_at": 1790518317.9902754
+      },
+      "container": {
+        "id": "4b33995b505641a4469e11eadd1041f941fbe2857c2e212e6cb57ffee452aac8",
+        "name": "/sc2-qwen-l9same96-197-20260927-r3-long-gpu-preflight-eval96",
+        "state": {
+          "Status": "exited",
+          "Running": false,
+          "Paused": false,
+          "Restarting": false,
+          "OOMKilled": false,
+          "Dead": false,
+          "Pid": 0,
+          "ExitCode": 0,
+          "Error": "",
+          "StartedAt": "2026-09-27T14:11:25.880706677Z",
+          "FinishedAt": "2026-09-27T14:11:45.156252727Z"
+        },
+        "owner": "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r3/qwen-same/long",
+        "devices": [
+          {
+            "Driver": "",
+            "Count": -1,
+            "DeviceIDs": null,
+            "Capabilities": [
+              [
+                "gpu"
+              ]
+            ],
+            "Options": {}
+          }
+        ]
+      }
+    },
+    "manifest": {
+      "source_commit": "1c6cf60b111570ef13f9817d0b1b16fb774546f5",
+      "dirty": false,
+      "formal": true,
+      "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+      "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "model_manifest_sha256": "c82106ca091f4797af1217cca7578618bb2a5cd7c4136ca0d2d06c0a77ed00a7",
+      "metrics_precision": "binary64-v1",
+      "mode": "evaluation",
+      "world_size": 8,
+      "gpu_selection": "0,1,2,3,4,5,6,7",
+      "container_image_id": "sha256:1a497d5721f89bb2e98c0273c4b1495f8fdc6921d589650d090871c11b8d1649",
+      "versions": {
+        "torch": "2.7.1+cu128",
+        "transformers": "4.55.2",
+        "ray": "2.48.0",
+        "gymnasium": "1.2.3",
+        "flash-attn": "2.6.3",
+        "flash-linear-attention": "0.4.0",
+        "moba": "1.0.0"
+      },
+      "resume_from_path": "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r3/qwen-same/long/runs/train96/checkpoints/global_step_96"
+    },
+    "load": {
+      "checkpoint": "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r3/qwen-same/long/runs/train96/checkpoints/global_step_96",
+      "loaded_global_step": 96,
+      "checkpoint_load_returned": true,
+      "val_only": true,
+      "optimizer_updates": 0,
+      "feedback": "0",
+      "temperature": 0.8,
+      "do_sample": true,
+      "games": 8,
+      "game_seeds": [
+        605183188,
+        1075501356,
+        2084414326,
+        2203880230,
+        3000371298,
+        949752300,
+        3225036469,
+        2823708076
+      ],
+      "answers": "online SpB; no replay or replacement",
+      "optimizer_loaded_by_existing_loader_but_not_updated": true
+    },
+    "result": {
+      "status": "completed",
+      "ended_at": "2026-09-27T14:18:58.683346+00:00",
+      "mode": "evaluation",
+      "process_exit_code": 0,
+      "training_updates": 0,
+      "metrics": {
+        "val/text/test_score": -21.74062490463257,
+        "val/text/tool_call_count/mean": 0,
+        "val/success_rate": 0.375,
+        "val/sc2_attack_ct": 2,
+        "val/sc2_action_valid": 1,
+        "val/sc2_semantic_action_valid": 1,
+        "val/sc2_semantic_action_evaluable": 1,
+        "val/sc2_projection_action_valid": 1,
+        "val/sc2_executor_action_valid": 1,
+        "val/sc2/episode_count": 8,
+        "val/sc2/no_policy_episode_count": 0,
+        "val/sc2/policy_decision_count": 145
+      },
+      "metrics_finite": true,
+      "response_record_count": 208,
+      "metrics_precision": "binary64-v1",
+      "evaluable_action_count": 145,
+      "valid_evaluable_action_count": 145,
+      "replays": {
+        "sc2-logs/game-7132/default_player/Flat128_CheatMoney_Air/Qwen3-30B/2026-09-27_07-13-38/replay.SC2Replay": "75d468cd7ae5afd389928e4005a4b439e2483144549de2edc486eb36796ac656",
+        "sc2-logs/game-7162/default_player/Flat128_CheatMoney_Air/Qwen3-30B/2026-09-27_07-13-45/replay.SC2Replay": "41491fb1a9df99191703cc69e7a5bc9f5f976a6895291fefe07c1dc6de7251b5",
+        "sc2-logs/game-7192/default_player/Flat128_CheatMoney_Air/Qwen3-30B/2026-09-27_07-13-51/replay.SC2Replay": "458da010dc65c59ea70d146e8264c05d3fe798840d716edb57f57d810fec1a74",
+        "sc2-logs/game-7222/default_player/Flat128_CheatMoney_Air/Qwen3-30B/2026-09-27_07-13-58/replay.SC2Replay": "757dd4b0c0d2f9e5666a5ed710e2f6ab96e88cc5e6730b48bfb00bff297f69fd",
+        "sc2-logs/game-7252/default_player/Flat128_CheatMoney_Air/Qwen3-30B/2026-09-27_07-14-05/replay.SC2Replay": "bc4bbd9f03245f757a39a7d0f0dfe674b6b363ee75a3d2a232310d81255e6b49",
+        "sc2-logs/game-7282/default_player/Flat128_CheatMoney_Air/Qwen3-30B/2026-09-27_07-14-11/replay.SC2Replay": "9cc048df0268f5938dcdf53d9360be41e23ea763f2b18095d4aaa9e7465b08ad",
+        "sc2-logs/game-7312/default_player/Flat128_CheatMoney_Air/Qwen3-30B/2026-09-27_07-14-18/replay.SC2Replay": "df11c3228b9305ca1cb534e1254492fb11dc2e99a23a17b19bec1e33d8541a35",
+        "sc2-logs/game-7342/default_player/Flat128_CheatMoney_Air/Qwen3-30B/2026-09-27_07-14-24/replay.SC2Replay": "965a689ae20a5b88792086f993b54cca4a09674a4104f720d7fef2f6e50e0a28"
+      },
+      "console_sha256": "4bafd310887eaac7a87b423c14d1ce2c669907b5974c3fcc61d032c981348e7d",
+      "episode_outcomes": {
+        "trajectories": 8,
+        "natural_games": 8,
+        "wins": 3,
+        "defeats": 5,
+        "ties": 0,
+        "truncated": 0,
+        "natural_win_rate": 0.375,
+        "outcomes": [
+          {
+            "reset_index": 0,
+            "env_index": 0,
+            "decision_count": 14,
+            "step_index": 13,
+            "policy_decision_count": 14,
+            "terminated": true,
+            "truncated": false,
+            "game_result": "Defeat",
+            "termination_reason": "game_result",
+            "outcome_reward": -50
+          },
+          {
+            "reset_index": 0,
+            "env_index": 7,
+            "decision_count": 14,
+            "step_index": 13,
+            "policy_decision_count": 14,
+            "terminated": true,
+            "truncated": false,
+            "game_result": "Victory",
+            "termination_reason": "game_result",
+            "outcome_reward": 20
+          },
+          {
+            "reset_index": 0,
+            "env_index": 1,
+            "decision_count": 16,
+            "step_index": 15,
+            "policy_decision_count": 16,
+            "terminated": true,
+            "truncated": false,
+            "game_result": "Defeat",
+            "termination_reason": "game_result",
+            "outcome_reward": -50
+          },
+          {
+            "reset_index": 0,
+            "env_index": 5,
+            "decision_count": 16,
+            "step_index": 15,
+            "policy_decision_count": 16,
+            "terminated": true,
+            "truncated": false,
+            "game_result": "Defeat",
+            "termination_reason": "game_result",
+            "outcome_reward": -50
+          },
+          {
+            "reset_index": 0,
+            "env_index": 3,
+            "decision_count": 17,
+            "step_index": 16,
+            "policy_decision_count": 17,
+            "terminated": true,
+            "truncated": false,
+            "game_result": "Victory",
+            "termination_reason": "game_result",
+            "outcome_reward": 20
+          },
+          {
+            "reset_index": 0,
+            "env_index": 4,
+            "decision_count": 20,
+            "step_index": 19,
+            "policy_decision_count": 20,
+            "terminated": true,
+            "truncated": false,
+            "game_result": "Victory",
+            "termination_reason": "game_result",
+            "outcome_reward": 20
+          },
+          {
+            "reset_index": 0,
+            "env_index": 2,
+            "decision_count": 22,
+            "step_index": 21,
+            "policy_decision_count": 22,
+            "terminated": true,
+            "truncated": false,
+            "game_result": "Defeat",
+            "termination_reason": "game_result",
+            "outcome_reward": -50
+          },
+          {
+            "reset_index": 0,
+            "env_index": 6,
+            "decision_count": 26,
+            "step_index": 25,
+            "policy_decision_count": 26,
+            "terminated": true,
+            "truncated": false,
+            "game_result": "Defeat",
+            "termination_reason": "game_result",
+            "outcome_reward": -50
+          }
+        ]
+      },
+      "natural_match_completed": true,
+      "termination_evidence": "game_result"
+    },
+    "result_equals_done": true,
+    "result_equals_acceptance": true,
+    "acceptance_checked_at": 1790518739.525728,
+    "acceptance_evidence": {
+      "consumed_answers": 145,
+      "valid_consumed_answers": 145,
+      "parsed_plans": 145,
+      "validated_queue_entries": 612,
+      "validated_locally_queued_commands": 379,
+      "execution_scope": "local Depot/Marine commands, not production completion or causal wins"
+    },
+    "rng_pairing": [
+      {
+        "rank": 0,
+        "matched": true,
+        "current_sha256": "1065485028cf208ece809ba552704448a7517097b2cf615d4cf8864a3e07ba04",
+        "parent_sha256": "8e871792661c8e76716df2ddf6e15b76f6308e3c8829eba7d71afc1c95fd3bc8"
+      },
+      {
+        "rank": 1,
+        "matched": true,
+        "current_sha256": "72f5400deb30cf2b5400809cdfcc73e3458377f0fca346cf997eabcab2b64ceb",
+        "parent_sha256": "bf580b9900cbfb13d2f60f88cb977e35a88ddd73d7c7f44b940f6b79a2b83a71"
+      },
+      {
+        "rank": 2,
+        "matched": true,
+        "current_sha256": "7e9dfeb8cf255f9bb336ca6d731c10a965092e36899bdf3ab33960148906e53c",
+        "parent_sha256": "5be7fd66047c39ce6c4099d2b17f0aeeb41ccd95ff04d375da82ae40de9e0085"
+      },
+      {
+        "rank": 3,
+        "matched": true,
+        "current_sha256": "6190b1b7ce642dbdff7ae32b90476e110d3c3dfcd4d13a5b42c0ae84f2e8656e",
+        "parent_sha256": "2a9c0f1193edbb80b55baa8d37a9d0b38e5513afacea72d828a546dead94d24b"
+      },
+      {
+        "rank": 4,
+        "matched": true,
+        "current_sha256": "db17c8d992e9e73c9ff7919fde57a6fb3b11ad8fdcaf4bdc32f1dd4ccfe08734",
+        "parent_sha256": "56abc500f195bb974d67c5913a377a399cb1c56e53d355e3827fb72cc0aef9c3"
+      },
+      {
+        "rank": 5,
+        "matched": true,
+        "current_sha256": "ec9b6dd93863e2cfa36daebccd5c0cd6f157d0af810567b4a6bce5b501358583",
+        "parent_sha256": "c3bb284e495fe4ca953cfe2d61c22d35356a75f341936d976d8065d4cf615380"
+      },
+      {
+        "rank": 6,
+        "matched": true,
+        "current_sha256": "6d142a0226156177b291d096b7b78ed4624800fe278d1ef927b570ce114679e9",
+        "parent_sha256": "ed3aa549e180e7a8418cf3202cdb50baf0e18bcdf29260a5d02810e8b2b7e027"
+      },
+      {
+        "rank": 7,
+        "matched": true,
+        "current_sha256": "7e0fe22442b363200257d8a6227b7af1f103b07492b935888a16594cff75f842",
+        "parent_sha256": "34bec9a1e71c7c262b62d82adceb1138c69b9efb879a3689a81907deaceef35c"
+      }
+    ],
+    "interpretation": "Technical execution/acceptance complete, not a demonstrated learning improvement. Only eight reused diagnostic evaluation seeds; historical failed r1/r2 states remain unchanged. Generic replay-folder Qwen3-30B and loader SpB strings are legacy labels, not the authoritative model identity."
+  },
+  "l10": {
+    "status": "running-unverified",
+    "current_stage": "pre",
+    "current_stage_training_updates": 0,
+    "returned_ppo_claimed": false,
+    "dispatch": {
+      "start": 1790518740.3084953,
+      "deadline": 1790561940.3084953,
+      "suite_deadline": 1790568708.224269,
+      "gpu_hours": 96,
+      "clock_inherited": false,
+      "new_games": 792,
+      "new_updates": 96,
+      "resumed_at": 1790518740.3085077
+    },
+    "host": {
+      "version": "host-guardian-v1",
+      "phase": "running-unverified",
+      "completed": [],
+      "deadline": 1790561940.3084953,
+      "learning_validated": false,
+      "started_at": 1790518773.3676074,
+      "stage": "pre",
+      "container_id": "81f569504ced33a87902f6a5a455f27060690404f4fc90be6cdc8709bb88446b"
+    },
+    "gpu_preflight_host": {
+      "version": "host-guardian-v1",
+      "phase": "completed",
+      "completed": [
+        "gpu-preflight"
+      ],
+      "deadline": 1790561940.3084953,
+      "learning_validated": false,
+      "started_at": 1790518740.3095372,
+      "stage": "gpu-preflight",
+      "container_id": "e7af4072b905f1f66d8c251fb7b8d8f13285be4d159b8953e9bbaecbfdceb129",
+      "exit_code": 0,
+      "finished_at": 1790518773.3660412
+    },
+    "containers": [
+      {
+        "id": "81f569504ced33a87902f6a5a455f27060690404f4fc90be6cdc8709bb88446b",
+        "name": "/sc2-qwen-l10same96-197-20260927-r3-short-pre",
+        "owner": "/var/jfsCache/sc2-qwen-l10same96-197-20260927-r3/qwen-same/short",
+        "state": {
+          "Status": "running",
+          "Running": true,
+          "Paused": false,
+          "Restarting": false,
+          "OOMKilled": false,
+          "Dead": false,
+          "Pid": 376900,
+          "ExitCode": 0,
+          "Error": "",
+          "StartedAt": "2026-09-27T14:19:34.213275013Z",
+          "FinishedAt": "0001-01-01T00:00:00Z"
+        }
+      },
+      {
+        "id": "e7af4072b905f1f66d8c251fb7b8d8f13285be4d159b8953e9bbaecbfdceb129",
+        "name": "/sc2-qwen-l10same96-197-20260927-r3-short-gpu-preflight-train2",
+        "owner": "/var/jfsCache/sc2-qwen-l10same96-197-20260927-r3/qwen-same/short",
+        "state": {
+          "Status": "exited",
+          "Running": false,
+          "Paused": false,
+          "Restarting": false,
+          "OOMKilled": false,
+          "Dead": false,
+          "Pid": 0,
+          "ExitCode": 0,
+          "Error": "",
+          "StartedAt": "2026-09-27T14:19:01.188696686Z",
+          "FinishedAt": "2026-09-27T14:19:19.705336061Z"
+        }
+      }
+    ],
+    "approved_protocol": {
+      "initial_model": "original Qwen3-4B-Instruct-2507",
+      "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "difficulty": "CheatInsane",
+      "seed_protocol": "same_uniform101: private Random(0), one scene seed per step copied to eight games",
+      "training_games": 768,
+      "evaluation_games": 24,
+      "ppo_updates": 96,
+      "checkpoints": [
+        2,
+        32,
+        64,
+        96
+      ]
+    },
+    "next": "pre8 acceptance -> fresh train2 -> ownCP2 post8 -> native CP2 train3..96 -> ownCP96 eval8; fail closed",
+    "deadline_beijing": "2026-09-28T10:19:00.308495+08:00",
+    "deadline_is_hard_cap_not_eta": true
+  },
+  "queue": {
+    "phase": "running-unverified",
+    "completed": [
+      "L9/qwen-same/long"
+    ],
+    "retained_games": 784,
+    "retained_updates": 96,
+    "new_games": 800,
+    "new_updates": 96,
+    "deadline": 1790568708.224269,
+    "level": 10,
+    "arm_deadline": 1790561940.3084953,
+    "part": "qwen-same/short"
+  },
+  "budgets": {
+    "arm_gpu_hours": 96,
+    "suite_gpu_hours": 192,
+    "arm_storage_bytes": 274877906944,
+    "suite_storage_bytes": 549755813888,
+    "l9_original_start": 1790482308.224269,
+    "l9_original_deadline": 1790525508.224269,
+    "suite_original_deadline": 1790568708.224269,
+    "l10_dispatch_start": 1790518740.3084953,
+    "l10_deadline": 1790561940.3084953,
+    "teardown_seconds": 45
+  },
+  "storage": {
+    "command": [
+      "du",
+      "-sb",
+      "--null",
+      "--",
+      "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r1",
+      "/var/jfsCache/sc2-qwen-l10same96-197-20260927-r1",
+      "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r2",
+      "/var/jfsCache/sc2-qwen-l10same96-197-20260927-r2",
+      "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r3",
+      "/var/jfsCache/sc2-qwen-l10same96-197-20260927-r3",
+      "/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r1",
+      "/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r2",
+      "/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r3"
+    ],
+    "roots": [
+      "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r1",
+      "/var/jfsCache/sc2-qwen-l10same96-197-20260927-r1",
+      "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r2",
+      "/var/jfsCache/sc2-qwen-l10same96-197-20260927-r2",
+      "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r3",
+      "/var/jfsCache/sc2-qwen-l10same96-197-20260927-r3",
+      "/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r1",
+      "/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r2",
+      "/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r3"
+    ],
+    "started_at": 1790518806.1865413,
+    "deadline": 1790561940.3084953,
+    "limit": 549755813888,
+    "bytes": 202044805211,
+    "returncode": 0,
+    "status": "measured",
+    "stderr": {
+      "tail": "",
+      "characters": 0,
+      "truncated": false
+    },
+    "measured_at": 1790518806.3569145,
+    "root_bytes": {
+      "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r1": 201913182001,
+      "/var/jfsCache/sc2-qwen-l10same96-197-20260927-r1": 25117991,
+      "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r2": 764161,
+      "/var/jfsCache/sc2-qwen-l10same96-197-20260927-r2": 689515,
+      "/var/jfsCache/sc2-qwen-l9same96-197-20260927-r3": 28923429,
+      "/var/jfsCache/sc2-qwen-l10same96-197-20260927-r3": 1796877,
+      "/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r1": 24621332,
+      "/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r2": 24835520,
+      "/var/jfsCache/sc2-qwen-l9l10same96-197-source-20260927-r3": 24874385
+    },
+    "checked_at": 1790518806.3922553
+  },
+  "actions": {
+    "prepared_new_r3_once": true,
+    "enqueued_new_r3_once": true,
+    "repeated_l9_training": false,
+    "deleted_artifacts": false,
+    "changed_old_frozen_state": false,
+    "expanded_budget": false,
+    "automatic_retry": false
+  },
+  "evidence_scope": "Small JSON terminal/acceptance/load/RNG/state plus exact-container inspection and bounded log tails; no full log reread or large checkpoint payload read during status monitoring."
+}

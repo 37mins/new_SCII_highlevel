@@ -1,0 +1,199 @@
+{
+  "checked_at": 1790608246.160395,
+  "preparation": {
+    "status": "passed",
+    "runtime_sha": "f7497ab5a1876a5e899f3e620758850c996212d6",
+    "started_at": 1790608072.4518762,
+    "jobs": [
+      {
+        "label": "host-regressions",
+        "started_at": 1790608072.4518821,
+        "exit_code": 0,
+        "finished_at": 1790608073.3165438
+      },
+      {
+        "label": "model-regressions",
+        "started_at": 1790608073.4264119,
+        "exit_code": 0,
+        "finished_at": 1790608089.1585274,
+        "container_name": "sc2-spb-l8random96-197-20260928-r1-short-regressions",
+        "container_id": "5d25f5f425c7a1cea632d0f0c8e3d4da3541329a97cb2471c077e4d429de00e2",
+        "state": "exited",
+        "oom": false,
+        "device_requests": null
+      },
+      {
+        "label": "short-configs",
+        "started_at": 1790608089.2815547,
+        "exit_code": 0,
+        "finished_at": 1790608095.6028578,
+        "container_name": "sc2-spb-l8random96-197-20260928-r1-short-cpu",
+        "container_id": "a2bccdd4b1bbaad2f400a40a37e3807a6d3757dda45ab793d686630d66cff6bc",
+        "state": "exited",
+        "oom": false,
+        "device_requests": null
+      },
+      {
+        "label": "long-configs",
+        "started_at": 1790608095.7267375,
+        "exit_code": 0,
+        "finished_at": 1790608101.5475204,
+        "container_name": "sc2-spb-l8random96-197-20260928-r1-long-cpu",
+        "container_id": "e4d969f513a8922c0eeb93559b22409872f0abae3194d03750d8afc50d5c1a60",
+        "state": "exited",
+        "oom": false,
+        "device_requests": null
+      },
+      {
+        "label": "primary-configs",
+        "started_at": 1790608101.6587815,
+        "exit_code": 0,
+        "finished_at": 1790608113.586689,
+        "container_name": "sc2-spb-l8random-paired128-197-20260928-r1-cpu",
+        "container_id": "0e3b96dafb9bf21ce8c1fea59590579992755d022609769b5f1b527d9978d1fe",
+        "state": "exited",
+        "oom": false,
+        "device_requests": null
+      },
+      {
+        "label": "selection-configs",
+        "started_at": 1790608113.6993403,
+        "exit_code": 0,
+        "finished_at": 1790608125.728036,
+        "container_name": "sc2-spb-l8random96-197-20260928-r1-select-cpu",
+        "container_id": "08c47e1c5af7ff99fb8d4e0daff893e762694500a2af28e088da1c268cc5b7a4",
+        "state": "exited",
+        "oom": false,
+        "device_requests": null
+      },
+      {
+        "label": "train-hook-pre",
+        "started_at": 1790608125.8523018,
+        "exit_code": 0,
+        "finished_at": 1790608136.2284455,
+        "container_name": "sc2-spb-l8random96-197-20260928-r1-short-cpu-hook-pre",
+        "container_id": "aeb62a1207153a0edef1a2bae7c3c4675d0e871dee42f9717c726e9096e5d394",
+        "state": "exited",
+        "oom": false,
+        "device_requests": null
+      },
+      {
+        "label": "train-hook-train2",
+        "started_at": 1790608136.3521242,
+        "exit_code": 0,
+        "finished_at": 1790608146.92855,
+        "container_name": "sc2-spb-l8random96-197-20260928-r1-short-cpu-hook-train2",
+        "container_id": "23dc4a3437fe33ab807982de1ff8be602fe198a19ffe05ffe68a40411a679879",
+        "state": "exited",
+        "oom": false,
+        "device_requests": null
+      },
+      {
+        "label": "train-hook-train96",
+        "started_at": 1790608147.0564747,
+        "exit_code": 0,
+        "finished_at": 1790608157.5829852,
+        "container_name": "sc2-spb-l8random96-197-20260928-r1-long-cpu-hook-train96",
+        "container_id": "f987f4cfc31155c6ed4bb35a1770e3a66fb707f711e6580c0a188c37b5a2480c",
+        "state": "exited",
+        "oom": false,
+        "device_requests": null
+      },
+      {
+        "label": "primary-hook-b00-original",
+        "started_at": 1790608157.6957593,
+        "exit_code": 0,
+        "finished_at": 1790608168.1224318,
+        "container_name": "sc2-spb-l8random-paired128-197-20260928-r1-cpu-hook-b00-original",
+        "container_id": "2304275dd84e6432b65a62d148727dddb610635dd664f3c9c0ac0990d4c4c1f9",
+        "state": "exited",
+        "oom": false,
+        "device_requests": null
+      },
+      {
+        "label": "primary-hook-b00-random96",
+        "started_at": 1790608168.234261,
+        "exit_code": 0,
+        "finished_at": 1790608178.3605256,
+        "container_name": "sc2-spb-l8random-paired128-197-20260928-r1-cpu-hook-b00-random96",
+        "container_id": "36129719695c490093f29f14297cb73b2ea19bd3a4aae96987614bc7001b2362",
+        "state": "exited",
+        "oom": false,
+        "device_requests": null
+      },
+      {
+        "label": "selection-hook-b00-cp2",
+        "started_at": 1790608178.473027,
+        "exit_code": 0,
+        "finished_at": 1790608188.9994376,
+        "container_name": "sc2-spb-l8random96-197-20260928-r1-select-cpu-hook-b00-cp2",
+        "container_id": "eb8517e34ef1ec4d16de7ba0620d9e0cdd66c51e45f63a286a59884a6f617b47",
+        "state": "exited",
+        "oom": false,
+        "device_requests": null
+      },
+      {
+        "label": "selection-hook-b00-cp32",
+        "started_at": 1790608189.1113608,
+        "exit_code": 0,
+        "finished_at": 1790608199.4874167,
+        "container_name": "sc2-spb-l8random96-197-20260928-r1-select-cpu-hook-b00-cp32",
+        "container_id": "26af5912c161f4e99c07d94cd95056b460e8a934d7f03e9b57040990c63f872c",
+        "state": "exited",
+        "oom": false,
+        "device_requests": null
+      },
+      {
+        "label": "selection-hook-b00-cp64",
+        "started_at": 1790608199.5997152,
+        "exit_code": 0,
+        "finished_at": 1790608209.8757076,
+        "container_name": "sc2-spb-l8random96-197-20260928-r1-select-cpu-hook-b00-cp64",
+        "container_id": "ba55b94011b517d582b5f1e194b74a88750e0b5505ff0bf7b2dd105f3fb86451",
+        "state": "exited",
+        "oom": false,
+        "device_requests": null
+      },
+      {
+        "label": "selection-hook-b00-cp96",
+        "started_at": 1790608209.9879382,
+        "exit_code": 0,
+        "finished_at": 1790608220.2137432,
+        "container_name": "sc2-spb-l8random96-197-20260928-r1-select-cpu-hook-b00-cp96",
+        "container_id": "cfcef42ffa486670c895699821173942e17fa22600b1db9f2b05c86befb940c6",
+        "state": "exited",
+        "oom": false,
+        "device_requests": null
+      }
+    ],
+    "no_gpu": true,
+    "finished_at": 1790608220.3127506
+  },
+  "kind": "SpB L8 random96 one-shot server CPU admission",
+  "local_regressions": {
+    "passed": 143,
+    "skipped": 0
+  },
+  "server_regressions": {
+    "model": {
+      "passed": true,
+      "tests": 195,
+      "skips": 0,
+      "cuda_initialized": false
+    },
+    "host": {
+      "passed": true,
+      "tests": 71,
+      "skips": 0,
+      "cuda_initialized": false
+    }
+  },
+  "configs": {
+    "training_stages": 5,
+    "primary_stages": 16,
+    "selection_stages": 16,
+    "worker_hooks": 9
+  },
+  "long_parent_gate": "Deferred until own new full native CP2 exists and all short phases pass; not a failure or permission to skip",
+  "source_bundle_sha256": "eb91fe9f701f05b2c9c3e4474eee081213bcc8c820ff3cb315c1a41043cf0504"
+}

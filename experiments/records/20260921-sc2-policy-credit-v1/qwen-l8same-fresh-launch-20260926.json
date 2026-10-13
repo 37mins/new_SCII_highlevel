@@ -1,0 +1,613 @@
+{
+  "deployment.json": {
+    "runtime_sha": "eef0f049bb09b7a51188ae67a6c35436a3bf055f",
+    "controller_sha": "eef0f049bb09b7a51188ae67a6c35436a3bf055f",
+    "controller_source": "/var/jfsCache/sc2-qwen-l8same96-197-source-20260926-r1/code",
+    "parts": [
+      "qwen-same/short",
+      "qwen-same/long"
+    ],
+    "first_dispatch_by": 1790372023.0080545,
+    "wall_seconds": 172800,
+    "gpu_hours": 384,
+    "output_limit_bytes": 1099511627776,
+    "storage_roots": [
+      "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r1",
+      "/var/jfsCache/sc2-qwen-l8same96-197-source-20260926-r1"
+    ],
+    "new_games": 792,
+    "new_updates": 96,
+    "original_weights": true,
+    "difficulty": "CheatVision",
+    "train_admission_free_gib": 1084,
+    "evaluation_admission_free_gib": 128
+  },
+  "dispatch.json": {
+    "start": 1790358122.7417548,
+    "deadline": 1790530922.7417548,
+    "gpu_hours": 384,
+    "new_games": 792,
+    "new_updates": 96,
+    "includes_gpu_preflight": true
+  },
+  "queue-state.json": {
+    "phase": "running-unverified",
+    "completed": [],
+    "new_games": 792,
+    "new_updates": 96,
+    "deadline": 1790530922.7417548,
+    "part": "qwen-same/short"
+  },
+  "storage-state.json": {
+    "command": [
+      "du",
+      "-sb",
+      "--null",
+      "--",
+      "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r1",
+      "/var/jfsCache/sc2-qwen-l8same96-197-source-20260926-r1"
+    ],
+    "roots": [
+      "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r1",
+      "/var/jfsCache/sc2-qwen-l8same96-197-source-20260926-r1"
+    ],
+    "started_at": 1790358245.8188753,
+    "deadline": 1790530922.7417548,
+    "limit": 1099511627776,
+    "bytes": 50384164,
+    "returncode": 0,
+    "status": "measured",
+    "stdout": {
+      "tail": "26427533\t/var/jfsCache/sc2-qwen-l8same96-197-20260926-r1\u000023956631\t/var/jfsCache/sc2-qwen-l8same96-197-source-20260926-r1\u0000",
+      "characters": 121,
+      "truncated": false
+    },
+    "stderr": {
+      "tail": "",
+      "characters": 0,
+      "truncated": false
+    },
+    "quiescence": {
+      "version": "host-guardian-v1",
+      "container_id": "12382dde8901da405f082342eed2cccacbc6dd570fa14e82818c030b5575cd24",
+      "owner_root": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r1/qwen-same/short",
+      "guardian_pid": 3252283,
+      "paused_verified": true,
+      "cleanup": "verified-unpaused",
+      "paused_at": 1790358245.8685234,
+      "mode": "paused",
+      "resumed_at": 1790358245.911792
+    },
+    "measured_at": 1790358245.8768153,
+    "root_bytes": {
+      "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r1": 26427533,
+      "/var/jfsCache/sc2-qwen-l8same96-197-source-20260926-r1": 23956631
+    },
+    "checked_at": 1790358245.9119356
+  },
+  "host-regressions.json": {
+    "passed": true,
+    "tests": 71,
+    "skips": 0,
+    "cuda_initialized": false,
+    "host_only": true,
+    "runtime_sha": "eef0f049bb09b7a51188ae67a6c35436a3bf055f",
+    "checked_at": 1790357715.7787647
+  },
+  "qwen-same/short/regressions.json": {
+    "passed": true,
+    "tests": 319,
+    "skips": 0,
+    "cuda_initialized": false,
+    "host_only": false,
+    "runtime_sha": "eef0f049bb09b7a51188ae67a6c35436a3bf055f",
+    "checked_at": 1790357744.5423853,
+    "l8_fresh_tests": 58
+  },
+  "qwen-same/short/gpu-preflight-supervision/state.json": {
+    "version": "host-guardian-v1",
+    "phase": "completed",
+    "completed": [
+      "gpu-preflight"
+    ],
+    "deadline": 1790530922.7417548,
+    "learning_validated": false,
+    "started_at": 1790358122.7425475,
+    "stage": "gpu-preflight",
+    "container_id": "385119abba85cafc7cc41b2e89b552c08db97de36b60bf9a526118919dcde3ae",
+    "exit_code": 0,
+    "finished_at": 1790358154.1040473
+  },
+  "qwen-same/short/gpu-preflight-supervision/gpu-preflight-guardian.json": {
+    "version": "host-guardian-v1",
+    "container_id": "385119abba85cafc7cc41b2e89b552c08db97de36b60bf9a526118919dcde3ae",
+    "owner_root": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r1/qwen-same/short",
+    "deadline": 1790530922.7417548,
+    "lease_seconds": 45,
+    "phase": "completed",
+    "events": [
+      {
+        "op": "start",
+        "at": 1790358123.8212404
+      },
+      {
+        "op": "pulse",
+        "at": 1790358123.8213942
+      },
+      {
+        "op": "pause",
+        "at": 1790358123.8772452,
+        "quiescence": "paused"
+      },
+      {
+        "op": "resume",
+        "at": 1790358123.914591,
+        "quiescence": "running"
+      },
+      {
+        "op": "pulse",
+        "at": 1790358123.9151938
+      },
+      {
+        "op": "pulse",
+        "at": 1790358138.930393
+      },
+      {
+        "op": "pause",
+        "at": 1790358138.9948907,
+        "quiescence": "paused"
+      },
+      {
+        "op": "resume",
+        "at": 1790358139.0365515,
+        "quiescence": "running"
+      },
+      {
+        "op": "pulse",
+        "at": 1790358139.0372195
+      },
+      {
+        "op": "pulse",
+        "at": 1790358154.0524168
+      }
+    ],
+    "pause_attempted": true,
+    "started_at": 1790358123.1553566,
+    "initial_state": {
+      "Dead": false,
+      "Error": "",
+      "ExitCode": 0,
+      "FinishedAt": "0001-01-01T00:00:00Z",
+      "OOMKilled": false,
+      "Paused": false,
+      "Pid": 0,
+      "Restarting": false,
+      "Running": false,
+      "StartedAt": "0001-01-01T00:00:00Z",
+      "Status": "created"
+    },
+    "final_state": {
+      "Dead": false,
+      "Error": "",
+      "ExitCode": 0,
+      "FinishedAt": "2026-09-25T17:42:30.733938258Z",
+      "OOMKilled": false,
+      "Paused": false,
+      "Pid": 0,
+      "Restarting": false,
+      "Running": false,
+      "StartedAt": "2026-09-25T17:42:03.184639071Z",
+      "Status": "exited"
+    },
+    "finished_at": 1790358154.0805535
+  },
+  "qwen-same/short/host-supervision/state.json": {
+    "version": "host-guardian-v1",
+    "phase": "running-unverified",
+    "completed": [],
+    "deadline": 1790530922.7417548,
+    "learning_validated": false,
+    "started_at": 1790358154.1050918,
+    "stage": "pre",
+    "container_id": "12382dde8901da405f082342eed2cccacbc6dd570fa14e82818c030b5575cd24"
+  },
+  "qwen-same/short/runs/pre/result.json": null,
+  "qwen-same/short/acceptance-pre.json": null,
+  "gpu_preflight": {
+    "passed": true,
+    "ranks": [
+      {
+        "rank": 0,
+        "visible_devices": "0",
+        "ray_gpu_ids": [
+          0
+        ],
+        "cuda_uuid": "40d97276-36a4-2cce-43ff-be66ca654177",
+        "master_port": 28009
+      },
+      {
+        "rank": 1,
+        "visible_devices": "1",
+        "ray_gpu_ids": [
+          1
+        ],
+        "cuda_uuid": "bea101a5-a727-20d0-2270-fb787dd6c7e0",
+        "master_port": 26426
+      },
+      {
+        "rank": 2,
+        "visible_devices": "2",
+        "ray_gpu_ids": [
+          2
+        ],
+        "cuda_uuid": "334e011d-8eb5-e72e-00a3-dcbd8aaf87e5",
+        "master_port": 23161
+      },
+      {
+        "rank": 3,
+        "visible_devices": "3",
+        "ray_gpu_ids": [
+          3
+        ],
+        "cuda_uuid": "a7707e1f-462b-7ed6-9d2c-97fe6c9acce4",
+        "master_port": 27408
+      },
+      {
+        "rank": 4,
+        "visible_devices": "4",
+        "ray_gpu_ids": [
+          4
+        ],
+        "cuda_uuid": "33ec7165-06e2-b141-97db-66711df3e176",
+        "master_port": 26127
+      },
+      {
+        "rank": 5,
+        "visible_devices": "5",
+        "ray_gpu_ids": [
+          5
+        ],
+        "cuda_uuid": "dd2c977f-d2f0-545a-dbfb-153f0a3b3c1b",
+        "master_port": 22665
+      },
+      {
+        "rank": 6,
+        "visible_devices": "6",
+        "ray_gpu_ids": [
+          6
+        ],
+        "cuda_uuid": "868e1fe3-a401-980d-e3fd-2fc4fb7d0e8f",
+        "master_port": 24028
+      },
+      {
+        "rank": 7,
+        "visible_devices": "7",
+        "ray_gpu_ids": [
+          7
+        ],
+        "cuda_uuid": "8347c82f-9c11-c3d9-37ab-016498436356",
+        "master_port": 24684
+      }
+    ],
+    "nccl_sums": [
+      28,
+      28,
+      28,
+      28,
+      28,
+      28,
+      28,
+      28
+    ],
+    "natural_games": 0,
+    "optimizer_updates": 0,
+    "model_loaded": false
+  },
+  "cpu_hook": {
+    "pre": {
+      "passed": true,
+      "worker": {
+        "feedback_eval_loaded": true,
+        "required_module": "refinery_order_eval",
+        "required_module_loaded": true,
+        "sc2path": "/assets/StarCraftII",
+        "cuda_visible_devices": "",
+        "cuda_initialized": false,
+        "cuda_device_count": 0
+      },
+      "model_loaded": false,
+      "natural_games": 0,
+      "optimizer_updates": 0,
+      "config_sha256": "1f3a03f34b492e4e47dcddfa66f2044c8db414a8051295ab779a3c00aad18a12"
+    },
+    "train2": {
+      "passed": true,
+      "worker": {
+        "feedback_eval_loaded": true,
+        "required_module": "refinery_order_eval",
+        "required_module_loaded": true,
+        "sc2path": "/assets/StarCraftII",
+        "cuda_visible_devices": "",
+        "cuda_initialized": false,
+        "cuda_device_count": 0
+      },
+      "model_loaded": false,
+      "natural_games": 0,
+      "optimizer_updates": 0,
+      "config_sha256": "77cd457af0cfc64f0ebe0aab690e33af5af7958e336b13cb396766bd0ac7efa6"
+    },
+    "train96": {
+      "passed": true,
+      "worker": {
+        "feedback_eval_loaded": false,
+        "required_module": "refinery_order_eval",
+        "required_module_loaded": true,
+        "sc2path": "/assets/StarCraftII",
+        "cuda_visible_devices": "",
+        "cuda_initialized": false,
+        "cuda_device_count": 0
+      },
+      "model_loaded": false,
+      "natural_games": 0,
+      "optimizer_updates": 0,
+      "config_sha256": "904f1a5477ae87bcf4ec915a250c46fb88d70a7b3ac6e4a40bea049347e2228e"
+    }
+  },
+  "small_file_sha256": {
+    "deployment.json": "6a99f3a5a44adb1c3db01ef6f070eb13349cd06c50dea9159ed75545c45a29f1",
+    "dispatch.json": "44a638f1c560f450e0fbcf9463159c6256ed898c025a0767c812baa1656729c4",
+    "queue-state.json": "d16f1ad6afd5a79b4c8dc06610b05ef488820189aef8e093bbcb2f008272147f",
+    "storage-state.json": "30e2b2fe1fce07175b58f1e08d11b3463597c2f10a7e86046be5c1ce9d0165c6",
+    "host-regressions.json": "8b296775e11d3f41f0dd053476fe0fab39234d2bba5b559e12f4d2d106419618",
+    "qwen-same/short/regressions.json": "0638e3f133cce3ef85d6d17dcb7a679bb56ed6cc8e13e6c3b17a094a3d052186",
+    "qwen-same/short/gpu-preflight-supervision/state.json": "d5d29dcaa11f417b66ef3ec0b1362fd2bbcd5858a51ee709981981072972a778",
+    "qwen-same/short/gpu-preflight-supervision/gpu-preflight-guardian.json": "d49e273a61f9bab39721311defcceccaf804ddf946bfc865c01650e8267e227c",
+    "qwen-same/short/host-supervision/state.json": "8acab8a60ed9cf39de3eaac414bf79c102631103581c7a5935d10dfebcca4a7e"
+  },
+  "pre_manifest": {
+    "source_commit": "eef0f049bb09b7a51188ae67a6c35436a3bf055f",
+    "dirty": false,
+    "world_size": 8,
+    "metrics_precision": "binary64-v1",
+    "model": null,
+    "model_path": null,
+    "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+    "container_image_id": "sha256:1a497d5721f89bb2e98c0273c4b1495f8fdc6921d589650d090871c11b8d1649"
+  },
+  "containers": {
+    "short-cpu": {
+      "id": "d8563b6c00408b80e49922b022ad4b04f6944671a110f99a31726a6639501f6c",
+      "owner": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r1/qwen-same/short",
+      "state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-09-25T17:35:21.44242262Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-09-25T17:35:15.92553638Z",
+        "Status": "exited"
+      },
+      "devices": null
+    },
+    "long-cpu": {
+      "id": "cbd218c0bd15d32f176d5db4bdcf4a1e0bbc84d673cdb00f03fef21aadae790b",
+      "owner": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r1/qwen-same/long",
+      "state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-09-25T17:35:27.014677214Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-09-25T17:35:21.768527758Z",
+        "Status": "exited"
+      },
+      "devices": null
+    },
+    "short-regressions": {
+      "id": "d606462591dd8e63c993c65b2064457dd39dea386c57f524ad8511d7c22393f2",
+      "owner": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r1/qwen-same/short",
+      "state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-09-25T17:35:45.870757228Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-09-25T17:35:27.312979625Z",
+        "Status": "exited"
+      },
+      "devices": null
+    },
+    "short-cpu-hook-pre": {
+      "id": "f2f2a48cb5a46f2a9ff09446cb1d9bf1c4a69931ef7154c8f3f77062ccd73d5e",
+      "owner": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r1/qwen-same/short",
+      "state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-09-25T17:37:14.882520743Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-09-25T17:37:05.022118183Z",
+        "Status": "exited"
+      },
+      "devices": null
+    },
+    "short-cpu-hook-train2": {
+      "id": "43e69b732a61e3cb6c19d46b98b877c114ae07ac266e51301da076406c54ecf4",
+      "owner": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r1/qwen-same/short",
+      "state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-09-25T17:37:25.462418547Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-09-25T17:37:15.173757325Z",
+        "Status": "exited"
+      },
+      "devices": null
+    },
+    "long-cpu-hook-train96": {
+      "id": "9ddd8048b5b09b1143962dcd3b8b21ee343c03332d3dde3d80a80167d193a6aa",
+      "owner": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r1/qwen-same/long",
+      "state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-09-25T17:37:35.866957464Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-09-25T17:37:25.770246727Z",
+        "Status": "exited"
+      },
+      "devices": null
+    },
+    "short-gpu-preflight-train2": {
+      "id": "385119abba85cafc7cc41b2e89b552c08db97de36b60bf9a526118919dcde3ae",
+      "owner": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r1/qwen-same/short",
+      "state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-09-25T17:42:30.733938258Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-09-25T17:42:03.184639071Z",
+        "Status": "exited"
+      },
+      "devices": [
+        {
+          "Capabilities": [
+            [
+              "gpu"
+            ]
+          ],
+          "Count": -1,
+          "DeviceIDs": null,
+          "Driver": "",
+          "Options": {}
+        }
+      ]
+    },
+    "short-pre": {
+      "id": "12382dde8901da405f082342eed2cccacbc6dd570fa14e82818c030b5575cd24",
+      "owner": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r1/qwen-same/short",
+      "state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "0001-01-01T00:00:00Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 3252338,
+        "Restarting": false,
+        "Running": true,
+        "StartedAt": "2026-09-25T17:42:34.533154444Z",
+        "Status": "running"
+      },
+      "devices": [
+        {
+          "Capabilities": [
+            [
+              "gpu"
+            ]
+          ],
+          "Count": -1,
+          "DeviceIDs": null,
+          "Driver": "",
+          "Options": {}
+        }
+      ]
+    }
+  },
+  "checked_at": 1790358251.002243,
+  "scope": {
+    "node": "sc2-a100-197",
+    "original_qwen": true,
+    "seed_mode": "same_uniform101",
+    "level": 8,
+    "historical_l8_evaluation_remaining_games_not_queued": 64,
+    "newly_returned_ppo_observed": 0,
+    "no_retry": true,
+    "no_deletion": true
+  },
+  "observations": {
+    "model_parameter_count": "4.02B",
+    "observed_console_source": "qwen-same/short/runs/pre/console.log (bounded 6500-byte tail only)",
+    "tokenizer_sha256": "a63080b4b30dc861fe1b0e420c53a241304dc81aff3d9bb315e6e33e2a1ab794",
+    "support_mask_sha256": "63a9546dd5fb39a64c6e2a2ad13f31101aacaade9bac07258d0e415480181e0d",
+    "evaluation_load": {
+      "checkpoint": null,
+      "global_step": 0,
+      "val_only": true,
+      "optimizer_updates": 0,
+      "seeds": [
+        605183188,
+        1075501356,
+        2084414326,
+        2203880230,
+        3000371298,
+        949752300,
+        3225036469,
+        2823708076
+      ]
+    },
+    "sc2_status": "Initial snapshot: Start to build game; subsequent bounded snapshot below confirms in-game actions and planner boundary",
+    "bounded_followup": {
+      "checked_at_beijing": "2026-09-26T01:45:16+08:00",
+      "source": "tail -n 65 qwen-same/short/runs/pre/console.log and queue-state.json",
+      "sc2_build_actions_observed": true,
+      "planner_boundary_game_loop": 2312,
+      "last_consumed_policy_action_id": 1,
+      "queue_phase": "running-unverified",
+      "queue_part": "qwen-same/short",
+      "completed_stages": [],
+      "ppo_return_claimed": false
+    },
+    "actual_log_difficulty": "Flat128_CheatVision_Air",
+    "bo_sha256": "304b1f4ff12fe30c5e6d5f7b8eaef8ed6823ca65afed3a3706cae10e3639c494",
+    "legacy_text_labels": "Qwen3-30B log subfolder / online SpB eval description are inherited labels, not actual model identity; manifest revision and 4.02B model authoritative"
+  },
+  "deployment_transport": {
+    "bundle_sha256": "e8b53c20b999d36541a9f2a14fb7fac806c19660d363fac7583f8ebf45cc0139",
+    "first_scp_connection_closed": true,
+    "empty_staging_verified_before_legacy_scp": true,
+    "first_queue_ssh_connection_closed": true,
+    "no_tmux_queue_dispatch_log_verified_before_successful_submission": true,
+    "duplicate_dispatch": false,
+    "source_runtime_independent_git_objects": true
+  },
+  "git": {
+    "branch": "codex/fix-sc2-startup-port-race",
+    "frozen_runtime_sha": "eef0f049bb09b7a51188ae67a6c35436a3bf055f",
+    "remote_verified_before_deployment": true
+  },
+  "tmux": {
+    "socket": "sc2_qwen_l8same96_197_20260926_r1",
+    "session": "qwen_l8same96_197_r1"
+  }
+}

@@ -1,0 +1,301 @@
+{
+  "schema": "spb-random-long-read-only-heartbeat-v1",
+  "observed_at": "2026-09-24T02:25:30.314991+08:00",
+  "read_only": true,
+  "ssh_alias": "sc2-a100-197",
+  "root": "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1",
+  "runtime_sha": "83f3530765babe048035524ddf1651291810818a",
+  "prior_transition_evidence": "spb-random-short-complete-long-start-20260924-021546.json",
+  "files": {
+    "deployment.json": {
+      "exists": true,
+      "bytes": 1177,
+      "sha256": "4fc0d11ba6f5fb2520d495c3054047badb17b0c2b65c0110ad3871114252a7f8"
+    },
+    "queue-state.json": {
+      "exists": true,
+      "bytes": 186,
+      "sha256": "7c0a259b9e0aabd9ceffaf5c930a41b82313bcd5cec803c9430937a1568f9c8a"
+    },
+    "dispatch.json": {
+      "exists": true,
+      "bytes": 128,
+      "sha256": "d24fbfb655ecc422d9fd47e4cd9fad89e19e0edecb041222a1af4a5b2d42dff7"
+    },
+    "predecessor-acceptance.json": {
+      "exists": true,
+      "bytes": 179,
+      "sha256": "b6453b8c6e448272675ea1cc199c89a3f222b5008b014996fcf820d84caf028c"
+    },
+    "storage-state.json": {
+      "exists": true,
+      "bytes": 1440,
+      "sha256": "b44735a5dcaab00fcbfb08b1b55e3075eb2e2360a3eb05eabb06eb03319064bd"
+    },
+    "storage-failure.json": {
+      "exists": false
+    },
+    "spb-random/short/host-supervision/state.json": {
+      "exists": true,
+      "bytes": 377,
+      "sha256": "a127523b1ff690b26136f2929fdd31cf3e677294d8f6e60ff3ea74db56070313"
+    },
+    "spb-random/short/state.json": {
+      "exists": true,
+      "bytes": 377,
+      "sha256": "a127523b1ff690b26136f2929fdd31cf3e677294d8f6e60ff3ea74db56070313"
+    },
+    "spb-random/long/host-supervision/state.json": {
+      "exists": true,
+      "bytes": 296,
+      "sha256": "d07d2c2e6d42da72933e2025857af4831b8430f40b9d7ac4647c3eb4555a5197"
+    },
+    "spb-random/long/state.json": {
+      "exists": false
+    },
+    "spb-random/long/dispatch.json": {
+      "exists": true,
+      "bytes": 102,
+      "sha256": "5a807b33377531186a4e18dbc7afcf3863cfaed92835d2dedd3ace152d88adf9"
+    },
+    "spb-random/long/parent-readiness.json": {
+      "exists": true,
+      "bytes": 179,
+      "sha256": "92c12a45678d52b4f0902643aac19c7da37110f4596d42352b468b83ce1c0d1d"
+    },
+    "spb-random/long/resume-contract.json": {
+      "exists": true,
+      "bytes": 2308,
+      "sha256": "37b797f181a1532f8c13c38bbf419f3e7e9169ea0727c35ce0dbf1eadafbbb7d"
+    },
+    "spb-random/long/cpu/parent-small-state.json": {
+      "exists": true,
+      "bytes": 1362,
+      "sha256": "ed8c419898d82c84e6742e1112834b1221427d9ed2322517ede7e53c36034891"
+    },
+    "spb-random/long/runs/train96/result.json": {
+      "exists": false
+    },
+    "spb-random/long/runs/train96/.done": {
+      "exists": false
+    },
+    "spb-random/long/acceptance-train96.json": {
+      "exists": false
+    },
+    "spb-random/long/runs/train96/manifest.json": {
+      "exists": true,
+      "bytes": 3046,
+      "sha256": "5422ae326074c24532d525ab7152f78a7256e3b1b5046305644b56fdc2e274d8"
+    },
+    "spb-random/long/host-supervision/train96-guardian.json": {
+      "exists": true,
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "spb-random/long/admission-train96.json": {
+      "exists": true,
+      "bytes": 180,
+      "sha256": "b5265b2f90cb98dab198c97696424a57ea31fe8f9d6772e3e46644aee6edfcaf"
+    },
+    "spb-random/long/runs/train96/evaluation_seeds.jsonl": {
+      "exists": false
+    },
+    "spb-random/long/runs/train96/training_seeds.jsonl": {
+      "exists": true,
+      "bytes": 121,
+      "sha256": "141bd8fddde053ce7c5d5ed7662ade103bc5d08a580de3a894a6a6bff649f635"
+    },
+    "spb-random/long/runs/train96/checkpoint_evaluation.json": {
+      "exists": false
+    },
+    "spb-random/long/runs/train96/checkpoints/resume_state.json": {
+      "exists": true,
+      "bytes": 289,
+      "sha256": "e860f7ca6ad5e1d66e7096a019aae751755615d1db1791f1071c34255bd51008"
+    },
+    "spb-random/long/runs/train96/episode_outcomes.jsonl": {
+      "exists": true,
+      "bytes": 1609,
+      "sha256": "59879e84e4a94f969a57b20d97af9275928109b75caf98f81309b5d3d00130d0"
+    },
+    "spb-random/long/runs/train96/checkpoints/sc2_policy_credit_audit.jsonl": {
+      "exists": false
+    }
+  },
+  "queue": {
+    "phase": "running-unverified",
+    "completed": [
+      "spb-random/short"
+    ],
+    "first_dispatch_by": 1790312320.0467553,
+    "part": "spb-random/long",
+    "deadline": 1790356959.0174987
+  },
+  "host": {
+    "version": "host-guardian-v1",
+    "phase": "running-unverified",
+    "completed": [],
+    "deadline": 1790356959.0174987,
+    "learning_validated": false,
+    "started_at": 1790187111.9027476,
+    "stage": "train96",
+    "container_id": "40d5a3f43a41fffb0eb51ea9a1c816b118cddef0b151464946d0c663fc024217"
+  },
+  "container": {
+    "returncode": 0,
+    "data": {
+      "id": "40d5a3f43a41fffb0eb51ea9a1c816b118cddef0b151464946d0c663fc024217",
+      "owner": "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/spb-random/long",
+      "state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "0001-01-01T00:00:00Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 1825200,
+        "Restarting": false,
+        "Running": true,
+        "StartedAt": "2026-09-23T18:11:52.44508979Z",
+        "Status": "running"
+      }
+    },
+    "error": ""
+  },
+  "manifest": {
+    "model_id": "Panyuqi/SpikingBrain-2.0-instruct",
+    "model_revision": "sha256:de52e8ef993afc763f9d4fb498e8d8302ef0bc13bd7dfd53c6ae5f77f43698b5",
+    "source_commit": "83f3530765babe048035524ddf1651291810818a",
+    "dirty": false,
+    "world_size": 8,
+    "metrics_precision": "binary64-v1",
+    "mode": "training",
+    "start_step": 2,
+    "target_steps": 96
+  },
+  "dispatch": {
+    "start": 1790184159.0174987,
+    "deadline": 1790356959.0174987,
+    "clock_shared_with_short": true
+  },
+  "native_parent_ready": {
+    "passed": true,
+    "actual_parent_verified": true,
+    "runtime_sha": "83f3530765babe048035524ddf1651291810818a",
+    "cuda_initialized": false,
+    "checked_at": 1790187111.022345
+  },
+  "resume": {
+    "from_checkpoint": "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/spb-random/short/runs/train2/checkpoints/global_step_2",
+    "global_step": 2,
+    "next_reset_index": 2,
+    "next_seeds": [
+      36,
+      17,
+      96,
+      12,
+      79,
+      32,
+      68,
+      90
+    ],
+    "source": "checkpoint",
+    "model_optimizer_dataloader_load_returned": true
+  },
+  "seed_batches": [
+    {
+      "base_seed": 0,
+      "reset_index": 2,
+      "seed_protocol": "independent_uniform101",
+      "seeds": [
+        36,
+        17,
+        96,
+        12,
+        79,
+        32,
+        68,
+        90
+      ]
+    }
+  ],
+  "progress": {
+    "current_global_step": 3,
+    "returned_long_ppo_observed": 0,
+    "closed_games_in_pending_batch": 7,
+    "wins_in_closed_games": 1,
+    "defeats_in_closed_games": 6,
+    "closed_games_all_natural": true,
+    "closed_env_indices": [
+      0,
+      1,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "pending_batch_not_counted_as_completed_ppo": true,
+    "audit_exists": false,
+    "result_exists": false,
+    "acceptance_exists": false,
+    "checkpoint_inventory": []
+  },
+  "storage": {
+    "roots": [
+      "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1",
+      "/var/jfsCache/sc2-spb-l7random96-197-source-20260923-r1"
+    ],
+    "bytes": 64803870541,
+    "limit": 1099511627776,
+    "deadline": 1790356959.0174987,
+    "returncode": 0,
+    "status": "measured",
+    "stderr": {
+      "tail": "",
+      "characters": 0,
+      "truncated": false
+    },
+    "checked_at": 1790187918.2975748,
+    "quiescence": {
+      "version": "host-guardian-v1",
+      "container_id": "40d5a3f43a41fffb0eb51ea9a1c816b118cddef0b151464946d0c663fc024217",
+      "owner_root": "/var/jfsCache/sc2-spb-l7random96-197-20260923-r1/spb-random/long",
+      "guardian_pid": 1825139,
+      "paused_verified": true,
+      "cleanup": "verified-unpaused",
+      "paused_at": 1790187918.1867015,
+      "mode": "paused",
+      "resumed_at": 1790187918.297442
+    },
+    "failure_exists": false
+  },
+  "bounded_log": {
+    "total_bytes": 1239213,
+    "tail_bytes": 1048576,
+    "matched_count": 35,
+    "lines": [
+      "(SC2Worker pid=2516) Combat result reward: {\"pid\": 7304, \"game_loop\": 18736, \"boundary\": \"terminal\", \"last_consumed_policy_action_id\": 10, \"killed_value\": 1825.0, \"lost_value\": 5200.0, \"scale\": 0.001, \"reward\": -3.65}",
+      "(SC2Worker pid=2519) Combat result reward: {\"pid\": 7364, \"game_loop\": 17908, \"boundary\": \"terminal\", \"last_consumed_policy_action_id\": 10, \"killed_value\": 2025.0, \"lost_value\": 5375.0, \"scale\": 0.001, \"reward\": -3.4250000000000003}",
+      "(SC2Worker pid=2505) Combat result reward: {\"pid\": 7244, \"game_loop\": 21560, \"boundary\": \"terminal\", \"last_consumed_policy_action_id\": 10, \"killed_value\": 2800.0, \"lost_value\": 7575.0, \"scale\": 0.001, \"reward\": -5.275}"
+    ],
+    "read_limit_bytes": 1048576
+  },
+  "actions": {
+    "server_mutation": false,
+    "automatic_retry_or_repair": false,
+    "duplicate_dispatch": false,
+    "large_checkpoint_read": false,
+    "gpu_diagnostics": false,
+    "monitor_changed": false
+  },
+  "notification_events": [],
+  "interpretation": "Healthy first resumed batch in progress. Seven natural completions are not an eight-game batch or a returned PPO. Prior short acceptance/native restoration notifications are not repeated. Original budget/deadline and unique monitor retained; no strategic-learning claim.",
+  "validation": {
+    "evidence_assertions_passed": true,
+    "model_tests_run": false,
+    "documentation_only": true,
+    "branch": "codex/fix-sc2-startup-port-race",
+    "base_commit": "df06c280206f5b5a95aaf8a469282442b5a4e6d1"
+  }
+}

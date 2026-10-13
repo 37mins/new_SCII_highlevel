@@ -1,0 +1,385 @@
+{
+  "schema": "sc2-l8same-partial-win-curve-v1",
+  "checked_at_beijing": "2026-09-26T12:25:33.007814+08:00",
+  "node": "sc2-a100-197",
+  "target_steps": 96,
+  "last_returned_step": 34,
+  "runtime_sha": "eef0f049bb09b7a51188ae67a6c35436a3bf055f",
+  "controller_sha": "db60d075879750cabf30a38c555d1c3aaaf104c1",
+  "queue": {
+    "phase": "running-unverified",
+    "completed": [
+      "qwen-same/short"
+    ],
+    "retained_games": 24,
+    "retained_updates": 2,
+    "new_games": 768,
+    "new_updates": 94,
+    "deadline": 1790530922.7417548,
+    "part": "qwen-same/long"
+  },
+  "host": {
+    "version": "host-guardian-v1",
+    "phase": "running-unverified",
+    "completed": [],
+    "deadline": 1790530922.7417548,
+    "learning_validated": false,
+    "started_at": 1790390273.874901,
+    "stage": "train96",
+    "container_id": "91d0dbd99c166ea114df62af0e3d07ec3aa94cf3f59f5d4a86ea43d6ff4d986b"
+  },
+  "source_files": [
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r1/qwen-same/short/runs/train2/metrics.json",
+      "bytes": 5742,
+      "sha256": "db09b2be10ce34cffed4c73cc75ab02504df66d5b937e8cf4e76df6c97ff13a8"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r1/qwen-same/short/runs/train2/episode_outcomes.jsonl",
+      "bytes": 3656,
+      "sha256": "c4ee4e70bab4b2280278b64022bffb49aece8a2a866047312fb794587b33aa37"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r1/qwen-same/short/runs/train2/training_seeds.jsonl",
+      "bytes": 228,
+      "sha256": "c7225e901aea10a4a2bfdd18f5ce95214e57d5a21c2d0960e263de06c6910283"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/long/runs/train96/episode_outcomes.jsonl",
+      "bytes": 58978,
+      "sha256": "c1535b8011c142ea34bfdcef480bd282c87c89d26add229cd47d5dedf4cd2b62"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/long/runs/train96/training_seeds.jsonl",
+      "bytes": 3779,
+      "sha256": "eec6683c5fc0bef27eb47e416719b5b47c38531cc2cfac6c9d58d9f82cb245c4"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/queue-state.json",
+      "bytes": 231,
+      "sha256": "2c2d17c48565862175c6f3bba19ce84054613632d72416a944d8492c34b7f825"
+    },
+    {
+      "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/long/host-supervision/state.json",
+      "bytes": 295,
+      "sha256": "4f9dc2138d0f4edc1072d0c6a8d5bdb33c16f611167c5751db23a780eb264781"
+    }
+  ],
+  "bounded_console": {
+    "path": "/var/jfsCache/sc2-qwen-l8same96-197-20260926-r2/qwen-same/long/runs/train96/console.log",
+    "start_byte": 9973007,
+    "end_byte": 12070159,
+    "returned_metric_rows": [
+      {
+        "step": 28,
+        "episode/success_rate": 1.0,
+        "actor/grad_norm": 0.5307429370877961,
+        "timing_s/update_actor": 23.25668504368514,
+        "timing_s/step": 180.23246004991233,
+        "episode/valid_action_ratio": 1.0,
+        "policy_credit/invalid_advantage_max": 0.0
+      },
+      {
+        "step": 29,
+        "episode/success_rate": 0.0,
+        "actor/grad_norm": 0.07071229364673469,
+        "timing_s/update_actor": 37.009015516377985,
+        "timing_s/step": 246.84953417349607,
+        "episode/valid_action_ratio": 1.0,
+        "policy_credit/invalid_advantage_max": 0.0
+      },
+      {
+        "step": 30,
+        "episode/success_rate": 0.0,
+        "actor/grad_norm": 2.2412149891257287,
+        "timing_s/update_actor": 32.53996478114277,
+        "timing_s/step": 226.67542325053364,
+        "episode/valid_action_ratio": 1.0,
+        "policy_credit/invalid_advantage_max": 0.0
+      },
+      {
+        "step": 31,
+        "episode/success_rate": 0.0,
+        "actor/grad_norm": 0.4701586845129771,
+        "timing_s/update_actor": 23.277187854982913,
+        "timing_s/step": 196.3349051112309,
+        "episode/valid_action_ratio": 1.0,
+        "policy_credit/invalid_advantage_max": 0.0
+      },
+      {
+        "step": 32,
+        "episode/success_rate": 1.0,
+        "actor/grad_norm": 0.25287965411761043,
+        "timing_s/update_actor": 23.514804084785283,
+        "timing_s/step": 181.1184392357245,
+        "episode/valid_action_ratio": 1.0,
+        "policy_credit/invalid_advantage_max": 0.0
+      },
+      {
+        "step": 33,
+        "episode/success_rate": 1.0,
+        "actor/grad_norm": 0.32694918953019886,
+        "timing_s/update_actor": 23.379129805602133,
+        "timing_s/step": 172.79064960870892,
+        "episode/valid_action_ratio": 1.0,
+        "policy_credit/invalid_advantage_max": 0.0
+      },
+      {
+        "step": 34,
+        "episode/success_rate": 0.0,
+        "actor/grad_norm": 0.45692790536962163,
+        "timing_s/update_actor": 42.01555514615029,
+        "timing_s/step": 284.94782123714685,
+        "episode/valid_action_ratio": 1.0,
+        "policy_credit/invalid_advantage_max": 0.0
+      }
+    ]
+  },
+  "rows": [
+    {
+      "step": 1,
+      "games": 8,
+      "wins": 8,
+      "seed": 49,
+      "source": "r1/train2-retained"
+    },
+    {
+      "step": 2,
+      "games": 8,
+      "wins": 0,
+      "seed": 97,
+      "source": "r1/train2-retained"
+    },
+    {
+      "step": 3,
+      "games": 8,
+      "wins": 8,
+      "seed": 53,
+      "source": "r2/train96"
+    },
+    {
+      "step": 4,
+      "games": 8,
+      "wins": 0,
+      "seed": 5,
+      "source": "r2/train96"
+    },
+    {
+      "step": 5,
+      "games": 8,
+      "wins": 0,
+      "seed": 33,
+      "source": "r2/train96"
+    },
+    {
+      "step": 6,
+      "games": 8,
+      "wins": 5,
+      "seed": 65,
+      "source": "r2/train96"
+    },
+    {
+      "step": 7,
+      "games": 8,
+      "wins": 8,
+      "seed": 62,
+      "source": "r2/train96"
+    },
+    {
+      "step": 8,
+      "games": 8,
+      "wins": 8,
+      "seed": 51,
+      "source": "r2/train96"
+    },
+    {
+      "step": 9,
+      "games": 8,
+      "wins": 8,
+      "seed": 100,
+      "source": "r2/train96"
+    },
+    {
+      "step": 10,
+      "games": 8,
+      "wins": 8,
+      "seed": 38,
+      "source": "r2/train96"
+    },
+    {
+      "step": 11,
+      "games": 8,
+      "wins": 0,
+      "seed": 61,
+      "source": "r2/train96"
+    },
+    {
+      "step": 12,
+      "games": 8,
+      "wins": 8,
+      "seed": 45,
+      "source": "r2/train96"
+    },
+    {
+      "step": 13,
+      "games": 8,
+      "wins": 8,
+      "seed": 74,
+      "source": "r2/train96"
+    },
+    {
+      "step": 14,
+      "games": 8,
+      "wins": 8,
+      "seed": 27,
+      "source": "r2/train96"
+    },
+    {
+      "step": 15,
+      "games": 8,
+      "wins": 0,
+      "seed": 64,
+      "source": "r2/train96"
+    },
+    {
+      "step": 16,
+      "games": 8,
+      "wins": 8,
+      "seed": 17,
+      "source": "r2/train96"
+    },
+    {
+      "step": 17,
+      "games": 8,
+      "wins": 8,
+      "seed": 36,
+      "source": "r2/train96"
+    },
+    {
+      "step": 18,
+      "games": 8,
+      "wins": 8,
+      "seed": 17,
+      "source": "r2/train96"
+    },
+    {
+      "step": 19,
+      "games": 8,
+      "wins": 0,
+      "seed": 96,
+      "source": "r2/train96"
+    },
+    {
+      "step": 20,
+      "games": 8,
+      "wins": 6,
+      "seed": 12,
+      "source": "r2/train96"
+    },
+    {
+      "step": 21,
+      "games": 8,
+      "wins": 0,
+      "seed": 79,
+      "source": "r2/train96"
+    },
+    {
+      "step": 22,
+      "games": 8,
+      "wins": 0,
+      "seed": 32,
+      "source": "r2/train96"
+    },
+    {
+      "step": 23,
+      "games": 8,
+      "wins": 0,
+      "seed": 68,
+      "source": "r2/train96"
+    },
+    {
+      "step": 24,
+      "games": 8,
+      "wins": 8,
+      "seed": 90,
+      "source": "r2/train96"
+    },
+    {
+      "step": 25,
+      "games": 8,
+      "wins": 6,
+      "seed": 77,
+      "source": "r2/train96"
+    },
+    {
+      "step": 26,
+      "games": 8,
+      "wins": 8,
+      "seed": 18,
+      "source": "r2/train96"
+    },
+    {
+      "step": 27,
+      "games": 8,
+      "wins": 0,
+      "seed": 39,
+      "source": "r2/train96"
+    },
+    {
+      "step": 28,
+      "games": 8,
+      "wins": 8,
+      "seed": 12,
+      "source": "r2/train96"
+    },
+    {
+      "step": 29,
+      "games": 8,
+      "wins": 0,
+      "seed": 93,
+      "source": "r2/train96"
+    },
+    {
+      "step": 30,
+      "games": 8,
+      "wins": 0,
+      "seed": 9,
+      "source": "r2/train96"
+    },
+    {
+      "step": 31,
+      "games": 8,
+      "wins": 0,
+      "seed": 87,
+      "source": "r2/train96"
+    },
+    {
+      "step": 32,
+      "games": 8,
+      "wins": 8,
+      "seed": 42,
+      "source": "r2/train96"
+    },
+    {
+      "step": 33,
+      "games": 8,
+      "wins": 8,
+      "seed": 60,
+      "source": "r2/train96"
+    },
+    {
+      "step": 34,
+      "games": 8,
+      "wins": 0,
+      "seed": 71,
+      "source": "r2/train96"
+    }
+  ],
+  "summary": {
+    "games": 272,
+    "wins": 153,
+    "last8_wins": 24,
+    "last8_games": 64
+  },
+  "limits": "Provisional training observations, not held-out evaluation or full final acceptance. Only complete natural eight-game batches up to latest returned PPO; no padding. Retains r1 steps1..2; r1 historical host verifier failure remains. No checkpoints or full console read; no remote writes."
+}

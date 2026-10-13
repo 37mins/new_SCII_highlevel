@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "checked_at_beijing": "2026-09-29T23:54:55+08:00",
+  "task": "User-requested terminal storage repair; CPU validation only",
+  "source_sha": "5849c94d35faf9a518ff160c573469c349e992f6",
+  "source_archive_sha256": "f0760f110d278771a098f87ab9e9c192eb5d34ee559cf1daa4ad523a97669f4f",
+  "remote_verified_before_cpu": true,
+  "local_regressions": {
+    "tests": 190,
+    "passed": 186,
+    "skipped_linux_only": 4,
+    "new_terminal_tests": 18
+  },
+  "full_model_local_attempt": {
+    "tests": 257,
+    "errors": 6,
+    "skips": 8,
+    "accepted": false,
+    "limitation": "Four Torch-dependent modules unavailable; two socket tests denied by local sandbox"
+  },
+  "linux_cpu_regressions": {
+    "tests": 97,
+    "passed": 97,
+    "skips": 0,
+    "fixture": "Read-only GIT_DIR of retained r2 source for git show 019a8b3 historical fixture; first archive-only attempt failed this one test and did not start containers"
+  },
+  "probe": {
+    "passed": true,
+    "cpu_only": true,
+    "games": 0,
+    "updates": 0,
+    "source_sha": "5849c94d35faf9a518ff160c573469c349e992f6",
+    "image": "sha256:1a497d5721f89bb2e98c0273c4b1495f8fdc6921d589650d090871c11b8d1649",
+    "checked_at": 1790697217.452102,
+    "results": [
+      {
+        "case": "exit0",
+        "passed": true,
+        "container": {
+          "id": "35d703cdc1cc8ef6911dd5fd0abe61cc341680f88c2cd1663956a41eb0fc386e",
+          "state": {
+            "Dead": false,
+            "Error": "",
+            "ExitCode": 0,
+            "FinishedAt": "2026-09-29T15:53:07.008131659Z",
+            "OOMKilled": false,
+            "Paused": false,
+            "Pid": 0,
+            "Restarting": false,
+            "Running": false,
+            "StartedAt": "2026-09-29T15:53:04.501193344Z",
+            "Status": "exited"
+          },
+          "devices": null
+        },
+        "phase": "completed",
+        "finalized": 1,
+        "verified": 1,
+        "initial_pause_count": 12,
+        "terminal_intent_at": 1790697186.6952248,
+        "error": null
+      },
+      {
+        "case": "exit7",
+        "passed": true,
+        "container": {
+          "id": "07c6ff978dcc940c1df26cc9cc98bffa1dc9fdcd2e23b9f4c1ea25b284e081fa",
+          "state": {
+            "Dead": false,
+            "Error": "",
+            "ExitCode": 7,
+            "FinishedAt": "2026-09-29T15:53:09.859289273Z",
+            "OOMKilled": false,
+            "Paused": false,
+            "Pid": 0,
+            "Restarting": false,
+            "Running": false,
+            "StartedAt": "2026-09-29T15:53:07.35007186Z",
+            "Status": "exited"
+          },
+          "devices": null
+        },
+        "phase": "failed",
+        "finalized": 0,
+        "verified": 0,
+        "initial_pause_count": 12,
+        "terminal_intent_at": 1790697189.546697,
+        "error": "Storage batch failed; no retry; /var/jfsCache/sc2-terminal-storage-cpu-20260929-r1/exit7/storage-failure-82f1c01cf6ae49b9af686e5b8fe6f69f.json"
+      },
+      {
+        "case": "hang",
+        "passed": true,
+        "container": {
+          "id": "c7526cc7e13587a8aa43be02a922227fd709e9b11873e48de8e0a67e14216266",
+          "state": {
+            "Dead": false,
+            "Error": "",
+            "ExitCode": 137,
+            "FinishedAt": "2026-09-29T15:53:37.328073892Z",
+            "OOMKilled": false,
+            "Paused": false,
+            "Pid": 0,
+            "Restarting": false,
+            "Running": false,
+            "StartedAt": "2026-09-29T15:53:10.134580253Z",
+            "Status": "exited"
+          },
+          "devices": null
+        },
+        "phase": "failed",
+        "finalized": 0,
+        "verified": 0,
+        "initial_pause_count": 11,
+        "terminal_intent_at": 1790697192.2771978,
+        "error": "Storage batch failed; no retry; /var/jfsCache/sc2-terminal-storage-cpu-20260929-r1/hang/storage-failure-6bc14286307f40ce9008eab33b8a881f.json"
+      }
+    ]
+  },
+  "exact_cpu_storage": {
+    "returncode": 0,
+    "stderr": "",
+    "limit_bytes": 268435456,
+    "roots": {
+      "/var/jfsCache/sc2-terminal-storage-cpu-20260929-r1": 22867,
+      "/var/jfsCache/sc2-terminal-storage-cpu-source-20260929-r1": 42033665
+    },
+    "total_bytes": 42056532
+  },
+  "gpu_snapshot": {
+    "cards": 8,
+    "all_utilization_percent": 0,
+    "all_memory_used_mib": 0
+  },
+  "production": {
+    "old_r2_status": "failed",
+    "gpu_dispatches": 0,
+    "new_games": 0,
+    "new_updates": 0,
+    "checkpoint_deletions": 0,
+    "old_run_writes": false,
+    "deadlines_reset": false
+  },
+  "limitations": [
+    "CPU lifecycle probe uses tiny fixture payload and finalizer callback, not model/Ray/CUDA teardown.",
+    "Full GPU terminal completion within the unchanged 15s accounting allowance is unverified.",
+    "Nonterminal cgroup freeze failures are not solved.",
+    "Old CP96 has stat inventory, not new acceptance or authorized failed-run checkpoint adoption."
+  ]
+}

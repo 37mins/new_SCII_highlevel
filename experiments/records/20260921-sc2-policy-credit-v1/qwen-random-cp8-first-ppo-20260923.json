@@ -1,0 +1,277 @@
+{
+  "checked_at": 1790169988.0836809,
+  "root": "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2",
+  "runtime_sha": "34154283a8298ac4fbaab1c63770a6b81f7d375c",
+  "receipts": {
+    "queue-state.json": {
+      "phase": "running-unverified",
+      "stage": "train96",
+      "deadline": 1790308720.0467553
+    },
+    "host-supervision/state.json": {
+      "version": "host-guardian-v1",
+      "phase": "running-unverified",
+      "completed": [],
+      "deadline": 1790308720.0467553,
+      "learning_validated": false,
+      "started_at": 1790168798.0071752,
+      "stage": "train96",
+      "container_id": "fc2f74a4285c5e80660257f42bd1caa21ad1a0614699d680e74938f013106b06"
+    },
+    "storage-failure.json": null,
+    "runs/train96/checkpoints/resume_state.json": {
+      "from_checkpoint": "/var/jfsCache/sc2-l7-followup197-20260922-r4/qwen-random/long/runs/train96/checkpoints/global_step_8",
+      "global_step": 8,
+      "next_reset_index": 8,
+      "next_seeds": [
+        8,
+        24,
+        72,
+        28,
+        30,
+        18,
+        69,
+        57
+      ],
+      "source": "checkpoint",
+      "model_optimizer_dataloader_load_returned": true
+    },
+    "runs/train96/metrics.json": null,
+    "runs/train96/result.json": null,
+    "runs/train96/.done": null
+  },
+  "sha256": {
+    "queue-state.json": "bef692ae73ff470ad9b6f68016db6066700ede4ff40bbe68a9a1c7a0513ed821",
+    "host-supervision/state.json": "320003d824465cd1a3886b11eb84312d94226448829b88c292090f66554d3d72",
+    "runs/train96/checkpoints/resume_state.json": "b3683a40c940b53d44773c4371a04ecd0c70be6aff5cbe53abf8a6c87af27031",
+    "training_seeds.jsonl": "da3d98bca74d06f3c6fec85d2752fdc6a11c15e24dc05cfbe5f60d5d30877c18",
+    "episode_outcomes.jsonl": "14e02d93264652937ca50e5dd04397a05e5c39e8964b5b53bc9dd4e54e89d2bb",
+    "checkpoints/sc2_policy_credit_audit.jsonl": "0230d7787d634ab77ccd8f20ac28b501ede09655cdd799e4a6810f95f2ed4f84"
+  },
+  "returned_ppo": [
+    {
+      "step": 9,
+      "actor/grad_norm": 40.51620365679264,
+      "timing_s/update_actor": 14.277927180752158,
+      "episode/success_rate": 0.875,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 10,
+      "actor/grad_norm": 0.23146000318229198,
+      "timing_s/update_actor": 11.340455007739365,
+      "episode/success_rate": 1,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 11,
+      "actor/grad_norm": 248.86488588154316,
+      "timing_s/update_actor": 11.229309348389506,
+      "episode/success_rate": 0.75,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 12,
+      "actor/grad_norm": 41.77799263000488,
+      "timing_s/update_actor": 17.358246623538435,
+      "episode/success_rate": 0.75,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 13,
+      "actor/grad_norm": 4.97569310198287e-8,
+      "timing_s/update_actor": 11.173029273748398,
+      "episode/success_rate": 1,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    },
+    {
+      "step": 14,
+      "actor/grad_norm": 14.479531739395952,
+      "timing_s/update_actor": 14.27652271464467,
+      "episode/success_rate": 0.875,
+      "episode/valid_action_ratio": 1,
+      "policy_credit/invalid_advantage_max": 0
+    }
+  ],
+  "console_tail": {
+    "bytes": 2689004,
+    "offset": 0,
+    "total_bytes": 2689004,
+    "sha256": "201c6177fba33159d6c387bdd529d2f19e2119fe2c08b000de5b006257e74c40"
+  },
+  "training_seeds.jsonl": [
+    {
+      "base_seed": 0,
+      "reset_index": 8,
+      "seed_protocol": "independent_uniform101",
+      "seeds": [
+        8,
+        24,
+        72,
+        28,
+        30,
+        18,
+        69,
+        57
+      ]
+    },
+    {
+      "base_seed": 0,
+      "reset_index": 9,
+      "seed_protocol": "independent_uniform101",
+      "seeds": [
+        11,
+        10,
+        40,
+        65,
+        62,
+        13,
+        38,
+        70
+      ]
+    },
+    {
+      "base_seed": 0,
+      "reset_index": 10,
+      "seed_protocol": "independent_uniform101",
+      "seeds": [
+        37,
+        90,
+        15,
+        70,
+        42,
+        69,
+        26,
+        77
+      ]
+    },
+    {
+      "base_seed": 0,
+      "reset_index": 11,
+      "seed_protocol": "independent_uniform101",
+      "seeds": [
+        70,
+        75,
+        36,
+        56,
+        11,
+        76,
+        49,
+        40
+      ]
+    },
+    {
+      "base_seed": 0,
+      "reset_index": 12,
+      "seed_protocol": "independent_uniform101",
+      "seeds": [
+        73,
+        30,
+        37,
+        23,
+        24,
+        23,
+        4,
+        78
+      ]
+    },
+    {
+      "base_seed": 0,
+      "reset_index": 13,
+      "seed_protocol": "independent_uniform101",
+      "seeds": [
+        84,
+        33,
+        60,
+        8,
+        11,
+        86,
+        96,
+        16
+      ]
+    },
+    {
+      "base_seed": 0,
+      "reset_index": 14,
+      "seed_protocol": "independent_uniform101",
+      "seeds": [
+        19,
+        4,
+        10,
+        89,
+        69,
+        87,
+        50,
+        90
+      ]
+    }
+  ],
+  "episode_outcomes.jsonl": {
+    "games": 48,
+    "wins": 42,
+    "natural": true
+  },
+  "checkpoints/sc2_policy_credit_audit.jsonl": [
+    {
+      "pending_global_step": 9,
+      "decision": "accept",
+      "real_answers": 31,
+      "valid_answers": 31
+    },
+    {
+      "pending_global_step": 10,
+      "decision": "accept",
+      "real_answers": 24,
+      "valid_answers": 24
+    },
+    {
+      "pending_global_step": 11,
+      "decision": "accept",
+      "real_answers": 24,
+      "valid_answers": 24
+    },
+    {
+      "pending_global_step": 12,
+      "decision": "accept",
+      "real_answers": 34,
+      "valid_answers": 34
+    },
+    {
+      "pending_global_step": 13,
+      "decision": "accept",
+      "real_answers": 24,
+      "valid_answers": 24
+    },
+    {
+      "pending_global_step": 14,
+      "decision": "accept",
+      "real_answers": 25,
+      "valid_answers": 25
+    }
+  ],
+  "schema": "qwen-native-cp8-first-ppo-v1",
+  "first_ppo_verified": true,
+  "verified_new_updates": 6,
+  "consumed_answers": {
+    "valid": 162,
+    "total": 162
+  },
+  "notification_events": [
+    "first_native_resume",
+    "first_sc2",
+    "first_actual_ppo"
+  ],
+  "monitor": {
+    "id": "197-qwen-cp8",
+    "status": "ACTIVE",
+    "interval_minutes": 10,
+    "explicit_user_approval": "允许新建唯一巡检",
+    "healthy_progress_quiet": true,
+    "allow_restart": false
+  }
+}

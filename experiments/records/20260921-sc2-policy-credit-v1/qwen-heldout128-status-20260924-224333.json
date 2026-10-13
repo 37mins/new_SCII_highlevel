@@ -1,0 +1,258 @@
+{
+  "observed_at": "2026-09-24T22:43:33.295237+08:00",
+  "files": {
+    "queue-state.json": {
+      "phase": "running-unverified",
+      "completed": [],
+      "new_games": 128,
+      "new_updates": 0,
+      "deadline": 1790281304.865174
+    },
+    "dispatch.json": {
+      "start": 1790259704.865174,
+      "deadline": 1790281304.865174,
+      "gpu_hours": 48,
+      "new_games": 128,
+      "new_updates": 0
+    },
+    "host-supervision/state.json": {
+      "version": "host-guardian-v1",
+      "phase": "running-unverified",
+      "completed": [
+        "b00-original",
+        "b00-cp96",
+        "b01-cp96"
+      ],
+      "deadline": 1790281304.865174,
+      "learning_validated": false,
+      "started_at": 1790259704.865921,
+      "stage": "b01-original",
+      "container_id": "986b24be652cc54b87acc339a0ecf7be8ff46f7453408ae2998bc0b434a7b312"
+    },
+    "storage-state.json": {
+      "command": [
+        "du",
+        "-sb",
+        "--null",
+        "--",
+        "/var/jfsCache/sc2-qwen-heldout128-197-20260924-r1",
+        "/var/jfsCache/sc2-qwen-heldout128-197-source-20260924-r1"
+      ],
+      "roots": [
+        "/var/jfsCache/sc2-qwen-heldout128-197-20260924-r1",
+        "/var/jfsCache/sc2-qwen-heldout128-197-source-20260924-r1"
+      ],
+      "started_at": 1790261013.1241393,
+      "deadline": 1790281304.865174,
+      "limit": 34359738368,
+      "bytes": 149756795,
+      "returncode": 0,
+      "status": "measured",
+      "stderr": {
+        "tail": "",
+        "characters": 0,
+        "truncated": false
+      },
+      "measured_at": 1790261013.188732,
+      "root_bytes": {
+        "/var/jfsCache/sc2-qwen-heldout128-197-20260924-r1": 122391015,
+        "/var/jfsCache/sc2-qwen-heldout128-197-source-20260924-r1": 27365780
+      },
+      "checked_at": 1790261013.222972
+    },
+    "failure.json": {
+      "exists": false
+    },
+    "b00-original": {
+      "status": "completed",
+      "ended_at": "2026-09-24T14:28:08.912965+00:00",
+      "exit": 0,
+      "updates": 0,
+      "games": 8,
+      "wins": 6,
+      "truncated": 0,
+      "consumed": 52,
+      "valid": 52,
+      "result_done_equal": true,
+      "acceptance_result_equal": true,
+      "paired_rng_checked": false,
+      "seeds": [
+        65648715,
+        3519458032,
+        4034442911,
+        2837899169,
+        3924150504,
+        2347007475,
+        2710453253,
+        3012843628
+      ]
+    },
+    "b00-cp96": {
+      "status": "completed",
+      "ended_at": "2026-09-24T14:32:23.259882+00:00",
+      "exit": 0,
+      "updates": 0,
+      "games": 8,
+      "wins": 7,
+      "truncated": 0,
+      "consumed": 32,
+      "valid": 32,
+      "result_done_equal": true,
+      "acceptance_result_equal": true,
+      "paired_rng_checked": true,
+      "seeds": [
+        65648715,
+        3519458032,
+        4034442911,
+        2837899169,
+        3924150504,
+        2347007475,
+        2710453253,
+        3012843628
+      ]
+    },
+    "b01-original": {
+      "result_exists": false
+    },
+    "b01-cp96": {
+      "status": "completed",
+      "ended_at": "2026-09-24T14:36:43.203154+00:00",
+      "exit": 0,
+      "updates": 0,
+      "games": 8,
+      "wins": 7,
+      "truncated": 0,
+      "consumed": 33,
+      "valid": 33,
+      "result_done_equal": true,
+      "acceptance_result_equal": true,
+      "paired_rng_checked": false,
+      "seeds": [
+        623721583,
+        2399721872,
+        2442427596,
+        3375914349,
+        3126576243,
+        3500498238,
+        245444012,
+        3639096465
+      ]
+    },
+    "b02-original": {
+      "result_exists": false
+    },
+    "b02-cp96": {
+      "result_exists": false
+    },
+    "b03-original": {
+      "result_exists": false
+    },
+    "b03-cp96": {
+      "result_exists": false
+    },
+    "b04-original": {
+      "result_exists": false
+    },
+    "b04-cp96": {
+      "result_exists": false
+    },
+    "b05-original": {
+      "result_exists": false
+    },
+    "b05-cp96": {
+      "result_exists": false
+    },
+    "b06-original": {
+      "result_exists": false
+    },
+    "b06-cp96": {
+      "result_exists": false
+    },
+    "b07-original": {
+      "result_exists": false
+    },
+    "b07-cp96": {
+      "result_exists": false
+    },
+    "runs/b01-original/checkpoint_evaluation.json": {
+      "checkpoint": null,
+      "loaded_global_step": 0,
+      "checkpoint_load_returned": false,
+      "val_only": true,
+      "optimizer_updates": 0,
+      "feedback": "0",
+      "temperature": 0.8,
+      "do_sample": true,
+      "games": 8,
+      "game_seeds": [
+        623721583,
+        2399721872,
+        2442427596,
+        3375914349,
+        3126576243,
+        3500498238,
+        245444012,
+        3639096465
+      ],
+      "answers": "online Qwen; no replay or replacement",
+      "optimizer_loaded_by_existing_loader_but_not_updated": false
+    },
+    "runs/b01-original/evaluation_seeds.jsonl": [
+      {
+        "base_seed": 1000,
+        "reset_index": 0,
+        "seeds": [
+          623721583,
+          2399721872,
+          2442427596,
+          3375914349,
+          3126576243,
+          3500498238,
+          245444012,
+          3639096465
+        ]
+      }
+    ]
+  },
+  "container": {
+    "id": "986b24be652cc54b87acc339a0ecf7be8ff46f7453408ae2998bc0b434a7b312",
+    "name": "/sc2-qwen-heldout128-197-20260924-r1-b01-original",
+    "owner": "/var/jfsCache/sc2-qwen-heldout128-197-20260924-r1",
+    "state": {
+      "Dead": false,
+      "Error": "",
+      "ExitCode": 0,
+      "FinishedAt": "0001-01-01T00:00:00Z",
+      "OOMKilled": false,
+      "Paused": false,
+      "Pid": 2350693,
+      "Restarting": false,
+      "Running": true,
+      "StartedAt": "2026-09-24T14:36:58.661705936Z",
+      "Status": "running"
+    }
+  },
+  "receipt_sha256": {
+    "queue-state.json": "b940fb160784b888b94c2d052e051ccf5f48cbce47ac3247d8c3ab4ba4f6a718",
+    "dispatch.json": "cd4003d666dc6d76e77c34c901d619e9d5636ff604943e0f9e818267ca77660c",
+    "host-supervision/state.json": "2b296c29fd648b15c0804e2bac2124984194ad4678b4f76d72f2dd0deb7502ac",
+    "storage-state.json": "f0a9997b4a44cf95d75c2febd226bdb0d3aa5871c01cf35c9e5c67a3d947dc63",
+    "runs/b00-original/result.json": "1e2f12193b55365ced7b91c2f6343c92aa2ee730471dc6363a3913a3c387890c",
+    "runs/b00-original/.done": "1e2f12193b55365ced7b91c2f6343c92aa2ee730471dc6363a3913a3c387890c",
+    "acceptance-b00-original.json": "bdde4d5740184dea73670851ef17d35a60e461cf7597905f6f2cf76eaa6883bd",
+    "runs/b00-cp96/result.json": "5fda3caeb94bac286318daf4c27fe979e08364b86647cbb68f9ade43bd96f436",
+    "runs/b00-cp96/.done": "5fda3caeb94bac286318daf4c27fe979e08364b86647cbb68f9ade43bd96f436",
+    "acceptance-b00-cp96.json": "55a12d74200be7a144469fc7a39b521a7bc7a36994d15ba69a68af3487f245d9",
+    "runs/b01-cp96/result.json": "ae2dd21f5e4c10428acf7f4976e01a5ea15cb646846faf36410caa442b85c14c",
+    "runs/b01-cp96/.done": "ae2dd21f5e4c10428acf7f4976e01a5ea15cb646846faf36410caa442b85c14c",
+    "acceptance-b01-cp96.json": "631d3a5644ec41804dfa33e18b369654f8284ff45c1ba035f9e999d62735b011",
+    "runs/b01-original/checkpoint_evaluation.json": "2c68aa877a43a0752e3305800250af9f3ba9f1c2424fb2a46dba7aaec7043ecd",
+    "runs/b01-original/evaluation_seeds.jsonl": "1fb3afdc8fdb259516221675f7e9c959d326f6bcef0e5800353c924398241b5d"
+  },
+  "inspection_scope": {
+    "read_only": true,
+    "no_full_logs": true,
+    "no_checkpoint_payloads": true,
+    "no_restart": true
+  }
+}

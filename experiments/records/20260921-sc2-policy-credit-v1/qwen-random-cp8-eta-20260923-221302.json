@@ -1,0 +1,554 @@
+{
+  "schema": "qwen-native-cp8-eta-v1",
+  "observed_at": "2026-09-23T22:13:02.929279+08:00",
+  "root": "/var/jfsCache/sc2-qwen-random-cp8-197-20260923-r2",
+  "runtime_sha": "34154283a8298ac4fbaab1c63770a6b81f7d375c",
+  "scope": "Read-only current ETA plus completion of interrupted heartbeat evidence; no server edits/restarts/dispatch/budget/monitor changes",
+  "queue": {
+    "phase": "running-unverified",
+    "stage": "train96",
+    "deadline": 1790308720.0467553
+  },
+  "host": {
+    "version": "host-guardian-v1",
+    "phase": "running-unverified",
+    "completed": [],
+    "deadline": 1790308720.0467553,
+    "learning_validated": false,
+    "started_at": 1790168798.0071752,
+    "stage": "train96",
+    "container_id": "fc2f74a4285c5e80660257f42bd1caa21ad1a0614699d680e74938f013106b06"
+  },
+  "dispatch": {
+    "start": 1790135920.0467653,
+    "resumed_at": 1790168798.9821274,
+    "deadline": 1790308720.0467553,
+    "suite_deadline": 1790420762.305692,
+    "original_clock_preserved": true,
+    "gpu_hours": 384,
+    "new_slots": 712
+  },
+  "receipt_hashes": {
+    "queue-state.json": "bef692ae73ff470ad9b6f68016db6066700ede4ff40bbe68a9a1c7a0513ed821",
+    "host-supervision/state.json": "320003d824465cd1a3886b11eb84312d94226448829b88c292090f66554d3d72",
+    "dispatch.json": "b030683436d5602875191413fdbc5c6120d4e9fc0855c45d0fab550af5652e42"
+  },
+  "terminal": {
+    "train_result": null,
+    "train_done": null,
+    "eval_result": null,
+    "eval_done": null,
+    "arm_storage_failure": null,
+    "suite_storage_failure": null
+  },
+  "console_tail": {
+    "total_bytes": 10145411,
+    "offset": 5951107,
+    "read_bytes": 4194304,
+    "sha256": "168178fe4d176f3eae735af2b7797509e79353ea8f7e690c7d43577c9ad8e864",
+    "returned_step_timings": [
+      {
+        "step": 22,
+        "step_seconds": 169.03148525208235,
+        "checkpoint_seconds": 0,
+        "gradient": 0.06783426739275455,
+        "actor_seconds": 10.918758051469922,
+        "valid_action_ratio": 1,
+        "invalid_advantage_max": 0
+      },
+      {
+        "step": 23,
+        "step_seconds": 141.00758423097432,
+        "checkpoint_seconds": 0,
+        "gradient": 0.13936836536352834,
+        "actor_seconds": 11.354924865067005,
+        "valid_action_ratio": 1,
+        "invalid_advantage_max": 0
+      },
+      {
+        "step": 24,
+        "step_seconds": 166.70469003450125,
+        "checkpoint_seconds": 7.734604115597904,
+        "gradient": 81.25647123654683,
+        "actor_seconds": 11.227515329606831,
+        "valid_action_ratio": 1,
+        "invalid_advantage_max": 0
+      },
+      {
+        "step": 25,
+        "step_seconds": 181.578648542054,
+        "checkpoint_seconds": 0,
+        "gradient": 11.233113477588631,
+        "actor_seconds": 14.392104398459196,
+        "valid_action_ratio": 1,
+        "invalid_advantage_max": 0
+      },
+      {
+        "step": 26,
+        "step_seconds": 136.23443141393363,
+        "checkpoint_seconds": 0,
+        "gradient": 0.1482410317112226,
+        "actor_seconds": 11.634467116557062,
+        "valid_action_ratio": 1,
+        "invalid_advantage_max": 0
+      },
+      {
+        "step": 27,
+        "step_seconds": 184.46248234063387,
+        "checkpoint_seconds": 0,
+        "gradient": 14.239273846149445,
+        "actor_seconds": 14.68054775800556,
+        "valid_action_ratio": 1,
+        "invalid_advantage_max": 0
+      },
+      {
+        "step": 28,
+        "step_seconds": 180.8841792307794,
+        "checkpoint_seconds": 0,
+        "gradient": 0.9132039765827358,
+        "actor_seconds": 14.411152134649456,
+        "valid_action_ratio": 1,
+        "invalid_advantage_max": 0
+      },
+      {
+        "step": 29,
+        "step_seconds": 130.01744957081974,
+        "checkpoint_seconds": 0,
+        "gradient": 2.081540976961454,
+        "actor_seconds": 11.35651657730341,
+        "valid_action_ratio": 1,
+        "invalid_advantage_max": 0
+      },
+      {
+        "step": 30,
+        "step_seconds": 190.6621062681079,
+        "checkpoint_seconds": 0,
+        "gradient": 14.08545434474945,
+        "actor_seconds": 14.29040780942887,
+        "valid_action_ratio": 1,
+        "invalid_advantage_max": 0
+      },
+      {
+        "step": 31,
+        "step_seconds": 173.60626213718206,
+        "checkpoint_seconds": 0,
+        "gradient": 1.98588734040095,
+        "actor_seconds": 14.305980700999498,
+        "valid_action_ratio": 1,
+        "invalid_advantage_max": 0
+      }
+    ]
+  },
+  "eta": {
+    "completed_global_step": 31,
+    "remaining_outer_phases": 65,
+    "recent_steps": [
+      22,
+      31
+    ],
+    "sample_steps": 10,
+    "mean_step_seconds": 165.41893190210686,
+    "remaining_training_hours": 2.9867307148991515,
+    "wall_seconds_per_new_phase_including_startup": 173.21508141185927,
+    "completion_remaining_hours_range": [
+      3,
+      4
+    ],
+    "approx_completion_beijing": [
+      "2026-09-24T01:15:00+08:00",
+      "2026-09-24T02:15:00+08:00"
+    ],
+    "method": "65remaining outer phases times recent10 mean165.419seconds=2.987h; includes one observed periodic checkpoint. Widen to3–4h for future game/host-sampler variance, remaining periodic saves and final checkpoint load/eight paired zero-update games/acceptance. Not a statistical confidence interval or guarantee.",
+    "fixed_arm_cutoff_beijing": "2026-09-25T11:58:40+08:00",
+    "fixed_suite_cutoff_beijing": "2026-09-26T19:06:02+08:00",
+    "cutoff_is_eta": false,
+    "conditions": [
+      "No new SC2/startup/storage failure",
+      "Current throughput remains representative",
+      "Stage transition resource admission remains available"
+    ],
+    "learning_claim": false
+  },
+  "pause_verification": {
+    "initial_container": {
+      "returncode": 0,
+      "state": {
+        "Status": "paused",
+        "Running": true,
+        "Paused": true,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 1523713,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-09-23T13:06:39.085218914Z",
+        "FinishedAt": "0001-01-01T00:00:00Z"
+      },
+      "stderr": ""
+    },
+    "recheck": {
+      "observed_at": "2026-09-23T22:14:10.314715+08:00",
+      "storage-state.json": {
+        "checked_at": 1790172845.2197576,
+        "bytes": 200580300205,
+        "status": "measured",
+        "returncode": 0,
+        "stderr": {
+          "tail": "",
+          "characters": 0,
+          "truncated": false
+        }
+      },
+      "suite-account/storage-state.json": {
+        "checked_at": 1790172845.5944393,
+        "bytes": 1031899532068,
+        "status": "measured",
+        "returncode": 0,
+        "stderr": {
+          "tail": "",
+          "characters": 0,
+          "truncated": false
+        }
+      },
+      "container": {
+        "returncode": 0,
+        "state": {
+          "Status": "running",
+          "Running": true,
+          "Paused": false,
+          "Restarting": false,
+          "OOMKilled": false,
+          "Dead": false,
+          "Pid": 1523713,
+          "ExitCode": 0,
+          "Error": "",
+          "StartedAt": "2026-09-23T13:06:39.085218914Z",
+          "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "stderr": ""
+      }
+    },
+    "interpretation": "Initial22:13snapshot paused during host supervision;22:14:10same container running/unpaused, two fresh storage receipts measured/exit0/empty structured stderr. No manual unpause; not a stopped experiment."
+  },
+  "interrupted_heartbeat": {
+    "observed_at": "2026-09-23T22:11:08.981913+08:00",
+    "queue": {
+      "phase": "running-unverified",
+      "stage": "train96",
+      "deadline": 1790308720.0467553
+    },
+    "checks": {
+      "deployment_identity": true,
+      "manifest": true,
+      "tail_ppo_metrics": true
+    },
+    "manifest": {
+      "source_commit": "34154283a8298ac4fbaab1c63770a6b81f7d375c",
+      "dirty": false,
+      "world_size": 8,
+      "metrics_precision": "binary64-v1"
+    },
+    "console": {
+      "total_bytes": 9812037,
+      "offset": 5617733,
+      "bytes": 4194304,
+      "sha256": "c32d495a1548f263e0aac9154222b83a17326f424672c755239b5cd3d437d853",
+      "returned_steps": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "latest": [
+        {
+          "step": 28,
+          "actor/grad_norm": 0.9132039765827358,
+          "timing_s/update_actor": 14.411152134649456,
+          "episode/success_rate": 0.625,
+          "episode/valid_action_ratio": 1,
+          "policy_credit/invalid_advantage_max": 0
+        },
+        {
+          "step": 29,
+          "actor/grad_norm": 2.081540976961454,
+          "timing_s/update_actor": 11.35651657730341,
+          "episode/success_rate": 1,
+          "episode/valid_action_ratio": 1,
+          "policy_credit/invalid_advantage_max": 0
+        },
+        {
+          "step": 30,
+          "actor/grad_norm": 14.08545434474945,
+          "timing_s/update_actor": 14.29040780942887,
+          "episode/success_rate": 0.5,
+          "episode/valid_action_ratio": 1,
+          "policy_credit/invalid_advantage_max": 0
+        }
+      ]
+    },
+    "seeds": {
+      "rows": 23,
+      "reset_indices": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "all_match": true,
+      "last_batch": {
+        "base_seed": 0,
+        "reset_index": 30,
+        "seed_protocol": "independent_uniform101",
+        "seeds": [
+          87,
+          52,
+          72,
+          65,
+          39,
+          83,
+          45,
+          49
+        ]
+      }
+    },
+    "outcomes": {
+      "total_rows": 176,
+      "through_returned_step": 30,
+      "completed_rows": 176,
+      "wins": 150,
+      "all_natural": true,
+      "complete_reset_indices": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "each_eight_unique_envs": true,
+      "in_progress_rows": 0
+    },
+    "audits": {
+      "rows": 22,
+      "returned_step_rows": 22,
+      "steps": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "all_accept": true,
+      "real_answers": 557,
+      "valid_answers": 557
+    },
+    "checkpoint_inventories": [
+      {
+        "step": 16,
+        "required_files": 26,
+        "missing_or_empty": [],
+        "contents_read": false
+      },
+      {
+        "step": 24,
+        "required_files": 26,
+        "missing_or_empty": [],
+        "contents_read": false
+      }
+    ],
+    "arm_storage": {
+      "checked_at": 1790172658.367446,
+      "bytes": 200553390546,
+      "limit": 1099511627776,
+      "deadline": 1790308720.0467553,
+      "status": "measured",
+      "returncode": 0,
+      "stderr": {
+        "tail": "",
+        "characters": 0,
+        "truncated": false
+      },
+      "roots_count": 15,
+      "roots_exact_deployment": true,
+      "within_limit": true
+    },
+    "suite_storage": {
+      "checked_at": 1790172658.751717,
+      "bytes": 1031872646815,
+      "limit": 2199023255552,
+      "deadline": 1790420762.305692,
+      "status": "measured",
+      "returncode": 0,
+      "stderr": {
+        "tail": "",
+        "characters": 0,
+        "truncated": false
+      },
+      "roots_count": 15,
+      "roots_exact_deployment": true,
+      "within_limit": true
+    },
+    "file_hashes": {
+      "deployment.json": {
+        "exists": true,
+        "bytes": 13890,
+        "sha256": "0d40bcf2feac7c5415cdcf9e53f3c7452eaa387ca53a17c8d9db601c045fef84"
+      },
+      "queue-state.json": {
+        "exists": true,
+        "bytes": 91,
+        "sha256": "bef692ae73ff470ad9b6f68016db6066700ede4ff40bbe68a9a1c7a0513ed821"
+      },
+      "host-supervision/state.json": {
+        "exists": true,
+        "bytes": 296,
+        "sha256": "320003d824465cd1a3886b11eb84312d94226448829b88c292090f66554d3d72"
+      },
+      "host-supervision/train96-guardian.json": {
+        "exists": true,
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "empty_slot": true
+      },
+      "state.json": {
+        "exists": false
+      },
+      "acceptance.json": {
+        "exists": false
+      },
+      "storage-failure.json": {
+        "exists": false
+      },
+      "suite-account/storage-failure.json": {
+        "exists": false
+      },
+      "runs/train96/result.json": {
+        "exists": false
+      },
+      "runs/train96/.done": {
+        "exists": false
+      },
+      "runs/train96/acceptance.json": {
+        "exists": false
+      },
+      "runs/eval96/result.json": {
+        "exists": false
+      },
+      "runs/eval96/.done": {
+        "exists": false
+      },
+      "runs/eval96/acceptance.json": {
+        "exists": false
+      },
+      "storage-state.json": {
+        "exists": true,
+        "bytes": 4736,
+        "sha256": "bb7c126393bdb899feaf2fc9954f26565a7b8455b27d68c8c18ab6e48226867c"
+      },
+      "suite-account/storage-state.json": {
+        "exists": true,
+        "bytes": 4691,
+        "sha256": "044887b997b28de6e3c034058908f924b109f7a67f9a24e78811b3c4ee544e63"
+      },
+      "runs/train96/manifest.json": {
+        "exists": true,
+        "bytes": 3017,
+        "sha256": "06bd9fbe5f38b0c0bc86add64b0ba5533eca4d4115574c59380859c4beb347cb"
+      },
+      "runs/train96/checkpoints/resume_state.json": {
+        "exists": true,
+        "bytes": 285,
+        "sha256": "b3683a40c940b53d44773c4371a04ecd0c70be6aff5cbe53abf8a6c87af27031"
+      },
+      "runs/train96/training_seeds.jsonl": {
+        "exists": true,
+        "bytes": 2787,
+        "sha256": "cc1d5a558fe22eab00c5d5e8a60909b9c746e24bf3fa44c1582f22c1ec366aa9"
+      },
+      "runs/train96/episode_outcomes.jsonl": {
+        "exists": true,
+        "bytes": 40536,
+        "sha256": "e2be1d9e0363abc778593633ea840674600bf469a4e39d3c7bee19f90c6cb264"
+      },
+      "runs/train96/checkpoints/sc2_policy_credit_audit.jsonl": {
+        "exists": true,
+        "bytes": 4597,
+        "sha256": "3b058f0a1acbc6c482b30d4ceee5687cc406acb6527aedc3a0d2a4d4d41ef0ce"
+      }
+    },
+    "note": "22:11read-only collector completed before user interrupted local saving. No files from that attempted patch were present on read-only worktree recheck; retained here without repeating the server run. Healthy progression30/96 was not a new milestone."
+  },
+  "verification": {
+    "positive_finite_recent_gradients": true,
+    "positive_actor_durations": true,
+    "invalid_advantage_nonpositive": true,
+    "no_terminal_claim": true,
+    "no_large_checkpoints_read": true,
+    "small_receipt_cap_bytes": 1048576,
+    "console_tail_cap_bytes": 4194304
+  },
+  "monitor": {
+    "id": "197-qwen-cp8",
+    "action": "retain unique existing monitor unchanged",
+    "first_events_repeated": false
+  }
+}

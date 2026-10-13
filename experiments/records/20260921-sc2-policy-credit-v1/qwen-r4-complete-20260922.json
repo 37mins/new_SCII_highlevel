@@ -1,0 +1,1412 @@
+{
+  "schema_version": 1,
+  "checked_at": 1790049478.9498277,
+  "automation_id": "197-qwen-r4",
+  "suite": "/var/jfsCache/sc2-qwen-seeds197-20260922-r4",
+  "runtime_sha": "2f95c9fd505bd4529070ff4988c5c9efcb111b53",
+  "verification_scope": "Read-only small receipts and bounded tails; CP filename/stat sizes only, no CP contents or GPU diagnostics. Frozen controller acceptance supplies full worker support/no-thinking/consumption/command checks. No deployment mutation or retry.",
+  "files": {
+    "queue-state.json": {
+      "phase": "completed",
+      "completed": [
+        "l6-random",
+        "l7-same",
+        "l7-random"
+      ],
+      "first_dispatch_by": 1790051700,
+      "arm": "l7-random",
+      "deadline": 1790066532.2731953,
+      "arm_deadline": 1790054557.0498166,
+      "exit_code": 0,
+      "learning_validated": false
+    },
+    "deployment.json": {
+      "runtime_sha": "2f95c9fd505bd4529070ff4988c5c9efcb111b53",
+      "controller_sha": "2f95c9fd505bd4529070ff4988c5c9efcb111b53",
+      "controller_source": "/var/jfsCache/sc2-qwen-seeds197-source-20260922-r4/code",
+      "predecessor": "/var/jfsCache/sc2-policy-credit197-20260921-r4",
+      "arms": [
+        "l6-random",
+        "l7-same",
+        "l7-random"
+      ],
+      "games": 96,
+      "training_steps": 6,
+      "gpu_hours": 48,
+      "wall_seconds": 21600,
+      "output_limit_bytes": 549755813888,
+      "first_dispatch_by": 1790051700,
+      "no_retry": true,
+      "no_long_training": true,
+      "authorization": "User explicitly approved new remaining l6-random/l7-same/l7-random GPU attempts; 32 games and <=2h/16GPUh each, total96 games/6PPO/6h48GPUh; reuse completed r3 l6-same, no retry/long promotion; old deadlines unchanged",
+      "reused_completed_arm": "/var/jfsCache/sc2-qwen-seeds197-20260922-r3/l6-same"
+    },
+    "dispatch.json": {
+      "start": 1790044932.2731953,
+      "deadline": 1790066532.2731953,
+      "gpu_hours": 48
+    },
+    "predecessor-acceptance.json": {
+      "passed": true,
+      "checked_at": 1790044932.0039392,
+      "predecessor": "/var/jfsCache/sc2-policy-credit197-20260921-r4",
+      "reused_completed_arm": "/var/jfsCache/sc2-qwen-seeds197-20260922-r3/l6-same"
+    },
+    "storage-state.json": {
+      "command": [
+        "du",
+        "-sb",
+        "--null",
+        "--",
+        "/var/jfsCache/sc2-qwen-seeds197-20260922-r4",
+        "/var/jfsCache/sc2-qwen-seeds197-source-20260922-r4",
+        "/var/jfsCache/sc2-qwen-instruct2507-cdbee75-20260921-r1",
+        "/var/jfsCache/sc2-qwen-instruct2507-cdbee75-20260921-r1-staging",
+        "/var/jfsCache/sc2-qwen-instruct2507-cdbee75-20260921-r1-direct-staging",
+        "/var/jfsCache/sc2-qwen-seeds197-20260921-r1",
+        "/var/jfsCache/sc2-qwen-seeds197-source-20260921-r1",
+        "/var/jfsCache/sc2-qwen-seeds197-20260921-r2",
+        "/var/jfsCache/sc2-qwen-seeds197-source-20260921-r2",
+        "/var/jfsCache/sc2-qwen-seeds197-20260922-r3",
+        "/var/jfsCache/sc2-qwen-seeds197-source-20260922-r3"
+      ],
+      "roots": [
+        "/var/jfsCache/sc2-qwen-seeds197-20260922-r4",
+        "/var/jfsCache/sc2-qwen-seeds197-source-20260922-r4",
+        "/var/jfsCache/sc2-qwen-instruct2507-cdbee75-20260921-r1",
+        "/var/jfsCache/sc2-qwen-instruct2507-cdbee75-20260921-r1-staging",
+        "/var/jfsCache/sc2-qwen-instruct2507-cdbee75-20260921-r1-direct-staging",
+        "/var/jfsCache/sc2-qwen-seeds197-20260921-r1",
+        "/var/jfsCache/sc2-qwen-seeds197-source-20260921-r1",
+        "/var/jfsCache/sc2-qwen-seeds197-20260921-r2",
+        "/var/jfsCache/sc2-qwen-seeds197-source-20260921-r2",
+        "/var/jfsCache/sc2-qwen-seeds197-20260922-r3",
+        "/var/jfsCache/sc2-qwen-seeds197-source-20260922-r3"
+      ],
+      "started_at": 1790048532.0782104,
+      "deadline": 1790066532.2731953,
+      "limit": 549755813888,
+      "bytes": 208871961301,
+      "returncode": 0,
+      "status": "measured",
+      "stdout": {
+        "tail": "149863217236\t/var/jfsCache/sc2-qwen-seeds197-20260922-r4\u000021232099\t/var/jfsCache/sc2-qwen-seeds197-source-20260922-r4\u00008060922654\t/var/jfsCache/sc2-qwen-instruct2507-cdbee75-20260921-r1\u0000833204067\t/var/jfsCache/sc2-qwen-instruct2507-cdbee75-20260921-r1-staging\u000025\t/var/jfsCache/sc2-qwen-instruct2507-cdbee75-20260921-r1-direct-staging\u000014046874\t/var/jfsCache/sc2-qwen-seeds197-20260921-r1\u000017571078\t/var/jfsCache/sc2-qwen-seeds197-source-20260921-r1\u000014627737\t/var/jfsCache/sc2-qwen-seeds197-20260921-r2\u000017577963\t/var/jfsCache/sc2-qwen-seeds197-source-20260921-r2\u000050011752126\t/var/jfsCache/sc2-qwen-seeds197-20260922-r3\u000017809442\t/var/jfsCache/sc2-qwen-seeds197-source-20260922-r3\u0000",
+        "characters": 674,
+        "truncated": false
+      },
+      "stderr": {
+        "tail": "",
+        "characters": 0,
+        "truncated": false
+      },
+      "root_bytes": {
+        "/var/jfsCache/sc2-qwen-seeds197-20260922-r4": 149863217236,
+        "/var/jfsCache/sc2-qwen-seeds197-source-20260922-r4": 21232099,
+        "/var/jfsCache/sc2-qwen-instruct2507-cdbee75-20260921-r1": 8060922654,
+        "/var/jfsCache/sc2-qwen-instruct2507-cdbee75-20260921-r1-staging": 833204067,
+        "/var/jfsCache/sc2-qwen-instruct2507-cdbee75-20260921-r1-direct-staging": 25,
+        "/var/jfsCache/sc2-qwen-seeds197-20260921-r1": 14046874,
+        "/var/jfsCache/sc2-qwen-seeds197-source-20260921-r1": 17571078,
+        "/var/jfsCache/sc2-qwen-seeds197-20260921-r2": 14627737,
+        "/var/jfsCache/sc2-qwen-seeds197-source-20260921-r2": 17577963,
+        "/var/jfsCache/sc2-qwen-seeds197-20260922-r3": 50011752126,
+        "/var/jfsCache/sc2-qwen-seeds197-source-20260922-r3": 17809442
+      },
+      "checked_at": 1790048532.1225634
+    }
+  },
+  "arms": {
+    "l6-random": {
+      "root": "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l6-random",
+      "runtime_sha": "2f95c9fd505bd4529070ff4988c5c9efcb111b53",
+      "retained_without_rerun": false,
+      "state": {
+        "phase": "completed",
+        "completed": [
+          "pre",
+          "train2",
+          "post"
+        ],
+        "deadline": 1790052132.2731953,
+        "stage": "post",
+        "run": "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l6-random/runs/post",
+        "exit_code": 0,
+        "learning_validated": false
+      },
+      "dispatch": {
+        "start": 1790044932.2731953,
+        "deadline": 1790052132.2731953
+      },
+      "stages": {
+        "pre": {
+          "result_done_acceptance_equal": true,
+          "clean_sha_world8": true,
+          "finite": true,
+          "games": 8,
+          "truncated": 0,
+          "wins": 8,
+          "defeats": 0,
+          "ended_at": "2026-09-22T02:47:34.036806+00:00",
+          "accepted_at": 1790045263.3785403,
+          "evidence": {
+            "consumed_answers": 49,
+            "valid_consumed_answers": 49,
+            "parsed_plans": 49,
+            "validated_queue_entries": 769,
+            "validated_locally_queued_commands": 374,
+            "execution_scope": "local Depot/Marine commands, not production completion or causal wins"
+          },
+          "updates": 0,
+          "checkpoint_load_verified": true,
+          "loaded_step": 0,
+          "eval_seeds_verified": true,
+          "outcomes_by_env_index": {
+            "0": "Victory",
+            "1": "Victory",
+            "2": "Victory",
+            "3": "Victory",
+            "4": "Victory",
+            "5": "Victory",
+            "6": "Victory",
+            "7": "Victory"
+          }
+        },
+        "train2": {
+          "result_done_acceptance_equal": true,
+          "clean_sha_world8": true,
+          "finite": true,
+          "games": 16,
+          "truncated": 0,
+          "wins": 15,
+          "defeats": 1,
+          "ended_at": "2026-09-22T02:57:39.179575+00:00",
+          "accepted_at": 1790045879.1308324,
+          "evidence": {
+            "consumed_answers": 121,
+            "valid_consumed_answers": 121,
+            "parsed_plans": 121,
+            "validated_queue_entries": 1460,
+            "validated_locally_queued_commands": 728,
+            "execution_scope": "local Depot/Marine commands, not production completion or causal wins"
+          },
+          "metrics": [
+            {
+              "training/global_step": 1,
+              "actor/grad_norm": 1.072,
+              "policy_credit/invalid_tokens": 0,
+              "policy_credit/invalid_positive_tokens_removed": 0,
+              "policy_credit/invalid_advantage_max": 0,
+              "episode/valid_action_ratio": 1,
+              "episode/success_rate": 1
+            },
+            {
+              "training/global_step": 2,
+              "actor/grad_norm": 11.505,
+              "policy_credit/invalid_tokens": 0,
+              "policy_credit/invalid_positive_tokens_removed": 0,
+              "policy_credit/invalid_advantage_max": 0,
+              "episode/valid_action_ratio": 1,
+              "episode/success_rate": 0.875
+            }
+          ],
+          "updates": 2,
+          "pre_update_audits": [
+            {
+              "real_answers": 50,
+              "valid_answers": 50,
+              "valid_ratio": 1,
+              "min_valid_ratio": 0.5,
+              "decision": "accept",
+              "reason": "validity_floor_passed",
+              "pending_global_step": 1,
+              "optimizer_updates_for_this_batch": 0
+            },
+            {
+              "real_answers": 71,
+              "valid_answers": 71,
+              "valid_ratio": 1,
+              "min_valid_ratio": 0.5,
+              "decision": "accept",
+              "reason": "validity_floor_passed",
+              "pending_global_step": 2,
+              "optimizer_updates_for_this_batch": 0
+            }
+          ],
+          "training_seeds": [
+            {
+              "base_seed": 0,
+              "reset_index": 0,
+              "seed_protocol": "independent_uniform101",
+              "seeds": [
+                49,
+                97,
+                53,
+                5,
+                33,
+                65,
+                62,
+                51
+              ]
+            },
+            {
+              "base_seed": 0,
+              "reset_index": 1,
+              "seed_protocol": "independent_uniform101",
+              "seeds": [
+                100,
+                38,
+                61,
+                45,
+                74,
+                27,
+                64,
+                17
+              ]
+            }
+          ],
+          "checkpoint": {
+            "required_files": 25,
+            "all_stat_sizes_match": true,
+            "content_read_or_rehash": false
+          }
+        },
+        "post": {
+          "result_done_acceptance_equal": true,
+          "clean_sha_world8": true,
+          "finite": true,
+          "games": 8,
+          "truncated": 0,
+          "wins": 8,
+          "defeats": 0,
+          "ended_at": "2026-09-22T03:02:09.550832+00:00",
+          "accepted_at": 1790046134.552292,
+          "evidence": {
+            "consumed_answers": 79,
+            "valid_consumed_answers": 79,
+            "parsed_plans": 79,
+            "validated_queue_entries": 778,
+            "validated_locally_queued_commands": 355,
+            "execution_scope": "local Depot/Marine commands, not production completion or causal wins"
+          },
+          "updates": 0,
+          "checkpoint_load_verified": true,
+          "loaded_step": 2,
+          "eval_seeds_verified": true,
+          "outcomes_by_env_index": {
+            "0": "Victory",
+            "1": "Victory",
+            "2": "Victory",
+            "3": "Victory",
+            "4": "Victory",
+            "5": "Victory",
+            "6": "Victory",
+            "7": "Victory"
+          }
+        }
+      },
+      "pre_post_rank_rng_hashes_equal": true,
+      "paired_rng_sha256": "3a5d60d87e8ee4d5a5169d43af9348c4445232e9aa0f1d2fa8717b03b558a21d",
+      "paired_outcomes": {
+        "win_win": 8,
+        "win_loss": 0,
+        "loss_win": 0,
+        "loss_loss": 0
+      },
+      "total_valid": 249,
+      "marginal_wilson95": {
+        "pre": [
+          0.6755924351161318,
+          1
+        ],
+        "post": [
+          0.6755924351161318,
+          1
+        ]
+      },
+      "docker_state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-09-22T02:42:12.322984572Z",
+        "FinishedAt": "2026-09-22T03:02:14.679520945Z"
+      }
+    },
+    "l7-same": {
+      "root": "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-same",
+      "runtime_sha": "2f95c9fd505bd4529070ff4988c5c9efcb111b53",
+      "retained_without_rerun": false,
+      "state": {
+        "phase": "completed",
+        "completed": [
+          "pre",
+          "train2",
+          "post"
+        ],
+        "deadline": 1790053336.8343916,
+        "stage": "post",
+        "run": "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-same/runs/post",
+        "exit_code": 0,
+        "learning_validated": false
+      },
+      "dispatch": {
+        "start": 1790046136.8343916,
+        "deadline": 1790053336.8343916
+      },
+      "stages": {
+        "pre": {
+          "result_done_acceptance_equal": true,
+          "clean_sha_world8": true,
+          "finite": true,
+          "games": 8,
+          "truncated": 0,
+          "wins": 7,
+          "defeats": 1,
+          "ended_at": "2026-09-22T03:08:13.435671+00:00",
+          "accepted_at": 1790046498.0306857,
+          "evidence": {
+            "consumed_answers": 49,
+            "valid_consumed_answers": 49,
+            "parsed_plans": 49,
+            "validated_queue_entries": 754,
+            "validated_locally_queued_commands": 521,
+            "execution_scope": "local Depot/Marine commands, not production completion or causal wins"
+          },
+          "updates": 0,
+          "checkpoint_load_verified": true,
+          "loaded_step": 0,
+          "eval_seeds_verified": true,
+          "outcomes_by_env_index": {
+            "0": "Victory",
+            "1": "Defeat",
+            "2": "Victory",
+            "3": "Victory",
+            "4": "Victory",
+            "5": "Victory",
+            "6": "Victory",
+            "7": "Victory"
+          }
+        },
+        "train2": {
+          "result_done_acceptance_equal": true,
+          "clean_sha_world8": true,
+          "finite": true,
+          "games": 16,
+          "truncated": 0,
+          "wins": 8,
+          "defeats": 8,
+          "ended_at": "2026-09-22T03:17:31.691908+00:00",
+          "accepted_at": 1790047068.7439296,
+          "evidence": {
+            "consumed_answers": 124,
+            "valid_consumed_answers": 124,
+            "parsed_plans": 124,
+            "validated_queue_entries": 2128,
+            "validated_locally_queued_commands": 1338,
+            "execution_scope": "local Depot/Marine commands, not production completion or causal wins"
+          },
+          "metrics": [
+            {
+              "training/global_step": 1,
+              "actor/grad_norm": 0.477,
+              "policy_credit/invalid_tokens": 0,
+              "policy_credit/invalid_positive_tokens_removed": 0,
+              "policy_credit/invalid_advantage_max": 0,
+              "episode/valid_action_ratio": 1,
+              "episode/success_rate": 1
+            },
+            {
+              "training/global_step": 2,
+              "actor/grad_norm": 3.65,
+              "policy_credit/invalid_tokens": 0,
+              "policy_credit/invalid_positive_tokens_removed": 0,
+              "policy_credit/invalid_advantage_max": 0,
+              "episode/valid_action_ratio": 1,
+              "episode/success_rate": 0
+            }
+          ],
+          "updates": 2,
+          "pre_update_audits": [
+            {
+              "real_answers": 54,
+              "valid_answers": 54,
+              "valid_ratio": 1,
+              "min_valid_ratio": 0.5,
+              "decision": "accept",
+              "reason": "validity_floor_passed",
+              "pending_global_step": 1,
+              "optimizer_updates_for_this_batch": 0
+            },
+            {
+              "real_answers": 70,
+              "valid_answers": 70,
+              "valid_ratio": 1,
+              "min_valid_ratio": 0.5,
+              "decision": "accept",
+              "reason": "validity_floor_passed",
+              "pending_global_step": 2,
+              "optimizer_updates_for_this_batch": 0
+            }
+          ],
+          "training_seeds": [
+            {
+              "base_seed": 0,
+              "reset_index": 0,
+              "seed_protocol": "same_uniform101",
+              "seeds": [
+                49,
+                49,
+                49,
+                49,
+                49,
+                49,
+                49,
+                49
+              ]
+            },
+            {
+              "base_seed": 0,
+              "reset_index": 1,
+              "seed_protocol": "same_uniform101",
+              "seeds": [
+                97,
+                97,
+                97,
+                97,
+                97,
+                97,
+                97,
+                97
+              ]
+            }
+          ],
+          "checkpoint": {
+            "required_files": 25,
+            "all_stat_sizes_match": true,
+            "content_read_or_rehash": false
+          }
+        },
+        "post": {
+          "result_done_acceptance_equal": true,
+          "clean_sha_world8": true,
+          "finite": true,
+          "games": 8,
+          "truncated": 0,
+          "wins": 7,
+          "defeats": 1,
+          "ended_at": "2026-09-22T03:22:23.083728+00:00",
+          "accepted_at": 1790047354.2285886,
+          "evidence": {
+            "consumed_answers": 69,
+            "valid_consumed_answers": 69,
+            "parsed_plans": 69,
+            "validated_queue_entries": 787,
+            "validated_locally_queued_commands": 497,
+            "execution_scope": "local Depot/Marine commands, not production completion or causal wins"
+          },
+          "updates": 0,
+          "checkpoint_load_verified": true,
+          "loaded_step": 2,
+          "eval_seeds_verified": true,
+          "outcomes_by_env_index": {
+            "0": "Victory",
+            "1": "Defeat",
+            "2": "Victory",
+            "3": "Victory",
+            "4": "Victory",
+            "5": "Victory",
+            "6": "Victory",
+            "7": "Victory"
+          }
+        }
+      },
+      "pre_post_rank_rng_hashes_equal": true,
+      "paired_rng_sha256": "3a5d60d87e8ee4d5a5169d43af9348c4445232e9aa0f1d2fa8717b03b558a21d",
+      "paired_outcomes": {
+        "win_win": 7,
+        "win_loss": 0,
+        "loss_win": 0,
+        "loss_loss": 1
+      },
+      "total_valid": 242,
+      "marginal_wilson95": {
+        "pre": [
+          0.5291118177871563,
+          0.9775825085499423
+        ],
+        "post": [
+          0.5291118177871563,
+          0.9775825085499423
+        ]
+      },
+      "docker_state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-09-22T03:02:16.922876202Z",
+        "FinishedAt": "2026-09-22T03:22:34.353428719Z"
+      }
+    },
+    "l7-random": {
+      "root": "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-random",
+      "runtime_sha": "2f95c9fd505bd4529070ff4988c5c9efcb111b53",
+      "retained_without_rerun": false,
+      "state": {
+        "phase": "completed",
+        "completed": [
+          "pre",
+          "train2",
+          "post"
+        ],
+        "deadline": 1790054557.0498166,
+        "stage": "post",
+        "run": "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-random/runs/post",
+        "exit_code": 0,
+        "learning_validated": false
+      },
+      "dispatch": {
+        "start": 1790047357.0498166,
+        "deadline": 1790054557.0498166
+      },
+      "stages": {
+        "pre": {
+          "result_done_acceptance_equal": true,
+          "clean_sha_world8": true,
+          "finite": true,
+          "games": 8,
+          "truncated": 0,
+          "wins": 7,
+          "defeats": 1,
+          "ended_at": "2026-09-22T03:28:43.163013+00:00",
+          "accepted_at": 1790047733.126951,
+          "evidence": {
+            "consumed_answers": 49,
+            "valid_consumed_answers": 49,
+            "parsed_plans": 49,
+            "validated_queue_entries": 754,
+            "validated_locally_queued_commands": 521,
+            "execution_scope": "local Depot/Marine commands, not production completion or causal wins"
+          },
+          "updates": 0,
+          "checkpoint_load_verified": true,
+          "loaded_step": 0,
+          "eval_seeds_verified": true,
+          "outcomes_by_env_index": {
+            "0": "Victory",
+            "1": "Defeat",
+            "2": "Victory",
+            "3": "Victory",
+            "4": "Victory",
+            "5": "Victory",
+            "6": "Victory",
+            "7": "Victory"
+          }
+        },
+        "train2": {
+          "result_done_acceptance_equal": true,
+          "clean_sha_world8": true,
+          "finite": true,
+          "games": 16,
+          "truncated": 0,
+          "wins": 14,
+          "defeats": 2,
+          "ended_at": "2026-09-22T03:38:00.323209+00:00",
+          "accepted_at": 1790048303.792151,
+          "evidence": {
+            "consumed_answers": 96,
+            "valid_consumed_answers": 96,
+            "parsed_plans": 96,
+            "validated_queue_entries": 1614,
+            "validated_locally_queued_commands": 896,
+            "execution_scope": "local Depot/Marine commands, not production completion or causal wins"
+          },
+          "metrics": [
+            {
+              "training/global_step": 1,
+              "actor/grad_norm": 45.049,
+              "policy_credit/invalid_tokens": 0,
+              "policy_credit/invalid_positive_tokens_removed": 0,
+              "policy_credit/invalid_advantage_max": 0,
+              "episode/valid_action_ratio": 1,
+              "episode/success_rate": 0.875
+            },
+            {
+              "training/global_step": 2,
+              "actor/grad_norm": 8.241,
+              "policy_credit/invalid_tokens": 0,
+              "policy_credit/invalid_positive_tokens_removed": 0,
+              "policy_credit/invalid_advantage_max": 0,
+              "episode/valid_action_ratio": 1,
+              "episode/success_rate": 0.875
+            }
+          ],
+          "updates": 2,
+          "pre_update_audits": [
+            {
+              "real_answers": 46,
+              "valid_answers": 46,
+              "valid_ratio": 1,
+              "min_valid_ratio": 0.5,
+              "decision": "accept",
+              "reason": "validity_floor_passed",
+              "pending_global_step": 1,
+              "optimizer_updates_for_this_batch": 0
+            },
+            {
+              "real_answers": 50,
+              "valid_answers": 50,
+              "valid_ratio": 1,
+              "min_valid_ratio": 0.5,
+              "decision": "accept",
+              "reason": "validity_floor_passed",
+              "pending_global_step": 2,
+              "optimizer_updates_for_this_batch": 0
+            }
+          ],
+          "training_seeds": [
+            {
+              "base_seed": 0,
+              "reset_index": 0,
+              "seed_protocol": "independent_uniform101",
+              "seeds": [
+                49,
+                97,
+                53,
+                5,
+                33,
+                65,
+                62,
+                51
+              ]
+            },
+            {
+              "base_seed": 0,
+              "reset_index": 1,
+              "seed_protocol": "independent_uniform101",
+              "seeds": [
+                100,
+                38,
+                61,
+                45,
+                74,
+                27,
+                64,
+                17
+              ]
+            }
+          ],
+          "checkpoint": {
+            "required_files": 25,
+            "all_stat_sizes_match": true,
+            "content_read_or_rehash": false
+          }
+        },
+        "post": {
+          "result_done_acceptance_equal": true,
+          "clean_sha_world8": true,
+          "finite": true,
+          "games": 8,
+          "truncated": 0,
+          "wins": 8,
+          "defeats": 0,
+          "ended_at": "2026-09-22T03:42:15.973418+00:00",
+          "accepted_at": 1790048544.2051332,
+          "evidence": {
+            "consumed_answers": 54,
+            "valid_consumed_answers": 54,
+            "parsed_plans": 54,
+            "validated_queue_entries": 737,
+            "validated_locally_queued_commands": 456,
+            "execution_scope": "local Depot/Marine commands, not production completion or causal wins"
+          },
+          "updates": 0,
+          "checkpoint_load_verified": true,
+          "loaded_step": 2,
+          "eval_seeds_verified": true,
+          "outcomes_by_env_index": {
+            "0": "Victory",
+            "1": "Victory",
+            "2": "Victory",
+            "3": "Victory",
+            "4": "Victory",
+            "5": "Victory",
+            "6": "Victory",
+            "7": "Victory"
+          }
+        }
+      },
+      "pre_post_rank_rng_hashes_equal": true,
+      "paired_rng_sha256": "3a5d60d87e8ee4d5a5169d43af9348c4445232e9aa0f1d2fa8717b03b558a21d",
+      "paired_outcomes": {
+        "win_win": 7,
+        "win_loss": 0,
+        "loss_win": 1,
+        "loss_loss": 0
+      },
+      "total_valid": 199,
+      "marginal_wilson95": {
+        "pre": [
+          0.5291118177871563,
+          0.9775825085499423
+        ],
+        "post": [
+          0.6755924351161318,
+          1
+        ]
+      },
+      "docker_state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-09-22T03:22:37.134941728Z",
+        "FinishedAt": "2026-09-22T03:42:24.332362484Z"
+      },
+      "post_log_tail": "\"env_index\": 1, \"decision_count\": 8, \"step_index\": 7, \"policy_decision_count\": 8, \"terminated\": true, \"truncated\": false, \"game_result\": \"Victory\", \"termination_reason\": \"game_result\", \"outcome_reward\": 20.0}, {\"reset_index\": 0, \"env_index\": 2, \"decision_count\": 8, \"step_index\": 7, \"policy_decision_count\": 8, \"terminated\": true, \"truncated\": false, \"game_result\": \"Victory\", \"termination_reason\": \"game_result\", \"outcome_reward\": 20.0}, {\"reset_index\": 0, \"env_index\": 4, \"decision_count\": 8, \"step_index\": 7, \"policy_decision_count\": 8, \"terminated\": true, \"truncated\": false, \"game_result\": \"Victory\", \"termination_reason\": \"game_result\", \"outcome_reward\": 20.0}, {\"reset_index\": 0, \"env_index\": 5, \"decision_count\": 8, \"step_index\": 7, \"policy_decision_count\": 8, \"terminated\": true, \"truncated\": false, \"game_result\": \"Victory\", \"termination_reason\": \"game_result\", \"outcome_reward\": 20.0}, {\"reset_index\": 0, \"env_index\": 7, \"decision_count\": 8, \"step_index\": 7, \"policy_decision_count\": 8, \"terminated\": true, \"truncated\": false, \"game_result\": \"Victory\", \"termination_reason\": \"game_result\", \"outcome_reward\": 20.0}]}, \"natural_match_completed\": true, \"termination_evidence\": \"game_result\"}\n"
+    },
+    "l6-same": {
+      "root": "/var/jfsCache/sc2-qwen-seeds197-20260922-r3/l6-same",
+      "runtime_sha": "019a8b3a60aa093d61fccfb4293625e300a2894e",
+      "retained_without_rerun": true,
+      "state": {
+        "phase": "completed",
+        "completed": [
+          "pre",
+          "train2",
+          "post"
+        ],
+        "deadline": 1790015785.3296254,
+        "stage": "post",
+        "run": "/var/jfsCache/sc2-qwen-seeds197-20260922-r3/l6-same/runs/post",
+        "exit_code": 0,
+        "learning_validated": false
+      },
+      "dispatch": {
+        "start": 1790008585.3296254,
+        "deadline": 1790015785.3296254
+      },
+      "stages": {
+        "pre": {
+          "result_done_acceptance_equal": true,
+          "clean_sha_world8": true,
+          "finite": true,
+          "games": 8,
+          "truncated": 0,
+          "wins": 8,
+          "defeats": 0,
+          "ended_at": "2026-09-21T16:41:33.336815+00:00",
+          "accepted_at": 1790008901.354256,
+          "evidence": {
+            "consumed_answers": 49,
+            "valid_consumed_answers": 49,
+            "parsed_plans": 49,
+            "validated_queue_entries": 769,
+            "validated_locally_queued_commands": 374,
+            "execution_scope": "local Depot/Marine commands, not production completion or causal wins"
+          },
+          "updates": 0,
+          "checkpoint_load_verified": true,
+          "loaded_step": 0,
+          "eval_seeds_verified": true,
+          "outcomes_by_env_index": {
+            "0": "Victory",
+            "1": "Victory",
+            "2": "Victory",
+            "3": "Victory",
+            "4": "Victory",
+            "5": "Victory",
+            "6": "Victory",
+            "7": "Victory"
+          }
+        },
+        "train2": {
+          "result_done_acceptance_equal": true,
+          "clean_sha_world8": true,
+          "finite": true,
+          "games": 16,
+          "truncated": 0,
+          "wins": 16,
+          "defeats": 0,
+          "ended_at": "2026-09-21T16:49:43.315411+00:00",
+          "accepted_at": 1790009411.93928,
+          "evidence": {
+            "consumed_answers": 117,
+            "valid_consumed_answers": 117,
+            "parsed_plans": 117,
+            "validated_queue_entries": 1523,
+            "validated_locally_queued_commands": 684,
+            "execution_scope": "local Depot/Marine commands, not production completion or causal wins"
+          },
+          "metrics": [
+            {
+              "training/global_step": 1,
+              "actor/grad_norm": 0.595,
+              "policy_credit/invalid_tokens": 0,
+              "policy_credit/invalid_positive_tokens_removed": 0,
+              "policy_credit/invalid_advantage_max": 0,
+              "episode/valid_action_ratio": 1,
+              "episode/success_rate": 1
+            },
+            {
+              "training/global_step": 2,
+              "actor/grad_norm": 2.113,
+              "policy_credit/invalid_tokens": 0,
+              "policy_credit/invalid_positive_tokens_removed": 0,
+              "policy_credit/invalid_advantage_max": 0,
+              "episode/valid_action_ratio": 1,
+              "episode/success_rate": 1
+            }
+          ],
+          "updates": 2,
+          "pre_update_audits": [
+            {
+              "real_answers": 59,
+              "valid_answers": 59,
+              "valid_ratio": 1,
+              "min_valid_ratio": 0.5,
+              "decision": "accept",
+              "reason": "validity_floor_passed",
+              "pending_global_step": 1,
+              "optimizer_updates_for_this_batch": 0
+            },
+            {
+              "real_answers": 58,
+              "valid_answers": 58,
+              "valid_ratio": 1,
+              "min_valid_ratio": 0.5,
+              "decision": "accept",
+              "reason": "validity_floor_passed",
+              "pending_global_step": 2,
+              "optimizer_updates_for_this_batch": 0
+            }
+          ],
+          "training_seeds": [
+            {
+              "base_seed": 0,
+              "reset_index": 0,
+              "seed_protocol": "same_uniform101",
+              "seeds": [
+                49,
+                49,
+                49,
+                49,
+                49,
+                49,
+                49,
+                49
+              ]
+            },
+            {
+              "base_seed": 0,
+              "reset_index": 1,
+              "seed_protocol": "same_uniform101",
+              "seeds": [
+                97,
+                97,
+                97,
+                97,
+                97,
+                97,
+                97,
+                97
+              ]
+            }
+          ],
+          "checkpoint": {
+            "required_files": 25,
+            "all_stat_sizes_match": true,
+            "content_read_or_rehash": false
+          }
+        },
+        "post": {
+          "result_done_acceptance_equal": true,
+          "clean_sha_world8": true,
+          "finite": true,
+          "games": 8,
+          "truncated": 0,
+          "wins": 8,
+          "defeats": 0,
+          "ended_at": "2026-09-21T16:56:02.131254+00:00",
+          "accepted_at": 1790009772.4651325,
+          "evidence": {
+            "consumed_answers": 73,
+            "valid_consumed_answers": 73,
+            "parsed_plans": 73,
+            "validated_queue_entries": 728,
+            "validated_locally_queued_commands": 453,
+            "execution_scope": "local Depot/Marine commands, not production completion or causal wins"
+          },
+          "updates": 0,
+          "checkpoint_load_verified": true,
+          "loaded_step": 2,
+          "eval_seeds_verified": true,
+          "outcomes_by_env_index": {
+            "0": "Victory",
+            "1": "Victory",
+            "2": "Victory",
+            "3": "Victory",
+            "4": "Victory",
+            "5": "Victory",
+            "6": "Victory",
+            "7": "Victory"
+          }
+        }
+      },
+      "pre_post_rank_rng_hashes_equal": true,
+      "paired_rng_sha256": "3a5d60d87e8ee4d5a5169d43af9348c4445232e9aa0f1d2fa8717b03b558a21d",
+      "paired_outcomes": {
+        "win_win": 8,
+        "win_loss": 0,
+        "loss_win": 0,
+        "loss_loss": 0
+      },
+      "total_valid": 239,
+      "marginal_wilson95": {
+        "pre": [
+          0.6755924351161318,
+          1
+        ],
+        "post": [
+          0.6755924351161318,
+          1
+        ]
+      }
+    }
+  },
+  "storage_failure_receipts": [],
+  "hashes": {
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/queue-state.json": {
+      "sha256": "54934f4f24e5ce248749105d049c9131e946ae7a0f230509f2fffcd6e847a7e5",
+      "bytes": 274
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/deployment.json": {
+      "sha256": "7ada511ab9b181abdbec257aca11916c698dd93fd80921136563573c71fc378a",
+      "bytes": 865
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/dispatch.json": {
+      "sha256": "a2f421c60c26087a625ed24ddf718d973d9aa10d8659310e81b576cbb4304f06",
+      "bytes": 86
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/predecessor-acceptance.json": {
+      "sha256": "4c144c7bb754fc8fcaf05b89212b9cccae6e40061f1ce35411020fcc8c4cdfd6",
+      "bytes": 204
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/storage-state.json": {
+      "sha256": "652c71cf6a180f3ad98a4fcab2cfe0e9515ec5daefda2a14140588c60416094d",
+      "bytes": 3262
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l6-random/state.json": {
+      "sha256": "160f8efaf10f8efc9dcf45ba70735522bc2a716c3163ca4fc3f1c7ed91d335dd",
+      "bytes": 262
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l6-random/deployment.json": {
+      "sha256": "94db04a097fda338c38cd46fe375dc5da012b317339638c2f57152221ad6ebf7",
+      "bytes": 2483
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l6-random/dispatch.json": {
+      "sha256": "c745be6f4b2e6c18908640ced708d529ac7e3fc7923d95aa12bc7d5264b63fa5",
+      "bytes": 2419
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l6-random/acceptance-pre.json": {
+      "sha256": "a18209743b2b45dba4cbf654b5fce1f49abdf9367fc9edca6c4b29640ac0e127",
+      "bytes": 5749
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l6-random/runs/pre/result.json": {
+      "sha256": "2edcf34663ab3c32f6e5dea0a6040739c237c2801620b5a15da645fc6064bf1f",
+      "bytes": 5126
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l6-random/runs/pre/.done": {
+      "sha256": "2edcf34663ab3c32f6e5dea0a6040739c237c2801620b5a15da645fc6064bf1f",
+      "bytes": 5126
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l6-random/runs/pre/manifest.json": {
+      "sha256": "ca846b16088a3a079ff32ed176edf676f064b45d0a7ebf856c697ffa70a389b3",
+      "bytes": 2666
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l6-random/runs/pre/checkpoint_evaluation.json": {
+      "sha256": "bcf33641f0acbe82f4ba09d73b91e19322f04398528415687514472426f3ff01",
+      "bytes": 475
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l6-random/runs/pre/evaluation_seeds.jsonl": {
+      "sha256": "ffaf9953b3c4fc78b2a0f30c67357504f6a6b8e014c3b0adc2db12e87afdad90",
+      "bytes": 143
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l6-random/acceptance-train2.json": {
+      "sha256": "1517ebebb5fcdaaf913e26c058eef848eef0608ca5bbd8f5d0381e88065d8ed0",
+      "bytes": 10349
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l6-random/runs/train2/result.json": {
+      "sha256": "8ec0cc69317077e2fe200ffe3652e6a6e1d59cac781f8756795a975de51c6258",
+      "bytes": 9376
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l6-random/runs/train2/.done": {
+      "sha256": "8ec0cc69317077e2fe200ffe3652e6a6e1d59cac781f8756795a975de51c6258",
+      "bytes": 9376
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l6-random/runs/train2/manifest.json": {
+      "sha256": "20f2ea9e119fb321c4125a608878d04071655c191e3e5ea5a9b824d801a19557",
+      "bytes": 2664
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l6-random/runs/train2/metrics.json": {
+      "sha256": "6cde147ff0f065306b96a54eae1cc3b610b08f6b7b5164d70778d98950950635",
+      "bytes": 4746
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l6-random/runs/train2/checkpoints/sc2_policy_credit_audit.jsonl": {
+      "sha256": "8dd2b2a19936881c39f96edfef367223a418b2f818fcd9639fd06e180fd8335b",
+      "bytes": 416
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l6-random/runs/train2/training_seeds.jsonl": {
+      "sha256": "e6fd6d694811367de8b1023e20ba103d0cfbaab581ac1100ae78d4398007676f",
+      "bytes": 242
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l6-random/acceptance-post.json": {
+      "sha256": "e81395d5311055c3e6cad69f94b4f4b88340e7389bdd25e3342e786f2ddbd099",
+      "bytes": 5770
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l6-random/runs/post/result.json": {
+      "sha256": "3466f302d4421def3770395918e9b09416ef9ef70c75363eea0f3ce5905d5927",
+      "bytes": 5148
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l6-random/runs/post/.done": {
+      "sha256": "3466f302d4421def3770395918e9b09416ef9ef70c75363eea0f3ce5905d5927",
+      "bytes": 5148
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l6-random/runs/post/manifest.json": {
+      "sha256": "e130fecc1e7bc4e98821d50412a795d30f7455dac1367dcd75d65bde608b79b4",
+      "bytes": 2755
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l6-random/runs/post/checkpoint_evaluation.json": {
+      "sha256": "a3f4b572eb09cbdbf6ef386382155e5383ff2ddfae6f9d9485177d2c2deb1de4",
+      "bytes": 562
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l6-random/runs/post/evaluation_seeds.jsonl": {
+      "sha256": "ffaf9953b3c4fc78b2a0f30c67357504f6a6b8e014c3b0adc2db12e87afdad90",
+      "bytes": 143
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-same/state.json": {
+      "sha256": "4536119b47a4dd1478e721e675f1f4635172d887e5e39e6f7ed0bc9090eb0c8d",
+      "bytes": 260
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-same/deployment.json": {
+      "sha256": "947300dc36e78caa19ffb7e7afb1ea3833df52a41d83d3a289589f80c9ef2189",
+      "bytes": 2461
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-same/dispatch.json": {
+      "sha256": "37e54fc464832a32d33ee2f79c990e9d429d961b0761b3cb824d5af28bd17de7",
+      "bytes": 2401
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-same/acceptance-pre.json": {
+      "sha256": "d06033138e69bfb7ba4cf0db4098acc7b8e2345a94526ac0ec298911dfc64501",
+      "bytes": 5769
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-same/runs/pre/result.json": {
+      "sha256": "c4a7e64a61fb1c7686d87102cd0f57f23a15f52b8c4e0141320b0e289dabf2e0",
+      "bytes": 5146
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-same/runs/pre/.done": {
+      "sha256": "c4a7e64a61fb1c7686d87102cd0f57f23a15f52b8c4e0141320b0e289dabf2e0",
+      "bytes": 5146
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-same/runs/pre/manifest.json": {
+      "sha256": "c066c2953e513293e4f66afb50bbb53b774ea0aa0559346e930bb546855dd6ef",
+      "bytes": 2666
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-same/runs/pre/checkpoint_evaluation.json": {
+      "sha256": "bcf33641f0acbe82f4ba09d73b91e19322f04398528415687514472426f3ff01",
+      "bytes": 475
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-same/runs/pre/evaluation_seeds.jsonl": {
+      "sha256": "ffaf9953b3c4fc78b2a0f30c67357504f6a6b8e014c3b0adc2db12e87afdad90",
+      "bytes": 143
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-same/acceptance-train2.json": {
+      "sha256": "48905cb2d9acb900b6c099d49f18364b822b27329afccddc27093c56011b98c2",
+      "bytes": 10344
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-same/runs/train2/result.json": {
+      "sha256": "61e26cb95f66501d2612589cfe566a8f8f6a62783558381ac52053c6d58dc62e",
+      "bytes": 9370
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-same/runs/train2/.done": {
+      "sha256": "61e26cb95f66501d2612589cfe566a8f8f6a62783558381ac52053c6d58dc62e",
+      "bytes": 9370
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-same/runs/train2/manifest.json": {
+      "sha256": "7447bbb2ba705262a67a1d8a55cf923913c19d2043aa6b31cf0c3a30d6c4f8f9",
+      "bytes": 2664
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-same/runs/train2/metrics.json": {
+      "sha256": "021b296d151d3a35cef4d76d190eab21a15cb3a307155fcacaaa7ef8ce424bfd",
+      "bytes": 4745
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-same/runs/train2/checkpoints/sc2_policy_credit_audit.jsonl": {
+      "sha256": "0668a487dde9c64d853b329fa353bcb9d261cf06fd971e6b0896ccb9ece7b59f",
+      "bytes": 416
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-same/runs/train2/training_seeds.jsonl": {
+      "sha256": "c7225e901aea10a4a2bfdd18f5ce95214e57d5a21c2d0960e263de06c6910283",
+      "bytes": 228
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-same/acceptance-post.json": {
+      "sha256": "49e25e028c18eb5503b0c19b2d71fc3e6c4a4c63f87effcf4ecda922c72ce051",
+      "bytes": 5782
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-same/runs/post/result.json": {
+      "sha256": "133d4ec7584dfa1ff010071fa1676ad9f4098afe0c1d5e5b5a27d1c9f43e4053",
+      "bytes": 5159
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-same/runs/post/.done": {
+      "sha256": "133d4ec7584dfa1ff010071fa1676ad9f4098afe0c1d5e5b5a27d1c9f43e4053",
+      "bytes": 5159
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-same/runs/post/manifest.json": {
+      "sha256": "85fa668bbbf8c83e3b8265edbff326a2390978c3a6109a93c2577fb501e723ca",
+      "bytes": 2753
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-same/runs/post/checkpoint_evaluation.json": {
+      "sha256": "02b7f92d73d99e79c1ee1bd651e0da5770ed6f2b43e45adf2bd3a69fca007b65",
+      "bytes": 560
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-same/runs/post/evaluation_seeds.jsonl": {
+      "sha256": "ffaf9953b3c4fc78b2a0f30c67357504f6a6b8e014c3b0adc2db12e87afdad90",
+      "bytes": 143
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-random/state.json": {
+      "sha256": "2cd79c573f0bd4037e8035c5ea247e2192120b7354fc85fb79b0e17a6e312b1e",
+      "bytes": 262
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-random/deployment.json": {
+      "sha256": "8235852ee1964c2fc3d5e6eaa482f852cf4551d77602d00d6e94f89e1d65caa0",
+      "bytes": 2485
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-random/dispatch.json": {
+      "sha256": "d397b18934a668979355e2649a7f06bc6e0502fed4c0c8d7e70cdaa4cc880141",
+      "bytes": 2419
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-random/acceptance-pre.json": {
+      "sha256": "1e1378cc2bb88fe64c14ac2cfb1e5a814a8ff0f6c93726131f3cdf0f715cfdb1",
+      "bytes": 5768
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-random/runs/pre/result.json": {
+      "sha256": "8867a31289a725b11b72ecfaf005634b6023f6a004c6cf9c5b6c474d49e32672",
+      "bytes": 5146
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-random/runs/pre/.done": {
+      "sha256": "8867a31289a725b11b72ecfaf005634b6023f6a004c6cf9c5b6c474d49e32672",
+      "bytes": 5146
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-random/runs/pre/manifest.json": {
+      "sha256": "285aca2225082c52cbf122e7fc8c21da16412b0986c122eb01d64166032606b3",
+      "bytes": 2666
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-random/runs/pre/checkpoint_evaluation.json": {
+      "sha256": "bcf33641f0acbe82f4ba09d73b91e19322f04398528415687514472426f3ff01",
+      "bytes": 475
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-random/runs/pre/evaluation_seeds.jsonl": {
+      "sha256": "ffaf9953b3c4fc78b2a0f30c67357504f6a6b8e014c3b0adc2db12e87afdad90",
+      "bytes": 143
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-random/acceptance-train2.json": {
+      "sha256": "353ae47019b9a0a66c7d7fd6fb0cafa40632c073f1da7aaebe20768ddabeef15",
+      "bytes": 10338
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-random/runs/train2/result.json": {
+      "sha256": "6df1ec890979fdaec163dfdd6654db68b9e11af00f85bd4a891341f5e3fe2715",
+      "bytes": 9369
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-random/runs/train2/.done": {
+      "sha256": "6df1ec890979fdaec163dfdd6654db68b9e11af00f85bd4a891341f5e3fe2715",
+      "bytes": 9369
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-random/runs/train2/manifest.json": {
+      "sha256": "f2ba0edf409c5a01a8fcc66146b156d52039c953b8617da8110e8be8c0749d8e",
+      "bytes": 2664
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-random/runs/train2/metrics.json": {
+      "sha256": "646b2d9c2bc1bcc4db4165a7f655f7f6ca9a506433625989a407e215f78b90ca",
+      "bytes": 4755
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-random/runs/train2/checkpoints/sc2_policy_credit_audit.jsonl": {
+      "sha256": "1860abd3a879ebbeb3ea72c340e8b5c04fa45a8807d9e1d2768635cb55c65ecc",
+      "bytes": 416
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-random/runs/train2/training_seeds.jsonl": {
+      "sha256": "e6fd6d694811367de8b1023e20ba103d0cfbaab581ac1100ae78d4398007676f",
+      "bytes": 242
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-random/acceptance-post.json": {
+      "sha256": "60434050190e06eda6f60156c168f239ec410e6950439230f507e8e5b87d10b7",
+      "bytes": 5772
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-random/runs/post/result.json": {
+      "sha256": "32b11901a04830aad149c19cbd59d444e65e1465131d6150b3663a666d9e4ce1",
+      "bytes": 5149
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-random/runs/post/.done": {
+      "sha256": "32b11901a04830aad149c19cbd59d444e65e1465131d6150b3663a666d9e4ce1",
+      "bytes": 5149
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-random/runs/post/manifest.json": {
+      "sha256": "9bda66460f97242b1a96002b6ed9b8a68b9f6c1317ec19650684687d805a658a",
+      "bytes": 2755
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-random/runs/post/checkpoint_evaluation.json": {
+      "sha256": "7d4b6d380cce9aec9f9bf736221a314fa335cbaab4ba70609566fb97834414ff",
+      "bytes": 562
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r4/l7-random/runs/post/evaluation_seeds.jsonl": {
+      "sha256": "ffaf9953b3c4fc78b2a0f30c67357504f6a6b8e014c3b0adc2db12e87afdad90",
+      "bytes": 143
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r3/l6-same/state.json": {
+      "sha256": "021863b165cfc59e6d13d667c8d144d5b5479de6113c337810d4c9dc6dec6979",
+      "bytes": 260
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r3/l6-same/deployment.json": {
+      "sha256": "76b17280a02a15673aca5ad9073a6de2704a88382907d6a4831f1b93e2f50136",
+      "bytes": 2375
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r3/l6-same/dispatch.json": {
+      "sha256": "8be691d9a63f8a26ebbfab01df2745dd535c4602ef5d844defb518b107674fd1",
+      "bytes": 2245
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r3/l6-same/acceptance-pre.json": {
+      "sha256": "a15905daafe17d15c9b25e0cf3d8ef32f1c6aeabb4014d67855160128cefd605",
+      "bytes": 5748
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r3/l6-same/runs/pre/result.json": {
+      "sha256": "129ec8f21d404d4339ab0da34f1e7479e7e1227bf6f8f093f24edb16f1a00b55",
+      "bytes": 5126
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r3/l6-same/runs/pre/.done": {
+      "sha256": "129ec8f21d404d4339ab0da34f1e7479e7e1227bf6f8f093f24edb16f1a00b55",
+      "bytes": 5126
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r3/l6-same/runs/pre/manifest.json": {
+      "sha256": "b8454662e275175ea781494e5dd623755af3fbb066a6c2f7d17c4655ba6e9e61",
+      "bytes": 2666
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r3/l6-same/runs/pre/checkpoint_evaluation.json": {
+      "sha256": "bcf33641f0acbe82f4ba09d73b91e19322f04398528415687514472426f3ff01",
+      "bytes": 475
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r3/l6-same/runs/pre/evaluation_seeds.jsonl": {
+      "sha256": "ffaf9953b3c4fc78b2a0f30c67357504f6a6b8e014c3b0adc2db12e87afdad90",
+      "bytes": 143
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r3/l6-same/acceptance-train2.json": {
+      "sha256": "92186e881318af2991f99928af261d20de0f21722dda89326b4302a16f224d2e",
+      "bytes": 10338
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r3/l6-same/runs/train2/result.json": {
+      "sha256": "0143014d8b8c7270a00349f9459c2ab6b4fea93c5c650ea2d79b3cbd592935b6",
+      "bytes": 9367
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r3/l6-same/runs/train2/.done": {
+      "sha256": "0143014d8b8c7270a00349f9459c2ab6b4fea93c5c650ea2d79b3cbd592935b6",
+      "bytes": 9367
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r3/l6-same/runs/train2/manifest.json": {
+      "sha256": "eb429cfd5d228d18de07e99d512552a89f18c47465e0f10ce986406d1cf4dc18",
+      "bytes": 2664
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r3/l6-same/runs/train2/metrics.json": {
+      "sha256": "aff197449c28a92cbcad95e550a3d57ff1eba23b928926f19ac3041377b8b726",
+      "bytes": 4724
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r3/l6-same/runs/train2/checkpoints/sc2_policy_credit_audit.jsonl": {
+      "sha256": "808281d786164016f0a474b55e979f1306415b8070ba47b10f8d5fd13c77077a",
+      "bytes": 416
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r3/l6-same/runs/train2/training_seeds.jsonl": {
+      "sha256": "c7225e901aea10a4a2bfdd18f5ce95214e57d5a21c2d0960e263de06c6910283",
+      "bytes": 228
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r3/l6-same/acceptance-post.json": {
+      "sha256": "1690511b9e9f1bef88fc4be23081ce67159938724b4069fb2220a18699a53371",
+      "bytes": 5762
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r3/l6-same/runs/post/result.json": {
+      "sha256": "f687de8ca760a4e0a515d6d23e0a1d89268a9c4d5cf7c695666b7ec4bcbe111c",
+      "bytes": 5139
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r3/l6-same/runs/post/.done": {
+      "sha256": "f687de8ca760a4e0a515d6d23e0a1d89268a9c4d5cf7c695666b7ec4bcbe111c",
+      "bytes": 5139
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r3/l6-same/runs/post/manifest.json": {
+      "sha256": "07ab531efb3abe77b358c0226fba848279e9da54782991a043af1edd65103236",
+      "bytes": 2753
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r3/l6-same/runs/post/checkpoint_evaluation.json": {
+      "sha256": "2177e97a32810cef3432fa5ac606181453fc3e2490becae8f8db9d50169fc2ec",
+      "bytes": 560
+    },
+    "/var/jfsCache/sc2-qwen-seeds197-20260922-r3/l6-same/runs/post/evaluation_seeds.jsonl": {
+      "sha256": "ffaf9953b3c4fc78b2a0f30c67357504f6a6b8e014c3b0adc2db12e87afdad90",
+      "bytes": 143
+    }
+  },
+  "all_checks_passed": true,
+  "current_r4_games": 96,
+  "current_r4_ppo_updates": 6,
+  "accepted_four_arm_games": 128,
+  "accepted_four_arm_ppo_updates": 8,
+  "accepted_four_arm_consumed_valid": 929,
+  "old_failed_attempt_costs_excluded_from_accepted_game_counts_but_retained": true,
+  "monitor": {
+    "id": "197-qwen-r4",
+    "deleted": true,
+    "reason": "All remaining three arms completed and independently reverified; no authorized successor.",
+    "tool_result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Deleted automation in the app."
+        },
+        {
+          "type": "text",
+          "text": "{\"automationId\":\"197-qwen-r4\",\"mode\":\"delete\",\"deleteStatus\":\"deleted\",\"snapshot\":{\"kind\":\"heartbeat\",\"name\":\"197 Qwen剩余三组 r4\",\"rrule\":\"FREQ=MINUTELY;INTERVAL=10\"}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  "notifications": {
+    "new": [
+      "l7-random post accepted",
+      "all three r4 arms complete; all four matrix arms accepted",
+      "unique heartbeat deleted"
+    ],
+    "already_reported_in_user_replies": [
+      "l7-same train2 and post completion",
+      "l7-random GPU/pre and train2 completion"
+    ]
+  },
+  "limitations": [
+    "100% consumed-answer legality is mechanically constrained, not proof RL learned format or strategy.",
+    "L7 random improves only one of eight paired outcomes; no established learning gain or seed-grouping superiority.",
+    "Mixed-seed UID scenario-difficulty confound remains; realized short training scenarios differ across arms.",
+    "No sampled invalid responses exercised invalid-credit correction during these PPO updates.",
+    "Qwen results are not evidence old SpB L7 long-run collapse is fixed.",
+    "Old failed attempts/costs preserved; 128 games and 8 updates describe accepted four-arm data only.",
+    "No new long-training authorization was received; no prepare/queue/dispatch for96steps."
+  ]
+}

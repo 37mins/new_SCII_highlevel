@@ -1,0 +1,116 @@
+{
+  "schema": "sc2-admission-and-precision-diagnosis-v1",
+  "observed_at": "2026-09-24T10:20:34.489398+08:00",
+  "read_only": true,
+  "ssh_alias": "sc2-a100-197",
+  "user_scope": "User asked whether server was free and requested fixing/running; read-only resource diagnostics are within that new request. Subsequent explicit choice: provide new Qwen same-seed full-rerun budget proposal only.",
+  "resources": {
+    "gpu": {
+      "returncode": 0,
+      "count": 8,
+      "all_memory_used_mib_zero": true,
+      "all_utilization_percent_zero": true,
+      "stderr_empty": true,
+      "device_identifiers_omitted": true
+    },
+    "gpu_compute": {
+      "returncode": 0,
+      "compute_process_count": 0,
+      "stderr_empty": true
+    },
+    "ram": {
+      "mem_available_bytes": 815749742592,
+      "required_bytes": 644245094400
+    },
+    "disk": {
+      "free": 869850771456,
+      "required_free_bytes": 1163936137216
+    },
+    "other_running_containers": 4,
+    "own_tmux": {
+      "returncode": 0,
+      "expected_session_present": true
+    }
+  },
+  "checks": {
+    "gpu_count": 8,
+    "all_gpu_memory_and_utilization_zero": true,
+    "no_compute_pid": true,
+    "ram_pass": true,
+    "disk_pass": false,
+    "disk_free_gib": 810.1116600036621,
+    "disk_required_gib": 1084,
+    "disk_shortfall_gib": 273.8883399963379
+  },
+  "current_spb": {
+    "observed_at": "2026-09-24T10:18:39.707003+08:00",
+    "queue": {
+      "phase": "running-unverified",
+      "completed": [
+        "spb-random/short"
+      ],
+      "first_dispatch_by": 1790312320.0467553,
+      "part": "spb-random/long",
+      "deadline": 1790356959.0174987
+    },
+    "host": {
+      "version": "host-guardian-v1",
+      "phase": "stage-completed",
+      "completed": [
+        "train96"
+      ],
+      "deadline": 1790356959.0174987,
+      "learning_validated": false,
+      "started_at": 1790187111.9027476,
+      "stage": "train96"
+    },
+    "eval96_run_exists": false,
+    "storage_failure_exists": false,
+    "shared_deadline": 1790356959.0174987
+  },
+  "root_cause": {
+    "observed_blocker": "resources_ready rejects disk free 810.11 GiB below 1084 GiB; GPUs and RAM pass.",
+    "code": "spb_l7_random197.admit calls qwen_l7_long197.resources_ready for every stage, including eval96.",
+    "not_caused_by": "Historical Qwen same-seed rounded gradients do not gate this already accepted SpB train96."
+  },
+  "precision": {
+    "historical_failed_steps": [
+      7,
+      9,
+      10,
+      56,
+      65,
+      92
+    ],
+    "loss_irrecoverable": true,
+    "existing_fixed_logger": "verl/utils/logger/aggregate_logger.py",
+    "runtime_checked": "83f3530765babe048035524ddf1651291810818a",
+    "format": ".17g",
+    "protocol": "binary64-v1",
+    "tests": {
+      "command": "PYTHONDONTWRITEBYTECODE=1 /Users/yangjinyue/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -m unittest discover -s tests -p test_metric_precision.py -v",
+      "count": 14,
+      "passed": true,
+      "skips": 0,
+      "cpu_only": true
+    },
+    "new_fix_written": false,
+    "historical_acceptance_changed": false
+  },
+  "next_action": {
+    "status": "budget_proposal_only",
+    "gpu_dispatch_authorized": false,
+    "spb_admission_change_authorized": false,
+    "delete_or_move_old_artifacts_authorized": false
+  },
+  "actions": {
+    "server_mutation": false,
+    "process_stop": false,
+    "duplicate_dispatch": false,
+    "automatic_retry": false,
+    "budget_or_deadline_change": false,
+    "large_checkpoint_read": false,
+    "monitor_changed": false
+  },
+  "export_scope": "Aggregate resource values and already authorized experiment status only. GPU UUIDs, real hostname, container identities, exact storage path, process list and shell-output payloads are omitted."
+}

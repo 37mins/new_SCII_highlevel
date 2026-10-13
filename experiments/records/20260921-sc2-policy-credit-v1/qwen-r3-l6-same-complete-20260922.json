@@ -1,0 +1,532 @@
+{
+  "observed_at": "2026-09-22T01:03:18.502729+08:00",
+  "suite": "/var/jfsCache/sc2-qwen-seeds197-20260922-r3",
+  "arm": "l6-same",
+  "stages": {
+    "pre": {
+      "result_done_acceptance_equal": true,
+      "ended_at": "2026-09-21T16:41:33.336815+00:00",
+      "accepted_at": 1790008901.354256,
+      "manifest": {
+        "source_commit": "019a8b3a60aa093d61fccfb4293625e300a2894e",
+        "dirty": false,
+        "world_size": 8,
+        "model_id": "Qwen/Qwen3-4B-Instruct-2507"
+      },
+      "evidence": {
+        "consumed_answers": 49,
+        "valid_consumed_answers": 49,
+        "parsed_plans": 49,
+        "validated_queue_entries": 769,
+        "validated_locally_queued_commands": 374,
+        "execution_scope": "local Depot/Marine commands, not production completion or causal wins"
+      },
+      "outcomes": {
+        "trajectories": 8,
+        "natural_games": 8,
+        "wins": 8,
+        "defeats": 0,
+        "ties": 0,
+        "truncated": 0,
+        "natural_win_rate": 1
+      },
+      "console_sha256": "81f2613df287d72f1e1e2038f0b96b1d40d2e983b7955556bce353d897020c5c",
+      "small_sha256": {
+        "result.json": "129ec8f21d404d4339ab0da34f1e7479e7e1227bf6f8f093f24edb16f1a00b55",
+        ".done": "129ec8f21d404d4339ab0da34f1e7479e7e1227bf6f8f093f24edb16f1a00b55",
+        "manifest.json": "b8454662e275175ea781494e5dd623755af3fbb066a6c2f7d17c4655ba6e9e61",
+        "checkpoint_evaluation.json": "bcf33641f0acbe82f4ba09d73b91e19322f04398528415687514472426f3ff01",
+        "evaluation_seeds.jsonl": "ffaf9953b3c4fc78b2a0f30c67357504f6a6b8e014c3b0adc2db12e87afdad90"
+      },
+      "acceptance_sha256": "a15905daafe17d15c9b25e0cf3d8ef32f1c6aeabb4014d67855160128cefd605",
+      "load": {
+        "checkpoint": null,
+        "loaded_global_step": 0,
+        "checkpoint_load_returned": false,
+        "val_only": true,
+        "optimizer_updates": 0,
+        "feedback": "0",
+        "temperature": 0.8,
+        "do_sample": true,
+        "games": 8,
+        "game_seeds": [
+          605183188,
+          1075501356,
+          2084414326,
+          2203880230,
+          3000371298,
+          949752300,
+          3225036469,
+          2823708076
+        ],
+        "answers": "online SpB; no replay or replacement",
+        "optimizer_loaded_by_existing_loader_but_not_updated": false
+      },
+      "rank_rng_verified": true,
+      "updates": 0
+    },
+    "train2": {
+      "result_done_acceptance_equal": true,
+      "ended_at": "2026-09-21T16:49:43.315411+00:00",
+      "accepted_at": 1790009411.93928,
+      "manifest": {
+        "source_commit": "019a8b3a60aa093d61fccfb4293625e300a2894e",
+        "dirty": false,
+        "world_size": 8,
+        "model_id": "Qwen/Qwen3-4B-Instruct-2507"
+      },
+      "evidence": {
+        "consumed_answers": 117,
+        "valid_consumed_answers": 117,
+        "parsed_plans": 117,
+        "validated_queue_entries": 1523,
+        "validated_locally_queued_commands": 684,
+        "execution_scope": "local Depot/Marine commands, not production completion or causal wins"
+      },
+      "outcomes": {
+        "trajectories": 16,
+        "natural_games": 16,
+        "wins": 16,
+        "defeats": 0,
+        "ties": 0,
+        "truncated": 0,
+        "natural_win_rate": 1
+      },
+      "console_sha256": "bd50d70a36183d3e5c8b4a7cb56859aa328b457581b0b302a26f9d4de9839c26",
+      "small_sha256": {
+        "result.json": "0143014d8b8c7270a00349f9459c2ab6b4fea93c5c650ea2d79b3cbd592935b6",
+        ".done": "0143014d8b8c7270a00349f9459c2ab6b4fea93c5c650ea2d79b3cbd592935b6",
+        "manifest.json": "eb429cfd5d228d18de07e99d512552a89f18c47465e0f10ce986406d1cf4dc18",
+        "metrics.json": "aff197449c28a92cbcad95e550a3d57ff1eba23b928926f19ac3041377b8b726",
+        "training_seeds.jsonl": "c7225e901aea10a4a2bfdd18f5ce95214e57d5a21c2d0960e263de06c6910283",
+        "checkpoints/sc2_policy_credit_audit.jsonl": "808281d786164016f0a474b55e979f1306415b8070ba47b10f8d5fd13c77077a"
+      },
+      "acceptance_sha256": "92186e881318af2991f99928af261d20de0f21722dda89326b4302a16f224d2e",
+      "completed_steps": 2,
+      "start_step": 0,
+      "checkpoint_complete": true,
+      "checkpoint_files": {
+        "checkpoints/global_step_2/data.pt": {
+          "bytes": 1947,
+          "sha256": null
+        },
+        "checkpoints/global_step_2/actor/model_world_size_8_rank_0.pt": {
+          "bytes": 2205943659,
+          "sha256": "49725e78e7a6c4fb92899f25412520e61f72933f10d93324ed74159bc6db8d69"
+        },
+        "checkpoints/global_step_2/actor/model_world_size_8_rank_1.pt": {
+          "bytes": 2205943659,
+          "sha256": "3c236a6aa81693e4e8606fd7998e9581ce1702a6f361aaaa2d390ab3efe97e94"
+        },
+        "checkpoints/global_step_2/actor/model_world_size_8_rank_2.pt": {
+          "bytes": 2205943659,
+          "sha256": "fc9fbb9cef213ed637190f20b168a86402e87a654d341f328b3fdc256e78eb34"
+        },
+        "checkpoints/global_step_2/actor/model_world_size_8_rank_3.pt": {
+          "bytes": 2205943659,
+          "sha256": "35c871d74bca531adb0562634ae67cbc3e1a9d8a039d6e006daff2210df28ca3"
+        },
+        "checkpoints/global_step_2/actor/model_world_size_8_rank_4.pt": {
+          "bytes": 2205943659,
+          "sha256": "5d47705ed0363c75b97569737c662c9e55832f34967627be57e5af9f6b2f3a76"
+        },
+        "checkpoints/global_step_2/actor/model_world_size_8_rank_5.pt": {
+          "bytes": 2205943659,
+          "sha256": "bf6828557f41bcc1bd2c21bfe7f9c29d291a6fe7feb78e249130da6eea08d4b3"
+        },
+        "checkpoints/global_step_2/actor/model_world_size_8_rank_6.pt": {
+          "bytes": 2205943659,
+          "sha256": "6f0e90cf970fb11a4c238397a4bbe6fd4cc17991f74cf42f521a552f1e178287"
+        },
+        "checkpoints/global_step_2/actor/model_world_size_8_rank_7.pt": {
+          "bytes": 2205943659,
+          "sha256": "de96e7bb57052793f554989a20781be3e5672db6a11033118bece1a83ec976a8"
+        },
+        "checkpoints/global_step_2/actor/optim_world_size_8_rank_0.pt": {
+          "bytes": 4022500763,
+          "sha256": null
+        },
+        "checkpoints/global_step_2/actor/optim_world_size_8_rank_1.pt": {
+          "bytes": 4022500763,
+          "sha256": null
+        },
+        "checkpoints/global_step_2/actor/optim_world_size_8_rank_2.pt": {
+          "bytes": 4022500763,
+          "sha256": null
+        },
+        "checkpoints/global_step_2/actor/optim_world_size_8_rank_3.pt": {
+          "bytes": 4022500763,
+          "sha256": null
+        },
+        "checkpoints/global_step_2/actor/optim_world_size_8_rank_4.pt": {
+          "bytes": 4022500763,
+          "sha256": null
+        },
+        "checkpoints/global_step_2/actor/optim_world_size_8_rank_5.pt": {
+          "bytes": 4022500763,
+          "sha256": null
+        },
+        "checkpoints/global_step_2/actor/optim_world_size_8_rank_6.pt": {
+          "bytes": 4022500763,
+          "sha256": null
+        },
+        "checkpoints/global_step_2/actor/optim_world_size_8_rank_7.pt": {
+          "bytes": 4022500763,
+          "sha256": null
+        },
+        "checkpoints/global_step_2/actor/extra_state_world_size_8_rank_0.pt": {
+          "bytes": 15141,
+          "sha256": null
+        },
+        "checkpoints/global_step_2/actor/extra_state_world_size_8_rank_1.pt": {
+          "bytes": 15077,
+          "sha256": null
+        },
+        "checkpoints/global_step_2/actor/extra_state_world_size_8_rank_2.pt": {
+          "bytes": 15141,
+          "sha256": null
+        },
+        "checkpoints/global_step_2/actor/extra_state_world_size_8_rank_3.pt": {
+          "bytes": 15141,
+          "sha256": null
+        },
+        "checkpoints/global_step_2/actor/extra_state_world_size_8_rank_4.pt": {
+          "bytes": 15205,
+          "sha256": null
+        },
+        "checkpoints/global_step_2/actor/extra_state_world_size_8_rank_5.pt": {
+          "bytes": 15077,
+          "sha256": null
+        },
+        "checkpoints/global_step_2/actor/extra_state_world_size_8_rank_6.pt": {
+          "bytes": 15077,
+          "sha256": null
+        },
+        "checkpoints/global_step_2/actor/extra_state_world_size_8_rank_7.pt": {
+          "bytes": 15077,
+          "sha256": null
+        }
+      },
+      "seeds": [
+        {
+          "base_seed": 0,
+          "reset_index": 0,
+          "seed_protocol": "same_uniform101",
+          "seeds": [
+            49,
+            49,
+            49,
+            49,
+            49,
+            49,
+            49,
+            49
+          ]
+        },
+        {
+          "base_seed": 0,
+          "reset_index": 1,
+          "seed_protocol": "same_uniform101",
+          "seeds": [
+            97,
+            97,
+            97,
+            97,
+            97,
+            97,
+            97,
+            97
+          ]
+        }
+      ],
+      "audits": [
+        {
+          "real_answers": 59,
+          "valid_answers": 59,
+          "valid_ratio": 1,
+          "min_valid_ratio": 0.5,
+          "decision": "accept",
+          "reason": "validity_floor_passed",
+          "pending_global_step": 1,
+          "optimizer_updates_for_this_batch": 0
+        },
+        {
+          "real_answers": 58,
+          "valid_answers": 58,
+          "valid_ratio": 1,
+          "min_valid_ratio": 0.5,
+          "decision": "accept",
+          "reason": "validity_floor_passed",
+          "pending_global_step": 2,
+          "optimizer_updates_for_this_batch": 0
+        }
+      ],
+      "metrics": [
+        {
+          "step": 1,
+          "episode/valid_action_ratio": 1,
+          "policy_credit/invalid_positive_tokens_removed": 0,
+          "policy_credit/invalid_tokens": 0,
+          "policy_credit/invalid_advantage_max": 0,
+          "actor/grad_norm": 0.595,
+          "episode/success_rate": 1
+        },
+        {
+          "step": 2,
+          "episode/valid_action_ratio": 1,
+          "policy_credit/invalid_positive_tokens_removed": 0,
+          "policy_credit/invalid_tokens": 0,
+          "policy_credit/invalid_advantage_max": 0,
+          "actor/grad_norm": 2.113,
+          "episode/success_rate": 1
+        }
+      ]
+    },
+    "post": {
+      "result_done_acceptance_equal": true,
+      "ended_at": "2026-09-21T16:56:02.131254+00:00",
+      "accepted_at": 1790009772.4651325,
+      "manifest": {
+        "source_commit": "019a8b3a60aa093d61fccfb4293625e300a2894e",
+        "dirty": false,
+        "world_size": 8,
+        "model_id": "Qwen/Qwen3-4B-Instruct-2507"
+      },
+      "evidence": {
+        "consumed_answers": 73,
+        "valid_consumed_answers": 73,
+        "parsed_plans": 73,
+        "validated_queue_entries": 728,
+        "validated_locally_queued_commands": 453,
+        "execution_scope": "local Depot/Marine commands, not production completion or causal wins"
+      },
+      "outcomes": {
+        "trajectories": 8,
+        "natural_games": 8,
+        "wins": 8,
+        "defeats": 0,
+        "ties": 0,
+        "truncated": 0,
+        "natural_win_rate": 1
+      },
+      "console_sha256": "9d237a1785579d1df7753e81376821685da4ba0557b6e87ea313f38fe59cba40",
+      "small_sha256": {
+        "result.json": "f687de8ca760a4e0a515d6d23e0a1d89268a9c4d5cf7c695666b7ec4bcbe111c",
+        ".done": "f687de8ca760a4e0a515d6d23e0a1d89268a9c4d5cf7c695666b7ec4bcbe111c",
+        "manifest.json": "07ab531efb3abe77b358c0226fba848279e9da54782991a043af1edd65103236",
+        "checkpoint_evaluation.json": "2177e97a32810cef3432fa5ac606181453fc3e2490becae8f8db9d50169fc2ec",
+        "evaluation_seeds.jsonl": "ffaf9953b3c4fc78b2a0f30c67357504f6a6b8e014c3b0adc2db12e87afdad90"
+      },
+      "acceptance_sha256": "1690511b9e9f1bef88fc4be23081ce67159938724b4069fb2220a18699a53371",
+      "load": {
+        "checkpoint": "/var/jfsCache/sc2-qwen-seeds197-20260922-r3/l6-same/runs/train2/checkpoints/global_step_2",
+        "loaded_global_step": 2,
+        "checkpoint_load_returned": true,
+        "val_only": true,
+        "optimizer_updates": 0,
+        "feedback": "0",
+        "temperature": 0.8,
+        "do_sample": true,
+        "games": 8,
+        "game_seeds": [
+          605183188,
+          1075501356,
+          2084414326,
+          2203880230,
+          3000371298,
+          949752300,
+          3225036469,
+          2823708076
+        ],
+        "answers": "online SpB; no replay or replacement",
+        "optimizer_loaded_by_existing_loader_but_not_updated": true
+      },
+      "rank_rng_verified": true,
+      "updates": 0
+    }
+  },
+  "suite_state": {
+    "phase": "running-unverified",
+    "completed": [
+      "l6-same"
+    ],
+    "first_dispatch_by": 1790028940.699252,
+    "arm": "l6-random",
+    "deadline": 1790037385.3296254,
+    "arm_deadline": 1790016973.5412169
+  },
+  "suite_dispatch": {
+    "start": 1790008585.3296254,
+    "deadline": 1790037385.3296254,
+    "gpu_hours": 64
+  },
+  "arm_state": {
+    "phase": "completed",
+    "completed": [
+      "pre",
+      "train2",
+      "post"
+    ],
+    "deadline": 1790015785.3296254,
+    "stage": "post",
+    "run": "/var/jfsCache/sc2-qwen-seeds197-20260922-r3/l6-same/runs/post",
+    "exit_code": 0,
+    "learning_validated": false
+  },
+  "second_arm_state": {
+    "phase": "running-unverified",
+    "completed": [
+      "pre"
+    ],
+    "deadline": 1790016973.5412169,
+    "stage": "train2",
+    "run": "/var/jfsCache/sc2-qwen-seeds197-20260922-r3/l6-random/runs/train2"
+  },
+  "second_arm_dispatch": {
+    "start": 1790009773.5412169,
+    "deadline": 1790016973.5412169
+  },
+  "second_manifest.json": {
+    "source_commit": "019a8b3a60aa093d61fccfb4293625e300a2894e",
+    "dirty": false,
+    "world_size": 8,
+    "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+    "mode": "evaluation"
+  },
+  "second_checkpoint_evaluation.json": {
+    "checkpoint": null,
+    "loaded_global_step": 0,
+    "checkpoint_load_returned": false,
+    "val_only": true,
+    "optimizer_updates": 0,
+    "feedback": "0",
+    "temperature": 0.8,
+    "do_sample": true,
+    "games": 8,
+    "game_seeds": [
+      605183188,
+      1075501356,
+      2084414326,
+      2203880230,
+      3000371298,
+      949752300,
+      3225036469,
+      2823708076
+    ],
+    "answers": "online SpB; no replay or replacement",
+    "optimizer_loaded_by_existing_loader_but_not_updated": false
+  },
+  "second_evaluation_seeds.jsonl": [
+    {
+      "base_seed": 1000,
+      "reset_index": 0,
+      "seeds": [
+        605183188,
+        1075501356,
+        2084414326,
+        2203880230,
+        3000371298,
+        949752300,
+        3225036469,
+        2823708076
+      ]
+    }
+  ],
+  "second_result.json": {
+    "status": "completed",
+    "process_exit_code": 0,
+    "training_updates": 0
+  },
+  "second_.done": {
+    "status": "completed",
+    "process_exit_code": 0,
+    "training_updates": 0
+  },
+  "second_pre_acceptance": {
+    "checked_at": 1790010150.1538208,
+    "evidence": {
+      "consumed_answers": 49,
+      "valid_consumed_answers": 49,
+      "parsed_plans": 49,
+      "validated_queue_entries": 769,
+      "validated_locally_queued_commands": 374,
+      "execution_scope": "local Depot/Marine commands, not production completion or causal wins"
+    },
+    "outcomes": {
+      "trajectories": 8,
+      "natural_games": 8,
+      "wins": 8,
+      "defeats": 0,
+      "ties": 0,
+      "truncated": 0,
+      "natural_win_rate": 1
+    }
+  },
+  "storage": {
+    "checked_at": 1790010194.6892185,
+    "deadline": 1790037385.3296254,
+    "bytes": 58947878616,
+    "limit": 549755813888,
+    "returncode": 0,
+    "status": "measured",
+    "roots": [
+      "/var/jfsCache/sc2-qwen-seeds197-20260922-r3",
+      "/var/jfsCache/sc2-qwen-seeds197-source-20260922-r3",
+      "/var/jfsCache/sc2-qwen-instruct2507-cdbee75-20260921-r1",
+      "/var/jfsCache/sc2-qwen-instruct2507-cdbee75-20260921-r1-staging",
+      "/var/jfsCache/sc2-qwen-instruct2507-cdbee75-20260921-r1-direct-staging",
+      "/var/jfsCache/sc2-qwen-seeds197-20260921-r1",
+      "/var/jfsCache/sc2-qwen-seeds197-source-20260921-r1",
+      "/var/jfsCache/sc2-qwen-seeds197-20260921-r2",
+      "/var/jfsCache/sc2-qwen-seeds197-source-20260921-r2"
+    ],
+    "stderr": {
+      "tail": "",
+      "characters": 0,
+      "truncated": false
+    }
+  },
+  "additional_checks": {
+    "cp25_size_verified": true,
+    "checkpoint_contents_read": false,
+    "second_pre_result_done_acceptance_equal": true,
+    "second_pre_rank_rng_verified": true,
+    "second_pre_ended_at": "2026-09-21T17:02:18.123302+00:00",
+    "second_pre_console_sha256": "b2893bddcd014364dedc11c48ca2f25617cf79191103bd4d6097b7a2d8454841",
+    "second_small_sha256": {
+      "result.json": "e21c488d438e2176e8420c54bbaaa9f7e4bc30ec7145f826aecb3070157ac334",
+      ".done": "e21c488d438e2176e8420c54bbaaa9f7e4bc30ec7145f826aecb3070157ac334",
+      "manifest.json": "e33edb86043a1b0f2252b19e9d782059cef46e83fedb63cd8eab64e7a0da20d1",
+      "checkpoint_evaluation.json": "bcf33641f0acbe82f4ba09d73b91e19322f04398528415687514472426f3ff01",
+      "evaluation_seeds.jsonl": "ffaf9953b3c4fc78b2a0f30c67357504f6a6b8e014c3b0adc2db12e87afdad90"
+    },
+    "second_pre_acceptance_sha256": "8bb9f8af5473f50bab91b6db17dd4571f92e5655be042829470a1ca25e8d1307"
+  },
+  "notification_events": [
+    "qwen_l6_same_first_actual_ppo",
+    "qwen_l6_same_train2_completed",
+    "qwen_l6_same_post_completed",
+    "qwen_l6_same_arm_completed",
+    "qwen_l6_random_first_actual_gpu_sc2",
+    "qwen_l6_random_pre_completed"
+  ],
+  "interpretation": {
+    "total_natural_games": 32,
+    "total_ppo_updates": 2,
+    "total_valid_consumed_answers": 239,
+    "paired_wins_before": 8,
+    "paired_wins_after": 8,
+    "paired_difference": 0,
+    "marginal_wilson95_each": [
+      0.675592,
+      1
+    ],
+    "learning_validated": false,
+    "limitations": [
+      "Eight-game paired evaluation is already saturated; unchanged wins do not establish no effect or positive learning.",
+      "Both training batches have zero invalid tokens, so the invalid-credit branch was not exercised on sampled invalid responses.",
+      "Local Depot/Marine commands are not engine production acknowledgements or causal win evidence.",
+      "Second arm's training has started; no completed second-arm PPO claim is made from its state alone."
+    ]
+  }
+}

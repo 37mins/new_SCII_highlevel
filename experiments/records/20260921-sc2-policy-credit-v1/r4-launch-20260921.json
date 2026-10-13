@@ -1,0 +1,62 @@
+{
+  "snapshot_at_beijing": "2026-09-22T00:01:07+08:00",
+  "status": "running_pre_unverified",
+  "root": "/var/jfsCache/sc2-policy-credit197-20260921-r4",
+  "controller_sha": "e87b23f33cf5b93fc4c63ffc11ee70645ff743cd",
+  "runtime_sha": "ce8b938341cd5b881b4dea8446ad570ed7509f78",
+  "orchestration_sha": "9a7b0faca5b145a891ad211f189121e4949f0eab",
+  "host_alias": "sc2-a100-197",
+  "container": "sc2-policy-credit197-20260921-r4",
+  "tmux_socket": "sc2_policy_credit197_20260921_r4",
+  "tmux_session": "policy_credit197_r4",
+  "first_gpu_dispatch": 1790006259.1373603,
+  "absolute_deadline": 1790013459.1373603,
+  "deadline_beijing": "2026-09-22T01:57:39.137360+08:00",
+  "protocol": {
+    "difficulty": "Harder",
+    "model": "original SpB 5.17B",
+    "stages": ["pre", "train2", "post"],
+    "games": [8, 16, 8],
+    "updates": [0, 2, 0],
+    "maximum_gpu_hours": 16,
+    "maximum_wall_seconds": 7200,
+    "maximum_output_source_bytes": 137438953472,
+    "automatic_retry": false,
+    "successors_authorized": false
+  },
+  "cpu": {
+    "host_tests_passed": 33,
+    "host_tests_skipped": 0,
+    "actual_dry_launchers": 3,
+    "source_hashes": 31,
+    "readiness_passed": true,
+    "cuda_initialized": false,
+    "container_exit_code": 0,
+    "gpu_device_requests": null
+  },
+  "actual_gpu_startup": {
+    "original_model_loaded": true,
+    "nccl_initialized": true,
+    "sc2_eight_workers_started": true,
+    "online_generation_entered": true,
+    "clean_runtime_world_size": 8,
+    "loaded_rl_checkpoint": null,
+    "loaded_global_step": 0,
+    "optimizer_updates": 0,
+    "accepted_stages": [],
+    "action_support_eos_pad_budget": [151645, 151643, 192],
+    "support_mask_sha256": "63a9546dd5fb39a64c6e2a2ad13f31101aacaade9bac07258d0e415480181e0d",
+    "evaluation_seeds": [605183188, 1075501356, 2084414326, 2203880230, 3000371298, 949752300, 3225036469, 2823708076]
+  },
+  "evidence_hashes": {
+    "readiness.json": "5a22ca5f84760f2e43e24ff4e2f709fa6db1d193e836a648644fea9ef1f4d074",
+    "dispatch.json": "10dc9f9c5cace4e11700784d3c96957f1f687ec52109990b25d7e5a480c5d6fd",
+    "staging/controller-tests.log": "28085f3f956d9afa7ede47fc8a2390233db22dfbbbb9a7835ea956df2df61bff",
+    "staging/qwen-compatibility-tests.log": "a9d0dc8e992a72b12f8451d5fb680b83ff54fb55db39a783e1d9a12fa5ad1183"
+  },
+  "monitor_id": "197-spb-r4",
+  "first_gpu_sc2_notified": true,
+  "first_ppo_notified": false,
+  "old_artifacts_preserved": true,
+  "learning_validated": false
+}

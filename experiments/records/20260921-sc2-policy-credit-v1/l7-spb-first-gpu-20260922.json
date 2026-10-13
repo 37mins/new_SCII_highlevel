@@ -1,0 +1,70 @@
+{
+  "checked_at": 1790075289.0368345,
+  "receipts": {
+    "state.json": {
+      "sha256": "13504801f849db295983006bba1a7a72f13fd90d2132e9f88382431aa6bc858c",
+      "value": {
+        "phase": "running-unverified",
+        "completed": [],
+        "deadline": 1790247962.305692,
+        "stage": "pre",
+        "run": "/var/jfsCache/sc2-l7-followup197-20260922-r3/spb-same/short/runs/pre"
+      }
+    },
+    "runs/pre/checkpoint_evaluation.json": {
+      "sha256": "bcf33641f0acbe82f4ba09d73b91e19322f04398528415687514472426f3ff01",
+      "value": {
+        "checkpoint": null,
+        "loaded_global_step": 0,
+        "checkpoint_load_returned": false,
+        "val_only": true,
+        "optimizer_updates": 0,
+        "feedback": "0",
+        "temperature": 0.8,
+        "do_sample": true,
+        "games": 8,
+        "game_seeds": [
+          605183188,
+          1075501356,
+          2084414326,
+          2203880230,
+          3000371298,
+          949752300,
+          3225036469,
+          2823708076
+        ],
+        "answers": "online SpB; no replay or replacement",
+        "optimizer_loaded_by_existing_loader_but_not_updated": false
+      }
+    },
+    "runs/pre/evaluation_seeds.jsonl": {
+      "sha256": "ffaf9953b3c4fc78b2a0f30c67357504f6a6b8e014c3b0adc2db12e87afdad90",
+      "value": [
+        {
+          "base_seed": 1000,
+          "reset_index": 0,
+          "seeds": [
+            605183188,
+            1075501356,
+            2084414326,
+            2203880230,
+            3000371298,
+            949752300,
+            3225036469,
+            2823708076
+          ]
+        }
+      ]
+    }
+  },
+  "bounded_console_events": [
+    "(WorkerDict pid=4470) SSESWAMoBAForCausalLM contains 5.17B parameters",
+    "(WorkerDict pid=4470) NCCL version 2.26.2+cuda12.2",
+    "(WorkerDict pid=4470) SC2_ACTION_SUPPORT {\"budget\": 192, \"canonical_tokenizations_only\": true, \"eos_token_id\": 151645, \"mode\": \"sc2-canonical-bo-support-v1\", \"pad_token_id\": 151643, \"tokenizer_sha256\": \"a63080b4b30dc861fe1b0e420c53a241304dc81aff3d9bb315e6e33e2a1ab794\"}",
+    "(WorkerDict pid=4664) SC2_NO_THINKING {\"blocked_counts\": {\"\": 2, \"<\": 7, \"</\": 7, \"</t\": 2, \"</th\": 13, \"</thi\": 4, \"</thin\": 276, \"<t\": 2, \"<th\": 13, \"<thi\": 4, \"<thin\": 276}, \"forbidden_prefixes\": [\"<think\", \"</think\"], \"mode\": \"sc2-no-thinking-v1\", \"support_mask_sha256\": \"63a9546dd5fb39a64c6e2a2ad13f31101aacaade9bac07258d0e415480181e0d\"}",
+    "(WorkerDict pid=4666) SC2_ACTION_SUPPORT {\"budget\": 192, \"canonical_tokenizations_only\": true, \"eos_token_id\": 151645, \"mode\": \"sc2-canonical-bo-support-v1\", \"pad_token_id\": 151643, \"tokenizer_sha256\": \"a63080b4b30dc861fe1b0e420c53a241304dc81aff3d9bb315e6e33e2a1ab794\"} [repeated 7x across cluster]",
+    "(WorkerDict pid=4666) SC2_NO_THINKING {\"blocked_counts\": {\"\": 2, \"<\": 7, \"</\": 7, \"</t\": 2, \"</th\": 13, \"</thi\": 4, \"</thin\": 276, \"<t\": 2, \"<th\": 13, \"<thi\": 4, \"<thin\": 276}, \"forbidden_prefixes\": [\"<think\", \"</think\"], \"mode\": \"sc2-no-thinking-v1\", \"support_mask_sha256\": \"63a9546dd5fb39a64c6e2a2ad13f31101aacaade9bac07258d0e415480181e0d\"} [repeated 7x across cluster]",
+    "(WorkerDict pid=4470) SSESWAMoBAForCausalLM contains 5.17B parameters",
+    "(SC2Worker pid=2528) Combat result reward: {\"pid\": 7196, \"game_loop\": 0, \"boundary\": \"planner\", \"last_consumed_policy_action_id\": null, \"killed_value\": 0.0, \"lost_value\": 0.0, \"scale\": 0.001, \"reward\": 0.0}"
+  ]
+}
