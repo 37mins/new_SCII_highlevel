@@ -26,6 +26,8 @@ ARENA = ROOT / "agent_system/environments/env_package/sc2_online_restored/SC2Are
 
 
 def method(path, class_name, name, **scope):
+    scope.setdefault("_log_sc2_runtime", lambda *args, **kwargs: None)
+    scope.setdefault("_write_sc2_rollout_log", lambda *args, **kwargs: None)
     tree = ast.parse(path.read_text())
     cls = next(node for node in tree.body if isinstance(node, ast.ClassDef) and node.name == class_name)
     node = next(

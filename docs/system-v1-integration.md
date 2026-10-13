@@ -39,6 +39,11 @@ captures the full argument vector and Hydra overrides. Existing seed and raw
 prompt/response logging is unchanged; SC2 controller, Ray environment-worker,
 game-agent, and rollout audit/debug output is separated under
 `sc2-logs/worker-output/`. Trainer progress and metrics remain in `console.log`.
+The Qwen long-loop launcher skips all-natural-terminal batches with no consumed
+policy actions, without advancing PPO; it stops after 3 consecutive or 8 total
+empty batches and records them in `empty_policy_batches.jsonl`. Set both
+`SC2_EMPTY_POLICY_MAX_CONSECUTIVE=0` and `SC2_EMPTY_POLICY_MAX_TOTAL=0` to disable
+this guard; otherwise both limits must be positive.
 
 On normal shell exit, `run_record.py` extracts the metric rows and writes
 `metrics.json`, `result.json` and `.done`. Completed means the process

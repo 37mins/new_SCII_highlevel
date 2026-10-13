@@ -275,6 +275,24 @@ if [[ "${ROLLOUT_LOGPROB_DIAGNOSTICS:-0}" == 1 ]]; then
     command+=(+actor_rollout_ref.rollout.capture_log_probs=True)
 fi
 
+empty_policy_consecutive=${SC2_EMPTY_POLICY_MAX_CONSECUTIVE:-0}
+empty_policy_total=${SC2_EMPTY_POLICY_MAX_TOTAL:-0}
+if [[ ! "${empty_policy_consecutive}" =~ ^[0-9]+$ || ! "${empty_policy_total}" =~ ^[0-9]+$ ]]; then
+    echo "SC2 empty-policy limits must be non-negative integers" >&2
+    exit 2
+fi
+if [[ "${empty_policy_consecutive}" != 0 || "${empty_policy_total}" != 0 ]]; then
+    if [[ "${empty_policy_consecutive}" == 0 || "${empty_policy_total}" == 0 ]]; then
+        echo "Set both SC2 empty-policy limits to positive values, or set both to 0 to disable" >&2
+        exit 2
+    fi
+    command+=(
+        +trainer.sc2_empty_policy_max_consecutive="${empty_policy_consecutive}"
+        +trainer.sc2_empty_policy_max_total="${empty_policy_total}"
+        +trainer.sc2_empty_policy_log_path="${OUTPUT_DIR}/empty_policy_batches.jsonl"
+    )
+fi
+
 if [[ "${EVAL_ONLY}" == 1 ]]; then
     # Reuse the frozen training path; only change evaluation/budget controls.
     for i in "${!command[@]}"; do

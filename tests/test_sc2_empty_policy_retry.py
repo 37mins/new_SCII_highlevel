@@ -54,6 +54,7 @@ class EmptyPolicyRetryTest(unittest.TestCase):
             return value
         trainer = SimpleNamespace(config=self.config, sc2_empty_policy_batches=0, global_steps=1,
                                   actor_rollout_wg=object(), envs=object(),
+                                  _check_sc2_policy_credit_batch=lambda batch: None,
                                   traj_collector=SimpleNamespace(multi_turn_loop=rollout))
         return trainer, seen
 

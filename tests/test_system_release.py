@@ -180,6 +180,40 @@ class LauncherTest(unittest.TestCase):
             self.assertEqual(manifest["world_size"], 4)
             self.assertEqual(manifest["gpu_selection"], "4,5,6,7")
 
+    def test_qwen_long_loop_bounds_empty_policy_batches_without_changing_ppo_batch(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            result = self.launch(tmp, "train_qwen_long_loop.sh")
+            self.assertEqual(result.returncode, 0, result.stdout)
+            root = Path(tmp) / "run"
+            config = json.loads((root / "effective_config.json").read_text())["overrides"]
+            self.assertEqual(config["trainer.n_gpus_per_node"], "4")
+            self.assertEqual(config["env.rollout.n"], "8")
+            self.assertEqual(config["actor_rollout_ref.actor.ppo_mini_batch_size"], "8")
+            self.assertEqual(config["actor_rollout_ref.actor.ppo_micro_batch_size_per_gpu"], "1")
+            self.assertEqual(config["+trainer.sc2_empty_policy_max_consecutive"], "3")
+            self.assertEqual(config["+trainer.sc2_empty_policy_max_total"], "8")
+            self.assertEqual(
+                config["+trainer.sc2_empty_policy_log_path"],
+                str(root / "empty_policy_batches.jsonl"),
+            )
+
+    def test_empty_policy_limits_require_both_values_and_allow_explicit_disable(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            result = self.launch(tmp, "train_qwen_long_loop.sh",
+                                 SC2_EMPTY_POLICY_MAX_CONSECUTIVE="0",
+                                 SC2_EMPTY_POLICY_MAX_TOTAL="0")
+            self.assertEqual(result.returncode, 0, result.stdout)
+            config = json.loads((Path(tmp) / "run/effective_config.json").read_text())["overrides"]
+            self.assertNotIn("+trainer.sc2_empty_policy_max_consecutive", config)
+            self.assertNotIn("+trainer.sc2_empty_policy_max_total", config)
+
+        with tempfile.TemporaryDirectory() as tmp:
+            result = self.launch(tmp, "train_qwen_long_loop.sh",
+                                 SC2_EMPTY_POLICY_MAX_CONSECUTIVE="3",
+                                 SC2_EMPTY_POLICY_MAX_TOTAL="0")
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("Set both SC2 empty-policy limits", result.stdout)
+
     def test_two_gpu_kl_probe_preserves_global_training_controls(self):
         configs = []
         with tempfile.TemporaryDirectory() as tmp:
