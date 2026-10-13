@@ -149,8 +149,6 @@ def filter_group_data(batch_list : List[Dict],
 
     batch_size = config.data.train_batch_size
     group_n = config.env.rollout.n
-    if group_n <= 1:
-        print("Warning: group_n <= 1, no need to adopt dynamic sampling")
 
     # Handle each group
     keep_indices = np.array([], dtype=np.int64)

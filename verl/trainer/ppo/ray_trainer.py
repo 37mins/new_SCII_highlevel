@@ -1165,7 +1165,6 @@ class RayPPOTrainer:
         os.makedirs(directory, exist_ok=True)
         with open(os.path.join(directory, 'sc2_policy_credit_audit.jsonl'), 'a', encoding='utf-8') as stream:
             stream.write(json.dumps(evidence, allow_nan=False) + '\n')
-        print('SC2 policy credit gate: ' + json.dumps(evidence), flush=True)
         if evidence['decision'] != 'accept':
             raise RuntimeError('SC2 output-quality gate failed before PPO; no retry or successor promotion')
 
@@ -1421,7 +1420,6 @@ class RayPPOTrainer:
                             reward_tensor, reward_extra_infos_dict = ray.get(future_reward)
                         batch.batch["token_level_scores"] = reward_tensor
 
-                        print(f"{list(reward_extra_infos_dict.keys())=}")
                         if reward_extra_infos_dict:
                             batch.non_tensor_batch.update({k: np.array(v) for k, v in reward_extra_infos_dict.items()})
 
@@ -1490,7 +1488,6 @@ class RayPPOTrainer:
                     rollout_data_dir = self.config.trainer.get("rollout_data_dir", None)
                     if rollout_data_dir:
                         with _timer("dump_rollout_generations", timing_raw):
-                            print(batch.batch.keys())
                             inputs = self.tokenizer.batch_decode(batch.batch["prompts"], skip_special_tokens=True)
                             outputs = self.tokenizer.batch_decode(batch.batch["responses"], skip_special_tokens=True)
                             scores = batch.batch["token_level_scores"].sum(-1).cpu().tolist()
