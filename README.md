@@ -35,10 +35,11 @@ From the repository root, launch the four-GPU Qwen long-loop run detached with
 `nohup` and a unique run ID:
 
 ```bash
-RUN_ID="qwen-long-loop-$(date +%Y%m%d-%H%M%S)"; nohup env RUN_ID="$RUN_ID" bash scripts/train_qwen_long_loop.sh > "outputs/${RUN_ID}.nohup.log" 2>&1 & printf 'PID=%s RUN_ID=%s LOG=%s\n' "$!" "$RUN_ID" "outputs/${RUN_ID}.nohup.log"
+RUN_ID="qwen-long-loop-$(date +%Y%m%d-%H%M%S)"; nohup env RUN_ID="$RUN_ID" bash scripts/train_qwen_long_loop.sh </dev/null > "outputs/${RUN_ID}.nohup.log" 2>&1 & printf 'PID=%s RUN_ID=%s LOG=%s\n' "$!" "$RUN_ID" "outputs/${RUN_ID}.nohup.log"
 ```
 
-Follow the main training log with `tail -f "outputs/${RUN_ID}.nohup.log"`.
+The log's first line records the launcher PID and run ID. Follow it with
+`tail -f "outputs/${RUN_ID}.nohup.log"`.
 Run artifacts are written under `runs/${RUN_ID}/`; SC2 worker diagnostics are
 under `sc2-logs/worker-output/`. Real training requires a clean committed tree.
 

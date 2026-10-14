@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 repo_dir=$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)
+export RUN_ID="${RUN_ID:-qwen-long-loop-$(date +%Y%m%d-%H%M%S)}"
+printf 'PID=%s RUN_ID=%s\n' "$$" "${RUN_ID}"
 export CONFIG_PATH="${repo_dir}/configs/qwen3-4b-instruct-2507-level5.env"
 export SC2_DIFFICULTY=Harder
 export SC2_MEMORY_MODE=long_loop
