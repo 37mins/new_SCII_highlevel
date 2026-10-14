@@ -44,6 +44,13 @@ policy actions, without advancing PPO; it stops after 3 consecutive or 8 total
 empty batches and records them in `empty_policy_batches.jsonl`. Set both
 `SC2_EMPTY_POLICY_MAX_CONSECUTIVE=0` and `SC2_EMPTY_POLICY_MAX_TOTAL=0` to disable
 this guard; otherwise both limits must be positive.
+Long-loop resource targets must retain a numeric value; a low target is written
+as `600 minerals/min (too low)`, never as `too low` alone. If telemetry contains
+positive-count enemy units, a memory update must include at least one structured
+army matchup; an empty army list is valid only when no enemy units were observed.
+Each memory-summary attempt appends its full prompt, raw model response, rollout
+ID, status, and any error to `memory_summary_io.jsonl` beside
+`long_loop_memory.json`.
 
 On normal shell exit, `run_record.py` extracts the metric rows and writes
 `metrics.json`, `result.json` and `.done`. Completed means the process

@@ -6,6 +6,7 @@ import tempfile
 import warnings
 from collections.abc import Mapping, Sequence
 from copy import deepcopy
+from datetime import datetime, timezone
 from typing import Any, Callable, Dict, List, Optional
 
 
@@ -54,9 +55,15 @@ class SC2LongLoopMemory:
         )
         self.army_memory = deepcopy(initial_army_memory if initial_army_memory is not None else [])
         self.memory_path = os.fspath(memory_path) if memory_path else ""
+        self.summary_log_path = (
+            os.path.join(os.path.dirname(os.path.abspath(self.memory_path)), "memory_summary_io.jsonl")
+            if self.memory_path else ""
+        )
         if self.memory_path and os.path.isfile(self.memory_path):
             with open(self.memory_path, "r", encoding="utf-8") as stream:
-                restored = self._parse_model_output(stream.read())
+                restored = self._parse_model_output(
+                    stream.read(), allow_legacy_resource_format=True
+                )
             self.resource_memory = restored["resource_memory"]
             self.army_memory = restored["army_memory"]
         self.memory = {
@@ -191,8 +198,32 @@ class SC2LongLoopMemory:
             raise RuntimeError("provide llm_generate to update memory")
 
         prompt = self._build_update_prompt(rollout_id, records)
-        updated_memory = self._parse_model_output(generate(prompt))
-        self._save_memory(updated_memory)
+        raw_output = None
+        try:
+            raw_output = generate(prompt)
+            updated_memory = self._parse_model_output(raw_output)
+            if not updated_memory["army_memory"] and self._has_observed_enemy_units(records):
+                raise ValueError(
+                    "army_memory must include a matchup when enemy units appear in rollout telemetry"
+                )
+            self._save_memory(updated_memory)
+        except Exception as exc:
+            self._write_summary_io({
+                "timestamp": datetime.now(timezone.utc).isoformat(),
+                "rollout_id": rollout_id,
+                "status": "failed",
+                "prompt": prompt,
+                "response": raw_output,
+                "error": f"{type(exc).__name__}: {exc}",
+            })
+            raise
+        self._write_summary_io({
+            "timestamp": datetime.now(timezone.utc).isoformat(),
+            "rollout_id": rollout_id,
+            "status": "saved",
+            "prompt": prompt,
+            "response": raw_output,
+        })
         self.resource_memory = deepcopy(
             updated_memory.get("resource_memory", self.resource_memory)
         )
@@ -208,6 +239,39 @@ class SC2LongLoopMemory:
         if rollout_id in self._pending_rollout_updates:
             self._pending_rollout_updates.remove(rollout_id)
         return deepcopy(self.memory)
+
+    def _write_summary_io(self, entry: Mapping[str, Any]) -> None:
+        if not self.summary_log_path:
+            return
+        try:
+            parent = os.path.dirname(os.path.abspath(self.summary_log_path))
+            os.makedirs(parent, exist_ok=True)
+            with open(self.summary_log_path, "a", encoding="utf-8") as stream:
+                stream.write(json.dumps(entry, ensure_ascii=False, default=str) + "\n")
+        except OSError as exc:
+            warnings.warn(
+                f"Could not write long-loop memory summary I/O log: {exc}",
+                RuntimeWarning,
+            )
+
+    @staticmethod
+    def _has_observed_enemy_units(records: Sequence[Mapping[str, Any]]) -> bool:
+        for record in records:
+            telemetry = record.get("telemetry")
+            if not isinstance(telemetry, Mapping):
+                continue
+            enemy_units = telemetry.get("visible_enemy_units", {})
+            if isinstance(enemy_units, Mapping):
+                for count in enemy_units.values():
+                    try:
+                        if float(count) > 0:
+                            return True
+                    except (TypeError, ValueError, OverflowError):
+                        continue
+            elif isinstance(enemy_units, Sequence) and not isinstance(enemy_units, (str, bytes)):
+                if any(str(unit).strip() for unit in enemy_units):
+                    return True
+        return False
 
     def _save_memory(self, memory: Mapping[str, Any]) -> None:
         if not self.memory_path:
@@ -468,49 +532,69 @@ class SC2LongLoopMemory:
             won = float(last_record.get("won", 0.0)) > 0
         except (TypeError, ValueError):
             won = False
-        outcome_guidance = (
-            "The game was won. Use this game's mineral and vespene collection rates, mineral and vespene utilization, "
-            "supply growth rate, and both players' unit compositions at every model decision point "
-            "to revise the recommended economic targets and unit matchup rules. Check whether any "
-            "previously recommended target was too low, and retain matchup rules supported by "
-            "the game evidence and sound reasoning. "
-            if won
-            else "The game was lost. First determine whether either collection rate, either resource utilization ratio, "
-            "or either supply growth rate could have been improved substantially. If so, mark the corresponding "
-            "recommended target as too low. Only if there is no substantial room for economic improvement, "
-            "analyze both players' units using StarCraft II mechanics and record effective matchup responses. "
+
+        previous_memory = {
+            "resource_memory": self.resource_memory,
+            "army_memory": self.army_memory,
+        }
+        game_replay = json.dumps(records, ensure_ascii=False, default=str)
+        if won:
+            outcome_instructions = (
+                "The game was won. Based on this replay's mineral and vespene collection rates, "
+                "mineral and vespene utilization, and supply growth rate, compare each measured metric "
+                "with its recommendation in the previous resource_memory. Write a reasonable recommended "
+                "value for each metric. If a previous resource metric is null, use this game's measured "
+                "value directly. Analyze our and the opponent's unit compositions in the replay and explain "
+                "the unit-related reasons for victory. Supplement the rationale of relevant existing "
+                "matchup entries with facts consistent with StarCraft II rules and complete reasoning. "
+                "Add an entry for an encountered enemy composition if no relevant entry exists."
+            )
+        else:
+            outcome_instructions = (
+                "The game was lost. First compare this game's mineral and vespene collection rates, "
+                "mineral and vespene utilization, and supply growth rate with the recommendations in "
+                "the previous resource_memory. If the recommendations were met but the game was still lost, "
+                "reason from the replay and game rules whether any recommended metric target was too low "
+                "and whether changing the build order could materially improve the outcome. If so, retain "
+                "that metric's numeric target and append '(too low)' after its unit. If that does not explain "
+                "the loss, analyze whether the unit matchup response was inadequate. For each relevant enemy "
+                "unit composition in the replay, revise an existing response and its rationale if it is "
+                "incorrect, or add a new entry if none exists. Base every response on unit properties and "
+                "game-rule facts."
+            )
+
+        enemy_evidence = self._has_observed_enemy_units(records)
+        army_requirement = (
+            "At least one positive-count enemy unit appears in the replay, so include at least one relevant "
+            "army_memory entry. If no counter is supported by the evidence, use an empty counters list and "
+            "explain the uncertainty in fallback and rationale."
+            if enemy_evidence
+            else "If no positive-count enemy unit appears in the replay, army_memory may be an empty list."
         )
         return (
-            "Update the long-term StarCraft II strategy memory. Keep only reusable guidance supported by the rollout evidence. "
-            "Write all memory values in clear, concise English.\n"
-            f"{outcome_guidance}\n\n"
-            "Return a JSON object containing exactly two keys: resource_memory and army_memory.\n"
-            "resource_memory must contain five recommended values in this exact order:\n"
-            "1. Mineral collection rate\n"
-            "2. Vespene collection rate\n"
-            "3. Mineral utilization (spent minerals / collected minerals)\n"
-            "4. Vespene utilization (spent vespene / collected vespene)\n"
-            "5. Total supply growth rate\n"
-            "When a recommended target is too low, explicitly include the label 'too low' in that value.\n"
-            "army_memory must be a list of JSON objects. Each object must contain: "
-            "opponent_units (a list of exact enemy unit names as they appear in the visible-enemy telemetry), "
-            "counters (a list of our counter units or structures), fallback (what to produce or build if counters are unavailable), "
-            "and rationale (why the counters work). Only opponent_units identifies the enemy trigger; never place our counters there. "
-            "Example: {\"opponent_units\":[\"Siege Tank\"],\"counters\":[\"Viking\"],"
-            "\"fallback\":\"Build a Starport and produce Vikings\",\"rationale\":\"Vikings can attack the tank from the air\"}.\n\n"
-            "Current resource memory (values are listed in the order defined above):\n"
-            + "\n".join(
-                f"- {name}: {self.resource_memory[index] if index < len(self.resource_memory) else None}"
-                for index, name in enumerate(self._RESOURCE_MEMORY_NAMES)
-            )
-            + "\n\n"
-            f"Current army matchup memory:\n{json.dumps(self.army_memory, ensure_ascii=False, default=str)}\n\n"
-            f"Completed rollout ID: {rollout_id}\n"
-            f"{measured_metrics}\n"
-            f"Rollout records:\n{json.dumps(records, ensure_ascii=False, default=str)}"
+            "This game has ended. Here is the game replay, with one telemetry record per decision point:\n"
+            f"{game_replay}\n\n"
+            "Please update the memory using this previous memory JSON:\n"
+            f"{json.dumps(previous_memory, ensure_ascii=False, default=str)}\n\n"
+            f"{measured_metrics}\n\n"
+            f"{outcome_instructions}\n\n"
+            "Output only a valid JSON object with exactly two keys: `resource_memory` and `army_memory`, without markdown or extra text. "
+            "`resource_memory` must contain exactly five strings or nulls, in this order: mineral collection rate, "
+            "vespene collection rate, mineral utilization (spent/collected), vespene utilization (spent/collected), "
+            "and total supply growth rate. Each non-null value must include a numeric target and unit; append "
+            "`(too low)` after the unit when the target is insufficient. Use null only when replay telemetry is insufficient. "
+            "`army_memory` must be a list of objects with exactly four fields: `opponent_units` (non-empty list of exact enemy unit names "
+            "with positive counts in visible-enemy telemetry), `counters` (supported counter units or structures), "
+            "`fallback` (production or construction strategy if counters are unavailable), and `rationale` (why the strategy works). "
+            f"{army_requirement} "
+            "Do not invent unsupported information."
         )
 
-    def _parse_model_output(self, output: Any) -> Dict[str, Any]:
+    def _parse_model_output(
+        self,
+        output: Any,
+        allow_legacy_resource_format: bool = False,
+    ) -> Dict[str, Any]:
         if isinstance(output, Mapping):
             parsed = output
         elif isinstance(output, str):
@@ -540,8 +624,27 @@ class SC2LongLoopMemory:
         for index, value in enumerate(resource_values):
             if value is None:
                 resources.append(None)
-            elif isinstance(value, (str, int, float)):
-                resources.append(str(value).strip())
+            elif isinstance(value, (int, float)) and not isinstance(value, bool):
+                if not math.isfinite(float(value)):
+                    raise ValueError(
+                        f"resource_memory[{index}] ({self._RESOURCE_MEMORY_NAMES[index]}) must be finite"
+                    )
+                resources.append(str(value))
+            elif isinstance(value, str):
+                text = value.strip()
+                if allow_legacy_resource_format and not re.match(r"^[-+]?\d", text):
+                    resources.append(None)
+                    continue
+                if not re.match(r"^[-+]?\d+(?:,\d{3})*(?:\.\d+)?(?:\s|%|$)", text):
+                    raise ValueError(
+                        f"resource_memory[{index}] ({self._RESOURCE_MEMORY_NAMES[index]}) "
+                        "must start with a numeric target or be null"
+                    )
+                if "too low" in text.lower() and not text.lower().endswith("(too low)"):
+                    raise ValueError(
+                        f"resource_memory[{index}] must put '(too low)' after its numeric target"
+                    )
+                resources.append(text)
             else:
                 raise ValueError(
                     f"resource_memory[{index}] ({self._RESOURCE_MEMORY_NAMES[index]}) must be a string, number, or null"

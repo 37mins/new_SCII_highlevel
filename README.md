@@ -31,6 +31,17 @@ MODEL_PATH=/workspace/assets/SpikingBrain-2.0-instruct RUN_ID=spb-integrated-l6-
   bash scripts/train_spb_level5.sh
 ```
 
+From the repository root, launch the four-GPU Qwen long-loop run detached with
+`nohup` and a unique run ID:
+
+```bash
+RUN_ID="qwen-long-loop-$(date +%Y%m%d-%H%M%S)"; nohup env RUN_ID="$RUN_ID" bash scripts/train_qwen_long_loop.sh > "outputs/${RUN_ID}.nohup.log" 2>&1 & printf 'PID=%s RUN_ID=%s LOG=%s\n' "$!" "$RUN_ID" "outputs/${RUN_ID}.nohup.log"
+```
+
+Follow the main training log with `tail -f "outputs/${RUN_ID}.nohup.log"`.
+Run artifacts are written under `runs/${RUN_ID}/`; SC2 worker diagnostics are
+under `sc2-logs/worker-output/`. Real training requires a clean committed tree.
+
 These are alternative model runs; execute sequentially on the same GPUs.
 The historical script names contain `level5`; `SC2_DIFFICULTY=Harder` selects
 Level 6. For four available GPUs, also set `N_GPUS_PER_NODE=4` and the exact
@@ -119,3 +130,4 @@ See [integrated scope and evidence](docs/integrated-fixes-v1.md),
 [historical results](experiments/system-v1/README.md), [provenance](docs/provenance.md),
 [method](docs/method.md), and [AGENTS.md](AGENTS.md). Historical r6/r7 results are
 retained; they are not results of this new integration.
+
