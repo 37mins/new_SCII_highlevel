@@ -192,6 +192,7 @@ class LauncherTest(unittest.TestCase):
             self.assertEqual(config["actor_rollout_ref.actor.ppo_micro_batch_size_per_gpu"], "1")
             self.assertEqual(config["+trainer.sc2_empty_policy_max_consecutive"], "3")
             self.assertEqual(config["+trainer.sc2_empty_policy_max_total"], "8")
+            self.assertEqual(config["+env.sc2_memory_summary_max_new_tokens"], "1024")
             self.assertEqual(
                 config["+trainer.sc2_empty_policy_log_path"],
                 str(root / "empty_policy_batches.jsonl"),

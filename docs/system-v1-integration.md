@@ -50,7 +50,9 @@ positive-count enemy units, a memory update must include at least one structured
 army matchup; an empty army list is valid only when no enemy units were observed.
 Each memory-summary attempt appends its full prompt, raw model response, rollout
 ID, status, and any error to `memory_summary_io.jsonl` beside
-`long_loop_memory.json`.
+`long_loop_memory.json`. Summary generation defaults to a per-call limit of
+1,024 new tokens (`SC2_MEMORY_SUMMARY_MAX_NEW_TOKENS`); policy-action generation
+retains its configured response length.
 
 On normal shell exit, `run_record.py` extracts the metric rows and writes
 `metrics.json`, `result.json` and `.done`. Completed means the process

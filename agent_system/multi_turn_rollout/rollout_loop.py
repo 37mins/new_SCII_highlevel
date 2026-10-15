@@ -25,7 +25,7 @@ import uuid
 from agent_system.multi_turn_rollout.utils import process_image, to_list_of_dict, torch_to_numpy, filter_group_data
 from agent_system.environments import EnvironmentManagerBase
 from agent_system.sc2_episode import interaction_limit_reached, interaction_steps, policy_transitions
-from typing import List, Dict
+from typing import List, Dict, Optional
 from verl.protocol import pad_dataproto_to_divisor, unpad_dataproto
 
 
@@ -255,6 +255,7 @@ class TrajectoryCollector:
             obs: Dict,
             actor_rollout_wg,
             debug_label: str = "action",
+            response_length: Optional[int] = None,
             ):
         batch = self.preprocess_batch(gen_batch=gen_batch, obs=obs)
 
@@ -271,7 +272,9 @@ class TrajectoryCollector:
             non_tensor_batch_keys=non_tensor_batch_keys_to_pop,
         )
 
-        batch_input.meta_info = gen_batch.meta_info
+        batch_input.meta_info = dict(gen_batch.meta_info)
+        if response_length is not None:
+            batch_input.meta_info["response_length"] = int(response_length)
 
         batch_input_padded, pad_size = pad_dataproto_to_divisor(batch_input, actor_rollout_wg.world_size)
         batch_output_padded = actor_rollout_wg.generate_sequences(batch_input_padded)
@@ -705,6 +708,9 @@ class TrajectoryCollector:
                     obs=summary_obs,
                     actor_rollout_wg=actor_rollout_wg,
                     debug_label="long_loop_memory_update",
+                    response_length=int(
+                        self.config.env.get("sc2_memory_summary_max_new_tokens", 1024)
+                    ),
                 )
                 return outputs[0]
 

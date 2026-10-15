@@ -94,12 +94,14 @@ def cpu_rank(rank, init_file):
         rollout = HFRollout(wrapped, OmegaConf.create(dict(do_sample=False, temperature=.4,
             top_p=.9, top_k=0, response_length=5, n=1, fsdp_layer_wrap=True)))
         prompt = DataProto.from_dict(tensors=dict(input_ids=ids, attention_mask=mask,
-            position_ids=positions), meta_info=dict(eos_token_id=31, pad_token_id=0))
+            position_ids=positions), meta_info=dict(eos_token_id=31, pad_token_id=0,
+            response_length=8))
         # The production adapter chooses CUDA autocast; this tiny test runs CPU only.
         with patch("verl.workers.rollout.hf_rollout.torch.autocast", return_value=contextlib.nullcontext()), \
                 patch("verl.workers.rollout.hf_rollout.get_torch_device"):
             result = rollout.generate_sequences(prompt)
-        active = int(result.batch["attention_mask"][:, -5:].sum())
+        assert result.batch["responses"].shape[1] == 8
+        active = int(result.batch["attention_mask"][:, -8:].sum())
         assert active == 1 + rank * 2, (rank, active)
         assert not torch.cuda.is_initialized()
         print(f"CPU rank={rank}: nested_fsdp=3, backward/Adam/cache/EOS passed, response_tokens={active}", flush=True)

@@ -6,6 +6,7 @@ printf 'PID=%s RUN_ID=%s\n' "$$" "${RUN_ID}"
 export CONFIG_PATH="${repo_dir}/configs/qwen3-4b-instruct-2507-level5.env"
 export SC2_DIFFICULTY=Harder
 export SC2_MEMORY_MODE=long_loop
+export SC2_MEMORY_SUMMARY_MAX_NEW_TOKENS="${SC2_MEMORY_SUMMARY_MAX_NEW_TOKENS:-1024}"
 export SC2_EMPTY_POLICY_MAX_CONSECUTIVE="${SC2_EMPTY_POLICY_MAX_CONSECUTIVE:-3}"
 export SC2_EMPTY_POLICY_MAX_TOTAL="${SC2_EMPTY_POLICY_MAX_TOTAL:-8}"
 export CUDA_VISIBLE_DEVICES=0,1,2,3
@@ -64,4 +65,5 @@ wait_for_selected_gpus() {
 
 wait_for_selected_gpus
 exec bash "${repo_dir}/scripts/train_sc2.sh" \
-	++actor_rollout_ref.rollout.fsdp_layer_wrap=True "$@"
+	++actor_rollout_ref.rollout.fsdp_layer_wrap=True \
+	+env.sc2_memory_summary_max_new_tokens="${SC2_MEMORY_SUMMARY_MAX_NEW_TOKENS}" "$@"
