@@ -13,6 +13,13 @@ from typing import Any, Callable, Dict, List, Optional
 class SC2LongLoopMemory:
     """Cross-rollout SC2 memory updated from completed rollout records."""
 
+    _RESOURCE_MEMORY_KEYS = (
+        "recommended_mineral_collection_rate",
+        "recommended_vespene_collection_rate",
+        "recommended_mineral_utilization",
+        "recommended_vespene_utilization",
+        "recommended_total_supply_growth_rate",
+    )
     _RESOURCE_MEMORY_NAMES = (
         "Mineral collection rate",
         "Vespene collection rate",
@@ -24,7 +31,7 @@ class SC2LongLoopMemory:
     def __init__(
         self,
         llm_generate: Optional[Callable[[str], Any]] = None,
-        initial_resource_memory: Optional[List[Any]] = None,
+        initial_resource_memory: Optional[Dict[str, Any]] = None,
         initial_army_memory: Optional[List[Any]] = None,
         max_items_per_section: int = 8,
         max_pending_rollouts: int = 64,
@@ -51,7 +58,7 @@ class SC2LongLoopMemory:
         self.resource_memory = deepcopy(
             initial_resource_memory
             if initial_resource_memory is not None
-            else [None] * len(self._RESOURCE_MEMORY_NAMES)
+            else dict.fromkeys(self._RESOURCE_MEMORY_KEYS)
         )
         self.army_memory = deepcopy(initial_army_memory if initial_army_memory is not None else [])
         self.memory_path = os.fspath(memory_path) if memory_path else ""
@@ -381,9 +388,9 @@ class SC2LongLoopMemory:
             ]
 
         def metric_reminder(index: int, current: Optional[float]) -> Optional[str]:
-            if current is None or index >= len(self.resource_memory):
+            if current is None:
                 return None
-            recommendation = self.resource_memory[index]
+            recommendation = self.resource_memory.get(self._RESOURCE_MEMORY_KEYS[index])
             target = number(recommendation)
             if target is None or target <= 0:
                 return None
@@ -542,25 +549,24 @@ class SC2LongLoopMemory:
             outcome_instructions = (
                 "The game was won. Based on this replay's mineral and vespene collection rates, "
                 "mineral and vespene utilization, and supply growth rate, compare each measured metric "
-                "with its recommendation in the previous resource_memory. Write a reasonable recommended "
-                "value for each metric. If a previous resource metric is null, use this game's measured "
-                "value directly. Analyze our and the opponent's unit compositions in the replay and explain "
-                "the unit-related reasons for victory. Supplement the rationale of relevant existing "
-                "matchup entries with facts consistent with StarCraft II rules and complete reasoning. "
-                "Add an entry for an encountered enemy composition if no relevant entry exists."
+                "with its recommendation in the previous resource_memory. Retain each existing target or "
+                "raise it when supported by a higher measured value; a win below target does not justify "
+                "lowering the target. If a previous resource metric is null, use this game's measured "
+                "value directly. Identify the best-supported unit matchup advantages. "
+                "Refine relevant existing entries or add a missing response to an observed enemy unit."
             )
         else:
             outcome_instructions = (
                 "The game was lost. First compare this game's mineral and vespene collection rates, "
                 "mineral and vespene utilization, and supply growth rate with the recommendations in "
-                "the previous resource_memory. If the recommendations were met but the game was still lost, "
+                "the previous resource_memory. If any measured metric fell below its target, preserve all "
+                "existing resource targets unchanged, provisionally treat them as valid, and focus reflection "
+                "on unit matchup weaknesses. If all targets were met, "
                 "reason from the replay and game rules whether any recommended metric target was too low "
                 "and whether changing the build order could materially improve the outcome. If so, retain "
                 "that metric's numeric target and append '(too low)' after its unit. If that does not explain "
-                "the loss, analyze whether the unit matchup response was inadequate. For each relevant enemy "
-                "unit composition in the replay, revise an existing response and its rationale if it is "
-                "incorrect, or add a new entry if none exists. Base every response on unit properties and "
-                "game-rule facts."
+                "the loss, identify the best-supported unit matchup weaknesses; revise an existing response "
+                "if incorrect, or add a missing response to an observed enemy unit."
             )
 
         enemy_evidence = self._has_observed_enemy_units(records)
@@ -574,18 +580,36 @@ class SC2LongLoopMemory:
         return (
             "This game has ended. Here is the game replay, with one telemetry record per decision point:\n"
             f"{game_replay}\n\n"
-            "Please update the memory using this previous memory JSON:\n"
+            "Update the previous memory based on this replay and the game outcome. "
+            "The memory stores actionable recommendations for future games, not a replay summary: "
+            "resource_memory records recommended resource management targets, "
+            "and army_memory records recommended counters and fallback strategies against specific enemy units. "
+            "Revise existing recommendations or add new ones based on the evidence, while preserving valid prior knowledge.\n"
             f"{json.dumps(previous_memory, ensure_ascii=False, default=str)}\n\n"
             f"{measured_metrics}\n\n"
+            "Treat resource targets as minimum performance goals: during normal game progression, higher "
+            "collection rates, utilization, and supply growth are preferable. Do not lower established "
+            "numeric targets. Preserve existing targets when measurements are unavailable; missing telemetry "
+            "does not establish that a target was met.\n\n"
             f"{outcome_instructions}\n\n"
+            "For army_memory, prioritize matchups with the clearest causal mechanism supported by telemetry "
+            "and SC2 unit properties; co-occurrence or the game result alone is not causal evidence. "
+            "Each entry targets one enemy unit type, or two only when their interaction requires a joint response. "
+            "Do not bundle unrelated enemy units or reproduce the enemy roster. Multiple counters and fallback "
+            "options are allowed, but each must address that entry's target. Split or narrow existing broad entries. "
+            "Keep rationale to 1-2 concise sentences linking a specific unit property to why the response works "
+            "and any essential limitation; omit replay narration and repeated advice.\n\n"
             "Output only a valid JSON object with exactly two keys: `resource_memory` and `army_memory`, without markdown or extra text. "
-            "`resource_memory` must contain exactly five strings or nulls, in this order: mineral collection rate, "
-            "vespene collection rate, mineral utilization (spent/collected), vespene utilization (spent/collected), "
-            "and total supply growth rate. Each non-null value must include a numeric target and unit; append "
+            "`resource_memory` must be a JSON object with exactly these five keys: "
+            f"{', '.join(f'`{key}`' for key in self._RESOURCE_MEMORY_KEYS)}. "
+            "The values are recommended targets for mineral collection rate (minerals/min), "
+            "vespene collection rate (vespene/min), mineral utilization (spent/collected, %), "
+            "vespene utilization (spent/collected, %), and total supply growth rate (supply/min), respectively. "
+            "Each value must be a string or null. Each non-null value must include a numeric target and unit; append "
             "`(too low)` after the unit when the target is insufficient. Use null only when replay telemetry is insufficient. "
-            "`army_memory` must be a list of objects with exactly four fields: `opponent_units` (non-empty list of exact enemy unit names "
+            "`army_memory` must be a list of objects with exactly four fields: `opponent_units` (1-2 exact enemy unit names "
             "with positive counts in visible-enemy telemetry), `counters` (supported counter units or structures), "
-            "`fallback` (production or construction strategy if counters are unavailable), and `rationale` (why the strategy works). "
+            "`fallback` (production or construction strategy if counters are unavailable), and `rationale` (1-2 concise causal sentences). "
             f"{army_requirement} "
             "Do not invent unsupported information."
         )
@@ -614,40 +638,49 @@ class SC2LongLoopMemory:
             raise ValueError("model output must contain resource_memory and army_memory")
 
         resource_values = parsed["resource_memory"]
-        if not isinstance(resource_values, Sequence) or isinstance(resource_values, (str, bytes)):
-            raise ValueError("resource_memory must be a list of five ordered metric values")
-        if len(resource_values) != len(self._RESOURCE_MEMORY_NAMES):
+        if (
+            allow_legacy_resource_format
+            and isinstance(resource_values, Sequence)
+            and not isinstance(resource_values, (str, bytes))
+            and len(resource_values) == len(self._RESOURCE_MEMORY_KEYS)
+        ):
+            resource_values = dict(zip(self._RESOURCE_MEMORY_KEYS, resource_values))
+        if not isinstance(resource_values, Mapping):
+            raise ValueError("resource_memory must be a JSON object with five recommended metric keys")
+        if set(resource_values) != set(self._RESOURCE_MEMORY_KEYS):
             raise ValueError(
-                f"resource_memory must contain exactly {len(self._RESOURCE_MEMORY_NAMES)} values"
+                "resource_memory must contain exactly these keys: "
+                + ", ".join(self._RESOURCE_MEMORY_KEYS)
             )
-        resources = []
-        for index, value in enumerate(resource_values):
+        resources = {}
+        for key in self._RESOURCE_MEMORY_KEYS:
+            value = resource_values[key]
             if value is None:
-                resources.append(None)
+                resources[key] = None
             elif isinstance(value, (int, float)) and not isinstance(value, bool):
                 if not math.isfinite(float(value)):
                     raise ValueError(
-                        f"resource_memory[{index}] ({self._RESOURCE_MEMORY_NAMES[index]}) must be finite"
+                        f"resource_memory[{key!r}] must be finite"
                     )
-                resources.append(str(value))
+                resources[key] = str(value)
             elif isinstance(value, str):
                 text = value.strip()
                 if allow_legacy_resource_format and not re.match(r"^[-+]?\d", text):
-                    resources.append(None)
+                    resources[key] = None
                     continue
                 if not re.match(r"^[-+]?\d+(?:,\d{3})*(?:\.\d+)?(?:\s|%|$)", text):
                     raise ValueError(
-                        f"resource_memory[{index}] ({self._RESOURCE_MEMORY_NAMES[index]}) "
+                        f"resource_memory[{key!r}] "
                         "must start with a numeric target or be null"
                     )
                 if "too low" in text.lower() and not text.lower().endswith("(too low)"):
                     raise ValueError(
-                        f"resource_memory[{index}] must put '(too low)' after its numeric target"
+                        f"resource_memory[{key!r}] must put '(too low)' after its numeric target"
                     )
-                resources.append(text)
+                resources[key] = text
             else:
                 raise ValueError(
-                    f"resource_memory[{index}] ({self._RESOURCE_MEMORY_NAMES[index]}) must be a string, number, or null"
+                    f"resource_memory[{key!r}] must be a string, number, or null"
                 )
 
         army_values = parsed["army_memory"]

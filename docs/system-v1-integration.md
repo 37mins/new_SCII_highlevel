@@ -44,10 +44,46 @@ policy actions, without advancing PPO; it stops after 3 consecutive or 8 total
 empty batches and records them in `empty_policy_batches.jsonl`. Set both
 `SC2_EMPTY_POLICY_MAX_CONSECUTIVE=0` and `SC2_EMPTY_POLICY_MAX_TOTAL=0` to disable
 this guard; otherwise both limits must be positive.
+Long-loop `resource_memory` is an object with exactly five named targets in both
+the model-summary output and persisted memory:
+
+```json
+{
+	"resource_memory": {
+		"recommended_mineral_collection_rate": "600 minerals/min",
+		"recommended_vespene_collection_rate": "120 vespene/min",
+		"recommended_mineral_utilization": "75%",
+		"recommended_vespene_utilization": "50%",
+		"recommended_total_supply_growth_rate": "12 supply/min"
+	},
+	"army_memory": []
+}
+```
+
+Each resource target defaults to `null` until evidence is available. Missing or
+extra resource keys and list-format model outputs are rejected. Existing saved
+five-item resource lists are converted to the named object on load; the next
+successful update saves the object format. Retrieval uses the key names, not
+JSON field order. The example values above illustrate the format, not defaults.
+
+The summary prompt treats higher resource metrics as preferable during normal
+game progression and established targets as non-decreasing minimum goals. Wins
+may support higher targets; losing below any target preserves all existing targets
+and directs reflection to unit matchups. Only when all targets are met does the
+loss branch assess whether targets are too low. Missing measurements preserve
+existing targets and do not establish attainment. These are prompt instructions,
+not numerical update constraints enforced by the parser. Supply growth is still
+measured as net supply change; gross production excluding losses is not yet tracked.
+
 Long-loop resource targets must retain a numeric value; a low target is written
 as `600 minerals/min (too low)`, never as `too low` alone. If telemetry contains
 positive-count enemy units, a memory update must include at least one structured
 army matchup; an empty army list is valid only when no enemy units were observed.
+The summary prompt asks each matchup to target one enemy unit type, or two only
+when their interaction requires a joint response, and prioritizes causal unit
+mechanisms over roster coverage. Rationales should explain the mechanism and
+essential limitations in 1-2 concise sentences. These are generation instructions,
+not additional parser constraints; existing broad entries are narrowed on update.
 Each memory-summary attempt appends its full prompt, raw model response, rollout
 ID, status, and any error to `memory_summary_io.jsonl` beside
 `long_loop_memory.json`. Summary generation defaults to a per-call limit of
