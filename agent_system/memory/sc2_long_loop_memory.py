@@ -544,7 +544,38 @@ class SC2LongLoopMemory:
             "resource_memory": self.resource_memory,
             "army_memory": self.army_memory,
         }
-        game_replay = json.dumps(records, ensure_ascii=False, default=str)
+        replay_records = []
+        previous_counts = {}
+        for record in records:
+            replay_record = {}
+            point = record.get("telemetry")
+            if isinstance(point, Mapping):
+                replay_point = {
+                    key: point[key]
+                    for key in ("game_time_seconds", "minerals", "vespene")
+                    if key in point
+                }
+                for key in (
+                    "own_units", "own_structures",
+                    "visible_enemy_units", "visible_enemy_structures",
+                ):
+                    counts = point.get(key)
+                    if not isinstance(counts, Mapping):
+                        continue
+                    previous = previous_counts.get(key, {})
+                    replay_point[key] = {
+                        unit: delta
+                        for unit in dict.fromkeys((*previous, *counts))
+                        if (delta := counts.get(unit, 0) - previous.get(unit, 0)) != 0
+                    }
+                    previous_counts[key] = counts
+                replay_record["telemetry"] = replay_point
+            if "won" in record:
+                replay_record["won"] = record["won"]
+            replay_records.append(replay_record)
+        game_replay = json.dumps(
+            replay_records, ensure_ascii=False, default=str, separators=(",", ":")
+        )
         if won:
             outcome_instructions = (
                 "The game was won. Based on this replay's mineral and vespene collection rates, "
@@ -580,6 +611,11 @@ class SC2LongLoopMemory:
         return (
             "This game has ended. Here is the game replay, with one telemetry record per decision point:\n"
             f"{game_replay}\n\n"
+            "Time and mineral/vespene balances are absolute. Unit and structure maps contain signed count "
+            "changes from their previous available snapshot; the first snapshot uses a zero baseline. "
+            "Omitted unit names have zero change; an empty map means no change. A missing map is unobserved. "
+            "Sum changes to reconstruct counts. Negative visible-enemy changes may reflect lost vision, "
+            "not kills; count changes alone do not establish production or losses.\n\n"
             "Update the previous memory based on this replay and the game outcome. "
             "The memory stores actionable recommendations for future games, not a replay summary: "
             "resource_memory records recommended resource management targets, "
@@ -608,7 +644,7 @@ class SC2LongLoopMemory:
             "Each value must be a string or null. Each non-null value must include a numeric target and unit; append "
             "`(too low)` after the unit when the target is insufficient. Use null only when replay telemetry is insufficient. "
             "`army_memory` must be a list of objects with exactly four fields: `opponent_units` (1-2 exact enemy unit names "
-            "with positive counts in visible-enemy telemetry), `counters` (supported counter units or structures), "
+            "observed at positive reconstructed counts in visible-enemy telemetry), `counters` (supported counter units or structures), "
             "`fallback` (production or construction strategy if counters are unavailable), and `rationale` (1-2 concise causal sentences). "
             f"{army_requirement} "
             "Do not invent unsupported information."

@@ -212,6 +212,86 @@ class SC2LongLoopMemoryTest(unittest.TestCase):
         self.assertIn("could materially improve the outcome", lost_prompt)
         self.assertIn("revise an existing response", lost_prompt)
 
+    def test_replay_uses_filtered_count_deltas_without_changing_metrics_or_records(self):
+        memory = SC2LongLoopMemory()
+        records = [
+            {"telemetry": {
+                "game_time_seconds": 60, "minerals": 100, "vespene": 25,
+                "cumulative_minerals_collected": 600,
+                "cumulative_vespene_collected": 120,
+                "cumulative_minerals_spent": 450,
+                "cumulative_vespene_spent": 60,
+                "supply_used": 12, "supply_cap": 15, "supply_army": 0,
+                "own_units": {"SCV": 12},
+                "own_structures": {"CommandCenter": 1},
+                "visible_enemy_units": {"Marine": 5},
+                "visible_enemy_structures": {"Barracks": 1},
+            }},
+            {"telemetry": {
+                "game_time_seconds": 120, "minerals": 150, "vespene": 50,
+                "cumulative_minerals_collected": 1200,
+                "cumulative_vespene_collected": 240,
+                "cumulative_minerals_spent": 900,
+                "cumulative_vespene_spent": 120,
+                "supply_used": 25,
+                "own_units": {"SCV": 17, "Marine": 3},
+                "own_structures": {"CommandCenter": 1, "Barracks": 1},
+                "visible_enemy_units": {"Marine": 3, "Marauder": 1},
+                "visible_enemy_structures": {},
+            }},
+            {"telemetry": {
+                "game_time_seconds": 180, "minerals": 175, "vespene": 80,
+                "cumulative_minerals_collected": 1800,
+                "cumulative_vespene_collected": 360,
+                "cumulative_minerals_spent": 1350,
+                "cumulative_vespene_spent": 180,
+                "supply_used": 20,
+                "own_units": {"SCV": 12},
+                "own_structures": {"CommandCenter": 1, "Barracks": 1},
+                "visible_enemy_units": {}, "visible_enemy_structures": {},
+            }, "won": False},
+        ]
+        original = json.dumps(records)
+        prompt = memory._build_update_prompt("rollout", records)
+        replay_text = prompt.split("per decision point:\n", 1)[1].split("\n\n", 1)[0]
+        replay = json.loads(replay_text)
+        self.assertEqual(replay[0]["telemetry"]["own_units"], {"SCV": 12})
+        self.assertEqual(replay[1]["telemetry"], {
+            "game_time_seconds": 120, "minerals": 150, "vespene": 50,
+            "own_units": {"SCV": 5, "Marine": 3},
+            "own_structures": {"Barracks": 1},
+            "visible_enemy_units": {"Marine": -2, "Marauder": 1},
+            "visible_enemy_structures": {"Barracks": -1},
+        })
+        self.assertEqual(replay[2]["telemetry"]["own_units"], {"SCV": -5, "Marine": -3})
+        self.assertEqual(replay[2]["telemetry"]["own_structures"], {})
+        self.assertEqual(replay[2]["telemetry"]["visible_enemy_units"], {"Marine": -3, "Marauder": -1})
+        self.assertFalse(replay[2]["won"])
+        self.assertNotIn("won", replay[0])
+        for record in replay:
+            self.assertNotIn("supply_used", record["telemetry"])
+            self.assertNotIn("cumulative_minerals_collected", record["telemetry"])
+        self.assertIn("Mineral collection rate: 600.00 minerals/min", prompt)
+        self.assertIn("Vespene collection rate: 120.00 vespene/min", prompt)
+        self.assertIn("Mineral utilization (spent / collected): 75.00 %", prompt)
+        self.assertIn("Total supply growth rate: 4.00 supply/min", prompt)
+        self.assertIn("Negative visible-enemy changes may reflect lost vision", prompt)
+        self.assertEqual(json.dumps(records), original)
+
+    def test_replay_missing_maps_do_not_create_false_disappearances(self):
+        memory = SC2LongLoopMemory()
+        records = [
+            {"telemetry": {"own_units": {"SCV": 12}}},
+            {"telemetry": {"minerals": 100}},
+            {"telemetry": {"own_units": {"SCV": 17}}, "won": True},
+        ]
+        for unused in range(2):
+            prompt = memory._build_update_prompt("rollout", records)
+            replay, _ = json.JSONDecoder().raw_decode(prompt.split("per decision point:\n", 1)[1])
+            self.assertEqual(replay[0]["telemetry"]["own_units"], {"SCV": 12})
+            self.assertNotIn("own_units", replay[1]["telemetry"])
+            self.assertEqual(replay[2]["telemetry"]["own_units"], {"SCV": 5})
+
     def test_resource_prompt_uses_non_decreasing_targets_and_explicit_loss_branches(self):
         memory = SC2LongLoopMemory()
         for won in (True, False):

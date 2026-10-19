@@ -66,6 +66,19 @@ five-item resource lists are converted to the named object on load; the next
 successful update saves the object format. Retrieval uses the key names, not
 JSON field order. The example values above illustrate the format, not defaults.
 
+Summary replay telemetry contains only absolute `game_time_seconds`, `minerals`,
+and `vespene`, plus signed count deltas for `own_units`, `own_structures`,
+`visible_enemy_units`, and `visible_enemy_structures`. Each map's first snapshot
+is relative to zero; later snapshots are relative to its last available snapshot.
+New types produce positive deltas, disappeared types negative deltas, and unchanged
+types are omitted. Empty maps mean no change; missing maps are unobserved, not
+zero counts. Positive changes use ordinary JSON numbers (`5`, not `+5`). Replay
+JSON uses compact separators and retains terminal `won` outside telemetry.
+Raw telemetry remains stored internally for metric computation and enemy-evidence
+validation. Deltas are recomputed for each summary attempt without mutating it.
+Visible-enemy decreases may indicate lost vision, not kills; count deltas do not
+measure gross production or combat losses.
+
 The summary prompt treats higher resource metrics as preferable during normal
 game progression and established targets as non-decreasing minimum goals. Wins
 may support higher targets; losing below any target preserves all existing targets

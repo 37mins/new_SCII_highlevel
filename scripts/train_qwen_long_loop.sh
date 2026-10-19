@@ -4,7 +4,7 @@ repo_dir=$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)
 export RUN_ID="${RUN_ID:-qwen-long-loop-$(date +%Y%m%d-%H%M%S)}"
 printf 'PID=%s RUN_ID=%s\n' "$$" "${RUN_ID}"
 export CONFIG_PATH="${repo_dir}/configs/qwen3-4b-instruct-2507-level5.env"
-export SC2_DIFFICULTY=Harder
+export SC2_DIFFICULTY=CheatVision
 export SC2_MEMORY_MODE=long_loop
 export SC2_MEMORY_SUMMARY_MAX_NEW_TOKENS="${SC2_MEMORY_SUMMARY_MAX_NEW_TOKENS:-1024}"
 export SC2_EMPTY_POLICY_MAX_CONSECUTIVE="${SC2_EMPTY_POLICY_MAX_CONSECUTIVE:-3}"
