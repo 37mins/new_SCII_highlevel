@@ -32,10 +32,10 @@ MODEL_PATH=/workspace/assets/SpikingBrain-2.0-instruct RUN_ID=spb-integrated-l6-
 ```
 
 From the repository root, launch the four-GPU Qwen long-loop run detached with
-`nohup` and a unique run ID:
+`nohup` and a unique run ID containing the opponent difficulty (default `CheatVision`):
 
 ```bash
-RUN_ID="qwen-long-loop-$(date +%Y%m%d-%H%M%S)"; nohup env RUN_ID="$RUN_ID" bash scripts/train_qwen_long_loop.sh </dev/null > "outputs/${RUN_ID}.nohup.log" 2>&1 & printf 'PID=%s RUN_ID=%s LOG=%s\n' "$!" "$RUN_ID" "outputs/${RUN_ID}.nohup.log"
+SC2_DIFFICULTY="${SC2_DIFFICULTY:-CheatVision}"; RUN_ID="qwen-long-loop-${SC2_DIFFICULTY}-$(date +%Y%m%d-%H%M%S)"; nohup env SC2_DIFFICULTY="$SC2_DIFFICULTY" RUN_ID="$RUN_ID" bash scripts/train_qwen_long_loop.sh </dev/null > "outputs/${RUN_ID}.nohup.log" 2>&1 & printf 'PID=%s RUN_ID=%s LOG=%s\n' "$!" "$RUN_ID" "outputs/${RUN_ID}.nohup.log"
 ```
 
 The log's first line records the launcher PID and run ID. Follow it with
