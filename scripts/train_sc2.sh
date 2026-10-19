@@ -89,7 +89,7 @@ if [[ "${MODEL_KIND}" == spb ]]; then
             --source "${model_source}" --destination "${MODEL_PATH}" 2>&1 | tee -a "${OUTPUT_DIR}/preflight.log"
     fi
 fi
-ray_tmpdir=${RAY_TMPDIR:-/dev/shm/sc2_${RUN_ID}}
+ray_tmpdir=${RAY_TMPDIR:-/dev/shm/sc2_$("${PYTHON_BIN}" -c 'import hashlib,sys; print(hashlib.sha256(sys.argv[1].encode()).hexdigest()[:12])' "${RUN_ID}")}
 if [[ "${DRY_RUN}" != 1 ]]; then mkdir "${ray_tmpdir}"; fi
 
 export PYTHONPATH="${repo_dir}${EXTRA_PYTHONPATH:+:${EXTRA_PYTHONPATH}}"

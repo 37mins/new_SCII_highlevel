@@ -35,7 +35,16 @@ SFT data, reward normalization or batch-padding semantics are included.
 The run directory is created atomically and must not already exist. Real
 training requires a clean commit and verified assets. Before the trainer
 starts, `manifest.json` captures provenance and `effective_config.json`
-captures the full argument vector and Hydra overrides. Existing seed and raw
+captures the full argument vector and Hydra overrides.
+
+Ray's default temporary directory is `/dev/shm/sc2_<12-hex-hash>`, derived from
+the run ID to keep Unix socket paths within Linux's
+107-byte limit even with long run IDs. Explicit `RAY_TMPDIR` overrides are
+preserved and must also be short and unique. The full run ID remains unchanged
+in artifact directories and experiment metadata. The actual temporary path is
+recorded in `effective_config.json`.
+
+Existing seed and raw
 prompt/response logging is unchanged; SC2 controller, Ray environment-worker,
 game-agent, and rollout audit/debug output is separated under
 `sc2-logs/worker-output/`. Trainer progress and metrics remain in `console.log`.

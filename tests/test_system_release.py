@@ -259,6 +259,32 @@ class LauncherTest(unittest.TestCase):
             self.assertIn("SC2_STEP_SHAPING_MODE must be legacy or off", result.stdout)
             self.assertFalse((Path(tmp) / "run").exists())
 
+    def test_ray_directory_stays_short_for_long_run_ids(self):
+        paths = []
+        for run_id in ("qwen-long-loop-CheatVision-20261019-221931", "qwen-" + "x" * 150):
+            with self.subTest(run_id=run_id), tempfile.TemporaryDirectory() as tmp:
+                with patch.dict(os.environ):
+                    os.environ.pop("RAY_TMPDIR", None)
+                    result = self.launch(tmp, "train_qwen_long_loop.sh", RUN_ID=run_id)
+                self.assertEqual(result.returncode, 0, result.stdout)
+                config = json.loads((Path(tmp) / "run/effective_config.json").read_text())["overrides"]
+                ray_dir = config["+ray_init._temp_dir"]
+                self.assertRegex(ray_dir, r"^/dev/shm/sc2_[0-9a-f]{12}$")
+                socket_path = ray_dir + "/session_2026-10-19_22-19-43_447865_9999999999/sockets/plasma_store"
+                self.assertLessEqual(len(socket_path.encode()), 107)
+                self.assertEqual(config["+ray_init.runtime_env.env_vars.TMPDIR"], ray_dir)
+                self.assertEqual(config["+ray_init.runtime_env.env_vars.RAY_TMPDIR"], ray_dir)
+                self.assertEqual(config["trainer.experiment_name"], run_id)
+                paths.append(ray_dir)
+        self.assertNotEqual(paths[0], paths[1])
+
+    def test_explicit_ray_directory_is_preserved(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            result = self.launch(tmp, "train_qwen_long_loop.sh", RAY_TMPDIR="/dev/shm/sc2-manual-test")
+            self.assertEqual(result.returncode, 0, result.stdout)
+            config = json.loads((Path(tmp) / "run/effective_config.json").read_text())["overrides"]
+            self.assertEqual(config["+ray_init._temp_dir"], "/dev/shm/sc2-manual-test")
+
     def test_natural_gate_requires_an_explicit_ray_directory(self):
         env = {k: v for k, v in os.environ.items() if k != "RAY_TMPDIR"}
         env["SOURCE_DIR"] = str(REPO)
@@ -277,8 +303,8 @@ class LauncherTest(unittest.TestCase):
             PATH=str(Path(sys.executable).parent) + os.pathsep + env["PATH"],
             MODEL_PATH=str(root / "model"), SC2PATH=str(root / "sc2"),
             OUTPUT_DIR=str(root / "run"), RUN_ID="test-system", DRY_RUN="1", VERIFY_ASSETS="0",
-            **overrides,
         )
+        env.update(overrides)
         result = subprocess.run(["bash", str(REPO / "scripts" / script), *cli_overrides], env=env,
                                 text=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
         return result
