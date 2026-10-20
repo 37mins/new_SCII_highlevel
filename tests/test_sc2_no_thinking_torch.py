@@ -137,6 +137,9 @@ class TorchNoThinkingTest(unittest.TestCase):
         obs=dict(text=['Return only a build order.'])
         collector=TrajectoryCollector(cfg,tokenizer)
         row=collector.preprocess_single_sample(0,gen,obs)
+        self.assertEqual(len(row['input_ids']),128)
+        summary_row=collector.preprocess_single_sample(0,gen,obs,max_prompt_length=64)
+        self.assertEqual(len(summary_row['input_ids']),64)
         text=tokenizer.decode(row['input_ids'][row['attention_mask'].bool()],skip_special_tokens=False)
         self.assertTrue(text.endswith('<|im_start|>assistant\n<think>\n\n</think>\n'))
         cfg.data.sc2_no_thinking=False

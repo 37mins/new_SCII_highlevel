@@ -193,18 +193,32 @@ class LauncherTest(unittest.TestCase):
             self.assertEqual(config["+trainer.sc2_empty_policy_max_consecutive"], "3")
             self.assertEqual(config["+trainer.sc2_empty_policy_max_total"], "8")
             self.assertEqual(config["+env.sc2_memory_summary_max_new_tokens"], "1024")
-            self.assertEqual(config["data.max_prompt_length"], "8192")
+            self.assertEqual(config["data.max_prompt_length"], "4096")
+            self.assertEqual(config["+env.sc2_memory_summary_max_prompt_length"], "8192")
             self.assertEqual(
                 config["+trainer.sc2_empty_policy_log_path"],
                 str(root / "empty_policy_batches.jsonl"),
             )
 
-    def test_qwen_long_loop_prompt_length_can_be_overridden(self):
+    def test_qwen_long_loop_rollout_and_summary_prompt_limits_are_independent(self):
         with tempfile.TemporaryDirectory() as tmp:
             result = self.launch(tmp, "train_qwen_long_loop.sh", MAX_PROMPT_LENGTH="6144")
             self.assertEqual(result.returncode, 0, result.stdout)
             config = json.loads((Path(tmp) / "run/effective_config.json").read_text())["overrides"]
             self.assertEqual(config["data.max_prompt_length"], "6144")
+            self.assertEqual(config["+env.sc2_memory_summary_max_prompt_length"], "8192")
+
+        with tempfile.TemporaryDirectory() as tmp:
+            result = self.launch(
+                tmp,
+                "train_qwen_long_loop.sh",
+                MAX_PROMPT_LENGTH="4096",
+                SC2_MEMORY_SUMMARY_MAX_PROMPT_LENGTH="6144",
+            )
+            self.assertEqual(result.returncode, 0, result.stdout)
+            config = json.loads((Path(tmp) / "run/effective_config.json").read_text())["overrides"]
+            self.assertEqual(config["data.max_prompt_length"], "4096")
+            self.assertEqual(config["+env.sc2_memory_summary_max_prompt_length"], "6144")
 
     def test_empty_policy_limits_require_both_values_and_allow_explicit_disable(self):
         with tempfile.TemporaryDirectory() as tmp:

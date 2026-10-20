@@ -5,9 +5,10 @@ export SC2_DIFFICULTY="${SC2_DIFFICULTY:-CheatVision}"
 export RUN_ID="${RUN_ID:-qwen-long-loop-${SC2_DIFFICULTY}-$(date +%Y%m%d-%H%M%S)}"
 printf 'PID=%s RUN_ID=%s\n' "$$" "${RUN_ID}"
 export CONFIG_PATH="${repo_dir}/configs/qwen3-4b-instruct-2507-level5.env"
-export MAX_PROMPT_LENGTH="${MAX_PROMPT_LENGTH:-8192}"
+export MAX_PROMPT_LENGTH="${MAX_PROMPT_LENGTH:-4096}"
 export SC2_MEMORY_MODE=long_loop
 export SC2_MEMORY_SUMMARY_MAX_NEW_TOKENS="${SC2_MEMORY_SUMMARY_MAX_NEW_TOKENS:-1024}"
+export SC2_MEMORY_SUMMARY_MAX_PROMPT_LENGTH="${SC2_MEMORY_SUMMARY_MAX_PROMPT_LENGTH:-8192}"
 export SC2_EMPTY_POLICY_MAX_CONSECUTIVE="${SC2_EMPTY_POLICY_MAX_CONSECUTIVE:-3}"
 export SC2_EMPTY_POLICY_MAX_TOTAL="${SC2_EMPTY_POLICY_MAX_TOTAL:-8}"
 export CUDA_VISIBLE_DEVICES=0,1,2,3
@@ -67,4 +68,5 @@ wait_for_selected_gpus() {
 wait_for_selected_gpus
 exec bash "${repo_dir}/scripts/train_sc2.sh" \
 	++actor_rollout_ref.rollout.fsdp_layer_wrap=True \
-	+env.sc2_memory_summary_max_new_tokens="${SC2_MEMORY_SUMMARY_MAX_NEW_TOKENS}" "$@"
+	+env.sc2_memory_summary_max_new_tokens="${SC2_MEMORY_SUMMARY_MAX_NEW_TOKENS}" \
+	+env.sc2_memory_summary_max_prompt_length="${SC2_MEMORY_SUMMARY_MAX_PROMPT_LENGTH}" "$@"
