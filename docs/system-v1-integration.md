@@ -110,7 +110,10 @@ Each memory-summary attempt appends its full prompt, raw model response, rollout
 ID, status, and any error to `memory_summary_io.jsonl` beside
 `long_loop_memory.json`. Summary generation defaults to a per-call limit of
 1,024 new tokens (`SC2_MEMORY_SUMMARY_MAX_NEW_TOKENS`); policy-action generation
-retains its configured response length.
+retains its configured response length. The Qwen long-loop launcher allows
+8,192 input tokens for prompts by default (`MAX_PROMPT_LENGTH`); set that
+environment variable before launch to override it. Other launchers retain the
+system default.
 
 On normal shell exit, `run_record.py` extracts the metric rows and writes
 `metrics.json`, `result.json` and `.done`. Completed means the process
