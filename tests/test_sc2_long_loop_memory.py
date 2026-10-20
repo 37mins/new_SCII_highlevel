@@ -160,7 +160,60 @@ class SC2LongLoopMemoryTest(unittest.TestCase):
         }])
         self.assertEqual(lengths, [1])
         self.assertIn("Mineral collection rate is 600.00", contexts[0])
-        self.assertIn("already marked too low", contexts[0])
+        self.assertIn("marked too low", contexts[0])
+
+    def test_fetch_resource_reminder_thresholds_respect_too_low_tag(self):
+        def check(metric_key, recommendation, current):
+            targets = dict.fromkeys(self.resource_targets())
+            targets[metric_key] = recommendation
+            memory = SC2LongLoopMemory(initial_resource_memory=targets)
+            telemetry = {
+                "game_time_seconds": 60,
+                "cumulative_minerals_collected": 100,
+                "cumulative_vespene_collected": 100,
+                "cumulative_minerals_spent": 100,
+                "cumulative_vespene_spent": 100,
+                "supply_used": 0,
+            }
+            if metric_key == "recommended_mineral_collection_rate":
+                telemetry["cumulative_minerals_collected"] = current
+            elif metric_key == "recommended_vespene_collection_rate":
+                telemetry["cumulative_vespene_collected"] = current
+            elif metric_key == "recommended_mineral_utilization":
+                telemetry["cumulative_minerals_spent"] = current
+            elif metric_key == "recommended_vespene_utilization":
+                telemetry["cumulative_vespene_spent"] = current
+            context, _ = memory.fetch(0, ["observation"], telemetry=[telemetry])
+            return context[0]
+
+        cases = (
+            ("recommended_mineral_collection_rate", "100 minerals/min", 99, True),
+            ("recommended_mineral_collection_rate", "100 minerals/min", 100, False),
+            ("recommended_vespene_collection_rate", "100 vespene/min (too low)", 80, True),
+            ("recommended_mineral_utilization", "100% (too low)", 110, True),
+            ("recommended_vespene_utilization", "100% (too low)", 111, False),
+        )
+        for key, recommendation, current, should_remind in cases:
+            with self.subTest(key=key, recommendation=recommendation, current=current):
+                context = check(key, recommendation, current)
+                self.assertEqual("Metric below target:" in context, should_remind)
+
+    def test_fetch_matches_only_currently_visible_positive_enemy_units(self):
+        memory = SC2LongLoopMemory(
+            initial_army_memory=[{
+                "opponent_units": ["Marine"],
+                "counters": ["Marauder"],
+                "fallback": "Build a Factory",
+                "rationale": "Marauders trade well against Marines.",
+            }]
+        )
+        for detected, expected in (({"Marine": 0}, False), ({"Marauder": 2}, False), ({"Marine": 1}, True)):
+            with self.subTest(detected=detected):
+                memory.reset(batch_size=1)
+                contexts, _ = memory.fetch(0, ["observation"], telemetry=[{
+                    "visible_enemy_units": detected,
+                }])
+                self.assertEqual("Recommended counters: Marauder" in contexts[0], expected)
 
     def test_legacy_bare_too_low_is_migrated_to_null(self):
         with tempfile.TemporaryDirectory() as directory:

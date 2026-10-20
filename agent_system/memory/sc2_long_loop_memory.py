@@ -395,10 +395,10 @@ class SC2LongLoopMemory:
             if target is None or target <= 0:
                 return None
             low_tagged = is_too_low(recommendation)
-            if current < target * 0.8:
-                reason = "current value is below 80% of the recommendation"
-            elif low_tagged and target * 0.9 <= current <= target * 1.1:
-                reason = "the recommendation is already marked too low and current value is within 10% of it"
+            if low_tagged and current <= target * 1.1:
+                reason = "the recommendation is marked too low and current value is at most 10% above it"
+            elif not low_tagged and current < target:
+                reason = "current value is below the recommendation"
             else:
                 return None
             return (
